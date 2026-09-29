@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wu Jacky Pokémon GO 賣場</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        "PingFang TC",
+        "Microsoft JhengHei",
+        sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+.header {
+    background: linear-gradient(135deg, #111827, #263a63);
+    color: white;
+    padding: 28px 18px 34px;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.subtitle {
+    margin-top: 7px;
+    opacity: .78;
+    font-size: 14px;
+}
+
+.contact-row {
+    display: flex;
+    gap: 9px;
+    flex-wrap: wrap;
+    margin-top: 22px;
+}
+
+.contact-btn {
+    text-decoration: none;
+    color: white;
+    background: rgba(255,255,255,.13);
+    border: 1px solid rgba(255,255,255,.2);
+    padding: 9px 13px;
+    border-radius: 12px;
+    font-size: 13px;
+}
+
+.hero {
+    max-width: 1100px;
+    margin: 22px auto 0;
+    padding: 0 16px;
+}
+
+.hero-box {
+    background: white;
+    border-radius: 22px;
+    padding: 24px;
+    box-shadow: 0 8px 30px rgba(30,50,90,.08);
+}
+
+.hero-title {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.hero-text {
+    margin-top: 8px;
+    color: #667085;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.controls {
+    max-width: 1100px;
+    margin: 18px auto;
+    padding: 0 16px;
+}
+
+.search {
+    width: 100%;
+    padding: 15px 17px;
+    border: 1px solid #d9deea;
+    border-radius: 15px;
+    outline: none;
+    background: white;
+}
+
+.search:focus {
+    border-color: #627eea;
+    box-shadow: 0 0 0 3px rgba(98,126,234,.12);
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 12px 0 4px;
+}
+
+.filter-btn {
+    white-space: nowrap;
+    border: 1px solid #d8deeb;
+    background: white;
+    color: #4b5565;
+    padding: 9px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background: #263a63;
+    color: white;
+    border-color: #263a63;
+}
+
+.products {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 8px 16px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 22px rgba(30,50,90,.07);
+    cursor: pointer;
+    transition: transform .15s;
+}
+
+.card:active {
+    transform: scale(.98);
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(135deg,#e7ebf5,#cdd5e8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 58px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 13px;
+}
+
+.status {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 8px;
+    border-radius: 7px;
+    margin-bottom: 8px;
+}
+
+.status.available {
+    background: #e7f8ee;
+    color: #14804a;
+}
+
+.status.sold {
+    background: #ffe9e9;
+    color: #c73737;
+}
+
+.card-title {
+    font-size: 15px;
+    font-weight: 750;
+    line-height: 1.4;
+}
+
+.card-category {
+    color: #7b8495;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.price {
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: #7b8495;
+}
+
+.footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 28px 18px;
+    font-size: 13px;
+}
+
+.footer-links {
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer a {
+    color: white;
+    opacity: .85;
+    text-decoration: none;
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(10,15,25,.62);
+    display: none;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-box {
+    width: 100%;
+    max-width: 600px;
+    max-height: 92vh;
+    overflow-y: auto;
+    background: white;
+    border-radius: 25px 25px 0 0;
+    padding-bottom: 25px;
+}
+
+.modal-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    max-height: 430px;
+    background: linear-gradient(135deg,#e7ebf5,#cdd5e8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    overflow: hidden;
+}
+
+.modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-content {
+    padding: 22px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(0,0,0,.55);
+    color: white;
+    font-size: 22px;
+    z-index: 2;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.modal-price {
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.modal-description {
+    color: #5e6879;
+    line-height: 1.7;
+    margin-top: 15px;
+    white-space: pre-line;
+}
+
+.payment {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f5f7fb;
+    border-radius: 15px;
+}
+
+.payment h3 {
+    font-size: 15px;
+    margin-bottom: 9px;
+}
+
+.payment li {
+    margin-left: 18px;
+    margin-bottom: 5px;
+    color: #5e6879;
+}
+
+.buy-buttons {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.buy-btn {
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 7px;
+    border-radius: 12px;
+    color: white;
+    background: #263a63;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+@media (min-width: 700px) {
+    .products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .modal {
+        align-items: center;
+    }
+
+    .modal-box {
+        border-radius: 25px;
+        max-height: 90vh;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-inner">
+        <div class="logo">🏪 Wu Jacky Pokémon GO</div>
+        <div class="subtitle">Pokémon GO 商品交易・帳號・特殊收藏</div>
+
+        <div class="contact-row">
+            <a class="contact-btn" href="#" onclick="showComingSoon('官方 LINE')">
+                💬 官方 LINE
+            </a>
+
+            <a class="contact-btn" href="#" onclick="showComingSoon('社群')">
+                👥 社群
+            </a>
+
+            <a class="contact-btn" href="#" onclick="showComingSoon('Facebook')">
+                📘 Facebook
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-box">
+        <div class="hero-title">歡迎來到 Wu Jacky Pokémon GO 賣場</div>
+
+        <div class="hero-text">
+            商品資訊、價格與庫存狀態會在這裡更新。<br>
+            有興趣的商品可以點擊查看詳細資訊，再透過 LINE、8591 或 Facebook 聯絡。
+        </div>
+    </div>
+</section>
+
+<section class="controls">
+
+    <input
+        id="search"
+        class="search"
+        type="search"
+        placeholder="🔎 搜尋商品名稱..."
+        oninput="renderProducts()"
+    >
+
+    <div class="filters" id="filters"></div>
+
+</section>
+
+<main class="products" id="products"></main>
+
+<footer class="footer">
+
+    <div>© 2026 Wu Jacky Pokémon GO</div>
+
+    <div class="footer-links">
+        <a href="#" onclick="showComingSoon('官方 LINE')">官方 LINE</a>
+        <a href="#" onclick="showComingSoon('社群')">社群</a>
+        <a href="#" onclick="showComingSoon('Facebook')">Facebook</a>
+        <a href="#" onclick="showComingSoon('8591')">8591</a>
+    </div>
+
+</footer>
+
+
+<!-- 商品詳細視窗 -->
+
+<div class="modal" id="modal" onclick="closeModal(event)">
+
+    <div class="modal-box">
+
+        <button class="close" onclick="closeModal()">×</button>
+
+        <div class="modal-image" id="modalImage"></div>
+
+        <div class="modal-content">
+
+            <span class="status" id="modalStatus"></span>
+
+            <div class="modal-title" id="modalTitle"></div>
+
+            <div class="card-category" id="modalCategory"></div>
+
+            <div class="modal-price" id="modalPrice"></div>
+
+            <div class="modal-description" id="modalDescription"></div>
+
+            <div class="payment">
+
+                <h3>💳 付款方式</h3>
+
+                <ul>
+                    <li>銀行匯款</li>
+                    <li>無卡存款｜中國信託</li>
+                    <li>無卡存款｜國泰世華</li>
+                    <li>8591 實收</li>
+                    <li>LINE Pay</li>
+                </ul>
+
+            </div>
+
+            <div class="buy-buttons">
+
+                <a class="buy-btn" href="#" onclick="showComingSoon('官方 LINE')">
+                    LINE
+                </a>
+
+                <a class="buy-btn" href="#" onclick="showComingSoon('8591')">
+                    8591
+                </a>
+
+                <a class="buy-btn" href="#" onclick="showComingSoon('Facebook')">
+                    FB
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/*
+=================================================
+商品資料區
+未來做後台後，這裡會改成由後台管理
+=================================================
+*/
+
+const products = [
+
+    {
+        id: 1,
+        name: "示範商品｜異色寶可夢",
+        category: "寶可夢",
+        price: "NT$ 999",
+        status: "available",
+        emoji: "✨",
+        image: "",
+        description:
+`這是一個示範商品。
+
+之後我會幫你改成真正的商品資料：
+• 商品名稱
+• 寶可夢
+• 背景
+• CP / IV
+• 地區
+• 特殊服裝
+• 價格
+• 商品圖片
+• 其他備註`
+    },
+
+    {
+        id: 2,
+        name: "示範商品｜特殊背景",
+        category: "特殊背景",
+        price: "NT$ 1,299",
+        status: "available",
+        emoji: "🌟",
+        image: "",
+        description:
+`特殊背景商品示範。
+
+之後可以放完整的 Pokémon GO 商品資訊。`
+    },
+
+    {
+        id: 3,
+        name: "示範商品｜已售出",
+        category: "已售商品",
+        price: "NT$ 888",
+        status: "sold",
+        emoji: "🔴",
+        image: "",
+        description:
+`這個商品目前已售出。
+
+網站會自動顯示「已售」狀態。`
+    }
+
+];
+
+
+/*
+=================================================
+分類
+=================================================
+*/
+
+let currentCategory = "全部";
+
+function getCategories() {
+
+    const categories = ["全部"];
+
+    products.forEach(product => {
+
+        if (!categories.includes(product.category)) {
+            categories.push(product.category);
+        }
+
+    });
+
+    return categories;
+}
+
+
+function renderFilters() {
+
+    const container = document.getElementById("filters");
+
+    container.innerHTML = "";
+
+    getCategories().forEach(category => {
+
+        const button = document.createElement("button");
+
+        button.className =
+            "filter-btn " +
+            (currentCategory === category ? "active" : "");
+
+        button.textContent = category;
+
+        button.onclick = () => {
+
+            currentCategory = category;
+
+            renderFilters();
+            renderProducts();
+
+        };
+
+        container.appendChild(button);
+
+    });
+
+}
+
+
+/*
+=================================================
+商品列表
+=================================================
+*/
+
+function renderProducts() {
+
+    const container = document.getElementById("products");
+
+    const keyword =
+        document.getElementById("search").value
+        .toLowerCase()
+        .trim();
+
+    let filtered = products.filter(product => {
+
+        const matchCategory =
+            currentCategory === "全部" ||
+            product.category === currentCategory;
+
+        const matchSearch =
+            product.name.toLowerCase().includes(keyword) ||
+            product.category.toLowerCase().includes(keyword);
+
+        return matchCategory && matchSearch;
+
+    });
+
+
+    container.innerHTML = "";
+
+
+    if (filtered.length === 0) {
+
+        container.innerHTML =
+            `<div class="empty">
+                🔍 找不到符合的商品
+            </div>`;
+
+        return;
+
+    }
+
+
+    filtered.forEach(product => {
+
+        const card = document.createElement("div");
+
+        card.className = "card";
+
+        card.onclick = () => openProduct(product.id);
+
+
+        const imageHTML = product.image
+            ? `<img src="${product.image}" alt="${product.name}">`
+            : product.emoji;
+
+
+        card.innerHTML = `
+
+            <div class="product-image">
+                ${imageHTML}
+            </div>
+
+            <div class="card-body">
+
+                <span class="status ${
+                    product.status === "available"
+                    ? "available"
+                    : "sold"
+                }">
+
+                    ${
+                        product.status === "available"
+                        ? "🟢 在售"
+                        : "🔴 已售"
+                    }
+
+                </span>
+
+                <div class="card-title">
+                    ${product.name}
+                </div>
+
+                <div class="card-category">
+                    ${product.category}
+                </div>
+
+                <div class="price">
+                    ${product.price}
+                </div>
+
+            </div>
+        `;
+
+
+        container.appendChild(card);
+
+    });
+
+}
+
+
+/*
+=================================================
+商品詳細
+=================================================
+*/
+
+function openProduct(id) {
+
+    const product =
+        products.find(item => item.id === id);
+
+    if (!product) return;
+
+
+    const modal =
+        document.getElementById("modal");
+
+
+    const image =
+        document.getElementById("modalImage");
+
+
+    image.innerHTML = product.image
+        ? `<img src="${product.image}" alt="${product.name}">`
+        : product.emoji;
+
+
+    document.getElementById("modalTitle")
+        .textContent = product.name;
+
+    document.getElementById("modalCategory")
+        .textContent = product.category;
+
+    document.getElementById("modalPrice")
+        .textContent = product.price;
+
+    document.getElementById("modalDescription")
+        .textContent = product.description;
+
+
+    const status =
+        document.getElementById("modalStatus");
+
+
+    status.textContent =
+        product.status === "available"
+        ? "🟢 在售"
+        : "🔴 已售";
+
+
+    status.className =
+        "status " +
+        (product.status === "available"
+        ? "available"
+        : "sold");
+
+
+    modal.classList.add("show");
+
+    document.body.style.overflow = "hidden";
+
+}
+
+
+function closeModal(event) {
+
+    if (
+        event &&
+        event.target !== document.getElementById("modal")
+    ) {
+        return;
+    }
+
+    document.getElementById("modal")
+        .classList.remove("show");
+
+    document.body.style.overflow = "";
+
+}
+
+
+function showComingSoon(name) {
+
+    alert(
+        name +
+        " 的連結目前尚未設定。\n\n" +
+        "之後你提供連結後，我會幫你接上。"
+    );
+
+}
+
+
+/*
+=================================================
+初始化
+=================================================
+*/
+
+renderFilters();
+renderProducts();
+
+</script>
+
+</body>
+</html>
