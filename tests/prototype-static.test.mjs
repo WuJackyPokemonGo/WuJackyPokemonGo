@@ -127,7 +127,7 @@ test("import export contract keeps inventory and private data guarded", async ()
   assert.match(contract, /inventory-movements-v1\.csv/);
   assert.match(contract, /預設不得改變現有庫存/);
   assert.match(contract, /匯入採購批次不可自動增加庫存/);
-  assert.match(contract, /禁止以 CSV 直接覆寫庫存餘額/);
+  assert.match(contract, /正式環境不允許以 CSV 直接覆寫庫存餘額/);
   assert.match(contract, /穩定的 SKU/);
   assert.match(contract, /不是可完整還原系統的唯一手段/);
 });
