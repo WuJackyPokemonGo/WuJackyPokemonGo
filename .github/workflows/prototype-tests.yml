@@ -11,6 +11,7 @@ on:
       - "index.html"
       - "admin.html"
       - "README-DEV.md"
+      - "docs/**"
       - "supabase/migrations/**"
       - "tests/**"
       - ".github/workflows/prototype-tests.yml"
