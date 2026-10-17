@@ -1,0 +1,112 @@
+-- Security-first follow-up migration draft.
+-- NOT APPLIED to any database. Review and test on a staging project first.
+begin;
+
+-- Helper checks membership in the trusted admin profile table. Client-editable
+-- auth metadata is intentionally not used as a role signal.
+create or replace function public.is_store_admin()
+returns boolean
+language sql
+stable
+security definer
+set search_path = ''
+as $$
+  select exists (
+    select 1
+    from public.admin_profiles ap
+    where ap.user_id = (select auth.uid())
+  );
+$$;
+revoke all on function public.is_store_admin() from public;
+grant execute on function public.is_store_admin() to authenticated;
+
+-- Explicit table grants: enable RLS plus restrict base-table reads/writes to trusted
+-- admins. This draft intentionally does not grant anon access to base tables.
+revoke all on table public.admin_profiles from anon, authenticated;
+revoke all on table public.product_categories from anon, authenticated;
+revoke all on table public.products from anon, authenticated;
+revoke all on table public.category_assignments from anon, authenticated;
+revoke all on table public.product_images from anon, authenticated;
+revoke all on table public.inventory_balances from anon, authenticated;
+revoke all on table public.inventory_movements from anon, authenticated;
+revoke all on table public.purchase_batches from anon, authenticated;
+revoke all on table public.orders from anon, authenticated;
+revoke all on table public.order_items from anon, authenticated;
+revoke all on table public.expenses from anon, authenticated;
+revoke all on table public.audit_logs from anon, authenticated;
+revoke all on table public.app_settings from anon, authenticated;
+
+grant select on public.admin_profiles to authenticated;
+create policy "admins can manage product categories" on public.product_categories
+  for all to authenticated using ((select public.is_store_admin()))
+  with check ((select public.is_store_admin()));
+create policy "admins can manage products" on public.products
+  for all to authenticated using ((select public.is_store_admin()))
+  with check ((select public.is_store_admin()));
+create policy "admins can manage category assignments" on public.category_assignments
+  for all to authenticated using ((select public.is_store_admin()))
+  with check ((select public.is_store_admin()));
+create policy "admins can manage product images" on public.product_images
+  for all to authenticated using ((select public.is_store_admin()))
+  with check ((select public.is_store_admin()));
+create policy "admins can manage inventory balances" on public.inventory_balances
+  for all to authenticated using ((select public.is_store_admin()))
+  with check ((select public.is_store_admin()));
+create policy "admins can manage inventory movements" on public.inventory_movements
+  for all to authenticated using ((select public.is_store_admin()))
+  with check ((select public.is_store_admin()));
+create policy "admins can manage purchase batches" on public.purchase_batches
+  for all to authenticated using ((select public.is_store_admin()))
+  with check ((select public.is_store_admin()));
+create policy "admins can manage orders" on public.orders
+  for all to authenticated using ((select public.is_store_admin()))
+  with check ((select public.is_store_admin()));
+create policy "admins can manage order items" on public.order_items
+  for all to authenticated using ((select public.is_store_admin()))
+  with check ((select public.is_store_admin()));
+create policy "admins can manage expenses" on public.expenses
+  for all to authenticated using ((select public.is_store_admin()))
+  with check ((select public.is_store_admin()));
+create policy "admins can read audit logs" on public.audit_logs
+  for select to authenticated using ((select public.is_store_admin()));
+create policy "admins can insert audit logs" on public.audit_logs
+  for insert to authenticated with check ((select public.is_store_admin()));
+create policy "admins can manage settings" on public.app_settings
+  for all to authenticated using ((select public.is_store_admin()))
+  with check ((select public.is_store_admin()));
+
+-- Important: no write/update/delete policy is defined for audit_logs. Append only by design
+-- at the RLS policy layer, but a trusted database owner/service role can still modify it.
+-- Do not ship client-side writes to this draft until the audit and transaction model is reviewed.
+
+-- A narrowly scoped public view is the intended read surface for a future catalog endpoint.
+-- It purposely contains no stock quantity, supplier/cost fields, customer/order/finance data.
+-- Do not grant access to this view before confirming view-owner/RLS semantics for your hosted
+-- PostgreSQL version and testing anonymous access with actual API keys on staging.
+create or replace view public.public_catalog_draft
+with (security_barrier = true)
+as
+select
+  p.id,
+  p.sku,
+  p.name_zh,
+  p.name_en,
+  p.aliases,
+  p.pokedex_number,
+  p.description_public,
+  p.supply_status,
+  p.public_price_twd,
+  p.price_is_inquiry,
+  p.low_stock_threshold,
+  p.manual_sort_order,
+  p.hot_rank,
+  p.first_stocked_at,
+  p.coming_soon_at,
+  p.updated_at
+from public.products p
+where p.publication_status = 'published';
+
+-- Intentionally no GRANT on public_catalog_draft in this draft migration:
+-- public visibility should be enabled only after security-invoker/view policy semantics,
+-- allowed columns, alias privacy and anonymous API behavior are reviewed.
+commit;
