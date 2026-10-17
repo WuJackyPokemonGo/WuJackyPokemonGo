@@ -33,6 +33,9 @@
 ## Backup and restore plan
 `docs/BACKUP-RESTORE-PLAN.md` defines the backup scope, restore rehearsal, and go-live checks. No backup provider, schedule, or real restore has been configured or tested yet. CSV exports are supplemental and are not a full backup.
 
+## Order lifecycle and inventory rules
+`docs/ORDER-LIFECYCLE-INVENTORY-RULES.md` defines allowed order-state transitions, stock effects, idempotency, snapshots, refunds, and staging checks. These are design requirements; transaction functions are not implemented for the complete order flow.
+
 ## Import and export contract
 `docs/IMPORT-EXPORT-CONTRACT.md` specifies versioned CSV contracts and safeguards for products, inventory movements, purchasing, orders, finance, and audit data. These are design requirements; most are not implemented. CSV is not a complete backup.
 
