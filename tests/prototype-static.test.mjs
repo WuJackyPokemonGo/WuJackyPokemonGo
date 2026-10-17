@@ -62,6 +62,11 @@ test("CSV import checks rows and never overwrites existing stock", () => {
   assert.match(admin, /售價必須是非負整數或留空/);
   assert.match(admin, /stock:old\.stock/);
   assert.match(admin, /CSV 匯入初始庫存/);
+  assert.match(admin, /stockEditReasonWrap/);
+  assert.match(admin, /調整既有商品庫存時，請填寫庫存異動原因/);
+  assert.match(admin, /新增商品初始庫存/);
+  assert.match(admin, /匯出商品 CSV/);
+  assert.match(admin, /匯入商品 CSV/);
 });
 
 test("database drafts keep base tables protected and the public view ungranted", () => {
