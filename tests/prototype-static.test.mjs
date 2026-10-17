@@ -68,11 +68,11 @@ test("CSV import checks rows and never overwrites existing stock", () => {
   assert.match(admin, /增加或減少的數量必須大於 0/);
   assert.match(admin, /庫存沒有變更，不建立異動紀錄/);
   assert.match(admin, /請填寫庫存異動原因/);
-  assert.match(admin, /Number\\.isInteger\\(n\\)/);
+  assert.match(admin, /Number\.isInteger\(n\)/);
   assert.match(admin, /匯出商品 CSV/);
   assert.match(admin, /匯入商品 CSV/);
   assert.match(admin, /class="alt moveTag"/);
-  assert.match(admin, /tags\\[i\\],tags\\[j\\]/);
+  assert.match(admin, /tags\[i\],tags\[j\]/);
 });
 
 test("database drafts keep base tables protected and the public view ungranted", () => {
