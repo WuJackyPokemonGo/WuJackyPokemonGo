@@ -16,6 +16,9 @@
 - Local inquiry list with quantity changes and copyable inquiry text
 - No checkout, payment processing, inventory reservation, customer account, or backend integration
 
+## Admin prototype
+`admin.html` is a local-browser-only prototype for product CRUD, tags, stock movements, and CSV exchange. It has no authentication or cloud sync; do not use it for real customer or accounting data. See `docs/TEST-AND-RELEASE-PLAN.md` and `docs/DATA-CONTRACT.md` before any backend integration.
+
 ## Database schema draft
 `supabase/migrations/202610170001_initial_schema_draft.sql` is a **draft only**. It has not been applied to any Supabase project. It deliberately enables RLS and adds no public read/write policies. The frontend must not be connected to these tables until the following are designed, reviewed, and tested:
 1. Trusted admin authorization and least-privilege RLS policies.
