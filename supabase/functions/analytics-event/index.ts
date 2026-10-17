@@ -44,9 +44,29 @@ Deno.serve(async (request: Request) => {
 
   let payload: Record<string, unknown>;
   try {
-    const raw = await request.text();
-    if (new TextEncoder().encode(raw).byteLength > 4096) return response(413, { error: "payload_too_large" }, cors);
-    payload = JSON.parse(raw);
+    // Enforce the byte limit while streaming; checking after request.text() would still
+    // buffer an arbitrarily large body in memory when Content-Length is absent or false.
+    const reader = request.body?.getReader();
+    if (!reader) return response(400, { error: "invalid_json" }, cors);
+    const chunks: Uint8Array[] = [];
+    let totalBytes = 0;
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      totalBytes += value.byteLength;
+      if (totalBytes > 4096) {
+        await reader.cancel();
+        return response(413, { error: "payload_too_large" }, cors);
+      }
+      chunks.push(value);
+    }
+    const body = new Uint8Array(totalBytes);
+    let offset = 0;
+    for (const chunk of chunks) {
+      body.set(chunk, offset);
+      offset += chunk.byteLength;
+    }
+    payload = JSON.parse(new TextDecoder().decode(body));
   } catch {
     return response(400, { error: "invalid_json" }, cors);
   }
