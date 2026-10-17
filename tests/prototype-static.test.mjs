@@ -127,6 +127,13 @@ test("inventory adjustment draft is atomic, admin-only, and audited", () => {
   assert.match(inventory, /for key share/);
 });
 
+test("admin form validates non-negative integer stock, threshold, price and non-empty tags", () => {
+  assert.match(admin, /庫存必須是非負整數/);
+  assert.match(admin, /低庫存門檻必須是非負整數/);
+  assert.match(admin, /售價必須是非負整數/);
+  assert.match(admin, /if\(!t\)\{toast\("請輸入標籤名稱"\)/);
+});
+
 test("frontend admin data map documents stable IDs, image safety, and private-field allowlist", async () => {
   const mapping = await read("../docs/FRONTEND-ADMIN-DATA-MAP.md");
   assert.match(mapping, /不能直接假設等於資料庫 UUID 或 SKU/);
