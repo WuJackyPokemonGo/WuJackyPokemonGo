@@ -127,6 +127,14 @@ test("inventory adjustment draft is atomic, admin-only, and audited", () => {
   assert.match(inventory, /for key share/);
 });
 
+test("admin prototype warns when local storage writes fail", () => {
+  assert.match(admin, /function save\(\)\{try\{localStorage\.setItem\("wj_admin_tags"/);
+  assert.match(admin, /catch\(err\)\{console\.error\("本機儲存失敗",err\);return false\}/);
+  assert.match(admin, /id="persistenceWarning" class="warning hidden" role="status"/);
+  assert.match(admin, /const persisted=save\(\);\$\("persistenceWarning"\)\.classList\.toggle\("hidden",persisted\)/);
+  assert.match(admin, /請先匯出商品 CSV 備份/);
+});
+
 test("admin form validates non-negative integer stock, threshold, price and non-empty tags", () => {
   assert.match(admin, /庫存必須是非負整數/);
   assert.match(admin, /低庫存門檻必須是非負整數/);
