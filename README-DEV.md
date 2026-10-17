@@ -30,6 +30,9 @@
 ## Security policy draft
 `supabase/migrations/202610180001_security_policy_draft.sql` is a follow-up draft only. It adds an admin-profile-based authorization helper, admin-only base-table policies, and an ungranted public catalog view. It has **not** been applied or tested on a live/staging database. Review SQL privileges, view RLS semantics, seed the first trusted admin securely, and test anonymous/authenticated roles before considering it.
 
+## Backup and restore plan
+`docs/BACKUP-RESTORE-PLAN.md` defines the backup scope, restore rehearsal, and go-live checks. No backup provider, schedule, or real restore has been configured or tested yet. CSV exports are supplemental and are not a full backup.
+
 ## Next implementation gates
 1. Confirm the intended Supabase project/account and free-tier limits before creating resources.
 2. Complete security review of schema, RLS, storage, and server-side operations.
