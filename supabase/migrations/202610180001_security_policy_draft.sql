@@ -49,12 +49,10 @@ create policy "admins can manage category assignments" on public.category_assign
 create policy "admins can manage product images" on public.product_images
   for all to authenticated using ((select public.is_store_admin()))
   with check ((select public.is_store_admin()));
-create policy "admins can manage inventory balances" on public.inventory_balances
-  for all to authenticated using ((select public.is_store_admin()))
-  with check ((select public.is_store_admin()));
-create policy "admins can manage inventory movements" on public.inventory_movements
-  for all to authenticated using ((select public.is_store_admin()))
-  with check ((select public.is_store_admin()));
+create policy "admins can read inventory balances" on public.inventory_balances
+  for select to authenticated using ((select public.is_store_admin()));
+create policy "admins can read inventory movements" on public.inventory_movements
+  for select to authenticated using ((select public.is_store_admin()));
 create policy "admins can manage purchase batches" on public.purchase_batches
   for all to authenticated using ((select public.is_store_admin()))
   with check ((select public.is_store_admin()));
@@ -69,8 +67,7 @@ create policy "admins can manage expenses" on public.expenses
   with check ((select public.is_store_admin()));
 create policy "admins can read audit logs" on public.audit_logs
   for select to authenticated using ((select public.is_store_admin()));
-create policy "admins can insert audit logs" on public.audit_logs
-  for insert to authenticated with check ((select public.is_store_admin()));
+-- Audit log writes must be made by trusted database functions, not directly by clients.
 create policy "admins can manage settings" on public.app_settings
   for all to authenticated using ((select public.is_store_admin()))
   with check ((select public.is_store_admin()));
@@ -81,18 +78,19 @@ grant select, insert, update, delete on public.product_categories to authenticat
 grant select, insert, update, delete on public.products to authenticated;
 grant select, insert, update, delete on public.category_assignments to authenticated;
 grant select, insert, update, delete on public.product_images to authenticated;
-grant select, insert, update, delete on public.inventory_balances to authenticated;
-grant select, insert, update, delete on public.inventory_movements to authenticated;
+grant select on public.inventory_balances to authenticated;
+grant select on public.inventory_movements to authenticated;
 grant select, insert, update, delete on public.purchase_batches to authenticated;
 grant select, insert, update, delete on public.orders to authenticated;
 grant select, insert, update, delete on public.order_items to authenticated;
 grant select, insert, update, delete on public.expenses to authenticated;
-grant select, insert on public.audit_logs to authenticated;
+grant select on public.audit_logs to authenticated;
 grant select, insert, update, delete on public.app_settings to authenticated;
 
--- Important: no write/update/delete policy is defined for audit_logs. Append only by design
--- at the RLS policy layer, but a trusted database owner/service role can still modify it.
--- Do not ship client-side writes to this draft until the audit and transaction model is reviewed.
+-- Inventory balances/movements and audit logs are read-only to authenticated clients.
+-- A future SECURITY DEFINER RPC must atomically validate and update inventory balance,
+-- insert the matching movement and append an audit log; expose only EXECUTE on that RPC.
+-- Those transaction functions are intentionally not implemented in this draft.
 
 -- A narrowly scoped public view is the intended read surface for a future catalog endpoint.
 -- It purposely contains no stock quantity, supplier/cost fields, customer/order/finance data.
