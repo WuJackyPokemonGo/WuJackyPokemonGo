@@ -121,6 +121,16 @@ test("inventory adjustment draft is atomic, admin-only, and audited", () => {
   assert.match(inventory, /for key share/);
 });
 
+test("frontend admin data map documents stable IDs, image safety, and private-field allowlist", async () => {
+  const mapping = await read("../docs/FRONTEND-ADMIN-DATA-MAP.md");
+  assert.match(mapping, /不能直接假設等於資料庫 UUID 或 SKU/);
+  assert.match(mapping, /禁止用商品名稱、英文別名或圖鑑編號作唯一鍵/);
+  assert.match(mapping, /商品更新不可意外重設庫存/);
+  assert.match(mapping, /拒絕偽裝副檔名/);
+  assert.match(mapping, /不能先傳到瀏覽器再隱藏/);
+  assert.match(mapping, /完成 staging 同步/);
+});
+
 test("order lifecycle rules separate order state, cash, and stock effects", async () => {
   const rules = await read("../docs/ORDER-LIFECYCLE-INVENTORY-RULES.md");
   assert.match(rules, /詢價清單不扣庫存/);
