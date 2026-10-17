@@ -75,6 +75,21 @@ create policy "admins can manage settings" on public.app_settings
   for all to authenticated using ((select public.is_store_admin()))
   with check ((select public.is_store_admin()));
 
+-- Table privileges are separate from RLS policies. Grant only the operations needed
+-- by authenticated clients; RLS still limits every row to trusted admins.
+grant select, insert, update, delete on public.product_categories to authenticated;
+grant select, insert, update, delete on public.products to authenticated;
+grant select, insert, update, delete on public.category_assignments to authenticated;
+grant select, insert, update, delete on public.product_images to authenticated;
+grant select, insert, update, delete on public.inventory_balances to authenticated;
+grant select, insert, update, delete on public.inventory_movements to authenticated;
+grant select, insert, update, delete on public.purchase_batches to authenticated;
+grant select, insert, update, delete on public.orders to authenticated;
+grant select, insert, update, delete on public.order_items to authenticated;
+grant select, insert, update, delete on public.expenses to authenticated;
+grant select, insert on public.audit_logs to authenticated;
+grant select, insert, update, delete on public.app_settings to authenticated;
+
 -- Important: no write/update/delete policy is defined for audit_logs. Append only by design
 -- at the RLS policy layer, but a trusted database owner/service role can still modify it.
 -- Do not ship client-side writes to this draft until the audit and transaction model is reviewed.
@@ -106,7 +121,7 @@ select
 from public.products p
 where p.publication_status = 'published';
 
--- Intentionally no GRANT on public_catalog_draft in this draft migration:
+-- Explicitly revoke any default grants; do not rely on project-wide default privileges.\nrevoke all on public.public_catalog_draft from public, anon, authenticated;\n\n-- Intentionally no GRANT on public_catalog_draft in this draft migration:
 -- public visibility should be enabled only after security-invoker/view policy semantics,
 -- allowed columns, alias privacy and anonymous API behavior are reviewed.
 commit;
