@@ -250,3 +250,11 @@ test("SQL staging acceptance plan blocks unverified production use", async () =>
   assert.match(plan, /完成 staging 備份與實際還原演練/);
   assert.match(plan, /直到審查及明確批准完成/);
 });
+
+test("analytics receiver enforces body size while streaming", async () => {
+  const fn = await read("../supabase/functions/analytics-event/index.ts");
+  assert.match(fn, /request\.body\?\.getReader\(\)/);
+  assert.match(fn, /totalBytes > 4096/);
+  assert.match(fn, /await reader\.cancel\(\)/);
+  assert.ok(!fn.includes("await request.text()"), "must not buffer an unbounded body before enforcing the limit");
+});
