@@ -121,6 +121,17 @@ test("inventory adjustment draft is atomic, admin-only, and audited", () => {
   assert.match(inventory, /for key share/);
 });
 
+test("backup and restore plan states unverified safeguards clearly", async () => {
+  const backup = await read("../docs/BACKUP-RESTORE-PLAN.md");
+  assert.match(backup, /尚未配置供應商備份、排程或實際還原/);
+  assert.match(backup, /CSV 匯出不是完整備份/);
+  assert.match(backup, /還原到隔離 staging/);
+  assert.match(backup, /已實際完成一次 staging 還原/);
+  assert.match(backup, /RPO/);
+  const workflow = await read("../.github/workflows/prototype-tests.yml");
+  assert.match(workflow, /"docs\/\*\*"/);
+});
+
 test("current release safeguards remain documented", async () => {
   const readme = await read("../README-DEV.md");
   assert.match(readme, /Do not merge to `main` or publish until owner reviews and explicitly approves/);
