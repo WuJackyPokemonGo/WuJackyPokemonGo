@@ -62,5 +62,5 @@ test("database drafts keep base tables protected and the public view ungranted",
 test("current release safeguards remain documented", async () => {
   const readme = await read("../README-DEV.md");
   assert.match(readme, /Do not merge to `main` or publish until owner reviews and explicitly approves/);
-  assert.match(readme, /has **not** been applied/);
+  assert.ok(readme.includes("has **not** been applied"), "documents that migration is not applied");
 });
