@@ -14,7 +14,7 @@ function response(status: number, body: Record<string, unknown>, extra: Record<s
   return new Response(JSON.stringify(body), { status, headers: { ...jsonHeaders, ...extra } });
 }
 
-function corsHeaders(origin: string | null) {
+function corsHeaders(origin: string | null): Record<string, string> {
   if (!origin || !allowedOrigins.includes(origin)) return {};
   return {
     "access-control-allow-origin": origin,
