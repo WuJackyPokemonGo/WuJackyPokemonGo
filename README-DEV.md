@@ -33,6 +33,9 @@
 ## Backup and restore plan
 `docs/BACKUP-RESTORE-PLAN.md` defines the backup scope, restore rehearsal, and go-live checks. No backup provider, schedule, or real restore has been configured or tested yet. CSV exports are supplemental and are not a full backup.
 
+## Import and export contract
+`docs/IMPORT-EXPORT-CONTRACT.md` specifies versioned CSV contracts and safeguards for products, inventory movements, purchasing, orders, finance, and audit data. These are design requirements; most are not implemented. CSV is not a complete backup.
+
 ## Next implementation gates
 1. Confirm the intended Supabase project/account and free-tier limits before creating resources.
 2. Complete security review of schema, RLS, storage, and server-side operations.
