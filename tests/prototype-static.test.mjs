@@ -32,6 +32,12 @@ test("inline JavaScript parses without syntax errors", () => {
   }
 });
 
+test("coming-soon storefront products are not mislabeled sold out", () => {
+  const status = front.match(/function statusInfo\(p\)\{([\s\S]*?)\}\nfunction renderTags/)?.[1] || "";
+  assert.ok(status.indexOf('p.status==="coming"') < status.indexOf('p.stock===0'), "coming-soon status takes precedence over zero stock");
+  assert.match(admin, /replace\(\/\^\\uFEFF\//);
+});
+
 test("storefront cart persists locally and validates restored entries", () => {
   assert.match(front, /localStorage\.getItem\("wj_inquiry_cart"\)/);
   assert.match(front, /localStorage\.setItem\("wj_inquiry_cart"/);
