@@ -1,0 +1,33 @@
+name: Prototype static checks
+
+on:
+  push:
+    branches:
+      - test/full-build-v1
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "index.html"
+      - "admin.html"
+      - "README-DEV.md"
+      - "supabase/migrations/**"
+      - "tests/**"
+      - ".github/workflows/prototype-tests.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Run prototype source checks
+        run: node --test tests/prototype-static.test.mjs
