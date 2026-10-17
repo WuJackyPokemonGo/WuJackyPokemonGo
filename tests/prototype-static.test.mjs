@@ -189,3 +189,15 @@ test("current release safeguards remain documented", async () => {
   assert.match(readme, /Do not merge to `main` or publish until owner reviews and explicitly approves/);
   assert.ok(readme.includes("has **not** been applied"), "documents that migration is not applied");
 });
+test("Discord analytics plan distinguishes local cart activity from submitted inquiries and protects secrets", async () => {
+  const plan = await read("../docs/DISCORD-ANALYTICS-PLAN.md");
+  assert.match(plan, /不得將 Discord Webhook/);
+  assert.match(plan, /加入清單當成購買意願確定/);
+  assert.match(plan, /複製詢價文字.*當成已送出詢問/);
+  assert.match(plan, /Asia\/Taipei/);
+  assert.match(plan, /速率限制/);
+  assert.match(plan, /保留期限/);
+  assert.match(plan, /尚未建立.*Webhook/);
+  assert.match(plan, /不連接正式資料庫/);
+  assert.match(plan, /staging/);
+});
