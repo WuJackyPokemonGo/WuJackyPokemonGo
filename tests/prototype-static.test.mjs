@@ -227,3 +227,16 @@ test("analytics Edge Function draft is disabled by default and allowlists inputs
   assert.match(fn, /analytics_events_draft/);
   assert.match(fn, /never persist raw search terms, cart contents/i);
 });
+
+test("analytics staging plan blocks unsafe enablement and spoofable rate-limit inputs", async () => {
+  const plan = await read("../docs/ANALYTICS-STAGING-TEST-PLAN.md");
+  assert.match(plan, /不能依賴單一 Edge Function 執行個體的記憶體計數/);
+  assert.match(plan, /不可直接信任任意 `X-Forwarded-For`/);
+  assert.match(plan, /CORS 不是身份驗證/);
+  assert.match(plan, /同一 event_key 重送/);
+  assert.match(plan, /4096 bytes/);
+  assert.match(plan, /擁有人明確批准/);
+  const workflow = await read("../.github/workflows/prototype-tests.yml");
+  assert.match(workflow, /deno check supabase\/functions\/analytics-event\/index\.ts/);
+  assert.match(workflow, /supabase\/functions\/\*\*/);
+});
