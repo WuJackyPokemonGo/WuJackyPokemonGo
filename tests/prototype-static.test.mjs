@@ -31,7 +31,7 @@ test("inline JavaScript parses without syntax errors", () => {
   }
 });
 
-test("storefront cart is session-only and validates restored entries", () => {
+test("storefront cart persists locally and validates restored entries", () => {
   assert.match(front, /localStorage\.getItem\("wj_inquiry_cart"\)/);
   assert.match(front, /localStorage\.setItem\("wj_inquiry_cart"/);
   assert.match(front, /Number\.isInteger\(i\.qty\)/);
