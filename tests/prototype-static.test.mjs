@@ -4,11 +4,12 @@ import { readFile } from "node:fs/promises";
 import { Script } from "node:vm";
 
 const read = (path) => readFile(new URL(path, import.meta.url), "utf8");
-const [front, admin, schema, security] = await Promise.all([
+const [front, admin, schema, security, inventory] = await Promise.all([
   read("../index.html"),
   read("../admin.html"),
   read("../supabase/migrations/202610170001_initial_schema_draft.sql"),
   read("../supabase/migrations/202610180001_security_policy_draft.sql"),
+  read("../supabase/migrations/202610180002_inventory_adjustment_function_draft.sql"),
 ]);
 
 test("HTML prototypes declare document language and mobile viewport", () => {
@@ -102,6 +103,17 @@ test("database drafts keep base tables protected and the public view ungranted",
   for (const privateColumn of ["quantity_on_hand", "unit_cost_twd", "supplier_name", "customer_contact_private", "fee_twd"]) {
     assert.ok(!view.includes(privateColumn), "public catalog view must not expose " + privateColumn);
   }
+});
+
+test("inventory adjustment draft is atomic, admin-only, and audited", () => {
+  assert.match(inventory, /create or replace function public\.admin_adjust_inventory/i);
+  assert.match(inventory, /not \(select public\.is_store_admin\(\)\)/);
+  assert.match(inventory, /for update/);
+  assert.match(inventory, /adjustment would create negative inventory/);
+  assert.match(inventory, /insert into public\.inventory_movements/);
+  assert.match(inventory, /insert into public\.audit_logs/);
+  assert.match(inventory, /revoke all on function public\.admin_adjust_inventory\(uuid, integer, text\) from public/i);
+  assert.match(inventory, /grant execute on function public\.admin_adjust_inventory\(uuid, integer, text\) to authenticated/i);
 });
 
 test("current release safeguards remain documented", async () => {
