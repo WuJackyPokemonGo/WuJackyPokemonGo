@@ -20,3 +20,18 @@
 - 尚未配置自動化瀏覽器測試環境。
 - 尚未連接 Supabase 或任何正式資料庫。
 - 不可把所有檢查通過當成可上線證明。
+
+## 資料庫草稿 staging 驗收（目前不可直接在正式環境執行）
+
+只有在建立獨立 staging 專案、確認可還原且由熟悉 PostgreSQL/Supabase 的人審查 SQL 後才可執行。
+
+1. 匿名角色不能讀取 products、inventory_balances、inventory_movements、orders、order_items、purchase_batches、expenses、audit_logs、admin_profiles。
+2. 一般 authenticated 使用者即使在 JWT metadata 中自行加上 `is_admin=true`，仍不能通過 `is_store_admin()`。
+3. 非管理員呼叫 `admin_adjust_inventory` 必須被拒絕，且餘額、異動與稽核表都不變。
+4. 管理員以有效理由增加庫存，應在同一交易中更新餘額並新增一筆 movement 與 audit log。
+5. 管理員減少庫存超過現有數量，應整筆失敗並回滾，不能留下半筆 movement/audit。
+6. 空白理由、少於 3 個非空白字元、delta=0、不存在商品及已封存商品均應拒絕。
+7. 兩個管理員同時調整同一商品時，餘額與異動總和必須一致；不得負庫存或漏記 movement。
+8. 確認管理員無法直接更新 inventory_balances 或直接插入／刪除 inventory_movements，所有正式異動必須經過已審查的交易函式。
+9. 確認 audit_logs 不可由一般客戶端修改或刪除，並測試資料庫管理角色的例外權限。
+10. 驗證 staging 備份、完整還原、RLS/view 實際語義與公開 API 欄位白名單，再考慮正式串接。
