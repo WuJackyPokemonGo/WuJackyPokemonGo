@@ -121,6 +121,17 @@ test("inventory adjustment draft is atomic, admin-only, and audited", () => {
   assert.match(inventory, /for key share/);
 });
 
+test("import export contract keeps inventory and private data guarded", async () => {
+  const contract = await read("../docs/IMPORT-EXPORT-CONTRACT.md");
+  assert.match(contract, /products-v1\.csv/);
+  assert.match(contract, /inventory-movements-v1\.csv/);
+  assert.match(contract, /預設不得改變現有庫存/);
+  assert.match(contract, /匯入採購批次不可自動增加庫存/);
+  assert.match(contract, /禁止以 CSV 直接覆寫庫存餘額/);
+  assert.match(contract, /穩定的 SKU/);
+  assert.match(contract, /不是可完整還原系統的唯一手段/);
+});
+
 test("backup and restore plan states unverified safeguards clearly", async () => {
   const backup = await read("../docs/BACKUP-RESTORE-PLAN.md");
   assert.match(backup, /尚未配置供應商備份、排程或實際還原/);
