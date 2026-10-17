@@ -214,3 +214,16 @@ test("analytics event ledger draft is private, idempotent, bounded, and excludes
   assert.match(analytics, /Do not store IPs, raw search text, customer contacts, cart contents, payment data/i);
   assert.match(analytics, /Not deployed/i);
 });
+test("analytics Edge Function draft is disabled by default and allowlists inputs", async () => {
+  const fn = await read("../supabase/functions/analytics-event/index.ts");
+  assert.match(fn, /ANALYTICS_INGEST_ENABLED.*!== "true"/);
+  assert.match(fn, /ANALYTICS_ALLOWED_ORIGINS/);
+  assert.match(fn, /allowedTypes = new Set/);
+  assert.match(fn, /payload\.event_key/);
+  assert.match(fn, /payload\.result_count/);
+  assert.match(fn, /payload_too_large/);
+  assert.match(fn, /ignore unknown properties/);
+  assert.match(fn, /SUPABASE_SERVICE_ROLE_KEY/);
+  assert.match(fn, /analytics_events_draft/);
+  assert.match(fn, /Do not persist raw search terms, cart contents, customer contacts/i);
+});
