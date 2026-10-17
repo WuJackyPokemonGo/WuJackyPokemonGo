@@ -75,6 +75,11 @@ test("database drafts keep base tables protected and the public view ungranted",
   assert.match(security, /create or replace function public\.is_store_admin\(\)/i);
   assert.match(security, /grant select, insert, update, delete on public\.products to authenticated/i);
   assert.match(security, /revoke all on public\.public_catalog_draft from public, anon, authenticated/i);
+  assert.match(security, /grant select on public\.inventory_balances to authenticated/i);
+  assert.match(security, /grant select on public\.inventory_movements to authenticated/i);
+  assert.match(security, /grant select on public\.audit_logs to authenticated/i);
+  assert.ok(!/grant select, insert, update, delete on public\.inventory_balances to authenticated/i.test(security));
+  assert.ok(!/create policy "admins can insert audit logs"/i.test(security));
   const view = security.match(/create or replace view public\.public_catalog_draft[\s\S]*?from public\.products p/i)?.[0];
   assert.ok(view, "restricted catalog view exists");
   for (const privateColumn of ["quantity_on_hand", "unit_cost_twd", "supplier_name", "customer_contact_private", "fee_twd"]) {
