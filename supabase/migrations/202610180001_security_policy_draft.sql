@@ -36,7 +36,7 @@ revoke all on table public.expenses from anon, authenticated;
 revoke all on table public.audit_logs from anon, authenticated;
 revoke all on table public.app_settings from anon, authenticated;
 
-grant select on public.admin_profiles to authenticated;
+-- No direct client grant on admin_profiles: the SECURITY DEFINER helper performs the membership check.
 create policy "admins can manage product categories" on public.product_categories
   for all to authenticated using ((select public.is_store_admin()))
   with check ((select public.is_store_admin()));
@@ -119,7 +119,10 @@ select
 from public.products p
 where p.publication_status = 'published';
 
--- Explicitly revoke any default grants; do not rely on project-wide default privileges.\nrevoke all on public.public_catalog_draft from public, anon, authenticated;\n\n-- Intentionally no GRANT on public_catalog_draft in this draft migration:
+-- Explicitly revoke any default grants; do not rely on project-wide default privileges.
+revoke all on public.public_catalog_draft from public, anon, authenticated;
+
+-- Intentionally no GRANT on public_catalog_draft in this draft migration:
 -- public visibility should be enabled only after security-invoker/view policy semantics,
 -- allowed columns, alias privacy and anonymous API behavior are reviewed.
 commit;
