@@ -88,6 +88,10 @@ test("database drafts keep base tables protected and the public view ungranted",
   assert.match(security, /create or replace function public\.is_store_admin\(\)/i);
   assert.match(security, /grant select, insert, update, delete on public\.products to authenticated/i);
   assert.match(security, /revoke all on public\.public_catalog_draft from public, anon, authenticated/i);
+  assert.ok(!security.includes("\\\\nrevoke all on public.public_catalog_draft"), "SQL contains real line breaks");
+  assert.ok(!/grant select on public\.admin_profiles to authenticated/i.test(security), "admin profile table is not directly readable by clients");
+  assert.match(security, /create policy "admins can read inventory balances"/i);
+  assert.ok(!/create policy "admins can manage inventory balances"/i.test(security), "inventory balance writes must use reviewed transaction functions");
   assert.match(security, /grant select on public\.inventory_balances to authenticated/i);
   assert.match(security, /grant select on public\.inventory_movements to authenticated/i);
   assert.match(security, /grant select on public\.audit_logs to authenticated/i);
