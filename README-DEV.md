@@ -33,6 +33,9 @@
 ## Backup and restore plan
 `docs/BACKUP-RESTORE-PLAN.md` defines the backup scope, restore rehearsal, and go-live checks. No backup provider, schedule, or real restore has been configured or tested yet. CSV exports are supplemental and are not a full backup.
 
+## Frontend/admin data map
+`docs/FRONTEND-ADMIN-DATA-MAP.md` defines stable SKU/UUID mapping, field normalization, image metadata and safety, public-field allowlists, and staging sync checks. It is a design contract, not implemented cloud sync.
+
 ## Order lifecycle and inventory rules
 `docs/ORDER-LIFECYCLE-INVENTORY-RULES.md` defines allowed order-state transitions, stock effects, idempotency, snapshots, refunds, and staging checks. These are design requirements; transaction functions are not implemented for the complete order flow.
 
