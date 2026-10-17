@@ -71,6 +71,8 @@ test("CSV import checks rows and never overwrites existing stock", () => {
   assert.match(admin, /Number\\.isInteger\\(n\\)/);
   assert.match(admin, /匯出商品 CSV/);
   assert.match(admin, /匯入商品 CSV/);
+  assert.match(admin, /class="alt moveTag"/);
+  assert.match(admin, /tags\\[i\\],tags\\[j\\]/);
 });
 
 test("database drafts keep base tables protected and the public view ungranted", () => {
