@@ -114,6 +114,11 @@ test("inventory adjustment draft is atomic, admin-only, and audited", () => {
   assert.match(inventory, /insert into public\.audit_logs/);
   assert.match(inventory, /revoke all on function public\.admin_adjust_inventory\(uuid, integer, text\) from public/i);
   assert.match(inventory, /grant execute on function public\.admin_adjust_inventory\(uuid, integer, text\) to authenticated/i);
+  assert.match(inventory, /set search_path = ''/i);
+  assert.match(inventory, /revoke all on function public\.admin_adjust_inventory\(uuid, integer, text\) from public/i);
+  assert.ok(!/grant execute on function public\.admin_adjust_inventory\(uuid, integer, text\) to anon/i.test(inventory));
+  assert.match(inventory, /pg_catalog\.length\(pg_catalog\.btrim\(p_reason\)\) < 3/);
+  assert.match(inventory, /for key share/);
 });
 
 test("current release safeguards remain documented", async () => {
