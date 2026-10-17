@@ -27,6 +27,9 @@ test("storefront cart is session-only and validates restored entries", () => {
   assert.match(front, /renderTags\(\);renderProducts\(\);renderCart\(\);/);
   assert.match(front, /不代表訂單成立/);
   assert.match(front, /if\(p\.price!==null\)total\+=p\.price\*item\.qty/);
+  assert.match(front, /aria-label","減少 /);
+  assert.match(front, /aria-label","增加 /);
+  assert.match(front, /item\.qty=Math\.max\(1,item\.qty-1\)/);
 });
 
 test("catalog search supports normalized spaces and numeric Pokédex leading zeros", () => {
