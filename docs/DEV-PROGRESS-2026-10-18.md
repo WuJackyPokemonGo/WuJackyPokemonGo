@@ -97,3 +97,8 @@
 
 - CI 追加 Deno v2 型別檢查，針對 `supabase/functions/analytics-event/index.ts` 執行 `deno check`；PR 路徑觸發也涵蓋 Edge Function，避免函式改動未被檢查。
 - 此檢查只驗證 TypeScript/Deno 型別與模組可解析性，不代表函式已部署、資料庫已連線、速率限制已完成或安全審查已通過；接收器仍預設關閉。
+
+- 新增 `docs/ANALYTICS-STAGING-TEST-PLAN.md`：列出接收器啟用門檻、輸入驗收、重送去重、超大請求、資料庫故障、隱私與資料清理測試。
+- 特別禁止在未驗證部署平台前，直接信任客戶端可偽造的 `X-Forwarded-For` 等標頭作為限流依據；明確說明 CORS 不是身份驗證。
+- 新增靜態測試檢查上述啟用門檻，並確認 CI 有涵蓋 Edge Function 的 Deno 型別檢查。
+- 最新 Deno CI 曾抓出 CORS 標頭型別問題，修正後 `deno check` 與 Node 靜態測試均通過（run 39053646370）。本次新增測試需等待最新 CI 完成；所有分析功能仍未部署或啟用。
