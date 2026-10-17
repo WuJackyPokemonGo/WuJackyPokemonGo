@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
+import { Script } from "node:vm";
 
 const read = (path) => readFile(new URL(path, import.meta.url), "utf8");
 const [front, admin, schema, security] = await Promise.all([
@@ -20,9 +21,19 @@ test("HTML prototypes declare document language and mobile viewport", () => {
   }
 });
 
+test("inline JavaScript parses without syntax errors", () => {
+  for (const [name, source] of [["storefront", front], ["admin", admin]]) {
+    const scripts = [...source.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)];
+    assert.ok(scripts.length > 0, name + " includes a script");
+    for (const [index, match] of scripts.entries()) {
+      assert.doesNotThrow(() => new Script(match[1]), name + " inline script " + (index + 1) + " parses");
+    }
+  }
+});
+
 test("storefront cart is session-only and validates restored entries", () => {
-  assert.match(front, /sessionStorage\.getItem\("wj_inquiry_cart"\)/);
-  assert.match(front, /sessionStorage\.setItem\("wj_inquiry_cart"/);
+  assert.match(front, /localStorage\.getItem\("wj_inquiry_cart"\)/);
+  assert.match(front, /localStorage\.setItem\("wj_inquiry_cart"/);
   assert.match(front, /Number\.isInteger\(i\.qty\)/);
   assert.match(front, /renderTags\(\);renderProducts\(\);renderCart\(\);/);
   assert.match(front, /不代表訂單成立/);
@@ -30,6 +41,10 @@ test("storefront cart is session-only and validates restored entries", () => {
   assert.match(front, /aria-label","減少 /);
   assert.match(front, /aria-label","增加 /);
   assert.match(front, /item\.qty=Math\.max\(1,item\.qty-1\)/);
+  assert.match(front, /activeProduct\.status==="coming"/);
+  assert.match(front, /已售罄，請確認能否補貨/);
+  assert.match(front, /id="clearCart"/);
+  assert.match(front, /確定清空整份詢價清單/);
 });
 
 test("catalog search supports normalized spaces and numeric Pokédex leading zeros", () => {
