@@ -225,5 +225,5 @@ test("analytics Edge Function draft is disabled by default and allowlists inputs
   assert.match(fn, /ignore unknown properties/);
   assert.match(fn, /SUPABASE_SERVICE_ROLE_KEY/);
   assert.match(fn, /analytics_events_draft/);
-  assert.match(fn, /Do not persist raw search terms, cart contents, customer contacts/i);
+  assert.match(fn, /never persist raw search terms, cart contents/i);
 });
