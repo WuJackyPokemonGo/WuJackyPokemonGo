@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>前台原型快速檢查</title><style>body{font:16px/1.5 system-ui,sans-serif;max-width:820px;margin:24px auto;padding:0 16px;color:#172033}h1{font-size:24px}.item{padding:12px;border-bottom:1px solid #ddd}.ok{color:#087443}.bad{color:#b42318}.muted{color:#667085;font-size:13px}button{padding:9px 13px;border:0;border-radius:8px;background:#18283f;color:#fff;margin:8px 6px 8px 0}pre{white-space:pre-wrap;background:#f3f5f8;padding:12px;border-radius:8px}</style></head><body><h1>Wu Jacky Pokémon GO｜前台原型檢查</h1><p class="muted">本工具以文字／結構檢查為主，不等於真實 iPhone 渲染、網路安全或後端整合測試。</p><button id="run">重新檢查前台程式</button><button id="copy">複製檢查結果</button><div id="results"></div><h2>人工驗收清單</h2><pre>□ iPhone Safari 開啟，無橫向溢出
+□ 中文、英文別名、圖鑑編號搜尋
+□ 標籤交集篩選；全部標籤可重設
+□ 售罄商品仍可搜尋與查看
+□ 詢價數量增減、小計及私訊詢價排除於小計
+□ 複製詢價文字；包含「詢價不代表訂單成立」
+□ 無商品時有明確提示
+□ 前台沒有讀取或輸出內部成本、供應商、客戶及管理資料</pre><script>
+const checks=[
+["HTML 文件宣告",s=>/<!doctype html>/i.test(s)],
+["繁體中文語系",s=>/<html lang="zh-Hant">/i.test(s)],
+["響應式 viewport",s=>/name="viewport"/i.test(s)],
+["CSS 區塊閉合",s=>(s.match(/<style\b/gi)||[]).length===(s.match(/<\/style>/gi)||[]).length],
+["JavaScript 區塊閉合",s=>(s.match(/<script\b/gi)||[]).length===(s.match(/<\/script>/gi)||[]).length],
+["前台使用示範商品而非真實庫存",s=>/僅為展示用的示範資料|版面測試商品/i.test(s)],
+["搜尋事件採送出或按鈕操作",s=>/submittedKeyword|searchBtn|searchForm|searchButton/i.test(s)],
+["詢價文字明確說明非正式訂單",s=>/不代表訂單成立/.test(s)],
+["私訊詢價商品不計公開小計",s=>/price!==null/.test(s)&&/公開價格小計/.test(s)],
+["公開前台未直接存取 localStorage",s=>! /localStorage/.test(s)]
+];
+let last="";
+async function run(){const box=document.querySelector("#results");box.innerHTML="<p>讀取開發分支前台程式中…</p>";try{const url="../index.html";let res=await fetch(url,{cache:"no-store"});if(!res.ok)throw Error("讀取失敗："+res.status+"。若此頁未放在同一網站目錄，請以 GitHub 版本進行人工檢查。");let source=await res.text();let lines=checks.map(([label,test])=>({label,ok:test(source)}));last=lines.map(x=>(x.ok?"PASS":"CHECK")+"｜"+x.label).join("\n");box.innerHTML=lines.map(x=>'<div class="item '+(x.ok?"ok":"bad")+'">'+(x.ok?"✓":"!")+" "+x.label+' <span class="muted">'+(x.ok?"通過結構檢查":"需人工確認")+"</span></div>").join("")+'<p class="muted">這些是簡單的字串／結構檢查，無法取代瀏覽器執行或安全審查。</p>'}catch(e){last="無法自動讀取前台程式："+e.message;box.innerHTML='<p class="bad">'+e.message+'</p><p class="muted">仍可依人工驗收清單在手機中逐項測試。</p>'}}
+document.querySelector("#run").onclick=run;document.querySelector("#copy").onclick=async()=>{try{await navigator.clipboard.writeText(last||"請先執行檢查");alert("已複製檢查結果")}catch{alert(last||"請先執行檢查")}};run();
+</script></body></html>
