@@ -40,6 +40,11 @@ test("storefront cart persists locally and validates restored entries", () => {
   assert.match(front, /if\(p\.price!==null\)total\+=p\.price\*item\.qty/);
   assert.match(front, /aria-label","減少 /);
   assert.match(front, /aria-label","增加 /);
+  assert.match(front, /className="cartactions"/);
+  assert.match(front, /className="qtybutton"/);
+  assert.match(front, /item\.qty=Math\.min\(99,item\.qty\+1\)/);
+  assert.match(front, /item\.qty=Math\.max\(1,item\.qty-1\)/);
+  assert.match(front, /cart=cart\.filter\(x=>x\.id!==item\.id\)/);
   assert.match(front, /item\.qty=Math\.max\(1,item\.qty-1\)/);
   assert.match(front, /activeProduct\.status==="coming"/);
   assert.match(front, /已售罄，請確認能否補貨/);
@@ -56,6 +61,8 @@ test("catalog search supports normalized spaces and numeric Pokédex leading zer
 
 test("CSV import checks rows and never overwrites existing stock", () => {
   assert.match(admin, /function parseCSV\(text\)/);
+  assert.match(admin, /else if\(c==="\\\\n"&&!quoted\)/);
+  assert.match(admin, /text\[i\+1\]==='"/);
   assert.match(admin, /CSV 有未配對的引號/);
   assert.match(admin, /CSV 內有重複 ID/);
   assert.match(admin, /庫存必須是非負整數/);
