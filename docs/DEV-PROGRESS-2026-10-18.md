@@ -94,3 +94,6 @@
 - 接收器預設關閉（需 `ANALYTICS_INGEST_ENABLED=true` 才處理），只接受非敏感的頁面／商品／搜尋結果／詢價清單事件；不儲存原始搜尋字詞、購物車內容、聯絡資料、IP 或任意 metadata。
 - 新增靜態測試，檢查接收器預設關閉與輸入驗證。
 - 重要限制：此函式尚未部署，且尚未具備可跨執行個體的持久化速率限制、事件清理排程或真實資料庫整合，因此不得啟用公開端點。下一步先補足濫用防護與 staging 測試，再接 Discord；沒有配置任何真實秘密或 webhook。
+
+- CI 追加 Deno v2 型別檢查，針對 `supabase/functions/analytics-event/index.ts` 執行 `deno check`；PR 路徑觸發也涵蓋 Edge Function，避免函式改動未被檢查。
+- 此檢查只驗證 TypeScript/Deno 型別與模組可解析性，不代表函式已部署、資料庫已連線、速率限制已完成或安全審查已通過；接收器仍預設關閉。
