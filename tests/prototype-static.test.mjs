@@ -121,6 +121,16 @@ test("inventory adjustment draft is atomic, admin-only, and audited", () => {
   assert.match(inventory, /for key share/);
 });
 
+test("order lifecycle rules separate order state, cash, and stock effects", async () => {
+  const rules = await read("../docs/ORDER-LIFECYCLE-INVENTORY-RULES.md");
+  assert.match(rules, /詢價清單不扣庫存/);
+  assert.match(rules, /退款不代表一律把商品加回庫存/);
+  assert.match(rules, /幂等鍵/);
+  assert.match(rules, /歷史成本快照/);
+  assert.match(rules, /非法狀態轉換被拒絕/);
+  assert.match(rules, /匿名及一般帳號不能讀寫訂單/);
+});
+
 test("import export contract keeps inventory and private data guarded", async () => {
   const contract = await read("../docs/IMPORT-EXPORT-CONTRACT.md");
   assert.match(contract, /products-v1\.csv/);
