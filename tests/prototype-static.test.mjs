@@ -4,12 +4,13 @@ import { readFile } from "node:fs/promises";
 import { Script } from "node:vm";
 
 const read = (path) => readFile(new URL(path, import.meta.url), "utf8");
-const [front, admin, schema, security, inventory] = await Promise.all([
+const [front, admin, schema, security, inventory, analytics] = await Promise.all([
   read("../index.html"),
   read("../admin.html"),
   read("../supabase/migrations/202610170001_initial_schema_draft.sql"),
   read("../supabase/migrations/202610180001_security_policy_draft.sql"),
   read("../supabase/migrations/202610180002_inventory_adjustment_function_draft.sql"),
+  read("../supabase/migrations/202610180003_analytics_events_draft.sql"),
 ]);
 
 test("HTML prototypes declare document language and mobile viewport", () => {
@@ -200,4 +201,16 @@ test("Discord analytics plan distinguishes local cart activity from submitted in
   assert.match(plan, /尚未建立.*Webhook/);
   assert.match(plan, /不連接正式資料庫/);
   assert.match(plan, /staging/);
+});
+test("analytics event ledger draft is private, idempotent, bounded, and excludes sensitive event types", () => {
+  assert.match(analytics, /create table public\.analytics_events_draft/i);
+  assert.match(analytics, /event_key uuid not null unique/);
+  assert.match(analytics, /enable row level security/i);
+  assert.match(analytics, /revoke all on table public\.analytics_events_draft from public, anon, authenticated/i);
+  assert.match(analytics, /octet_length\(metadata::text\) <= 1024/);
+  assert.match(analytics, /inquiry_submitted/);
+  assert.match(analytics, /cart_add/);
+  assert.match(analytics, /Never expose a service-role key or Discord webhook/i);
+  assert.match(analytics, /Do not store IPs, raw search text, customer contacts, cart contents, payment data/i);
+  assert.match(analytics, /Not deployed/i);
 });
