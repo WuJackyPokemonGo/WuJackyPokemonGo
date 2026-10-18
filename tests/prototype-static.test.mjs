@@ -254,6 +254,8 @@ test("SQL staging acceptance plan blocks unverified production use", async () =>
   const plan = await read("../docs/SQL-STAGING-ACCEPTANCE-PLAN.md");
   assert.match(plan, /未執行 migration/);
   assert.match(plan, /尚無「已驗收／已入庫」狀態及冪等收貨鍵/);
+  assert.match(plan, /同一 idempotency key/);
+  assert.match(plan, /併發請求中，確認最多一筆交易提交/);
   assert.match(plan, /人為讓 movement 或 audit 寫入失敗，確認整筆交易回滾/);
   assert.match(plan, /每種會改變庫存或現金帳的操作都有資料庫層冪等鍵/);
   assert.match(plan, /完成 staging 備份與實際還原演練/);
