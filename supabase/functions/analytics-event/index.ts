@@ -36,8 +36,12 @@ Deno.serve(async (request: Request) => {
   if (Deno.env.get("ANALYTICS_INGEST_ENABLED") !== "true") {
     return response(503, { error: "analytics_ingest_disabled" }, cors);
   }
-  const contentLength = Number(request.headers.get("content-length") ?? "0");
-  if (contentLength > 4096) return response(413, { error: "payload_too_large" }, cors);
+  const contentType = request.headers.get("content-type")?.split(";")[0].trim().toLowerCase();
+  if (contentType !== "application/json") return response(415, { error: "unsupported_media_type" }, cors);
+  const rawContentLength = request.headers.get("content-length");
+  if (rawContentLength !== null && /^\d+$/.test(rawContentLength) && Number(rawContentLength) > 4096) {
+    return response(413, { error: "payload_too_large" }, cors);
+  }
   const supabaseUrl = Deno.env.get("SUPABASE_URL");
   const serviceRoleKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
   if (!supabaseUrl || !serviceRoleKey) return response(503, { error: "server_not_configured" }, cors);
@@ -55,7 +59,8 @@ Deno.serve(async (request: Request) => {
       if (done) break;
       totalBytes += value.byteLength;
       if (totalBytes > 4096) {
-        await reader.cancel();
+        // Cancellation is best-effort; a failed cancel must not turn the size violation into a 400.
+        try { await reader.cancel(); } catch { /* size limit still takes precedence */ }
         return response(413, { error: "payload_too_large" }, cors);
       }
       chunks.push(value);
