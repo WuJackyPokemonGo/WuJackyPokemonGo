@@ -11,6 +11,7 @@ const [front, admin, schema, security, inventory, analytics] = await Promise.all
   read("../supabase/migrations/202610180001_security_policy_draft.sql"),
   read("../supabase/migrations/202610180002_inventory_adjustment_function_draft.sql"),
   read("../supabase/migrations/202610180003_analytics_events_draft.sql"),
+  read("../supabase/migrations/202610180004_purchase_receipt_function_draft.sql"),
 ]);
 
 test("HTML prototypes declare document language and mobile viewport", () => {
@@ -208,6 +209,24 @@ test("Discord analytics plan distinguishes local cart activity from submitted in
   assert.match(plan, /不連接正式資料庫/);
   assert.match(plan, /staging/);
 });
+test("purchase receipt draft is admin-only, atomic, and idempotent", () => {
+  assert.match(schema, /receipt_idempotency_key uuid unique/);
+  assert.match(schema, /related_purchase_batch_id uuid references public\.purchase_batches\(id\)/);
+  assert.match(purchase, /create or replace function public\.admin_receive_purchase_batch/i);
+  assert.match(purchase, /not \(select public\.is_store_admin\(\)\)/);
+  assert.match(purchase, /from public\.purchase_batches b[\s\S]*for update/i);
+  assert.match(purchase, /v_received_at is not null/);
+  assert.match(purchase, /receipt_idempotency_key = p_idempotency_key/);
+  assert.match(purchase, /movement_type, quantity_delta, idempotency_key/);
+  assert.match(purchase, /related_purchase_batch_id/);
+  assert.match(purchase, /update public\.inventory_balances/);
+  assert.match(purchase, /update public\.purchase_batches/);
+  assert.match(purchase, /insert into public\.audit_logs/);
+  assert.match(purchase, /revoke all on function public\.admin_receive_purchase_batch\(uuid, uuid\) from public/i);
+  assert.match(purchase, /grant execute on function public\.admin_receive_purchase_batch\(uuid, uuid\) to authenticated/i);
+  assert.match(purchase, /set search_path = ''/i);
+});
+
 test("analytics event ledger draft is private, idempotent, bounded, and excludes sensitive event types", () => {
   assert.match(analytics, /create table public\.analytics_events_draft/i);
   assert.match(analytics, /event_key uuid not null unique/);
