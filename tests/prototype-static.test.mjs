@@ -112,18 +112,24 @@ test("database drafts keep base tables protected and the public view ungranted",
   }
 });
 
-test("inventory adjustment draft is atomic, admin-only, and audited", () => {
+test("inventory adjustment draft is atomic, admin-only, idempotent, and audited", () => {
+  assert.match(schema, /idempotency_key uuid unique/i);
+  assert.match(schema, /quantity_before integer/);
+  assert.match(schema, /quantity_after integer/);
   assert.match(inventory, /create or replace function public\.admin_adjust_inventory/i);
+  assert.match(inventory, /p_idempotency_key uuid/);
+  assert.match(inventory, /where m\.idempotency_key = p_idempotency_key/);
+  assert.match(inventory, /idempotency key already used for a different operation/);
+  assert.match(inventory, /return query select p_product_id, v_existing_before, v_existing_after, v_existing_movement_id/);
   assert.match(inventory, /not \(select public\.is_store_admin\(\)\)/);
   assert.match(inventory, /for update/);
   assert.match(inventory, /adjustment would create negative inventory/);
   assert.match(inventory, /insert into public\.inventory_movements/);
   assert.match(inventory, /insert into public\.audit_logs/);
-  assert.match(inventory, /revoke all on function public\.admin_adjust_inventory\(uuid, integer, text\) from public/i);
-  assert.match(inventory, /grant execute on function public\.admin_adjust_inventory\(uuid, integer, text\) to authenticated/i);
+  assert.match(inventory, /revoke all on function public\.admin_adjust_inventory\(uuid, integer, text, uuid\) from public/i);
+  assert.match(inventory, /grant execute on function public\.admin_adjust_inventory\(uuid, integer, text, uuid\) to authenticated/i);
   assert.match(inventory, /set search_path = ''/i);
-  assert.match(inventory, /revoke all on function public\.admin_adjust_inventory\(uuid, integer, text\) from public/i);
-  assert.ok(!/grant execute on function public\.admin_adjust_inventory\(uuid, integer, text\) to anon/i.test(inventory));
+  assert.ok(!/grant execute on function public\.admin_adjust_inventory\(uuid, integer, text, uuid\) to anon/i.test(inventory));
   assert.match(inventory, /pg_catalog\.length\(pg_catalog\.btrim\(p_reason\)\) < 3/);
   assert.match(inventory, /for key share/);
 });
