@@ -110,8 +110,16 @@ create table public.purchase_batches (
   source_url text not null default '',
   notes_private text not null default '',
   created_by uuid references auth.users(id),
-  created_at timestamptz not null default now()
+  created_at timestamptz not null default now(),
+  received_at timestamptz,
+  received_by uuid references auth.users(id),
+  receipt_idempotency_key uuid unique,
+  check ((received_at is null and received_by is null and receipt_idempotency_key is null) or
+         (received_at is not null and received_by is not null and receipt_idempotency_key is not null))
 );
+
+alter table public.inventory_movements
+  add column related_purchase_batch_id uuid references public.purchase_batches(id) on delete restrict;
 
 create table public.orders (
   id uuid primary key default gen_random_uuid(),
