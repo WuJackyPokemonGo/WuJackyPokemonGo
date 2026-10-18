@@ -4,7 +4,7 @@ import { readFile } from "node:fs/promises";
 import { Script } from "node:vm";
 
 const read = (path) => readFile(new URL(path, import.meta.url), "utf8");
-const [front, admin, schema, security, inventory, analytics] = await Promise.all([
+const [front, admin, schema, security, inventory, analytics, purchase] = await Promise.all([
   read("../index.html"),
   read("../admin.html"),
   read("../supabase/migrations/202610170001_initial_schema_draft.sql"),
