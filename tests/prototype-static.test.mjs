@@ -4,7 +4,7 @@ import { readFile } from "node:fs/promises";
 import { Script } from "node:vm";
 
 const read = (path) => readFile(new URL(path, import.meta.url), "utf8");
-const [front, admin, schema, security, inventory, analytics, purchase, sales] = await Promise.all([
+const [front, admin, schema, security, inventory, analytics, purchase, sales, stockReturn] = await Promise.all([
   read("../index.html"),
   read("../admin.html"),
   read("../supabase/migrations/202610170001_initial_schema_draft.sql"),
@@ -13,6 +13,7 @@ const [front, admin, schema, security, inventory, analytics, purchase, sales] = 
   read("../supabase/migrations/202610180003_analytics_events_draft.sql"),
   read("../supabase/migrations/202610180004_purchase_receipt_function_draft.sql"),
   read("../supabase/migrations/202610180005_order_completion_stock_function_draft.sql"),
+  read("../supabase/migrations/202610180006_order_stock_return_function_draft.sql"),
 ]);
 
 test("HTML prototypes declare document language and mobile viewport", () => {
@@ -311,4 +312,22 @@ test("order completion transaction draft is admin-only, atomic, stock-safe, and 
   assert.match(sales, /insert into public\.audit_logs/i);
   assert.match(sales, /revoke all on function public\.admin_complete_order_and_deduct_stock\(uuid, uuid\) from public/i);
   assert.match(sales, /grant execute on function public\.admin_complete_order_and_deduct_stock\(uuid, uuid\) to authenticated/i);
+});
+
+
+test("physical stock return transaction draft separates refunds, validates quantities, and is idempotent", () => {
+  assert.match(stockReturn, /create or replace function public\.admin_record_order_stock_return/i);
+  assert.match(stockReturn, /security definer/i);
+  assert.match(stockReturn, /set search_path = ''/i);
+  assert.match(stockReturn, /public\.is_store_admin\(\)/);
+  assert.match(stockReturn, /m\.idempotency_key = p_idempotency_key/i);
+  assert.match(stockReturn, /idempotency key was already used for a different operation/i);
+  assert.match(stockReturn, /v_order_status not in \('completed', 'refund_pending', 'refunded'\)/i);
+  assert.match(stockReturn, /return quantity exceeds unreturned quantity sold on this order/i);
+  assert.match(stockReturn, /for update/i);
+  assert.match(stockReturn, /'cancel_return', p_quantity, p_idempotency_key/i);
+  assert.match(stockReturn, /update public\.inventory_balances/i);
+  assert.match(stockReturn, /insert into public\.audit_logs/i);
+  assert.match(stockReturn, /revoke all on function public\.admin_record_order_stock_return\(uuid, uuid, integer, text, uuid\) from public/i);
+  assert.match(stockReturn, /grant execute on function public\.admin_record_order_stock_return\(uuid, uuid, integer, text, uuid\) to authenticated/i);
 });
