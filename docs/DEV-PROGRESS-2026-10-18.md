@@ -119,3 +119,8 @@
 
 - 驗證結果更新：提交 `d0b76005f4caffb86406f043ae9184eb5d9a1cb0` 的 Node 靜態回歸測試與 Deno 型別檢查均已通過（CI run 39083002246）。
 - PR #1 仍是 open/draft/unmerged；開發分支比 `main` 超前 108 個提交，`main` 仍未變更。正式網站未部署，資料庫 migration 未執行，分析端點未部署且預設關閉。
+
+
+- 庫存資料庫草稿新增手動調整冪等護欄：movement 保存唯一 `idempotency_key` 與 `quantity_before/quantity_after` 快照；相同操作者、商品、增減量重送可回傳原結果，重用 key 執行不同操作則拒絕。
+- 已同步更新手動庫存函式的參數授權簽章、靜態回歸測試及 staging 併發／重送驗收案例。
+- 重要限制：此設計仍未套用資料庫，尚未在 PostgreSQL staging 實測。併發相同 key 的競爭仍需驗證唯一鍵衝突會回滾整筆交易，並在重試時取回已提交結果；採購／銷售／退款流程仍未實作冪等交易。
