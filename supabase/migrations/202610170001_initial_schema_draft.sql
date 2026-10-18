@@ -86,7 +86,13 @@ create table public.inventory_movements (
   product_id uuid not null references public.products(id) on delete restrict,
   movement_type text not null check (movement_type in ('opening','purchase_received','sale','cancel_return','manual_adjustment','damage','loss')),
   quantity_delta integer not null check (quantity_delta <> 0),
+  -- Request key and before/after snapshot make retried manual adjustments idempotent.
+  idempotency_key uuid unique,
+  quantity_before integer,
+  quantity_after integer,
   reason text not null,
+  check ((quantity_before is null and quantity_after is null) or
+         (quantity_before is not null and quantity_after is not null and quantity_before >= 0 and quantity_after >= 0)),
   related_order_id uuid,
   actor_user_id uuid references auth.users(id),
   created_at timestamptz not null default now()
