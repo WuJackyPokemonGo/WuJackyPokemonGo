@@ -4,7 +4,7 @@ import { readFile } from "node:fs/promises";
 import { Script } from "node:vm";
 
 const read = (path) => readFile(new URL(path, import.meta.url), "utf8");
-const [front, admin, schema, security, inventory, analytics, purchase] = await Promise.all([
+const [front, admin, schema, security, inventory, analytics, purchase, sales] = await Promise.all([
   read("../index.html"),
   read("../admin.html"),
   read("../supabase/migrations/202610170001_initial_schema_draft.sql"),
@@ -12,6 +12,7 @@ const [front, admin, schema, security, inventory, analytics, purchase] = await P
   read("../supabase/migrations/202610180002_inventory_adjustment_function_draft.sql"),
   read("../supabase/migrations/202610180003_analytics_events_draft.sql"),
   read("../supabase/migrations/202610180004_purchase_receipt_function_draft.sql"),
+  read("../supabase/migrations/202610180005_order_completion_stock_function_draft.sql"),
 ]);
 
 test("HTML prototypes declare document language and mobile viewport", () => {
@@ -288,4 +289,26 @@ test("analytics receiver enforces body size while streaming", async () => {
   assert.match(fn, /totalBytes > 4096/);
   assert.match(fn, /await reader\.cancel\(\)/);
   assert.ok(!fn.includes("await request.text()"), "must not buffer an unbounded body before enforcing the limit");
+});
+
+
+test("order completion transaction draft is admin-only, atomic, stock-safe, and idempotent", () => {
+  assert.match(sales, /create or replace function public\.admin_complete_order_and_deduct_stock/i);
+  assert.match(sales, /security definer/i);
+  assert.match(sales, /set search_path = ''/i);
+  assert.match(sales, /public\.is_store_admin\(\)/);
+  assert.match(sales, /where o\.id = p_order_id\s+for update/i);
+  assert.match(sales, /fulfillment_idempotency_key uuid unique/i);
+  assert.match(sales, /v_existing_key is distinct from p_idempotency_key/i);
+  assert.match(sales, /v_status <> 'arrived_for_check'/i);
+  assert.match(sales, /i\.sale_unit_price_twd is null/i);
+  assert.match(sales, /i\.unit_cost_snapshot_twd is null/i);
+  assert.match(sales, /order by b\.product_id\s+for update of b/i);
+  assert.match(sales, /insufficient stock for product/i);
+  assert.match(sales, /'sale', -v_item\.quantity_needed, v_before, v_after/i);
+  assert.match(sales, /related_order_id, actor_user_id/i);
+  assert.match(sales, /update public\.orders[\s\S]*?status = 'completed'/i);
+  assert.match(sales, /insert into public\.audit_logs/i);
+  assert.match(sales, /revoke all on function public\.admin_complete_order_and_deduct_stock\(uuid, uuid\) from public/i);
+  assert.match(sales, /grant execute on function public\.admin_complete_order_and_deduct_stock\(uuid, uuid\) to authenticated/i);
 });
