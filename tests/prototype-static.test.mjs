@@ -222,6 +222,9 @@ test("analytics Edge Function draft is disabled by default and allowlists inputs
   assert.match(fn, /payload\.event_key/);
   assert.match(fn, /payload\.result_count/);
   assert.match(fn, /payload_too_large/);
+  assert.match(fn, /unsupported_media_type/);
+  assert.match(fn, /contentType !== "application\/json"/);
+  assert.match(fn, /try \{ await reader\.cancel\(\); \} catch/);
   assert.match(fn, /ignore unknown properties/);
   assert.match(fn, /SUPABASE_SERVICE_ROLE_KEY/);
   assert.match(fn, /analytics_events_draft/);
