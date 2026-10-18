@@ -116,3 +116,6 @@
 - 分析接收器再加一道輸入護欄：只接受 `application/json`（可帶 charset），其他 Content-Type 回應 415；Content-Length 只有在格式為非負整數時才用來提前拒絕，最終仍由串流 byte cap 強制限制。
 - 超過 4096 bytes 時取消串流改為 best-effort；即使取消本身失敗，也仍回應 413，不會錯誤降級成 400。
 - 已新增靜態回歸測試覆蓋 Content-Type 與取消失敗分支；待最新 CI 驗證。分析接收器仍未部署、預設關閉，持久化速率限制與資料保留清理尚未完成。
+
+- 驗證結果更新：提交 `d0b76005f4caffb86406f043ae9184eb5d9a1cb0` 的 Node 靜態回歸測試與 Deno 型別檢查均已通過（CI run 39083002246）。
+- PR #1 仍是 open/draft/unmerged；開發分支比 `main` 超前 108 個提交，`main` 仍未變更。正式網站未部署，資料庫 migration 未執行，分析端點未部署且預設關閉。
