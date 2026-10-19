@@ -56,3 +56,13 @@
 - 分頁關閉可能清除 sessionStorage，若上次結果仍不明，必須先核對異動紀錄再建立新異動。
 
 下一個需要使用者操作的步驟：在測試專案 Authentication 建立自己掌握密碼的 Auth 使用者，核對身分後才授予管理員。不可索取密碼或把目前唯一出現的帳號直接當成擁有人。
+
+
+## 管理員初始化與私人測試頁（同日後續）
+
+- 擁有人自行建立 Auth 使用者並提供 UID 截圖；以該精確 UID 查證已確認信箱、帳號有效後，建立 admin_profiles 與一筆可信任操作者的授權稽核紀錄。未讀取、儲存或要求密碼。
+- 切換為 authenticated 並模擬該使用者 JWT 的資料庫檢查，store_admin_status() 回傳 true。這不代表已完成真實密碼登入測試。
+- 已建立與原賣場分開的 owner-private Sites 測試頁：https://wu-jacky-admin-staging.gentleray7.chatgpt.site
+- 來源採本分支 66ad24c 的建置輸出，移除指向本機原型的連結；部署原始碼提交 d0368b207fa1479480141992c66e17230fd8a98f，部署狀態 succeeded。只連接 staging 資料庫。
+- 原正式網站、main 與暫停中的原 Supabase 專案均未修改。此私人測試頁也未開放給其他人。
+- 等擁有人在手機實際登入與操作後，才能標記 iPhone／真實 Auth 驗收完成。

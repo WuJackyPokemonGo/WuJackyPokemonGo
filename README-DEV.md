@@ -10,11 +10,11 @@
 
 ## Current status — 2026-10-19
 
-The isolated Supabase project `wu-jacky-pokemon-staging` now has a reviewed, applied staging baseline: 13 RLS-enabled tables, admin membership checks, and atomic manual stock adjustment / purchase receipt / order completion / physical stock return functions. Rollback-only SQL acceptance tests pass. No real Auth users, products, orders or ledger records were created. Production and `main` are unchanged.
+The isolated Supabase project `wu-jacky-pokemon-staging` now has a reviewed, applied staging baseline: 13 RLS-enabled tables, admin membership checks, and atomic manual stock adjustment / purchase receipt / order completion / physical stock return functions. Rollback-only SQL acceptance tests pass. Database acceptance tests created no persistent fixtures. The owner subsequently created a real staging Auth account and its admin membership was provisioned by exact owner-provided UID. No real products or orders have been entered. Production and `main` are unchanged.
 
 `index.html` remains a demo catalog. `admin.html` remains the original browser-local prototype. Neither silently connects to cloud data or imports local data.
 
-`cloud-admin.html` is a separate staging admin entry point with password login, server-checked admin authorization, cloud product editing, optimistic concurrency, and stock adjustment through RPC. It is source-complete and builds, but has not been deployed or tested on iPhone. No real administrator has been enrolled yet.
+`cloud-admin.html` is a separate staging admin entry point with password login, server-checked admin authorization, cloud product editing, optimistic concurrency, and stock adjustment through RPC. It builds and is deployed as a separate owner-private test site at https://wu-jacky-admin-staging.gentleray7.chatgpt.site . The owner administrator has been enrolled and the database membership check passes; real browser login and iPhone interaction still need acceptance testing.
 
 ## Build the cloud admin
 
@@ -54,10 +54,9 @@ Not yet verified: real-user Auth login, iPhone layout/clipboard/session handling
 
 ## Next steps
 
-1. Owner creates a Supabase Auth user in the staging project's Authentication area, setting the password privately. Supabase dashboard login and application Auth accounts are separate.
-2. Verify the intended user's UUID/email, then grant trusted admin membership. Do not promote an arbitrary newly created user.
-3. After owner approves a separate test preview, deploy the built staging admin and run real-device login/product/stock tests.
-4. Complete order/purchase entry and lifecycle UI, image storage policies, safe public catalog API, tags/cloud CSV, and backup/restore before production review.
+1. Owner opens the private test site and signs in with the newly created staging Auth account. The account password stays with the owner.
+2. Run real-device login, product editing, stock adjustment/retry and logout acceptance tests.
+3. Complete order/purchase entry and lifecycle UI, image storage policies, safe public catalog API, tags/cloud CSV, and backup/restore before production review.
 
 ## Business workflow
 
