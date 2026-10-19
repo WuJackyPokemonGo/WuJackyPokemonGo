@@ -8,46 +8,57 @@
 - Do not merge to `main` or publish until owner reviews and explicitly approves.
 - Product entries in `index.html` are demo placeholders, not real stock or offers.
 
-## Current prototype
-- Responsive mobile-first catalog layout
-- Search by Chinese/English name, aliases, and displayed Pokédex number
-- Multi-tag intersection filters and price sorting
-- Product details, sold-out and low-stock labels
-- Local inquiry list with quantity changes and copyable inquiry text
-- No checkout, payment processing, inventory reservation, customer account, or backend integration
+## Current status — 2026-10-19
 
-## Admin prototype
-`admin.html` is a local-browser-only prototype for product CRUD, tags, stock movements, and CSV exchange. It has no authentication or cloud sync; do not use it for real customer or accounting data. See `docs/TEST-AND-RELEASE-PLAN.md` and `docs/DATA-CONTRACT.md` before any backend integration.
+The isolated Supabase project `wu-jacky-pokemon-staging` now has a reviewed, applied staging baseline: 13 RLS-enabled tables, admin membership checks, and atomic manual stock adjustment / purchase receipt / order completion / physical stock return functions. Rollback-only SQL acceptance tests pass. No real Auth users, products, orders or ledger records were created. Production and `main` are unchanged.
 
-## Database schema draft
-`supabase/migrations/202610170001_initial_schema_draft.sql` is a **draft only**. It has not been applied to any Supabase project. It deliberately enables RLS and adds no public read/write policies. The frontend must not be connected to these tables until the following are designed, reviewed, and tested:
-1. Trusted admin authorization and least-privilege RLS policies.
-2. A public catalog view/API that excludes exact stock, supplier details, costs, customer data, and finance.
-3. Transaction-safe inventory movement and order-state functions with audit logging.
-4. Storage policies for product images and a tested backup/restore procedure.
-5. A separate staging project and test data.
+`index.html` remains a demo catalog. `admin.html` remains the original browser-local prototype. Neither silently connects to cloud data or imports local data.
 
-## Security policy draft
-`supabase/migrations/202610180001_security_policy_draft.sql` is a follow-up draft only. It adds an admin-profile-based authorization helper, admin-only base-table policies, and an ungranted public catalog view. It has **not** been applied or tested on a live/staging database. Review SQL privileges, view RLS semantics, seed the first trusted admin securely, and test anonymous/authenticated roles before considering it.
+`cloud-admin.html` is a separate staging admin entry point with password login, server-checked admin authorization, cloud product editing, optimistic concurrency, and stock adjustment through RPC. It is source-complete and builds, but has not been deployed or tested on iPhone. No real administrator has been enrolled yet.
 
-## Backup and restore plan
-`docs/BACKUP-RESTORE-PLAN.md` defines the backup scope, restore rehearsal, and go-live checks. No backup provider, schedule, or real restore has been configured or tested yet. CSV exports are supplemental and are not a full backup.
+## Build the cloud admin
 
-## Frontend/admin data map
-`docs/FRONTEND-ADMIN-DATA-MAP.md` defines stable SKU/UUID mapping, field normalization, image metadata and safety, public-field allowlists, and staging sync checks. It is a design contract, not implemented cloud sync.
+Requires Node.js 22+:
 
-## Order lifecycle and inventory rules
-`docs/ORDER-LIFECYCLE-INVENTORY-RULES.md` defines allowed order-state transitions, stock effects, idempotency, snapshots, refunds, and staging checks. These are design requirements; transaction functions are not implemented for the complete order flow.
+```sh
+npm ci --ignore-scripts --no-audit --no-fund
+npm test
+npm run build:admin
+```
 
-## Import and export contract
-`docs/IMPORT-EXPORT-CONTRACT.md` specifies versioned CSV contracts and safeguards for products, inventory movements, purchasing, orders, finance, and audit data. These are design requirements; most are not implemented. CSV is not a complete backup.
+Serve the repository using an approved HTTPS preview before opening `cloud-admin.html`. The bundle at `assets/cloud-admin.bundle.js` is a generated build output, intentionally ignored by Git. A deployment must include it. CI builds it but does not publish anything.
 
-## Next implementation gates
-1. Confirm the intended Supabase project/account and free-tier limits before creating resources.
-2. Complete security review of schema, RLS, storage, and server-side operations.
-3. Build admin CRUD screens only after safe backend authorization is available.
-4. Test search/cart/inquiry behavior on real mobile browsers.
-5. Review the complete diff and get explicit owner approval before production deployment.
+`staging-config.mjs` contains only the staging project URL and publishable browser key; it is not a secret. Never put a service-role key, database password, Auth password or webhook in client source. Supabase sessions are kept in memory; closing/reloading the page requires login again. A pending stock operation is journaled in this tab's sessionStorage by authenticated user ID so retries after a reload reuse the original idempotency key. Closing the tab can remove that journal; unresolved operations must be checked against the ledger before any new stock action.
+
+## Applied staging SQL vs historical drafts
+
+Applied sources, in order:
+
+1. `supabase/staging/reviewed-baseline.sql` — migration `20261019091155_reviewed_staging_baseline`.
+2. `supabase/staging/advisor-hardening.sql` — migration `20261019091513_staging_advisor_hardening`.
+3. `supabase/staging/admin-session-check.sql` — migration `20261019091654_staging_admin_session_check`.
+
+The original draft sequence in `supabase/migrations/` has **not** been applied as standalone migrations. It is historical input, superseded for staging by the reviewed bundle. Do not run it on top of the new baseline: object definitions overlap. Analytics migrations and Edge Functions remain unapplied/disabled.
+
+The public catalog view has no client grants. Inventory, receipts, order state/items, finance and audit records cannot be directly rewritten by authenticated clients. Privileged implementations live in `private`; public RPC facades are SECURITY INVOKER. Admin membership is never derived from editable user metadata. No public signup/admin-promotion flow is provided by the UI.
+
+## Verification
+
+- `npm test`: source and executable behavior tests; no live database credentials needed.
+- `npm run build:admin`: bundles pinned Supabase SDK and app sources.
+- `tests/staging-database-acceptance.sql`: run ONLY on isolated staging; test fixtures and synthetic Auth users are wrapped in BEGIN/ROLLBACK. It covers anonymous/non-admin denial, trusted admin operations, idempotency, invalid inputs, all-or-nothing failure, and stock-ledger reconciliation.
+- Actual anonymous Data API calls were denied for products, balances, orders and the closed catalog view.
+- Security advisors: no findings after hardening. Performance advisors: only INFO for new/unused indexes.
+
+Not yet verified: real-user Auth login, iPhone layout/clipboard/session handling, true concurrent multi-connection inventory requests, forced audit-write failure, backup/restore. No claim of production readiness is made.
+
+## Next steps
+
+1. Owner creates a Supabase Auth user in the staging project's Authentication area, setting the password privately. Supabase dashboard login and application Auth accounts are separate.
+2. Verify the intended user's UUID/email, then grant trusted admin membership. Do not promote an arbitrary newly created user.
+3. After owner approves a separate test preview, deploy the built staging admin and run real-device login/product/stock tests.
+4. Complete order/purchase entry and lifecycle UI, image storage policies, safe public catalog API, tags/cloud CSV, and backup/restore before production review.
 
 ## Business workflow
-Inquiry is not an accepted order. The seller must manually confirm availability, supplier fulfillment, final price, delivery, and payment before treating an order as confirmed. No automatic payments or automatic supplier orders are implemented.
+
+Inquiry is not an accepted order. The seller manually confirms availability, supplier fulfillment, final price, delivery and payment. No automatic payments, supplier purchases, or financial decisions are implemented. See `docs/DATA-CONTRACT.md` and the historical plans for the remaining requirements.

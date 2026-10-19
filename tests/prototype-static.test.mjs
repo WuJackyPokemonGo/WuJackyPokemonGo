@@ -196,7 +196,7 @@ test("backup and restore plan states unverified safeguards clearly", async () =>
 test("current release safeguards remain documented", async () => {
   const readme = await read("../README-DEV.md");
   assert.match(readme, /Do not merge to `main` or publish until owner reviews and explicitly approves/);
-  assert.ok(readme.includes("has **not** been applied"), "documents that migration is not applied");
+  assert.ok(readme.includes("has **not** been applied"), "distinguishes historical draft migrations from the applied staging bundle");
 });
 test("Discord analytics plan distinguishes local cart activity from submitted inquiries and protects secrets", async () => {
   const plan = await read("../docs/DISCORD-ANALYTICS-PLAN.md");
