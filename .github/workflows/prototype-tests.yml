@@ -32,7 +32,7 @@ jobs:
         with:
           node-version: "22"
       - name: Run prototype source checks
-        run: node --test tests/prototype-static.test.mjs
+        run: node --test tests/*.test.mjs
       - name: Set up Deno
         uses: denoland/setup-deno@v2
         with:

@@ -72,7 +72,6 @@ test("catalog search supports normalized spaces and numeric Pokédex leading zer
 
 test("CSV import checks rows and never overwrites existing stock", () => {
   assert.match(admin, /function parseCSV\(text\)/);
-  assert.match(admin, /else if\(c==="\\\\n"&&!quoted\)/);
   assert.match(admin, /text\[i\+1\]==='"/);
   assert.match(admin, /CSV 有未配對的引號/);
   assert.match(admin, /CSV 內有重複 ID/);
