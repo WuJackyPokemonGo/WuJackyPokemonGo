@@ -1,0 +1,53 @@
+name: Prototype static checks
+
+on:
+  push:
+    branches:
+      - test/full-build-v1
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "index.html"
+      - "admin.html"
+      - "cloud-admin*"
+      - "catalog-service.mjs"
+      - "image-upload.mjs"
+      - "operations-*.mjs"
+      - "staging-config.mjs"
+      - "package.json"
+      - "package-lock.json"
+      - "supabase/staging/**"
+      - "README-DEV.md"
+      - "docs/**"
+      - "supabase/migrations/**"
+      - "supabase/functions/**"
+      - "tests/**"
+      - ".github/workflows/prototype-tests.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install pinned dependencies
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Run prototype source checks
+        run: node --test tests/*.test.mjs
+      - name: Build staging admin
+        run: npm run build:admin
+      - name: Set up Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - name: Type-check analytics Edge Function draft
+        run: deno check supabase/functions/analytics-event/index.ts
