@@ -30,3 +30,10 @@
 2. 完成採購與訂單輸入 UI（目前只有已驗收的庫存生命週期 RPC，不能誤稱完整後台完成）。
 3. 雲端 CSV 差異預覽／原子匯入、完整備份與還原、更多真實裝置及並行測試。
 4. 完成商品資料與媒體公開方式後，另行做匿名目錄與正式 GitHub Pages 串接。本輪不合併 main、不變更正式站或暫停中的正式資料庫。
+
+## 已保存與部署
+
+- GitHub 功能提交：`fa022f35efd0a53fb8434b77cedf6fee5b79adfd`，分支 `test/full-build-v1`。
+- 私人 Sites 建置來源提交：`81429b4f656dc5bb8b09348dbaf24b3ffbac292f`。
+- 部署 `appgdep_6ad9a19bd4408191b8929e1200c5ed2c` 回傳 succeeded；網址：https://wu-jacky-admin-staging.gentleray7.chatgpt.site 。擁有人限定存取維持不變。
+- 真實匿名 Data API 驗證：products、inventory_balances、catalog_preview 皆拒絕（42501）；匿名 Storage signed URL 請求亦遭拒絕。
