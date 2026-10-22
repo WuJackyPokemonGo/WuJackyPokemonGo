@@ -34,7 +34,7 @@ begin
   insert into public.products(sku,name_zh) values(btrim(p_values->>'sku'),btrim(p_values->>'name_zh')) returning id into v_id;
  else
   select to_jsonb(p) into v_before from public.products p where id=p_id for update;
-  if not found or (v_before->>'updated_at')::timestamptz is distinct from p_expected_updated_at then raise serialization_failure using message='Product modified on another device'; end if;
+  if not found or (v_before->>'updated_at')::timestamptz is distinct from p_expected_updated_at then raise sqlstate 'PT409' using message='Product modified on another device'; end if;
   v_id:=p_id;
  end if;
  update public.products set sku=btrim(p_values->>'sku'), name_zh=btrim(p_values->>'name_zh'),name_en=coalesce(p_values->>'name_en',''),

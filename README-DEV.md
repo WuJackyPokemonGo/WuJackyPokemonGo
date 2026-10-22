@@ -65,3 +65,9 @@ Inquiry is not an accepted order. The seller manually confirms availability, sup
 ## 2026-10-22 update
 
 See `docs/DEV-PROGRESS-2026-10-22.md` for the current state. The cloud admin now includes atomic product/category editing, private image uploads and approval/sorting, stock history, catalog preview/inquiry, search/pagination, and a limited product JSON export. The original demo frontend and browser-local CSV prototype are unchanged. `supabase/staging/catalog-management.sql` has been applied through execute_sql (no migration history entry); do not reapply it. Real-device acceptance, order/purchase input screens, cloud CSV, full backup/restore and anonymous production catalog remain incomplete.
+
+## 2026-10-22 continuation: purchases and orders
+
+`operations-service.mjs` and `operations-ui.mjs` add admin-only purchase entry/receipt, editable prepayment orders, status transitions with actual payment/refund references and Taiwan timestamps, completion/stock deduction, and separate physical stock return. Atomic operations use an inaccessible private idempotency ledger and a per-user sessionStorage retry journal. This records external transactions; it never transfers money. `supabase/staging/order-purchase-management.sql` and `catalog-conflict-response.sql` are applied in staging via execute_sql, without migration history entries. Do not reapply schema files. Catalog edit conflicts now return PT409 rather than 40001, avoiding documented PostgREST 14 retry behavior.
+
+Offline browser fixtures live under tests/fixtures and must NEVER be included in the published bundle. Build the real admin with npm run build:admin (without an SDK alias). The user reported trying the preceding version; this is not a claim that every iPhone acceptance case has passed.

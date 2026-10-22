@@ -23,7 +23,7 @@ begin
  assert(select public_price_twd from public.catalog_preview where id=pid)=0;
  assert not(to_jsonb((select r from public.catalog_preview r where id=pid)) ? 'inventory_balances');
  assert not(to_jsonb((select r from public.catalog_preview r where id=pid)) ? 'source_reference');
- begin perform public.admin_save_catalog_product(pid,version-interval '1 second',payload,array[c]);raise exception 'stale update allowed';exception when serialization_failure then null;end;
+ begin perform public.admin_save_catalog_product(pid,version-interval '1 second',payload,array[c]);raise exception 'stale update allowed';exception when sqlstate 'PT409' then null;end;
  begin perform public.admin_save_catalog_product(pid,version,payload||'{"name_zh":"不應留下"}',array[gen_random_uuid()]);raise exception 'unknown category allowed';exception when foreign_key_violation then null;end;
  assert(select name_zh from public.products where id=pid)='回滾測試';
  insert into storage.objects(bucket_id,name) values('product-images',pid||'/fixture-original.png');

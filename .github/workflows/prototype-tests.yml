@@ -13,6 +13,7 @@ on:
       - "cloud-admin*"
       - "catalog-service.mjs"
       - "image-upload.mjs"
+      - "operations-*.mjs"
       - "staging-config.mjs"
       - "package.json"
       - "package-lock.json"
