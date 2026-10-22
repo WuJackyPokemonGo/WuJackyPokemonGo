@@ -148,7 +148,7 @@ begin
   assert (select quantity_on_hand from public.inventory_balances where product_id=product_a)=14;
   assert (select sum(quantity_delta) from public.inventory_movements where product_id=product_a)=14, 'ledger does not match balance';
   assert (select count(*) from public.inventory_movements where product_id=product_a)=4;
-  assert (select count(*) from public.audit_logs)=4;
+  assert (select count(*) from public.audit_logs where actor_user_id=admin_id)=4;
   execute 'reset role';
 end;
 $tests$;

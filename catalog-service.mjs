@@ -1,0 +1,39 @@
+import {productPayload} from './cloud-admin-service.mjs';
+export const BUCKET='product-images';
+const checked=({data,error})=>{if(error)throw error;return data};
+export function catalogPayload(values){
+ const base=productPayload(values);
+ const integer=(name,def,min=0)=>{const raw=String(values[name]??'').trim();if(raw==='')return def;if(!/^\d+$/.test(raw)||!Number.isSafeInteger(Number(raw))||Number(raw)<min||Number(raw)>2147483647)throw Error('圖鑑編號、排序與門檻請填有效整數。');return Number(raw)};
+ const aliases=Array.isArray(values.aliases)?values.aliases:String(values.aliases??'').split(/[,，\n]/);
+ const clean=[...new Set(aliases.map(x=>String(x).trim()).filter(Boolean))];if(clean.length>30||clean.some(x=>x.length>100))throw Error('搜尋別名最多 30 個，每個最多 100 字。');
+ const first=String(values.first_stocked_at??'').trim();if(first&&!/^\d{4}-\d{2}-\d{2}$/.test(first))throw Error('請選擇有效的首次入庫日期。');
+ if(first&&(!Number.isFinite(Date.parse(first))||new Date(first).toISOString().slice(0,10)!==first))throw Error('請選擇有效的首次入庫日期。');
+ return {...base,aliases:clean,pokedex_number:integer('pokedex_number',null,1),manual_sort_order:integer('manual_sort_order',0),low_stock_threshold:integer('low_stock_threshold',3),first_stocked_at:first?first+'T00:00:00+08:00':null};
+}
+export function createCatalogService(client){
+ const media=()=>client.storage.from(BUCKET);
+ async function pageAll(table,selection,order='id'){
+  const rows=[];for(let offset=0;;offset+=200){const batch=checked(await client.from(table).select(selection).order(order).order('id').range(offset,offset+199));rows.push(...batch);if(batch.length<200)break;if(rows.length>=20000)throw Error('資料超過本次載入上限，請縮小範圍。')}return rows;
+ }
+ return {
+  list:()=>pageAll('products','id,sku,name_zh,name_en,aliases,pokedex_number,description_public,public_price_twd,price_is_inquiry,publication_status,supply_status,manual_sort_order,low_stock_threshold,first_stocked_at,updated_at,inventory_balances(quantity_on_hand),category_assignments(category_id),product_images(id,storage_path,thumbnail_path,alt_text,sort_order,is_approved)','manual_sort_order'),
+  categories:()=>pageAll('product_categories','id,name,sort_order','sort_order'),
+  async addCategory(name){name=name.trim();if(!name||name.length>60)throw Error('分類名稱請填 1～60 個字。');return checked(await client.from('product_categories').insert({name}).select('id,name,sort_order').single())},
+  async save(values,existing,ids){return checked(await client.rpc('admin_save_catalog_product',{p_id:existing?.id??null,p_expected_updated_at:existing?.updated_at??null,p_values:catalogPayload(values),p_category_ids:[...new Set(ids)]}))},
+  async history(productId){return checked(await client.from('inventory_movements').select('id,quantity_delta,quantity_before,quantity_after,reason,created_at').eq('product_id',productId).order('created_at',{ascending:false}).limit(50))},
+  async preview(){return pageAll('catalog_preview','*','manual_sort_order')},
+  async signed(path){return checked(await media().createSignedUrl(path,300)).signedUrl},
+  async addImage(productId,{original,thumbnail,extension,alt}){
+   const id=crypto.randomUUID(),path=`${productId}/${id}-original.${extension}`,thumb=`${productId}/${id}-thumb.webp`;
+   checked(await media().upload(path,original,{contentType:original.type,upsert:false}));
+   checked(await media().upload(thumb,thumbnail,{contentType:'image/webp',upsert:false}));
+   // Retain uploaded objects if metadata write fails: recovery is safer than deleting an uncertain result.
+   return checked(await client.from('product_images').insert({id,product_id:productId,storage_path:path,thumbnail_path:thumb,alt_text:alt,sort_order:0,is_approved:false}).select('id').single());
+  },
+  async updateImage(id,values){if(!Number.isInteger(values.sort_order)||values.sort_order<0||values.sort_order>2147483647||String(values.alt_text).length>200)throw Error('圖片順序或說明無效。');return checked(await client.from('product_images').update({sort_order:values.sort_order,alt_text:values.alt_text,is_approved:Boolean(values.is_approved)}).eq('id',id).select('id').single())}
+ };
+}
+export function monthKeyTaipei(value){const d=new Date(value);if(!Number.isFinite(d.getTime()))return '';return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit'}).format(d)}
+export function publicProduct(row){
+ return {id:row.id,sku:row.sku,name:row.name_zh,name_en:row.name_en,aliases:row.aliases??[],dex:row.pokedex_number,tags:[...(row.tags??[]),...(row.first_stocked_at&&monthKeyTaipei(row.first_stocked_at)===monthKeyTaipei(new Date())?['本月新庫存']:[])],description:row.description_public,price:row.price_is_inquiry?null:row.public_price_twd,status:row.supply_status,images:row.images??[]};
+}

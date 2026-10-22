@@ -11,6 +11,8 @@ on:
       - "index.html"
       - "admin.html"
       - "cloud-admin*"
+      - "catalog-service.mjs"
+      - "image-upload.mjs"
       - "staging-config.mjs"
       - "package.json"
       - "package-lock.json"

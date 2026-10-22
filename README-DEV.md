@@ -61,3 +61,7 @@ Not yet verified: real-user Auth login, iPhone layout/clipboard/session handling
 ## Business workflow
 
 Inquiry is not an accepted order. The seller manually confirms availability, supplier fulfillment, final price, delivery and payment. No automatic payments, supplier purchases, or financial decisions are implemented. See `docs/DATA-CONTRACT.md` and the historical plans for the remaining requirements.
+
+## 2026-10-22 update
+
+See `docs/DEV-PROGRESS-2026-10-22.md` for the current state. The cloud admin now includes atomic product/category editing, private image uploads and approval/sorting, stock history, catalog preview/inquiry, search/pagination, and a limited product JSON export. The original demo frontend and browser-local CSV prototype are unchanged. `supabase/staging/catalog-management.sql` has been applied through execute_sql (no migration history entry); do not reapply it. Real-device acceptance, order/purchase input screens, cloud CSV, full backup/restore and anonymous production catalog remain incomplete.
