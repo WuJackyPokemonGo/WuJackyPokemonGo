@@ -81,3 +81,7 @@ production 下 SQL 已經套用：operations-v1 → finance → reporting → an
 catalog-service、私人與公開縮圖路徑、公開圖片 URL 白名單、Storage MIME 及管理員限定發布政策都支援兩種格式。原圖 bucket 維持 private，僅 UUID/UUID-thumb.webp 或 .png 可公開。png-thumbnail-fallback.sql 已套用，不新增資料表／欄位，不影響既有備份或 WebP 圖片。
 
 100 項 Node 測試通過，包含 Safari 式 PNG 回退、null／拋錯備援、真實 PNG 簽名、2 MB 縮小、原圖位元組不變、PNG 私人上傳與管理員公開。tests/png-thumbnail-acceptance.sql 回滾驗收通過：管理員可發布兩種縮圖，原圖路徑及非管理員被拒絕。擁有人重新整理正式後台、選取原圖片後驗收真實手機行為；不宣稱已在擁有人 iPhone 實機操作。版本查詢為 20261022-image-fix。
+
+## LINE 聯絡入口停用修正
+
+2026-10-22 擁有人指出誤用他人 LINE 連結。所有公開 LINE 入口（頁首、頁尾、詢價清單及空目錄）已撤除錯誤目的地，顯示聯絡資訊更新中。contact.mjs 為唯一設定來源，LINE_CONTACT_URL 留空，待擁有人明確提供正確連結後才啟用。不得從抽獎範例、第三方網址或同名帳號推定歸屬。詢價清單仍可複製保存。
