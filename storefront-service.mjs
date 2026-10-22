@@ -1,5 +1,20 @@
 import {STAGING_URL,STAGING_PUBLISHABLE_KEY} from './staging-config.mjs';
 export const PUBLIC_STORAGE=STAGING_URL+'/storage/v1/object/public/storefront-thumbnails/';
+export function publicStockFields(supply,quantity,threshold=3){
+ const known=Number.isInteger(quantity)&&quantity>=0&&quantity<=2147483647;
+ const stock_quantity=known&&['available','low_stock','sold_out'].includes(supply)?quantity:null;
+ const is_low_stock=stock_quantity>0&&['available','low_stock'].includes(supply)&&(supply==='low_stock'||stock_quantity<=threshold);
+ const status=stock_quantity===0&&['available','low_stock'].includes(supply)?'sold_out':is_low_stock?'low_stock':supply;
+ return {status,stock_quantity,is_low_stock};
+}
+export function stockLabel(p){
+ if(p.status==='coming_soon')return {text:'即將推出',tone:'pending'};
+ if(p.status==='inquiry_only')return {text:'庫存待確認',tone:'pending'};
+ if(p.status==='sold_out'||p.stock_quantity===0)return {text:'已售罄',tone:'sold'};
+ const known=Number.isInteger(p.stock_quantity)&&p.stock_quantity>0&&p.stock_quantity<=2147483647;
+ if(!known)return {text:p.status==='low_stock'?'庫存偏低':'庫存待確認',tone:p.status==='low_stock'?'low':'pending'};
+ return p.is_low_stock||p.status==='low_stock'?{text:`剩餘 ${p.stock_quantity.toLocaleString('zh-TW')} 帳`,tone:'low'}:{text:`庫存：${p.stock_quantity.toLocaleString('zh-TW')} 帳`,tone:'normal'};
+}
 export function imageURL(path){if(!/^[0-9a-f-]{36}\/[0-9a-f-]{36}-thumb\.webp$/i.test(String(path)))return '';return PUBLIC_STORAGE+String(path).split('/').map(encodeURIComponent).join('/')}
 export function monthTaipei(value){const d=new Date(value);if(!Number.isFinite(d.getTime()))return '';const parts=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit'}).formatToParts(d);return parts.find(x=>x.type==='year').value+'-'+parts.find(x=>x.type==='month').value}
 export function tagsFor(p){const tags=(p.tags??[]).filter(t=>t!=='本月新庫存');return p.first_stocked_at&&monthTaipei(p.first_stocked_at)===monthTaipei(new Date())?[...tags,'本月新庫存']:tags}

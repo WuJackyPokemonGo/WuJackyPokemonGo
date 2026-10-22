@@ -19,7 +19,7 @@ GitHub Pages 從 main 根目錄提供靜態檔案，assets/*.bundle.js 必須與
 
 products.is_live 預設 false。公開目錄必須同時 is_live=true 和 publication_status=published，避免先前測試商品自動公開。管理員從正式後台編輯商品，勾選「正式賣場顯示」並設定上架即可公開。
 
-公開 API 只有 storefront_catalog，回傳白名單商品欄位，不回傳精確庫存、成本、來源、客戶、訂單、管理員或稽核資料。匿名仍不能查基礎表或呼叫管理 RPC。
+公開 API 只有 storefront_catalog，回傳白名單商品欄位，依擁有人要求顯示已確認的庫存數量與低庫存提示；不回傳庫存異動明細、成本、來源、客戶、訂單、管理員或稽核資料。匿名仍不能查基礎表或呼叫管理 RPC。
 
 原始商品圖片保留於 private product-images。只有管理員明確選用並公開的 WebP 縮圖會複製到 public storefront-thumbnails；原圖不會上傳到 public bucket。已公開圖片的網址可能被分享或快取，取消顯示商品不會保證已公開縮圖立即失效。
 
@@ -56,6 +56,12 @@ production 下 SQL 已經套用：operations-v1 → finance → reporting → an
 - 真實 iOS 登入、檔案 App 下載與選檔仍需擁有人在自己的手機驗收；沒有使用或重設擁有人密碼。
 
 安全掃描已修正新公開 SECURITY DEFINER 包裝與未覆蓋外鍵索引。私人工作表啟用 RLS 且不給一般使用者任何 policy，刻意採取全部拒絕。剩餘供應商提示為 pg_net 不可搬移的 extension schema 中繼資料，以及既有未開啟的外洩密碼檢查；沒有為移除提示而降低權限或破壞系統擴充。
+
+## 手機驗收補正：公開庫存及橘底提示
+
+2026-10-22 擁有人指出原規劃的庫存數字及橘底提示漏接，已補 public-stock-display.sql、顧客商品卡／詳情與後台預覽。一般顯示「庫存：77 帳」，低庫存顯示橘底「剩餘 2 帳」，售罄顯示「已售罄」。沿用每件商品 low_stock_threshold（資料庫預設 3，可個別修改），不因低庫存改變排序。未知庫存不填零，待確認／即將推出維持其狀態。
+
+本次只新增公開白名單 stock_quantity 與 is_low_stock，不開放庫存基礎表、異動、成本或供應商。93 項 Node 測試與擴充的公開資料庫回滾驗收通過。本輪沒有新增資料表或欄位，因此不影響既有備份格式。public-stock-display.sql 於先前 SQL 後套用。
 
 ## 擁有人剩餘操作
 

@@ -11,3 +11,7 @@ store-maintenance Edge Function 版本 1 已 ACTIVE；自帶內部 token 驗證�
 不要再將部分收款、多次退款、加權成本、財務報表、Excel、分析、自動含圖備份或排程列為未開發。仍需擁有人填實際商品／費率、選擇是否提供 Discord 網址，並驗收自己的手機。這些不應由工程測試資料代填。
 
 部署後應確認 GitHub Store checks 與 Pages 都針對本次 commit 成功，正式 HTML 的 script query 為 20261022-complete，並比對 bundle SHA-256。
+
+## 後續手機驗收補正
+
+擁有人指出庫存數字／橘底低庫存提示遺漏，已補正商品卡、詳情與管理預覽；93 項程式測試及真實資料庫公開庫存／門檻／售罄／私密欄位回滾驗收通過。顧客明確顯示經確認庫存，基礎 ledger 仍私密。排序不變，預設門檻沿用資料庫 3，個別商品可改；未知數量不編造。以最新 20261022-stock HTML 與 GitHub commit 為準。
