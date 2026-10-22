@@ -44,6 +44,8 @@ begin
  rejected:=false;begin perform public.admin_data_io('restore_missing',jsonb_build_object('document',doc),gen_random_uuid());exception when sqlstate 'PT409' then rejected:=true;end;
  if not rejected then raise exception 'Restore overwrote existing changes';end if;
  -- Delete only this transaction's uniquely generated fixture to simulate missing records.
+ delete from public.valuation_events where product_id=pid;
+ delete from public.inventory_valuations where product_id=pid;
  delete from public.inventory_movements where product_id=pid;
  delete from public.inventory_balances where product_id=pid;
  delete from public.category_assignments where product_id=pid;

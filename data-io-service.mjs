@@ -1,5 +1,6 @@
 export const PROJECT='wlrwlqchlxehlvkyesnj';
-export const TABLES=['product_categories','products','category_assignments','product_images','purchase_batches','orders','order_items','inventory_balances','inventory_movements','expenses','app_settings','audit_logs','store_operation_requests','app_io_requests'];
+export const BASE_TABLES=['product_categories','products','category_assignments','product_images','purchase_batches','orders','order_items','inventory_balances','inventory_movements','expenses','app_settings','audit_logs','store_operation_requests','app_io_requests'];
+export const TABLES=[...BASE_TABLES,'order_payments','inventory_valuations','valuation_events'];
 export const BUCKETS=['product-images','storefront-thumbnails'];
 const MAX_MEDIA=64*1024*1024,MAX_DOCUMENT=16*1024*1024,MAX_FILE=128*1024*1024;
 const encoder=new TextEncoder(),decoder=new TextDecoder('utf-8',{fatal:true});
@@ -10,7 +11,8 @@ export function fromBase64(text){if(typeof text!=='string'||text.length%4!==0||!
 function requireCrypto(){if(!globalThis.crypto?.subtle)throw Error('此功能需要 HTTPS 安全連線。請從正式賣場的管理後台開啟，或使用較新的瀏覽器。')}
 export async function digest(bytes){requireCrypto();return [...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(v=>v.toString(16).padStart(2,'0')).join('')}
 export function validateDocument(d){
- if(!d||d.format!=='wu-jacky-app-backup'||d.version!==1||d.project!==PROJECT||!d.data||typeof d.data!=='object'||Array.isArray(d.data)||Object.keys(d.data).length!==TABLES.length||TABLES.some(k=>!Array.isArray(d.data[k])))throw Error('備份格式、版本或網站來源不符。');
+ const tables=d?.version===1?BASE_TABLES:TABLES;
+ if(!d||d.format!=='wu-jacky-app-backup'||![1,2].includes(d.version)||d.project!==PROJECT||!d.data||typeof d.data!=='object'||Array.isArray(d.data)||Object.keys(d.data).length!==tables.length||tables.some(k=>!Array.isArray(d.data[k])))throw Error('備份格式、版本或網站來源不符。');
  if(encoder.encode(JSON.stringify(d)).length>MAX_DOCUMENT||Object.values(d.data).reduce((n,v)=>n+v.length,0)>50000)throw Error('資料備份超過 16 MB 或 50,000 筆的還原上限。');return d;
 }
 function validPath(path){return typeof path==='string'&&path.length>0&&path.length<=1000&&!path.startsWith('/')&&!path.split('/').some(v=>!v||v==='.'||v==='..')&&!/[\u0000-\u001f\\]/.test(path)}
@@ -39,6 +41,10 @@ export async function validateBundle(b){
  const keys=new Set();let size=0;
  for(const o of b.objects){if(!BUCKETS.includes(o.bucket)||!validPath(o.path)||keys.has(objectKey(o))||typeof o.sha256!=='string'||typeof o.content_type!=='string'||o.content_type.length>100)throw Error('備份的圖片索引無效或重複。');const bytes=fromBase64(o.data);size+=bytes.length;if(size>MAX_MEDIA||bytes.length!==o.size||await digest(bytes)!==o.sha256)throw Error('圖片備份大小超過限制或完整性驗證失敗。');keys.add(objectKey(o))}
  for(const ref of references(b.document))if(!keys.has(objectKey(ref)))throw Error('備份缺少商品原圖或縮圖，已停止還原。');return b;
+}
+export function validateCloudManifest(b){
+ if(b?.format!=='wu-jacky-cloud-backup'||b.version!==2||!Array.isArray(b.objects)||b.objects.length>10000)throw Error('雲端完整備份格式不符。');validateDocument(b.document);
+ const keys=new Set();let size=0;for(const o of b.objects){if(!BUCKETS.includes(o.bucket)||!validPath(o.path)||keys.has(objectKey(o))||!Number.isSafeInteger(o.size)||o.size<0||o.size>12*1024*1024||!/^[a-f0-9]{64}$/.test(o.sha256)||o.backup_path!=='media/'+o.sha256||typeof o.content_type!=='string'||o.content_type.length>100)throw Error('雲端圖片索引無效。');keys.add(objectKey(o));size+=o.size}if(size>512*1024*1024)throw Error('雲端備份超過 512 MB 上限。');for(const ref of references(b.document))if(!keys.has(objectKey(ref)))throw Error('雲端備份缺少商品圖片。');return b;
 }
 export function createDataIOService(client,journal,randomUUID=()=>crypto.randomUUID()){
  let actor=null,pending=null,inMemory=null;const journalKey=()=>`wj_pending_data_io:${actor}`;
@@ -87,6 +93,15 @@ export function createDataIOService(client,journal,randomUUID=()=>crypto.randomU
   perform,
   async retry(){if(!pending)throw Error('沒有待確認的資料操作。');const status=await rpc('request_status',{id:pending.request_id});if(status.applied){pending=null;inMemory=null;persist();return status.result}const payload=inMemory||pending.payload;if(!payload)throw Error('伺服器尚未確認完成。請重新選擇相同備份並解鎖，接著重試還原。');return perform(pending.action,payload)},
   backup,previewRestore,restore,
+  async listFullBackups(){const status=checked(await client.rpc('admin_job_control',{p_action:'status',p_payload:{}}));return (status.backups??[]).filter(b=>b.state==='completed')},
+  async getCloudBackup(id){if(!actor)throw Error('請先登入。');const info=checked(await client.rpc('admin_job_control',{p_action:'backup_get',p_payload:{id}}));if(!/^daily\/\d{4}-\d{2}-\d{2}\/manifest\.json$/.test(info?.manifest_path??''))throw Error('找不到已完成的完整備份。');const blob=checked(await client.storage.from('app-backups').download(info.manifest_path));if(blob.size>24*1024*1024)throw Error('雲端備份索引過大。');return validateCloudManifest(JSON.parse(await blob.text()))},
+  async previewCloud(b,progress=()=>{}){if(!actor)throw Error('請先登入。');validateCloudManifest(b);const database=await rpc('restore_preview',{document:b.document}),media=await mediaPlan(b,progress);return {database,media,can_restore:database.can_restore&&media.conflicts.length===0}},
+  async restoreCloud(b,progress=()=>{}){
+   if(pending&&(pending.action!=='restore_missing'||pending.fingerprint!==await digest(encoder.encode(canonical({document:b.document})))))throw Error('上一筆結果尚未確認，請選擇相同備份。');
+   const plan=await this.previewCloud(b,progress);if(!plan.can_restore)throw Object.assign(Error('現有資料或圖片與備份不同，已停止還原。'),{code:'PT409'});
+   for(const [i,o]of plan.media.missing.entries()){progress(`正在逐一補回圖片 ${i+1} / ${plan.media.missing.length}`);const blob=checked(await client.storage.from('app-backups').download(o.backup_path));if(blob.size!==o.size||await digest(new Uint8Array(await blob.arrayBuffer()))!==o.sha256)throw Error('雲端圖片完整性驗證失敗，資料尚未套用。');const response=await client.storage.from(o.bucket).upload(o.path,blob,{contentType:o.content_type,upsert:false});if(response.error){const existing=await client.storage.from(o.bucket).download(o.path);if(existing.error||await digest(new Uint8Array(await existing.data.arrayBuffer()))!==o.sha256)throw Error('圖片補回中斷，可使用相同備份重試。')}}
+   const result=await perform('restore_missing',{document:b.document});return {...result,images:plan.media.missing.length};
+  },
   listBackups:()=>rpc('backup_list'),
   async getSnapshot(id){const d=validateDocument(await rpc('backup_get',{id}));return d},
   previewSnapshot:document=>rpc('restore_preview',{document:validateDocument(document)}),
