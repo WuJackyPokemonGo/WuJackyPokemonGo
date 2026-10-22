@@ -15,7 +15,7 @@ export function stockLabel(p){
  if(!known)return {text:p.status==='low_stock'?'庫存偏低':'庫存待確認',tone:p.status==='low_stock'?'low':'pending'};
  return p.is_low_stock||p.status==='low_stock'?{text:`剩餘 ${p.stock_quantity.toLocaleString('zh-TW')} 帳`,tone:'low'}:{text:`庫存：${p.stock_quantity.toLocaleString('zh-TW')} 帳`,tone:'normal'};
 }
-export function imageURL(path){if(!/^[0-9a-f-]{36}\/[0-9a-f-]{36}-thumb\.webp$/i.test(String(path)))return '';return PUBLIC_STORAGE+String(path).split('/').map(encodeURIComponent).join('/')}
+export function imageURL(path){if(!/^[0-9a-f-]{36}\/[0-9a-f-]{36}-thumb\.(webp|png)$/i.test(String(path)))return '';return PUBLIC_STORAGE+String(path).split('/').map(encodeURIComponent).join('/')}
 export function monthTaipei(value){const d=new Date(value);if(!Number.isFinite(d.getTime()))return '';const parts=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit'}).formatToParts(d);return parts.find(x=>x.type==='year').value+'-'+parts.find(x=>x.type==='month').value}
 export function tagsFor(p){const tags=(p.tags??[]).filter(t=>t!=='本月新庫存');return p.first_stocked_at&&monthTaipei(p.first_stocked_at)===monthTaipei(new Date())?[...tags,'本月新庫存']:tags}
 export function searchMatch(p,keyword){const normalize=v=>String(v??'').toLowerCase().replace(/\s+/g,'');const term=normalize(keyword),hay=normalize([p.name,p.name_en,p.sku,p.dex,...p.aliases,...tagsFor(p)].join(' '));return !term||hay.includes(term)||(/^\d+$/.test(term)&&String(p.dex??'').replace(/^0+/,'')===term.replace(/^0+/,''))}

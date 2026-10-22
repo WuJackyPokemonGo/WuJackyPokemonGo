@@ -21,7 +21,7 @@ products.is_live 預設 false。公開目錄必須同時 is_live=true 和 public
 
 公開 API 只有 storefront_catalog，回傳白名單商品欄位，依擁有人要求顯示已確認的庫存數量與低庫存提示；不回傳庫存異動明細、成本、來源、客戶、訂單、管理員或稽核資料。匿名仍不能查基礎表或呼叫管理 RPC。
 
-原始商品圖片保留於 private product-images。只有管理員明確選用並公開的 WebP 縮圖會複製到 public storefront-thumbnails；原圖不會上傳到 public bucket。已公開圖片的網址可能被分享或快取，取消顯示商品不會保證已公開縮圖立即失效。
+原始商品圖片保留於 private product-images。只有管理員明確選用並公開的 WebP／PNG 縮圖會複製到 public storefront-thumbnails；原圖不會上傳到 public bucket。已公開圖片的網址可能被分享或快取，取消顯示商品不會保證已公開縮圖立即失效。
 
 supabase/production/public-storefront.sql 已透過 execute_sql 套用，沒有新增 migration history，不可重跑 schema 建置。SQL 驗收檔使用 BEGIN/ROLLBACK，不留下測試商品。
 
@@ -73,3 +73,11 @@ production 下 SQL 已經套用：operations-v1 → finance → reporting → an
 ## 回復
 
 舊版保留在 backup/pre-live-20261022；需要回復外觀時建立新提交，勿 force-push main。回復程式不能刪除本輪新增的收退款、成本或營運資料。生產環境不清空；驗收只使用 BEGIN／ROLLBACK。
+
+## iPhone 圖片上傳相容性修正
+
+2026-10-22 手機回報無法產生 WebP 縮圖。現改為優先 WebP；瀏覽器回傳 PNG、WebP 編碼拋錯或回傳 null 時，自動使用 PNG。實際檔頭決定 MIME 與副檔名，不把 PNG 偽裝成 WebP。縮圖保持比例，超過 2 MB 會逐步縮小；原始檔案位元組保留不變。
+
+catalog-service、私人與公開縮圖路徑、公開圖片 URL 白名單、Storage MIME 及管理員限定發布政策都支援兩種格式。原圖 bucket 維持 private，僅 UUID/UUID-thumb.webp 或 .png 可公開。png-thumbnail-fallback.sql 已套用，不新增資料表／欄位，不影響既有備份或 WebP 圖片。
+
+100 項 Node 測試通過，包含 Safari 式 PNG 回退、null／拋錯備援、真實 PNG 簽名、2 MB 縮小、原圖位元組不變、PNG 私人上傳與管理員公開。tests/png-thumbnail-acceptance.sql 回滾驗收通過：管理員可發布兩種縮圖，原圖路徑及非管理員被拒絕。擁有人重新整理正式後台、選取原圖片後驗收真實手機行為；不宣稱已在擁有人 iPhone 實機操作。版本查詢為 20261022-image-fix。

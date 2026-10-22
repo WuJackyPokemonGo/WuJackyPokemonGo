@@ -1,4 +1,5 @@
 import {productPayload} from './cloud-admin-service.mjs';
+import {imageType} from './image-upload.mjs';
 export const BUCKET='product-images';
 const checked=({data,error})=>{if(error)throw error;return data};
 export function catalogPayload(values){
@@ -14,9 +15,10 @@ export function createCatalogService(client){
  const media=()=>client.storage.from(BUCKET);
  async function publishThumbnail(image){
   if(image.public_path)return image.public_path;
-  if(!image.thumbnail_path||!image.thumbnail_path.startsWith(image.product_id+'/')||!image.thumbnail_path.endsWith('-thumb.webp'))throw Error('這張圖片缺少可公開的縮圖，請重新上傳圖片。');
+  if(!image.thumbnail_path||!image.thumbnail_path.startsWith(image.product_id+'/')||!/^[0-9a-f-]{36}\/[0-9a-f-]{36}-thumb\.(webp|png)$/i.test(image.thumbnail_path))throw Error('這張圖片缺少可公開的縮圖，請重新上傳圖片。');
   const blob=checked(await media().download(image.thumbnail_path));
-  const response=await client.storage.from('storefront-thumbnails').upload(image.thumbnail_path,blob,{contentType:'image/webp',upsert:false});
+  const type=imageType(new Uint8Array(await blob.slice(0,12).arrayBuffer()));if(!['image/webp','image/png'].includes(type.mime)||!image.thumbnail_path.endsWith('-thumb.'+type.extension)||blob.size>2*1024*1024)throw Error('縮圖格式或大小不符，請重新上傳圖片。');
+  const response=await client.storage.from('storefront-thumbnails').upload(image.thumbnail_path,blob,{contentType:type.mime,upsert:false});
   if(response.error&&!['409','Duplicate'].includes(String(response.error.statusCode??response.error.error)))throw response.error;
   checked(await client.from('product_images').update({public_path:image.thumbnail_path}).eq('id',image.id).select('id').single());
   return image.thumbnail_path;
@@ -38,9 +40,10 @@ export function createCatalogService(client){
   async preview(){return pageAll('catalog_preview','*','manual_sort_order')},
   async signed(path){return checked(await media().createSignedUrl(path,300)).signedUrl},
   async addImage(productId,{original,thumbnail,extension,alt}){
-   const id=crypto.randomUUID(),path=`${productId}/${id}-original.${extension}`,thumb=`${productId}/${id}-thumb.webp`;
+   const thumbnailType=imageType(new Uint8Array(await thumbnail.slice(0,12).arrayBuffer()));if(!['image/webp','image/png'].includes(thumbnailType.mime)||thumbnail.size>2*1024*1024)throw Error('縮圖格式或大小不符，請重新上傳圖片。');
+   const id=crypto.randomUUID(),path=`${productId}/${id}-original.${extension}`,thumb=`${productId}/${id}-thumb.${thumbnailType.extension}`;
    checked(await media().upload(path,original,{contentType:original.type,upsert:false}));
-   checked(await media().upload(thumb,thumbnail,{contentType:'image/webp',upsert:false}));
+   checked(await media().upload(thumb,thumbnail,{contentType:thumbnailType.mime,upsert:false}));
    // Retain uploaded objects if metadata write fails: recovery is safer than deleting an uncertain result.
    return checked(await client.from('product_images').insert({id,product_id:productId,storage_path:path,thumbnail_path:thumb,alt_text:alt,sort_order:0,is_approved:false}).select('id').single());
   },
