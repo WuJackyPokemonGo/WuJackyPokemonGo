@@ -1,0 +1,56 @@
+-- Transactional acceptance: all fixture rows roll back; no existing business data is deleted.
+begin;
+select set_config('request.jwt.claim.sub',(select user_id::text from public.admin_profiles limit 1),true);
+do $test$
+declare actor text:=current_setting('request.jwt.claim.sub'); payload jsonb; result jsonb; again jsonb; doc jsonb; plan jsonb; pid uuid; req uuid:=gen_random_uuid(); qa_sku text:='__IO_QA_'||gen_random_uuid()::text; count_before bigint; rejected boolean; version timestamptz;
+begin
+ if has_function_privilege('anon','public.admin_data_io(text,jsonb,uuid)','execute') or has_function_privilege('anon','public.admin_backup_document()','execute') then raise exception 'Anonymous backup access';end if;
+ perform set_config('request.jwt.claim.sub',gen_random_uuid()::text,true);rejected:=false;
+ begin perform public.admin_backup_document();exception when insufficient_privilege then rejected:=true;end;
+ if not rejected then raise exception 'Non-admin backup access';end if;
+ perform set_config('request.jwt.claim.sub',actor,true);
+ payload:=jsonb_build_object('rows',jsonb_build_array(jsonb_build_object('values',jsonb_build_object('sku',qa_sku,'name_zh','回滾驗收商品','name_en','','aliases','[]'::jsonb,'publication_status','draft','supply_status','inquiry_only','public_price_twd',null,'manual_sort_order',0,'low_stock_threshold',3),'categories','[]'::jsonb,'expected',null)),'allow_live_updates',false);
+ result:=public.admin_data_io('import_products',payload,req);again:=public.admin_data_io('import_products',payload,req);
+ if result<>again or (result->>'inserted')::int<>1 then raise exception 'Import is not idempotent';end if;
+ select id,updated_at into pid,version from public.products where products.sku=qa_sku;
+ if (select is_live from public.products where id=pid) then raise exception 'Import made a new product live';end if;
+ if (select count(*) from public.products where products.sku=qa_sku)<>1 then raise exception 'Duplicate product';end if;
+ if not (public.admin_data_io('request_status',jsonb_build_object('id',req),null)->>'applied')::boolean then raise exception 'Missing request receipt';end if;
+ payload:=jsonb_set(payload,'{rows,0,expected}',jsonb_build_object('id',pid,'updated_at',version));
+ payload:=jsonb_set(payload,'{rows,0,values,name_zh}','"更新驗收商品"');
+ result:=public.admin_data_io('import_products',payload,gen_random_uuid());
+ if (result->>'updated')::int<>1 then raise exception 'Update failed';end if;
+ payload:=jsonb_set(payload,'{rows,0,expected,updated_at}','"2000-01-01T00:00:00Z"');
+ rejected:=false;begin perform public.admin_data_io('import_products',payload,gen_random_uuid());exception when sqlstate 'PT409' then rejected:=true;end;
+ if not rejected then raise exception 'Stale import accepted';end if;
+ select updated_at into version from public.products where id=pid;
+ update public.products set is_live=true where id=pid;
+ select updated_at into version from public.products where id=pid;
+ payload:=jsonb_set(payload,'{rows,0,expected}',jsonb_build_object('id',pid,'updated_at',version));
+ rejected:=false;begin perform public.admin_data_io('import_products',payload,gen_random_uuid());exception when check_violation then rejected:=true;end;
+ if not rejected then raise exception 'Unconfirmed live change accepted';end if;
+ payload:=jsonb_set(payload,'{allow_live_updates}','true');perform public.admin_data_io('import_products',payload,gen_random_uuid());
+ if not (select is_live from public.products where id=pid) then raise exception 'Import changed live flag';end if;
+ select count(*) into count_before from public.products;
+ payload:=jsonb_build_object('rows',jsonb_build_array(jsonb_build_object('values',jsonb_build_object('sku',qa_sku||'A','name_zh','有效列','aliases','[]'::jsonb,'publication_status','draft','supply_status','inquiry_only'),'categories','[]'::jsonb,'expected',null),jsonb_build_object('values',jsonb_build_object('sku',qa_sku||'Z','name_zh','','aliases','[]'::jsonb,'publication_status','draft','supply_status','inquiry_only'),'categories','[]'::jsonb,'expected',null)));
+ rejected:=false;begin perform public.admin_data_io('import_products',payload,gen_random_uuid());exception when check_violation then rejected:=true;end;
+ if not rejected or (select count(*) from public.products)<>count_before then raise exception 'Batch partial write';end if;
+ perform public.admin_adjust_inventory(pid,3,'回滾驗收入庫',gen_random_uuid());
+ doc:=public.admin_backup_document();plan:=public.admin_data_io('restore_preview',jsonb_build_object('document',doc),null);
+ if not (plan->>'can_restore')::boolean or (plan->>'missing')::int<>0 then raise exception 'Current snapshot differs';end if;
+ update public.products set name_zh='衝突驗收' where id=pid;
+ plan:=public.admin_data_io('restore_preview',jsonb_build_object('document',doc),null);
+ if (plan->>'can_restore')::boolean then raise exception 'Restore conflict undetected';end if;
+ rejected:=false;begin perform public.admin_data_io('restore_missing',jsonb_build_object('document',doc),gen_random_uuid());exception when sqlstate 'PT409' then rejected:=true;end;
+ if not rejected then raise exception 'Restore overwrote existing changes';end if;
+ -- Delete only this transaction's uniquely generated fixture to simulate missing records.
+ delete from public.inventory_movements where product_id=pid;
+ delete from public.inventory_balances where product_id=pid;
+ delete from public.category_assignments where product_id=pid;
+ delete from public.products where id=pid;
+ plan:=public.admin_data_io('restore_preview',jsonb_build_object('document',doc),null);
+ if not (plan->>'can_restore')::boolean or (plan->>'missing')::int<3 then raise exception 'Missing rows undetected';end if;
+ req:=gen_random_uuid();result:=public.admin_data_io('restore_missing',jsonb_build_object('document',doc),req);again:=public.admin_data_io('restore_missing',jsonb_build_object('document',doc),req);
+ if result<>again or (select quantity_on_hand from public.inventory_balances where product_id=pid)<>3 then raise exception 'Restore reconciliation or idempotency failed';end if;
+end $test$;
+rollback;
