@@ -1,0 +1,16 @@
+{
+  "name": "wu-jacky-pokemon-store",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "build:admin": "esbuild cloud-admin.mjs --bundle --minify --format=esm --target=es2022 --outfile=assets/cloud-admin.bundle.js",
+    "build": "npm run build:admin && esbuild storefront.mjs --bundle --minify --format=esm --target=es2022 --outfile=assets/storefront.bundle.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.118.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12"
+  }
+}
