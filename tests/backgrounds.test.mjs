@@ -19,7 +19,7 @@ test('cross-site audit adds Seoul without counting unresolved assets as released
 
 test('gallery sorting keeps unknown dates last and preserves bilingual name order without mutating source',async()=>{const {sortBackgrounds}=await import('../backgrounds-service.mjs');const a={name_en:'Zeta',name_zh:'乙',start_date:'2026-10-24'},b={name_en:'Alpha',name_zh:'甲',start_date:'2023-02-18'},c={name_en:'Beta',name_zh:'丙'},input=[c,a,b];assert.deepEqual(sortBackgrounds(input).map(r=>r.name_en),['Zeta','Alpha','Beta']);assert.deepEqual(sortBackgrounds(input,{order:'oldest'}).map(r=>r.name_en),['Alpha','Zeta','Beta']);assert.deepEqual(sortBackgrounds(input,{order:'name',locale:'en'}).map(r=>r.name_en),['Alpha','Beta','Zeta']);assert.deepEqual(input,[c,a,b]);assert.deepEqual(sortBackgrounds(input,{order:'name',locale:'zh'}).map(r=>r.name_zh),[...input].sort((x,y)=>x.name_zh.localeCompare(y.name_zh,'zh-Hant')).map(r=>r.name_zh))});
 
-test('public artwork requires documented permission for the exact URL and fails closed',async()=>{
+test('documented image approval status is distinct from a valid public image URL',async()=>{
  const {permittedBackgroundImage}=await import('../backgrounds-service.mjs');const row={image_source:'https://example.com/background.jpg'};
  const entry={image_url:row.image_source,usage:'commercial-web',permission_source:'https://example.com/license'};
  assert.equal(permittedBackgroundImage(row,null),'');assert.equal(permittedBackgroundImage(row,{entries:[]}),'');
@@ -38,4 +38,11 @@ test('full reference coverage retains first-seen semantics and never overwrites 
  assert.equal(rows.find(x=>x.background_id==='BG-0202').pokemon.length,9);
  assert.equal(facts.entries.find(x=>x.reference_id==='2026_pno_los_angeles').date,'2026-11-10');
  assert.equal(rows.find(x=>x.background_id==='BG-0211').start_date,'2026-10-24');
+});
+
+test('public gallery omits internal research reports and all reference image links are valid',()=>{
+ const html=readFileSync(new URL('../backgrounds.html',import.meta.url),'utf8');
+ for(const text of ['工作譯名','345 筆名錄標籤','素材線索','自行設計的索引','referenceCoverage','id="announced"'])assert.ok(!html.includes(text),text);
+ const facts=JSON.parse(readFileSync(new URL('../data/background-reference-facts.json',import.meta.url)));
+ for(const r of facts.entries)assert.ok(safeBackgroundImage(r.image_url),r.reference_id);
 });
