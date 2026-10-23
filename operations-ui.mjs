@@ -10,7 +10,7 @@ export function initOperationsUI({client,journal,run,notify,getProducts,refreshP
  const service=createOperationsService(client,journal);let purchases=[],orders=[],editing=null,currentAction=null,epoch=0,view='catalog',lastDetail=null;
  const productName=id=>getProducts().find(p=>p.id===id)?.name_zh||'商品已封存／不在清單';
  function sync(){const p=service.pending;$('operationPending').hidden=!p;$('pendingOperationText').textContent=p?'上一筆'+({create_purchase:'新增採購',save_order:'儲存訂單',transition_order:'訂單狀態變更',receive_purchase:'到貨入庫',complete_order:'完成交付',return_stock:'退回入庫',record_payment:'收退款記錄',void_payment:'作廢誤記',cancel_refund:'撤回退款流程',set_inventory_cost:'庫存成本確認',edit_purchase:'採購編輯',cancel_purchase:'採購取消',create_expense:'新增費用',void_expense:'作廢費用',correct_order_costs:'費用更正'})[p.action]+'結果尚未確認。請先重試同一筆，不要重新建立。':'';$('retryOperation').disabled=!p}
- function showView(name){view=name;for(const v of ['catalog','purchases','orders','reports','settings'])$(v+'Workspace').hidden=v!==name}
+ function showView(name){view=name;for(const v of ['catalog','backgrounds','purchases','orders','reports','settings'])$(v+'Workspace').hidden=v!==name}
  async function loadPurchases(){const version=epoch;const rows=await service.purchases();if(version!==epoch)return;purchases=rows;renderPurchases()}
  async function loadOrders(){const version=epoch;const rows=await service.orders();if(version!==epoch)return;orders=rows;renderOrders()}
  async function refresh(){await Promise.all([loadPurchases(),loadOrders(),refreshProducts()])}
