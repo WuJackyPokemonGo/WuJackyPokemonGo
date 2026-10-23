@@ -44,6 +44,6 @@ export function initLanguageHint(){
  if(!anchor)return ()=>{};
  const hint=document.createElement('aside'),message=document.createElement('span'),close=document.createElement('button');
  hint.className='language-hint';hint.setAttribute('role','status');close.type='button';close.textContent='×';hint.append(message,close);anchor.insertAdjacentElement('afterend',hint);
- const render=()=>{message.textContent=tr('可在右上角「中文 / English」切換語言；網站會記住你的選擇。','Use “中文 / English” at the top right to change language. Your choice will be remembered.');close.setAttribute('aria-label',tr('關閉語言提示','Dismiss language tip'))};
+ const render=()=>{message.textContent=tr('可在頁首「選擇您的語言」切換；網站會記住你的選擇。','Use “Choose your language” at the top of the page to switch. Your choice will be remembered.');close.setAttribute('aria-label',tr('關閉語言提示','Dismiss language tip'))};
  close.onclick=()=>{hint.remove();try{localStorage.setItem('wj_language_hint_seen_v1','1')}catch{}};render();return render;
 }
