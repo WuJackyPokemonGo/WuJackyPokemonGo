@@ -7,6 +7,13 @@ export function filterBackgrounds(rows,{query='',type='',series='',region='',yea
 export function safeBackgroundImage(url){try{const u=new URL(url);return u.protocol==='https:'&&!u.username&&!u.password&&!u.hash&&/\.(jpe?g|png|webp)$/i.test(u.pathname)&&u.href.length<=2000?u.href:''}catch{return ''}}
 export function safeSource(url){try{const u=new URL(url);return u.protocol==='https:'&&!u.username&&!u.password?u.href:''}catch{return ''}}
 
+// A usable URL is not evidence of permission. Match approval to the exact image,
+// including cloud overrides; an unavailable registry must never enable artwork.
+export function permittedBackgroundImage(row,permissions,{today=new Date().toISOString().slice(0,10)}={}){
+ const image=safeBackgroundImage(row.image_source);if(!image)return '';
+ return (permissions?.entries??[]).some(p=>p.image_url===image&&p.usage==='commercial-web'&&safeSource(p.permission_source)&&(!p.expires_on||(/^\d{4}-\d{2}-\d{2}$/.test(p.expires_on)&&p.expires_on>=today)))?image:'';
+}
+
 export function sortBackgrounds(rows,{order='newest',locale='zh'}={}){
  const name=r=>locale==='en'?r.name_en:(r.name_zh||r.name_en);
  const byName=(a,b)=>String(name(a)||'').localeCompare(String(name(b)||''),locale==='en'?'en':'zh-Hant');

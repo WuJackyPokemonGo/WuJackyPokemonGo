@@ -18,3 +18,24 @@ test('all background UI references resolve to unique HTML controls',()=>{const h
 test('cross-site audit adds Seoul without counting unresolved assets as released',()=>{const seoul=rows.find(r=>r.background_id==='BG-0269');assert.equal(seoul.release_state,'upcoming');assert.equal(seoul.start_date,'2026-10-24');assert.deepEqual(seoul.pokemon.map(p=>p.dex),[4,6]);assert.deepEqual(seoul.evolved_pokemon.map(p=>p.dex),[5]);assert.ok(backgroundMatch(seoul,'噴火龍'));assert.equal(rows.find(r=>r.background_id==='BG-0270').release_state,'needs-verification');assert.ok(!filterBackgrounds(rows).some(r=>r.background_id==='BG-0270'));assert.ok(!rows.some(r=>['brazil_2026','costa_rica_2026'].includes(r.name_en)));assert.equal(rows.find(r=>r.background_id==='BG-0124').name_en,'Taipei Floral Picnic 2026');assert.equal(rows.find(r=>r.background_id==='BG-0253').start_date,'2026-06-23');assert.equal(rows.find(r=>r.background_id==='BG-0253').end_date,'2026-06-29');assert.ok(data.additional_announced_events.some(r=>r.name_en.includes('Into the Wild')))});
 
 test('gallery sorting keeps unknown dates last and preserves bilingual name order without mutating source',async()=>{const {sortBackgrounds}=await import('../backgrounds-service.mjs');const a={name_en:'Zeta',name_zh:'乙',start_date:'2026-10-24'},b={name_en:'Alpha',name_zh:'甲',start_date:'2023-02-18'},c={name_en:'Beta',name_zh:'丙'},input=[c,a,b];assert.deepEqual(sortBackgrounds(input).map(r=>r.name_en),['Zeta','Alpha','Beta']);assert.deepEqual(sortBackgrounds(input,{order:'oldest'}).map(r=>r.name_en),['Alpha','Zeta','Beta']);assert.deepEqual(sortBackgrounds(input,{order:'name',locale:'en'}).map(r=>r.name_en),['Alpha','Beta','Zeta']);assert.deepEqual(input,[c,a,b]);assert.deepEqual(sortBackgrounds(input,{order:'name',locale:'zh'}).map(r=>r.name_zh),[...input].sort((x,y)=>x.name_zh.localeCompare(y.name_zh,'zh-Hant')).map(r=>r.name_zh))});
+
+test('public artwork requires documented permission for the exact URL and fails closed',async()=>{
+ const {permittedBackgroundImage}=await import('../backgrounds-service.mjs');const row={image_source:'https://example.com/background.jpg'};
+ const entry={image_url:row.image_source,usage:'commercial-web',permission_source:'https://example.com/license'};
+ assert.equal(permittedBackgroundImage(row,null),'');assert.equal(permittedBackgroundImage(row,{entries:[]}),'');
+ assert.equal(permittedBackgroundImage(row,{entries:[entry]}),row.image_source);
+ for(const patch of [{image_url:'https://other.example/image.jpg'},{usage:'personal-only'},{permission_source:'javascript:alert(1)'},{expires_on:'2026-10-22'},{expires_on:'unknown'}])assert.equal(permittedBackgroundImage(row,{entries:[{...entry,...patch}]},{today:'2026-10-23'}),'');
+ assert.equal(permittedBackgroundImage({...row,image_source:'https://example.com/admin-change.jpg'},{entries:[entry]}),'');
+ const registry=JSON.parse(readFileSync(new URL('../data/background-image-permissions.json',import.meta.url)));
+ assert.ok(rows.every(r=>!permittedBackgroundImage(r,registry)),'No existing image currently has documented reuse permission');
+});
+test('full reference coverage retains first-seen semantics and never overwrites verified encounter forms',()=>{
+ const facts=JSON.parse(readFileSync(new URL('../data/background-reference-facts.json',import.meta.url)));
+ assert.equal(facts.entries.length,345);assert.equal(new Set(facts.entries.map(x=>x.reference_id)).size,345);
+ assert.equal(facts.entries.filter(x=>x.background_id).length,343);assert.equal(facts.unresolved_references.length,2);
+ for(const x of facts.entries){if(x.background_id)assert.ok(rows.some(r=>r.background_id===x.background_id));assert.ok(['release','asset_first_seen'].includes(x.date_kind));assert.ok(Array.isArray(x.species));}
+ assert.equal(facts.entries.find(x=>x.reference_id==='esa_science_museum_london').date_kind,'asset_first_seen');
+ assert.equal(rows.find(x=>x.background_id==='BG-0202').pokemon.length,9);
+ assert.equal(facts.entries.find(x=>x.reference_id==='2026_pno_los_angeles').date,'2026-11-10');
+ assert.equal(rows.find(x=>x.background_id==='BG-0211').start_date,'2026-10-24');
+});
