@@ -1,6 +1,12 @@
 export const tr = (zh,en,locale=getLocale()) => locale==='en'?en:zh;
-let locale='zh';
-try {locale=localStorage.getItem('wj_store_locale')==='en'?'en':'zh'} catch {}
+export function resolveLocale(saved,languages=[],fallback='zh-Hant'){
+ if(saved==='zh'||saved==='en')return saved;
+ const preferred=languages.find(value=>typeof value==='string'&&value.trim())||fallback;
+ return /^zh(?:-|$)/i.test(preferred)?'zh':'en';
+}
+let savedLocale=null;try{savedLocale=localStorage.getItem('wj_store_locale')}catch{}
+const browserLanguages=typeof navigator==='undefined'?[]:Array.from(navigator.languages??[]);
+let locale=resolveLocale(savedLocale,browserLanguages,typeof navigator==='undefined'?'zh-Hant':navigator.language||'zh-Hant');
 export const getLocale=()=>locale;
 export function setLocale(value){locale=value==='en'?'en':'zh';try{localStorage.setItem('wj_store_locale',locale)}catch{};return locale}
 export const labels={
@@ -30,4 +36,14 @@ export function bindStaticTranslations(root=document){
  while(walker.nextNode()){const n=walker.currentNode,key=n.textContent.trim();if(labels[key]&&!['STYLE','SCRIPT'].includes(n.parentElement.tagName))texts.push([n,n.textContent,key])}
  root.querySelectorAll('[placeholder],[aria-label],[data-contact-label]').forEach(n=>{for(const key of ['placeholder','aria-label','data-contact-label']){const value=n.getAttribute(key);if(labels[value])attrs.push([n,key,value])}});
  return ()=>{root.documentElement.lang=getLocale()==='en'?'en':'zh-Hant';root.title=tr('Wu Jacky Pokémon GO｜商品目錄','Wu Jacky Pokémon GO | Collection');for(const[n,original,key]of texts)n.textContent=getLocale()==='en'?original.replace(key,t(key)):original;for(const[n,key,value]of attrs)n.setAttribute(key,t(value))};
+}
+
+export function initLanguageHint(){
+ try{if(localStorage.getItem('wj_language_hint_seen_v1')==='1')return ()=>{}}catch{}
+ const anchor=document.querySelector('.toprow')||document.querySelector('header .top');
+ if(!anchor)return ()=>{};
+ const hint=document.createElement('aside'),message=document.createElement('span'),close=document.createElement('button');
+ hint.className='language-hint';hint.setAttribute('role','status');close.type='button';close.textContent='×';hint.append(message,close);anchor.insertAdjacentElement('afterend',hint);
+ const render=()=>{message.textContent=tr('可在右上角「中文 / English」切換語言；網站會記住你的選擇。','Use “中文 / English” at the top right to change language. Your choice will be remembered.');close.setAttribute('aria-label',tr('關閉語言提示','Dismiss language tip'))};
+ close.onclick=()=>{hint.remove();try{localStorage.setItem('wj_language_hint_seen_v1','1')}catch{}};render();return render;
 }
