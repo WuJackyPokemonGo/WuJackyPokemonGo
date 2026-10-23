@@ -6,3 +6,9 @@ export function relatedProducts(row,products){const ids=new Set(row.related_prod
 export function filterBackgrounds(rows,{query='',type='',series='',region='',year='',state='verified',stockOnly=false,products=[]}={}){return rows.filter(r=>backgroundMatch(r,query)&&(!type||r.type===type)&&(!series||r.series===series)&&(!region||r.region_en===region)&&(!year||r.year===year)&&(state==='all'||(state==='official'?r.verification==='official-event-confirmed'&&backgroundState(r)==='verified':state==='catalogued'?r.verification==='catalog-crosschecked'&&backgroundState(r)==='verified':backgroundState(r)===state))&&(!stockOnly||relatedProducts(r,products).some(p=>['available','low_stock'].includes(p.status)&&Number.isInteger(p.stock_quantity)&&p.stock_quantity>0)))}
 export function safeBackgroundImage(url){try{const u=new URL(url);return u.protocol==='https:'&&!u.username&&!u.password&&!u.hash&&/\.(jpe?g|png|webp)$/i.test(u.pathname)&&u.href.length<=2000?u.href:''}catch{return ''}}
 export function safeSource(url){try{const u=new URL(url);return u.protocol==='https:'&&!u.username&&!u.password?u.href:''}catch{return ''}}
+
+export function sortBackgrounds(rows,{order='newest',locale='zh'}={}){
+ const name=r=>locale==='en'?r.name_en:(r.name_zh||r.name_en);
+ const byName=(a,b)=>String(name(a)||'').localeCompare(String(name(b)||''),locale==='en'?'en':'zh-Hant');
+ return [...rows].sort((a,b)=>{if(order==='name')return byName(a,b);const da=a.start_date||a.year||'',db=b.start_date||b.year||'';if(!da||!db)return da?-1:db?1:byName(a,b);return (order==='oldest'?da.localeCompare(db):db.localeCompare(da))||byName(a,b)});
+}
