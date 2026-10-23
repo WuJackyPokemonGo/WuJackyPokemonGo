@@ -296,3 +296,7 @@
 | BG-0266 | Pokémon Center Yokohama | 官方活動已核對 |
 | BG-0267 | Poké Lid Yamagata | 官方活動已核對 |
 | BG-0268 | MLB Tampa Bay Rays 2026 | 官方活動已核對 |
+
+## 後續跨站核對更新
+
+本文件上方為上一輪 268 筆的歷史檢查點。後續已補正式後台編輯功能，並完成一輪跨站覆蓋檢查，目前底稿為 270 筆；新增 FC 首爾及待核對的世界賽藍色素材。最新狀態與限制見 `BACKGROUNDS-CROSS-SITE-2026-10-23.md`，逐項來源索引見 `backgrounds-cross-site-audit-2026-10-23.json`。尚未宣稱全部歷史背景或每種寶可夢款式已全部完善。

@@ -1,0 +1,3469 @@
+{
+  "as_of": "2026-10-23",
+  "scope": "Event/asset coverage comparison; not a certification of every Pokemon form, release date or independent artwork.",
+  "pokexperience": {
+    "url": "https://pokexperience.com/backgrounds/",
+    "observed_count": 345,
+    "mapping": [
+      {
+        "source_name": "2026_pno_london",
+        "background_id": "BG-0214",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_pno_los_angeles",
+        "background_id": "BG-0211",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "lc_2026_gwa_mexico_city",
+        "background_id": "BG-0213",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "lc_2026_gwa_sendai",
+        "background_id": "BG-0212",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "lc_fc2026_seoul",
+        "background_id": "BG-0269",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_comic_con_malaga",
+        "background_id": "BG-0208",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "esa_cite_de_espace",
+        "background_id": "BG-0203",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "esa_ciudad_de_las_artes",
+        "background_id": "BG-0204",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "esa_euro_space_center",
+        "background_id": "BG-0205",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "esa_science_museum_london",
+        "background_id": "BG-0202",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "esa_space_center_germany",
+        "background_id": "BG-0206",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "esa_space_expo_nl",
+        "background_id": "BG-0207",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nfl_cardinals_2026",
+        "background_id": "BG-0210",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokelid_nagano",
+        "background_id": "BG-0209",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nfl26_cardinals",
+        "background_id": "BG-0210",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "lc_ESA_citeDeEspace",
+        "background_id": "BG-0203",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "lc_ESA_ciudadDeLasArtes",
+        "background_id": "BG-0204",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "lc_ESA_euroSpaceCenter",
+        "background_id": "BG-0205",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "lc_ESA_scienceMuseumLondon",
+        "background_id": "BG-0202",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "lc_ESA_spaceCenterGermany",
+        "background_id": "BG-0206",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "lc_ESA_spaceExpoNL",
+        "background_id": "BG-0207",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "lc_2026_ComicCon_Malaga",
+        "background_id": "BG-0208",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr26_nagano",
+        "background_id": "BG-0209",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs26_brisbane",
+        "background_id": "BG-0196",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs26_lisbon",
+        "background_id": "BG-0199",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs26_marseille",
+        "background_id": "BG-0198",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs26_munich",
+        "background_id": "BG-0197",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs26_rio",
+        "background_id": "BG-0200",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "moonlight",
+        "background_id": "BG-0263",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "10yr_mewtwo",
+        "background_id": "BG-0260",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_jp_sky_adventure_green",
+        "background_id": "BG-0195",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_jp_sky_adventure_red",
+        "background_id": "BG-0189",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_NPB_chunichi_dragons",
+        "background_id": "BG-0135",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_NPB_hokkaido_fighters",
+        "background_id": "BG-0134",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_NPB_tokyo_swallows",
+        "background_id": "BG-0142",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_NPB_toyama_allstars",
+        "background_id": "BG-0143",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "arraia_2026",
+        "background_id": "BG-0253",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "brazil_2026",
+        "background_id": null,
+        "comparison": "unresolved asset only; no event/eligible Pokemon evidence; not published"
+      },
+      {
+        "source_name": "busan_fireworks_2025",
+        "background_id": "BG-0072",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "costa_rica_2026",
+        "background_id": null,
+        "comparison": "unresolved asset only; no event/eligible Pokemon evidence; not published"
+      },
+      {
+        "source_name": "cs26_boston",
+        "background_id": "BG-0201",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "horizons_s24",
+        "background_id": "BG-0262",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mid_autumn",
+        "background_id": "BG-0263",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mlb_tampa2",
+        "background_id": "BG-0268",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_anglesey_abbey",
+        "background_id": "BG-0162",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_attinghampark",
+        "background_id": "BG-0163",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_belton_house",
+        "background_id": "BG-0164",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_calke_abbey",
+        "background_id": "BG-0165",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_chirk",
+        "background_id": "BG-0166",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_cliveden",
+        "background_id": "BG-0167",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_clumber_park",
+        "background_id": "BG-0168",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_dunham_massey",
+        "background_id": "BG-0169",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_fountains_abbey_estate",
+        "background_id": "BG-0170",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_gibslide",
+        "background_id": "BG-0171",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_hanbury",
+        "background_id": "BG-0172",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_hardwick",
+        "background_id": "BG-0173",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_killerton",
+        "background_id": "BG-0174",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_kingston_lacy",
+        "background_id": "BG-0175",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_lacock",
+        "background_id": "BG-0176",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_lyme_park",
+        "background_id": "BG-0177",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_mottisfont",
+        "background_id": "BG-0178",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_mount_stewart",
+        "background_id": "BG-0179",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_nymans",
+        "background_id": "BG-0180",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_polesden",
+        "background_id": "BG-0181",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_scotney_castle",
+        "background_id": "BG-0182",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_stourhead",
+        "background_id": "BG-0183",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_stowe_garden_park",
+        "background_id": "BG-0184",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_tredegar_house",
+        "background_id": "BG-0185",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_trelissick",
+        "background_id": "BG-0186",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_tyntesfield",
+        "background_id": "BG-0187",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "national_trust_whimpole",
+        "background_id": "BG-0188",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pattern_wild",
+        "background_id": "BG-0264",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_fukuoka",
+        "background_id": "BG-0144",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_golab",
+        "background_id": "BG-0145",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_hiroshima",
+        "background_id": "BG-0146",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_kagawa",
+        "background_id": "BG-0147",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_kanazawa",
+        "background_id": "BG-0148",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_kyoto",
+        "background_id": "BG-0149",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_mega_tokyo",
+        "background_id": "BG-0150",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_nagoya",
+        "background_id": "BG-0151",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_okinawa",
+        "background_id": "BG-0152",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_osaka_dx",
+        "background_id": "BG-0154",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_osaka",
+        "background_id": "BG-0153",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_sapporo",
+        "background_id": "BG-0155",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_shibuya",
+        "background_id": "BG-0156",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_skytree_town",
+        "background_id": "BG-0157",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_tohoku",
+        "background_id": "BG-0158",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_tokyo_bay",
+        "background_id": "BG-0159",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_tokyo_dx",
+        "background_id": "BG-0160",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokecenter_yokohama",
+        "background_id": "BG-0266",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "tokyo26_koto",
+        "background_id": "BG-0137",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "tokyo26_minato",
+        "background_id": "BG-0138",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "tokyo26_shinagawa",
+        "background_id": "BG-0139",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "tpc30th_malaysia",
+        "background_id": "BG-0191",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "tpc30th_philippines",
+        "background_id": "BG-0194",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "tpc30th_singapore",
+        "background_id": "BG-0193",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "tpc30th_taiwan",
+        "background_id": "BG-0192",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "wc26_san_francisco",
+        "background_id": "BG-0190",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "world_special_blue",
+        "background_id": "BG-0270",
+        "comparison": "pending artwork identity; not a confirmed independent release"
+      },
+      {
+        "source_name": "pokemonjetgreen",
+        "background_id": "BG-0195",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_horizons",
+        "background_id": "BG-0262",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mlb_tampa_2",
+        "background_id": "BG-0268",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "wc26_tinkaton",
+        "background_id": "BG-0261",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "WCS2026_san_francisco",
+        "background_id": "BG-0190",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_NPB_hokkaido",
+        "background_id": "BG-0134",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "megamewtwo",
+        "background_id": "BG-0259",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "10th_anniversary",
+        "background_id": "BG-0260",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_NPB_chunichi",
+        "background_id": "BG-0135",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_NPB_toyama",
+        "background_id": "BG-0143",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemonjetred",
+        "background_id": "BG-0189",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_NPB_tokyo",
+        "background_id": "BG-0142",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustangleseyabbey",
+        "background_id": "BG-0162",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustattinghampark",
+        "background_id": "BG-0163",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustbeltonhouse",
+        "background_id": "BG-0164",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustcalkeabbey",
+        "background_id": "BG-0165",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustchirk",
+        "background_id": "BG-0166",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustcliveden",
+        "background_id": "BG-0167",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustclumberpark",
+        "background_id": "BG-0168",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustdunhammassey",
+        "background_id": "BG-0169",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustfountainsabbeyestate",
+        "background_id": "BG-0170",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustgibside",
+        "background_id": "BG-0171",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrusthanbury",
+        "background_id": "BG-0172",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrusthardwick",
+        "background_id": "BG-0173",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustkillerton",
+        "background_id": "BG-0174",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustkingstonlacy",
+        "background_id": "BG-0175",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustlacock",
+        "background_id": "BG-0176",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustlymepark",
+        "background_id": "BG-0177",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustmottisfont",
+        "background_id": "BG-0178",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustmountstewart",
+        "background_id": "BG-0179",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustnymans",
+        "background_id": "BG-0180",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustpolesden",
+        "background_id": "BG-0181",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustscotneycastle",
+        "background_id": "BG-0182",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltruststourhead",
+        "background_id": "BG-0183",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltruststowegardenpark",
+        "background_id": "BG-0184",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrusttredegarhouse",
+        "background_id": "BG-0185",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrusttrelissick",
+        "background_id": "BG-0186",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrusttyntesfield",
+        "background_id": "BG-0187",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nationaltrustwhimpole",
+        "background_id": "BG-0188",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gofest2026nyc",
+        "background_id": "BG-0161",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sb_GoFest2026_global",
+        "background_id": "BG-0254",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gofest2026global",
+        "background_id": "BG-0254",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gofest2026mewtwo",
+        "background_id": "BG-0255",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "10yr_coin_bg",
+        "background_id": "BG-0256",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncenterfukuoka",
+        "background_id": "BG-0144",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncentergolab",
+        "background_id": "BG-0145",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncenterhiroshima",
+        "background_id": "BG-0146",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncenterkagawa",
+        "background_id": "BG-0147",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncenterkanazawa",
+        "background_id": "BG-0148",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncenterkyoto",
+        "background_id": "BG-0149",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncentermegatokyo",
+        "background_id": "BG-0150",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncenternagoya",
+        "background_id": "BG-0151",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncenterokinawa",
+        "background_id": "BG-0152",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncenterosaka",
+        "background_id": "BG-0153",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncenterosakadx",
+        "background_id": "BG-0154",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncentersapporo",
+        "background_id": "BG-0155",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncentershibuya",
+        "background_id": "BG-0156",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncenterskytreetown",
+        "background_id": "BG-0157",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncentertohoku",
+        "background_id": "BG-0158",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncentertokyobay",
+        "background_id": "BG-0159",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncentertokyodx",
+        "background_id": "BG-0160",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokemoncenteryokohama",
+        "background_id": "BG-0266",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_arraia",
+        "background_id": "BG-0253",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_lego_copenhagen",
+        "background_id": "BG-0252",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gf26_copenhagen",
+        "background_id": "BG-0141",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gf26_chicago",
+        "background_id": "BG-0140",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gf26_tokyo",
+        "background_id": "BG-0136",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gfsr26_koto",
+        "background_id": "BG-0137",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gfsr26_minato",
+        "background_id": "BG-0138",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gfsr26_shinagawa",
+        "background_id": "BG-0139",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_NPB_yokohama",
+        "background_id": "BG-0132",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_NPB_chiba",
+        "background_id": "BG-0133",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_NPB_kyocera",
+        "background_id": "BG-0131",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_NPB_belluna",
+        "background_id": "BG-0130",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_NPB_softbank_hawks",
+        "background_id": "BG-0129",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_NPB_hiroshima",
+        "background_id": "BG-0128",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_NPB_koshien_hanshin_tigers",
+        "background_id": "BG-0126",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_NPB_rakuten_eagles",
+        "background_id": "BG-0127",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_NPB_yomiuri_giants",
+        "background_id": "BG-0125",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_taipei_flower_festival",
+        "background_id": "BG-0124",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "26_pokopia",
+        "background_id": "BG-0251",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "26_festivalofcolors",
+        "background_id": "BG-0250",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt26_diamond",
+        "background_id": "BG-0248",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt26_pearl",
+        "background_id": "BG-0249",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt26_ruby",
+        "background_id": "BG-0246",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt26_sapphire",
+        "background_id": "BG-0247",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt26_gold",
+        "background_id": "BG-0244",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt26_silver",
+        "background_id": "BG-0245",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt26_mega",
+        "background_id": "BG-0241",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt26_x",
+        "background_id": "BG-0242",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt26_y",
+        "background_id": "BG-0243",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt26_la",
+        "background_id": "BG-0123",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt26_tainan",
+        "background_id": "BG-0122",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "26_carnival_cologne",
+        "background_id": "BG-0120",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "26_carnival_rio",
+        "background_id": "BG-0121",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr26_ehime",
+        "background_id": "BG-0111",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr26_kagawa",
+        "background_id": "BG-0112",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr26_kochi",
+        "background_id": "BG-0113",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr26_okayama",
+        "background_id": "BG-0114",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr26_shinmane",
+        "background_id": "BG-0115",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr26_tokushima",
+        "background_id": "BG-0116",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr26_tottori",
+        "background_id": "BG-0117",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr26_yamaguchi",
+        "background_id": "BG-0118",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pokepark_kanto",
+        "background_id": "BG-0119",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "pyeongchang_winter_2026",
+        "background_id": "BG-0084",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "2026_carfreeday",
+        "background_id": "BG-0083",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "communityday2026",
+        "background_id": "BG-0240",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "nflcardinals",
+        "background_id": "BG-0082",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs25_buenos_aires",
+        "background_id": "BG-0081",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs25_miami",
+        "background_id": "BG-0080",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs25_sydney",
+        "background_id": "BG-0079",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_aichi",
+        "background_id": "BG-0085",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_akita",
+        "background_id": "BG-0086",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_aomori",
+        "background_id": "BG-0087",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_chiba",
+        "background_id": "BG-0088",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_fukui",
+        "background_id": "BG-0089",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_fukushima",
+        "background_id": "BG-0090",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_gifu",
+        "background_id": "BG-0091",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_hokkaido",
+        "background_id": "BG-0092",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_hyogo",
+        "background_id": "BG-0093",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_ibaraki",
+        "background_id": "BG-0094",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_ishikawa",
+        "background_id": "BG-0095",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_iwate",
+        "background_id": "BG-0096",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_kanagawa",
+        "background_id": "BG-0097",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_kyoto",
+        "background_id": "BG-0098",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_mie",
+        "background_id": "BG-0099",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_miyagi",
+        "background_id": "BG-0100",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_nara",
+        "background_id": "BG-0101",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_niigata",
+        "background_id": "BG-0102",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_osaka",
+        "background_id": "BG-0103",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_saitama",
+        "background_id": "BG-0104",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_shiga",
+        "background_id": "BG-0105",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_shizuoka",
+        "background_id": "BG-0106",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_tochigi",
+        "background_id": "BG-0107",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_tokyo",
+        "background_id": "BG-0108",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_toyama",
+        "background_id": "BG-0109",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_wakayama",
+        "background_id": "BG-0110",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_yamagata",
+        "background_id": "BG-0267",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gwa25_global",
+        "background_id": "BG-0238",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gwa25_nagasaki",
+        "background_id": "BG-0070",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_fukuoka",
+        "background_id": "BG-0074",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_kagoshima",
+        "background_id": "BG-0075",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_miyazaki",
+        "background_id": "BG-0076",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_nagasaki",
+        "background_id": "BG-0077",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_okinawa",
+        "background_id": "BG-0073",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sr25_saga",
+        "background_id": "BG-0078",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "25_observatory",
+        "background_id": "BG-0239",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "taipei_amusement_park",
+        "background_id": "BG-0071",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "jeju_stamp_25",
+        "background_id": "BG-0069",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs25_amsterdam",
+        "background_id": "BG-0065",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs25_bangkok",
+        "background_id": "BG-0064",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs25_cancun",
+        "background_id": "BG-0067",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs25_valencia",
+        "background_id": "BG-0066",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs25_vancouver",
+        "background_id": "BG-0068",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "tales_of_transformation",
+        "background_id": "BG-0236",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "me25_paris1",
+        "background_id": "BG-0062",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "me25_paris2",
+        "background_id": "BG-0063",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "concierge",
+        "background_id": "BG-0237",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mlb_texas_rangers",
+        "background_id": "BG-0061",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mlb_minnesota_twins",
+        "background_id": "BG-0060",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mlb_boston_redsox",
+        "background_id": "BG-0058",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mlb_sf_giants",
+        "background_id": "BG-0059",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mlb_ny_mets",
+        "background_id": "BG-0057",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "anaheim_25",
+        "background_id": "BG-0054",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "dark_skies",
+        "background_id": "BG-0235",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mlb_cleveland_guardians",
+        "background_id": "BG-0053",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mlb_baltimore_orioles",
+        "background_id": "BG-0052",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mlb_chicago",
+        "background_id": "BG-0051",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mlb_arizona_chase_field",
+        "background_id": "BG-0050",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "rt25_berlin",
+        "background_id": "BG-0049",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "rt25_cologne",
+        "background_id": "BG-0056",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "rt25_hague",
+        "background_id": "BG-0055",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "rt25_london",
+        "background_id": "BG-0042",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "rt25_manchester",
+        "background_id": "BG-0040",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mlb_washington_nationals",
+        "background_id": "BG-0048",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "rt25_valencia",
+        "background_id": "BG-0047",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "jangheung",
+        "background_id": "BG-0046",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mlb_milwaukee",
+        "background_id": "BG-0044",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "rt25_paris",
+        "background_id": "BG-0045",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mlb_tampa",
+        "background_id": "BG-0043",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mlb_marlins",
+        "background_id": "BG-0041",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "roadoflegends",
+        "background_id": "BG-0257",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "9yr_coin_bg",
+        "background_id": "BG-0234",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gf25_sword",
+        "background_id": "BG-0233",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gf25_shield",
+        "background_id": "BG-0232",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "ancientsrecoveredregice",
+        "background_id": "BG-0265",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "ancientsrecoveredregidrago",
+        "background_id": "BG-0265",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "ancientsrecoveredregieleki",
+        "background_id": "BG-0265",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "ancientsrecoveredregigigas",
+        "background_id": "BG-0265",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "ancientsrecoveredregirock",
+        "background_id": "BG-0265",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "ancientsrecoveredregisteel",
+        "background_id": "BG-0265",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gf25_global",
+        "background_id": "BG-0265",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sajik_stadium",
+        "background_id": "BG-0038",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gf25_paris",
+        "background_id": "BG-0037",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gf25_jersey",
+        "background_id": "BG-0036",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "delightfuldays",
+        "background_id": "BG-0231",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gf25_osaka",
+        "background_id": "BG-0035",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "suita",
+        "background_id": "BG-0034",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "25_osaka_expo_kanto",
+        "background_id": "BG-0033",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "25_osaka_expo_pika",
+        "background_id": "BG-0032",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "25_korea_blossom",
+        "background_id": "BG-0031",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs25_milan",
+        "background_id": "BG-0029",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs25_mumbai",
+        "background_id": "BG-0028",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs25_santiago",
+        "background_id": "BG-0030",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs25_singapore",
+        "background_id": "BG-0027",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "might_and_mastery_comm_day",
+        "background_id": "BG-0230",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt25_black_and_white",
+        "background_id": "BG-0229",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt25_enigma",
+        "background_id": "BG-0226",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt25_black",
+        "background_id": "BG-0227",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt25_white",
+        "background_id": "BG-0228",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt25_la",
+        "background_id": "BG-0026",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt25_new_taipei_city",
+        "background_id": "BG-0025",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "dual_destiny_comm_day",
+        "background_id": "BG-0225",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs24_hong_kong",
+        "background_id": "BG-0023",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs24_sao_paulo",
+        "background_id": "BG-0024",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "24_wildarea",
+        "background_id": "BG-0223",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gw24_fukuoka",
+        "background_id": "BG-0022",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sz24_incheon",
+        "background_id": "BG-0021",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs24_jakarta",
+        "background_id": "BG-0020",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mlb_mariners",
+        "background_id": "BG-0019",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "yogyakarta",
+        "background_id": "BG-0017",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "wc24_honolulu",
+        "background_id": "BG-0016",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gf24_wormhole_moon",
+        "background_id": "BG-0219",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gf24_wormhole_sun",
+        "background_id": "BG-0218",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "wormhole",
+        "background_id": "BG-0215",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gf24_nyc",
+        "background_id": "BG-0015",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gf24_madrid",
+        "background_id": "BG-0014",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gf24_sendai",
+        "background_id": "BG-0013",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "moon",
+        "background_id": "BG-0217",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "sun",
+        "background_id": "BG-0216",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "surabaya",
+        "background_id": "BG-0012",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs24_tainan",
+        "background_id": "BG-0011",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "bali",
+        "background_id": "BG-0010",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gt24_la",
+        "background_id": "BG-0009",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "24_dec_comm_day",
+        "background_id": "BG-0224",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs23_mexico_city",
+        "background_id": "BG-0008",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs23_barcelona",
+        "background_id": "BG-0007",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "cs23_seoul",
+        "background_id": "BG-0006",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gf23_nyc",
+        "background_id": "BG-0005",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gf23_london",
+        "background_id": "BG-0004",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "gf23_osaka",
+        "background_id": "BG-0003",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "air_adventures_jeju",
+        "background_id": "BG-0002",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "valor",
+        "background_id": "BG-0220",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "instinct",
+        "background_id": "BG-0221",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "mystic",
+        "background_id": "BG-0222",
+        "comparison": "mapped by event/asset name"
+      },
+      {
+        "source_name": "hoenn_tour_vegas",
+        "background_id": "BG-0001",
+        "comparison": "mapped by event/asset name"
+      }
+    ]
+  },
+  "nine_db": {
+    "url": "https://9db.jp/pokemongo/data/18525",
+    "observed_count": 343,
+    "event_rows": [
+      {
+        "event": "data/26172",
+        "id": "26393",
+        "text": "PokéXciting!：マニラ 2027/1/22(金)23:00~1/23(土)23:00"
+      },
+      {
+        "event": "data/26171",
+        "id": "26394",
+        "text": "PokéXciting!：シンガポール 2026/11/6(金)23:00~11/7(土)23:00"
+      },
+      {
+        "event": "data/26145",
+        "id": "26580",
+        "text": "コミュニティデイ：ゾロア 2026/10/10(土)13:00~16:00"
+      },
+      {
+        "event": "data/26170",
+        "id": "26392",
+        "text": "PokéXciting!：台北 2026/10/10(土)9:00~10/11(日)21:00"
+      },
+      {
+        "event": "data/26466",
+        "id": "26464",
+        "text": "【欧州限定】欧州宇宙機関（ESA）コラボイベント 2026/10/3(土)23:00~2027/4/29(木)23:00"
+      },
+      {
+        "event": "data/26466",
+        "id": "26463",
+        "text": "【欧州限定】欧州宇宙機関（ESA）コラボイベント 2026/10/3(土)23:00~2027/4/29(木)23:00"
+      },
+      {
+        "event": "data/26466",
+        "id": "26462",
+        "text": "【欧州限定】欧州宇宙機関（ESA）コラボイベント 2026/10/3(土)23:00~2027/4/29(木)23:00"
+      },
+      {
+        "event": "data/26466",
+        "id": "26461",
+        "text": "【欧州限定】欧州宇宙機関（ESA）コラボイベント 2026/10/3(土)23:00~2027/4/29(木)23:00"
+      },
+      {
+        "event": "data/26466",
+        "id": "26460",
+        "text": "【欧州限定】欧州宇宙機関（ESA）コラボイベント 2026/10/3(土)23:00~2027/4/29(木)23:00"
+      },
+      {
+        "event": "data/26466",
+        "id": "26459",
+        "text": "【欧州限定】欧州宇宙機関（ESA）コラボイベント 2026/10/3(土)23:00~2027/4/29(木)23:00"
+      },
+      {
+        "event": "data/26370",
+        "id": "26517",
+        "text": "【インドネシア限定】Patterns of the Wild 2026/10/2(金)10:00~20:00"
+      },
+      {
+        "event": "data/26515",
+        "id": "26458",
+        "text": "【スペイン限定】Comic-Con Málaga 2026 2026/10/1(木)15:00~10/5(月)2:00"
+      },
+      {
+        "event": "data/26167",
+        "id": "26479",
+        "text": "【日本含む7地域限定】おつきみダンス 2026/9/23(水)9:00~9/28(月)22:59"
+      },
+      {
+        "event": "data/26204",
+        "id": "26323",
+        "text": "【日本ANA限定】「ポケモンジェット 緑」連動イベント 2026/9/18(金)13:00~2027/8/31(火)19:00"
+      },
+      {
+        "event": "data/26227",
+        "id": "26098",
+        "text": "テレビアニメコラボ2026 2026/9/16(水)9:00~9/22(火)19:00"
+      },
+      {
+        "event": "data/26144",
+        "id": "26374",
+        "text": "コミュニティデイ(復刻)：フカマル 2026/9/12(土)13:00~16:00"
+      },
+      {
+        "event": "data/25733",
+        "id": "26391",
+        "text": "PokéXciting!：クアラルンプール 2026/9/12(土)10:00~9/13(日)22:00"
+      },
+      {
+        "event": "data/26096",
+        "id": "26456",
+        "text": "Pokémon GO Fest 2026：メガフィナーレ 2026/9/5(土)9:00~9/6(日)17:00 9月6日(日)のレイドバトルから確率で入手"
+      },
+      {
+        "event": "data/26096",
+        "id": "26322",
+        "text": "Pokémon GO Fest 2026：メガフィナーレ 2026/9/5(土)9:00~9/6(日)17:00 9月5日(土)のレイドバトルから確率で入手"
+      },
+      {
+        "event": "data/26158",
+        "id": "26258",
+        "text": "メガアセンション 2026/8/31(月)9:00~9/4(金)22:59 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/26159",
+        "id": "26257",
+        "text": "GOパス：メガフィナーレ 2026/8/30(日)23:00~9/5(土)23:00"
+      },
+      {
+        "event": "data/26065",
+        "id": "25781",
+        "text": "ポケモンXP & ポケモンワールドチャンピオンシップス2026 2026/8/25(火)9:00~8/30(日)19:00 サンフランシスコ限定"
+      },
+      {
+        "event": "data/25296",
+        "id": "26182",
+        "text": "コミュニティデイ：クスネ 2026/8/16(日)13:00~16:00"
+      },
+      {
+        "event": "data/26163",
+        "id": "26165",
+        "text": "10周年セレブレーション 2026/8/13(木)7:00~9/6(日)22:59 タイムチャレンジから入手"
+      },
+      {
+        "event": "data/26107",
+        "id": "26115",
+        "text": "レゴコラボ 2026/8/3(月)9:00~9/30(水)22:59"
+      },
+      {
+        "event": "data/25861",
+        "id": "25998",
+        "text": "【日本ANA限定】「ポケモンジェット 赤」連動イベント 2026/7/28(火)15:00~2027/8/31(火)19:00"
+      },
+      {
+        "event": "data/25775",
+        "id": "26031",
+        "text": "ウルトラアンロック：10周年版 2026/7/21(火)9:00~7/27(月)19:00 GOパスのリワード"
+      },
+      {
+        "event": "data/25775",
+        "id": "26030",
+        "text": "ウルトラアンロック：10周年版 2026/7/21(火)9:00~7/27(月)19:00 GOパスのリワード"
+      },
+      {
+        "event": "data/25775",
+        "id": "26029",
+        "text": "ウルトラアンロック：10周年版 2026/7/21(火)9:00~7/27(月)19:00 GOパスのリワード"
+      },
+      {
+        "event": "data/25775",
+        "id": "26017",
+        "text": "ウルトラアンロック：10周年版 2026/7/21(火)9:00~7/27(月)19:00 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/25775",
+        "id": "26016",
+        "text": "ウルトラアンロック：10周年版 2026/7/21(火)9:00~7/27(月)19:00 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/25775",
+        "id": "26015",
+        "text": "ウルトラアンロック：10周年版 2026/7/21(火)9:00~7/27(月)19:00 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/25775",
+        "id": "26014",
+        "text": "ウルトラアンロック：10周年版 2026/7/21(火)9:00~7/27(月)19:00"
+      },
+      {
+        "event": "data/25775",
+        "id": "26013",
+        "text": "ウルトラアンロック：10周年版 2026/7/21(火)9:00~7/27(月)19:00"
+      },
+      {
+        "event": "data/25775",
+        "id": "26012",
+        "text": "ウルトラアンロック：10周年版 2026/7/21(火)9:00~7/27(月)19:00"
+      },
+      {
+        "event": "data/25797",
+        "id": "26011",
+        "text": "博士の誕生日チャレンジ 2026/7/21(火)9:00~19:00"
+      },
+      {
+        "event": "data/25797",
+        "id": "26010",
+        "text": "博士の誕生日チャレンジ 2026/7/21(火)9:00~19:00"
+      },
+      {
+        "event": "data/25797",
+        "id": "26009",
+        "text": "博士の誕生日チャレンジ 2026/7/21(火)9:00~19:00"
+      },
+      {
+        "event": "data/25929",
+        "id": "25976",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 クリブデン"
+      },
+      {
+        "event": "data/25929",
+        "id": "25987",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 モティスフォント"
+      },
+      {
+        "event": "data/25929",
+        "id": "25989",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 ナイマンズ"
+      },
+      {
+        "event": "data/25929",
+        "id": "25990",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 ポールズデン・レイシー"
+      },
+      {
+        "event": "data/25929",
+        "id": "25991",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 スコットニー城"
+      },
+      {
+        "event": "data/25929",
+        "id": "25993",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 ストウ・ガーデンズ"
+      },
+      {
+        "event": "data/25929",
+        "id": "25971",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 アングルシー・アビー"
+      },
+      {
+        "event": "data/25929",
+        "id": "25972",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 アッティンガム・パーク"
+      },
+      {
+        "event": "data/25929",
+        "id": "25973",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 ベルトン・エステート"
+      },
+      {
+        "event": "data/25929",
+        "id": "25974",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 ケーク・アビー"
+      },
+      {
+        "event": "data/25929",
+        "id": "25977",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 クランバー・パーク"
+      },
+      {
+        "event": "data/25929",
+        "id": "25981",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 ハンベリー・ホール"
+      },
+      {
+        "event": "data/25929",
+        "id": "25982",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 ハードウィック"
+      },
+      {
+        "event": "data/25929",
+        "id": "25997",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 ウィンポール・エステート"
+      },
+      {
+        "event": "data/25929",
+        "id": "25978",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 ダナム・マジー"
+      },
+      {
+        "event": "data/25929",
+        "id": "25979",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 ファウンテンズ・アビー"
+      },
+      {
+        "event": "data/25929",
+        "id": "25980",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 ギブサイド"
+      },
+      {
+        "event": "data/25929",
+        "id": "25986",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 ライム"
+      },
+      {
+        "event": "data/25929",
+        "id": "25988",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 マウント・スチュアート"
+      },
+      {
+        "event": "data/25929",
+        "id": "25975",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 チルク城と庭園"
+      },
+      {
+        "event": "data/25929",
+        "id": "25983",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 キラートン"
+      },
+      {
+        "event": "data/25929",
+        "id": "25984",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 キングストン・レイシー"
+      },
+      {
+        "event": "data/25929",
+        "id": "25985",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 レイコック"
+      },
+      {
+        "event": "data/25929",
+        "id": "25992",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 ストーヘッド"
+      },
+      {
+        "event": "data/25929",
+        "id": "25994",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 トレデガー・ハウス"
+      },
+      {
+        "event": "data/25929",
+        "id": "25995",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 トレリシック"
+      },
+      {
+        "event": "data/25929",
+        "id": "25996",
+        "text": "【イギリス限定】National Trustコラボ 2026/7/18(土)17:00~2027/1/1(金)3:00 ティンツフィールド"
+      },
+      {
+        "event": "data/25038",
+        "id": "26025",
+        "text": "GO Fest 2026：グローバル 2026/7/11(土)9:00~7/12(日)18:00 伝説とUBは「大いなる軌跡」を参照※ただし、グローバルでは合体後のキュレムとネクロズマ、ゲンシカイオーガ、ゲンシグラードンの出現はなし"
+      },
+      {
+        "event": "data/25038",
+        "id": "25909",
+        "text": "GO Fest 2026：グローバル 2026/7/11(土)9:00~7/12(日)18:00"
+      },
+      {
+        "event": "data/25742",
+        "id": "25849",
+        "text": "大いなる軌跡 2026/7/5(日)23:01~7/10(金)22:59"
+      },
+      {
+        "event": "data/25742",
+        "id": "25848",
+        "text": "大いなる軌跡 2026/7/5(日)23:01~7/10(金)22:59"
+      },
+      {
+        "event": "data/25742",
+        "id": "25842",
+        "text": "大いなる軌跡 2026/7/5(日)23:01~7/10(金)22:59"
+      },
+      {
+        "event": "data/25742",
+        "id": "25841",
+        "text": "大いなる軌跡 2026/7/5(日)23:01~7/10(金)22:59"
+      },
+      {
+        "event": "data/25742",
+        "id": "25840",
+        "text": "大いなる軌跡 2026/7/5(日)23:01~7/10(金)22:59 GOパスデラックスのリワード"
+      },
+      {
+        "event": "data/25295",
+        "id": "25838",
+        "text": "コミュニティデイ：メッソン 2026/7/4(土)13:00~16:00"
+      },
+      {
+        "event": "data/25704",
+        "id": "25815",
+        "text": "Pokémon GO 10周年記念イベント 2026/7/4(土)9:00~7/6(月)19:00"
+      },
+      {
+        "event": "data/25834",
+        "id": "25721",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンセンターサッポロ"
+      },
+      {
+        "event": "data/25834",
+        "id": "25724",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンセンタートウホク"
+      },
+      {
+        "event": "data/25834",
+        "id": "25726",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンセンタートウキョーDX"
+      },
+      {
+        "event": "data/25834",
+        "id": "25716",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンセンターメガトウキョー"
+      },
+      {
+        "event": "data/25834",
+        "id": "25711",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンGO Lab"
+      },
+      {
+        "event": "data/25834",
+        "id": "25722",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンセンターシブヤ"
+      },
+      {
+        "event": "data/25834",
+        "id": "25723",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンセンタースカイツリータウン"
+      },
+      {
+        "event": "data/25834",
+        "id": "25725",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンセンタートウキョーベイ"
+      },
+      {
+        "event": "data/25834",
+        "id": "25727",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンセンターヨコハマ"
+      },
+      {
+        "event": "data/25834",
+        "id": "25717",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンセンターナゴヤ"
+      },
+      {
+        "event": "data/25834",
+        "id": "25714",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンセンターカナザワ"
+      },
+      {
+        "event": "data/25834",
+        "id": "25715",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンセンターキョウト"
+      },
+      {
+        "event": "data/25834",
+        "id": "25720",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンセンターオーサカDX"
+      },
+      {
+        "event": "data/25834",
+        "id": "25719",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンセンターオーサカ"
+      },
+      {
+        "event": "data/25834",
+        "id": "25712",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンセンターヒロシマ"
+      },
+      {
+        "event": "data/25834",
+        "id": "25713",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンセンターカガワ"
+      },
+      {
+        "event": "data/25834",
+        "id": "25710",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンセンターフクオカ"
+      },
+      {
+        "event": "data/25834",
+        "id": "25718",
+        "text": "集まれ！ポケモンセンターへ！ 2026/6/30(火)23:00~7/16(木)23:00 ポケモンセンターオキナワ"
+      },
+      {
+        "event": "data/25789",
+        "id": "25791",
+        "text": "【ブラジル限定】Arraiá do Pokémon GO 2026/6/23(火)21:00~6/30(火)9:00"
+      },
+      {
+        "event": "data/25294",
+        "id": "25753",
+        "text": "コミュニティデイ：セビエ 2026/6/20(土)13:00~16:00"
+      },
+      {
+        "event": "data/24359",
+        "id": "26541",
+        "text": "GO Fest 2026：コペンハーゲン 2026/6/11(木)15:00~6/15(月)0:00 タイムチャレンジ"
+      },
+      {
+        "event": "data/24359",
+        "id": "26540",
+        "text": "GO Fest 2026：コペンハーゲン 2026/6/11(木)15:00~6/15(月)0:00 スペシャルリサーチのリワード"
+      },
+      {
+        "event": "data/24359",
+        "id": "25709",
+        "text": "GO Fest 2026：コペンハーゲン 2026/6/11(木)15:00~6/15(月)0:00 「GOスタンプラリー」でレゴのスタンプを集める"
+      },
+      {
+        "event": "data/24359",
+        "id": "25408",
+        "text": "GO Fest 2026：コペンハーゲン 2026/6/11(木)15:00~6/15(月)0:00 レイドバトルから確率で入手(ミュウツー、ファイヤー、エンテイ、グラードン、カイオーガはシャドウも対象)"
+      },
+      {
+        "event": "data/25417",
+        "id": "25597",
+        "text": "キャンデラの戦法探求 2026/6/9(火)9:00~6/15(月)19:00"
+      },
+      {
+        "event": "data/24360",
+        "id": "26539",
+        "text": "GO Fest 2026：シカゴ 2026/6/3(水)23:00~6/7(日)17:00 タイムチャレンジから入手"
+      },
+      {
+        "event": "data/24360",
+        "id": "26538",
+        "text": "GO Fest 2026：シカゴ 2026/6/3(水)23:00~6/7(日)17:00 スペシャルリサーチのリワード"
+      },
+      {
+        "event": "data/24360",
+        "id": "25407",
+        "text": "GO Fest 2026：シカゴ 2026/6/3(水)23:00~6/7(日)17:00 レイドバトルから確率で入手(ミュウツー、サンダー、ライコウ、グラードン、カイオーガはシャドウも対象)"
+      },
+      {
+        "event": "data/25415",
+        "id": "25596",
+        "text": "スパークの育て方探求 2026/6/2(火)9:00~6/8(月)19:00"
+      },
+      {
+        "event": "data/25413",
+        "id": "25467",
+        "text": "ブランシェの知識探求 2026/5/26(火)9:00~6/1(月)19:00"
+      },
+      {
+        "event": "data/24358",
+        "id": "25920",
+        "text": "GO Fest 2026：東京 2026/5/24(日)23:00~6/1(月)19:00 スペシャルリサーチのリワード"
+      },
+      {
+        "event": "data/24358",
+        "id": "25462",
+        "text": "GO Fest 2026：東京 2026/5/24(日)23:00~6/1(月)19:00 タイムチャレンジから入手"
+      },
+      {
+        "event": "data/24358",
+        "id": "25406",
+        "text": "GO Fest 2026：東京 2026/5/24(日)23:00~6/1(月)19:00 レイドバトルから確率で入手(ミュウツー、フリーザー、スイクン、グラードン、カイオーガはシャドウも対象)"
+      },
+      {
+        "event": "data/24358",
+        "id": "25370",
+        "text": "GO Fest 2026：東京 2026/5/24(日)23:00~6/1(月)19:00 「GOスタンプラリー」で品川区のスタンプを集める"
+      },
+      {
+        "event": "data/24358",
+        "id": "25369",
+        "text": "GO Fest 2026：東京 2026/5/24(日)23:00~6/1(月)19:00 「GOスタンプラリー」で港区のスタンプを集める"
+      },
+      {
+        "event": "data/24358",
+        "id": "25368",
+        "text": "GO Fest 2026：東京 2026/5/24(日)23:00~6/1(月)19:00 「GOスタンプラリー」で江東区のスタンプを集める"
+      },
+      {
+        "event": "data/24515",
+        "id": "25412",
+        "text": "コミュニティデイ(復刻)：モノズ 2026/5/16(土)13:00~16:00"
+      },
+      {
+        "event": "data/24514",
+        "id": "25378",
+        "text": "コミュニティデイ：グルトン 2026/5/9(土)13:00~16:00"
+      },
+      {
+        "event": "data/24513",
+        "id": "25230",
+        "text": "コミュニティデイ：カヌチャン 2026/4/11(土)13:00~16:00"
+      },
+      {
+        "event": "data/24948",
+        "id": "26020",
+        "text": "プロ野球12球団コラボイベント 2026/4/2(木)23:00~ 7月28日 東京ドーム(セリーグvsパリーグ)"
+      },
+      {
+        "event": "data/24948",
+        "id": "26019",
+        "text": "プロ野球12球団コラボイベント 2026/4/2(木)23:00~ 7月29日 富山市民球場(パリーグvsセリーグ)"
+      },
+      {
+        "event": "data/24948",
+        "id": "24968",
+        "text": "プロ野球12球団コラボイベント 2026/4/2(木)23:00~ 8月21日、22日、23日 中日ドラゴンズ戦"
+      },
+      {
+        "event": "data/24948",
+        "id": "24967",
+        "text": "プロ野球12球団コラボイベント 2026/4/2(木)23:00~ 8月11日、12日、13日 北海道日本ハムファイターズ戦"
+      },
+      {
+        "event": "data/24948",
+        "id": "24966",
+        "text": "プロ野球12球団コラボイベント 2026/4/2(木)23:00~ 7月20日、21日、22日 東京ヤクルトスワローズ戦"
+      },
+      {
+        "event": "data/24948",
+        "id": "24965",
+        "text": "プロ野球12球団コラボイベント 2026/4/2(木)23:00~ 5月23日、24日 横浜DeNAベイスターズ戦"
+      },
+      {
+        "event": "data/24948",
+        "id": "24964",
+        "text": "プロ野球12球団コラボイベント 2026/4/2(木)23:00~ 5月15日、16日、17日 千葉ロッテマリーンズ戦"
+      },
+      {
+        "event": "data/24948",
+        "id": "24963",
+        "text": "プロ野球12球団コラボイベント 2026/4/2(木)23:00~ 5月8日、9日、10日 オリックス・バファローズ戦"
+      },
+      {
+        "event": "data/24948",
+        "id": "24962",
+        "text": "プロ野球12球団コラボイベント 2026/4/2(木)23:00~ 5月4日、5日、6日 埼玉西武ライオンズ戦"
+      },
+      {
+        "event": "data/24948",
+        "id": "24961",
+        "text": "プロ野球12球団コラボイベント 2026/4/2(木)23:00~ 5月1日、2日、3日 福岡ソフトバンクホークス戦"
+      },
+      {
+        "event": "data/24948",
+        "id": "24960",
+        "text": "プロ野球12球団コラボイベント 2026/4/2(木)23:00~ 4月21日、22日、23日 広島東洋カープ戦"
+      },
+      {
+        "event": "data/24948",
+        "id": "24959",
+        "text": "プロ野球12球団コラボイベント 2026/4/2(木)23:00~ 4月17日 阪神タイガース戦"
+      },
+      {
+        "event": "data/24948",
+        "id": "24958",
+        "text": "プロ野球12球団コラボイベント 2026/4/2(木)23:00~ 4月10日、11日、12日 東北楽天ゴールデンイーグルス戦"
+      },
+      {
+        "event": "data/24948",
+        "id": "24957",
+        "text": "プロ野球12球団コラボイベント 2026/4/2(木)23:00~ 4月3日、4日、5日 読売ジャイアンツ戦"
+      },
+      {
+        "event": "data/25140",
+        "id": "25053",
+        "text": "【台北限定】台北フラワーピクニック 2026/3/28(土)10:00~4/6(月)20:00"
+      },
+      {
+        "event": "data/24512",
+        "id": "24970",
+        "text": "コミュニティデイ：ヒバニー 2026/3/14(土)13:00~16:00"
+      },
+      {
+        "event": "data/24929",
+        "id": "24969",
+        "text": "「ぽこ あ ポケモン」コラボイベント 2026/3/10(火)9:00~3/16(月)19:00"
+      },
+      {
+        "event": "data/25005",
+        "id": "24953",
+        "text": "【インド限定】カラーフェスティバル2026 2026/3/4(水)12:30~3/8(日)22:30"
+      },
+      {
+        "event": "data/23720",
+        "id": "24998",
+        "text": "GO Tour：カロス地方 (グローバル) 2026/2/28(土)9:00~3/1(日)17:00 コード入力で受け取れるタイムチャレンジのリワード"
+      },
+      {
+        "event": "data/23720",
+        "id": "24999",
+        "text": "GO Tour：カロス地方 (グローバル) 2026/2/28(土)9:00~3/1(日)17:00 コード入力で受け取れるタイムチャレンジのリワード"
+      },
+      {
+        "event": "data/23720",
+        "id": "24697",
+        "text": "GO Tour：カロス地方 (グローバル) 2026/2/28(土)9:00~3/1(日)17:00 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/23720",
+        "id": "24698",
+        "text": "GO Tour：カロス地方 (グローバル) 2026/2/28(土)9:00~3/1(日)17:00 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/23720",
+        "id": "24694",
+        "text": "GO Tour：カロス地方 (グローバル) 2026/2/28(土)9:00~3/1(日)17:00 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/24643",
+        "id": "24846",
+        "text": "GOパス：カロスへの道 2026/2/23(月)9:00~3/1(日)17:00"
+      },
+      {
+        "event": "data/24642",
+        "id": "24769",
+        "text": "カロスへの道 2026/2/22(日)23:00~2/27(金)22:59 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/24642",
+        "id": "24770",
+        "text": "カロスへの道 2026/2/22(日)23:00~2/27(金)22:59 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/24642",
+        "id": "24771",
+        "text": "カロスへの道 2026/2/22(日)23:00~2/27(金)22:59 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/24642",
+        "id": "24695",
+        "text": "カロスへの道 2026/2/22(日)23:00~2/27(金)22:59 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/24642",
+        "id": "24696",
+        "text": "カロスへの道 2026/2/22(日)23:00~2/27(金)22:59 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/24642",
+        "id": "24699",
+        "text": "カロスへの道 2026/2/22(日)23:00~2/27(金)22:59 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/24642",
+        "id": "24700",
+        "text": "カロスへの道 2026/2/22(日)23:00~2/27(金)22:59 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/24642",
+        "id": "24701",
+        "text": "カロスへの道 2026/2/22(日)23:00~2/27(金)22:59 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/24642",
+        "id": "24702",
+        "text": "カロスへの道 2026/2/22(日)23:00~2/27(金)22:59 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/24642",
+        "id": "24772",
+        "text": "カロスへの道 2026/2/22(日)23:00~2/27(金)22:59 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/24642",
+        "id": "24773",
+        "text": "カロスへの道 2026/2/22(日)23:00~2/27(金)22:59 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/24642",
+        "id": "24775",
+        "text": "カロスへの道 2026/2/22(日)23:00~2/27(金)22:59 黒背景付キュレム＋白背景付レシラム"
+      },
+      {
+        "event": "data/24642",
+        "id": "24774",
+        "text": "カロスへの道 2026/2/22(日)23:00~2/27(金)22:59 白背景付キュレム＋黒背景付レシラム"
+      },
+      {
+        "event": "data/23719",
+        "id": "24766",
+        "text": "GO Tour：カロス地方 (ロサンゼルス) 2026/2/21(土)1:00~2/23(月)9:00 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/23718",
+        "id": "24767",
+        "text": "GO Tour：カロス地方 (台南) 2026/2/20(金)9:00~2/22(日)17:00 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/24591",
+        "id": "24679",
+        "text": "【ドイツ限定】GO-Stempel-Rallye in Köln 2026/2/7(土)19:00~23:00"
+      },
+      {
+        "event": "data/24544",
+        "id": "24486",
+        "text": "ポケパークカントーコラボ 2026/2/5(木)9:00~"
+      },
+      {
+        "event": "data/24677",
+        "id": "24678",
+        "text": "【ブラジル限定】カラミンゴカーニバルinリオデジャネイロ 2026/2/3(火)21:00~2/9(月)7:00"
+      },
+      {
+        "event": "data/24143",
+        "id": "24682",
+        "text": "コミュニティデイ：ロコン&アローラロコン 2026/2/1(日)13:00~16:00"
+      },
+      {
+        "event": "data/24448",
+        "id": "24395",
+        "text": "【韓国限定】冬祭りイベント2026 2026/1/19(月)9:00~1/25(日)19:00"
+      },
+      {
+        "event": "data/24142",
+        "id": "24494",
+        "text": "コミュニティデイ：サルノリ 2026/1/18(日)13:00~16:00"
+      },
+      {
+        "event": "data/24472",
+        "id": "24467",
+        "text": "【インドネシア限定】Car Free Day Party 2026/1/10(土)23:00~2/14(土)23:00"
+      },
+      {
+        "event": "data/24141",
+        "id": "24460",
+        "text": "コミュニティデイ(復刻)：ポッチャマ 2026/1/4(日)13:00~16:00"
+      },
+      {
+        "event": "data/24435",
+        "id": "24394",
+        "text": "【アメリカ限定】NFLコラボイベント 2025/12/22(月)1:00~23:00 アリゾナ カージナルス"
+      },
+      {
+        "event": "data/23891",
+        "id": "24004",
+        "text": "City Safari：アメリカ(マイアミ) 2025/12/13(土)23:00~12/15(月)7:00"
+      },
+      {
+        "event": "data/23890",
+        "id": "24003",
+        "text": "City Safari：アルゼンチン(ブエノスアイレス) 2025/12/13(土)21:00~12/15(月)5:00"
+      },
+      {
+        "event": "data/23892",
+        "id": "24005",
+        "text": "City Safari：オーストラリア(シドニー) 2025/12/13(土)7:00~12/14(日)15:00"
+      },
+      {
+        "event": "data/23269",
+        "id": "24311",
+        "text": "コミュニティデイ：ツツケラ 2025/11/30(日)13:00~16:00"
+      },
+      {
+        "event": "data/23510",
+        "id": "24057",
+        "text": "ワイルドエリア2025：グローバル 2025/11/15(土)9:00~11/16(日)17:00 クレセリアとダークライはシャドウ"
+      },
+      {
+        "event": "data/23944",
+        "id": "24169",
+        "text": "ワイルドウィーク：2025 2025/11/10(月)9:00~11/14(金)19:00"
+      },
+      {
+        "event": "data/23509",
+        "id": "24313",
+        "text": "ワイルドエリア2025：長崎 2025/11/7(金)8:00~11/9(日)16:00 「GOスタンプラリー」でスタンプを集める"
+      },
+      {
+        "event": "data/23509",
+        "id": "24164",
+        "text": "ワイルドエリア2025：長崎 2025/11/7(金)8:00~11/9(日)16:00 タイムチャレンジから入手"
+      },
+      {
+        "event": "data/23509",
+        "id": "24056",
+        "text": "ワイルドエリア2025：長崎 2025/11/7(金)8:00~11/9(日)16:00 レイドバトルから確率で入手(クレセリアとダークライはシャドウ)"
+      },
+      {
+        "event": "data/24070",
+        "id": "24322",
+        "text": "GOパス：11月 2025/11/4(火)9:00~12/2(火)9:00"
+      },
+      {
+        "event": "data/24038",
+        "id": "24078",
+        "text": "ポケモン天文台コラボ 2025/11/1(土)9:00~"
+      },
+      {
+        "event": "data/23807",
+        "id": "23853",
+        "text": "【台湾限定】ポケモンGOスタンプラリー 2025/10/20(月)23:00~11/15(土)23:00"
+      },
+      {
+        "event": "data/23771",
+        "id": "23958",
+        "text": "『Pokémon LEGENDS Z-A』セレブレーション 2025/10/16(木)9:00~10/20(月)19:00 無料タイムチャレンジのリワード"
+      },
+      {
+        "event": "data/23268",
+        "id": "23931",
+        "text": "コミュニティデイ：ユニラン 2025/10/12(日)13:00~16:00"
+      },
+      {
+        "event": "data/23849",
+        "id": "24002",
+        "text": "GOパス：10月 2025/10/7(火)9:00~11/4(火)9:00"
+      },
+      {
+        "event": "data/23614",
+        "id": "23703",
+        "text": "【韓国限定】済州島スタンプラリー 2025/10/2(木)6:00~10/26(日)21:00"
+      },
+      {
+        "event": "data/23142",
+        "id": "23816",
+        "text": "City Safari：メキシコ(カンクン) 2025/9/28(日)0:00~9/29(月)8:00"
+      },
+      {
+        "event": "data/23145",
+        "id": "23818",
+        "text": "City Safari：カナダ(バンクーバー) 2025/9/27(土)22:00~9/29(月)6:00"
+      },
+      {
+        "event": "data/23144",
+        "id": "23817",
+        "text": "City Safari：スペイン(バレンシア) 2025/9/27(土)16:00~9/29(月)0:00"
+      },
+      {
+        "event": "data/23140",
+        "id": "23814",
+        "text": "City Safari：オランダ(アムステルダム) 2025/9/27(土)16:00~9/29(月)0:00"
+      },
+      {
+        "event": "data/23141",
+        "id": "23815",
+        "text": "City Safari：タイ(バンコク) 2025/9/27(土)11:00~9/28(日)19:00"
+      },
+      {
+        "event": "data/23267",
+        "id": "23680",
+        "text": "コミュニティデイ：フラベベ 2025/9/14(日)13:00~16:00"
+      },
+      {
+        "event": "data/23010",
+        "id": "23663",
+        "text": "【フランス限定】ポケモンGOスタンプラリー 2025/9/12(金)23:00~9/13(土)23:00"
+      },
+      {
+        "event": "data/23010",
+        "id": "23662",
+        "text": "【フランス限定】ポケモンGOスタンプラリー 2025/9/12(金)23:00~9/13(土)23:00"
+      },
+      {
+        "event": "data/23010",
+        "id": "23661",
+        "text": "【フランス限定】ポケモンGOスタンプラリー 2025/9/12(金)23:00~9/13(土)23:00"
+      },
+      {
+        "event": "data/23463",
+        "id": "23628",
+        "text": "「ポケモンコンシェルジュ」セレブレーションイベント 2025/9/9(火)9:00~9/14(日)19:00"
+      },
+      {
+        "event": "data/23547",
+        "id": "23679",
+        "text": "GOパス：9月 2025/9/2(火)9:00~10/7(火)9:00 ランク100のリワード"
+      },
+      {
+        "event": "data/22573",
+        "id": "23577",
+        "text": "コミュニティデイ：ココガラ 2025/8/30(土)13:00~16:00"
+      },
+      {
+        "event": "data/23025",
+        "id": "23385",
+        "text": "GO Fest 2025：マックスフィナーレ 2025/8/23(土)9:00~8/24(日)19:00 キョダイマックスバトルから確率で入手"
+      },
+      {
+        "event": "data/23025",
+        "id": "23198",
+        "text": "GO Fest 2025：マックスフィナーレ 2025/8/23(土)9:00~8/24(日)19:00 コード入力で受け取れるタイムチャレンジのリワード"
+      },
+      {
+        "event": "data/23192",
+        "id": "23199",
+        "text": "紫黒の空 2025/8/18(月)9:00~8/23(土)9:00 ダイマックスバトルから確率で入手"
+      },
+      {
+        "event": "data/23246",
+        "id": "23200",
+        "text": "WCS2025記念イベント 2025/8/15(金)9:00~8/17(日)19:00 アメリカ カリフォルニア州アナハイムの会場で確率で入手"
+      },
+      {
+        "event": "data/23227",
+        "id": "23315",
+        "text": "GOパス：8月 2025/8/5(火)9:00~9/2(火)9:00 ランク100のリワード"
+      },
+      {
+        "event": "data/23065",
+        "id": "23088",
+        "text": "【韓国限定】2025夏 水まつりイベント 2025/7/28(月)9:00~8/3(日)19:00"
+      },
+      {
+        "event": "data/22572",
+        "id": "23163",
+        "text": "コミュニティデイ：クワッス 2025/7/20(日)13:00~16:00"
+      },
+      {
+        "event": "data/22656",
+        "id": "22769",
+        "text": "【イギリス、フランス、スペイン、ドイツ、オランダ限定限定】Pokémon GO ロードトリップ 2025 2025/7/15(火)23:00~8/23(土)23:00 8/20(水)〜8/24(日) ドイツ ケルン"
+      },
+      {
+        "event": "data/22656",
+        "id": "22770",
+        "text": "【イギリス、フランス、スペイン、ドイツ、オランダ限定限定】Pokémon GO ロードトリップ 2025 2025/7/15(火)23:00~8/23(土)23:00 8/16(土) オランダ ハーグ"
+      },
+      {
+        "event": "data/22656",
+        "id": "22768",
+        "text": "【イギリス、フランス、スペイン、ドイツ、オランダ限定限定】Pokémon GO ロードトリップ 2025 2025/7/15(火)23:00~8/23(土)23:00 8/9(土) ドイツ ベルリン"
+      },
+      {
+        "event": "data/22656",
+        "id": "22774",
+        "text": "【イギリス、フランス、スペイン、ドイツ、オランダ限定限定】Pokémon GO ロードトリップ 2025 2025/7/15(火)23:00~8/23(土)23:00 8/2(土) スペイン バレンシア"
+      },
+      {
+        "event": "data/22656",
+        "id": "22773",
+        "text": "【イギリス、フランス、スペイン、ドイツ、オランダ限定限定】Pokémon GO ロードトリップ 2025 2025/7/15(火)23:00~8/23(土)23:00 7/26(土) フランス パリ"
+      },
+      {
+        "event": "data/22656",
+        "id": "22771",
+        "text": "【イギリス、フランス、スペイン、ドイツ、オランダ限定限定】Pokémon GO ロードトリップ 2025 2025/7/15(火)23:00~8/23(土)23:00 7/19(土) イギリス ロンドン"
+      },
+      {
+        "event": "data/22656",
+        "id": "22772",
+        "text": "【イギリス、フランス、スペイン、ドイツ、オランダ限定限定】Pokémon GO ロードトリップ 2025 2025/7/15(火)23:00~8/23(土)23:00 7/16(水) イギリス マンチェスター"
+      },
+      {
+        "event": "data/22955",
+        "id": "23113",
+        "text": "ウォーターフェスティバル2025 2025/7/15(火)9:00~7/20(日)19:00 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/22571",
+        "id": "23069",
+        "text": "復刻コミュニティデイ：イーブイ 2025/7/5(土)13:00~7/6(日)16:00"
+      },
+      {
+        "event": "data/21865",
+        "id": "21859",
+        "text": "【アメリカ限定】MLB2025コラボイベント 2025/7/1(火)23:00~9/6(土)23:00 9/7(日) レンジャーズ戦(テキサス)"
+      },
+      {
+        "event": "data/21865",
+        "id": "21858",
+        "text": "【アメリカ限定】MLB2025コラボイベント 2025/7/1(火)23:00~9/6(土)23:00 8/31(日) ツインズ戦(ミネソタ)"
+      },
+      {
+        "event": "data/21865",
+        "id": "21857",
+        "text": "【アメリカ限定】MLB2025コラボイベント 2025/7/1(火)23:00~9/6(土)23:00 8/29(金) ジャイアンツ戦(サンフランシスコ)"
+      },
+      {
+        "event": "data/21865",
+        "id": "21856",
+        "text": "【アメリカ限定】MLB2025コラボイベント 2025/7/1(火)23:00~9/6(土)23:00 8/29(金) レッドソックス戦(ボストン)"
+      },
+      {
+        "event": "data/21865",
+        "id": "21855",
+        "text": "【アメリカ限定】MLB2025コラボイベント 2025/7/1(火)23:00~9/6(土)23:00 8/25(月) メッツ戦(ニューヨーク)"
+      },
+      {
+        "event": "data/21865",
+        "id": "21849",
+        "text": "【アメリカ限定】MLB2025コラボイベント 2025/7/1(火)23:00~9/6(土)23:00 8/14(木) ガーディアンズ戦(クリーブランド)"
+      },
+      {
+        "event": "data/21865",
+        "id": "21854",
+        "text": "【アメリカ限定】MLB2025コラボイベント 2025/7/1(火)23:00~9/6(土)23:00 8/13(水) オリオールズ戦(ボルチモア)"
+      },
+      {
+        "event": "data/21865",
+        "id": "21853",
+        "text": "【アメリカ限定】MLB2025コラボイベント 2025/7/1(火)23:00~9/6(土)23:00 8/11(月) ホワイトソックス戦(シカゴ)"
+      },
+      {
+        "event": "data/21865",
+        "id": "21852",
+        "text": "【アメリカ限定】MLB2025コラボイベント 2025/7/1(火)23:00~9/6(土)23:00 8/10(日) ダイヤモンドバックス戦(アリゾナ)"
+      },
+      {
+        "event": "data/21865",
+        "id": "23302",
+        "text": "【アメリカ限定】MLB2025コラボイベント 2025/7/1(火)23:00~9/6(土)23:00 8/5(火) ナショナルズ戦(ワシントン)"
+      },
+      {
+        "event": "data/21865",
+        "id": "21850",
+        "text": "【アメリカ限定】MLB2025コラボイベント 2025/7/1(火)23:00~9/6(土)23:00 7/25(金) ブルワーズ戦(ミルウォーキー)"
+      },
+      {
+        "event": "data/21865",
+        "id": "23162",
+        "text": "【アメリカ限定】MLB2025コラボイベント 2025/7/1(火)23:00~9/6(土)23:00 7/20(日) レイズ戦(タンパ)"
+      },
+      {
+        "event": "data/21865",
+        "id": "21862",
+        "text": "【アメリカ限定】MLB2025コラボイベント 2025/7/1(火)23:00~9/6(土)23:00 7/18(金) マーリンズ戦(マイアミ)"
+      },
+      {
+        "event": "data/21865",
+        "id": "21848",
+        "text": "【アメリカ限定】MLB2025コラボイベント 2025/7/1(火)23:00~9/6(土)23:00 7/2(水) マリナーズ戦(シアトル)"
+      },
+      {
+        "event": "data/23031",
+        "id": "23051",
+        "text": "GOパス：7月 2025/7/1(火)9:00~8/5(火)9:00 ランク100のリワード"
+      },
+      {
+        "event": "data/22919",
+        "id": "22764",
+        "text": "9周年記念イベント 2025/7/1(火)9:00~7/6(日)19:00"
+      },
+      {
+        "event": "data/22078",
+        "id": "23014",
+        "text": "GO Fest 2025：グローバル 2025/6/28(土)9:00~6/29(日)17:00"
+      },
+      {
+        "event": "data/22078",
+        "id": "23012",
+        "text": "GO Fest 2025：グローバル 2025/6/28(土)9:00~6/29(日)17:00"
+      },
+      {
+        "event": "data/22639",
+        "id": "22937",
+        "text": "過去の残像 2025/6/23(月)9:00~6/27(金)19:00 レイドバトルから確率で入手"
+      },
+      {
+        "event": "data/22849",
+        "id": "22784",
+        "text": "GOパス：過去の残像 2025/6/23(月)9:00~6/29(日)17:00 サプライズの選択肢から入手"
+      },
+      {
+        "event": "data/22570",
+        "id": "22877",
+        "text": "コミュニティデイ：ジャラコ 2025/6/21(土)13:00~16:00"
+      },
+      {
+        "event": "data/22778",
+        "id": "22779",
+        "text": "【韓国限定】ロッテジャイアンツ正規リーグイベント 2025/6/19(木)9:00~6/21(土)19:00"
+      },
+      {
+        "event": "data/21497",
+        "id": "21568",
+        "text": "GO Fest 2025：パリ 2025/6/13(金)15:00~6/16(月)0:00"
+      },
+      {
+        "event": "data/21496",
+        "id": "21569",
+        "text": "GO Fest 2025：ジャージーシティ 2025/6/6(金)21:00~6/9(月)6:00"
+      },
+      {
+        "event": "data/22760",
+        "id": "22838",
+        "text": "GOパス：6月 2025/6/3(火)9:00~7/1(火)9:00 ランク100のリワード"
+      },
+      {
+        "event": "data/21495",
+        "id": "22530",
+        "text": "GO Fest 2025：大阪 2025/5/29(木)8:00~6/1(日)17:00"
+      },
+      {
+        "event": "data/21495",
+        "id": "22585",
+        "text": "GO Fest 2025：大阪 2025/5/29(木)8:00~6/1(日)17:00 吹田市のGOスタンプラリーを完成させる"
+      },
+      {
+        "event": "data/21825",
+        "id": "22664",
+        "text": "復刻コミュニティデイ：ワンリキー 2025/5/24(土)13:00~16:00"
+      },
+      {
+        "event": "data/22475",
+        "id": "22621",
+        "text": "最後の一撃：GOバトルウィーク 2025/5/21(水)9:00~5/27(火)19:00 無料タイムチャレンジのリワード"
+      },
+      {
+        "event": "data/21824",
+        "id": "21567",
+        "text": "コミュニティデイ：パモ 2025/5/11(日)13:00~16:00"
+      },
+      {
+        "event": "data/21823",
+        "id": "22495",
+        "text": "コミュニティデイ：バニプッチ 2025/4/27(日)13:00~16:00"
+      },
+      {
+        "event": "data/21864",
+        "id": "22388",
+        "text": "大阪万博2025コラボイベント 2025/4/12(土)23:00~10/12(日)23:00 「GOスタンプラリー」でスタンプを集める"
+      },
+      {
+        "event": "data/21864",
+        "id": "22387",
+        "text": "大阪万博2025コラボイベント 2025/4/12(土)23:00~10/12(日)23:00 「GOスタンプラリー」でスタンプを集める"
+      },
+      {
+        "event": "data/22253",
+        "id": "22254",
+        "text": "【韓国限定】永登浦汝矣島春の花祭り 2025 2025/3/30(日)10:00~4/12(土)19:00"
+      },
+      {
+        "event": "data/21380",
+        "id": "21561",
+        "text": "City Safari：チリ(サンティアゴ) 2025/3/29(土)21:00~3/31(月)5:00"
+      },
+      {
+        "event": "data/21381",
+        "id": "21562",
+        "text": "City Safari：イタリア(ミラノ) 2025/3/29(土)17:00~3/31(月)1:00"
+      },
+      {
+        "event": "data/21379",
+        "id": "21563",
+        "text": "City Safari：インド(ムンバイ) 2025/3/29(土)12:30~3/30(日)20:30"
+      },
+      {
+        "event": "data/21377",
+        "id": "21564",
+        "text": "City Safari：シンガポール 2025/3/29(土)10:00~3/30(日)18:00"
+      },
+      {
+        "event": "data/21822",
+        "id": "22264",
+        "text": "復刻コミュニティデイ：ワニノコ 2025/3/22(土)13:00~16:00"
+      },
+      {
+        "event": "data/21821",
+        "id": "22099",
+        "text": "コミュニティデイ：ホゲータ 2025/3/8(土)13:00~16:00"
+      },
+      {
+        "event": "data/21956",
+        "id": "22619",
+        "text": "シーズン18：力と極み 2025/3/4(火)9:00~6/3(火)9:00 スペシャルリサーチ5ページ目のリワード"
+      },
+      {
+        "event": "data/21239",
+        "id": "22035",
+        "text": "GO Tour：イッシュ地方 (グローバル) 2025/3/1(土)9:00~3/2(日)17:00 ナゾのフィールドリサーチから入手可"
+      },
+      {
+        "event": "data/21239",
+        "id": "21586",
+        "text": "GO Tour：イッシュ地方 (グローバル) 2025/3/1(土)9:00~3/2(日)17:00 白背景付キュレム＋黒背景付レシラム"
+      },
+      {
+        "event": "data/21239",
+        "id": "21585",
+        "text": "GO Tour：イッシュ地方 (グローバル) 2025/3/1(土)9:00~3/2(日)17:00 黒背景付キュレム＋白背景付ゼクロム"
+      },
+      {
+        "event": "data/21239",
+        "id": "21937",
+        "text": "GO Tour：イッシュ地方 (グローバル) 2025/3/1(土)9:00~3/2(日)17:00"
+      },
+      {
+        "event": "data/21239",
+        "id": "21938",
+        "text": "GO Tour：イッシュ地方 (グローバル) 2025/3/1(土)9:00~3/2(日)17:00"
+      },
+      {
+        "event": "data/21970",
+        "id": "21974",
+        "text": "Pokémon Presents ’25 x GO Tour タイムチャレンジ 2025/2/27(木)22:00~3/9(日)17:00 ナゾのフィールドリサーチから入手可"
+      },
+      {
+        "event": "data/21970",
+        "id": "21972",
+        "text": "Pokémon Presents ’25 x GO Tour タイムチャレンジ 2025/2/27(木)22:00~3/9(日)17:00"
+      },
+      {
+        "event": "data/21970",
+        "id": "21973",
+        "text": "Pokémon Presents ’25 x GO Tour タイムチャレンジ 2025/2/27(木)22:00~3/9(日)17:00"
+      },
+      {
+        "event": "data/21606",
+        "id": "21640",
+        "text": "GO Tour：イッシュ地方ツアーパス 2025/2/24(月)9:00~3/2(日)17:00"
+      },
+      {
+        "event": "data/21642",
+        "id": "21582",
+        "text": "イッシュへの道 2025/2/24(月)9:00~3/1(土)9:00"
+      },
+      {
+        "event": "data/21642",
+        "id": "21581",
+        "text": "イッシュへの道 2025/2/24(月)9:00~3/1(土)9:00"
+      },
+      {
+        "event": "data/21240",
+        "id": "21910",
+        "text": "GO Tour：イッシュ地方 (ロサンゼルス) 2025/2/22(土)1:00~2/24(月)9:00 ナゾのフィールドリサーチから入手可"
+      },
+      {
+        "event": "data/21240",
+        "id": "21565",
+        "text": "GO Tour：イッシュ地方 (ロサンゼルス) 2025/2/22(土)1:00~2/24(月)9:00"
+      },
+      {
+        "event": "data/21241",
+        "id": "21900",
+        "text": "GO Tour：イッシュ地方 (新北市) 2025/2/21(金)9:00~2/23(日)17:00 ナゾのフィールドリサーチから入手可"
+      },
+      {
+        "event": "data/21241",
+        "id": "21566",
+        "text": "GO Tour：イッシュ地方 (新北市) 2025/2/21(金)9:00~2/23(日)17:00"
+      },
+      {
+        "event": "data/20913",
+        "id": "21784",
+        "text": "カブルモ・チョボマキのコミュニティデイ 2025/2/9(日)13:00~16:00"
+      },
+      {
+        "event": "data/20912",
+        "id": "21673",
+        "text": "コミュニティデイ(復刻)：ラルトス 2025/1/25(土)13:00~16:00"
+      },
+      {
+        "event": "data/20911",
+        "id": "21579",
+        "text": "ニャオハのコミュニティデイ 2025/1/5(日)13:00~16:00"
+      },
+      {
+        "event": "data/20910",
+        "id": "21578",
+        "text": "12月のコミュニティデイ(2024) 2024/12/21(土)13:00~12/22(日)16:00"
+      },
+      {
+        "event": "data/20367",
+        "id": "21560",
+        "text": "City Safari：ブラジル 2024/12/7(土)21:00~12/9(月)5:00"
+      },
+      {
+        "event": "data/20365",
+        "id": "21559",
+        "text": "City Safari：香港 2024/12/7(土)10:00~12/8(日)18:00"
+      },
+      {
+        "event": "data/20291",
+        "id": "21577",
+        "text": "ワイルドエリア：グローバル 2024 2024/11/23(土)9:00~11/24(日)17:15"
+      },
+      {
+        "event": "data/20290",
+        "id": "21558",
+        "text": "ワイルドエリア：福岡 2024/11/16(土)7:00~11/17(日)16:00"
+      },
+      {
+        "event": "data/19986",
+        "id": "21557",
+        "text": "Safari Zone：仁川 2024/9/27(金)9:30~9/29(日)18:30"
+      },
+      {
+        "event": "data/19985",
+        "id": "21587",
+        "text": "City Safari：ジャカルタ 2024/9/21(土)11:00~9/22(日)19:00"
+      },
+      {
+        "event": "data/21634",
+        "id": "21633",
+        "text": "Pokémon GO Night 2024/9/6(金)23:00~9/12(木)23:00 9/13(金) マリナーズ戦(シアトル)"
+      },
+      {
+        "event": "data/21634",
+        "id": "21632",
+        "text": "Pokémon GO Night 2024/9/6(金)23:00~9/12(木)23:00 9/7(土) マーリンズ戦(マイアミ)"
+      },
+      {
+        "event": "data/19241",
+        "id": "21556",
+        "text": "【インドネシア限定】Pikachu's Indonesia Journey：ジョグジャカルタ 2024/8/24(土)11:00~8/25(日)19:00"
+      },
+      {
+        "event": "data/20013",
+        "id": "21576",
+        "text": "チームリーダーの決意 2024/8/24(土)6:00~8/31(土)14:59"
+      },
+      {
+        "event": "data/20013",
+        "id": "21575",
+        "text": "チームリーダーの決意 2024/8/24(土)6:00~8/31(土)14:59"
+      },
+      {
+        "event": "data/20013",
+        "id": "21574",
+        "text": "チームリーダーの決意 2024/8/24(土)6:00~8/31(土)14:59"
+      },
+      {
+        "event": "data/20088",
+        "id": "21590",
+        "text": "WCS2024記念イベント 2024/8/16(金)9:00~8/20(火)19:00"
+      },
+      {
+        "event": "data/18526",
+        "id": "21571",
+        "text": "GO Fest 2024：グローバル 2024/7/13(土)9:00~7/14(日)17:00"
+      },
+      {
+        "event": "data/18526",
+        "id": "21573",
+        "text": "GO Fest 2024：グローバル 2024/7/13(土)9:00~7/14(日)17:00"
+      },
+      {
+        "event": "data/18526",
+        "id": "21572",
+        "text": "GO Fest 2024：グローバル 2024/7/13(土)9:00~7/14(日)17:00"
+      },
+      {
+        "event": "data/18526",
+        "id": "21584",
+        "text": "GO Fest 2024：グローバル 2024/7/13(土)9:00~7/14(日)17:00 背景付ネクロズマ＋背景付ルナアーラ"
+      },
+      {
+        "event": "data/18526",
+        "id": "21583",
+        "text": "GO Fest 2024：グローバル 2024/7/13(土)9:00~7/14(日)17:00 背景付ネクロズマ＋背景付ソルガレオ"
+      },
+      {
+        "event": "data/19665",
+        "id": "21570",
+        "text": "ウルトラビースト襲来 2024/7/8(月)9:00~7/13(土)9:00"
+      },
+      {
+        "event": "data/18777",
+        "id": "21555",
+        "text": "GO Fest 2024 : New York City 2024/7/5(金)21:00~7/8(月)7:00"
+      },
+      {
+        "event": "data/18729",
+        "id": "21554",
+        "text": "GO Fest 2024：Madrid 2024/6/14(金)15:00~6/17(月)1:00"
+      },
+      {
+        "event": "data/18524",
+        "id": "21553",
+        "text": "GO Fest 2024：仙台 2024/5/30(木)8:30~6/2(日)17:30"
+      },
+      {
+        "event": "data/18651",
+        "id": "21552",
+        "text": "【インドネシア限定】Pikachu's Indonesia Journey：スラバヤ 2024/5/11(土)11:00~5/12(日)19:00"
+      },
+      {
+        "event": "data/17207",
+        "id": "21593",
+        "text": "City Safari：台南(台湾) 2024/3/9(土)10:00~3/10(日)18:00"
+      },
+      {
+        "event": "data/17796",
+        "id": "21551",
+        "text": "【インドネシア限定】Pikachu's Indonesia Journey：バリ島 2024/3/2(土)10:00~3/3(日)18:00"
+      },
+      {
+        "event": "data/17410",
+        "id": "21550",
+        "text": "GO Tour：シンオウ地方 (LOS ANGELES) 2024/2/17(土)1:00~2/19(月)9:00"
+      },
+      {
+        "event": "data/15674",
+        "id": "21536",
+        "text": "City Safari：メキシコシティ(メキシコ) 2023/11/5(日)0:00~11/6(月)10:00"
+      },
+      {
+        "event": "data/15673",
+        "id": "21535",
+        "text": "City Safari：バルセロナ(スペイン) 2023/10/13(金)16:00~10/15(日)0:00"
+      },
+      {
+        "event": "data/15672",
+        "id": "21534",
+        "text": "City Safari：ソウル(韓国) 2023/10/7(土)9:00~10/8(日)17:00"
+      },
+      {
+        "event": "data/15203",
+        "id": "21533",
+        "text": "GO Fest 2023：ニューヨーク 2023/8/18(金)21:00~8/21(月)7:00"
+      },
+      {
+        "event": "data/15202",
+        "id": "21532",
+        "text": "GO Fest 2023：ロンドン 2023/8/4(金)16:00~8/7(月)2:00"
+      },
+      {
+        "event": "data/15201",
+        "id": "21531",
+        "text": "GO Fest 2023：大阪 2023/8/4(金)8:00~8/6(日)18:00"
+      },
+      {
+        "event": "data/15491",
+        "id": "21527",
+        "text": "【韓国限定】そらとぶピカチュウプロジェクトコラボイベント：チェジュ島 2023/7/28(金)9:00~7/30(日)19:00"
+      },
+      {
+        "event": "data/14323",
+        "id": "21526",
+        "text": "GO Tour：ホウエン地方(ラスベガス) 2023/2/19(日)2:00~2/20(月)10:00"
+      },
+      {
+        "event": "data/200",
+        "id": "26495",
+        "text": "ポケふたスタンプラリー(長野)"
+      },
+      {
+        "event": "data/9679",
+        "id": "25876",
+        "text": "【ニューヨーク限定】メガミュウツーX・Yのユニティレイド"
+      },
+      {
+        "event": "data/200",
+        "id": "24703",
+        "text": "ポケふたスタンプラリー(北海道)"
+      },
+      {
+        "event": "data/200",
+        "id": "24704",
+        "text": "ポケふたスタンプラリー(青森)"
+      },
+      {
+        "event": "data/200",
+        "id": "24705",
+        "text": "ポケふたスタンプラリー(岩手)"
+      },
+      {
+        "event": "data/200",
+        "id": "24706",
+        "text": "ポケふたスタンプラリー(秋田)"
+      },
+      {
+        "event": "data/200",
+        "id": "24707",
+        "text": "ポケふたスタンプラリー(宮城)"
+      },
+      {
+        "event": "data/200",
+        "id": "24708",
+        "text": "ポケふたスタンプラリー(山形)"
+      },
+      {
+        "event": "data/200",
+        "id": "24709",
+        "text": "ポケふたスタンプラリー(福島)"
+      },
+      {
+        "event": "data/200",
+        "id": "24711",
+        "text": "ポケふたスタンプラリー(栃木)"
+      },
+      {
+        "event": "data/200",
+        "id": "24712",
+        "text": "ポケふたスタンプラリー(埼玉)"
+      },
+      {
+        "event": "data/200",
+        "id": "24713",
+        "text": "ポケふたスタンプラリー(千葉)"
+      },
+      {
+        "event": "data/200",
+        "id": "24714",
+        "text": "ポケふたスタンプラリー(神奈川)"
+      },
+      {
+        "event": "data/200",
+        "id": "24710",
+        "text": "ポケふたスタンプラリー(茨城)"
+      },
+      {
+        "event": "data/200",
+        "id": "24715",
+        "text": "ポケふたスタンプラリー(東京)"
+      },
+      {
+        "event": "data/200",
+        "id": "24716",
+        "text": "ポケふたスタンプラリー(新潟)"
+      },
+      {
+        "event": "data/200",
+        "id": "24717",
+        "text": "ポケふたスタンプラリー(富山)"
+      },
+      {
+        "event": "data/200",
+        "id": "24718",
+        "text": "ポケふたスタンプラリー(石川)"
+      },
+      {
+        "event": "data/200",
+        "id": "24719",
+        "text": "ポケふたスタンプラリー(福井)"
+      },
+      {
+        "event": "data/200",
+        "id": "24720",
+        "text": "ポケふたスタンプラリー(岐阜)"
+      },
+      {
+        "event": "data/200",
+        "id": "24721",
+        "text": "ポケふたスタンプラリー(静岡)"
+      },
+      {
+        "event": "data/200",
+        "id": "24722",
+        "text": "ポケふたスタンプラリー(愛知)"
+      },
+      {
+        "event": "data/200",
+        "id": "24723",
+        "text": "ポケふたスタンプラリー(三重)"
+      },
+      {
+        "event": "data/200",
+        "id": "24724",
+        "text": "ポケふたスタンプラリー(滋賀)"
+      },
+      {
+        "event": "data/200",
+        "id": "24725",
+        "text": "ポケふたスタンプラリー(京都)"
+      },
+      {
+        "event": "data/200",
+        "id": "24726",
+        "text": "ポケふたスタンプラリー(大阪)"
+      },
+      {
+        "event": "data/200",
+        "id": "24727",
+        "text": "ポケふたスタンプラリー(兵庫)"
+      },
+      {
+        "event": "data/200",
+        "id": "24728",
+        "text": "ポケふたスタンプラリー(奈良)"
+      },
+      {
+        "event": "data/200",
+        "id": "24729",
+        "text": "ポケふたスタンプラリー(和歌山)"
+      },
+      {
+        "event": "data/200",
+        "id": "24636",
+        "text": "ポケふたスタンプラリー(鳥取)"
+      },
+      {
+        "event": "data/200",
+        "id": "24634",
+        "text": "ポケふたスタンプラリー(島根)"
+      },
+      {
+        "event": "data/200",
+        "id": "24633",
+        "text": "ポケふたスタンプラリー(岡山)"
+      },
+      {
+        "event": "data/200",
+        "id": "24637",
+        "text": "ポケふたスタンプラリー(山口)"
+      },
+      {
+        "event": "data/200",
+        "id": "24635",
+        "text": "ポケふたスタンプラリー(徳島)"
+      },
+      {
+        "event": "data/200",
+        "id": "24631",
+        "text": "ポケふたスタンプラリー(香川)"
+      },
+      {
+        "event": "data/200",
+        "id": "24630",
+        "text": "ポケふたスタンプラリー(愛媛)"
+      },
+      {
+        "event": "data/200",
+        "id": "24632",
+        "text": "ポケふたスタンプラリー(高知)"
+      },
+      {
+        "event": "data/200",
+        "id": "24080",
+        "text": "ポケふたスタンプラリー(福岡)"
+      },
+      {
+        "event": "data/200",
+        "id": "24081",
+        "text": "ポケふたスタンプラリー(佐賀)"
+      },
+      {
+        "event": "data/200",
+        "id": "24083",
+        "text": "ポケふたスタンプラリー(長崎)"
+      },
+      {
+        "event": "data/200",
+        "id": "24082",
+        "text": "ポケふたスタンプラリー(宮崎)"
+      },
+      {
+        "event": "data/200",
+        "id": "24079",
+        "text": "ポケふたスタンプラリー(鹿児島)"
+      },
+      {
+        "event": "data/200",
+        "id": "24084",
+        "text": "ポケふたスタンプラリー(沖縄)"
+      },
+      {
+        "event": "data/1344",
+        "id": "24312",
+        "text": "GOスタンプラリー長崎"
+      }
+    ]
+  },
+  "pogokit": {
+    "url": "https://pogokit.com/backgrounds/",
+    "observed_count": 263,
+    "note": "Reviewed asset-name list and specific artwork discrepancies; includes repeated frames/placeholders. No unique-total inference."
+  },
+  "pogo_trades": {
+    "url": "https://pogotrades.com/blog/pokemon-go-trade-list-generator",
+    "note": "Inspected public generator and Background Only filter. Picker exposes species/form variants and loads incrementally; full exhaustive catalogue export was not obtained."
+  },
+  "pogo_pit": {
+    "url": "https://pogopit.com/updates",
+    "note": "Reviewed public home/changelog. Former PoGoTrade branding; no complete public collection inventory obtained."
+  }
+}

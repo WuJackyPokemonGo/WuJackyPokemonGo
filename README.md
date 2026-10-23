@@ -95,3 +95,7 @@ catalog-service、私人與公開縮圖路徑、公開圖片 URL 白名單、Sto
 雲端修改覆蓋版本化研究底稿，存於既有 app_settings 的 background_catalog_overrides；既有加密與排程備份已包含 app_settings 及 audit_logs。公開 RPC 只回傳公開圖鑑欄位，隱藏項目不回傳內容；管理 RPC 限既有管理員。採每筆版本檢查及原請求重試，避免跨裝置覆寫或重複提交。公開端讀取修改失敗時顯示重試，不回退底稿造成隱藏背景重現。
 
 supabase/production/background-catalog.sql 已透過 background_catalog_admin_overrides migration 套用。133 項 Node 測試及建置通過；正式資料庫 BEGIN／ROLLBACK 驗收涵蓋儲存、相同請求重試、舊版本衝突、隱藏內容遮蔽、匿名公開讀取、匿名與非管理員拒絕。沒有保留測試圖鑑資料。未使用或重設擁有人密碼；擁有人可用自己的帳號登入驗收手機操作。
+
+## 背景跨站覆蓋核對（2026-10-23 第二輪）
+
+檢查 PokéXperience 345 筆素材、9DB 343 筆不同活動圖像記錄及 PoGoKit 263 筆素材名稱；另檢查 PogoTrades 公開篩選器與 PoGoPit 更新記錄，後兩者未取得全量資料，不宣稱完整匯出比對。網站新增 FC 首爾（官方已公告，10/24 即將推出）及待核對世界賽藍色圖樣；底稿共 270 筆，包含 8 筆即將推出及 4 筆待核對。補 Arraiá 官方日期與取得方式、修正台北名稱年份及 Road of Legends 原始日期文字，補社群日、隊伍背景、超級進化再發放說明及深入荒野已公告新背景提示。134 項測試及建置通過。具體範圍、尚缺證據及名稱對應限制記錄於 docs/BACKGROUNDS-CROSS-SITE-2026-10-23.md；不可把素材數、活動行數當成獨立已發放背景總數。
