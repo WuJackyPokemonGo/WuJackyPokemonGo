@@ -4,6 +4,7 @@ try {locale=localStorage.getItem('wj_store_locale')==='en'?'en':'zh'} catch {}
 export const getLocale=()=>locale;
 export function setLocale(value){locale=value==='en'?'en':'zh';try{localStorage.setItem('wj_store_locale',locale)}catch{};return locale}
 export const labels={
+'背景收藏圖鑑 ↗':'Background collection ↗',
 '官方 LINE ↗':'Official LINE ↗','尋找你的下一隻收藏。':'Find your next collectible.',
 '瀏覽商品、整理想詢問的清單，再透過 LINE 與我確認供貨和交付方式。':'Browse the collection, make an inquiry list, then contact me on LINE to confirm availability and delivery.',
 '商品供應、最終價格與交付時間，以私訊確認為準。':'Availability, final prices and delivery times are confirmed by private message.',

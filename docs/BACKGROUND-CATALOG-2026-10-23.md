@@ -21,9 +21,13 @@
 - 背景與庫存商品用關聯連接：同款背景可對應多隻寶可夢與多個商品，庫存依商品資料庫顯示。
 - 卡片顯示背景圖、中文工作名稱／英文原名、年份地區；展開後顯示適用寶可夢和已確認取得方式，連到現有商品。
 
-## 尚未完成
+## 圖鑑初版與目前狀態
 
-逐項核對其餘歷年背景、補齊中文名稱與取得方式、比對素材是否同款，以及正式背景圖鑑頁面。不可將本底稿標記為已完成全部背景。
+已建立 `backgrounds.html`，包含圖片、繁中／English切換、中英文寶可夢名稱與圖鑑編號搜尋、年份／類型／系列／收錄狀態篩選、分頁、詳情、官方來源，以及從背景連到正式庫存商品。商品目錄已加入圖鑑入口；商品支援公開詳情連結。
+
+265組資料分為69組已核對活動、5組即將推出、191組待核對。這些是收錄記錄，尚不能作為歷來所有已發放獨立款式的最終數字。補核官方寶可夢中心、九州沖繩人孔蓋、ANA、禮賓部、長崎電龍及2024 GO Fest公告；修正ANA綠色飛機開始日期為2026/9/18。
+
+191組資料仍需核對活動與發放紀錄；部分中文標題為工作譯名。來源若缺少進化形態，不自行推定補齊。巴黎商品尚未區分兩款背景，暫不標示兩款均有庫存。
 
 ## 全部工作記錄
 
@@ -98,15 +102,15 @@
 | BG-0067 | 地標 | City Safari Cancun | 待逐項核對 |
 | BG-0068 | 地標 | City Safari Vancouver | 待逐項核對 |
 | BG-0069 | 地標 | Pokemon GO at Jeju Island | 待逐項核對 |
-| BG-0070 | 地標 | GO Wild Area Nagasaki | 待逐項核對 |
+| BG-0070 | 地標 | GO Wild Area Nagasaki | 官方活動已核對 |
 | BG-0071 | 地標 | Taipei Children's Amusement Park | 待逐項核對 |
 | BG-0072 | 地標 | Busan Fireworks Festival | 待逐項核對 |
-| BG-0073 | 地標 | Pokelid Okinawa | 待逐項核對 |
-| BG-0074 | 地標 | Pokelid Fukuoka | 待逐項核對 |
-| BG-0075 | 地標 | Pokelid Kagoshima | 待逐項核對 |
-| BG-0076 | 地標 | Pokelid Miyazaki | 待逐項核對 |
-| BG-0077 | 地標 | Pokelid Nagasaki | 待逐項核對 |
-| BG-0078 | 地標 | Pokelid Saga | 待逐項核對 |
+| BG-0073 | 地標 | Pokelid Okinawa | 官方活動已核對 |
+| BG-0074 | 地標 | Pokelid Fukuoka | 官方活動已核對 |
+| BG-0075 | 地標 | Pokelid Kagoshima | 官方活動已核對 |
+| BG-0076 | 地標 | Pokelid Miyazaki | 官方活動已核對 |
+| BG-0077 | 地標 | Pokelid Nagasaki | 官方活動已核對 |
+| BG-0078 | 地標 | Pokelid Saga | 官方活動已核對 |
 | BG-0079 | 地標 | City Safari Sydney | 待逐項核對 |
 | BG-0080 | 地標 | City Safari Miami | 待逐項核對 |
 | BG-0081 | 地標 | City Safari Buenos Aires | 待逐項核對 |
@@ -172,82 +176,82 @@
 | BG-0141 | 地標 | GO Fest 2026 Copenhagen | 待逐項核對 |
 | BG-0142 | 地標 | Tokyo Swallows | 待逐項核對 |
 | BG-0143 | 地標 | Toyama All Stars | 待逐項核對 |
-| BG-0144 | 地標 | Pokemon Center Fukuoka | 待逐項核對 |
-| BG-0145 | 地標 | Pokemon Center GO Lab | 待逐項核對 |
-| BG-0146 | 地標 | Pokemon Center Hiroshima | 待逐項核對 |
-| BG-0147 | 地標 | Pokemon Center Kagawa | 待逐項核對 |
-| BG-0148 | 地標 | Pokemon Center Kanazawa | 待逐項核對 |
-| BG-0149 | 地標 | Pokemon Center Kyoto | 待逐項核對 |
-| BG-0150 | 地標 | Pokemon Center Mega Tokyo | 待逐項核對 |
-| BG-0151 | 地標 | Pokemon Center Nagoya | 待逐項核對 |
-| BG-0152 | 地標 | Pokemon Center Okinawa | 待逐項核對 |
-| BG-0153 | 地標 | Pokemon Center Osaka | 待逐項核對 |
-| BG-0154 | 地標 | Pokemon Center Osaka DX | 待逐項核對 |
-| BG-0155 | 地標 | Pokemon Center Sapporo | 待逐項核對 |
-| BG-0156 | 地標 | Pokemon Center Shibuya | 待逐項核對 |
-| BG-0157 | 地標 | Pokemon Center Skytree Town | 待逐項核對 |
-| BG-0158 | 地標 | Pokemon Center Tohoku | 待逐項核對 |
-| BG-0159 | 地標 | Pokemon Center Tokyo Bay | 待逐項核對 |
-| BG-0160 | 地標 | Pokemon Center Tokyo DX | 待逐項核對 |
+| BG-0144 | 地標 | Pokemon Center Fukuoka | 官方活動已核對 |
+| BG-0145 | 地標 | Pokemon Center GO Lab | 官方活動已核對 |
+| BG-0146 | 地標 | Pokemon Center Hiroshima | 官方活動已核對 |
+| BG-0147 | 地標 | Pokemon Center Kagawa | 官方活動已核對 |
+| BG-0148 | 地標 | Pokemon Center Kanazawa | 官方活動已核對 |
+| BG-0149 | 地標 | Pokemon Center Kyoto | 官方活動已核對 |
+| BG-0150 | 地標 | Pokemon Center Mega Tokyo | 官方活動已核對 |
+| BG-0151 | 地標 | Pokemon Center Nagoya | 官方活動已核對 |
+| BG-0152 | 地標 | Pokemon Center Okinawa | 官方活動已核對 |
+| BG-0153 | 地標 | Pokemon Center Osaka | 官方活動已核對 |
+| BG-0154 | 地標 | Pokemon Center Osaka DX | 官方活動已核對 |
+| BG-0155 | 地標 | Pokemon Center Sapporo | 官方活動已核對 |
+| BG-0156 | 地標 | Pokemon Center Shibuya | 官方活動已核對 |
+| BG-0157 | 地標 | Pokemon Center Skytree Town | 官方活動已核對 |
+| BG-0158 | 地標 | Pokemon Center Tohoku | 官方活動已核對 |
+| BG-0159 | 地標 | Pokemon Center Tokyo Bay | 官方活動已核對 |
+| BG-0160 | 地標 | Pokemon Center Tokyo DX | 官方活動已核對 |
 | BG-0161 | 地標 | 10th Anniversary Celebration | 待逐項核對 |
-| BG-0162 | 地標 | National Trust Anglesey Abbey | 官方活動已核對，素材仍需比對 |
-| BG-0163 | 地標 | National Trust Attingham Park | 官方活動已核對，素材仍需比對 |
-| BG-0164 | 地標 | National Trust Belton House | 官方活動已核對，素材仍需比對 |
-| BG-0165 | 地標 | National Trust Calke Abbey | 官方活動已核對，素材仍需比對 |
-| BG-0166 | 地標 | National Trust Chirk | 官方活動已核對，素材仍需比對 |
-| BG-0167 | 地標 | National Trust Cliveden | 官方活動已核對，素材仍需比對 |
-| BG-0168 | 地標 | National Trust Clumber Park | 官方活動已核對，素材仍需比對 |
-| BG-0169 | 地標 | National Trust Dunham Massey | 官方活動已核對，素材仍需比對 |
-| BG-0170 | 地標 | National Trust Fountains Abbey Estate | 官方活動已核對，素材仍需比對 |
-| BG-0171 | 地標 | National Trust Gibside | 官方活動已核對，素材仍需比對 |
-| BG-0172 | 地標 | National Trust Hanbury | 官方活動已核對，素材仍需比對 |
-| BG-0173 | 地標 | National Trust Hardwick | 官方活動已核對，素材仍需比對 |
-| BG-0174 | 地標 | National Trust Killerton | 官方活動已核對，素材仍需比對 |
-| BG-0175 | 地標 | National Trust Kingston Lacy | 官方活動已核對，素材仍需比對 |
-| BG-0176 | 地標 | National Trust Lacock | 官方活動已核對，素材仍需比對 |
-| BG-0177 | 地標 | National Trust Lyme Park | 官方活動已核對，素材仍需比對 |
-| BG-0178 | 地標 | National Trust Mottisfont | 官方活動已核對，素材仍需比對 |
-| BG-0179 | 地標 | National Trust Mount Stewart | 官方活動已核對，素材仍需比對 |
-| BG-0180 | 地標 | National Trust Nymans | 官方活動已核對，素材仍需比對 |
-| BG-0181 | 地標 | National Trust Polesden | 官方活動已核對，素材仍需比對 |
-| BG-0182 | 地標 | National Trust Scotney Castle | 官方活動已核對，素材仍需比對 |
-| BG-0183 | 地標 | National Trust Stourhead | 官方活動已核對，素材仍需比對 |
-| BG-0184 | 地標 | National Trust Stowe Garden Park | 官方活動已核對，素材仍需比對 |
-| BG-0185 | 地標 | National Trust Tredegar House | 官方活動已核對，素材仍需比對 |
-| BG-0186 | 地標 | National Trust Trelissick | 官方活動已核對，素材仍需比對 |
-| BG-0187 | 地標 | National Trust Tyntesfield | 官方活動已核對，素材仍需比對 |
-| BG-0188 | 地標 | National Trust Wimpole | 官方活動已核對，素材仍需比對 |
-| BG-0189 | 地標 | Pokemon Jet Red | 待逐項核對 |
+| BG-0162 | 地標 | National Trust Anglesey Abbey | 官方活動已核對 |
+| BG-0163 | 地標 | National Trust Attingham Park | 官方活動已核對 |
+| BG-0164 | 地標 | National Trust Belton House | 官方活動已核對 |
+| BG-0165 | 地標 | National Trust Calke Abbey | 官方活動已核對 |
+| BG-0166 | 地標 | National Trust Chirk | 官方活動已核對 |
+| BG-0167 | 地標 | National Trust Cliveden | 官方活動已核對 |
+| BG-0168 | 地標 | National Trust Clumber Park | 官方活動已核對 |
+| BG-0169 | 地標 | National Trust Dunham Massey | 官方活動已核對 |
+| BG-0170 | 地標 | National Trust Fountains Abbey Estate | 官方活動已核對 |
+| BG-0171 | 地標 | National Trust Gibside | 官方活動已核對 |
+| BG-0172 | 地標 | National Trust Hanbury | 官方活動已核對 |
+| BG-0173 | 地標 | National Trust Hardwick | 官方活動已核對 |
+| BG-0174 | 地標 | National Trust Killerton | 官方活動已核對 |
+| BG-0175 | 地標 | National Trust Kingston Lacy | 官方活動已核對 |
+| BG-0176 | 地標 | National Trust Lacock | 官方活動已核對 |
+| BG-0177 | 地標 | National Trust Lyme Park | 官方活動已核對 |
+| BG-0178 | 地標 | National Trust Mottisfont | 官方活動已核對 |
+| BG-0179 | 地標 | National Trust Mount Stewart | 官方活動已核對 |
+| BG-0180 | 地標 | National Trust Nymans | 官方活動已核對 |
+| BG-0181 | 地標 | National Trust Polesden | 官方活動已核對 |
+| BG-0182 | 地標 | National Trust Scotney Castle | 官方活動已核對 |
+| BG-0183 | 地標 | National Trust Stourhead | 官方活動已核對 |
+| BG-0184 | 地標 | National Trust Stowe Garden Park | 官方活動已核對 |
+| BG-0185 | 地標 | National Trust Tredegar House | 官方活動已核對 |
+| BG-0186 | 地標 | National Trust Trelissick | 官方活動已核對 |
+| BG-0187 | 地標 | National Trust Tyntesfield | 官方活動已核對 |
+| BG-0188 | 地標 | National Trust Wimpole | 官方活動已核對 |
+| BG-0189 | 地標 | Pokemon Jet Red | 官方活動已核對 |
 | BG-0190 | 地標 | 2026 Pokemon World Championships | 待逐項核對 |
-| BG-0191 | 地標 | PokeXciting Malaysia | 官方活動已核對，素材仍需比對 |
-| BG-0192 | 地標 | PokeXciting Taiwan | 官方活動已核對，素材仍需比對 |
-| BG-0193 | 地標 | PokeXciting Singapore | 官方活動已核對，素材仍需比對 |
-| BG-0194 | 地標 | PokeXciting Philippines | 官方活動已核對，素材仍需比對 |
-| BG-0195 | 地標 | Pokemon Jet Green | 待逐項核對 |
+| BG-0191 | 地標 | PokeXciting Malaysia | 官方活動已核對 |
+| BG-0192 | 地標 | PokeXciting Taiwan | 官方活動已核對 |
+| BG-0193 | 地標 | PokeXciting Singapore | 即將推出 |
+| BG-0194 | 地標 | PokeXciting Philippines | 即將推出 |
+| BG-0195 | 地標 | Pokemon Jet Green | 官方活動已核對 |
 | BG-0196 | 地標 | City Safari - Brisbane | 待逐項核對 |
 | BG-0197 | 地標 | City Safari - Munich | 待逐項核對 |
 | BG-0198 | 地標 | City Safari - Marseille | 待逐項核對 |
 | BG-0199 | 地標 | City Safari - Lisbon | 待逐項核對 |
 | BG-0200 | 地標 | City Safari - Rio de Janeiro | 待逐項核對 |
-| BG-0201 | 地標 | City Safari - Boston | 官方活動已核對，素材仍需比對 |
-| BG-0202 | 地標 | London Science Museum | 官方活動已核對，素材仍需比對 |
-| BG-0203 | 地標 | Cite de l'Espace | 官方活動已核對，素材仍需比對 |
-| BG-0204 | 地標 | Ciutat de les Arts | 官方活動已核對，素材仍需比對 |
-| BG-0205 | 地標 | Euro Space Center | 官方活動已核對，素材仍需比對 |
-| BG-0206 | 地標 | Germany Space Center | 官方活動已核對，素材仍需比對 |
-| BG-0207 | 地標 | Netherlands Space Expo | 官方活動已核對，素材仍需比對 |
+| BG-0201 | 地標 | City Safari - Boston | 即將推出 |
+| BG-0202 | 地標 | London Science Museum | 官方活動已核對 |
+| BG-0203 | 地標 | Cite de l'Espace | 官方活動已核對 |
+| BG-0204 | 地標 | Ciutat de les Arts | 官方活動已核對 |
+| BG-0205 | 地標 | Euro Space Center | 官方活動已核對 |
+| BG-0206 | 地標 | Germany Space Center | 官方活動已核對 |
+| BG-0207 | 地標 | Netherlands Space Expo | 官方活動已核對 |
 | BG-0208 | 地標 | San Diego Comic Con Malaga | 待逐項核對 |
 | BG-0209 | 地標 | Pokelid Nagano | 待逐項核對 |
 | BG-0210 | 地標 | NFL Cardinals 2026 | 待逐項核對 |
-| BG-0211 | 地標 | Night Out - Los Angeles | 官方活動已核對，素材仍需比對 |
+| BG-0211 | 地標 | Night Out - Los Angeles | 即將推出 |
 | BG-0212 | 地標 | GO Wild Area 2026 Sendai Tohoku | 待逐項核對 |
 | BG-0213 | 地標 | GO Wild Area 2026 Mexico City | 待逐項核對 |
-| BG-0214 | 地標 | Night Out - London | 官方活動已核對，素材仍需比對 |
-| BG-0215 | 特殊 | GO Fest 2024 Wormhole | 待逐項核對 |
-| BG-0216 | 特殊 | GO Fest 2024 Radiance | 待逐項核對 |
-| BG-0217 | 特殊 | GO Fest 2024 Umbra | 待逐項核對 |
-| BG-0218 | 特殊 | GO Fest 2024 Wormhole Radiance | 待逐項核對 |
-| BG-0219 | 特殊 | GO Fest 2024 Wormhole Umbra | 待逐項核對 |
+| BG-0214 | 地標 | Night Out - London | 即將推出 |
+| BG-0215 | 特殊 | GO Fest 2024 Wormhole | 官方活動已核對 |
+| BG-0216 | 特殊 | GO Fest 2024 Radiance | 官方活動已核對 |
+| BG-0217 | 特殊 | GO Fest 2024 Umbra | 官方活動已核對 |
+| BG-0218 | 特殊 | GO Fest 2024 Wormhole Radiance | 官方活動已核對 |
+| BG-0219 | 特殊 | GO Fest 2024 Wormhole Umbra | 官方活動已核對 |
 | BG-0220 | 特殊 | Team Valor | 待逐項核對 |
 | BG-0221 | 特殊 | Team Instinct | 待逐項核對 |
 | BG-0222 | 特殊 | Team Mystic | 待逐項核對 |
@@ -265,7 +269,7 @@
 | BG-0234 | 特殊 | 9th Anniversary | 待逐項核對 |
 | BG-0235 | 特殊 | Dark Skies | 待逐項核對 |
 | BG-0236 | 特殊 | Tales of Transformation | 待逐項核對 |
-| BG-0237 | 特殊 | Pokemon Concierge | 待逐項核對 |
+| BG-0237 | 特殊 | Pokemon Concierge | 官方活動已核對 |
 | BG-0238 | 特殊 | GO Wild Area 2025 | 待逐項核對 |
 | BG-0239 | 特殊 | Pokemon Astronomical Observatory | 待逐項核對 |
 | BG-0240 | 特殊 | Community Day 2026 | 待逐項核對 |
@@ -282,8 +286,8 @@
 | BG-0251 | 特殊 | Pokemon Pokopia | 待逐項核對 |
 | BG-0252 | 特殊 | LEGO Pokemon | 待逐項核對 |
 | BG-0253 | 特殊 | Pokemon GO Arraia 2026 | 待逐項核對 |
-| BG-0254 | 特殊 | GO Fest 2026 Global | 官方活動已核對，素材仍需比對 |
-| BG-0255 | 特殊 | GO Fest 2026 Mewtwo | 官方活動已核對，素材仍需比對 |
+| BG-0254 | 特殊 | GO Fest 2026 Global | 官方活動已核對 |
+| BG-0255 | 特殊 | GO Fest 2026 Mewtwo | 官方活動已核對 |
 | BG-0256 | 特殊 | 10th Anniversary | 待逐項核對 |
 | BG-0257 | 特殊 | Road of Legends | 待逐項核對 |
 | BG-0258 | 特殊 | Mewtwo | 待逐項核對 |
