@@ -1,3 +1,4 @@
+import {createAuthStorage} from './admin-auth-storage.mjs';
 import {publicStockFields,stockLabel} from './storefront-service.mjs';
 import {createClient} from '@supabase/supabase-js';
 import {STAGING_URL,STAGING_PUBLISHABLE_KEY} from './staging-config.mjs';
@@ -8,7 +9,12 @@ import {initOperationsUI} from './operations-ui.mjs';
 import {initDataToolsUI} from './data-tools-ui.mjs';
 import {initFinanceUI} from './finance-ui.mjs';
 const $=id=>document.getElementById(id);
-const client=createClient(STAGING_URL,STAGING_PUBLISHABLE_KEY,{auth:{persistSession:false,autoRefreshToken:true,detectSessionInUrl:false}});
+const rememberKey='wj_admin_remember';
+let rememberDevice=true;
+try{rememberDevice=localStorage.getItem(rememberKey)!=='false'}catch{}
+const authStorage=createAuthStorage(localStorage,sessionStorage,()=>rememberDevice);
+const client=createClient(STAGING_URL,STAGING_PUBLISHABLE_KEY,{auth:{persistSession:true,storage:authStorage,storageKey:'wj_admin_auth',autoRefreshToken:true,detectSessionInUrl:false}});
+$('rememberDevice').checked=rememberDevice;
 const journal={getItem:key=>sessionStorage.getItem(key),setItem:(key,value)=>sessionStorage.setItem(key,value),removeItem:key=>sessionStorage.removeItem(key)};
 const service=createAdminService(client,undefined,journal),catalog=createCatalogService(client);
 const operationsUI=initOperationsUI({client,journal,run,notify,getProducts:()=>products,refreshProducts:refresh,extendOrder:(...args)=>financeUI.extendOrder(...args),extendPurchase:(...args)=>financeUI.extendPurchase(...args)});
@@ -46,7 +52,8 @@ async function renderPreview(){const version=generation;const term=$('previewSea
  const signing=[];for(const p of list){const card=node('article',null,'preview-card');for(const image of p.images){const img=document.createElement('img');img.alt=image.alt||p.name;img.loading='lazy';card.append(img);signing.push((async()=>{try{const url=await catalog.signed(image.path);if(version===generation)img.src=url}catch{img.alt='圖片載入失敗'}})());}if(!p.images.length)card.append(node('p','尚無圖片','muted'));card.append(node('h3',p.name),node('p',p.tags.join(' ／ '),'muted'),node('strong',price(p.price)),node('p',supplyNames[p.status]),node('span',stockLabel(p).text,'stock-badge stock-'+stockLabel(p).tone),node('p',p.description,'detail-text'));const add=button(p.status==='coming_soon'?'即將推出':'加入詢價',()=>{cart.set(p.id,Math.min(99,(cart.get(p.id)||0)+1));renderPreviewCart()});add.disabled=p.status==='coming_soon';card.append(add);$('previewGrid').append(card)}await Promise.all(signing)}
 function renderPreviewCart(){$('previewCart').replaceChildren();$('previewCopyHint').textContent='';const lines=['Wu Jacky Pokémon GO 詢價清單','（此內容為詢價，不代表訂單成立）',''];let total=0,unknown=false;for(const [id,qty] of cart){const p=preview.find(p=>p.id===id);if(!p)continue;const row=node('p',`${p.name} × ${qty} `);row.append(button('−',()=>{if(qty<=1)cart.delete(id);else cart.set(id,qty-1);renderPreviewCart()}),button('＋',()=>{cart.set(id,Math.min(99,qty+1));renderPreviewCart()}),button('移除',()=>{cart.delete(id);renderPreviewCart()}));$('previewCart').append(row);lines.push(`${p.sku}｜${p.name} × ${qty}｜${price(p.price===null?null:p.price*qty)}${p.status==='sold_out'?'｜已售罄，請確認能否補貨':''}`);if(p.price===null)unknown=true;else total+=p.price*qty}if(!cart.size)$('previewCart').append(node('p','尚未加入商品。','muted'));lines.push('公開價格小計：'+price(total)+(unknown?'（不含詢價商品）':''),'請協助確認供貨、最終價格與交付方式。');$('previewInquiry').value=cart.size?lines.join('\n'):'';$('copyPreview').disabled=!cart.size}
 client.auth.onAuthStateChange(event=>{if(event==='SIGNED_OUT'){clearPrivateUI();notify('已登出。')}});
-$('loginForm').onsubmit=event=>{event.preventDefault();run(async()=>{try{const user=await service.login($('email').value,$('password').value);$('password').value='';operationsUI.attach(user.id);dataTools.attach(user.id);await refresh();$('loginCard').hidden=true;$('workspace').hidden=false;$('logout').hidden=false;$('session').textContent=user.email??'管理員';notify(service.pending?'上次庫存異動尚未確認，請開啟原商品重試同一筆。':'已連接正式商品資料庫。');try{await financeUI.openDashboard()}catch{notify('已登入；營運報表暫時無法載入，請按「載入報表」重試。',true)}}catch(error){clearPrivateUI();try{await service.logout()}catch{}throw error}})};
+async function enterWorkspace(user){operationsUI.attach(user.id);dataTools.attach(user.id);await refresh();$('loginCard').hidden=true;$('workspace').hidden=false;$('logout').hidden=false;$('session').textContent=user.email??'管理員';notify(service.pending?'上次庫存異動尚未確認，請開啟原商品重試同一筆。':'已連接正式商品資料庫。');try{await financeUI.openDashboard()}catch{notify('已登入；營運報表暫時無法載入，請按「載入報表」重試。',true)}}
+$('loginForm').onsubmit=event=>{event.preventDefault();run(async()=>{try{rememberDevice=$('rememberDevice').checked;localStorage.setItem(rememberKey,String(rememberDevice));const user=await service.login($('email').value,$('password').value);$('password').value='';await enterWorkspace(user)}catch(error){clearPrivateUI();try{await service.logout()}catch{}throw error}})};
 $('logout').onclick=()=>run(async()=>{await service.logout();clearPrivateUI();notify('已登出。')});
 $('reload').onclick=()=>run(async()=>{await service.authorize();await refresh();notify('已重新載入最新資料。')});
 $('addProduct').onclick=()=>openProduct();$('closeProduct').onclick=()=>{if(!locked)$('productDialog').close()};$('closeStock').onclick=()=>{if(!locked)$('stockDialog').close()};
@@ -61,4 +68,10 @@ $('imageForm').onsubmit=event=>{event.preventDefault();run(async()=>{const id=im
 $('previewCatalog').onclick=()=>run(openPreview);$('previewSearch').oninput=()=>{renderPreview().catch(e=>notify(describe(e),true))};
 $('copyPreview').onclick=async()=>{if(!$('previewInquiry').value)return;try{await navigator.clipboard.writeText($('previewInquiry').value);$('previewCopyHint').textContent='詢價文字已複製。'}catch{$('previewInquiry').focus();$('previewInquiry').select();$('previewInquiry').setSelectionRange(0,$('previewInquiry').value.length);$('previewCopyHint').textContent='請長按文字框全選並複製。'}};
 $('exportProducts').onclick=()=>{if(locked)return;const rows=products.map(p=>({...p,inventory_balances:undefined}));const blob=new Blob([JSON.stringify({format:'wu-jacky-catalog-export',version:1,exported_at:new Date().toISOString(),categories,products:rows},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='wu-jacky-products-'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);notify('已匯出商品與圖片索引；不含圖片檔案、庫存異動或訂單，不能作為完整備份。')};
-notify('請登入已獲授權的管理員帳號。');$('loginButton').disabled=false;
+async function restoreLogin(){
+ notify('正在確認登入狀態…');
+ try{const {data,error}=await client.auth.getSession();if(error)throw error;if(data.session){await enterWorkspace(await service.authorize())}else notify('請登入已獲授權的管理員帳號。')}
+ catch(error){clearPrivateUI();notify('無法恢復登入，請確認網路後重新整理，或重新登入。'+describe(error),true)}
+ finally{$('loginButton').disabled=false}
+}
+restoreLogin();
