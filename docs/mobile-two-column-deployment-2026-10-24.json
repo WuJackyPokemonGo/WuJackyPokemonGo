@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-24",
+  "commit": "2ea13d4ea8af6d5061f2e6ec78c49ab4e01d8e09",
+  "tests_passed": 160,
+  "ci": "success",
+  "pages": "success",
+  "change": "Mobile background collection uses two vertical cards per row; Chinese and English labels wrap in full with automatic card heights. Desktop CSS is unchanged.",
+  "width_checks": [
+    {
+      "width": 320,
+      "columns": 2,
+      "checked_labels": 96,
+      "clipped_labels": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "columns": 2,
+      "checked_labels": 96,
+      "clipped_labels": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 430,
+      "columns": 2,
+      "checked_labels": 96,
+      "clipped_labels": 0,
+      "horizontal_overflow": false
+    }
+  ],
+  "english_mode_320": {
+    "clipped_labels": 0,
+    "horizontal_overflow": false
+  },
+  "screenshot": "docs/images/mobile-two-column-live-2026-10-24.jpg",
+  "database_writes": 0,
+  "files": {
+    "backgrounds.css": "0256eed6f1f53fbecfd00efefa334ae4d000a32e331f3c7757f23f16a307eeee",
+    "backgrounds.html": "7eed7027256c5be0f946334916ac7e0b59b368aed0fbba19638448d33836fb0b"
+  }
+}
