@@ -8,13 +8,15 @@
     "added_records": 0,
     "removed_records": 0,
     "changed_records": 122,
-    "before_pending_dates": 65,
+    "before_pending_dates": 70,
     "after_pending_dates": 5,
     "before_pending_methods": 109,
     "after_pending_methods": 14,
     "before_pending_artwork_records": 4,
     "after_pending_artwork_records": 2,
-    "new_product_links": 10
+    "new_product_links": 10,
+    "baseline_reported_pending_dates": 65,
+    "baseline_count_discrepancy": "Previous metadata reported 65; direct count of missing start_date in the baseline is 70. Current counts are derived directly."
   },
   "environment": {
     "repository": "WuJackyPokemonGo/WuJackyPokemonGo",
@@ -6025,6 +6027,14 @@
       "merged_records": 270,
       "invalid_links": 0
     },
-    "deployment": "Verify GitHub Pages serving SHA256 after commit; see PROGRESS.md."
+    "deployment": {
+      "data_commit": "60be6fb48414bdc62888b5bb259c13b29cac80d8",
+      "store_checks": "success",
+      "github_pages": "success",
+      "live_as_of": "2026-10-24",
+      "live_records": 270,
+      "live_sha256": "006332f8118a3b2bfc68ee0acd271dcd067cc3251f1abcedb439fc4e85abf1ec",
+      "matches_local": true
+    }
   }
 }

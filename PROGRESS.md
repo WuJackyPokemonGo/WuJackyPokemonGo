@@ -9,6 +9,6 @@
 - 圖鑑底稿：`data/backgrounds.json`
 - 測試：144/144；實際公開RPC核對11商品、0覆寫、270合併紀錄、0無效關聯。
 - 圖鑑SHA256：`006332f8118a3b2bfc68ee0acd271dcd067cc3251f1abcedb439fc4e85abf1ec`
-- GitHub Pages發布：待本次commit完成後校驗。
+- GitHub Pages資料版本：`60be6fb48414bdc62888b5bb259c13b29cac80d8`。Store checks及Pages部署均成功；正式站SHA256已核對一致。
 
 下次只續查報告列出的待確認證據；不要重做語言、搜尋、手機標籤、登入或圖鑑編輯。歐洲六國小怪商品仍未上架，本輪只關聯既有太空裝商品。
