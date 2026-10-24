@@ -1,0 +1,6030 @@
+{
+  "as_of": "2026-10-24",
+  "baseline_commit": "2f9e1a526c9fe2d3405c2a22fca0b3ed79556bfd",
+  "scope": "Continuation of 2026-10-23 research. No new merchandise, inventory, schema or UI features. This is not a certification of every historical form or artwork.",
+  "summary": {
+    "before_records": 270,
+    "after_records": 270,
+    "added_records": 0,
+    "removed_records": 0,
+    "changed_records": 122,
+    "before_pending_dates": 65,
+    "after_pending_dates": 5,
+    "before_pending_methods": 109,
+    "after_pending_methods": 14,
+    "before_pending_artwork_records": 4,
+    "after_pending_artwork_records": 2,
+    "new_product_links": 10
+  },
+  "environment": {
+    "repository": "WuJackyPokemonGo/WuJackyPokemonGo",
+    "branch": "main",
+    "active_database": "wlrwlqchlxehlvkyesnj",
+    "inactive_database": "uhwhhdtwtzmuodvltijw",
+    "active_products": 11,
+    "cloud_overrides": 0,
+    "database_mutations": 0,
+    "public_products_checked": 11,
+    "valid_linked_backgrounds": 16,
+    "invalid_product_links": 0
+  },
+  "coverage": {
+    "serebii_current_headings": 271,
+    "all_headings_mapped_to_existing_records": true,
+    "mapping_exceptions_resolved": {
+      "Taipei Floral Picnic 2016": "BG-0124; source typo retained in raw evidence, corrected to 2026 in catalog",
+      "Ancients Recovered six headings": "BG-0265; retained grouped, individual artworks still under review"
+    },
+    "previous_cross_site_assets": "Reuse 2026-10-23 345-asset PokéXperience and 343-ID 9DB audit; no invented claim that these counts equal unique backgrounds.",
+    "no_new_verified_design": "No unmatched released design was established by this pass; no duplicate row created."
+  },
+  "evidence_policy": {
+    "primary": "Official event sources or organizer releases; event confirmation does not imply each variant is fully checked.",
+    "secondary": "Catalog cross-checks remain visibly distinct from official event confirmation.",
+    "dates": "First known start and repeated/claim windows distinguished; original conflicts retained in this audit.",
+    "artwork": "No artwork copied or changed this pass; unresolved assets remain pending."
+  },
+  "sources_opened_or_used_this_pass": [
+    "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
+    "https://leekduck.com/events/pokemon-world-championships-2026-san-francisco/",
+    "https://pogomate.com/en/datamining/cardinals-nagano-location-cards",
+    "https://pokemongo.com/en/news/event-apac-stamp-rally-2026",
+    "https://pokemongo.com/en/news/go-fest-2026-global-final-details",
+    "https://pokemongo.com/en/news/save-the-date-go-fest-2026",
+    "https://pokemongo.com/es/news/comic-con-malaga-2026",
+    "https://pokemongo.com/gofest/megafinale",
+    "https://pokemongo.com/gofestmaxfinale",
+    "https://pokemongo.com/gotour/global/",
+    "https://pokemongo.com/gotour/losangeles/gameplay",
+    "https://pokemongo.com/gotour/tainan/gameplay",
+    "https://pokemongo.com/gowildarea/nagasaki/gameplay",
+    "https://pokemongo.com/ja/news/observatory_sagamihara",
+    "https://pokemongo.com/ko/news/ko-baseball-2025",
+    "https://pokemongo.com/ko/news/ko-jeju-stamp-rally-event",
+    "https://pokemongo.com/ko/news/ko-summer-water-festival-2025",
+    "https://pokemongo.com/news/10th-anniversary-celebration",
+    "https://pokemongo.com/news/allstar",
+    "https://pokemongo.com/news/carnaval-2026-in-rio",
+    "https://pokemongo.com/news/community-day-december-2024",
+    "https://pokemongo.com/news/communityday-february-2025-karrablast-shelmet",
+    "https://pokemongo.com/news/communityday-january-2025-sprigatito",
+    "https://pokemongo.com/news/communityday-october-2025-solosis",
+    "https://pokemongo.com/news/communitydayclassic-january-2025-ralts",
+    "https://pokemongo.com/news/communitydayclassic-piplup-jan-2026",
+    "https://pokemongo.com/news/festival-of-colors-2026",
+    "https://pokemongo.com/news/get-ready-for-go-wild-area-2024",
+    "https://pokemongo.com/news/get-ready-for-gotour-kalos",
+    "https://pokemongo.com/news/go-fest-2025-ultra-unlock-challenges",
+    "https://pokemongo.com/news/go-pass-ancients-recovered-2025",
+    "https://pokemongo.com/news/go-pass-november-2025",
+    "https://pokemongo.com/news/go-pass-october-2025",
+    "https://pokemongo.com/news/go-pass-september-2025",
+    "https://pokemongo.com/news/go-stamp-rally-cologne",
+    "https://pokemongo.com/news/gofest-2026-copenhagen-lego",
+    "https://pokemongo.com/news/into-the-wild-2025",
+    "https://pokemongo.com/news/ko-winter-festival-2026",
+    "https://pokemongo.com/news/lego-pokemon-go-2026",
+    "https://pokemongo.com/news/mega-mewtwo-gofest-2026",
+    "https://pokemongo.com/news/nippon_pro_baseball",
+    "https://pokemongo.com/news/pokemon-go-road-trip-2025-gameplay",
+    "https://pokemongo.com/news/pokemon-horizons-celebration-event-2026",
+    "https://pokemongo.com/news/pokemon-pokopia-celebration-event-2026",
+    "https://pokemongo.com/news/pokemongo-9th-anniversary",
+    "https://pokemongo.com/news/ppk_launch",
+    "https://pokemongo.com/news/road-to-kalos-event",
+    "https://pokemongo.com/news/road-to-unova-event",
+    "https://pokemongo.com/news/stamprallyfrance",
+    "https://pokemongo.com/news/suita_rally",
+    "https://pokemongo.com/news/tour-pass-2025",
+    "https://pokemongo.com/news/tw-stamprally2025",
+    "https://pokemongo.com/news/world-championships-event-2026",
+    "https://pokemongo.com/zh-Hant/news/tw-floral-picnic-2026",
+    "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_Night_-_Miami_Marlins",
+    "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_Night_-_Seattle_Mariners",
+    "https://prtimes.jp/main/html/rd/p/000000003.000177618.html",
+    "https://www.azcardinals.com/news/cardinals-to-host-special-pokemon-go-event-at-state-farm-stadium",
+    "https://www.serebii.net/pokemongo/reallifeevents/gamedayinaz.shtml",
+    "https://www.serebii.net/pokemongo/reallifeevents/megaevolutionparis.shtml",
+    "https://www.serebii.net/pokemongo/stamprally/megaevolutioninparis.shtml"
+  ],
+  "pending_dates": [
+    {
+      "background_id": "BG-0009",
+      "name_zh": "GO Tour 洛杉磯",
+      "source_dates": "February 17th - 18th 2024",
+      "conflict": {
+        "serebii": [
+          "2024-02-17",
+          "2024-02-18"
+        ],
+        "dittobase_utc": [
+          "2024-02-16",
+          "2024-02-18"
+        ]
+      },
+      "note": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。"
+    },
+    {
+      "background_id": "BG-0034",
+      "name_zh": "吹田市",
+      "source_dates": "May 29th 2025",
+      "conflict": {
+        "serebii": [
+          "2025-05-29",
+          "2025-05-29"
+        ],
+        "dittobase_utc": [
+          "2025-04-13",
+          ""
+        ]
+      },
+      "note": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。"
+    },
+    {
+      "background_id": "BG-0072",
+      "name_zh": "釜山煙火節",
+      "source_dates": "??",
+      "conflict": null,
+      "note": null
+    },
+    {
+      "background_id": "BG-0209",
+      "name_zh": "寶可夢人孔蓋－長野",
+      "source_dates": "2026",
+      "conflict": null,
+      "note": "9/26為素材發現日；非首次發放日。名錄可見皮卡丘，但精確遊戲開放日仍缺官方證據。"
+    },
+    {
+      "background_id": "BG-0270",
+      "name_zh": "世界錦標賽藍色素材（圖樣待核對）",
+      "source_dates": null,
+      "conflict": null,
+      "note": null
+    }
+  ],
+  "pending_methods": [
+    {
+      "background_id": "BG-0070",
+      "name_zh": "曠野地帶 長崎",
+      "status": "partial",
+      "known": "11/7–9 持票現場團體戰／極巨對戰有機會附長崎背景；特殊調查獎勵超極巨長毛巨魔，8章獎勵荒野斗篷穿著熊。11/10起公開8章獎勵背景電龍。其他名錄款仍待核實。",
+      "sources": [
+        "https://pokemongo.com/news/stamp-rally-nagasaki",
+        "https://pokemongo.com/gowildarea/nagasaki/gameplay",
+        "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-gowildarea-2025-nagasaki"
+      ]
+    },
+    {
+      "background_id": "BG-0072",
+      "name_zh": "釜山煙火節",
+      "status": "missing",
+      "known": null,
+      "sources": [
+        "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-busanfireworksfestival-2025"
+      ]
+    },
+    {
+      "background_id": "BG-0119",
+      "name_zh": "寶可夢樂園關都",
+      "status": "partial",
+      "known": "需入園票券。園內團體戰每日可參加一次：2–5月閃電鳥、6–9月火焰鳥、10–1月急凍鳥，附園區地標背景。原名錄的皮卡丘背景尚待確認。",
+      "sources": [
+        "https://pokemongo.com/news/ppk_launch",
+        "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokemon-park"
+      ]
+    },
+    {
+      "background_id": "BG-0136",
+      "name_zh": "GO Fest 2026 東京",
+      "status": "partial",
+      "known": "持票公園場次末30分鐘的超級超夢大型團體戰，獎勵帶當地 GO Fest 地標背景的超夢；另有城市體驗限時調查機會。其他名錄款的逐隻來源仍待核。",
+      "sources": [
+        "https://pokemongo.com/news/mega-mewtwo-gofest-2026",
+        "https://pokemongo.com/en/news/save-the-date-go-fest-2026",
+        "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2026-tokyo"
+      ]
+    },
+    {
+      "background_id": "BG-0140",
+      "name_zh": "GO Fest 2026 芝加哥",
+      "status": "partial",
+      "known": "持票公園場次末30分鐘的超級超夢大型團體戰，獎勵帶當地 GO Fest 地標背景的超夢；另有城市體驗限時調查機會。其他名錄款的逐隻來源仍待核。",
+      "sources": [
+        "https://pokemongo.com/news/mega-mewtwo-gofest-2026",
+        "https://pokemongo.com/en/news/save-the-date-go-fest-2026",
+        "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2026-chicago"
+      ]
+    },
+    {
+      "background_id": "BG-0141",
+      "name_zh": "GO Fest 2026 哥本哈根",
+      "status": "partial",
+      "known": "持票公園場次末30分鐘的超級超夢大型團體戰，獎勵帶當地 GO Fest 地標背景的超夢；另有城市體驗限時調查機會。其他名錄款的逐隻來源仍待核。",
+      "sources": [
+        "https://pokemongo.com/news/mega-mewtwo-gofest-2026",
+        "https://pokemongo.com/en/news/save-the-date-go-fest-2026",
+        "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2026-copenhagen"
+      ]
+    },
+    {
+      "background_id": "BG-0190",
+      "name_zh": "2026 寶可夢世界錦標賽",
+      "status": "partial",
+      "known": "舊金山指定地標現場團體戰與太空裝皮卡丘 GO 集章可得背景；田野調查亦有機會。超夢及其他超級團體戰款的逐隻發放條件仍待核對。",
+      "sources": [
+        "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2026-san-francisco",
+        "https://leekduck.com/events/pokemon-world-championships-2026-san-francisco/"
+      ]
+    },
+    {
+      "background_id": "BG-0238",
+      "name_zh": "曠野地帶 2025",
+      "status": "partial",
+      "known": "11/10–14 深入曠野五星團體戰先行推出特殊背景；11/15–16 全球曠野的團體戰／極巨對戰再發放。逐隻及特殊調查條件仍待核對。",
+      "sources": [
+        "https://pokemongo.com/news/into-the-wild-2025",
+        "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "https://www.dittobase.com/pokemon-go/backgrounds/sb-gowildarea-2025-global"
+      ]
+    },
+    {
+      "background_id": "BG-0241",
+      "name_zh": "活動背景－GO Tour 2026 Mega",
+      "status": "partial",
+      "known": "卡洛斯全球活動的超級團體戰有機會附超級進化背景；8/31–9/6 Mega Ascension／Mega Finale 再發放，超級進化時會顯示額外效果。",
+      "sources": [
+        "https://pokemongo.com/ja/gofest/megafinale",
+        "https://pokemongo.com/gotour/global/",
+        "https://pokemongo.com/gofest/megafinale",
+        "https://pokemongo.com/news/road-to-kalos-event",
+        "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-tour-2026-mega"
+      ]
+    },
+    {
+      "background_id": "BG-0242",
+      "name_zh": "活動背景－GO Tour 2026 X",
+      "status": "partial",
+      "known": "卡洛斯全球活動指定團體戰有機會附 X／Y 背景；持票分支特殊調查分別獎勵帶背景哲爾尼亞斯／伊裴爾塔爾。2/27 起另有慶祝日限時調查的御三家獎勵。",
+      "sources": [
+        "https://pokemongo.com/gotour/global/",
+        "https://pokemongo.com/news/get-ready-for-gotour-kalos",
+        "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-tour-2026-x"
+      ]
+    },
+    {
+      "background_id": "BG-0243",
+      "name_zh": "活動背景－GO Tour 2026 Y",
+      "status": "partial",
+      "known": "卡洛斯全球活動指定團體戰有機會附 X／Y 背景；持票分支特殊調查分別獎勵帶背景哲爾尼亞斯／伊裴爾塔爾。2/27 起另有慶祝日限時調查的御三家獎勵。",
+      "sources": [
+        "https://pokemongo.com/gotour/global/",
+        "https://pokemongo.com/news/get-ready-for-gotour-kalos",
+        "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-tour-2026-y"
+      ]
+    },
+    {
+      "background_id": "BG-0251",
+      "name_zh": "寶可夢Pokopia",
+      "status": "partial",
+      "known": "活動野外的帽子／鴨舌帽百變怪有機會附 Pokopia 背景。其他名錄寶可夢的個別調查取得方式仍待核實。",
+      "sources": [
+        "https://pokemongo.com/news/pokemon-pokopia-celebration-event-2026",
+        "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "https://www.dittobase.com/pokemon-go/backgrounds/sb-pokopia-2026"
+      ]
+    },
+    {
+      "background_id": "BG-0265",
+      "name_zh": "遠古復甦－雷吉系列（共用圖樣）",
+      "status": "partial",
+      "known": "Ancients Recovered 的 GO Pass 隨機獎勵五種傳說巨人之一且附特殊背景。雷吉奇卡斯與各巨人團體戰／調查的個別圖樣仍需逐款核實。",
+      "sources": [
+        "https://pokemongo.com/news/go-pass-ancients-recovered-2025",
+        "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-fest-2025"
+      ]
+    },
+    {
+      "background_id": "BG-0270",
+      "name_zh": "世界錦標賽藍色素材（圖樣待核對）",
+      "status": "partial",
+      "known": "官方確認觀看2026世界賽可取得帶特殊背景巧鍛匠的限時調查，但未能證明本藍色素材是獨立實際發放款；保留待核對，不重複上架。",
+      "sources": [
+        "https://pokemongo.com/news/world-championships-event-2026",
+        "https://pogomate.com/en/backgrounds",
+        "https://pogokit.com/backgrounds/",
+        "https://pokexperience.com/backgrounds/"
+      ]
+    }
+  ],
+  "pending_backgrounds": [
+    {
+      "background_id": "BG-0072",
+      "name_zh": "釜山煙火節"
+    },
+    {
+      "background_id": "BG-0270",
+      "name_zh": "世界錦標賽藍色素材（圖樣待核對）"
+    }
+  ],
+  "changes": [
+    {
+      "background_id": "BG-0001",
+      "name_zh": "GO Tour 拉斯維加斯",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-tour-2023-las-vegas"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-tour-2023-las-vegas",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from event raids for the listed species; event-ticket and add-on hours follow that year’s rules."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "於活動限定團體戰捕捉對應寶可夢，有機會附上該城市背景；現場活動票券與加購適用時段依當年規則。"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0003",
+      "name_zh": "GO Fest 大阪",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2023-osaka"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2023-osaka",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from event raids for the listed species; event-ticket and add-on hours follow that year’s rules."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "於活動限定團體戰捕捉對應寶可夢，有機會附上該城市背景；現場活動票券與加購適用時段依當年規則。"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0004",
+      "name_zh": "GO Fest 倫敦",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2023-london"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2023-london",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from event raids for the listed species; event-ticket and add-on hours follow that year’s rules."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "於活動限定團體戰捕捉對應寶可夢，有機會附上該城市背景；現場活動票券與加購適用時段依當年規則。"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0005",
+      "name_zh": "GO Fest 紐約",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2023-new-york"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2023-new-york",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from event raids for the listed species; event-ticket and add-on hours follow that year’s rules."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "於活動限定團體戰捕捉對應寶可夢，有機會附上該城市背景；現場活動票券與加購適用時段依當年規則。"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0009",
+      "name_zh": "GO Tour 洛杉磯",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-tour-2024-los-angeles"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-tour-2024-los-angeles",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from event raids for the listed species; event-ticket and add-on hours follow that year’s rules."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "於活動限定團體戰捕捉對應寶可夢，有機會附上該城市背景；現場活動票券與加購適用時段依當年規則。"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0013",
+      "name_zh": "GO Fest 仙台",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2024-sendai"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2024-sendai",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Ultra Beasts: chance from event raids. Solgaleo/Lunala: ticketed Special Research."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "究極異獸由活動團體戰機率取得地標背景；索爾迦雷歐／露奈雅拉由持票者特殊調查取得。"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0014",
+      "name_zh": "GO Fest 馬德里",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2024-madrid"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2024-madrid",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Ultra Beasts: chance from event raids. Solgaleo/Lunala: ticketed Special Research."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "究極異獸由活動團體戰機率取得地標背景；索爾迦雷歐／露奈雅拉由持票者特殊調查取得。"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0015",
+      "name_zh": "GO Fest 紐約 2024",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2024-new-york"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2024-new-york",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2024-07-05",
+              "2024-07-07"
+            ],
+            "dittobase_utc": [
+              "2024-07-05",
+              "2024-07-08"
+            ]
+          },
+          "after": null
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2024-07-07"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Ultra Beasts: chance from event raids. Solgaleo/Lunala: ticketed Special Research."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "究極異獸由活動團體戰機率取得地標背景；索爾迦雷歐／露奈雅拉由持票者特殊調查取得。"
+        },
+        "start_date": {
+          "before": null,
+          "after": "2024-07-05"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0016",
+      "name_zh": "2024 寶可夢世界錦標賽",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2024-honolulu"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2024-honolulu",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "end_date": {
+          "before": "2024-08-18",
+          "after": "2024-08-20"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Honolulu raids, Field Research and Timed Research could award the Worlds Pikachu background; no Worlds ticket required."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "檀香山現場團體戰、田野與限時調查有機會取得世界賽皮卡丘地標背景；無需世界賽票券。"
+        },
+        "verification_note_en": {
+          "before": "Background and event dates agree across two catalogs. See the linked sources and official event rules for acquisition and form details.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景及活動日期已比對兩份名錄；取得條件與個別形態以條目來源及官方活動規定為準。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0018",
+      "name_zh": "活動背景－MLB Marlins",
+      "changes": {
+        "catalog_sources": {
+          "before": null,
+          "after": [
+            "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_Night_-_Miami_Marlins",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "end_date": {
+          "before": null,
+          "after": "2024-09-07"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Stadium-event Pikachu raids award the location background. Same artwork as the 2025 stadium release, recorded separately."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "球場限定活動團體戰的皮卡丘帶有球場地標背景；本筆與2025年同球場共用圖樣，分開記錄發放活動。"
+        },
+        "release_state": {
+          "before": "needs-verification",
+          "after": "released"
+        },
+        "start_date": {
+          "before": null,
+          "after": "2024-09-07"
+        },
+        "verification": {
+          "before": "catalogued-needs-event-check",
+          "after": "catalog-crosschecked"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0019",
+      "name_zh": "活動背景－MLB Mariners",
+      "changes": {
+        "catalog_sources": {
+          "before": null,
+          "after": [
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
+            "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_Night_-_Seattle_Mariners"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "end_date": {
+          "before": null,
+          "after": "2024-09-13"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Stadium-event Pikachu raids award the location background. Same artwork as the 2025 stadium release, recorded separately."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "球場限定活動團體戰的皮卡丘帶有球場地標背景；本筆與2025年同球場共用圖樣，分開記錄發放活動。"
+        },
+        "release_state": {
+          "before": "needs-verification",
+          "after": "released"
+        },
+        "start_date": {
+          "before": null,
+          "after": "2024-09-13"
+        },
+        "verification": {
+          "before": "catalogued-needs-event-check",
+          "after": "catalog-crosschecked"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0021",
+      "name_zh": "Safari Zone 仁川",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2024-incheon"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2024-incheon",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2024-09-27",
+              "2024-09-29"
+            ],
+            "dittobase_utc": [
+              "2024-09-27",
+              "2024-09-28"
+            ]
+          },
+          "after": null
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2024-09-29"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Event Field and Special Research encounters; background conditions follow the Safari Hat Pikachu and Skiddo rewards."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "活動田野與特殊調查遭遇；探險帽皮卡丘及坐騎小羊的背景條件依活動獎勵。"
+        },
+        "start_date": {
+          "before": null,
+          "after": "2024-09-27"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0022",
+      "name_zh": "曠野地帶 福岡",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-gowildarea-2024-fukuoka"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-gowildarea-2024-fukuoka",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance after catching listed bosses in event raids and Max Battles during ticketed gameplay."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "持票活動的團體戰及極巨對戰，捕捉列出的頭目後有機會附福岡背景。"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0025",
+      "name_zh": "GO Tour 新北",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-tour-2025-new-taipei-city"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-tour-2025-new-taipei-city",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from Reshiram, Zekrom or Kyurem event raids during ticketed in-person gameplay."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "持票現場活動團體戰捕捉萊希拉姆、捷克羅姆或酋雷姆，有機會附城市背景。"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0026",
+      "name_zh": "GO Tour Unova 洛杉磯",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-tour-2025-los-angeles"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-tour-2025-los-angeles",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2025-02-21",
+              "2025-02-23"
+            ],
+            "dittobase_utc": [
+              "2025-02-21",
+              "2025-02-24"
+            ]
+          },
+          "after": null
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2025-02-23"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from Reshiram, Zekrom or Kyurem event raids during ticketed in-person gameplay."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "持票現場活動團體戰捕捉萊希拉姆、捷克羅姆或酋雷姆，有機會附城市背景。"
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-02-21"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0031",
+      "name_zh": "汝矣島櫻花節",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-cherry-blossom-fest-2025-yeouido"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-cherry-blossom-fest-2025-yeouido",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from Yeouido event Field Research; on-site Timed Research also awards backgrounds, claimable through April 13."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "汝矣島活動田野調查有機會取得背景；現場限時調查亦提供背景獎勵，領獎至 4/13。"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0032",
+      "name_zh": "2025大阪萬博 - 大阪",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-stamp-rally-2025-expo-1"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-stamp-rally-2025-expo-1",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Complete the designated EXPO GO Stamp Rally for Pikachu or Kanto starter background encounters."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "大阪萬博期間於指定地點完成 GO 集章趣，取得皮卡丘或關都御三家對應背景。"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0033",
+      "name_zh": "2025大阪萬博 - 大阪 2",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-stamp-rally-2025-expo-2"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-stamp-rally-2025-expo-2",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Complete the designated EXPO GO Stamp Rally for Pikachu or Kanto starter background encounters."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "大阪萬博期間於指定地點完成 GO 集章趣，取得皮卡丘或關都御三家對應背景。"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0034",
+      "name_zh": "吹田市",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Suita GO Stamp Rally awards background Pikachu; no announced end. Conflicting April 13/May 9/May 29 debut dates remain unresolved."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "吹田市指定補給站 GO 集章獎勵背景皮卡丘，活動未設結束日。首次日期來源有4/13、5/9、5/29衝突，仍待核對。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/suita_rally"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0035",
+      "name_zh": "GO Fest 2025 大阪",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2025-osaka"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2025-osaka",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from Zacian/Zamazenta raids and the city’s Gigantamax starter Max Battles; ticket/add-on rules apply."
+        },
+        "method_status": {
+          "before": null,
+          "after": "reviewed"
+        },
+        "method_zh": {
+          "before": null,
+          "after": "活動現場團體戰的蒼響／藏瑪然特及極巨對戰的當地超極巨化御三家，有機會附城市背景；適用票券與加購日依當年活動。"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0036",
+      "name_zh": "GO Fest 2025 澤西市",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2025-jersey-city"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2025-jersey-city",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from Zacian/Zamazenta raids and the city’s Gigantamax starter Max Battles; ticket/add-on rules apply."
+        },
+        "method_status": {
+          "before": null,
+          "after": "reviewed"
+        },
+        "method_zh": {
+          "before": null,
+          "after": "活動現場團體戰的蒼響／藏瑪然特及極巨對戰的當地超極巨化御三家，有機會附城市背景；適用票券與加購日依當年活動。"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0037",
+      "name_zh": "GO Fest 2025 巴黎",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2025-paris"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2025-paris",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
+            "https://www.serebii.net/pokemongo/reallifeevents/megaevolutionparis.shtml"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "June event and September rally are separate releases; Charmander has its own availability date."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "6月主活動與9月集章分開記錄；小火龍的首次可得日列在該款下。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2025-06-15"
+        },
+        "method_en": {
+          "before": null,
+          "after": "June ticketed raids/Max Battles; Charmander comes from the September 13 Paris rally reusing this artwork."
+        },
+        "method_status": {
+          "before": null,
+          "after": "reviewed"
+        },
+        "method_zh": {
+          "before": null,
+          "after": "6月持票 GO Fest 團體戰／極巨對戰機率取得；小火龍另於9/13起巴黎超級進化集章發放，重用相同巴黎圖樣。"
+        },
+        "pokemon": {
+          "before": [
+            {
+              "dex": 818,
+              "name_en": "Gigantamax Inteleon",
+              "name_zh": "千面避役",
+              "variant_id": "inteleon-gigantamax",
+              "acquisition": "encounter"
+            },
+            {
+              "dex": 888,
+              "name_en": "Zacian (Hero of Many Battles)",
+              "name_zh": "蒼響",
+              "variant_id": "zacian",
+              "acquisition": "encounter"
+            },
+            {
+              "dex": 889,
+              "name_en": "Zamazenta (Hero of Many Battles)",
+              "name_zh": "藏瑪然特",
+              "variant_id": "zamazenta",
+              "acquisition": "encounter"
+            },
+            {
+              "dex": 4,
+              "name_en": "Charmander",
+              "name_zh": "小火龍",
+              "variant_id": "charmander",
+              "acquisition": "encounter"
+            }
+          ],
+          "after": [
+            {
+              "dex": 818,
+              "name_en": "Gigantamax Inteleon",
+              "name_zh": "千面避役",
+              "variant_id": "inteleon-gigantamax",
+              "acquisition": "encounter"
+            },
+            {
+              "dex": 888,
+              "name_en": "Zacian (Hero of Many Battles)",
+              "name_zh": "蒼響",
+              "variant_id": "zacian",
+              "acquisition": "encounter"
+            },
+            {
+              "dex": 889,
+              "name_en": "Zamazenta (Hero of Many Battles)",
+              "name_zh": "藏瑪然特",
+              "variant_id": "zamazenta",
+              "acquisition": "encounter"
+            },
+            {
+              "dex": 4,
+              "name_en": "Charmander",
+              "name_zh": "小火龍",
+              "variant_id": "charmander",
+              "acquisition": "encounter",
+              "start_date": "2025-09-13",
+              "method_zh": "9月巴黎超級進化 GO 集章獎勵；重用6月 GO Fest 圖樣，不是6月團體戰。",
+              "method_en": "September Paris Mega Evolution stamp reward, reusing June artwork; not a June raid."
+            }
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-06-12"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0038",
+      "name_zh": "活動背景－Lotte Giants",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "On-site free Timed Research awards background Pikachu; claim by June 25, 23:59 KST."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "釜山社稷棒球場活動免費限時調查，直接獎勵附球場背景的皮卡丘，6/25 23:59 KST 前領獎。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/ko/news/ko-baseball-2025"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0040",
+      "name_zh": "歐洲公路之旅 2025 曼徹斯特",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Summer-flair Pikachu raids near the GO Truck may award the city background. Nationwide research does not promise a background."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "GO Truck 附近一星團體戰的夏日風情皮卡丘有機會附該城市背景。全國限時調查有皮卡丘獎勵，公告未保證該獎勵帶背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/pokemon-go-road-trip-2025-gameplay"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0042",
+      "name_zh": "歐洲公路之旅 2025 倫敦",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Summer-flair Pikachu raids near the GO Truck may award the city background. Nationwide research does not promise a background."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "GO Truck 附近一星團體戰的夏日風情皮卡丘有機會附該城市背景。全國限時調查有皮卡丘獎勵，公告未保證該獎勵帶背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/pokemon-go-road-trip-2025-gameplay"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0045",
+      "name_zh": "歐洲公路之旅 2025 巴黎",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Summer-flair Pikachu raids near the GO Truck may award the city background. Nationwide research does not promise a background."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "GO Truck 附近一星團體戰的夏日風情皮卡丘有機會附該城市背景。全國限時調查有皮卡丘獎勵，公告未保證該獎勵帶背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/pokemon-go-road-trip-2025-gameplay"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0046",
+      "name_zh": "長興水節",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from local one/three-star raids; no remote passes. On-site Timed Research awards backgrounds, claimable through August 15."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "長興現場一星皮卡丘／夏季四季鹿、三星圍巾拉普拉斯團體戰機率取得背景，不可遠距。現場限時調查直接獎勵背景，領獎至 8/15。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/ko/news/ko-summer-water-festival-2025"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0047",
+      "name_zh": "歐洲公路之旅 2025 瓦倫西亞",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Summer-flair Pikachu raids near the GO Truck may award the city background. Nationwide research does not promise a background."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "GO Truck 附近一星團體戰的夏日風情皮卡丘有機會附該城市背景。全國限時調查有皮卡丘獎勵，公告未保證該獎勵帶背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/pokemon-go-road-trip-2025-gameplay"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0049",
+      "name_zh": "歐洲公路之旅 2025 柏林",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Summer-flair Pikachu raids near the GO Truck may award the city background. Nationwide research does not promise a background."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "GO Truck 附近一星團體戰的夏日風情皮卡丘有機會附該城市背景。全國限時調查有皮卡丘獎勵，公告未保證該獎勵帶背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/pokemon-go-road-trip-2025-gameplay"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0054",
+      "name_zh": "2025 寶可夢世界錦標賽",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2025-anaheim"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2025-anaheim",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from Worlds Pikachu raids at the Anaheim event."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "安那翰現場限定團體戰的2025世界賽皮卡丘，有機會附城市地標背景。"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0055",
+      "name_zh": "歐洲公路之旅 2025 海牙",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Summer-flair Pikachu raids near the GO Truck may award the city background. Nationwide research does not promise a background."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "GO Truck 附近一星團體戰的夏日風情皮卡丘有機會附該城市背景。全國限時調查有皮卡丘獎勵，公告未保證該獎勵帶背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/pokemon-go-road-trip-2025-gameplay"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0056",
+      "name_zh": "歐洲公路之旅 2025 科隆",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Summer-flair Pikachu raids near the GO Truck may award the city background. Nationwide research does not promise a background."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "GO Truck 附近一星團體戰的夏日風情皮卡丘有機會附該城市背景。全國限時調查有皮卡丘獎勵，公告未保證該獎勵帶背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/pokemon-go-road-trip-2025-gameplay"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0058",
+      "name_zh": "波士頓 Red Sox",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from Pikachu raids during the designated home-game promotion."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "指定主場 Pokémon GO 主題賽的活動團體戰，有機會捕捉帶球場背景的皮卡丘。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/mlb-2025"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0059",
+      "name_zh": "活動背景－San Francisco Giants",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from Pikachu raids during the designated home-game promotion."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "指定主場 Pokémon GO 主題賽的活動團體戰，有機會捕捉帶球場背景的皮卡丘。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/mlb-2025"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0060",
+      "name_zh": "活動背景－Minnesota Twins",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from Pikachu raids during the designated home-game promotion."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "指定主場 Pokémon GO 主題賽的活動團體戰，有機會捕捉帶球場背景的皮卡丘。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/mlb-2025"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0061",
+      "name_zh": "活動背景－Texas Rangers",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from Pikachu raids during the designated home-game promotion."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "指定主場 Pokémon GO 主題賽的活動團體戰，有機會捕捉帶球場背景的皮卡丘。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/mlb-2025"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0062",
+      "name_zh": "Mega Evolution 巴黎",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-stamp-rally-paris-2025"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-stamp-rally-paris-2025",
+            "https://www.serebii.net/pokemongo/stamprally/megaevolutioninparis.shtml"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Paris Mega Evolution stamp rewards: two new designs and reused GO Fest artwork; no duplicate artwork entry."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "9/13–14 巴黎超級進化 GO 集章的小火龍獎勵，包含兩個新圖樣及重用 GO Fest 巴黎圖樣。各章對應款以名錄為準；不另建立重複圖樣。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/stamprallyfrance"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0063",
+      "name_zh": "Mega Evolution 巴黎 2",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-stamp-rally-paris-2025-2"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-stamp-rally-paris-2025-2",
+            "https://www.serebii.net/pokemongo/stamprally/megaevolutioninparis.shtml"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Paris Mega Evolution stamp rewards: two new designs and reused GO Fest artwork; no duplicate artwork entry."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "9/13–14 巴黎超級進化 GO 集章的小火龍獎勵，包含兩個新圖樣及重用 GO Fest 巴黎圖樣。各章對應款以名錄為準；不另建立重複圖樣。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/stamprallyfrance"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0069",
+      "name_zh": "Pokemon GO at 濟州島",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2025-10-02",
+              "2025-10-26"
+            ],
+            "dittobase_utc": [
+              "2025-10-01",
+              "2025-10-26"
+            ]
+          },
+          "after": null
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2025-10-26"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Jeju rally rewards background blue-shirt Pikachu at 1, 3, 5 and 8 stamps."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "濟州現場集章累計 1、3、5、8 枚時，獎勵帶濟州背景的藍色橘紋襯衫皮卡丘。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/ko/news/ko-jeju-stamp-rally-event"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-10-02"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0070",
+      "name_zh": "曠野地帶 長崎",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Ticketed November 7–9 and public Ampharos rally from November 10 are separate releases."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "持票活動11/7–9；11/10起的公開電龍集章是另一段發放。"
+        },
+        "method_en": {
+          "before": "From Nov 10, 2025, collect eight Nagasaki GO Stamp Rally stamps for Ampharos with the Nagasaki background. Other Pokémon and earlier Wild Area dates need separate checks.",
+          "after": "Ticketed raids/Max Battles November 7–9; research awards Gigantamax Grimmsnarl, eight stamps award caped Bewear. Public rally from November 10 awards Ampharos."
+        },
+        "method_status": {
+          "before": null,
+          "after": "partial"
+        },
+        "method_zh": {
+          "before": "2025/11/10起的長崎GO集章活動：親自收集八枚印章，可遇見長崎地標背景電龍。此日期為電龍集章取得方式，其他寶可夢的活動日期另行核對。",
+          "after": "11/7–9 持票現場團體戰／極巨對戰有機會附長崎背景；特殊調查獎勵超極巨長毛巨魔，8章獎勵荒野斗篷穿著熊。11/10起公開8章獎勵背景電龍。其他名錄款仍待核實。"
+        },
+        "official_sources": {
+          "before": [
+            "https://pokemongo.com/news/stamp-rally-nagasaki"
+          ],
+          "after": [
+            "https://pokemongo.com/news/stamp-rally-nagasaki",
+            "https://pokemongo.com/gowildarea/nagasaki/gameplay"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-11-07"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0071",
+      "name_zh": "台北兒童新樂園",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Complete the park GO Stamp Rally during opening hours for background scarf Lapras."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "於台北兒童新樂園營業時間完成園內 GO 集章，獎勵戴圍巾拉普拉斯的園區背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/tw-stamprally2025"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0082",
+      "name_zh": "活動背景－NFL Cardinals",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-nfl-arizona-cardinals"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-nfl-arizona-cardinals",
+            "https://www.azcardinals.com/news/cardinals-to-host-special-pokemon-go-event-at-state-farm-stadium"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Pikachu raids at the stadium/Great Lawn feature the background; the club requires a game ticket, from December 21 at 10:00."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "State Farm Stadium 與 Great Lawn 活動團體戰的皮卡丘有球場背景；球隊公告要求比賽票，12/21 10:00起開放活動。"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0084",
+      "name_zh": "平昌冬季慶典",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from wild beanie Pikachu and local raids. On-site research awards background Pikachu/Deerling, claimable by February 1; raids exclude remote passes."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "平昌野外雪花毛帽皮卡丘、一星皮卡丘／冬季四季鹿團體戰有機會附背景；現場免費限時調查獎勵背景款，2/1 前領獎。團體戰不可遠距。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/ko-winter-festival-2026"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0119",
+      "name_zh": "寶可夢樂園關都",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-02-05",
+              "2026-02-05"
+            ],
+            "dittobase_utc": [
+              "2026-02-05",
+              ""
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "From February 5, 2026 during park hours; no end announced."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "2026/2/5 起於開園時間提供；未公告結束日期。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Park admission required. Daily raid: Zapdos Feb–May, Moltres Jun–Sep, Articuno Oct–Jan, with park backgrounds. Pikachu eligibility remains unconfirmed."
+        },
+        "method_status": {
+          "before": null,
+          "after": "partial"
+        },
+        "method_zh": {
+          "before": null,
+          "after": "需入園票券。園內團體戰每日可參加一次：2–5月閃電鳥、6–9月火焰鳥、10–1月急凍鳥，附園區地標背景。原名錄的皮卡丘背景尚待確認。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/ppk_launch"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-02-05"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0120",
+      "name_zh": "纏紅鶴嘉年華 科隆",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Cologne regional research February 3–8; five-stamp rally February 7, 12:00–16:00, completable once, awards the same background."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "2/3–8 科隆地區限時調查獎勵背景纏紅鶴；2/7 12:00–16:00 五枚 GO 集章亦獎勵同背景款，整個集章僅可完成一次。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/go-stamp-rally-cologne"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0121",
+      "name_zh": "纏紅鶴嘉年華 Rio",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Rio regional Timed Research, or all five stamps at the February 7 mall rally, awards background Flamigo."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "里約地區免費限時調查獎勵；2/7 在 Shopping Metropolitano Barra 完成五枚 GO 集章亦可取得帶背景纏紅鶴。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/carnaval-2026-in-rio"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0122",
+      "name_zh": "GO Tour 2026 台南",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-02-21",
+              "2026-02-22"
+            ],
+            "dittobase_utc": [
+              "2026-02-20",
+              "2026-02-22"
+            ]
+          },
+          "after": null
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-02-22"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from in-person raids during ticketed or city add-on days. Mega Night has separate admission and hours."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "持票當日／城市加購日的現場團體戰（含超級團體戰），成功捕捉後有機會附城市背景；Mega Night 有另行票券與時段。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/gotour/tainan/gameplay"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-02-20"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0123",
+      "name_zh": "GO Tour 2026 洛杉磯",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-02-21",
+              "2026-02-22"
+            ],
+            "dittobase_utc": [
+              "2026-02-20",
+              "2026-02-22"
+            ]
+          },
+          "after": null
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-02-22"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from in-person raids during ticketed or city add-on days. Mega Night has separate admission and hours."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "持票當日／城市加購日的現場團體戰（含超級團體戰），成功捕捉後有機會附城市背景；Mega Night 有另行票券與時段。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/gotour/losangeles/gameplay"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-02-20"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0124",
+      "name_zh": "台北花卉野餐 2026",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Designated Timed/Field Research rewards at Daan Forest Park may award background flower-hat Pikachu or spring Deerling."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "大安森林公園限定限時／田野調查，花帽皮卡丘及春季四季鹿的指定獎勵有機會附活動背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/zh-Hant/news/tw-floral-picnic-2026"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0125",
+      "name_zh": "活動背景－Yomiuri Giants",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-04-05"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Baseball-shirt Pikachu from designated match-day raids may have the stadium background. Research does not promise it."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "指定主場賽日團體戰，棒球襯衫皮卡丘有機會附球場背景。限時調查有皮卡丘獎勵，但未承諾背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/nippon_pro_baseball"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-04-03"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0126",
+      "name_zh": "活動背景－Koshien Hanshin Tigers",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-04-17"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Baseball-shirt Pikachu from designated match-day raids may have the stadium background. Research does not promise it."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "指定主場賽日團體戰，棒球襯衫皮卡丘有機會附球場背景。限時調查有皮卡丘獎勵，但未承諾背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/nippon_pro_baseball"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-04-17"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0127",
+      "name_zh": "活動背景－Rakuten Eagles",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-04-12"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Baseball-shirt Pikachu from designated match-day raids may have the stadium background. Research does not promise it."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "指定主場賽日團體戰，棒球襯衫皮卡丘有機會附球場背景。限時調查有皮卡丘獎勵，但未承諾背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/nippon_pro_baseball"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-04-10"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0128",
+      "name_zh": "活動背景－Hiroshima Carp",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-04-23"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Baseball-shirt Pikachu from designated match-day raids may have the stadium background. Research does not promise it."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "指定主場賽日團體戰，棒球襯衫皮卡丘有機會附球場背景。限時調查有皮卡丘獎勵，但未承諾背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/nippon_pro_baseball"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-04-21"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0129",
+      "name_zh": "活動背景－Softbank Hawks",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-05-03"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Baseball-shirt Pikachu from designated match-day raids may have the stadium background. Research does not promise it."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "指定主場賽日團體戰，棒球襯衫皮卡丘有機會附球場背景。限時調查有皮卡丘獎勵，但未承諾背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/nippon_pro_baseball"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-05-01"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0130",
+      "name_zh": "活動背景－Belluna",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-05-06"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Baseball-shirt Pikachu from designated match-day raids may have the stadium background. Research does not promise it."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "指定主場賽日團體戰，棒球襯衫皮卡丘有機會附球場背景。限時調查有皮卡丘獎勵，但未承諾背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/nippon_pro_baseball"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-05-04"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0131",
+      "name_zh": "活動背景－Kyocera",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-05-10"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Baseball-shirt Pikachu from designated match-day raids may have the stadium background. Research does not promise it."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "指定主場賽日團體戰，棒球襯衫皮卡丘有機會附球場背景。限時調查有皮卡丘獎勵，但未承諾背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/nippon_pro_baseball"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-05-08"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0132",
+      "name_zh": "活動背景－Yokohama Baystars",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-05-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Baseball-shirt Pikachu from designated match-day raids may have the stadium background. Research does not promise it."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "指定主場賽日團體戰，棒球襯衫皮卡丘有機會附球場背景。限時調查有皮卡丘獎勵，但未承諾背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/nippon_pro_baseball"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-05-23"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0133",
+      "name_zh": "活動背景－Zozo Marine",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-05-17"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Baseball-shirt Pikachu from designated match-day raids may have the stadium background. Research does not promise it."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "指定主場賽日團體戰，棒球襯衫皮卡丘有機會附球場背景。限時調查有皮卡丘獎勵，但未承諾背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/nippon_pro_baseball"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-05-15"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0134",
+      "name_zh": "北海道 Fighters",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-08-13"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Baseball-shirt Pikachu from designated match-day raids may have the stadium background. Research does not promise it."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "指定主場賽日團體戰，棒球襯衫皮卡丘有機會附球場背景。限時調查有皮卡丘獎勵，但未承諾背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/nippon_pro_baseball"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-08-11"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0135",
+      "name_zh": "活動背景－Chunichi Dragons",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-08-23"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Baseball-shirt Pikachu from designated match-day raids may have the stadium background. Research does not promise it."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "指定主場賽日團體戰，棒球襯衫皮卡丘有機會附球場背景。限時調查有皮卡丘獎勵，但未承諾背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/nippon_pro_baseball"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-08-21"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0136",
+      "name_zh": "GO Fest 2026 東京",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-05-28",
+              "2026-05-31"
+            ],
+            "dittobase_utc": [
+              "2026-05-25",
+              "2026-06-01"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Range includes City Experience research; park dates follow the ticket."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "此期間包含城市體驗限時調查；公園主活動日期另依票券。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-06-01"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Ticketed park Super Mega Raids award city-background Mewtwo; City Experience research adds another chance. Other variants remain under review."
+        },
+        "method_status": {
+          "before": null,
+          "after": "partial"
+        },
+        "method_zh": {
+          "before": null,
+          "after": "持票公園場次末30分鐘的超級超夢大型團體戰，獎勵帶當地 GO Fest 地標背景的超夢；另有城市體驗限時調查機會。其他名錄款的逐隻來源仍待核。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/mega-mewtwo-gofest-2026",
+            "https://pokemongo.com/en/news/save-the-date-go-fest-2026"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-05-25"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0137",
+      "name_zh": "GO Fest 東京 Koto",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-stamp-rally-2026-tokyo-koto"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-stamp-rally-2026-tokyo-koto",
+            "https://prtimes.jp/main/html/rd/p/000000003.000177618.html"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-05-28",
+              "2026-05-31"
+            ],
+            "dittobase_utc": [
+              "2026-05-24",
+              ""
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Start from the operator press release; park closing dates are not used as rally end dates."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "開始日期採官方營運商新聞稿；沒有把公園 GO Fest 結束日當集章結束日。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Each Tokyo district rally awards its local background Pokémon; no GO Fest ticket required. Operator release confirms May 25 start."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "東京港區、江東區、品川區各自 GO 集章，按圖章數獎勵各區地標背景寶可夢，不需 GO Fest 票券。官方營運商新聞稿確認5/25起。"
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-05-25"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0138",
+      "name_zh": "GO Fest 東京 Minato",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-stamp-rally-2026-tokyo-minato"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-stamp-rally-2026-tokyo-minato",
+            "https://prtimes.jp/main/html/rd/p/000000003.000177618.html"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-05-28",
+              "2026-05-31"
+            ],
+            "dittobase_utc": [
+              "2026-05-24",
+              ""
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Start from the operator press release; park closing dates are not used as rally end dates."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "開始日期採官方營運商新聞稿；沒有把公園 GO Fest 結束日當集章結束日。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Each Tokyo district rally awards its local background Pokémon; no GO Fest ticket required. Operator release confirms May 25 start."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "東京港區、江東區、品川區各自 GO 集章，按圖章數獎勵各區地標背景寶可夢，不需 GO Fest 票券。官方營運商新聞稿確認5/25起。"
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-05-25"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0139",
+      "name_zh": "GO Fest 東京 Shinagawa",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-stamp-rally-2026-tokyo-shinagawa"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-stamp-rally-2026-tokyo-shinagawa",
+            "https://prtimes.jp/main/html/rd/p/000000003.000177618.html"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-05-28",
+              "2026-05-31"
+            ],
+            "dittobase_utc": [
+              "2026-05-24",
+              ""
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Start from the operator press release; park closing dates are not used as rally end dates."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "開始日期採官方營運商新聞稿；沒有把公園 GO Fest 結束日當集章結束日。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Each Tokyo district rally awards its local background Pokémon; no GO Fest ticket required. Operator release confirms May 25 start."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "東京港區、江東區、品川區各自 GO 集章，按圖章數獎勵各區地標背景寶可夢，不需 GO Fest 票券。官方營運商新聞稿確認5/25起。"
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-05-25"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0140",
+      "name_zh": "GO Fest 2026 芝加哥",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-06-05",
+              "2026-06-07"
+            ],
+            "dittobase_utc": [
+              "2026-06-04",
+              "2026-06-08"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Range includes City Experience research; park dates follow the ticket."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "此期間包含城市體驗限時調查；公園主活動日期另依票券。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-06-07"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Ticketed park Super Mega Raids award city-background Mewtwo; City Experience research adds another chance. Other variants remain under review."
+        },
+        "method_status": {
+          "before": null,
+          "after": "partial"
+        },
+        "method_zh": {
+          "before": null,
+          "after": "持票公園場次末30分鐘的超級超夢大型團體戰，獎勵帶當地 GO Fest 地標背景的超夢；另有城市體驗限時調查機會。其他名錄款的逐隻來源仍待核。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/mega-mewtwo-gofest-2026",
+            "https://pokemongo.com/en/news/save-the-date-go-fest-2026"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-06-04"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0141",
+      "name_zh": "GO Fest 2026 哥本哈根",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-06-12",
+              "2026-06-14"
+            ],
+            "dittobase_utc": [
+              "2026-06-11",
+              "2026-06-14"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Range includes City Experience research; park dates follow the ticket."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "此期間包含城市體驗限時調查；公園主活動日期另依票券。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-06-14"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Ticketed park Super Mega Raids award city-background Mewtwo; City Experience research adds another chance. Other variants remain under review."
+        },
+        "method_status": {
+          "before": null,
+          "after": "partial"
+        },
+        "method_zh": {
+          "before": null,
+          "after": "持票公園場次末30分鐘的超級超夢大型團體戰，獎勵帶當地 GO Fest 地標背景的超夢；另有城市體驗限時調查機會。其他名錄款的逐隻來源仍待核。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/mega-mewtwo-gofest-2026",
+            "https://pokemongo.com/en/news/save-the-date-go-fest-2026"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-06-11"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0142",
+      "name_zh": "東京 Swallows",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-07-22"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Baseball-shirt Pikachu from designated match-day raids may have the stadium background. Research does not promise it."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "指定主場賽日團體戰，棒球襯衫皮卡丘有機會附球場背景。限時調查有皮卡丘獎勵，但未承諾背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/nippon_pro_baseball"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-07-20"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0143",
+      "name_zh": "富山 All Stars",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-07-29"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Toyama stadium raids on July 28–29 may award the background. Tokyo Dome reuses the Giants artwork."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "富山市民球場 7/28–29 現場團體戰的棒球襯衫皮卡丘有機會附背景；東京巨蛋同日活動重用讀賣巨人背景，不另建款。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/allstar"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-07-28"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0161",
+      "name_zh": "十週年紀念・紐約時代廣場",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-07-09",
+              "2026-09-04"
+            ],
+            "dittobase_utc": [
+              "2026-07-09",
+              "2026-07-09"
+            ]
+          },
+          "after": null
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-07-09"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Official retrospective confirms July 9 Times Square background Mewtwo; future rerun mentioned. August global research is recorded separately."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "官方回顧確認7/9時代廣場現場超夢及地標背景曾發放，並表示未來再提供；本筆僅記現場首次發放，8月全球調查另見 BG-0260。"
+        },
+        "name_en": {
+          "before": "10th Anniversary Celebration",
+          "after": "10th Anniversary Celebration — Times Square"
+        },
+        "name_zh": {
+          "before": "十週年慶典",
+          "after": "十週年紀念・紐約時代廣場"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/10th-anniversary-celebration"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-07-09"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0190",
+      "name_zh": "2026 寶可夢世界錦標賽",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2026-san-francisco"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2026-san-francisco",
+            "https://leekduck.com/events/pokemon-world-championships-2026-san-francisco/"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-08-28",
+              "2026-08-30"
+            ],
+            "dittobase_utc": [
+              "2026-08-28",
+              "2026-08-31"
+            ]
+          },
+          "after": null
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-08-30"
+        },
+        "method_en": {
+          "before": null,
+          "after": "San Francisco landmark raids, spacesuit Pikachu stamps and some Field Research award the background. Mewtwo/Mega raid details remain under review."
+        },
+        "method_status": {
+          "before": null,
+          "after": "partial"
+        },
+        "method_zh": {
+          "before": null,
+          "after": "舊金山指定地標現場團體戰與太空裝皮卡丘 GO 集章可得背景；田野調查亦有機會。超夢及其他超級團體戰款的逐隻發放條件仍待核對。"
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-08-28"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0191",
+      "name_zh": "PokéXciting 馬來西亞",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "end_date": {
+          "before": null,
+          "after": "2029-09-11"
+        },
+        "method_en": {
+          "before": "The local GO Stamp Rally awards costumed Pikachu with a Location Background; available for one month after the city event starts.",
+          "after": "Kuala Lumpur KLCC Park: collect the local cross-region stamp for a background Pikachu. The separate launch rally requires five stamps and lasts one month."
+        },
+        "method_zh": {
+          "before": "各城市活動開幕後一個月內，透過指定GO集章活動取得該地裝扮皮卡丘及地標背景。",
+          "after": "吉隆坡 KLCC Park指定補給站的跨區 GO 集章，每取得當地圖章可遇見帶當地背景的 PokéXciting 皮卡丘；另有城市開幕後一個月的五章活動。"
+        },
+        "notes": {
+          "before": [
+            "背景來自各城市的GO集章活動；開始後一個月可取得。各地開始日期不同，不可沿用總表共用日期。"
+          ],
+          "after": [
+            "跨區集章與各城市實體活動的五章集章為不同取得途徑；以跨區公告更新首次可得日。"
+          ]
+        },
+        "notes_en": {
+          "before": null,
+          "after": [
+            "Cross-region and city-launch rallies are separate acquisition routes. Dates reflect the cross-region announcement."
+          ]
+        },
+        "official_sources": {
+          "before": [
+            "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026"
+          ],
+          "after": [
+            "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
+            "https://pokemongo.com/en/news/event-apac-stamp-rally-2026"
+          ]
+        },
+        "related_product_ids": {
+          "before": [],
+          "after": [
+            "295ebfb5-bf6c-4be3-b126-a2e256b3a777"
+          ]
+        }
+      }
+    },
+    {
+      "background_id": "BG-0192",
+      "name_zh": "PokéXciting 台灣",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "end_date": {
+          "before": null,
+          "after": "2029-09-11"
+        },
+        "method_en": {
+          "before": "The local GO Stamp Rally awards costumed Pikachu with a Location Background; available for one month after the city event starts.",
+          "after": "Taipei Xiangti Boulevard: collect the local cross-region stamp for a background Pikachu. The separate launch rally requires five stamps and lasts one month."
+        },
+        "method_zh": {
+          "before": "各城市活動開幕後一個月內，透過指定GO集章活動取得該地裝扮皮卡丘及地標背景。",
+          "after": "台北香堤大道指定補給站的跨區 GO 集章，每取得當地圖章可遇見帶當地背景的 PokéXciting 皮卡丘；另有城市開幕後一個月的五章活動。"
+        },
+        "notes": {
+          "before": [
+            "背景來自各城市的GO集章活動；開始後一個月可取得。各地開始日期不同，不可沿用總表共用日期。"
+          ],
+          "after": [
+            "跨區集章與各城市實體活動的五章集章為不同取得途徑；以跨區公告更新首次可得日。"
+          ]
+        },
+        "notes_en": {
+          "before": null,
+          "after": [
+            "Cross-region and city-launch rallies are separate acquisition routes. Dates reflect the cross-region announcement."
+          ]
+        },
+        "official_sources": {
+          "before": [
+            "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026"
+          ],
+          "after": [
+            "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
+            "https://pokemongo.com/en/news/event-apac-stamp-rally-2026"
+          ]
+        },
+        "related_product_ids": {
+          "before": [],
+          "after": [
+            "295ebfb5-bf6c-4be3-b126-a2e256b3a777"
+          ]
+        },
+        "start_date": {
+          "before": "2026-10-10",
+          "after": "2026-09-12"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0193",
+      "name_zh": "PokéXciting 新加坡",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "end_date": {
+          "before": null,
+          "after": "2029-09-11"
+        },
+        "method_en": {
+          "before": "The local GO Stamp Rally awards costumed Pikachu with a Location Background; available for one month after the city event starts.",
+          "after": "Changi Airport Terminal 3 Departure Hall: collect the local cross-region stamp for a background Pikachu. The separate launch rally requires five stamps and lasts one month."
+        },
+        "method_zh": {
+          "before": "各城市活動開幕後一個月內，透過指定GO集章活動取得該地裝扮皮卡丘及地標背景。",
+          "after": "樟宜機場第三航廈出境大廳指定補給站的跨區 GO 集章，每取得當地圖章可遇見帶當地背景的 PokéXciting 皮卡丘；另有城市開幕後一個月的五章活動。"
+        },
+        "notes": {
+          "before": [
+            "背景來自各城市的GO集章活動；開始後一個月可取得。各地開始日期不同，不可沿用總表共用日期。"
+          ],
+          "after": [
+            "跨區集章與各城市實體活動的五章集章為不同取得途徑；以跨區公告更新首次可得日。"
+          ]
+        },
+        "notes_en": {
+          "before": null,
+          "after": [
+            "Cross-region and city-launch rallies are separate acquisition routes. Dates reflect the cross-region announcement."
+          ]
+        },
+        "official_sources": {
+          "before": [
+            "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026"
+          ],
+          "after": [
+            "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
+            "https://pokemongo.com/en/news/event-apac-stamp-rally-2026"
+          ]
+        },
+        "related_product_ids": {
+          "before": [],
+          "after": [
+            "295ebfb5-bf6c-4be3-b126-a2e256b3a777"
+          ]
+        },
+        "release_state": {
+          "before": "upcoming",
+          "after": "released"
+        },
+        "start_date": {
+          "before": "2026-11-07",
+          "after": "2026-09-12"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0194",
+      "name_zh": "PokéXciting 菲律賓",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "end_date": {
+          "before": null,
+          "after": "2029-09-11"
+        },
+        "method_en": {
+          "before": "The local GO Stamp Rally awards costumed Pikachu with a Location Background; available for one month after the city event starts.",
+          "after": "Manila SM Mall of Asia MOA Sky: collect the local cross-region stamp for a background Pikachu. The separate launch rally requires five stamps and lasts one month."
+        },
+        "method_zh": {
+          "before": "各城市活動開幕後一個月內，透過指定GO集章活動取得該地裝扮皮卡丘及地標背景。",
+          "after": "馬尼拉 SM Mall of Asia MOA Sky指定補給站的跨區 GO 集章，每取得當地圖章可遇見帶當地背景的 PokéXciting 皮卡丘；另有城市開幕後一個月的五章活動。"
+        },
+        "notes": {
+          "before": [
+            "背景來自各城市的GO集章活動；開始後一個月可取得。各地開始日期不同，不可沿用總表共用日期。"
+          ],
+          "after": [
+            "跨區集章與各城市實體活動的五章集章為不同取得途徑；以跨區公告更新首次可得日。"
+          ]
+        },
+        "notes_en": {
+          "before": null,
+          "after": [
+            "Cross-region and city-launch rallies are separate acquisition routes. Dates reflect the cross-region announcement."
+          ]
+        },
+        "official_sources": {
+          "before": [
+            "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026"
+          ],
+          "after": [
+            "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
+            "https://pokemongo.com/en/news/event-apac-stamp-rally-2026"
+          ]
+        },
+        "related_product_ids": {
+          "before": [],
+          "after": [
+            "295ebfb5-bf6c-4be3-b126-a2e256b3a777"
+          ]
+        },
+        "release_state": {
+          "before": "upcoming",
+          "after": "released"
+        },
+        "start_date": {
+          "before": "2027-01-23",
+          "after": "2026-09-12"
+        },
+        "year": {
+          "before": "2027",
+          "after": "2026"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0202",
+      "name_zh": "倫敦科學博物館",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": "Astronaut Pikachu: in-person one-star museum raids. The other eight encounter variants have background research encounters; wild availability does not imply a guaranteed background.",
+          "after": "Museum raids: astronaut Pikachu. Timed Research: Oct 4–Apr 30; Field Research: Oct 4–10. Some rewards have backgrounds; ESA offices are excluded."
+        },
+        "method_zh": {
+          "before": "太空裝皮卡丘：合作館舍現場一星團體戰。其他八款：活動調查獎勵的背景個體；野外出現不等於必定附有背景。",
+          "after": "合作館舍現場一星團體戰：太空裝皮卡丘。限時調查開放 2026/10/4–2027/4/30，田野調查僅 10/4–10/10；部分獎勵有背景。ESA 辦公據點活動不含地標背景。"
+        },
+        "related_product_ids": {
+          "before": [],
+          "after": [
+            "4bc4658d-3532-482a-a11b-20eebe4c2e55"
+          ]
+        }
+      }
+    },
+    {
+      "background_id": "BG-0203",
+      "name_zh": "法國太空城",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": "Astronaut Pikachu: in-person one-star museum raids. The other eight encounter variants have background research encounters; wild availability does not imply a guaranteed background.",
+          "after": "Museum raids: astronaut Pikachu. Timed Research: Oct 4–Apr 30; Field Research: Oct 4–10. Some rewards have backgrounds; ESA offices are excluded."
+        },
+        "method_zh": {
+          "before": "太空裝皮卡丘：合作館舍現場一星團體戰。其他八款：活動調查獎勵的背景個體；野外出現不等於必定附有背景。",
+          "after": "合作館舍現場一星團體戰：太空裝皮卡丘。限時調查開放 2026/10/4–2027/4/30，田野調查僅 10/4–10/10；部分獎勵有背景。ESA 辦公據點活動不含地標背景。"
+        },
+        "related_product_ids": {
+          "before": [],
+          "after": [
+            "4bc4658d-3532-482a-a11b-20eebe4c2e55"
+          ]
+        }
+      }
+    },
+    {
+      "background_id": "BG-0204",
+      "name_zh": "瓦倫西亞科學博物館",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": "Astronaut Pikachu: in-person one-star museum raids. The other eight encounter variants have background research encounters; wild availability does not imply a guaranteed background.",
+          "after": "Museum raids: astronaut Pikachu. Timed Research: Oct 4–Apr 30; Field Research: Oct 4–10. Some rewards have backgrounds; ESA offices are excluded."
+        },
+        "method_zh": {
+          "before": "太空裝皮卡丘：合作館舍現場一星團體戰。其他八款：活動調查獎勵的背景個體；野外出現不等於必定附有背景。",
+          "after": "合作館舍現場一星團體戰：太空裝皮卡丘。限時調查開放 2026/10/4–2027/4/30，田野調查僅 10/4–10/10；部分獎勵有背景。ESA 辦公據點活動不含地標背景。"
+        },
+        "related_product_ids": {
+          "before": [],
+          "after": [
+            "4bc4658d-3532-482a-a11b-20eebe4c2e55"
+          ]
+        }
+      }
+    },
+    {
+      "background_id": "BG-0205",
+      "name_zh": "比利時歐洲太空中心",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": "Astronaut Pikachu: in-person one-star museum raids. The other eight encounter variants have background research encounters; wild availability does not imply a guaranteed background.",
+          "after": "Museum raids: astronaut Pikachu. Timed Research: Oct 4–Apr 30; Field Research: Oct 4–10. Some rewards have backgrounds; ESA offices are excluded."
+        },
+        "method_zh": {
+          "before": "太空裝皮卡丘：合作館舍現場一星團體戰。其他八款：活動調查獎勵的背景個體；野外出現不等於必定附有背景。",
+          "after": "合作館舍現場一星團體戰：太空裝皮卡丘。限時調查開放 2026/10/4–2027/4/30，田野調查僅 10/4–10/10；部分獎勵有背景。ESA 辦公據點活動不含地標背景。"
+        },
+        "related_product_ids": {
+          "before": [],
+          "after": [
+            "4bc4658d-3532-482a-a11b-20eebe4c2e55"
+          ]
+        }
+      }
+    },
+    {
+      "background_id": "BG-0206",
+      "name_zh": "德國紐倫堡德意志博物館",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": "Astronaut Pikachu: in-person one-star museum raids. The other eight encounter variants have background research encounters; wild availability does not imply a guaranteed background.",
+          "after": "Museum raids: astronaut Pikachu. Timed Research: Oct 4–Apr 30; Field Research: Oct 4–10. Some rewards have backgrounds; ESA offices are excluded."
+        },
+        "method_zh": {
+          "before": "太空裝皮卡丘：合作館舍現場一星團體戰。其他八款：活動調查獎勵的背景個體；野外出現不等於必定附有背景。",
+          "after": "合作館舍現場一星團體戰：太空裝皮卡丘。限時調查開放 2026/10/4–2027/4/30，田野調查僅 10/4–10/10；部分獎勵有背景。ESA 辦公據點活動不含地標背景。"
+        },
+        "related_product_ids": {
+          "before": [],
+          "after": [
+            "4bc4658d-3532-482a-a11b-20eebe4c2e55"
+          ]
+        }
+      }
+    },
+    {
+      "background_id": "BG-0207",
+      "name_zh": "荷蘭太空博覽館",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": "Astronaut Pikachu: in-person one-star museum raids. The other eight encounter variants have background research encounters; wild availability does not imply a guaranteed background.",
+          "after": "Museum raids: astronaut Pikachu. Timed Research: Oct 4–Apr 30; Field Research: Oct 4–10. Some rewards have backgrounds; ESA offices are excluded."
+        },
+        "method_zh": {
+          "before": "太空裝皮卡丘：合作館舍現場一星團體戰。其他八款：活動調查獎勵的背景個體；野外出現不等於必定附有背景。",
+          "after": "合作館舍現場一星團體戰：太空裝皮卡丘。限時調查開放 2026/10/4–2027/4/30，田野調查僅 10/4–10/10；部分獎勵有背景。ESA 辦公據點活動不含地標背景。"
+        },
+        "related_product_ids": {
+          "before": [],
+          "after": [
+            "4bc4658d-3532-482a-a11b-20eebe4c2e55"
+          ]
+        }
+      }
+    },
+    {
+      "background_id": "BG-0208",
+      "name_zh": "馬拉加Comic-Con",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-10-04"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Oct 1–4: exclusive Field and Timed Research at FYCMA, Larios and the old town awards Málaga Pikachu. Convention admission requires a ticket; city play does not."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "10/1 09:00 至 10/4 20:00，FYCMA、Larios 商場及馬拉加舊城的限定田野與限時調查，獎勵馬拉加地標背景皮卡丘。會展內需票，市區活動不需展覽票。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/es/news/comic-con-malaga-2026"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-10-01"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0209",
+      "name_zh": "寶可夢人孔蓋－長野",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokelid-nagano"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokelid-nagano",
+            "https://pogomate.com/en/datamining/cardinals-nagano-location-cards"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "September 26 is asset detection, not release. Exact first in-game availability remains unconfirmed."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "9/26為素材發現日；非首次發放日。名錄可見皮卡丘，但精確遊戲開放日仍缺官方證據。"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0210",
+      "name_zh": "活動背景－NFL Cardinals 2026",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-nfl-cardinals-2026"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-nfl-cardinals-2026",
+            "https://www.serebii.net/pokemongo/reallifeevents/gamedayinaz.shtml"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-10-11"
+        },
+        "method_en": {
+          "before": null,
+          "after": "2026 stadium background from event Pikachu raids; Timburr-line research rewards are a separate feature."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "State Farm Stadium 活動一星皮卡丘團體戰可取得2026球場背景；限時調查的搬運小匠系列不是背景皮卡丘來源。"
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-10-11"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0220",
+      "name_zh": "火焰鳥隊伍背景",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/sb-team-leader-red"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/sb-team-leader-red",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2024-08-26",
+              "2024-08-30"
+            ],
+            "dittobase_utc": [
+              "2024-07-23",
+              "2026-07-28"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Initial research availability; later reruns are separate periods."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "首次調查開放日；非單一連續發放期間，後續重登場另計。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Debuted through unlocked team-leader Timed Research; later raids, GO Pass and anniversary releases have different eligibility."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "Triumph Together 全球挑戰解鎖的隊長主題限時調查首次發放；後續團體戰、GO Pass 及週年活動另有再發放，適用寶可夢與獎勵各異。"
+        },
+        "start_date": {
+          "before": null,
+          "after": "2024-08-26"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0221",
+      "name_zh": "閃電鳥隊伍背景",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/sb-team-leader-yellow"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/sb-team-leader-yellow",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2024-08-26",
+              "2024-08-30"
+            ],
+            "dittobase_utc": [
+              "2024-07-23",
+              "2026-07-28"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Initial research availability; later reruns are separate periods."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "首次調查開放日；非單一連續發放期間，後續重登場另計。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Debuted through unlocked team-leader Timed Research; later raids, GO Pass and anniversary releases have different eligibility."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "Triumph Together 全球挑戰解鎖的隊長主題限時調查首次發放；後續團體戰、GO Pass 及週年活動另有再發放，適用寶可夢與獎勵各異。"
+        },
+        "start_date": {
+          "before": null,
+          "after": "2024-08-28"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0222",
+      "name_zh": "急凍鳥隊伍背景",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/sb-team-leader-blue"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/sb-team-leader-blue",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2024-08-26",
+              "2024-08-30"
+            ],
+            "dittobase_utc": [
+              "2024-07-23",
+              "2026-07-28"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Initial research availability; later reruns are separate periods."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "首次調查開放日；非單一連續發放期間，後續重登場另計。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Debuted through unlocked team-leader Timed Research; later raids, GO Pass and anniversary releases have different eligibility."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "Triumph Together 全球挑戰解鎖的隊長主題限時調查首次發放；後續團體戰、GO Pass 及週年活動另有再發放，適用寶可夢與獎勵各異。"
+        },
+        "start_date": {
+          "before": null,
+          "after": "2024-08-29"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0223",
+      "name_zh": "曠野地帶 2024",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance after four-star, five-star or Primal raids, or Toxtricity Max Battles during the global event."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "2024 全球曠野活動四星、五星、原始團體戰及顫弦蠑螈極巨對戰，成功捕捉後有機會帶特殊背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/get-ready-for-go-wild-area-2024"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0224",
+      "name_zh": "社群日 2024",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Designated rewards from December Community Day Field, paid Special and Continued Timed Research; not every wild catch."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "2024 年末社群日田野調查、付費特殊調查與延續限時調查的指定獎勵；不是所有野外個體都有背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/community-day-december-2024"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0225",
+      "name_zh": "重重命運",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Separate Community Day and claim windows, not continuous availability."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "多次社群日及領獎期間，並非整段時間持續發放。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2025-02-16"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Seasonal Community Day Field, paid Special and weeklong Continued Timed Research. Claim deadlines vary by event."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "季節社群日指定田野調查、付費特殊調查及延續一週的限時調查，包含新葉喵、拉魯拉絲、蓋蓋蟲與小嘴蝸。各期領獎期限不同。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/communityday-january-2025-sprigatito",
+            "https://pokemongo.com/news/communitydayclassic-january-2025-ralts",
+            "https://pokemongo.com/news/communityday-february-2025-karrablast-shelmet"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-01-05"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0226",
+      "name_zh": "GO Tour－謎團",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-tour-2025-enigma"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-tour-2025-enigma",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2025-02-21",
+              "2025-02-23"
+            ],
+            "dittobase_utc": [
+              "2025-02-21",
+              "2025-03-02"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "February 21–23 live and February 27–March 2 research are separate windows."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "2/21–23 現場與2/27–3/2後續調查為不同發放時段。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2025-03-02"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Enigma Field Research at ticketed Unova live events and later Global play; Tour Pass also awards background Zorua."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "持票合眾現場活動與後續全球活動的 Enigma 田野調查；GO Tour Pass 另有索羅亞背景獎勵。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/tour-pass-2025"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-02-21"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0227",
+      "name_zh": "GO Tour合眾－黑",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2025-03-01",
+              "2025-03-02"
+            ],
+            "dittobase_utc": [
+              "2025-02-24",
+              "2026-02-27"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Debuted during Road to Unova; later GO Tour and 2026 reruns are separate periods."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "首次於合眾之路推出；後續 GO Tour 與 2026 重登場非連續期間。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from Road to Unova five-star raids, with species-specific Black/White eligibility; later GO Tour and reruns are separate windows."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "2025 合眾之路五星團體戰機率取得黑版／白版背景；兩色頭目分配依官方清單。後續全球 GO Tour 與再發放為分開時段。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/road-to-unova-event"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-02-24"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0228",
+      "name_zh": "GO Tour合眾－白",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2025-03-01",
+              "2025-03-02"
+            ],
+            "dittobase_utc": [
+              "2025-02-24",
+              "2026-02-27"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Debuted during Road to Unova; later GO Tour and 2026 reruns are separate periods."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "首次於合眾之路推出；後續 GO Tour 與 2026 重登場非連續期間。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from Road to Unova five-star raids, with species-specific Black/White eligibility; later GO Tour and reruns are separate windows."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "2025 合眾之路五星團體戰機率取得黑版／白版背景；兩色頭目分配依官方清單。後續全球 GO Tour 與再發放為分開時段。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/road-to-unova-event"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-02-24"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0229",
+      "name_zh": "GO Tour合眾－黑白合體",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2025-03-01",
+              "2025-03-02"
+            ],
+            "dittobase_utc": [
+              "2025-03-01",
+              "2026-02-27"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Fusion result, not a separately awarded raid background."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "為合體條件，並非單獨團體戰掉落圖樣；取得素材後可另行合體。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Fuse a background Kyurem with an opposite-color background Zekrom/Reshiram for the combined background."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "相反顏色特殊背景的酋雷姆與捷克羅姆／萊希拉姆合體後，產生闇黑／焰白酋雷姆的組合背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/road-to-unova-event"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-03-01"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0230",
+      "name_zh": "力量與大師",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/sb-season-18-might-and-mastery"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/sb-season-18-might-and-mastery",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Separate event and claim windows, not continuous availability."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "各次活動及調查領獎期間分開，不是連續發放。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2025-05-31"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Seasonal Community Day research, plus designated end-season Special and Battle Week Timed Research rewards."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "季節社群日田野、特殊及延續限時調查；季末特殊調查與 GO 對戰週亦有指定背景獎勵。不是整季所有寶可夢皆可取得。"
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-03-08"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0231",
+      "name_zh": "繽紛日子",
+      "changes": {
+        "catalog_sources": {
+          "before": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/sb-season-19-delightful-days"
+          ],
+          "after": [
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/sb-season-19-delightful-days",
+            "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+          ]
+        },
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Event and claim deadlines vary; September 6 does not apply to every variant."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "各次活動與調查領獎期限不同；不代表所有款可得至9/6。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2025-09-06"
+        },
+        "method_en": {
+          "before": null,
+          "after": "June–August GO Pass, seasonal Community Day research, July scarf Lapras raids and Gigantamax Journey research."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "6–8月 GO Pass 傳說獎勵、季節社群日調查、7月圍巾拉普拉斯團體戰與極巨化之旅限時調查；各款來源不同。"
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-06-03"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0232",
+      "name_zh": "活動背景－GO Fest 2025 Zamazenta",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2025-07-28",
+              "2025-07-28"
+            ],
+            "dittobase_utc": [
+              "2025-06-28",
+              "2025-06-29"
+            ]
+          },
+          "after": null
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2025-06-28"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance after Crowned Shield Zamazenta / Crowned Sword Zacian raids at GO Fest Global."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "全球 GO Fest 王之盾藏瑪然特／王之劍蒼響團體戰，捕捉後有機會帶各自特殊背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/go-fest-2025-ultra-unlock-challenges"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-06-28"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0233",
+      "name_zh": "活動背景－GO Fest 2025 Zacian",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2025-06-29",
+              "2025-06-29"
+            ],
+            "dittobase_utc": [
+              "2025-06-29",
+              "2025-06-30"
+            ]
+          },
+          "after": null
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2025-06-29"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance after Crowned Shield Zamazenta / Crowned Sword Zacian raids at GO Fest Global."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "全球 GO Fest 王之盾藏瑪然特／王之劍蒼響團體戰，捕捉後有機會帶各自特殊背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/go-fest-2025-ultra-unlock-challenges"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-06-29"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0234",
+      "name_zh": "九週年",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Ninth-anniversary coin Gimmighoul has this background; available from event Field and Timed Research."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "持九週年硬幣的索財靈附九週年背景；活動田野、免費及付費限時調查可取得。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/pokemongo-9th-anniversary"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0235",
+      "name_zh": "暗黑蒼穹",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2025-08-18",
+              "2025-08-24"
+            ],
+            "dittobase_utc": [
+              "2025-08-18",
+              "2025-08-26"
+            ]
+          },
+          "after": null
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2025-08-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from eligible Dynamax and Gigantamax catches in Dark Skies and Max Finale Max Battles."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "Dark Skies／Max Finale 活動極巨對戰捕捉對應極巨化與超極巨化寶可夢，有機會附特殊背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/gofestmaxfinale"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-08-18"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0236",
+      "name_zh": "超級進化物語",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2025-09-14",
+              "2025-12-02"
+            ],
+            "dittobase_utc": [
+              "2025-09-02",
+              "2025-12-02"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Separate pass, Community Day and claim windows."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "月票、各次社群日、領獎期限各自分開，並非所有款連續可得。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2025-12-02"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Monthly GO Pass legendary rewards and seasonal Community Day research; some days also offer background lure encounters."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "月度 GO Pass 獎勵勾帕路翁、代拉基翁與畢力吉翁；季節社群日的田野、特殊及指定限時調查亦可取得。部分社群日另含誘餌遭遇。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/go-pass-september-2025",
+            "https://pokemongo.com/news/go-pass-october-2025",
+            "https://pokemongo.com/news/go-pass-november-2025",
+            "https://pokemongo.com/news/communityday-october-2025-solosis"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-09-02"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0238",
+      "name_zh": "曠野地帶 2025",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2025-11-15",
+              "2025-11-16"
+            ],
+            "dittobase_utc": [
+              "2025-11-10",
+              "2025-11-16"
+            ]
+          },
+          "after": null
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2025-11-16"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Debuts in Into the Wild five-star raids November 10–14, followed by Global raids/Max Battles November 15–16; individual research routes remain under review."
+        },
+        "method_status": {
+          "before": null,
+          "after": "partial"
+        },
+        "method_zh": {
+          "before": null,
+          "after": "11/10–14 深入曠野五星團體戰先行推出特殊背景；11/15–16 全球曠野的團體戰／極巨對戰再發放。逐隻及特殊調查條件仍待核對。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/into-the-wild-2025"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-11-10"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0239",
+      "name_zh": "寶可夢天文台",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2025-11-01",
+              "2025-11-01"
+            ],
+            "dittobase_utc": [
+              "2025-11-01",
+              "2026-01-12"
+            ]
+          },
+          "after": null
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-01-12"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Event Field Research near Sagamihara City Museum awards background Clefairy; Solrock/Lunatone are not promised backgrounds."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "相模原市立博物館會場附近活動田野調查，直接獎勵附特殊背景的皮皮；太陽岩、月石為其他獎勵，公告未說其附背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/ja/news/observatory_sagamihara"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-11-01"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0240",
+      "name_zh": "社群日 2026",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "First release: January 4 Piplup Classic; later Community Days have separate windows."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "首款由1/4波加曼復刻社群日推出；各後續社群日分別開放，非全年連續取得。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "official_sources": {
+          "before": [
+            "https://pokemongo.com/news/communityday-january-2026-grookey",
+            "https://pokemongo.com/en/news/communityday-october-2026-zorua"
+          ],
+          "after": [
+            "https://pokemongo.com/news/communityday-january-2026-grookey",
+            "https://pokemongo.com/en/news/communityday-october-2026-zorua",
+            "https://pokemongo.com/news/communitydayclassic-piplup-jan-2026"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-01-04"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0241",
+      "name_zh": "活動背景－GO Tour 2026 Mega",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-02-23",
+              "2026-02-27"
+            ],
+            "dittobase_utc": [
+              "2026-02-28",
+              "2026-09-07"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Road-to-Kalos pass, Global raids and the later rerun are separate windows; individual pass rewards remain under review."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "Road to Kalos 的 GO Pass 先行獎勵、2/28–3/1 全球團體戰及8/31–9/6再發放為不同時段；GO Pass個別獎勵仍待核。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from Global Mega Raids; rerun August 31–September 6. Mega Evolution adds a temporary visual effect."
+        },
+        "method_status": {
+          "before": null,
+          "after": "partial"
+        },
+        "method_zh": {
+          "before": null,
+          "after": "卡洛斯全球活動的超級團體戰有機會附超級進化背景；8/31–9/6 Mega Ascension／Mega Finale 再發放，超級進化時會顯示額外效果。"
+        },
+        "official_sources": {
+          "before": [
+            "https://pokemongo.com/ja/gofest/megafinale"
+          ],
+          "after": [
+            "https://pokemongo.com/ja/gofest/megafinale",
+            "https://pokemongo.com/gotour/global/",
+            "https://pokemongo.com/gofest/megafinale",
+            "https://pokemongo.com/news/road-to-kalos-event"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-02-23"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0242",
+      "name_zh": "活動背景－GO Tour 2026 X",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-02-23",
+              "2026-02-27"
+            ],
+            "dittobase_utc": [
+              "2026-02-27",
+              "2026-03-08"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Celebration research precedes February 28–March 1 raids; detailed early claim rules remain under review."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "2/27 限時調查先行，2/28–3/1 全球團體戰；先行調查個別領獎條件仍待核對。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Global raids can award X/Y backgrounds; ticketed branching research awards Xerneas/Yveltal. A separate celebration research starts February 27."
+        },
+        "method_status": {
+          "before": null,
+          "after": "partial"
+        },
+        "method_zh": {
+          "before": null,
+          "after": "卡洛斯全球活動指定團體戰有機會附 X／Y 背景；持票分支特殊調查分別獎勵帶背景哲爾尼亞斯／伊裴爾塔爾。2/27 起另有慶祝日限時調查的御三家獎勵。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/gotour/global/",
+            "https://pokemongo.com/news/get-ready-for-gotour-kalos"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-02-27"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0243",
+      "name_zh": "活動背景－GO Tour 2026 Y",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-02-23",
+              "2026-02-27"
+            ],
+            "dittobase_utc": [
+              "2026-02-27",
+              "2026-03-08"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Celebration research precedes February 28–March 1 raids; detailed early claim rules remain under review."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "2/27 限時調查先行，2/28–3/1 全球團體戰；先行調查個別領獎條件仍待核對。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Global raids can award X/Y backgrounds; ticketed branching research awards Xerneas/Yveltal. A separate celebration research starts February 27."
+        },
+        "method_status": {
+          "before": null,
+          "after": "partial"
+        },
+        "method_zh": {
+          "before": null,
+          "after": "卡洛斯全球活動指定團體戰有機會附 X／Y 背景；持票分支特殊調查分別獎勵帶背景哲爾尼亞斯／伊裴爾塔爾。2/27 起另有慶祝日限時調查的御三家獎勵。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/gotour/global/",
+            "https://pokemongo.com/news/get-ready-for-gotour-kalos"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-02-27"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0244",
+      "name_zh": "活動背景－GO Tour 2026 Gold",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-02-23",
+              "2026-02-27"
+            ],
+            "dittobase_utc": [
+              "2026-02-24",
+              "2026-02-24"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "First regional day; later Global releases are separate windows."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "此為首次對應地區日；後續全球活動另有發放，不代表只有一天可取得。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from the matching regional day’s listed raid bosses during Road to Kalos."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "2026 卡洛斯之路對應地區日的指定團體戰，捕捉後有機會附該版本背景；不是整週所有頭目共用。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/road-to-kalos-event"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-02-24"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0245",
+      "name_zh": "活動背景－GO Tour 2026 Silver",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-02-23",
+              "2026-02-27"
+            ],
+            "dittobase_utc": [
+              "2026-02-24",
+              "2026-02-24"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "First regional day; later Global releases are separate windows."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "此為首次對應地區日；後續全球活動另有發放，不代表只有一天可取得。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from the matching regional day’s listed raid bosses during Road to Kalos."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "2026 卡洛斯之路對應地區日的指定團體戰，捕捉後有機會附該版本背景；不是整週所有頭目共用。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/road-to-kalos-event"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-02-24"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0246",
+      "name_zh": "活動背景－GO Tour 2026 Ruby",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-02-23",
+              "2026-02-27"
+            ],
+            "dittobase_utc": [
+              "2026-02-25",
+              "2026-02-25"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "First regional day; later Global releases are separate windows."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "此為首次對應地區日；後續全球活動另有發放，不代表只有一天可取得。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from the matching regional day’s listed raid bosses during Road to Kalos."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "2026 卡洛斯之路對應地區日的指定團體戰，捕捉後有機會附該版本背景；不是整週所有頭目共用。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/road-to-kalos-event"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-02-25"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0247",
+      "name_zh": "活動背景－GO Tour 2026 Sapphire",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-02-23",
+              "2026-02-27"
+            ],
+            "dittobase_utc": [
+              "2026-02-25",
+              "2026-02-25"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "First regional day; later Global releases are separate windows."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "此為首次對應地區日；後續全球活動另有發放，不代表只有一天可取得。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from the matching regional day’s listed raid bosses during Road to Kalos."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "2026 卡洛斯之路對應地區日的指定團體戰，捕捉後有機會附該版本背景；不是整週所有頭目共用。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/road-to-kalos-event"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-02-25"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0248",
+      "name_zh": "活動背景－GO Tour 2026 Diamond",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-02-23",
+              "2026-02-27"
+            ],
+            "dittobase_utc": [
+              "2026-02-26",
+              "2026-02-26"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "First regional day; later Global releases are separate windows."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "此為首次對應地區日；後續全球活動另有發放，不代表只有一天可取得。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from the matching regional day’s listed raid bosses during Road to Kalos."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "2026 卡洛斯之路對應地區日的指定團體戰，捕捉後有機會附該版本背景；不是整週所有頭目共用。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/road-to-kalos-event"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-02-26"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0249",
+      "name_zh": "活動背景－GO Tour 2026 Pearl",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-02-23",
+              "2026-02-27"
+            ],
+            "dittobase_utc": [
+              "2026-02-26",
+              "2026-02-26"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "First regional day; later Global releases are separate windows."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "此為首次對應地區日；後續全球活動另有發放，不代表只有一天可取得。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Chance from the matching regional day’s listed raid bosses during Road to Kalos."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "2026 卡洛斯之路對應地區日的指定團體戰，捕捉後有機會附該版本背景；不是整週所有頭目共用。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/road-to-kalos-event"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-02-26"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0250",
+      "name_zh": "色彩節",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2025-03-04",
+              "2025-03-08"
+            ],
+            "dittobase_utc": [
+              "2026-03-04",
+              "2026-03-08"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Original source retained 2025 in error; official event is 2026. Research claim deadlines differ."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "原始來源殘留 2025；官方為 2026。調查領獎期限另計。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-03-08"
+        },
+        "method_en": {
+          "before": null,
+          "after": "India: chance from designated raids and Colorful O’Clock wild catches; branching Timed Research also awards a background Pikachu."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "印度限定：紗麗／庫爾塔皮卡丘於指定一星團體戰、Colorful O’Clock 野外時段有機會附背景；分支免費限時調查亦獎勵背景款。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/festival-of-colors-2026"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-03-04"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0251",
+      "name_zh": "寶可夢Pokopia",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Wild hat/cap Ditto may have this background. Individual research routes for the other listed species still need verification."
+        },
+        "method_status": {
+          "before": null,
+          "after": "partial"
+        },
+        "method_zh": {
+          "before": null,
+          "after": "活動野外的帽子／鴨舌帽百變怪有機會附 Pokopia 背景。其他名錄寶可夢的個別調查取得方式仍待核實。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/pokemon-pokopia-celebration-event-2026"
+          ]
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0252",
+      "name_zh": "LEGO寶可夢",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_conflict": {
+          "before": {
+            "serebii": [
+              "2026-06-12",
+              "2026-06-14"
+            ],
+            "dittobase_utc": [
+              "2026-06-11",
+              "2026-06-14"
+            ]
+          },
+          "after": null
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Separate releases: Copenhagen June 12–14; participating stores in six countries August 3–September 30."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "兩次發放：6/12–14 哥本哈根；8/3–9/30 美國、英國、波蘭、法國、德國、澳洲合作店。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "method_en": {
+          "before": null,
+          "after": "Copenhagen five-stamp rally June 12–14, no ticket needed; later LEGO-store rallies and raids August 3–September 30."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "6/12–14 哥本哈根五枚 LEGO 集章獎勵背景皮卡丘，不需活動票；8/3–9/30 六國指定 LEGO 店集章及一星團體戰另有發放。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/gofest-2026-copenhagen-lego",
+            "https://pokemongo.com/news/lego-pokemon-go-2026"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-06-12"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0254",
+      "name_zh": "活動背景－GO Fest 2026 Global",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Eligible non-Mewtwo five-star, Primal and Mega raids July 6–12 may award the anniversary background."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "7/6–12 指定五星、原始及超級團體戰（超夢除外），捕捉後有機會附十週年紀念特殊背景。"
+        },
+        "official_sources": {
+          "before": [
+            "https://pokemongo.com/news/go-fest-2026-global-final-details"
+          ],
+          "after": [
+            "https://pokemongo.com/news/go-fest-2026-global-final-details",
+            "https://pokemongo.com/en/news/go-fest-2026-global-final-details"
+          ]
+        },
+        "start_date": {
+          "before": "2026-07-11",
+          "after": "2026-07-06"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0255",
+      "name_zh": "活動背景－GO Fest 2026 Mewtwo",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Mewtwo caught from Mega Mewtwo X/Y Super Mega Raids July 11–12 may have its GO Fest Special Background."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "7/11–12 超級超夢X／Y大型團體戰，捕捉超夢後有機會帶 GO Fest 專屬特殊背景。"
+        },
+        "official_sources": {
+          "before": [
+            "https://pokemongo.com/news/go-fest-2026-global-final-details"
+          ],
+          "after": [
+            "https://pokemongo.com/news/go-fest-2026-global-final-details",
+            "https://pokemongo.com/en/news/go-fest-2026-global-final-details"
+          ]
+        }
+      }
+    },
+    {
+      "background_id": "BG-0260",
+      "name_zh": "十週年紀念・全球超夢調查",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_note_en": {
+          "before": null,
+          "after": "Starts August 12 at 16:00 PDT (August 13, 07:00 Taipei); ends September 6 at 23:59 local time."
+        },
+        "date_note_zh": {
+          "before": null,
+          "after": "8/12 16:00 PDT 開始，即台灣 8/13 07:00；結束為各地 9/6 23:59。"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-09-06"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Free global anniversary Timed Research awards background Mewtwo; prior Times Square participants have different rewards. Same-artwork family, separate release."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "全球免費十週年限時調查獎勵超夢及特殊背景。曾參加 7/9 時代廣場者的個體值與獎勵不同；本紀錄與時代廣場同圖樣，不加算新設計。"
+        },
+        "name_en": {
+          "before": "10th Anniversary Celebration",
+          "after": "10th Anniversary Celebration — Global Mewtwo Research"
+        },
+        "name_zh": {
+          "before": "十週年慶典",
+          "after": "十週年紀念・全球超夢調查"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/10th-anniversary-celebration"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-08-12"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0262",
+      "name_zh": "寶可夢地平線",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2026-09-22"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Goggles Charmander: wild, Field Research, lures and GO Pass; Cap Pikachu: one-star raids; goggles Charizard and Paldea final starters: three-star raids, with background chances."
+        },
+        "method_zh": {
+          "before": null,
+          "after": "弗里德護目鏡小火龍可由野外、田野、誘餌與 GO Pass 遭遇；船長帽皮卡丘一星團體戰，護目鏡噴火龍及帕底亞御三家最終進化三星團體戰，皆有機會附背景。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/pokemon-horizons-celebration-event-2026"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2026-09-16"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0265",
+      "name_zh": "遠古復甦－雷吉系列（共用圖樣）",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "date_status": {
+          "before": "needs-verification",
+          "after": null
+        },
+        "end_date": {
+          "before": null,
+          "after": "2025-06-29"
+        },
+        "method_en": {
+          "before": null,
+          "after": "The event GO Pass awards one of five background Regis at random. Regigigas and individual raid/research artwork still require checking."
+        },
+        "method_status": {
+          "before": null,
+          "after": "partial"
+        },
+        "method_zh": {
+          "before": null,
+          "after": "Ancients Recovered 的 GO Pass 隨機獎勵五種傳說巨人之一且附特殊背景。雷吉奇卡斯與各巨人團體戰／調查的個別圖樣仍需逐款核實。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/go-pass-ancients-recovered-2025"
+          ]
+        },
+        "start_date": {
+          "before": null,
+          "after": "2025-06-23"
+        },
+        "verification": {
+          "before": "catalog-crosschecked",
+          "after": "official-event-confirmed"
+        },
+        "verification_note_en": {
+          "before": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+          "after": null
+        },
+        "verification_note_zh": {
+          "before": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+          "after": null
+        }
+      }
+    },
+    {
+      "background_id": "BG-0269",
+      "name_zh": "FC 首爾 2026・首爾世界盃競技場",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "release_state": {
+          "before": "upcoming",
+          "after": "released"
+        }
+      }
+    },
+    {
+      "background_id": "BG-0270",
+      "name_zh": "世界錦標賽藍色素材（圖樣待核對）",
+      "changes": {
+        "checked_on": {
+          "before": "2026-10-23",
+          "after": "2026-10-24"
+        },
+        "method_en": {
+          "before": null,
+          "after": "Official Worlds viewing research awards background Tinkaton, but this blue asset is not established as a separate released design."
+        },
+        "method_status": {
+          "before": null,
+          "after": "partial"
+        },
+        "method_zh": {
+          "before": null,
+          "after": "官方確認觀看2026世界賽可取得帶特殊背景巧鍛匠的限時調查，但未能證明本藍色素材是獨立實際發放款；保留待核對，不重複上架。"
+        },
+        "official_sources": {
+          "before": [],
+          "after": [
+            "https://pokemongo.com/news/world-championships-event-2026"
+          ]
+        }
+      }
+    }
+  ],
+  "validation": {
+    "unit_tests": 144,
+    "passed": 144,
+    "failed": 0,
+    "live_public_rpc": {
+      "products": 11,
+      "overrides": 0,
+      "merged_records": 270,
+      "invalid_links": 0
+    },
+    "deployment": "Verify GitHub Pages serving SHA256 after commit; see PROGRESS.md."
+  }
+}
