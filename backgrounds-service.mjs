@@ -26,7 +26,16 @@ export function publicBackgroundReferences(row,referenceData){
 }
 export function referenceArtwork(row,referenceData){
  if(row.cloud_override||row.cloud_version>0)return safeBackgroundImage(row.image_source);
+ const preview=safeBackgroundImage(row.artwork_preview_url);if(preview)return preview;
  const refs=publicBackgroundReferences(row,referenceData);
  const primary=refs.find(e=>e.display_role==='primary')||refs.find(e=>e.date_kind==='release')||refs[0];
  return safeBackgroundImage(primary?.image_url||row.image_source);
+}
+
+// A complete preview may include animation layers missing from a raw texture.
+// Alternate depictions remain in the same entry, rather than inflating counts.
+export function backgroundArtworkGallery(row,referenceData){
+ const main=referenceArtwork(row,referenceData),seen=new Set();
+ const entries=[{image_url:main,label_zh:'主要參考圖',label_en:'Main reference',source_url:row.artwork_preview_source||row.source},...(Array.isArray(row.artwork_variants)?row.artwork_variants:[])];
+ return entries.filter(e=>{const url=safeBackgroundImage(e?.image_url);if(!url||seen.has(url))return false;seen.add(url);return true}).map(e=>({...e,image_url:safeBackgroundImage(e.image_url),source_url:safeSource(e.source_url)}));
 }
