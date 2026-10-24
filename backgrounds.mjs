@@ -48,7 +48,7 @@ function render(){
   const original=r.pokemon?.length||0,evolved=r.evolved_pokemon?.length||0,count=node('span',tr(`${original} 款原始${evolved?` · ${evolved} 款進化／合體`:''}`,`${original} encounter${original===1?'':'s'}${evolved?` · ${evolved} evolved/fused`:''}`),'variantcount');body.append(count);
   const bottom=node('span',null,'cardmeta');bottom.append(node('span',badgeText(state,r),'evidence '+state));
   const stock=relatedProducts(r,products).filter(p=>['available','low_stock'].includes(p.status)&&Number.isInteger(p.stock_quantity)&&p.stock_quantity>0);
-  if(stock.length)bottom.append(node('span',tr('有商品','In stock'),'stockhint'));body.append(bottom);open.append(visual,body);card.append(open);grid.append(card);
+  if(stock.length)bottom.append(node('span',tr('有商品','In stock'),'stockhint'));body.append(bottom,node('span',tr('詳情 ↗','Details ↗'),'carddetail'));open.append(visual,body);card.append(open);grid.append(card);
  }
  if(!list.length){const empty=node('div',null,'empty');empty.append(node('p',tr('沒有符合的背景，試試其他搜尋或分類。','No matching backgrounds. Try another search or filter.')));if($('state').value!=='all')empty.append(btn(tr('改看全部收錄','Search all entries'),()=>{$('state').value='all';page=1;render()}));empty.append(btn(tr('重設篩選','Reset filters'),reset));grid.append(empty)}
  const prev=btn(tr('上一頁','Previous'),()=>{page--;render();$('resultCount').scrollIntoView({block:'start'})}),next=btn(tr('下一頁','Next'),()=>{page++;render();$('resultCount').scrollIntoView({block:'start'})});prev.disabled=page<=1;next.disabled=page>=pages;$('pagination').replaceChildren(prev,node('span',`${page} / ${pages}`,'subtle'),next);$('pagination').hidden=list.length<=PAGE_SIZE;

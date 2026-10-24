@@ -25,3 +25,5 @@ dialog{background:#fffdf5;color:#493b1d;border:1px solid #decd9f;border-radius:1
  .evidence{min-width:0;overflow-wrap:anywhere}
  .dateflag,.typeflag{font-size:10px}
 }
+
+.carddetail{display:block;align-self:flex-end;margin-top:auto;padding-top:12px;font-size:12px;line-height:1.6;color:#825c10;white-space:nowrap}
