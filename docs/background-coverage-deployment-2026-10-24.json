@@ -1,0 +1,46 @@
+{
+  "commit": "bbfe8bf52a7b57bb9e059502410c894915885102",
+  "ci": "success",
+  "pages": "success",
+  "tests_passed": 160,
+  "build": "success",
+  "acceptance_scope": "Released background coverage across the current PokéXperience, Serebii and Dittobase catalogs",
+  "coverage_result": "passed",
+  "missing_released_backgrounds": 0,
+  "released_records": 269,
+  "catalog_records": 276,
+  "new_records": 0,
+  "display_fixes": [
+    "BG-0264",
+    "BG-0168"
+  ],
+  "all_research_complete": false,
+  "live_files": [
+    {
+      "path": "data/backgrounds.json",
+      "matches": true,
+      "sha256": "c4edd5423bf86767f9969501c7cac8cff72d5a3758d3983bb0a0e6f6e368513c"
+    },
+    {
+      "path": "backgrounds.html",
+      "matches": true,
+      "sha256": "bf07321bb5899111a0019c3e9200f1f5a88172acf094341894bbe222f8df36a5"
+    },
+    {
+      "path": "assets/backgrounds.bundle.js",
+      "matches": true,
+      "sha256": "ed136dad0f8d03ff26d38643d5664cfb46c7f42a70ff411db41b18b37cfb9508"
+    }
+  ],
+  "browser_after_deployment": {
+    "released_counter": 269,
+    "pattern_complete_image_loaded": true,
+    "clumber_gallery_image_count": 2,
+    "clumber_gallery_images_loaded": 2
+  },
+  "screenshots": [
+    "docs/images/background-coverage-pattern-2026-10-24.jpg",
+    "docs/images/background-coverage-clumber-2026-10-24.jpg"
+  ],
+  "database_writes": 0
+}
