@@ -19,3 +19,14 @@ export function sortBackgrounds(rows,{order='newest',locale='zh'}={}){
  const byName=(a,b)=>String(name(a)||'').localeCompare(String(name(b)||''),locale==='en'?'en':'zh-Hant');
  return [...rows].sort((a,b)=>{if(order==='name')return byName(a,b);const da=a.start_date||a.year||'',db=b.start_date||b.year||'';if(!da||!db)return da?-1:db?1:byName(a,b);return (order==='oldest'?da.localeCompare(db):db.localeCompare(da))||byName(a,b)});
 }
+
+// Separate complete depictions from duplicate references and raw image layers.
+export function publicBackgroundReferences(row,referenceData){
+ return (referenceData?.entries??[]).filter(e=>e.background_id===row.background_id&&(!e.display_role||e.display_role==='primary'));
+}
+export function referenceArtwork(row,referenceData){
+ if(row.cloud_override||row.cloud_version>0)return safeBackgroundImage(row.image_source);
+ const refs=publicBackgroundReferences(row,referenceData);
+ const primary=refs.find(e=>e.display_role==='primary')||refs.find(e=>e.date_kind==='release')||refs[0];
+ return safeBackgroundImage(primary?.image_url||row.image_source);
+}

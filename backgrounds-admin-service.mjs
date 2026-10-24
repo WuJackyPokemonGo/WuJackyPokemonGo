@@ -11,7 +11,7 @@ export function mergeBackgroundOverrides(records,overrides,{includeHidden=false}
   const base=byId.get(id);
   if(entry.is_visible||includeHidden){
    if(!object(entry.record))throw Error('雲端圖鑑內容不完整。');
-   byId.set(id,{...base,...entry.record,background_id:id,is_visible:entry.is_visible,cloud_version:entry.version??0,cloud_updated_at:entry.updated_at??null});
+   byId.set(id,{...base,...entry.record,background_id:id,is_visible:entry.is_visible,cloud_version:entry.version??0,cloud_override:true,cloud_updated_at:entry.updated_at??null});
   }else byId.delete(id);
  }
  return [...byId.values()];

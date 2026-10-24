@@ -26,14 +26,14 @@ test('ESA association retains exactly nine source variants and research windows'
  }
 });
 test('unreleased artwork stays pending even with an official event link and summary counts are reproducible',()=>{
- assert.equal(by('BG-0270').release_state,'needs-verification');assert.ok(!filterBackgrounds(rows).includes(by('BG-0270')));
+ assert.equal(data.redirects['BG-0270'],'BG-0261');assert.ok(!by('BG-0270'));
  assert.equal(data.review_counts.date_details_pending,rows.filter(r=>!r.start_date).length);
- assert.equal(data.review_counts.acquisition_method_pending,rows.filter(r=>!r.method_en||r.method_status==='partial').length);
+ assert.equal(data.review_counts.acquisition_method_pending,rows.filter(r=>!r.method_en||['partial','unconfirmed'].includes(r.method_status)).length);
  assert.equal(data.review_counts.backgrounds_pending,rows.filter(r=>r.release_state==='needs-verification').length);
  assert.equal(data.counts.upcoming,rows.filter(r=>r.release_state==='upcoming').length);
  assert.equal(data.complete,false);
 });
 test('preserved source-date conflicts never acquire an invented ISO date',()=>{
- for(const id of ['BG-0009','BG-0034','BG-0072','BG-0209','BG-0270'])assert.ok(!by(id).start_date,id);
+ for(const id of ['BG-0072','BG-0209','BG-0276','BG-0277'])assert.ok(!by(id).start_date,id);
  for(const r of rows){if(r.start_date)assert.equal(new Date(r.start_date).toISOString().slice(0,10),r.start_date);if(r.end_date&&r.start_date)assert.ok(r.end_date>=r.start_date,r.background_id)}
 });
