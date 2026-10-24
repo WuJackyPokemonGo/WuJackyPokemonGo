@@ -1,0 +1,5596 @@
+{
+  "date": "2026-10-24",
+  "scope": "Display-only: all existing and future backgrounds sort encounters/evolutions by numeric dex; stable ties preserve forms/costumes.",
+  "total_background_records": 276,
+  "multiple_encounter_records": 107,
+  "multiple_evolution_records": 96,
+  "reordered_records": 48,
+  "new_route_background_ids": [
+    "BG-0136",
+    "BG-0140",
+    "BG-0141",
+    "BG-0238"
+  ],
+  "raw_data_changed": false,
+  "supabase_written": false,
+  "other_activity_cards_merged": false,
+  "tests_passed": 203,
+  "records": [
+    {
+      "background_id": "BG-0001",
+      "name_zh": "GO Tour 拉斯維加斯",
+      "encounters": 2,
+      "evolved": 0,
+      "encounter_dex": [
+        382,
+        383
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0002",
+      "name_zh": "飛翔皮卡丘計畫 濟州島",
+      "encounters": 2,
+      "evolved": 0,
+      "encounter_dex": [
+        380,
+        381
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0003",
+      "name_zh": "GO Fest 大阪",
+      "encounters": 4,
+      "evolved": 0,
+      "encounter_dex": [
+        384,
+        488,
+        716,
+        717
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0004",
+      "name_zh": "GO Fest 倫敦",
+      "encounters": 4,
+      "evolved": 0,
+      "encounter_dex": [
+        384,
+        488,
+        716,
+        717
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0005",
+      "name_zh": "GO Fest 紐約",
+      "encounters": 4,
+      "evolved": 0,
+      "encounter_dex": [
+        384,
+        488,
+        716,
+        717
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0006",
+      "name_zh": "城市狩獵 首爾",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0007",
+      "name_zh": "城市狩獵 巴塞隆納",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0008",
+      "name_zh": "城市狩獵 墨西哥城",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0009",
+      "name_zh": "GO Tour 洛杉磯",
+      "encounters": 4,
+      "evolved": 0,
+      "encounter_dex": [
+        483,
+        483,
+        484,
+        484
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0010",
+      "name_zh": "飛翔皮卡丘計畫 峇里島",
+      "encounters": 2,
+      "evolved": 0,
+      "encounter_dex": [
+        380,
+        381
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0011",
+      "name_zh": "城市狩獵 台南",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0012",
+      "name_zh": "飛翔皮卡丘計畫 泗水",
+      "encounters": 2,
+      "evolved": 0,
+      "encounter_dex": [
+        380,
+        381
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0013",
+      "name_zh": "GO Fest 仙台",
+      "encounters": 8,
+      "evolved": 2,
+      "encounter_dex": [
+        791,
+        792,
+        793,
+        796,
+        798,
+        799,
+        800,
+        805
+      ],
+      "evolved_dex": [
+        800,
+        800
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0014",
+      "name_zh": "GO Fest 馬德里",
+      "encounters": 9,
+      "evolved": 2,
+      "encounter_dex": [
+        791,
+        792,
+        793,
+        795,
+        798,
+        799,
+        800,
+        805,
+        806
+      ],
+      "evolved_dex": [
+        800,
+        800
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0015",
+      "name_zh": "GO Fest 紐約 2024",
+      "encounters": 8,
+      "evolved": 2,
+      "encounter_dex": [
+        791,
+        792,
+        793,
+        794,
+        798,
+        799,
+        800,
+        806
+      ],
+      "evolved_dex": [
+        800,
+        800
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0016",
+      "name_zh": "2024 寶可夢世界錦標賽",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0017",
+      "name_zh": "飛翔皮卡丘計畫 日惹",
+      "encounters": 2,
+      "evolved": 0,
+      "encounter_dex": [
+        380,
+        381
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0018",
+      "name_zh": "活動背景－MLB Marlins",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0019",
+      "name_zh": "活動背景－MLB Mariners",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0020",
+      "name_zh": "飛翔皮卡丘計畫 雅加達",
+      "encounters": 3,
+      "evolved": 8,
+      "encounter_dex": [
+        133,
+        380,
+        381
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0021",
+      "name_zh": "Safari Zone 仁川",
+      "encounters": 2,
+      "evolved": 1,
+      "encounter_dex": [
+        25,
+        672
+      ],
+      "evolved_dex": [
+        673
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0022",
+      "name_zh": "曠野地帶 福岡",
+      "encounters": 7,
+      "evolved": 0,
+      "encounter_dex": [
+        483,
+        484,
+        849,
+        849,
+        849,
+        849,
+        849
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": [
+        {
+          "id": "legends",
+          "name_zh": "傳說團體戰",
+          "count": 2,
+          "dex": [
+            483,
+            484
+          ]
+        },
+        {
+          "id": "normal",
+          "name_zh": "顫弦蠑螈・一般",
+          "count": 2,
+          "dex": [
+            849,
+            849
+          ]
+        },
+        {
+          "id": "dynamax",
+          "name_zh": "顫弦蠑螈・極巨化",
+          "count": 2,
+          "dex": [
+            849,
+            849
+          ]
+        },
+        {
+          "id": "gigantamax",
+          "name_zh": "顫弦蠑螈・超極巨化",
+          "count": 1,
+          "dex": [
+            849
+          ]
+        }
+      ]
+    },
+    {
+      "background_id": "BG-0023",
+      "name_zh": "城市狩獵 香港",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0024",
+      "name_zh": "城市狩獵 聖保羅",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0025",
+      "name_zh": "GO Tour 新北",
+      "encounters": 3,
+      "evolved": 2,
+      "encounter_dex": [
+        643,
+        644,
+        646
+      ],
+      "evolved_dex": [
+        646,
+        646
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0026",
+      "name_zh": "GO Tour Unova 洛杉磯",
+      "encounters": 3,
+      "evolved": 2,
+      "encounter_dex": [
+        643,
+        644,
+        646
+      ],
+      "evolved_dex": [
+        646,
+        646
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0027",
+      "name_zh": "城市狩獵 新加坡",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0028",
+      "name_zh": "城市狩獵 孟買",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0029",
+      "name_zh": "城市狩獵 米蘭",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0030",
+      "name_zh": "城市狩獵 聖地牙哥",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0031",
+      "name_zh": "汝矣島櫻花節",
+      "encounters": 2,
+      "evolved": 1,
+      "encounter_dex": [
+        25,
+        585
+      ],
+      "evolved_dex": [
+        586
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0032",
+      "name_zh": "2025大阪萬博 - 大阪",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0033",
+      "name_zh": "2025大阪萬博 - 大阪 2",
+      "encounters": 3,
+      "evolved": 6,
+      "encounter_dex": [
+        1,
+        4,
+        7
+      ],
+      "evolved_dex": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        9
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0034",
+      "name_zh": "吹田市",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0035",
+      "name_zh": "GO Fest 2025 大阪",
+      "encounters": 3,
+      "evolved": 2,
+      "encounter_dex": [
+        812,
+        888,
+        889
+      ],
+      "evolved_dex": [
+        888,
+        889
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0036",
+      "name_zh": "GO Fest 2025 澤西市",
+      "encounters": 3,
+      "evolved": 2,
+      "encounter_dex": [
+        815,
+        888,
+        889
+      ],
+      "evolved_dex": [
+        888,
+        889
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0037",
+      "name_zh": "GO Fest 2025 巴黎",
+      "encounters": 4,
+      "evolved": 4,
+      "encounter_dex": [
+        4,
+        818,
+        888,
+        889
+      ],
+      "evolved_dex": [
+        5,
+        6,
+        888,
+        889
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0038",
+      "name_zh": "活動背景－Lotte Giants",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0039",
+      "name_zh": "活動背景－Seattle Mariners",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0040",
+      "name_zh": "歐洲公路之旅 2025 曼徹斯特",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0041",
+      "name_zh": "邁阿密 Marlins",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0042",
+      "name_zh": "歐洲公路之旅 2025 倫敦",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0043",
+      "name_zh": "活動背景－Tampa Bay Rays",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0044",
+      "name_zh": "活動背景－Milwaukee Brewers",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0045",
+      "name_zh": "歐洲公路之旅 2025 巴黎",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0046",
+      "name_zh": "長興水節",
+      "encounters": 3,
+      "evolved": 1,
+      "encounter_dex": [
+        25,
+        131,
+        585
+      ],
+      "evolved_dex": [
+        586
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0047",
+      "name_zh": "歐洲公路之旅 2025 瓦倫西亞",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0048",
+      "name_zh": "活動背景－Washington Nationals",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0049",
+      "name_zh": "歐洲公路之旅 2025 柏林",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0050",
+      "name_zh": "活動背景－Arizona Diamond Backs",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0051",
+      "name_zh": "芝加哥 White Sox",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0052",
+      "name_zh": "活動背景－Baltimore Orioles",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0053",
+      "name_zh": "活動背景－Cleveland Guardians",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0054",
+      "name_zh": "2025 寶可夢世界錦標賽",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0055",
+      "name_zh": "歐洲公路之旅 2025 海牙",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0056",
+      "name_zh": "歐洲公路之旅 2025 科隆",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0057",
+      "name_zh": "活動背景－New York Mets",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0058",
+      "name_zh": "波士頓 Red Sox",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0059",
+      "name_zh": "活動背景－San Francisco Giants",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0060",
+      "name_zh": "活動背景－Minnesota Twins",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0061",
+      "name_zh": "活動背景－Texas Rangers",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0062",
+      "name_zh": "Mega Evolution 巴黎",
+      "encounters": 1,
+      "evolved": 2,
+      "encounter_dex": [
+        4
+      ],
+      "evolved_dex": [
+        5,
+        6
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0063",
+      "name_zh": "Mega Evolution 巴黎 2",
+      "encounters": 1,
+      "evolved": 2,
+      "encounter_dex": [
+        4
+      ],
+      "evolved_dex": [
+        5,
+        6
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0064",
+      "name_zh": "城市狩獵 曼谷",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0065",
+      "name_zh": "城市狩獵 阿姆斯特丹",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0066",
+      "name_zh": "城市狩獵 瓦倫西亞",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0067",
+      "name_zh": "城市狩獵 坎昆",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0068",
+      "name_zh": "城市狩獵 溫哥華",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0069",
+      "name_zh": "Pokemon GO at 濟州島",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0070",
+      "name_zh": "曠野地帶 長崎",
+      "encounters": 20,
+      "evolved": 6,
+      "encounter_dex": [
+        38,
+        181,
+        210,
+        229,
+        282,
+        303,
+        359,
+        461,
+        488,
+        491,
+        633,
+        635,
+        728,
+        730,
+        760,
+        858,
+        859,
+        861,
+        862,
+        908
+      ],
+      "evolved_dex": [
+        634,
+        635,
+        729,
+        730,
+        860,
+        861
+      ],
+      "display_order_changed": true,
+      "sections": [
+        {
+          "id": "raids",
+          "name_zh": "團體戰",
+          "count": 3,
+          "dex": [
+            488,
+            491,
+            760
+          ]
+        },
+        {
+          "id": "max",
+          "name_zh": "極巨戰（超極巨化）",
+          "count": 1,
+          "dex": [
+            861
+          ]
+        },
+        {
+          "id": "stamps",
+          "name_zh": "蓋章／GO 集章",
+          "count": 5,
+          "dex": [
+            181,
+            633,
+            728,
+            760,
+            859
+          ]
+        },
+        {
+          "id": "research",
+          "name_zh": "調查獎勵",
+          "count": 15,
+          "dex": [
+            38,
+            210,
+            229,
+            282,
+            303,
+            359,
+            461,
+            488,
+            491,
+            635,
+            730,
+            858,
+            861,
+            862,
+            908
+          ]
+        }
+      ]
+    },
+    {
+      "background_id": "BG-0071",
+      "name_zh": "台北兒童新樂園",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        131
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0072",
+      "name_zh": "釜山煙火節",
+      "encounters": 0,
+      "evolved": 0,
+      "encounter_dex": [],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0073",
+      "name_zh": "寶可夢人孔蓋－沖繩",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0074",
+      "name_zh": "寶可夢人孔蓋－福岡",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0075",
+      "name_zh": "寶可夢人孔蓋－鹿兒島",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0076",
+      "name_zh": "寶可夢人孔蓋－宮崎",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0077",
+      "name_zh": "寶可夢人孔蓋－長崎",
+      "encounters": 2,
+      "evolved": 1,
+      "encounter_dex": [
+        25,
+        181
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0078",
+      "name_zh": "寶可夢人孔蓋－佐賀",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0079",
+      "name_zh": "城市狩獵 雪梨",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0080",
+      "name_zh": "城市狩獵 邁阿密",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0081",
+      "name_zh": "城市狩獵 布宜諾斯艾利斯",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0082",
+      "name_zh": "活動背景－NFL Cardinals",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0083",
+      "name_zh": "印尼無車日",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0084",
+      "name_zh": "平昌冬季慶典",
+      "encounters": 2,
+      "evolved": 1,
+      "encounter_dex": [
+        25,
+        585
+      ],
+      "evolved_dex": [
+        586
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0085",
+      "name_zh": "寶可夢人孔蓋－愛知",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0086",
+      "name_zh": "寶可夢人孔蓋－秋田",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0087",
+      "name_zh": "寶可夢人孔蓋－青森",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0088",
+      "name_zh": "寶可夢人孔蓋－千葉",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0089",
+      "name_zh": "寶可夢人孔蓋－福井",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0090",
+      "name_zh": "寶可夢人孔蓋－福島",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0091",
+      "name_zh": "寶可夢人孔蓋－岐阜",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0092",
+      "name_zh": "寶可夢人孔蓋－北海道",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0093",
+      "name_zh": "寶可夢人孔蓋－兵庫",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0094",
+      "name_zh": "寶可夢人孔蓋－茨城",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0095",
+      "name_zh": "寶可夢人孔蓋－石川",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0096",
+      "name_zh": "寶可夢人孔蓋－岩手",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0097",
+      "name_zh": "寶可夢人孔蓋－神奈川",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0098",
+      "name_zh": "寶可夢人孔蓋－京都",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0099",
+      "name_zh": "寶可夢人孔蓋－三重",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0100",
+      "name_zh": "寶可夢人孔蓋－宮城",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0101",
+      "name_zh": "寶可夢人孔蓋－奈良",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0102",
+      "name_zh": "寶可夢人孔蓋－新潟",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0103",
+      "name_zh": "寶可夢人孔蓋－大阪",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0104",
+      "name_zh": "寶可夢人孔蓋－埼玉",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0105",
+      "name_zh": "寶可夢人孔蓋－滋賀",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0106",
+      "name_zh": "寶可夢人孔蓋－靜岡",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0107",
+      "name_zh": "寶可夢人孔蓋－栃木",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0108",
+      "name_zh": "寶可夢人孔蓋－東京",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0109",
+      "name_zh": "寶可夢人孔蓋－富山",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0110",
+      "name_zh": "寶可夢人孔蓋－和歌山",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0111",
+      "name_zh": "寶可夢人孔蓋－愛媛",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0112",
+      "name_zh": "寶可夢人孔蓋－香川",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0113",
+      "name_zh": "寶可夢人孔蓋－高知",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0114",
+      "name_zh": "寶可夢人孔蓋－岡山",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0115",
+      "name_zh": "寶可夢人孔蓋－島根",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0116",
+      "name_zh": "寶可夢人孔蓋－德島",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0117",
+      "name_zh": "寶可夢人孔蓋－鳥取",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0118",
+      "name_zh": "寶可夢人孔蓋－山口",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0119",
+      "name_zh": "寶可夢樂園關都",
+      "encounters": 4,
+      "evolved": 0,
+      "encounter_dex": [
+        25,
+        144,
+        145,
+        146
+      ],
+      "evolved_dex": [],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0120",
+      "name_zh": "纏紅鶴嘉年華 科隆",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        973
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0121",
+      "name_zh": "纏紅鶴嘉年華 Rio",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        973
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0122",
+      "name_zh": "GO Tour 2026 台南",
+      "encounters": 17,
+      "evolved": 2,
+      "encounter_dex": [
+        6,
+        71,
+        130,
+        149,
+        181,
+        254,
+        282,
+        334,
+        359,
+        373,
+        445,
+        448,
+        679,
+        686,
+        687,
+        716,
+        717
+      ],
+      "evolved_dex": [
+        680,
+        681
+      ],
+      "display_order_changed": true,
+      "sections": [
+        {
+          "id": "day-raids",
+          "name_zh": "一般團體戰（日間，含超級團體戰）",
+          "count": 9,
+          "dex": [
+            71,
+            130,
+            282,
+            359,
+            448,
+            679,
+            687,
+            716,
+            717
+          ]
+        },
+        {
+          "id": "mega-night",
+          "name_zh": "超級之夜｜Mega Night",
+          "count": 7,
+          "dex": [
+            6,
+            149,
+            181,
+            254,
+            334,
+            373,
+            445
+          ]
+        },
+        {
+          "id": "unassigned",
+          "name_zh": "其他／取得方式待核對",
+          "count": 1,
+          "dex": [
+            686
+          ]
+        }
+      ]
+    },
+    {
+      "background_id": "BG-0123",
+      "name_zh": "GO Tour 2026 洛杉磯",
+      "encounters": 17,
+      "evolved": 2,
+      "encounter_dex": [
+        6,
+        71,
+        130,
+        149,
+        181,
+        254,
+        282,
+        334,
+        359,
+        373,
+        445,
+        448,
+        679,
+        686,
+        687,
+        716,
+        717
+      ],
+      "evolved_dex": [
+        680,
+        681
+      ],
+      "display_order_changed": true,
+      "sections": [
+        {
+          "id": "day-raids",
+          "name_zh": "一般團體戰（日間，含超級團體戰）",
+          "count": 9,
+          "dex": [
+            71,
+            130,
+            282,
+            359,
+            448,
+            679,
+            687,
+            716,
+            717
+          ]
+        },
+        {
+          "id": "mega-night",
+          "name_zh": "超級之夜｜Mega Night",
+          "count": 7,
+          "dex": [
+            6,
+            149,
+            181,
+            254,
+            334,
+            373,
+            445
+          ]
+        },
+        {
+          "id": "unassigned",
+          "name_zh": "其他／取得方式待核對",
+          "count": 1,
+          "dex": [
+            686
+          ]
+        }
+      ]
+    },
+    {
+      "background_id": "BG-0124",
+      "name_zh": "台北花卉野餐 2026",
+      "encounters": 2,
+      "evolved": 1,
+      "encounter_dex": [
+        25,
+        585
+      ],
+      "evolved_dex": [
+        586
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0125",
+      "name_zh": "活動背景－Yomiuri Giants",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0126",
+      "name_zh": "活動背景－Koshien Hanshin Tigers",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0127",
+      "name_zh": "活動背景－Rakuten Eagles",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0128",
+      "name_zh": "活動背景－Hiroshima Carp",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0129",
+      "name_zh": "活動背景－Softbank Hawks",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0130",
+      "name_zh": "活動背景－Belluna",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0131",
+      "name_zh": "活動背景－Kyocera",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0132",
+      "name_zh": "活動背景－Yokohama Baystars",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0133",
+      "name_zh": "活動背景－Zozo Marine",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0134",
+      "name_zh": "北海道 Fighters",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0135",
+      "name_zh": "活動背景－Chunichi Dragons",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0136",
+      "name_zh": "GO Fest 2026 東京",
+      "encounters": 12,
+      "evolved": 0,
+      "encounter_dex": [
+        128,
+        131,
+        144,
+        144,
+        150,
+        245,
+        245,
+        382,
+        382,
+        383,
+        383,
+        807
+      ],
+      "evolved_dex": [],
+      "display_order_changed": true,
+      "sections": [
+        {
+          "id": "raids",
+          "name_zh": "一般團體戰",
+          "count": 3,
+          "dex": [
+            128,
+            144,
+            245
+          ]
+        },
+        {
+          "id": "shadow-raids",
+          "name_zh": "暗影團體戰",
+          "count": 4,
+          "dex": [
+            144,
+            245,
+            382,
+            383
+          ]
+        },
+        {
+          "id": "primal-raids",
+          "name_zh": "原始團體戰",
+          "count": 2,
+          "dex": [
+            382,
+            383
+          ]
+        },
+        {
+          "id": "super-mega",
+          "name_zh": "會場壓軸超級團體戰",
+          "count": 1,
+          "dex": [
+            150
+          ]
+        },
+        {
+          "id": "research",
+          "name_zh": "調查獎勵",
+          "count": 2,
+          "dex": [
+            150,
+            807
+          ]
+        },
+        {
+          "id": "unassigned",
+          "name_zh": "其他／取得方式待核對",
+          "count": 1,
+          "dex": [
+            131
+          ]
+        }
+      ]
+    },
+    {
+      "background_id": "BG-0137",
+      "name_zh": "GO Fest 東京 Koto",
+      "encounters": 2,
+      "evolved": 3,
+      "encounter_dex": [
+        7,
+        278
+      ],
+      "evolved_dex": [
+        8,
+        9,
+        279
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0138",
+      "name_zh": "GO Fest 東京 Minato",
+      "encounters": 3,
+      "evolved": 3,
+      "encounter_dex": [
+        1,
+        131,
+        183
+      ],
+      "evolved_dex": [
+        2,
+        3,
+        184
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0139",
+      "name_zh": "GO Fest 東京 Shinagawa",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        4,
+        79
+      ],
+      "evolved_dex": [
+        5,
+        6,
+        80,
+        199
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0140",
+      "name_zh": "GO Fest 2026 芝加哥",
+      "encounters": 12,
+      "evolved": 2,
+      "encounter_dex": [
+        128,
+        145,
+        145,
+        150,
+        239,
+        243,
+        243,
+        382,
+        382,
+        383,
+        383,
+        807
+      ],
+      "evolved_dex": [
+        125,
+        466
+      ],
+      "display_order_changed": true,
+      "sections": [
+        {
+          "id": "raids",
+          "name_zh": "一般團體戰",
+          "count": 3,
+          "dex": [
+            128,
+            145,
+            243
+          ]
+        },
+        {
+          "id": "shadow-raids",
+          "name_zh": "暗影團體戰",
+          "count": 4,
+          "dex": [
+            145,
+            243,
+            382,
+            383
+          ]
+        },
+        {
+          "id": "primal-raids",
+          "name_zh": "原始團體戰",
+          "count": 2,
+          "dex": [
+            382,
+            383
+          ]
+        },
+        {
+          "id": "super-mega",
+          "name_zh": "會場壓軸超級團體戰",
+          "count": 1,
+          "dex": [
+            150
+          ]
+        },
+        {
+          "id": "research",
+          "name_zh": "調查獎勵",
+          "count": 3,
+          "dex": [
+            150,
+            239,
+            807
+          ]
+        }
+      ]
+    },
+    {
+      "background_id": "BG-0141",
+      "name_zh": "GO Fest 2026 哥本哈根",
+      "encounters": 12,
+      "evolved": 1,
+      "encounter_dex": [
+        77,
+        128,
+        146,
+        146,
+        150,
+        244,
+        244,
+        382,
+        382,
+        383,
+        383,
+        807
+      ],
+      "evolved_dex": [
+        78
+      ],
+      "display_order_changed": true,
+      "sections": [
+        {
+          "id": "raids",
+          "name_zh": "一般團體戰",
+          "count": 3,
+          "dex": [
+            128,
+            146,
+            244
+          ]
+        },
+        {
+          "id": "shadow-raids",
+          "name_zh": "暗影團體戰",
+          "count": 4,
+          "dex": [
+            146,
+            244,
+            382,
+            383
+          ]
+        },
+        {
+          "id": "primal-raids",
+          "name_zh": "原始團體戰",
+          "count": 2,
+          "dex": [
+            382,
+            383
+          ]
+        },
+        {
+          "id": "super-mega",
+          "name_zh": "會場壓軸超級團體戰",
+          "count": 1,
+          "dex": [
+            150
+          ]
+        },
+        {
+          "id": "research",
+          "name_zh": "調查獎勵",
+          "count": 2,
+          "dex": [
+            150,
+            807
+          ]
+        },
+        {
+          "id": "unassigned",
+          "name_zh": "其他／取得方式待核對",
+          "count": 1,
+          "dex": [
+            77
+          ]
+        }
+      ]
+    },
+    {
+      "background_id": "BG-0142",
+      "name_zh": "東京 Swallows",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0143",
+      "name_zh": "富山 All Stars",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0144",
+      "name_zh": "寶可夢中心－福岡",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0145",
+      "name_zh": "寶可夢中心－GO Lab",
+      "encounters": 2,
+      "evolved": 0,
+      "encounter_dex": [
+        25,
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0146",
+      "name_zh": "寶可夢中心－Hiroshima",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0147",
+      "name_zh": "寶可夢中心－香川",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0148",
+      "name_zh": "寶可夢中心－金澤",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0149",
+      "name_zh": "寶可夢中心－京都",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0150",
+      "name_zh": "寶可夢中心－超級東京",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0151",
+      "name_zh": "寶可夢中心－名古屋",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0152",
+      "name_zh": "寶可夢中心－沖繩",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0153",
+      "name_zh": "寶可夢中心－大阪",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0154",
+      "name_zh": "寶可夢中心－大阪DX",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0155",
+      "name_zh": "寶可夢中心－札幌",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0156",
+      "name_zh": "寶可夢中心－澀谷",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0157",
+      "name_zh": "寶可夢中心－晴空塔",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0158",
+      "name_zh": "寶可夢中心－東北",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0159",
+      "name_zh": "寶可夢中心－東京灣",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0160",
+      "name_zh": "寶可夢中心－東京DX",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0161",
+      "name_zh": "十週年紀念・紐約時代廣場",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        150
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0162",
+      "name_zh": "英國國民信託－Anglesey Abbey",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        252,
+        540
+      ],
+      "evolved_dex": [
+        253,
+        254,
+        541,
+        542
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0163",
+      "name_zh": "英國國民信託－Attingham Park",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        252,
+        540
+      ],
+      "evolved_dex": [
+        253,
+        254,
+        541,
+        542
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0164",
+      "name_zh": "英國國民信託－Belton House",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        252,
+        540
+      ],
+      "evolved_dex": [
+        253,
+        254,
+        541,
+        542
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0165",
+      "name_zh": "英國國民信託－Calke Abbey",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        252,
+        540
+      ],
+      "evolved_dex": [
+        253,
+        254,
+        541,
+        542
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0166",
+      "name_zh": "英國國民信託－Chirk",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        252,
+        273
+      ],
+      "evolved_dex": [
+        253,
+        254,
+        274,
+        275
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0167",
+      "name_zh": "英國國民信託－Cliveden",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        187,
+        252
+      ],
+      "evolved_dex": [
+        188,
+        189,
+        253,
+        254
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0168",
+      "name_zh": "英國國民信託－Clumber Park",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        252,
+        540
+      ],
+      "evolved_dex": [
+        253,
+        254,
+        541,
+        542
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0169",
+      "name_zh": "英國國民信託－Dunham Massey",
+      "encounters": 2,
+      "evolved": 3,
+      "encounter_dex": [
+        204,
+        252
+      ],
+      "evolved_dex": [
+        205,
+        253,
+        254
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0170",
+      "name_zh": "英國國民信託－Fountains Abbey Estate",
+      "encounters": 2,
+      "evolved": 3,
+      "encounter_dex": [
+        204,
+        252
+      ],
+      "evolved_dex": [
+        205,
+        253,
+        254
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0171",
+      "name_zh": "英國國民信託－Gibside",
+      "encounters": 2,
+      "evolved": 3,
+      "encounter_dex": [
+        204,
+        252
+      ],
+      "evolved_dex": [
+        205,
+        253,
+        254
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0172",
+      "name_zh": "英國國民信託－Hanbury",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        252,
+        540
+      ],
+      "evolved_dex": [
+        253,
+        254,
+        541,
+        542
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0173",
+      "name_zh": "英國國民信託－Hardwick",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        252,
+        540
+      ],
+      "evolved_dex": [
+        253,
+        254,
+        541,
+        542
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0174",
+      "name_zh": "英國國民信託－Killerton",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        252,
+        273
+      ],
+      "evolved_dex": [
+        253,
+        254,
+        274,
+        275
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0175",
+      "name_zh": "英國國民信託－Kingston Lacy",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        252,
+        273
+      ],
+      "evolved_dex": [
+        253,
+        254,
+        274,
+        275
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0176",
+      "name_zh": "英國國民信託－Lacock",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        252,
+        273
+      ],
+      "evolved_dex": [
+        253,
+        254,
+        274,
+        275
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0177",
+      "name_zh": "英國國民信託－Lyme Park",
+      "encounters": 2,
+      "evolved": 3,
+      "encounter_dex": [
+        204,
+        252
+      ],
+      "evolved_dex": [
+        205,
+        253,
+        254
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0178",
+      "name_zh": "英國國民信託－Mottisfont",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        187,
+        252
+      ],
+      "evolved_dex": [
+        188,
+        189,
+        253,
+        254
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0179",
+      "name_zh": "英國國民信託－Mount Stewart",
+      "encounters": 2,
+      "evolved": 3,
+      "encounter_dex": [
+        204,
+        252
+      ],
+      "evolved_dex": [
+        205,
+        253,
+        254
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0180",
+      "name_zh": "英國國民信託－Nymans",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        187,
+        252
+      ],
+      "evolved_dex": [
+        188,
+        189,
+        253,
+        254
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0181",
+      "name_zh": "英國國民信託－Polesden",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        187,
+        252
+      ],
+      "evolved_dex": [
+        188,
+        189,
+        253,
+        254
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0182",
+      "name_zh": "英國國民信託－Scotney Castle",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        187,
+        252
+      ],
+      "evolved_dex": [
+        188,
+        189,
+        253,
+        254
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0183",
+      "name_zh": "英國國民信託－Stourhead",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        252,
+        273
+      ],
+      "evolved_dex": [
+        253,
+        254,
+        274,
+        275
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0184",
+      "name_zh": "英國國民信託－Stowe Garden Park",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        187,
+        252
+      ],
+      "evolved_dex": [
+        188,
+        189,
+        253,
+        254
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0185",
+      "name_zh": "英國國民信託－Tredegar House",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        252,
+        273
+      ],
+      "evolved_dex": [
+        253,
+        254,
+        274,
+        275
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0186",
+      "name_zh": "英國國民信託－Trelissick",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        252,
+        273
+      ],
+      "evolved_dex": [
+        253,
+        254,
+        274,
+        275
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0187",
+      "name_zh": "英國國民信託－Tyntesfield",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        252,
+        273
+      ],
+      "evolved_dex": [
+        253,
+        254,
+        274,
+        275
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0188",
+      "name_zh": "英國國民信託－Wimpole",
+      "encounters": 2,
+      "evolved": 4,
+      "encounter_dex": [
+        252,
+        540
+      ],
+      "evolved_dex": [
+        253,
+        254,
+        541,
+        542
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0189",
+      "name_zh": "ANA紅色寶可夢飛機",
+      "encounters": 1,
+      "evolved": 2,
+      "encounter_dex": [
+        4
+      ],
+      "evolved_dex": [
+        5,
+        6
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0190",
+      "name_zh": "2026 寶可夢世界錦標賽",
+      "encounters": 38,
+      "evolved": 3,
+      "encounter_dex": [
+        15,
+        25,
+        25,
+        26,
+        65,
+        71,
+        80,
+        87,
+        94,
+        99,
+        103,
+        121,
+        127,
+        130,
+        149,
+        150,
+        181,
+        208,
+        227,
+        229,
+        263,
+        306,
+        308,
+        310,
+        319,
+        323,
+        334,
+        354,
+        362,
+        380,
+        381,
+        384,
+        428,
+        460,
+        687,
+        870,
+        884,
+        909
+      ],
+      "evolved_dex": [
+        264,
+        910,
+        911
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0191",
+      "name_zh": "PokéXciting 馬來西亞",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0192",
+      "name_zh": "PokéXciting 台灣",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0193",
+      "name_zh": "PokéXciting 新加坡",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0194",
+      "name_zh": "PokéXciting 菲律賓",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0195",
+      "name_zh": "ANA綠色寶可夢飛機",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        1
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0196",
+      "name_zh": "城市狩獵 - 布里斯本",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0197",
+      "name_zh": "城市狩獵 - 慕尼黑",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0198",
+      "name_zh": "城市狩獵 - 馬賽",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0199",
+      "name_zh": "城市狩獵 - 里斯本",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0200",
+      "name_zh": "城市狩獵 - 里約熱內盧",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0201",
+      "name_zh": "城市冒險 - 波士頓",
+      "encounters": 1,
+      "evolved": 8,
+      "encounter_dex": [
+        133
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0202",
+      "name_zh": "倫敦科學博物館",
+      "encounters": 9,
+      "evolved": 7,
+      "encounter_dex": [
+        25,
+        25,
+        35,
+        81,
+        121,
+        337,
+        338,
+        605,
+        824
+      ],
+      "evolved_dex": [
+        26,
+        36,
+        82,
+        462,
+        606,
+        825,
+        826
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0203",
+      "name_zh": "法國太空城",
+      "encounters": 9,
+      "evolved": 7,
+      "encounter_dex": [
+        25,
+        25,
+        35,
+        81,
+        121,
+        337,
+        338,
+        605,
+        824
+      ],
+      "evolved_dex": [
+        26,
+        36,
+        82,
+        462,
+        606,
+        825,
+        826
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0204",
+      "name_zh": "瓦倫西亞科學博物館",
+      "encounters": 9,
+      "evolved": 7,
+      "encounter_dex": [
+        25,
+        25,
+        35,
+        81,
+        121,
+        337,
+        338,
+        605,
+        824
+      ],
+      "evolved_dex": [
+        26,
+        36,
+        82,
+        462,
+        606,
+        825,
+        826
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0205",
+      "name_zh": "比利時歐洲太空中心",
+      "encounters": 9,
+      "evolved": 7,
+      "encounter_dex": [
+        25,
+        25,
+        35,
+        81,
+        121,
+        337,
+        338,
+        605,
+        824
+      ],
+      "evolved_dex": [
+        26,
+        36,
+        82,
+        462,
+        606,
+        825,
+        826
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0206",
+      "name_zh": "德國紐倫堡德意志博物館",
+      "encounters": 9,
+      "evolved": 7,
+      "encounter_dex": [
+        25,
+        25,
+        35,
+        81,
+        121,
+        337,
+        338,
+        605,
+        824
+      ],
+      "evolved_dex": [
+        26,
+        36,
+        82,
+        462,
+        606,
+        825,
+        826
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0207",
+      "name_zh": "荷蘭太空博覽館",
+      "encounters": 9,
+      "evolved": 7,
+      "encounter_dex": [
+        25,
+        25,
+        35,
+        81,
+        121,
+        337,
+        338,
+        605,
+        824
+      ],
+      "evolved_dex": [
+        26,
+        36,
+        82,
+        462,
+        606,
+        825,
+        826
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0208",
+      "name_zh": "馬拉加Comic-Con",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0209",
+      "name_zh": "寶可夢人孔蓋－長野",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0210",
+      "name_zh": "活動背景－NFL Cardinals 2026",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0211",
+      "name_zh": "寶可夢之夜 - 洛杉磯",
+      "encounters": 2,
+      "evolved": 0,
+      "encounter_dex": [
+        25,
+        94
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0212",
+      "name_zh": "曠野地帶 2026 仙台 東北",
+      "encounters": 6,
+      "evolved": 0,
+      "encounter_dex": [
+        68,
+        483,
+        484,
+        884,
+        888,
+        889
+      ],
+      "evolved_dex": [],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0213",
+      "name_zh": "曠野地帶 2026 墨西哥城",
+      "encounters": 6,
+      "evolved": 0,
+      "encounter_dex": [
+        68,
+        483,
+        484,
+        884,
+        888,
+        889
+      ],
+      "evolved_dex": [],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0214",
+      "name_zh": "寶可夢之夜 - 倫敦",
+      "encounters": 2,
+      "evolved": 0,
+      "encounter_dex": [
+        25,
+        94
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0215",
+      "name_zh": "活動背景－GO Fest 2024 Wormhole",
+      "encounters": 10,
+      "evolved": 2,
+      "encounter_dex": [
+        793,
+        794,
+        795,
+        796,
+        797,
+        798,
+        799,
+        800,
+        805,
+        806
+      ],
+      "evolved_dex": [
+        800,
+        800
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0216",
+      "name_zh": "活動背景－GO Fest 2024 Radiance",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        791
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0217",
+      "name_zh": "活動背景－GO Fest 2024 Umbra",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        792
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0218",
+      "name_zh": "活動背景－GO Fest 2024 Wormhole Radiance",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        800
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0219",
+      "name_zh": "活動背景－GO Fest 2024 Wormhole Umbra",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        800
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0220",
+      "name_zh": "火焰鳥隊伍背景",
+      "encounters": 41,
+      "evolved": 62,
+      "encounter_dex": [
+        1,
+        1,
+        4,
+        4,
+        7,
+        7,
+        20,
+        25,
+        25,
+        25,
+        28,
+        33,
+        77,
+        88,
+        94,
+        146,
+        152,
+        155,
+        158,
+        202,
+        252,
+        255,
+        258,
+        387,
+        390,
+        393,
+        495,
+        498,
+        501,
+        650,
+        653,
+        656,
+        722,
+        725,
+        728,
+        810,
+        813,
+        816,
+        906,
+        909,
+        912
+      ],
+      "evolved_dex": [
+        2,
+        2,
+        3,
+        3,
+        5,
+        5,
+        6,
+        6,
+        8,
+        8,
+        9,
+        9,
+        78,
+        89,
+        153,
+        154,
+        156,
+        157,
+        159,
+        160,
+        253,
+        254,
+        256,
+        257,
+        259,
+        260,
+        388,
+        389,
+        391,
+        392,
+        394,
+        395,
+        496,
+        497,
+        499,
+        500,
+        502,
+        503,
+        651,
+        652,
+        654,
+        655,
+        657,
+        658,
+        723,
+        724,
+        726,
+        727,
+        729,
+        730,
+        811,
+        812,
+        814,
+        815,
+        817,
+        818,
+        907,
+        908,
+        910,
+        911,
+        913,
+        914
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0221",
+      "name_zh": "閃電鳥隊伍背景",
+      "encounters": 41,
+      "evolved": 63,
+      "encounter_dex": [
+        1,
+        1,
+        4,
+        4,
+        7,
+        7,
+        20,
+        25,
+        25,
+        25,
+        28,
+        33,
+        88,
+        94,
+        145,
+        152,
+        155,
+        158,
+        202,
+        239,
+        252,
+        255,
+        258,
+        387,
+        390,
+        393,
+        495,
+        498,
+        501,
+        650,
+        653,
+        656,
+        722,
+        725,
+        728,
+        810,
+        813,
+        816,
+        906,
+        909,
+        912
+      ],
+      "evolved_dex": [
+        2,
+        2,
+        3,
+        3,
+        5,
+        5,
+        6,
+        6,
+        8,
+        8,
+        9,
+        9,
+        89,
+        125,
+        153,
+        154,
+        156,
+        157,
+        159,
+        160,
+        253,
+        254,
+        256,
+        257,
+        259,
+        260,
+        388,
+        389,
+        391,
+        392,
+        394,
+        395,
+        466,
+        496,
+        497,
+        499,
+        500,
+        502,
+        503,
+        651,
+        652,
+        654,
+        655,
+        657,
+        658,
+        723,
+        724,
+        726,
+        727,
+        729,
+        730,
+        811,
+        812,
+        814,
+        815,
+        817,
+        818,
+        907,
+        908,
+        910,
+        911,
+        913,
+        914
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0222",
+      "name_zh": "急凍鳥隊伍背景",
+      "encounters": 41,
+      "evolved": 61,
+      "encounter_dex": [
+        1,
+        1,
+        4,
+        4,
+        7,
+        7,
+        20,
+        25,
+        25,
+        25,
+        28,
+        33,
+        88,
+        94,
+        131,
+        144,
+        152,
+        155,
+        158,
+        202,
+        252,
+        255,
+        258,
+        387,
+        390,
+        393,
+        495,
+        498,
+        501,
+        650,
+        653,
+        656,
+        722,
+        725,
+        728,
+        810,
+        813,
+        816,
+        906,
+        909,
+        912
+      ],
+      "evolved_dex": [
+        2,
+        2,
+        3,
+        3,
+        5,
+        5,
+        6,
+        6,
+        8,
+        8,
+        9,
+        9,
+        89,
+        153,
+        154,
+        156,
+        157,
+        159,
+        160,
+        253,
+        254,
+        256,
+        257,
+        259,
+        260,
+        388,
+        389,
+        391,
+        392,
+        394,
+        395,
+        496,
+        497,
+        499,
+        500,
+        502,
+        503,
+        651,
+        652,
+        654,
+        655,
+        657,
+        658,
+        723,
+        724,
+        726,
+        727,
+        729,
+        730,
+        811,
+        812,
+        814,
+        815,
+        817,
+        818,
+        907,
+        908,
+        910,
+        911,
+        913,
+        914
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0223",
+      "name_zh": "曠野地帶 2024",
+      "encounters": 7,
+      "evolved": 0,
+      "encounter_dex": [
+        382,
+        383,
+        483,
+        484,
+        849,
+        849,
+        849
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0224",
+      "name_zh": "社群日 2024",
+      "encounters": 16,
+      "evolved": 29,
+      "encounter_dex": [
+        56,
+        69,
+        77,
+        77,
+        113,
+        137,
+        155,
+        371,
+        374,
+        540,
+        602,
+        704,
+        722,
+        725,
+        728,
+        761
+      ],
+      "evolved_dex": [
+        57,
+        70,
+        71,
+        78,
+        78,
+        156,
+        157,
+        233,
+        242,
+        372,
+        373,
+        375,
+        376,
+        474,
+        541,
+        542,
+        603,
+        604,
+        705,
+        706,
+        723,
+        724,
+        726,
+        727,
+        729,
+        730,
+        762,
+        763,
+        979
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0225",
+      "name_zh": "重重命運",
+      "encounters": 4,
+      "evolved": 7,
+      "encounter_dex": [
+        280,
+        588,
+        616,
+        906
+      ],
+      "evolved_dex": [
+        281,
+        282,
+        475,
+        589,
+        617,
+        907,
+        908
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0226",
+      "name_zh": "GO Tour－謎團",
+      "encounters": 14,
+      "evolved": 18,
+      "encounter_dex": [
+        509,
+        519,
+        525,
+        527,
+        532,
+        535,
+        551,
+        554,
+        559,
+        561,
+        570,
+        595,
+        597,
+        599
+      ],
+      "evolved_dex": [
+        510,
+        520,
+        521,
+        526,
+        528,
+        533,
+        534,
+        536,
+        537,
+        552,
+        553,
+        555,
+        560,
+        571,
+        596,
+        598,
+        600,
+        601
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0227",
+      "name_zh": "GO Tour合眾－黑",
+      "encounters": 20,
+      "evolved": 8,
+      "encounter_dex": [
+        25,
+        25,
+        25,
+        25,
+        495,
+        498,
+        501,
+        638,
+        639,
+        640,
+        641,
+        643,
+        644,
+        645,
+        646,
+        649,
+        649,
+        649,
+        649,
+        649
+      ],
+      "evolved_dex": [
+        496,
+        497,
+        499,
+        500,
+        502,
+        503,
+        646,
+        646
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0228",
+      "name_zh": "GO Tour合眾－白",
+      "encounters": 20,
+      "evolved": 8,
+      "encounter_dex": [
+        25,
+        25,
+        25,
+        25,
+        495,
+        498,
+        501,
+        638,
+        639,
+        640,
+        642,
+        643,
+        644,
+        645,
+        646,
+        649,
+        649,
+        649,
+        649,
+        649
+      ],
+      "evolved_dex": [
+        496,
+        497,
+        499,
+        500,
+        502,
+        503,
+        646,
+        646
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0229",
+      "name_zh": "GO Tour合眾－黑白合體",
+      "encounters": 2,
+      "evolved": 0,
+      "encounter_dex": [
+        646,
+        646
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0230",
+      "name_zh": "力量與大師",
+      "encounters": 9,
+      "evolved": 15,
+      "encounter_dex": [
+        66,
+        158,
+        307,
+        434,
+        582,
+        747,
+        909,
+        921,
+        935
+      ],
+      "evolved_dex": [
+        67,
+        68,
+        159,
+        160,
+        308,
+        435,
+        583,
+        584,
+        748,
+        910,
+        911,
+        922,
+        923,
+        936,
+        937
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0231",
+      "name_zh": "繽紛日子",
+      "encounters": 11,
+      "evolved": 14,
+      "encounter_dex": [
+        131,
+        133,
+        144,
+        145,
+        146,
+        782,
+        812,
+        815,
+        818,
+        821,
+        912
+      ],
+      "evolved_dex": [
+        134,
+        135,
+        136,
+        196,
+        197,
+        470,
+        471,
+        700,
+        783,
+        784,
+        822,
+        823,
+        913,
+        914
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0232",
+      "name_zh": "活動背景－GO Fest 2025 Zamazenta",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        889
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0233",
+      "name_zh": "活動背景－GO Fest 2025 Zacian",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        888
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0234",
+      "name_zh": "九週年",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        999
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0235",
+      "name_zh": "暗黑蒼穹",
+      "encounters": 52,
+      "evolved": 36,
+      "encounter_dex": [
+        1,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        66,
+        68,
+        92,
+        94,
+        98,
+        99,
+        113,
+        131,
+        138,
+        140,
+        143,
+        144,
+        145,
+        146,
+        213,
+        243,
+        244,
+        245,
+        302,
+        320,
+        374,
+        380,
+        381,
+        519,
+        529,
+        554,
+        568,
+        615,
+        766,
+        810,
+        812,
+        813,
+        815,
+        816,
+        818,
+        819,
+        821,
+        831,
+        848,
+        849,
+        849,
+        849,
+        856,
+        870
+      ],
+      "evolved_dex": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        9,
+        11,
+        12,
+        67,
+        68,
+        93,
+        94,
+        99,
+        139,
+        141,
+        242,
+        321,
+        375,
+        376,
+        520,
+        521,
+        530,
+        555,
+        569,
+        811,
+        812,
+        814,
+        815,
+        817,
+        818,
+        820,
+        822,
+        823,
+        832,
+        857,
+        858
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0236",
+      "name_zh": "超級進化物語",
+      "encounters": 13,
+      "evolved": 20,
+      "encounter_dex": [
+        152,
+        158,
+        498,
+        577,
+        638,
+        639,
+        640,
+        669,
+        669,
+        669,
+        669,
+        669,
+        731
+      ],
+      "evolved_dex": [
+        153,
+        154,
+        159,
+        160,
+        499,
+        500,
+        578,
+        579,
+        670,
+        670,
+        670,
+        670,
+        670,
+        671,
+        671,
+        671,
+        671,
+        671,
+        732,
+        733
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0237",
+      "name_zh": "寶可夢禮賓部",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        54
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0238",
+      "name_zh": "曠野地帶 2025",
+      "encounters": 11,
+      "evolved": 2,
+      "encounter_dex": [
+        249,
+        250,
+        488,
+        491,
+        760,
+        785,
+        786,
+        787,
+        788,
+        800,
+        861
+      ],
+      "evolved_dex": [
+        800,
+        800
+      ],
+      "display_order_changed": true,
+      "sections": [
+        {
+          "id": "lead-in-raids",
+          "name_zh": "前導活動團體戰｜深入荒野",
+          "count": 7,
+          "dex": [
+            249,
+            250,
+            785,
+            786,
+            787,
+            788,
+            800
+          ]
+        },
+        {
+          "id": "global-raids",
+          "name_zh": "全球活動團體戰（含暗影）",
+          "count": 3,
+          "dex": [
+            488,
+            491,
+            760
+          ]
+        },
+        {
+          "id": "max",
+          "name_zh": "極巨戰（超極巨化）",
+          "count": 1,
+          "dex": [
+            861
+          ]
+        }
+      ]
+    },
+    {
+      "background_id": "BG-0239",
+      "name_zh": "寶可夢天文台",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        35
+      ],
+      "evolved_dex": [
+        36
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0240",
+      "name_zh": "社群日 2026",
+      "encounters": 13,
+      "evolved": 18,
+      "encounter_dex": [
+        37,
+        37,
+        393,
+        443,
+        570,
+        633,
+        810,
+        813,
+        816,
+        827,
+        915,
+        957,
+        996
+      ],
+      "evolved_dex": [
+        38,
+        38,
+        394,
+        395,
+        634,
+        635,
+        811,
+        812,
+        814,
+        815,
+        817,
+        818,
+        916,
+        916,
+        958,
+        959,
+        997,
+        998
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0241",
+      "name_zh": "活動背景－GO Tour 2026 Mega",
+      "encounters": 54,
+      "evolved": 6,
+      "encounter_dex": [
+        3,
+        6,
+        9,
+        15,
+        18,
+        26,
+        65,
+        71,
+        80,
+        94,
+        115,
+        121,
+        127,
+        130,
+        142,
+        149,
+        150,
+        181,
+        208,
+        212,
+        214,
+        227,
+        229,
+        248,
+        254,
+        257,
+        260,
+        282,
+        302,
+        303,
+        306,
+        308,
+        310,
+        319,
+        323,
+        334,
+        354,
+        359,
+        362,
+        373,
+        376,
+        380,
+        381,
+        428,
+        445,
+        448,
+        460,
+        475,
+        531,
+        650,
+        653,
+        656,
+        687,
+        870
+      ],
+      "evolved_dex": [
+        651,
+        652,
+        654,
+        655,
+        657,
+        658
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0242",
+      "name_zh": "活動背景－GO Tour 2026 X",
+      "encounters": 7,
+      "evolved": 8,
+      "encounter_dex": [
+        25,
+        25,
+        650,
+        653,
+        656,
+        679,
+        716
+      ],
+      "evolved_dex": [
+        651,
+        652,
+        654,
+        655,
+        657,
+        658,
+        680,
+        681
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0243",
+      "name_zh": "活動背景－GO Tour 2026 Y",
+      "encounters": 7,
+      "evolved": 8,
+      "encounter_dex": [
+        25,
+        25,
+        650,
+        653,
+        656,
+        679,
+        717
+      ],
+      "evolved_dex": [
+        651,
+        652,
+        654,
+        655,
+        657,
+        658,
+        680,
+        681
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0244",
+      "name_zh": "活動背景－GO Tour 2026 Gold",
+      "encounters": 3,
+      "evolved": 0,
+      "encounter_dex": [
+        25,
+        25,
+        250
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0245",
+      "name_zh": "活動背景－GO Tour 2026 Silver",
+      "encounters": 3,
+      "evolved": 0,
+      "encounter_dex": [
+        25,
+        25,
+        249
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0246",
+      "name_zh": "活動背景－GO Tour 2026 Ruby",
+      "encounters": 3,
+      "evolved": 0,
+      "encounter_dex": [
+        25,
+        25,
+        383
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0247",
+      "name_zh": "活動背景－GO Tour 2026 Sapphire",
+      "encounters": 3,
+      "evolved": 0,
+      "encounter_dex": [
+        25,
+        25,
+        382
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0248",
+      "name_zh": "活動背景－GO Tour 2026 Diamond",
+      "encounters": 6,
+      "evolved": 0,
+      "encounter_dex": [
+        25,
+        25,
+        25,
+        25,
+        483,
+        483
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0249",
+      "name_zh": "活動背景－GO Tour 2026 Pearl",
+      "encounters": 6,
+      "evolved": 0,
+      "encounter_dex": [
+        25,
+        25,
+        25,
+        25,
+        484,
+        484
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0250",
+      "name_zh": "色彩節",
+      "encounters": 2,
+      "evolved": 0,
+      "encounter_dex": [
+        25,
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0251",
+      "name_zh": "寶可夢Pokopia",
+      "encounters": 5,
+      "evolved": 0,
+      "encounter_dex": [
+        131,
+        132,
+        132,
+        143,
+        149
+      ],
+      "evolved_dex": [],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0252",
+      "name_zh": "LEGO寶可夢",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0253",
+      "name_zh": "巴西 Arraiá 六月節 2026",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        128
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0254",
+      "name_zh": "活動背景－GO Fest 2026 Global",
+      "encounters": 91,
+      "evolved": 0,
+      "encounter_dex": [
+        15,
+        18,
+        65,
+        94,
+        127,
+        142,
+        144,
+        145,
+        146,
+        181,
+        243,
+        244,
+        245,
+        248,
+        249,
+        250,
+        254,
+        257,
+        260,
+        282,
+        373,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        386,
+        386,
+        386,
+        386,
+        445,
+        448,
+        460,
+        480,
+        481,
+        482,
+        483,
+        483,
+        484,
+        484,
+        485,
+        486,
+        487,
+        487,
+        488,
+        491,
+        531,
+        638,
+        639,
+        640,
+        641,
+        641,
+        642,
+        642,
+        643,
+        644,
+        645,
+        645,
+        646,
+        649,
+        649,
+        649,
+        649,
+        716,
+        717,
+        785,
+        786,
+        787,
+        788,
+        791,
+        792,
+        793,
+        794,
+        795,
+        796,
+        797,
+        798,
+        799,
+        800,
+        805,
+        806,
+        888,
+        889,
+        894,
+        895,
+        905,
+        905
+      ],
+      "evolved_dex": [],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0255",
+      "name_zh": "活動背景－GO Fest 2026 Mewtwo",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        150
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0256",
+      "name_zh": "十週年",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        999
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0257",
+      "name_zh": "傳說之路",
+      "encounters": 94,
+      "evolved": 0,
+      "encounter_dex": [
+        15,
+        18,
+        65,
+        94,
+        127,
+        142,
+        144,
+        145,
+        146,
+        181,
+        243,
+        244,
+        245,
+        248,
+        249,
+        250,
+        254,
+        257,
+        260,
+        282,
+        373,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        386,
+        386,
+        386,
+        386,
+        445,
+        448,
+        460,
+        480,
+        481,
+        482,
+        483,
+        483,
+        484,
+        484,
+        485,
+        486,
+        487,
+        487,
+        488,
+        491,
+        531,
+        638,
+        639,
+        640,
+        641,
+        641,
+        642,
+        642,
+        643,
+        643,
+        644,
+        644,
+        645,
+        645,
+        646,
+        649,
+        649,
+        649,
+        649,
+        649,
+        716,
+        717,
+        785,
+        786,
+        787,
+        788,
+        791,
+        792,
+        793,
+        794,
+        795,
+        796,
+        797,
+        798,
+        799,
+        800,
+        805,
+        806,
+        888,
+        889,
+        894,
+        895,
+        905,
+        905
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0258",
+      "name_zh": "超夢",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        150
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0259",
+      "name_zh": "超級超夢",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        150
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0260",
+      "name_zh": "十週年紀念・全球超夢調查",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        150
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0261",
+      "name_zh": "寶可夢世界錦標賽 2026",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        959
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0262",
+      "name_zh": "寶可夢地平線",
+      "encounters": 6,
+      "evolved": 1,
+      "encounter_dex": [
+        4,
+        6,
+        25,
+        908,
+        911,
+        914
+      ],
+      "evolved_dex": [
+        5
+      ],
+      "display_order_changed": true,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0263",
+      "name_zh": "月光",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        35
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0264",
+      "name_zh": "野外紋樣",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0265",
+      "name_zh": "遠古復甦－雷吉洛克點陣款",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        377
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0266",
+      "name_zh": "寶可夢中心－橫濱",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0267",
+      "name_zh": "寶可夢人孔蓋－山形",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0268",
+      "name_zh": "MLB－坦帕灣光芒 2026",
+      "encounters": 1,
+      "evolved": 1,
+      "encounter_dex": [
+        25
+      ],
+      "evolved_dex": [
+        26
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0269",
+      "name_zh": "FC 首爾 2026・首爾世界盃競技場",
+      "encounters": 2,
+      "evolved": 1,
+      "encounter_dex": [
+        4,
+        6
+      ],
+      "evolved_dex": [
+        5
+      ],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0271",
+      "name_zh": "遠古復甦－雷吉艾斯點陣款",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        378
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0272",
+      "name_zh": "遠古復甦－雷吉斯奇魯點陣款",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        379
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0273",
+      "name_zh": "遠古復甦－雷吉奇卡斯點陣款",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        486
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0274",
+      "name_zh": "遠古復甦－雷吉艾勒奇點陣款",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        894
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0275",
+      "name_zh": "遠古復甦－雷吉鐸拉戈點陣款",
+      "encounters": 1,
+      "evolved": 0,
+      "encounter_dex": [
+        895
+      ],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0276",
+      "name_zh": "球場背景素材（活動待確認）",
+      "encounters": 0,
+      "evolved": 0,
+      "encounter_dex": [],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    },
+    {
+      "background_id": "BG-0277",
+      "name_zh": "城市夜景背景素材（活動待確認）",
+      "encounters": 0,
+      "evolved": 0,
+      "encounter_dex": [],
+      "evolved_dex": [],
+      "display_order_changed": false,
+      "sections": []
+    }
+  ]
+}
