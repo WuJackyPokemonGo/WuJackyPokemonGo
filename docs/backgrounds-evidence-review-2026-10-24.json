@@ -1,0 +1,3525 @@
+{
+  "as_of": "2026-10-24",
+  "round": "remaining-evidence-review",
+  "added": 0,
+  "removed": 0,
+  "changed": 16,
+  "record_count": 276,
+  "complete": false,
+  "review_counts": {
+    "date_details_pending": 3,
+    "acquisition_method_pending": 9,
+    "backgrounds_pending": 3
+  },
+  "changes": [
+    {
+      "background_id": "BG-0016",
+      "fields_changed": [
+        "location_en",
+        "region_en",
+        "region_zh"
+      ],
+      "before": {
+        "name_en": "2024 Pokemon World Championships",
+        "type": "location",
+        "dates_source": "August 16th - 18th 2024",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/wc24_honolulu.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 25,
+            "name_en": "World Championships 2024 Pikachu",
+            "name_zh": "皮卡丘（World Championships 2024 Pikachu）",
+            "variant_id": "pikachu-wcs-2024",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "catalog-crosschecked",
+        "background_id": "BG-0016",
+        "name_zh": "2024 寶可夢世界錦標賽",
+        "release_state": "released",
+        "official_sources": [],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "檀香山現場團體戰、田野與限時調查有機會取得世界賽皮卡丘地標背景；無需世界賽票券。",
+        "method_en": "Honolulu raids, Field Research and Timed Research could award the Worlds Pikachu background; no Worlds ticket required.",
+        "series": "Other",
+        "series_zh": "其他活動",
+        "year": "2024",
+        "year_verified": true,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2024-honolulu",
+          "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        ],
+        "evolved_pokemon": [],
+        "start_date": "2024-08-16",
+        "end_date": "2024-08-20",
+        "checked_on": "2026-10-24",
+        "region_en": "To verify",
+        "region_zh": "地區待核對",
+        "reference_ids": [
+          "wc24_honolulu"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "name_en": "2024 Pokemon World Championships",
+        "type": "location",
+        "dates_source": "August 16th - 18th 2024",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/wc24_honolulu.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 25,
+            "name_en": "World Championships 2024 Pikachu",
+            "name_zh": "皮卡丘（World Championships 2024 Pikachu）",
+            "variant_id": "pikachu-wcs-2024",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "catalog-crosschecked",
+        "background_id": "BG-0016",
+        "name_zh": "2024 寶可夢世界錦標賽",
+        "release_state": "released",
+        "official_sources": [],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "檀香山現場團體戰、田野與限時調查有機會取得世界賽皮卡丘地標背景；無需世界賽票券。",
+        "method_en": "Honolulu raids, Field Research and Timed Research could award the Worlds Pikachu background; no Worlds ticket required.",
+        "series": "Other",
+        "series_zh": "其他活動",
+        "year": "2024",
+        "year_verified": true,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2024-honolulu",
+          "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        ],
+        "evolved_pokemon": [],
+        "start_date": "2024-08-16",
+        "end_date": "2024-08-20",
+        "checked_on": "2026-10-24",
+        "region_en": "United States",
+        "region_zh": "美國",
+        "reference_ids": [
+          "wc24_honolulu"
+        ],
+        "reference_review": "images-compared-2026-10-24",
+        "location_en": "Honolulu, Hawaii"
+      }
+    },
+    {
+      "background_id": "BG-0022",
+      "fields_changed": [
+        "location_en",
+        "region_en",
+        "region_zh"
+      ],
+      "before": {
+        "name_en": "GO Wild Area Fukuoka",
+        "type": "location",
+        "dates_source": "November 16th - 17th 2024",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/gw24_fukuoka.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 483,
+            "name_en": "Dialga Origin",
+            "name_zh": "帝牙盧卡",
+            "variant_id": "dialga-origin",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 484,
+            "name_en": "Palkia Origin",
+            "name_zh": "帕路奇亞",
+            "variant_id": "palkia-origin",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 849,
+            "name_en": "Toxtricity Amped",
+            "name_zh": "顫弦蠑螈",
+            "variant_id": "toxtricity-amped",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 849,
+            "name_en": "Toxtricity Low Key",
+            "name_zh": "顫弦蠑螈",
+            "variant_id": "toxtricity-low-key",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 849,
+            "name_en": "Gigantamax Toxtricity",
+            "name_zh": "顫弦蠑螈",
+            "variant_id": "toxtricity-gigantamax",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "catalog-crosschecked",
+        "background_id": "BG-0022",
+        "name_zh": "曠野地帶 福岡",
+        "release_state": "released",
+        "official_sources": [],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "持票活動的團體戰及極巨對戰，捕捉列出的頭目後有機會附福岡背景。",
+        "method_en": "Chance after catching listed bosses in event raids and Max Battles during ticketed gameplay.",
+        "series": "GO Wild Area",
+        "series_zh": "曠野地帶",
+        "year": "2024",
+        "year_verified": true,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-gowildarea-2024-fukuoka",
+          "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        ],
+        "evolved_pokemon": [],
+        "start_date": "2024-11-16",
+        "end_date": "2024-11-17",
+        "verification_note_zh": "背景及活動日期已比對兩份名錄；取得條件與個別形態以條目來源及官方活動規定為準。",
+        "verification_note_en": "Background and event dates agree across two catalogs. See the linked sources and official event rules for acquisition and form details.",
+        "checked_on": "2026-10-24",
+        "region_en": "To verify",
+        "region_zh": "地區待核對",
+        "reference_ids": [
+          "gw24_fukuoka"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "name_en": "GO Wild Area Fukuoka",
+        "type": "location",
+        "dates_source": "November 16th - 17th 2024",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/gw24_fukuoka.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 483,
+            "name_en": "Dialga Origin",
+            "name_zh": "帝牙盧卡",
+            "variant_id": "dialga-origin",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 484,
+            "name_en": "Palkia Origin",
+            "name_zh": "帕路奇亞",
+            "variant_id": "palkia-origin",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 849,
+            "name_en": "Toxtricity Amped",
+            "name_zh": "顫弦蠑螈",
+            "variant_id": "toxtricity-amped",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 849,
+            "name_en": "Toxtricity Low Key",
+            "name_zh": "顫弦蠑螈",
+            "variant_id": "toxtricity-low-key",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 849,
+            "name_en": "Gigantamax Toxtricity",
+            "name_zh": "顫弦蠑螈",
+            "variant_id": "toxtricity-gigantamax",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "catalog-crosschecked",
+        "background_id": "BG-0022",
+        "name_zh": "曠野地帶 福岡",
+        "release_state": "released",
+        "official_sources": [],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "持票活動的團體戰及極巨對戰，捕捉列出的頭目後有機會附福岡背景。",
+        "method_en": "Chance after catching listed bosses in event raids and Max Battles during ticketed gameplay.",
+        "series": "GO Wild Area",
+        "series_zh": "曠野地帶",
+        "year": "2024",
+        "year_verified": true,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-gowildarea-2024-fukuoka",
+          "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        ],
+        "evolved_pokemon": [],
+        "start_date": "2024-11-16",
+        "end_date": "2024-11-17",
+        "verification_note_zh": "背景及活動日期已比對兩份名錄；取得條件與個別形態以條目來源及官方活動規定為準。",
+        "verification_note_en": "Background and event dates agree across two catalogs. See the linked sources and official event rules for acquisition and form details.",
+        "checked_on": "2026-10-24",
+        "region_en": "Japan",
+        "region_zh": "日本",
+        "reference_ids": [
+          "gw24_fukuoka"
+        ],
+        "reference_review": "images-compared-2026-10-24",
+        "location_en": "Fukuoka"
+      }
+    },
+    {
+      "background_id": "BG-0023",
+      "fields_changed": [
+        "checked_on",
+        "location_en",
+        "region_en",
+        "region_zh"
+      ],
+      "before": {
+        "name_en": "City Safari Hong Kong",
+        "type": "location",
+        "dates_source": "December 7th - 8th 2024",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/cs24_hong_kong.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 133,
+            "name_en": "Explorer Hat Eevee",
+            "name_zh": "伊布（探險帽）",
+            "variant_id": "eevee-may-2023",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "catalog-crosschecked",
+        "background_id": "BG-0023",
+        "name_zh": "城市狩獵 香港",
+        "release_state": "released",
+        "official_sources": [],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
+        "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+        "series": "City Safari",
+        "series_zh": "城市狩獵",
+        "year": "2024",
+        "year_verified": true,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2024-hongkong",
+          "https://www.dittobase.com/pokemon-go/backgrounds"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 134,
+            "name_en": "Explorer Hat Vaporeon",
+            "name_zh": "水伊布（探險帽）",
+            "variant_id": "vaporeon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 135,
+            "name_en": "Explorer Hat Jolteon",
+            "name_zh": "雷伊布（探險帽）",
+            "variant_id": "jolteon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 136,
+            "name_en": "Explorer Hat Flareon",
+            "name_zh": "火伊布（探險帽）",
+            "variant_id": "flareon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 196,
+            "name_en": "Explorer Hat Espeon",
+            "name_zh": "太陽伊布（探險帽）",
+            "variant_id": "espeon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 197,
+            "name_en": "Explorer Hat Umbreon",
+            "name_zh": "月亮伊布（探險帽）",
+            "variant_id": "umbreon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 470,
+            "name_en": "Explorer Hat Leafeon",
+            "name_zh": "葉伊布（探險帽）",
+            "variant_id": "leafeon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 471,
+            "name_en": "Explorer Hat Glaceon",
+            "name_zh": "冰伊布（探險帽）",
+            "variant_id": "glaceon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 700,
+            "name_en": "Explorer Hat Sylveon",
+            "name_zh": "仙子伊布（探險帽）",
+            "variant_id": "sylveon-may-2023",
+            "acquisition": "evolution"
+          }
+        ],
+        "start_date": "2024-12-07",
+        "end_date": "2024-12-08",
+        "verification_note_zh": "背景及活動日期已比對兩份名錄；取得條件與個別形態以條目來源及官方活動規定為準。",
+        "verification_note_en": "Background and event dates agree across two catalogs. See the linked sources and official event rules for acquisition and form details.",
+        "checked_on": "2026-10-23",
+        "region_en": "To verify",
+        "region_zh": "地區待核對",
+        "reference_ids": [
+          "cs24_hong_kong"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "name_en": "City Safari Hong Kong",
+        "type": "location",
+        "dates_source": "December 7th - 8th 2024",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/cs24_hong_kong.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 133,
+            "name_en": "Explorer Hat Eevee",
+            "name_zh": "伊布（探險帽）",
+            "variant_id": "eevee-may-2023",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "catalog-crosschecked",
+        "background_id": "BG-0023",
+        "name_zh": "城市狩獵 香港",
+        "release_state": "released",
+        "official_sources": [],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
+        "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+        "series": "City Safari",
+        "series_zh": "城市狩獵",
+        "year": "2024",
+        "year_verified": true,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2024-hongkong",
+          "https://www.dittobase.com/pokemon-go/backgrounds"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 134,
+            "name_en": "Explorer Hat Vaporeon",
+            "name_zh": "水伊布（探險帽）",
+            "variant_id": "vaporeon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 135,
+            "name_en": "Explorer Hat Jolteon",
+            "name_zh": "雷伊布（探險帽）",
+            "variant_id": "jolteon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 136,
+            "name_en": "Explorer Hat Flareon",
+            "name_zh": "火伊布（探險帽）",
+            "variant_id": "flareon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 196,
+            "name_en": "Explorer Hat Espeon",
+            "name_zh": "太陽伊布（探險帽）",
+            "variant_id": "espeon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 197,
+            "name_en": "Explorer Hat Umbreon",
+            "name_zh": "月亮伊布（探險帽）",
+            "variant_id": "umbreon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 470,
+            "name_en": "Explorer Hat Leafeon",
+            "name_zh": "葉伊布（探險帽）",
+            "variant_id": "leafeon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 471,
+            "name_en": "Explorer Hat Glaceon",
+            "name_zh": "冰伊布（探險帽）",
+            "variant_id": "glaceon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 700,
+            "name_en": "Explorer Hat Sylveon",
+            "name_zh": "仙子伊布（探險帽）",
+            "variant_id": "sylveon-may-2023",
+            "acquisition": "evolution"
+          }
+        ],
+        "start_date": "2024-12-07",
+        "end_date": "2024-12-08",
+        "verification_note_zh": "背景及活動日期已比對兩份名錄；取得條件與個別形態以條目來源及官方活動規定為準。",
+        "verification_note_en": "Background and event dates agree across two catalogs. See the linked sources and official event rules for acquisition and form details.",
+        "checked_on": "2026-10-24",
+        "region_en": "Hong Kong",
+        "region_zh": "香港",
+        "reference_ids": [
+          "cs24_hong_kong"
+        ],
+        "reference_review": "images-compared-2026-10-24",
+        "location_en": "Hong Kong"
+      }
+    },
+    {
+      "background_id": "BG-0031",
+      "fields_changed": [
+        "location_en",
+        "region_en",
+        "region_zh"
+      ],
+      "before": {
+        "name_en": "Spring Blossom Festival",
+        "type": "location",
+        "dates_source": "March 30th - April 8th 2025",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/25_korea_blossom.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 25,
+            "name_en": "Flower Hat Pikachu",
+            "name_zh": "皮卡丘（Flower Hat Pikachu）",
+            "variant_id": "pikachu-april-2020",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 585,
+            "name_en": "Deerling Spring",
+            "name_zh": "四季鹿",
+            "variant_id": "deerling-spring",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "catalog-crosschecked",
+        "background_id": "BG-0031",
+        "name_zh": "汝矣島櫻花節",
+        "release_state": "released",
+        "official_sources": [],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "汝矣島活動田野調查有機會取得背景；現場限時調查亦提供背景獎勵，領獎至 4/13。",
+        "method_en": "Chance from Yeouido event Field Research; on-site Timed Research also awards backgrounds, claimable through April 13.",
+        "series": "Other",
+        "series_zh": "其他活動",
+        "year": "2025",
+        "year_verified": true,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-cherry-blossom-fest-2025-yeouido",
+          "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 586,
+            "name_en": "Sawsbuck Spring",
+            "name_zh": "萌芽鹿",
+            "variant_id": "sawsbuck-spring",
+            "acquisition": "evolution"
+          }
+        ],
+        "start_date": "2025-03-30",
+        "end_date": "2025-04-08",
+        "verification_note_zh": "背景及活動日期已比對兩份名錄；取得條件與個別形態以條目來源及官方活動規定為準。",
+        "verification_note_en": "Background and event dates agree across two catalogs. See the linked sources and official event rules for acquisition and form details.",
+        "checked_on": "2026-10-24",
+        "region_en": "To verify",
+        "region_zh": "地區待核對",
+        "reference_ids": [
+          "25_korea_blossom"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "name_en": "Spring Blossom Festival",
+        "type": "location",
+        "dates_source": "March 30th - April 8th 2025",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/25_korea_blossom.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 25,
+            "name_en": "Flower Hat Pikachu",
+            "name_zh": "皮卡丘（Flower Hat Pikachu）",
+            "variant_id": "pikachu-april-2020",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 585,
+            "name_en": "Deerling Spring",
+            "name_zh": "四季鹿",
+            "variant_id": "deerling-spring",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "catalog-crosschecked",
+        "background_id": "BG-0031",
+        "name_zh": "汝矣島櫻花節",
+        "release_state": "released",
+        "official_sources": [],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "汝矣島活動田野調查有機會取得背景；現場限時調查亦提供背景獎勵，領獎至 4/13。",
+        "method_en": "Chance from Yeouido event Field Research; on-site Timed Research also awards backgrounds, claimable through April 13.",
+        "series": "Other",
+        "series_zh": "其他活動",
+        "year": "2025",
+        "year_verified": true,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-cherry-blossom-fest-2025-yeouido",
+          "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 586,
+            "name_en": "Sawsbuck Spring",
+            "name_zh": "萌芽鹿",
+            "variant_id": "sawsbuck-spring",
+            "acquisition": "evolution"
+          }
+        ],
+        "start_date": "2025-03-30",
+        "end_date": "2025-04-08",
+        "verification_note_zh": "背景及活動日期已比對兩份名錄；取得條件與個別形態以條目來源及官方活動規定為準。",
+        "verification_note_en": "Background and event dates agree across two catalogs. See the linked sources and official event rules for acquisition and form details.",
+        "checked_on": "2026-10-24",
+        "region_en": "South Korea",
+        "region_zh": "韓國",
+        "reference_ids": [
+          "25_korea_blossom"
+        ],
+        "reference_review": "images-compared-2026-10-24",
+        "location_en": "Yeouido, Seoul"
+      }
+    },
+    {
+      "background_id": "BG-0054",
+      "fields_changed": [
+        "location_en",
+        "region_en",
+        "region_zh"
+      ],
+      "before": {
+        "name_en": "2025 Pokemon World Championships",
+        "type": "location",
+        "dates_source": "August 15th - 17th 2025",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/anaheim_25.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 25,
+            "name_en": "World Championships 2025 Pikachu",
+            "name_zh": "皮卡丘（World Championships 2025 Pikachu）",
+            "variant_id": "pikachu-wcs-2025",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "catalog-crosschecked",
+        "background_id": "BG-0054",
+        "name_zh": "2025 寶可夢世界錦標賽",
+        "release_state": "released",
+        "official_sources": [],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "安那翰現場限定團體戰的2025世界賽皮卡丘，有機會附城市地標背景。",
+        "method_en": "Chance from Worlds Pikachu raids at the Anaheim event.",
+        "series": "Other",
+        "series_zh": "其他活動",
+        "year": "2025",
+        "year_verified": true,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2025-anaheim",
+          "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        ],
+        "evolved_pokemon": [],
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-17",
+        "verification_note_zh": "背景及活動日期已比對兩份名錄；取得條件與個別形態以條目來源及官方活動規定為準。",
+        "verification_note_en": "Background and event dates agree across two catalogs. See the linked sources and official event rules for acquisition and form details.",
+        "checked_on": "2026-10-24",
+        "region_en": "To verify",
+        "region_zh": "地區待核對",
+        "reference_ids": [
+          "anaheim_25"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "name_en": "2025 Pokemon World Championships",
+        "type": "location",
+        "dates_source": "August 15th - 17th 2025",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/anaheim_25.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 25,
+            "name_en": "World Championships 2025 Pikachu",
+            "name_zh": "皮卡丘（World Championships 2025 Pikachu）",
+            "variant_id": "pikachu-wcs-2025",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "catalog-crosschecked",
+        "background_id": "BG-0054",
+        "name_zh": "2025 寶可夢世界錦標賽",
+        "release_state": "released",
+        "official_sources": [],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "安那翰現場限定團體戰的2025世界賽皮卡丘，有機會附城市地標背景。",
+        "method_en": "Chance from Worlds Pikachu raids at the Anaheim event.",
+        "series": "Other",
+        "series_zh": "其他活動",
+        "year": "2025",
+        "year_verified": true,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2025-anaheim",
+          "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        ],
+        "evolved_pokemon": [],
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-17",
+        "verification_note_zh": "背景及活動日期已比對兩份名錄；取得條件與個別形態以條目來源及官方活動規定為準。",
+        "verification_note_en": "Background and event dates agree across two catalogs. See the linked sources and official event rules for acquisition and form details.",
+        "checked_on": "2026-10-24",
+        "region_en": "United States",
+        "region_zh": "美國",
+        "reference_ids": [
+          "anaheim_25"
+        ],
+        "reference_review": "images-compared-2026-10-24",
+        "location_en": "Anaheim, California"
+      }
+    },
+    {
+      "background_id": "BG-0072",
+      "fields_changed": [
+        "catalog_sources",
+        "checked_on",
+        "evidence_reviewed_on",
+        "method_en",
+        "method_status",
+        "method_zh"
+      ],
+      "before": {
+        "name_en": "Busan Fireworks Festival",
+        "type": "location",
+        "dates_source": "??",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/busan_fireworks_2025.webp?v=20260816",
+        "pokemon": [],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "catalogued-needs-event-check",
+        "background_id": "BG-0072",
+        "name_zh": "釜山煙火節",
+        "release_state": "needs-verification",
+        "official_sources": [],
+        "notes": [
+          "來源名稱或日期疑似有誤，需另找活動公告。"
+        ],
+        "related_product_ids": [],
+        "method_zh": null,
+        "method_en": null,
+        "series": "Other",
+        "series_zh": "其他活動",
+        "year": null,
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-busanfireworksfestival-2025"
+        ],
+        "checked_on": "2026-10-23",
+        "region_en": "South Korea",
+        "region_zh": "韓國",
+        "reference_ids": [
+          "busan_fireworks_2025"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "name_en": "Busan Fireworks Festival",
+        "type": "location",
+        "dates_source": "??",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/busan_fireworks_2025.webp?v=20260816",
+        "pokemon": [],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "catalogued-needs-event-check",
+        "background_id": "BG-0072",
+        "name_zh": "釜山煙火節",
+        "release_state": "needs-verification",
+        "official_sources": [],
+        "notes": [
+          "來源名稱或日期疑似有誤，需另找活動公告。"
+        ],
+        "related_product_ids": [],
+        "method_zh": "僅確認存在釜山煙火背景素材；未查得可靠的遊戲發放日期、寶可夢或取得證據，不作已發放款。",
+        "method_en": "Busan fireworks artwork exists, but a reliable release date, eligible Pokémon and acquisition route remain unestablished. Not a confirmed release.",
+        "series": "Other",
+        "series_zh": "其他活動",
+        "year": null,
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-busanfireworksfestival-2025",
+          "https://pokemongo.fandom.com/wiki/Backgrounds"
+        ],
+        "checked_on": "2026-10-24",
+        "region_en": "South Korea",
+        "region_zh": "韓國",
+        "reference_ids": [
+          "busan_fireworks_2025"
+        ],
+        "reference_review": "images-compared-2026-10-24",
+        "method_status": "unconfirmed",
+        "evidence_reviewed_on": "2026-10-24"
+      }
+    },
+    {
+      "background_id": "BG-0119",
+      "fields_changed": [
+        "pokemon"
+      ],
+      "before": {
+        "name_en": "PokePark Kanto",
+        "type": "location",
+        "dates_source": "February 5th 2026",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/pokepark_kanto.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 144,
+            "name_en": "Articuno",
+            "name_zh": "急凍鳥",
+            "variant_id": "articuno",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 145,
+            "name_en": "Zapdos",
+            "name_zh": "閃電鳥",
+            "variant_id": "zapdos",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 146,
+            "name_en": "Moltres",
+            "name_zh": "火焰鳥",
+            "variant_id": "moltres",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 25,
+            "name_en": "Pikachu",
+            "name_zh": "皮卡丘"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "official-event-confirmed",
+        "background_id": "BG-0119",
+        "name_zh": "寶可夢樂園關都",
+        "release_state": "released",
+        "official_sources": [
+          "https://pokemongo.com/news/ppk_launch"
+        ],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "需入園票券。園內團體戰每日可參加一次：2–5月閃電鳥、6–9月火焰鳥、10–1月急凍鳥，附園區地標背景。原名錄的皮卡丘背景尚待確認。",
+        "method_en": "Park admission required. Daily raid: Zapdos Feb–May, Moltres Jun–Sep, Articuno Oct–Jan, with park backgrounds. Pikachu eligibility remains unconfirmed.",
+        "series": "Other",
+        "series_zh": "其他活動",
+        "year": "2026",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokemon-park"
+        ],
+        "evolved_pokemon": [],
+        "checked_on": "2026-10-24",
+        "region_en": "Japan",
+        "region_zh": "日本",
+        "verification_scope": "background-and-eligibility",
+        "method_status": "partial",
+        "start_date": "2026-02-05",
+        "date_note_zh": "2026/2/5 起於開園時間提供；未公告結束日期。",
+        "date_note_en": "From February 5, 2026 during park hours; no end announced.",
+        "reference_ids": [
+          "pokepark_kanto"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "name_en": "PokePark Kanto",
+        "type": "location",
+        "dates_source": "February 5th 2026",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/pokepark_kanto.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 144,
+            "name_en": "Articuno",
+            "name_zh": "急凍鳥",
+            "variant_id": "articuno",
+            "acquisition": "encounter",
+            "method_zh": "10～1月園內團體戰；需入園票券，每日可參加一次，附園區地標背景。",
+            "method_en": "Park raid in October–January. Admission required; one raid per day, with the park Location Background.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 145,
+            "name_en": "Zapdos",
+            "name_zh": "閃電鳥",
+            "variant_id": "zapdos",
+            "acquisition": "encounter",
+            "method_zh": "2～5月園內團體戰；需入園票券，每日可參加一次，附園區地標背景。",
+            "method_en": "Park raid in February–May. Admission required; one raid per day, with the park Location Background.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 146,
+            "name_en": "Moltres",
+            "name_zh": "火焰鳥",
+            "variant_id": "moltres",
+            "acquisition": "encounter",
+            "method_zh": "6～9月園內團體戰；需入園票券，每日可參加一次，附園區地標背景。",
+            "method_en": "Park raid in June–September. Admission required; one raid per day, with the park Location Background.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 25,
+            "name_en": "Pikachu",
+            "name_zh": "皮卡丘",
+            "method_zh": "背景資格未確認：官方只列為園內野外出現，未宣告皮卡丘可附此背景。",
+            "method_en": "Background eligibility unconfirmed: the official announcement lists wild Pikachu, but does not award this background to it.",
+            "method_status": "unconfirmed"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "official-event-confirmed",
+        "background_id": "BG-0119",
+        "name_zh": "寶可夢樂園關都",
+        "release_state": "released",
+        "official_sources": [
+          "https://pokemongo.com/news/ppk_launch"
+        ],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "需入園票券。園內團體戰每日可參加一次：2–5月閃電鳥、6–9月火焰鳥、10–1月急凍鳥，附園區地標背景。原名錄的皮卡丘背景尚待確認。",
+        "method_en": "Park admission required. Daily raid: Zapdos Feb–May, Moltres Jun–Sep, Articuno Oct–Jan, with park backgrounds. Pikachu eligibility remains unconfirmed.",
+        "series": "Other",
+        "series_zh": "其他活動",
+        "year": "2026",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokemon-park"
+        ],
+        "evolved_pokemon": [],
+        "checked_on": "2026-10-24",
+        "region_en": "Japan",
+        "region_zh": "日本",
+        "verification_scope": "background-and-eligibility",
+        "method_status": "partial",
+        "start_date": "2026-02-05",
+        "date_note_zh": "2026/2/5 起於開園時間提供；未公告結束日期。",
+        "date_note_en": "From February 5, 2026 during park hours; no end announced.",
+        "reference_ids": [
+          "pokepark_kanto"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      }
+    },
+    {
+      "background_id": "BG-0136",
+      "fields_changed": [
+        "method_en",
+        "method_zh",
+        "official_sources",
+        "pokemon"
+      ],
+      "before": {
+        "name_en": "GO Fest 2026 Tokyo",
+        "type": "location",
+        "dates_source": "May 28th - May 31st 2026",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/gf26_tokyo.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 128,
+            "name_en": "Paldean Tauros Aqua",
+            "name_zh": "肯泰羅",
+            "variant_id": "tauros-paldea-aqua",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 150,
+            "name_en": "Mewtwo",
+            "name_zh": "超夢",
+            "variant_id": "mewtwo",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 144,
+            "name_en": "Articuno",
+            "name_zh": "急凍鳥",
+            "variant_id": "articuno",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 144,
+            "name_en": "Shadow Articuno",
+            "name_zh": "急凍鳥",
+            "variant_id": "articuno-shadow",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 245,
+            "name_en": "Suicune",
+            "name_zh": "水君",
+            "variant_id": "suicune",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 245,
+            "name_en": "Shadow Suicune",
+            "name_zh": "水君",
+            "variant_id": "suicune-shadow",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 383,
+            "name_en": "Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 382,
+            "name_en": "Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 383,
+            "name_en": "Shadow Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon-shadow",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 382,
+            "name_en": "Shadow Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre-shadow",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 131,
+            "name_en": "Blanche-themed Lapras",
+            "name_zh": "拉普拉斯（Blanche-themed Lapras）",
+            "variant_id": "lapras-spring-2023-mystic",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 807,
+            "name_en": "Zeraora",
+            "name_zh": "捷拉奧拉",
+            "variant_id": "zeraora",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "official-event-confirmed",
+        "background_id": "BG-0136",
+        "name_zh": "GO Fest 2026 東京",
+        "release_state": "released",
+        "official_sources": [
+          "https://pokemongo.com/news/mega-mewtwo-gofest-2026",
+          "https://pokemongo.com/en/news/save-the-date-go-fest-2026"
+        ],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "持票公園場次末30分鐘的超級超夢大型團體戰，獎勵帶當地 GO Fest 地標背景的超夢；另有城市體驗限時調查機會。其他名錄款的逐隻來源仍待核。 城市特殊調查的捷拉奧拉附當地背景；此特殊調查捕捉機會跨城市僅一次。名錄所列其他形態／隊長服裝的逐款條件仍待確認。",
+        "method_en": "Ticketed park Super Mega Raids award city-background Mewtwo; City Experience research adds another chance. Other variants remain under review. City Special Research Zeraora has the local background; its catch is once across all host cities. Remaining form/costume-specific routes are not yet established.",
+        "series": "GO Fest",
+        "series_zh": "GO Fest",
+        "year": "2026",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2026-tokyo",
+          "https://leekduck.com/events/pokemon-go-fest-2026-tokyo/",
+          "https://bulbapedia.bulbagarden.net/wiki/Zeraora_(GO)"
+        ],
+        "evolved_pokemon": [],
+        "checked_on": "2026-10-24",
+        "region_en": "Japan",
+        "region_zh": "日本",
+        "verification_scope": "background-and-eligibility",
+        "method_status": "partial",
+        "start_date": "2026-05-25",
+        "end_date": "2026-06-01",
+        "date_note_zh": "此期間包含城市體驗限時調查；公園主活動日期另依票券。",
+        "date_note_en": "Range includes City Experience research; park dates follow the ticket.",
+        "reference_ids": [
+          "gf26_tokyo"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "name_en": "GO Fest 2026 Tokyo",
+        "type": "location",
+        "dates_source": "May 28th - May 31st 2026",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/gf26_tokyo.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 128,
+            "name_en": "Paldean Tauros Aqua",
+            "name_zh": "肯泰羅",
+            "variant_id": "tauros-paldea-aqua",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地三星團體戰，有機會附地標背景。",
+            "method_en": "Chance from the host-city three-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 150,
+            "name_en": "Mewtwo",
+            "name_zh": "超夢",
+            "variant_id": "mewtwo",
+            "acquisition": "encounter",
+            "method_zh": "公園場次最後30分鐘的超級團體戰保證地標背景；城市體驗另有分支限時調查。",
+            "method_en": "End-of-park Super Mega Raids guarantee the city background. City Experience also includes branching Timed Research.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 144,
+            "name_en": "Articuno",
+            "name_zh": "急凍鳥",
+            "variant_id": "articuno",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地傳說團體戰，有機會附地標背景。",
+            "method_en": "Chance from local five-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 144,
+            "name_en": "Shadow Articuno",
+            "name_zh": "急凍鳥",
+            "variant_id": "articuno-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 245,
+            "name_en": "Suicune",
+            "name_zh": "水君",
+            "variant_id": "suicune",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地傳說團體戰，有機會附地標背景。",
+            "method_en": "Chance from local five-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 245,
+            "name_en": "Shadow Suicune",
+            "name_zh": "水君",
+            "variant_id": "suicune-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 383,
+            "name_en": "Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加原始團體戰，捕獲的一般蓋歐卡／固拉多有機會附背景。",
+            "method_en": "Chance on regular Kyogre/Groudon caught from ticketed Primal Raids.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 382,
+            "name_en": "Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加原始團體戰，捕獲的一般蓋歐卡／固拉多有機會附背景。",
+            "method_en": "Chance on regular Kyogre/Groudon caught from ticketed Primal Raids.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 383,
+            "name_en": "Shadow Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 382,
+            "name_en": "Shadow Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 131,
+            "name_en": "Blanche-themed Lapras",
+            "name_zh": "拉普拉斯（Blanche-themed Lapras）",
+            "variant_id": "lapras-spring-2023-mystic",
+            "acquisition": "encounter",
+            "method_zh": "此城市地標背景的個別發放方式未確認；全球隊伍特殊背景的 GO Pass 不能作為此款證據。",
+            "method_en": "This city Location Background route is unconfirmed. A global GO Pass with a team Special Background does not establish this city variant.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 807,
+            "name_en": "Zeraora",
+            "name_zh": "捷拉奧拉",
+            "variant_id": "zeraora",
+            "acquisition": "encounter",
+            "method_zh": "公園特殊調查獎勵；同年度跨城市只可捕捉一次捷拉奧拉，其後改發糖果。",
+            "method_en": "Park Special Research reward; one Zeraora catch across the host cities, with Candy replacing repeat rewards.",
+            "method_status": "reviewed"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "official-event-confirmed",
+        "background_id": "BG-0136",
+        "name_zh": "GO Fest 2026 東京",
+        "release_state": "released",
+        "official_sources": [
+          "https://pokemongo.com/news/mega-mewtwo-gofest-2026",
+          "https://pokemongo.com/en/news/save-the-date-go-fest-2026",
+          "https://pokemongo.com/en/news/know-before-you-go-gofest-2026-in-person-events"
+        ],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "有效票券時段的指定團體戰有機會獲得地標背景；暗影與一般形態分開列出。公園末30分鐘超級超夢團體戰保證背景。公園特殊調查獎勵捷拉奧拉；隊長服裝款的地標背景與個別取得條件仍未確認，不能套用全球隊伍特殊背景。",
+        "method_en": "Eligible ticketed raids offer a chance of the city background; Shadow and regular forms are distinct. End-of-park Super Mega Raids guarantee background Mewtwo. Park Special Research awards Zeraora. The city-background route for team-leader costumes remains unconfirmed; global team Special Backgrounds are separate.",
+        "series": "GO Fest",
+        "series_zh": "GO Fest",
+        "year": "2026",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2026-tokyo",
+          "https://leekduck.com/events/pokemon-go-fest-2026-tokyo/",
+          "https://bulbapedia.bulbagarden.net/wiki/Zeraora_(GO)"
+        ],
+        "evolved_pokemon": [],
+        "checked_on": "2026-10-24",
+        "region_en": "Japan",
+        "region_zh": "日本",
+        "verification_scope": "background-and-eligibility",
+        "method_status": "partial",
+        "start_date": "2026-05-25",
+        "end_date": "2026-06-01",
+        "date_note_zh": "此期間包含城市體驗限時調查；公園主活動日期另依票券。",
+        "date_note_en": "Range includes City Experience research; park dates follow the ticket.",
+        "reference_ids": [
+          "gf26_tokyo"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      }
+    },
+    {
+      "background_id": "BG-0140",
+      "fields_changed": [
+        "evolved_pokemon",
+        "method_en",
+        "method_zh",
+        "official_sources",
+        "pokemon"
+      ],
+      "before": {
+        "name_en": "GO Fest 2026 Chicago",
+        "type": "location",
+        "dates_source": "June 5th - 7th 2026",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/gf26_chicago.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 128,
+            "name_en": "Paldean Tauros Blaze",
+            "name_zh": "肯泰羅",
+            "variant_id": "tauros-paldea-blaze",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 150,
+            "name_en": "Mewtwo",
+            "name_zh": "超夢",
+            "variant_id": "mewtwo",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 145,
+            "name_en": "Zapdos",
+            "name_zh": "閃電鳥",
+            "variant_id": "zapdos",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 145,
+            "name_en": "Shadow Zapdos",
+            "name_zh": "閃電鳥",
+            "variant_id": "zapdos-shadow",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 243,
+            "name_en": "Raikou",
+            "name_zh": "雷公",
+            "variant_id": "raikou",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 243,
+            "name_en": "Shadow Raikou",
+            "name_zh": "雷公",
+            "variant_id": "raikou-shadow",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 382,
+            "name_en": "Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 383,
+            "name_en": "Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 382,
+            "name_en": "Shadow Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre-shadow",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 383,
+            "name_en": "Shadow Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon-shadow",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 239,
+            "name_en": "Spark-themed Elekid",
+            "name_zh": "電擊怪（Spark-themed Elekid）",
+            "variant_id": "elekid-spring-2023-instinct",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 807,
+            "name_en": "Zeraora",
+            "name_zh": "捷拉奧拉",
+            "variant_id": "zeraora",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "official-event-confirmed",
+        "background_id": "BG-0140",
+        "name_zh": "GO Fest 2026 芝加哥",
+        "release_state": "released",
+        "official_sources": [
+          "https://pokemongo.com/news/mega-mewtwo-gofest-2026",
+          "https://pokemongo.com/en/news/save-the-date-go-fest-2026"
+        ],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "持票公園場次末30分鐘的超級超夢大型團體戰，獎勵帶當地 GO Fest 地標背景的超夢；另有城市體驗限時調查機會。其他名錄款的逐隻來源仍待核。 城市特殊調查的捷拉奧拉附當地背景；此特殊調查捕捉機會跨城市僅一次。名錄所列其他形態／隊長服裝的逐款條件仍待確認。",
+        "method_en": "Ticketed park Super Mega Raids award city-background Mewtwo; City Experience research adds another chance. Other variants remain under review. City Special Research Zeraora has the local background; its catch is once across all host cities. Remaining form/costume-specific routes are not yet established.",
+        "series": "GO Fest",
+        "series_zh": "GO Fest",
+        "year": "2026",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2026-chicago",
+          "https://leekduck.com/events/pokemon-go-fest-2026-chicago/",
+          "https://bulbapedia.bulbagarden.net/wiki/Zeraora_(GO)"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 125,
+            "name_en": "Spark-themed Electabuzz",
+            "name_zh": "電擊獸（Spark-themed Electabuzz）",
+            "variant_id": "electabuzz-spring-2023-instinct",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 466,
+            "name_en": "Spark-themed Electivire",
+            "name_zh": "電擊魔獸（Spark-themed Electivire）",
+            "variant_id": "electivire-spring-2023-instinct",
+            "acquisition": "evolution"
+          }
+        ],
+        "checked_on": "2026-10-24",
+        "region_en": "United States",
+        "region_zh": "美國",
+        "verification_scope": "background-and-eligibility",
+        "method_status": "partial",
+        "start_date": "2026-06-04",
+        "end_date": "2026-06-07",
+        "date_note_zh": "此期間包含城市體驗限時調查；公園主活動日期另依票券。",
+        "date_note_en": "Range includes City Experience research; park dates follow the ticket.",
+        "reference_ids": [
+          "gf26_chicago"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "name_en": "GO Fest 2026 Chicago",
+        "type": "location",
+        "dates_source": "June 5th - 7th 2026",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/gf26_chicago.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 128,
+            "name_en": "Paldean Tauros Blaze",
+            "name_zh": "肯泰羅",
+            "variant_id": "tauros-paldea-blaze",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地三星團體戰，有機會附地標背景。",
+            "method_en": "Chance from the host-city three-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 150,
+            "name_en": "Mewtwo",
+            "name_zh": "超夢",
+            "variant_id": "mewtwo",
+            "acquisition": "encounter",
+            "method_zh": "公園場次最後30分鐘的超級團體戰保證地標背景；城市體驗另有分支限時調查。",
+            "method_en": "End-of-park Super Mega Raids guarantee the city background. City Experience also includes branching Timed Research.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 145,
+            "name_en": "Zapdos",
+            "name_zh": "閃電鳥",
+            "variant_id": "zapdos",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地傳說團體戰，有機會附地標背景。",
+            "method_en": "Chance from local five-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 145,
+            "name_en": "Shadow Zapdos",
+            "name_zh": "閃電鳥",
+            "variant_id": "zapdos-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 243,
+            "name_en": "Raikou",
+            "name_zh": "雷公",
+            "variant_id": "raikou",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地傳說團體戰，有機會附地標背景。",
+            "method_en": "Chance from local five-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 243,
+            "name_en": "Shadow Raikou",
+            "name_zh": "雷公",
+            "variant_id": "raikou-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 382,
+            "name_en": "Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加原始團體戰，捕獲的一般蓋歐卡／固拉多有機會附背景。",
+            "method_en": "Chance on regular Kyogre/Groudon caught from ticketed Primal Raids.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 383,
+            "name_en": "Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加原始團體戰，捕獲的一般蓋歐卡／固拉多有機會附背景。",
+            "method_en": "Chance on regular Kyogre/Groudon caught from ticketed Primal Raids.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 382,
+            "name_en": "Shadow Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 383,
+            "name_en": "Shadow Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 239,
+            "name_en": "Spark-themed Elekid",
+            "name_zh": "電擊怪（Spark-themed Elekid）",
+            "variant_id": "elekid-spring-2023-instinct",
+            "acquisition": "encounter",
+            "method_zh": "此城市地標背景的個別發放方式未確認；全球隊伍特殊背景的 GO Pass 不能作為此款證據。",
+            "method_en": "This city Location Background route is unconfirmed. A global GO Pass with a team Special Background does not establish this city variant.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 807,
+            "name_en": "Zeraora",
+            "name_zh": "捷拉奧拉",
+            "variant_id": "zeraora",
+            "acquisition": "encounter",
+            "method_zh": "公園特殊調查獎勵；同年度跨城市只可捕捉一次捷拉奧拉，其後改發糖果。",
+            "method_en": "Park Special Research reward; one Zeraora catch across the host cities, with Candy replacing repeat rewards.",
+            "method_status": "reviewed"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "official-event-confirmed",
+        "background_id": "BG-0140",
+        "name_zh": "GO Fest 2026 芝加哥",
+        "release_state": "released",
+        "official_sources": [
+          "https://pokemongo.com/news/mega-mewtwo-gofest-2026",
+          "https://pokemongo.com/en/news/save-the-date-go-fest-2026",
+          "https://pokemongo.com/en/news/know-before-you-go-gofest-2026-in-person-events"
+        ],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "有效票券時段的指定團體戰有機會獲得地標背景；暗影與一般形態分開列出。公園末30分鐘超級超夢團體戰保證背景。公園特殊調查獎勵捷拉奧拉；隊長服裝款的地標背景與個別取得條件仍未確認，不能套用全球隊伍特殊背景。",
+        "method_en": "Eligible ticketed raids offer a chance of the city background; Shadow and regular forms are distinct. End-of-park Super Mega Raids guarantee background Mewtwo. Park Special Research awards Zeraora. The city-background route for team-leader costumes remains unconfirmed; global team Special Backgrounds are separate.",
+        "series": "GO Fest",
+        "series_zh": "GO Fest",
+        "year": "2026",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2026-chicago",
+          "https://leekduck.com/events/pokemon-go-fest-2026-chicago/",
+          "https://bulbapedia.bulbagarden.net/wiki/Zeraora_(GO)"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 125,
+            "name_en": "Spark-themed Electabuzz",
+            "name_zh": "電擊獸（Spark-themed Electabuzz）",
+            "variant_id": "electabuzz-spring-2023-instinct",
+            "acquisition": "evolution",
+            "method_zh": "由相同背景的原始服裝款進化保留；原始款地標背景資格仍待確認。",
+            "method_en": "Inherited by evolution only if the source costume has this city background; source eligibility remains unconfirmed.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 466,
+            "name_en": "Spark-themed Electivire",
+            "name_zh": "電擊魔獸（Spark-themed Electivire）",
+            "variant_id": "electivire-spring-2023-instinct",
+            "acquisition": "evolution",
+            "method_zh": "由相同背景的原始服裝款進化保留；原始款地標背景資格仍待確認。",
+            "method_en": "Inherited by evolution only if the source costume has this city background; source eligibility remains unconfirmed.",
+            "method_status": "unconfirmed"
+          }
+        ],
+        "checked_on": "2026-10-24",
+        "region_en": "United States",
+        "region_zh": "美國",
+        "verification_scope": "background-and-eligibility",
+        "method_status": "partial",
+        "start_date": "2026-06-04",
+        "end_date": "2026-06-07",
+        "date_note_zh": "此期間包含城市體驗限時調查；公園主活動日期另依票券。",
+        "date_note_en": "Range includes City Experience research; park dates follow the ticket.",
+        "reference_ids": [
+          "gf26_chicago"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      }
+    },
+    {
+      "background_id": "BG-0141",
+      "fields_changed": [
+        "evolved_pokemon",
+        "location_en",
+        "method_en",
+        "method_zh",
+        "official_sources",
+        "pokemon",
+        "region_en",
+        "region_zh"
+      ],
+      "before": {
+        "name_en": "GO Fest 2026 Copenhagen",
+        "type": "location",
+        "dates_source": "June 12th - 14th 2026",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/gf26_copenhagen.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 128,
+            "name_en": "Paldean Tauros Combat",
+            "name_zh": "肯泰羅",
+            "variant_id": "tauros-paldea-combat",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 150,
+            "name_en": "Mewtwo",
+            "name_zh": "超夢",
+            "variant_id": "mewtwo",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 146,
+            "name_en": "Moltres",
+            "name_zh": "火焰鳥",
+            "variant_id": "moltres",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 146,
+            "name_en": "Shadow Moltres",
+            "name_zh": "火焰鳥",
+            "variant_id": "moltres-shadow",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 244,
+            "name_en": "Entei",
+            "name_zh": "炎帝",
+            "variant_id": "entei",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 244,
+            "name_en": "Shadow Entei",
+            "name_zh": "炎帝",
+            "variant_id": "entei-shadow",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 383,
+            "name_en": "Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 383,
+            "name_en": "Shadow Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon-shadow",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 382,
+            "name_en": "Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 382,
+            "name_en": "Shadow Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre-shadow",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 77,
+            "name_en": "Candela-themed Ponyta",
+            "name_zh": "小火馬（Candela-themed Ponyta）",
+            "variant_id": "ponyta-spring-2023-valor",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 807,
+            "name_en": "Zeraora",
+            "name_zh": "捷拉奧拉",
+            "variant_id": "zeraora",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "official-event-confirmed",
+        "background_id": "BG-0141",
+        "name_zh": "GO Fest 2026 哥本哈根",
+        "release_state": "released",
+        "official_sources": [
+          "https://pokemongo.com/news/mega-mewtwo-gofest-2026",
+          "https://pokemongo.com/en/news/save-the-date-go-fest-2026"
+        ],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "持票公園場次末30分鐘的超級超夢大型團體戰，獎勵帶當地 GO Fest 地標背景的超夢；另有城市體驗限時調查機會。其他名錄款的逐隻來源仍待核。 城市特殊調查的捷拉奧拉附當地背景；此特殊調查捕捉機會跨城市僅一次。名錄所列其他形態／隊長服裝的逐款條件仍待確認。",
+        "method_en": "Ticketed park Super Mega Raids award city-background Mewtwo; City Experience research adds another chance. Other variants remain under review. City Special Research Zeraora has the local background; its catch is once across all host cities. Remaining form/costume-specific routes are not yet established.",
+        "series": "GO Fest",
+        "series_zh": "GO Fest",
+        "year": "2026",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2026-copenhagen",
+          "https://leekduck.com/events/pokemon-go-fest-2026-copenhagen/",
+          "https://bulbapedia.bulbagarden.net/wiki/Zeraora_(GO)"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 78,
+            "name_en": "Candela-themed Rapidash",
+            "name_zh": "烈焰馬（Candela-themed Rapidash）",
+            "variant_id": "rapidash-spring-2023-valor",
+            "acquisition": "evolution"
+          }
+        ],
+        "checked_on": "2026-10-24",
+        "region_en": "To verify",
+        "region_zh": "地區待核對",
+        "verification_scope": "background-and-eligibility",
+        "method_status": "partial",
+        "start_date": "2026-06-11",
+        "end_date": "2026-06-14",
+        "date_note_zh": "此期間包含城市體驗限時調查；公園主活動日期另依票券。",
+        "date_note_en": "Range includes City Experience research; park dates follow the ticket.",
+        "reference_ids": [
+          "gf26_copenhagen"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "name_en": "GO Fest 2026 Copenhagen",
+        "type": "location",
+        "dates_source": "June 12th - 14th 2026",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/gf26_copenhagen.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 128,
+            "name_en": "Paldean Tauros Combat",
+            "name_zh": "肯泰羅",
+            "variant_id": "tauros-paldea-combat",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地三星團體戰，有機會附地標背景。",
+            "method_en": "Chance from the host-city three-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 150,
+            "name_en": "Mewtwo",
+            "name_zh": "超夢",
+            "variant_id": "mewtwo",
+            "acquisition": "encounter",
+            "method_zh": "公園場次最後30分鐘的超級團體戰保證地標背景；城市體驗另有分支限時調查。",
+            "method_en": "End-of-park Super Mega Raids guarantee the city background. City Experience also includes branching Timed Research.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 146,
+            "name_en": "Moltres",
+            "name_zh": "火焰鳥",
+            "variant_id": "moltres",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地傳說團體戰，有機會附地標背景。",
+            "method_en": "Chance from local five-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 146,
+            "name_en": "Shadow Moltres",
+            "name_zh": "火焰鳥",
+            "variant_id": "moltres-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 244,
+            "name_en": "Entei",
+            "name_zh": "炎帝",
+            "variant_id": "entei",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地傳說團體戰，有機會附地標背景。",
+            "method_en": "Chance from local five-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 244,
+            "name_en": "Shadow Entei",
+            "name_zh": "炎帝",
+            "variant_id": "entei-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 383,
+            "name_en": "Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加原始團體戰，捕獲的一般蓋歐卡／固拉多有機會附背景。",
+            "method_en": "Chance on regular Kyogre/Groudon caught from ticketed Primal Raids.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 383,
+            "name_en": "Shadow Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 382,
+            "name_en": "Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加原始團體戰，捕獲的一般蓋歐卡／固拉多有機會附背景。",
+            "method_en": "Chance on regular Kyogre/Groudon caught from ticketed Primal Raids.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 382,
+            "name_en": "Shadow Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 77,
+            "name_en": "Candela-themed Ponyta",
+            "name_zh": "小火馬（Candela-themed Ponyta）",
+            "variant_id": "ponyta-spring-2023-valor",
+            "acquisition": "encounter",
+            "method_zh": "此城市地標背景的個別發放方式未確認；全球隊伍特殊背景的 GO Pass 不能作為此款證據。",
+            "method_en": "This city Location Background route is unconfirmed. A global GO Pass with a team Special Background does not establish this city variant.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 807,
+            "name_en": "Zeraora",
+            "name_zh": "捷拉奧拉",
+            "variant_id": "zeraora",
+            "acquisition": "encounter",
+            "method_zh": "公園特殊調查獎勵；同年度跨城市只可捕捉一次捷拉奧拉，其後改發糖果。",
+            "method_en": "Park Special Research reward; one Zeraora catch across the host cities, with Candy replacing repeat rewards.",
+            "method_status": "reviewed"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "official-event-confirmed",
+        "background_id": "BG-0141",
+        "name_zh": "GO Fest 2026 哥本哈根",
+        "release_state": "released",
+        "official_sources": [
+          "https://pokemongo.com/news/mega-mewtwo-gofest-2026",
+          "https://pokemongo.com/en/news/save-the-date-go-fest-2026",
+          "https://pokemongo.com/en/news/know-before-you-go-gofest-2026-in-person-events"
+        ],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "有效票券時段的指定團體戰有機會獲得地標背景；暗影與一般形態分開列出。公園末30分鐘超級超夢團體戰保證背景。公園特殊調查獎勵捷拉奧拉；隊長服裝款的地標背景與個別取得條件仍未確認，不能套用全球隊伍特殊背景。",
+        "method_en": "Eligible ticketed raids offer a chance of the city background; Shadow and regular forms are distinct. End-of-park Super Mega Raids guarantee background Mewtwo. Park Special Research awards Zeraora. The city-background route for team-leader costumes remains unconfirmed; global team Special Backgrounds are separate.",
+        "series": "GO Fest",
+        "series_zh": "GO Fest",
+        "year": "2026",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2026-copenhagen",
+          "https://leekduck.com/events/pokemon-go-fest-2026-copenhagen/",
+          "https://bulbapedia.bulbagarden.net/wiki/Zeraora_(GO)"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 78,
+            "name_en": "Candela-themed Rapidash",
+            "name_zh": "烈焰馬（Candela-themed Rapidash）",
+            "variant_id": "rapidash-spring-2023-valor",
+            "acquisition": "evolution",
+            "method_zh": "由相同背景的原始服裝款進化保留；原始款地標背景資格仍待確認。",
+            "method_en": "Inherited by evolution only if the source costume has this city background; source eligibility remains unconfirmed.",
+            "method_status": "unconfirmed"
+          }
+        ],
+        "checked_on": "2026-10-24",
+        "region_en": "Denmark",
+        "region_zh": "丹麥",
+        "verification_scope": "background-and-eligibility",
+        "method_status": "partial",
+        "start_date": "2026-06-11",
+        "end_date": "2026-06-14",
+        "date_note_zh": "此期間包含城市體驗限時調查；公園主活動日期另依票券。",
+        "date_note_en": "Range includes City Experience research; park dates follow the ticket.",
+        "reference_ids": [
+          "gf26_copenhagen"
+        ],
+        "reference_review": "images-compared-2026-10-24",
+        "location_en": "Copenhagen"
+      }
+    },
+    {
+      "background_id": "BG-0190",
+      "fields_changed": [
+        "location_en",
+        "method_en",
+        "method_zh",
+        "pokemon",
+        "region_en",
+        "region_zh"
+      ],
+      "before": {
+        "name_en": "2026 Pokemon World Championships",
+        "type": "location",
+        "dates_source": "August 28th - 30th 2026",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/WCS2026_san_francisco.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 25,
+            "name_en": "World Championships 2026 Pikachu",
+            "name_zh": "皮卡丘（World Championships 2026 Pikachu）",
+            "variant_id": "pikachu-wcs-2026",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 25,
+            "name_en": "PokémonXP Pikachu",
+            "name_zh": "皮卡丘（PokémonXP Pikachu）",
+            "variant_id": "pikachu-pxp-2026",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 384,
+            "name_en": "Rayquaza",
+            "name_zh": "烈空坐",
+            "variant_id": "rayquaza",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 884,
+            "name_en": "Duraludon",
+            "name_zh": "鋁鋼龍",
+            "variant_id": "duraludon",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 909,
+            "name_en": "Fuecoco",
+            "name_zh": "呆火鱷",
+            "variant_id": "fuecoco",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 263,
+            "name_en": "Zigzagoon",
+            "name_zh": "蛇紋熊",
+            "variant_id": "zigzagoon",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 99,
+            "name_en": "Kingler",
+            "name_zh": "巨鉗蟹",
+            "variant_id": "kingler",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 87,
+            "name_en": "Dewgong",
+            "name_zh": "白海獅",
+            "variant_id": "dewgong",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 103,
+            "name_en": "Alolan Exeggutor",
+            "name_zh": "椰蛋樹",
+            "variant_id": "exeggutor-alola",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 150,
+            "name_en": "Mewtwo",
+            "name_zh": "超夢",
+            "variant_id": "mewtwo",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 460,
+            "name_en": "Abomasnow",
+            "name_zh": "暴雪王",
+            "variant_id": "abomasnow",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 306,
+            "name_en": "Aggron",
+            "name_zh": "波士可多拉",
+            "variant_id": "aggron",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 65,
+            "name_en": "Alakazam",
+            "name_zh": "胡地",
+            "variant_id": "alakazam",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 334,
+            "name_en": "Altaria",
+            "name_zh": "七夕青鳥",
+            "variant_id": "altaria",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 181,
+            "name_en": "Ampharos",
+            "name_zh": "電龍",
+            "variant_id": "ampharos",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 354,
+            "name_en": "Banette",
+            "name_zh": "詛咒娃娃",
+            "variant_id": "banette",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 15,
+            "name_en": "Beedrill",
+            "name_zh": "大針蜂",
+            "variant_id": "beedrill",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 323,
+            "name_en": "Camerupt",
+            "name_zh": "噴火駝",
+            "variant_id": "camerupt",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 149,
+            "name_en": "Dragonite",
+            "name_zh": "快龍",
+            "variant_id": "dragonite",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 870,
+            "name_en": "Falinks",
+            "name_zh": "列陣兵",
+            "variant_id": "falinks",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 94,
+            "name_en": "Gengar",
+            "name_zh": "耿鬼",
+            "variant_id": "gengar",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 362,
+            "name_en": "Glalie",
+            "name_zh": "冰鬼護",
+            "variant_id": "glalie",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 130,
+            "name_en": "Gyarados",
+            "name_zh": "暴鯉龍",
+            "variant_id": "gyarados",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 229,
+            "name_en": "Houndoom",
+            "name_zh": "黑魯加",
+            "variant_id": "houndoom",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 428,
+            "name_en": "Lopunny",
+            "name_zh": "長耳兔",
+            "variant_id": "lopunny",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 687,
+            "name_en": "Malamar",
+            "name_zh": "烏賊王",
+            "variant_id": "malamar",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 310,
+            "name_en": "Manectric",
+            "name_zh": "雷電獸",
+            "variant_id": "manectric",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 308,
+            "name_en": "Medicham",
+            "name_zh": "恰雷姆",
+            "variant_id": "medicham",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 127,
+            "name_en": "Pinsir",
+            "name_zh": "凱羅斯",
+            "variant_id": "pinsir",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 26,
+            "name_en": "Raichu",
+            "name_zh": "雷丘",
+            "variant_id": "raichu",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 319,
+            "name_en": "Sharpedo",
+            "name_zh": "巨牙鯊",
+            "variant_id": "sharpedo",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 227,
+            "name_en": "Skarmory",
+            "name_zh": "盔甲鳥",
+            "variant_id": "skarmory",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 80,
+            "name_en": "Slowbro",
+            "name_zh": "呆殼獸",
+            "variant_id": "slowbro",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 121,
+            "name_en": "Starmie",
+            "name_zh": "寶石海星",
+            "variant_id": "starmie",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 208,
+            "name_en": "Steelix",
+            "name_zh": "大鋼蛇",
+            "variant_id": "steelix",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 71,
+            "name_en": "Victreebel",
+            "name_zh": "大食花",
+            "variant_id": "victreebel",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 380,
+            "name_en": "Latias",
+            "name_zh": "拉帝亞斯"
+          },
+          {
+            "dex": 381,
+            "name_en": "Latios",
+            "name_zh": "拉帝歐斯"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "catalog-crosschecked",
+        "background_id": "BG-0190",
+        "name_zh": "2026 寶可夢世界錦標賽",
+        "release_state": "released",
+        "official_sources": [],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "舊金山指定地標現場團體戰與太空裝皮卡丘 GO 集章可得背景；田野調查亦有機會。超夢及其他超級團體戰款的逐隻發放條件仍待核對。 8/30超級超夢X Unity團體戰捕捉的普通超夢保證附城市背景，限現場參與；其他超級團體戰名單仍待逐款確認。",
+        "method_en": "Landmark raids and spacesuit Pikachu stamps award the city background; certain Field Research also offers it. August 30 on-site Mega Mewtwo X Unity Raids award regular Mewtwo with the city background. Other catalog-listed Mega raid variants remain unconfirmed.",
+        "series": "Other",
+        "series_zh": "其他活動",
+        "year": "2026",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2026-san-francisco",
+          "https://leekduck.com/events/pokemon-world-championships-2026-san-francisco/",
+          "https://pogomate.com/en/events/world-championships-2026"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 910,
+            "name_en": "Crocalor",
+            "name_zh": "炙燙鱷",
+            "variant_id": "crocalor",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 911,
+            "name_en": "Skeledirge",
+            "name_zh": "骨紋巨聲鱷",
+            "variant_id": "skeledirge",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 264,
+            "name_en": "Linoone",
+            "name_zh": "直衝熊",
+            "variant_id": "linoone",
+            "acquisition": "evolution"
+          }
+        ],
+        "checked_on": "2026-10-24",
+        "region_en": "To verify",
+        "region_zh": "地區待核對",
+        "verification_scope": "background-and-eligibility",
+        "method_status": "partial",
+        "start_date": "2026-08-28",
+        "end_date": "2026-08-30",
+        "reference_ids": [
+          "wc26_san_francisco",
+          "WCS2026_san_francisco"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "name_en": "2026 Pokemon World Championships",
+        "type": "location",
+        "dates_source": "August 28th - 30th 2026",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/WCS2026_san_francisco.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 25,
+            "name_en": "World Championships 2026 Pikachu",
+            "name_zh": "皮卡丘（World Championships 2026 Pikachu）",
+            "variant_id": "pikachu-wcs-2026",
+            "acquisition": "encounter",
+            "method_zh": "活動會場團體戰及現場田野調查；田野調查有背景機會，全球直播獎勵不能據此視為保證城市背景。",
+            "method_en": "Event Hall raids and local Field Research; research has a background chance. Global stream rewards alone do not guarantee this city background.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 25,
+            "name_en": "PokémonXP Pikachu",
+            "name_zh": "皮卡丘（PokémonXP Pikachu）",
+            "variant_id": "pikachu-pxp-2026",
+            "acquisition": "encounter",
+            "method_zh": "科斯莫古太空裝：當地 GO 集章最多6次背景遭遇，另有現場田野調查機會；不是 ESA 太空裝。",
+            "method_en": "Cosmog-themed spacesuit: up to six city Stamp Rally background encounters, plus local Field Research chances; distinct from the ESA astronaut costume.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 384,
+            "name_en": "Rayquaza",
+            "name_zh": "烈空坐",
+            "variant_id": "rayquaza",
+            "acquisition": "encounter",
+            "method_zh": "Moscone Center烈空坐專區指定地標現場團體戰保證地標背景；每個指定地點每日一次。",
+            "method_en": "Rayquaza Road at Moscone Center Special Raid Location guarantees the background; each designated location can be completed once daily.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 884,
+            "name_en": "Duraludon",
+            "name_zh": "鋁鋼龍",
+            "variant_id": "duraludon",
+            "acquisition": "encounter",
+            "method_zh": "Salesforce公園指定地標現場團體戰保證地標背景；每個指定地點每日一次。",
+            "method_en": "Salesforce Park Special Raid Location guarantees the background; each designated location can be completed once daily.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 909,
+            "name_en": "Fuecoco",
+            "name_zh": "呆火鱷",
+            "variant_id": "fuecoco",
+            "acquisition": "encounter",
+            "method_zh": "加州科學院指定地標現場團體戰保證地標背景；每個指定地點每日一次。",
+            "method_en": "California Academy of Sciences Special Raid Location guarantees the background; each designated location can be completed once daily.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 263,
+            "name_en": "Zigzagoon",
+            "name_zh": "蛇紋熊",
+            "variant_id": "zigzagoon",
+            "acquisition": "encounter",
+            "method_zh": "九曲花街指定地標現場團體戰保證地標背景；每個指定地點每日一次。",
+            "method_en": "Lombard Street Special Raid Location guarantees the background; each designated location can be completed once daily.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 99,
+            "name_en": "Kingler",
+            "name_zh": "巨鉗蟹",
+            "variant_id": "kingler",
+            "acquisition": "encounter",
+            "method_zh": "漁人碼頭指定地標現場團體戰保證地標背景；每個指定地點每日一次。",
+            "method_en": "Fisherman’s Wharf Special Raid Location guarantees the background; each designated location can be completed once daily.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 87,
+            "name_en": "Dewgong",
+            "name_zh": "白海獅",
+            "variant_id": "dewgong",
+            "acquisition": "encounter",
+            "method_zh": "39號碼頭指定地標現場團體戰保證地標背景；每個指定地點每日一次。",
+            "method_en": "Pier 39 Special Raid Location guarantees the background; each designated location can be completed once daily.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 103,
+            "name_en": "Alolan Exeggutor",
+            "name_zh": "椰蛋樹",
+            "variant_id": "exeggutor-alola",
+            "acquisition": "encounter",
+            "method_zh": "桃樂絲公園指定地標現場團體戰保證地標背景；每個指定地點每日一次。",
+            "method_en": "Dolores Park Special Raid Location guarantees the background; each designated location can be completed once daily.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 150,
+            "name_en": "Mewtwo",
+            "name_zh": "超夢",
+            "variant_id": "mewtwo",
+            "acquisition": "encounter",
+            "method_zh": "8/30現場超級超夢X Unity團體戰，捕獲普通超夢保證城市背景。",
+            "method_en": "August 30 in-person Mega Mewtwo X Unity raid; the regular Mewtwo encounter guarantees the city background.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 460,
+            "name_en": "Abomasnow",
+            "name_zh": "暴雪王",
+            "variant_id": "abomasnow",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 306,
+            "name_en": "Aggron",
+            "name_zh": "波士可多拉",
+            "variant_id": "aggron",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 65,
+            "name_en": "Alakazam",
+            "name_zh": "胡地",
+            "variant_id": "alakazam",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 334,
+            "name_en": "Altaria",
+            "name_zh": "七夕青鳥",
+            "variant_id": "altaria",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 181,
+            "name_en": "Ampharos",
+            "name_zh": "電龍",
+            "variant_id": "ampharos",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 354,
+            "name_en": "Banette",
+            "name_zh": "詛咒娃娃",
+            "variant_id": "banette",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 15,
+            "name_en": "Beedrill",
+            "name_zh": "大針蜂",
+            "variant_id": "beedrill",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 323,
+            "name_en": "Camerupt",
+            "name_zh": "噴火駝",
+            "variant_id": "camerupt",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 149,
+            "name_en": "Dragonite",
+            "name_zh": "快龍",
+            "variant_id": "dragonite",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 870,
+            "name_en": "Falinks",
+            "name_zh": "列陣兵",
+            "variant_id": "falinks",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 94,
+            "name_en": "Gengar",
+            "name_zh": "耿鬼",
+            "variant_id": "gengar",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 362,
+            "name_en": "Glalie",
+            "name_zh": "冰鬼護",
+            "variant_id": "glalie",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 130,
+            "name_en": "Gyarados",
+            "name_zh": "暴鯉龍",
+            "variant_id": "gyarados",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 229,
+            "name_en": "Houndoom",
+            "name_zh": "黑魯加",
+            "variant_id": "houndoom",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 428,
+            "name_en": "Lopunny",
+            "name_zh": "長耳兔",
+            "variant_id": "lopunny",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 687,
+            "name_en": "Malamar",
+            "name_zh": "烏賊王",
+            "variant_id": "malamar",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 310,
+            "name_en": "Manectric",
+            "name_zh": "雷電獸",
+            "variant_id": "manectric",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 308,
+            "name_en": "Medicham",
+            "name_zh": "恰雷姆",
+            "variant_id": "medicham",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 127,
+            "name_en": "Pinsir",
+            "name_zh": "凱羅斯",
+            "variant_id": "pinsir",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 26,
+            "name_en": "Raichu",
+            "name_zh": "雷丘",
+            "variant_id": "raichu",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 319,
+            "name_en": "Sharpedo",
+            "name_zh": "巨牙鯊",
+            "variant_id": "sharpedo",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 227,
+            "name_en": "Skarmory",
+            "name_zh": "盔甲鳥",
+            "variant_id": "skarmory",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 80,
+            "name_en": "Slowbro",
+            "name_zh": "呆殼獸",
+            "variant_id": "slowbro",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 121,
+            "name_en": "Starmie",
+            "name_zh": "寶石海星",
+            "variant_id": "starmie",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 208,
+            "name_en": "Steelix",
+            "name_zh": "大鋼蛇",
+            "variant_id": "steelix",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 71,
+            "name_en": "Victreebel",
+            "name_zh": "大食花",
+            "variant_id": "victreebel",
+            "acquisition": "encounter",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 380,
+            "name_en": "Latias",
+            "name_zh": "拉帝亞斯",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 381,
+            "name_en": "Latios",
+            "name_zh": "拉帝歐斯",
+            "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
+            "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
+            "method_status": "unconfirmed"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "catalog-crosschecked",
+        "background_id": "BG-0190",
+        "name_zh": "2026 寶可夢世界錦標賽",
+        "release_state": "released",
+        "official_sources": [],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "舊金山7個指定地標現場團體戰保證當地背景，每地每日一次；科斯莫古太空裝皮卡丘可由 GO 集章取得，最多6次。現場田野調查的兩款皮卡丘有背景機會。8/30超級超夢X Unity團體戰保證普通超夢城市背景。其他名錄超級團體戰款仍待逐隻核實。",
+        "method_en": "Seven designated San Francisco raid locations guarantee the city background, once daily per location. The Cosmog spacesuit Pikachu Stamp Rally offers up to six encounters; local Pikachu Field Research has a background chance. The August 30 Mega Mewtwo X Unity raid guarantees background Mewtwo. Other catalog-only Mega routes remain unconfirmed.",
+        "series": "Other",
+        "series_zh": "其他活動",
+        "year": "2026",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2026-san-francisco",
+          "https://leekduck.com/events/pokemon-world-championships-2026-san-francisco/",
+          "https://pogomate.com/en/events/world-championships-2026"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 910,
+            "name_en": "Crocalor",
+            "name_zh": "炙燙鱷",
+            "variant_id": "crocalor",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 911,
+            "name_en": "Skeledirge",
+            "name_zh": "骨紋巨聲鱷",
+            "variant_id": "skeledirge",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 264,
+            "name_en": "Linoone",
+            "name_zh": "直衝熊",
+            "variant_id": "linoone",
+            "acquisition": "evolution"
+          }
+        ],
+        "checked_on": "2026-10-24",
+        "region_en": "United States",
+        "region_zh": "美國",
+        "verification_scope": "background-and-eligibility",
+        "method_status": "partial",
+        "start_date": "2026-08-28",
+        "end_date": "2026-08-30",
+        "reference_ids": [
+          "wc26_san_francisco",
+          "WCS2026_san_francisco"
+        ],
+        "reference_review": "images-compared-2026-10-24",
+        "location_en": "San Francisco, California"
+      }
+    },
+    {
+      "background_id": "BG-0201",
+      "fields_changed": [
+        "checked_on",
+        "date_note_en",
+        "date_note_zh",
+        "end_date",
+        "method_en",
+        "method_zh",
+        "release_state",
+        "research_claim_end",
+        "research_claim_start"
+      ],
+      "before": {
+        "name_en": "City Safari - Boston",
+        "type": "location",
+        "dates_source": "September 26th - September 27th 2026",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/cs26_boston.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 133,
+            "name_en": "Explorer Hat Eevee",
+            "name_zh": "伊布（探險帽）",
+            "variant_id": "eevee-may-2023",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "official-event-confirmed",
+        "background_id": "BG-0201",
+        "name_zh": "城市冒險 - 波士頓",
+        "release_state": "upcoming",
+        "official_sources": [
+          "https://pokemongo.com/en/news/city-safari-boston-rescheduled"
+        ],
+        "notes": [
+          "延期至10/24–25；原持票者額外特殊調查須在波士頓轉補給站取得背景伊布；特殊調查領取期限至2028/10/23，不可解讀成全球直接發放背景。"
+        ],
+        "start_date": "2026-10-24",
+        "related_product_ids": [],
+        "method_zh": "原持票者領取額外特殊調查，再親自到波士頓轉補給站取得探險帽伊布與背景；沒有波士頓集章活動。",
+        "method_en": "Existing ticket holders obtain supplementary Special Research, then spin PokéStops in Boston for Explorer Hat Eevee with the background. There is no Boston Stamp Rally.",
+        "series": "City Safari",
+        "series_zh": "城市冒險",
+        "year": "2026",
+        "year_verified": true,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2026-boston"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 134,
+            "name_en": "Explorer Hat Vaporeon",
+            "name_zh": "水伊布（探險帽）",
+            "variant_id": "vaporeon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 135,
+            "name_en": "Explorer Hat Jolteon",
+            "name_zh": "雷伊布（探險帽）",
+            "variant_id": "jolteon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 136,
+            "name_en": "Explorer Hat Flareon",
+            "name_zh": "火伊布（探險帽）",
+            "variant_id": "flareon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 196,
+            "name_en": "Explorer Hat Espeon",
+            "name_zh": "太陽伊布（探險帽）",
+            "variant_id": "espeon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 197,
+            "name_en": "Explorer Hat Umbreon",
+            "name_zh": "月亮伊布（探險帽）",
+            "variant_id": "umbreon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 470,
+            "name_en": "Explorer Hat Leafeon",
+            "name_zh": "葉伊布（探險帽）",
+            "variant_id": "leafeon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 471,
+            "name_en": "Explorer Hat Glaceon",
+            "name_zh": "冰伊布（探險帽）",
+            "variant_id": "glaceon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 700,
+            "name_en": "Explorer Hat Sylveon",
+            "name_zh": "仙子伊布（探險帽）",
+            "variant_id": "sylveon-may-2023",
+            "acquisition": "evolution"
+          }
+        ],
+        "checked_on": "2026-10-23",
+        "region_en": "United States",
+        "region_zh": "美國",
+        "reference_ids": [
+          "cs26_boston"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "name_en": "City Safari - Boston",
+        "type": "location",
+        "dates_source": "September 26th - September 27th 2026",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/cs26_boston.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 133,
+            "name_en": "Explorer Hat Eevee",
+            "name_zh": "伊布（探險帽）",
+            "variant_id": "eevee-may-2023",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "official-event-confirmed",
+        "background_id": "BG-0201",
+        "name_zh": "城市冒險 - 波士頓",
+        "release_state": "released",
+        "official_sources": [
+          "https://pokemongo.com/en/news/city-safari-boston-rescheduled"
+        ],
+        "notes": [
+          "延期至10/24–25；原持票者額外特殊調查須在波士頓轉補給站取得背景伊布；特殊調查領取期限至2028/10/23，不可解讀成全球直接發放背景。"
+        ],
+        "start_date": "2026-10-24",
+        "related_product_ids": [],
+        "method_zh": "僅限未退款的原持票者：每個持票日各有一份額外特殊調查，每份最多9次探險帽伊布背景遭遇。2026/10/24～2028/10/23可在全球登入領取，但任務須到波士頓轉補給站；沒有波士頓 GO 集章。10/24～25全球野外活動不會直接發放背景伊布。",
+        "method_en": "Existing non-refunded ticket holders receive one supplementary Special Research per ticketed day, with up to nine background Eevee encounters per research. Claim worldwide from October 24, 2026 to October 23, 2028, but spin PokéStops in Boston to progress. No Boston Stamp Rally; the global October 24–25 event does not directly grant background Eevee.",
+        "series": "City Safari",
+        "series_zh": "城市冒險",
+        "year": "2026",
+        "year_verified": true,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2026-boston"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 134,
+            "name_en": "Explorer Hat Vaporeon",
+            "name_zh": "水伊布（探險帽）",
+            "variant_id": "vaporeon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 135,
+            "name_en": "Explorer Hat Jolteon",
+            "name_zh": "雷伊布（探險帽）",
+            "variant_id": "jolteon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 136,
+            "name_en": "Explorer Hat Flareon",
+            "name_zh": "火伊布（探險帽）",
+            "variant_id": "flareon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 196,
+            "name_en": "Explorer Hat Espeon",
+            "name_zh": "太陽伊布（探險帽）",
+            "variant_id": "espeon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 197,
+            "name_en": "Explorer Hat Umbreon",
+            "name_zh": "月亮伊布（探險帽）",
+            "variant_id": "umbreon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 470,
+            "name_en": "Explorer Hat Leafeon",
+            "name_zh": "葉伊布（探險帽）",
+            "variant_id": "leafeon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 471,
+            "name_en": "Explorer Hat Glaceon",
+            "name_zh": "冰伊布（探險帽）",
+            "variant_id": "glaceon-may-2023",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 700,
+            "name_en": "Explorer Hat Sylveon",
+            "name_zh": "仙子伊布（探險帽）",
+            "variant_id": "sylveon-may-2023",
+            "acquisition": "evolution"
+          }
+        ],
+        "checked_on": "2026-10-24",
+        "region_en": "United States",
+        "region_zh": "美國",
+        "reference_ids": [
+          "cs26_boston"
+        ],
+        "reference_review": "images-compared-2026-10-24",
+        "end_date": "2026-10-25",
+        "research_claim_start": "2026-10-24",
+        "research_claim_end": "2028-10-23",
+        "date_note_zh": "10/24～25為延期活動日期；特殊調查領取期另至2028/10/23，官方未把該日列為已領取特殊調查的完成期限。",
+        "date_note_en": "October 24–25 is the rescheduled event. October 23, 2028 is the research claim deadline, not an announced completion deadline for already claimed Special Research."
+      }
+    },
+    {
+      "background_id": "BG-0209",
+      "fields_changed": [
+        "catalog_sources",
+        "date_note_en",
+        "date_note_zh",
+        "date_status",
+        "dates_source",
+        "method_status",
+        "official_sources",
+        "start_date",
+        "verification_note_en",
+        "verification_note_zh",
+        "verification_scope"
+      ],
+      "before": {
+        "name_en": "Pokelid Nagano",
+        "type": "location",
+        "dates_source": "2026",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/sr26_nagano.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 25,
+            "name_en": "Pikachu",
+            "name_zh": "皮卡丘",
+            "variant_id": "pikachu",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "catalog-crosschecked",
+        "background_id": "BG-0209",
+        "name_zh": "寶可夢人孔蓋－長野",
+        "release_state": "released",
+        "official_sources": [],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "親自到訪同一都道府縣的寶可夢人孔蓋補給站，每收集兩枚當地印章，獲得帶該地背景的皮卡丘；好友贈送印章不計入遭遇獎勵。",
+        "method_en": "Collect two in-person Poké Lid stamps in the same prefecture to encounter Pikachu with that prefecture’s background. Gifted stamps do not count toward encounters.",
+        "series": "Poké Lids",
+        "series_zh": "寶可夢人孔蓋",
+        "year": "2026",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokelid-nagano",
+          "https://pogomate.com/en/datamining/cardinals-nagano-location-cards"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 26,
+            "name_en": "Raichu",
+            "name_zh": "雷丘",
+            "variant_id": "raichu",
+            "acquisition": "evolution"
+          }
+        ],
+        "checked_on": "2026-10-24",
+        "region_en": "Japan",
+        "region_zh": "日本",
+        "verification_scope": "background-and-eligibility",
+        "date_status": "needs-verification",
+        "verification_note_zh": "背景與適用寶可夢已交叉比對名錄；來源活動日期不一致或不完整，精確日期仍待核對。",
+        "verification_note_en": "The background and eligible Pokémon have been cross-checked. Source dates disagree or are incomplete; exact dates remain under review.",
+        "date_note_zh": "9/26為素材發現日；非首次發放日。名錄可見皮卡丘，但精確遊戲開放日仍缺官方證據。",
+        "date_note_en": "September 26 is asset detection, not release. Exact first in-game availability remains unconfirmed.",
+        "reference_ids": [
+          "pokelid_nagano",
+          "sr26_nagano"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "name_en": "Pokelid Nagano",
+        "type": "location",
+        "dates_source": "October 1st 2026 onwards",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/sr26_nagano.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 25,
+            "name_en": "Pikachu",
+            "name_zh": "皮卡丘",
+            "variant_id": "pikachu",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "catalog-crosschecked",
+        "background_id": "BG-0209",
+        "name_zh": "寶可夢人孔蓋－長野",
+        "release_state": "released",
+        "official_sources": [
+          "https://pokemongo.com/ja/news/pokelid_full"
+        ],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "親自到訪同一都道府縣的寶可夢人孔蓋補給站，每收集兩枚當地印章，獲得帶該地背景的皮卡丘；好友贈送印章不計入遭遇獎勵。",
+        "method_en": "Collect two in-person Poké Lid stamps in the same prefecture to encounter Pikachu with that prefecture’s background. Gifted stamps do not count toward encounters.",
+        "series": "Poké Lids",
+        "series_zh": "寶可夢人孔蓋",
+        "year": "2026",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokelid-nagano",
+          "https://pogomate.com/en/datamining/cardinals-nagano-location-cards",
+          "https://pokemongo-raku.com/post130804",
+          "https://note.com/chic_badger3860/n/nb32c45620191"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 26,
+            "name_en": "Raichu",
+            "name_zh": "雷丘",
+            "variant_id": "raichu",
+            "acquisition": "evolution"
+          }
+        ],
+        "checked_on": "2026-10-24",
+        "region_en": "Japan",
+        "region_zh": "日本",
+        "verification_scope": "community-date-and-official-general-mechanism",
+        "date_status": "catalog-crosschecked",
+        "verification_note_zh": "10/1開始日由兩份社群來源交叉核對；官方來源支持一般人孔蓋集章規則，並未單獨公告此開始日。",
+        "verification_note_en": "October 1 is cross-checked against two community sources. Official sources support the general rally rules, not this specific rollout date.",
+        "date_note_zh": "2026/10/1 起實裝。9/26 是素材加入資料的發現日；7/9 是實體人孔蓋公布日，均非遊戲背景發放日。開始日期由兩份非官方來源交叉核對。",
+        "date_note_en": "Available from October 1, 2026, cross-checked against two community sources. September 26 is the asset-discovery date, and July 9 the physical lid announcement, not the in-game release.",
+        "reference_ids": [
+          "pokelid_nagano",
+          "sr26_nagano"
+        ],
+        "reference_review": "images-compared-2026-10-24",
+        "start_date": "2026-10-01",
+        "method_status": "reviewed"
+      }
+    },
+    {
+      "background_id": "BG-0238",
+      "fields_changed": [
+        "pokemon"
+      ],
+      "before": {
+        "name_en": "GO Wild Area 2025",
+        "type": "special",
+        "dates_source": "November 15th - 16th 2025",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/gwa25_global.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 249,
+            "name_en": "Shadow Lugia",
+            "name_zh": "洛奇亞",
+            "variant_id": "lugia-shadow",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 250,
+            "name_en": "Shadow Ho-Oh",
+            "name_zh": "鳳王",
+            "variant_id": "ho-oh-shadow",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 785,
+            "name_en": "Tapu Koko",
+            "name_zh": "卡璞・鳴鳴",
+            "variant_id": "tapu-koko",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 786,
+            "name_en": "Tapu Lele",
+            "name_zh": "卡璞・蝶蝶",
+            "variant_id": "tapu-lele",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 787,
+            "name_en": "Tapu Bulu",
+            "name_zh": "卡璞・哞哞",
+            "variant_id": "tapu-bulu",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 788,
+            "name_en": "Tapu Fini",
+            "name_zh": "卡璞・鰭鰭",
+            "variant_id": "tapu-fini",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 800,
+            "name_en": "Necrozma",
+            "name_zh": "奈克洛茲瑪",
+            "variant_id": "necrozma",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 488,
+            "name_en": "Shadow Cresselia",
+            "name_zh": "克雷色利亞",
+            "variant_id": "cresselia-shadow",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 491,
+            "name_en": "Shadow Darkrai",
+            "name_zh": "達克萊伊",
+            "variant_id": "darkrai-shadow",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 760,
+            "name_en": "Wilderness Cape Bewear",
+            "name_zh": "穿著熊（Wilderness Cape Bewear）",
+            "variant_id": "bewear-wildarea-2025",
+            "acquisition": "encounter"
+          },
+          {
+            "dex": 861,
+            "name_en": "Gigantamax Grimmsnarl",
+            "name_zh": "長毛巨魔",
+            "variant_id": "grimmsnarl-gigantamax",
+            "acquisition": "encounter"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "official-event-confirmed",
+        "background_id": "BG-0238",
+        "name_zh": "曠野地帶 2025",
+        "release_state": "released",
+        "official_sources": [
+          "https://pokemongo.com/news/into-the-wild-2025"
+        ],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "11/10–14 Into the Wild：指定五星／暗影五星團體戰捕捉暗影洛奇亞、暗影鳳王、四隻卡璞與奈克洛茲瑪時有背景機會。11/15–16全球活動：暗影克雷色利亞、暗影達克萊伊、披風穿著熊及超極巨長毛巨魔由團體戰／極巨對戰機率取得。特殊調查的個別背景保證條件仍待確認。",
+        "method_en": "Nov 10–14 Into the Wild: eligible five-star/Shadow raids offer background Shadow Lugia, Shadow Ho-Oh, the four Tapu and Necrozma. Nov 15–16 Global: raids/Max Battles offer Shadow Cresselia, Shadow Darkrai, caped Bewear and Gigantamax Grimmsnarl. Individual Special Research guarantees still require confirmation.",
+        "series": "GO Wild Area",
+        "series_zh": "曠野地帶",
+        "year": "2025",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/sb-gowildarea-2025-global",
+          "https://leekduck.com/events/pokemon-go-wild-area-2025-global/"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 800,
+            "name_en": "Necrozma Dawn Wings",
+            "name_zh": "奈克洛茲瑪",
+            "variant_id": "necrozma-dawn-wings",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 800,
+            "name_en": "Necrozma Dusk Mane",
+            "name_zh": "奈克洛茲瑪",
+            "variant_id": "necrozma-dusk-mane",
+            "acquisition": "evolution"
+          }
+        ],
+        "checked_on": "2026-10-24",
+        "region_en": "Multiple regions",
+        "region_zh": "多地／全球活動",
+        "verification_scope": "background-and-eligibility",
+        "method_status": "partial",
+        "start_date": "2025-11-10",
+        "end_date": "2025-11-16",
+        "reference_ids": [
+          "gwa25_global"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "name_en": "GO Wild Area 2025",
+        "type": "special",
+        "dates_source": "November 15th - 16th 2025",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/gwa25_global.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 249,
+            "name_en": "Shadow Lugia",
+            "name_zh": "洛奇亞",
+            "variant_id": "lugia-shadow",
+            "acquisition": "encounter",
+            "method_zh": "2025/11/10～14 深入曠野的指定傳說／暗影傳說團體戰，有機會附背景。",
+            "method_en": "Chance from designated five-star or five-star Shadow raids during Into the Wild, November 10–14, 2025.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 250,
+            "name_en": "Shadow Ho-Oh",
+            "name_zh": "鳳王",
+            "variant_id": "ho-oh-shadow",
+            "acquisition": "encounter",
+            "method_zh": "2025/11/10～14 深入曠野的指定傳說／暗影傳說團體戰，有機會附背景。",
+            "method_en": "Chance from designated five-star or five-star Shadow raids during Into the Wild, November 10–14, 2025.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 785,
+            "name_en": "Tapu Koko",
+            "name_zh": "卡璞・鳴鳴",
+            "variant_id": "tapu-koko",
+            "acquisition": "encounter",
+            "method_zh": "2025/11/10～14 深入曠野的指定傳說／暗影傳說團體戰，有機會附背景。",
+            "method_en": "Chance from designated five-star or five-star Shadow raids during Into the Wild, November 10–14, 2025.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 786,
+            "name_en": "Tapu Lele",
+            "name_zh": "卡璞・蝶蝶",
+            "variant_id": "tapu-lele",
+            "acquisition": "encounter",
+            "method_zh": "2025/11/10～14 深入曠野的指定傳說／暗影傳說團體戰，有機會附背景。",
+            "method_en": "Chance from designated five-star or five-star Shadow raids during Into the Wild, November 10–14, 2025.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 787,
+            "name_en": "Tapu Bulu",
+            "name_zh": "卡璞・哞哞",
+            "variant_id": "tapu-bulu",
+            "acquisition": "encounter",
+            "method_zh": "2025/11/10～14 深入曠野的指定傳說／暗影傳說團體戰，有機會附背景。",
+            "method_en": "Chance from designated five-star or five-star Shadow raids during Into the Wild, November 10–14, 2025.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 788,
+            "name_en": "Tapu Fini",
+            "name_zh": "卡璞・鰭鰭",
+            "variant_id": "tapu-fini",
+            "acquisition": "encounter",
+            "method_zh": "2025/11/10～14 深入曠野的指定傳說／暗影傳說團體戰，有機會附背景。",
+            "method_en": "Chance from designated five-star or five-star Shadow raids during Into the Wild, November 10–14, 2025.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 800,
+            "name_en": "Necrozma",
+            "name_zh": "奈克洛茲瑪",
+            "variant_id": "necrozma",
+            "acquisition": "encounter",
+            "method_zh": "2025/11/10～14 深入曠野的指定傳說／暗影傳說團體戰，有機會附背景。",
+            "method_en": "Chance from designated five-star or five-star Shadow raids during Into the Wild, November 10–14, 2025.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 488,
+            "name_en": "Shadow Cresselia",
+            "name_zh": "克雷色利亞",
+            "variant_id": "cresselia-shadow",
+            "acquisition": "encounter",
+            "method_zh": "2025/11/15 暗影傳說團體戰有機會附背景；調查獎勵是否保證背景仍待確認。",
+            "method_en": "Chance from five-star Shadow Raids on November 15, 2025; a guaranteed research background remains unconfirmed.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 491,
+            "name_en": "Shadow Darkrai",
+            "name_zh": "達克萊伊",
+            "variant_id": "darkrai-shadow",
+            "acquisition": "encounter",
+            "method_zh": "2025/11/16 暗影傳說團體戰有機會附背景；調查獎勵是否保證背景仍待確認。",
+            "method_en": "Chance from five-star Shadow Raids on November 16, 2025; a guaranteed research background remains unconfirmed.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 760,
+            "name_en": "Wilderness Cape Bewear",
+            "name_zh": "穿著熊（Wilderness Cape Bewear）",
+            "variant_id": "bewear-wildarea-2025",
+            "acquisition": "encounter",
+            "method_zh": "2025/11/15～16 三星團體戰的荒野披風穿著熊，有機會附背景。",
+            "method_en": "Chance from wilderness-cape Bewear three-star raids, November 15–16, 2025.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 861,
+            "name_en": "Gigantamax Grimmsnarl",
+            "name_zh": "長毛巨魔",
+            "variant_id": "grimmsnarl-gigantamax",
+            "acquisition": "encounter",
+            "method_zh": "2025/11/15～16 六星極巨對戰有機會附背景；特殊調查遭遇長毛巨魔不等於已證實保證背景。",
+            "method_en": "Chance from six-star Max Battles, November 15–16, 2025; the Special Research encounter is not proof of a guaranteed background.",
+            "method_status": "reviewed"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "official-event-confirmed",
+        "background_id": "BG-0238",
+        "name_zh": "曠野地帶 2025",
+        "release_state": "released",
+        "official_sources": [
+          "https://pokemongo.com/news/into-the-wild-2025"
+        ],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "11/10–14 Into the Wild：指定五星／暗影五星團體戰捕捉暗影洛奇亞、暗影鳳王、四隻卡璞與奈克洛茲瑪時有背景機會。11/15–16全球活動：暗影克雷色利亞、暗影達克萊伊、披風穿著熊及超極巨長毛巨魔由團體戰／極巨對戰機率取得。特殊調查的個別背景保證條件仍待確認。",
+        "method_en": "Nov 10–14 Into the Wild: eligible five-star/Shadow raids offer background Shadow Lugia, Shadow Ho-Oh, the four Tapu and Necrozma. Nov 15–16 Global: raids/Max Battles offer Shadow Cresselia, Shadow Darkrai, caped Bewear and Gigantamax Grimmsnarl. Individual Special Research guarantees still require confirmation.",
+        "series": "GO Wild Area",
+        "series_zh": "曠野地帶",
+        "year": "2025",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/sb-gowildarea-2025-global",
+          "https://leekduck.com/events/pokemon-go-wild-area-2025-global/"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 800,
+            "name_en": "Necrozma Dawn Wings",
+            "name_zh": "奈克洛茲瑪",
+            "variant_id": "necrozma-dawn-wings",
+            "acquisition": "evolution"
+          },
+          {
+            "dex": 800,
+            "name_en": "Necrozma Dusk Mane",
+            "name_zh": "奈克洛茲瑪",
+            "variant_id": "necrozma-dusk-mane",
+            "acquisition": "evolution"
+          }
+        ],
+        "checked_on": "2026-10-24",
+        "region_en": "Multiple regions",
+        "region_zh": "多地／全球活動",
+        "verification_scope": "background-and-eligibility",
+        "method_status": "partial",
+        "start_date": "2025-11-10",
+        "end_date": "2025-11-16",
+        "reference_ids": [
+          "gwa25_global"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      }
+    },
+    {
+      "background_id": "BG-0276",
+      "fields_changed": [
+        "evidence_reviewed_on"
+      ],
+      "before": {
+        "background_id": "BG-0276",
+        "name_zh": "球場背景素材（活動待確認）",
+        "name_en": "Stadium background asset — event unconfirmed",
+        "type": "location",
+        "series": "Unconfirmed artwork",
+        "series_zh": "待確認素材",
+        "region_en": "",
+        "region_zh": "",
+        "year": "",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/brazil_2026.webp?v=20260816",
+        "source": "https://pokexperience.com/backgrounds/",
+        "catalog_sources": [
+          "https://pokexperience.com/backgrounds/"
+        ],
+        "official_sources": [],
+        "verification": "catalogued-needs-event-check",
+        "release_state": "needs-verification",
+        "pokemon": [],
+        "evolved_pokemon": [],
+        "related_product_ids": [],
+        "method_zh": "僅有名錄圖片，沒有可靠的活動、日期、適用寶可夢與發放證據；不作為已推出收藏款。",
+        "method_en": "Catalog image only: event, dates, eligible Pokémon and distribution are not established. Not a confirmed release.",
+        "method_status": "unconfirmed",
+        "checked_on": "2026-10-24",
+        "notes": [
+          "來源檔名不是活動地區或發放證據。"
+        ],
+        "notes_en": [
+          "A source filename does not establish its event, region or release."
+        ],
+        "reference_ids": [
+          "brazil_2026"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "background_id": "BG-0276",
+        "name_zh": "球場背景素材（活動待確認）",
+        "name_en": "Stadium background asset — event unconfirmed",
+        "type": "location",
+        "series": "Unconfirmed artwork",
+        "series_zh": "待確認素材",
+        "region_en": "",
+        "region_zh": "",
+        "year": "",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/brazil_2026.webp?v=20260816",
+        "source": "https://pokexperience.com/backgrounds/",
+        "catalog_sources": [
+          "https://pokexperience.com/backgrounds/"
+        ],
+        "official_sources": [],
+        "verification": "catalogued-needs-event-check",
+        "release_state": "needs-verification",
+        "pokemon": [],
+        "evolved_pokemon": [],
+        "related_product_ids": [],
+        "method_zh": "僅有名錄圖片，沒有可靠的活動、日期、適用寶可夢與發放證據；不作為已推出收藏款。",
+        "method_en": "Catalog image only: event, dates, eligible Pokémon and distribution are not established. Not a confirmed release.",
+        "method_status": "unconfirmed",
+        "checked_on": "2026-10-24",
+        "notes": [
+          "來源檔名不是活動地區或發放證據。"
+        ],
+        "notes_en": [
+          "A source filename does not establish its event, region or release."
+        ],
+        "reference_ids": [
+          "brazil_2026"
+        ],
+        "reference_review": "images-compared-2026-10-24",
+        "evidence_reviewed_on": "2026-10-24"
+      }
+    },
+    {
+      "background_id": "BG-0277",
+      "fields_changed": [
+        "evidence_reviewed_on"
+      ],
+      "before": {
+        "background_id": "BG-0277",
+        "name_zh": "城市夜景背景素材（活動待確認）",
+        "name_en": "City nightscape asset — event unconfirmed",
+        "type": "location",
+        "series": "Unconfirmed artwork",
+        "series_zh": "待確認素材",
+        "region_en": "",
+        "region_zh": "",
+        "year": "",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/costa_rica_2026.webp?v=20260816",
+        "source": "https://pokexperience.com/backgrounds/",
+        "catalog_sources": [
+          "https://pokexperience.com/backgrounds/"
+        ],
+        "official_sources": [],
+        "verification": "catalogued-needs-event-check",
+        "release_state": "needs-verification",
+        "pokemon": [],
+        "evolved_pokemon": [],
+        "related_product_ids": [],
+        "method_zh": "僅有名錄圖片，沒有可靠的活動、日期、適用寶可夢與發放證據；不作為已推出收藏款。",
+        "method_en": "Catalog image only: event, dates, eligible Pokémon and distribution are not established. Not a confirmed release.",
+        "method_status": "unconfirmed",
+        "checked_on": "2026-10-24",
+        "notes": [
+          "來源檔名不是活動地區或發放證據。"
+        ],
+        "notes_en": [
+          "A source filename does not establish its event, region or release."
+        ],
+        "reference_ids": [
+          "costa_rica_2026"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "background_id": "BG-0277",
+        "name_zh": "城市夜景背景素材（活動待確認）",
+        "name_en": "City nightscape asset — event unconfirmed",
+        "type": "location",
+        "series": "Unconfirmed artwork",
+        "series_zh": "待確認素材",
+        "region_en": "",
+        "region_zh": "",
+        "year": "",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/costa_rica_2026.webp?v=20260816",
+        "source": "https://pokexperience.com/backgrounds/",
+        "catalog_sources": [
+          "https://pokexperience.com/backgrounds/"
+        ],
+        "official_sources": [],
+        "verification": "catalogued-needs-event-check",
+        "release_state": "needs-verification",
+        "pokemon": [],
+        "evolved_pokemon": [],
+        "related_product_ids": [],
+        "method_zh": "僅有名錄圖片，沒有可靠的活動、日期、適用寶可夢與發放證據；不作為已推出收藏款。",
+        "method_en": "Catalog image only: event, dates, eligible Pokémon and distribution are not established. Not a confirmed release.",
+        "method_status": "unconfirmed",
+        "checked_on": "2026-10-24",
+        "notes": [
+          "來源檔名不是活動地區或發放證據。"
+        ],
+        "notes_en": [
+          "A source filename does not establish its event, region or release."
+        ],
+        "reference_ids": [
+          "costa_rica_2026"
+        ],
+        "reference_review": "images-compared-2026-10-24",
+        "evidence_reviewed_on": "2026-10-24"
+      }
+    }
+  ]
+}
