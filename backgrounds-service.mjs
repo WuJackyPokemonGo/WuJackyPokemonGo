@@ -39,3 +39,14 @@ export function backgroundArtworkGallery(row,referenceData){
  const entries=[{image_url:main,label_zh:'主要參考圖',label_en:'Main reference',source_url:row.artwork_preview_source||row.source},...(Array.isArray(row.artwork_variants)?row.artwork_variants:[])];
  return entries.filter(e=>{const url=safeBackgroundImage(e?.image_url);if(!url||seen.has(url))return false;seen.add(url);return true}).map(e=>({...e,image_url:safeBackgroundImage(e.image_url),source_url:safeSource(e.source_url)}));
 }
+
+// Presentation only: preserve all source rows, IDs, artwork and deep links.
+export const ANCIENTS_RECOVERED_IDS=Object.freeze(['BG-0265','BG-0271','BG-0272','BG-0273','BG-0274','BG-0275']);
+export function groupBackgroundCards(rows,{eligibleRows=rows}={}){
+ const ids=new Set(ANCIENTS_RECOVERED_IDS),matchedIds=rows.filter(r=>ids.has(r.background_id)).map(r=>r.background_id);
+ if(!matchedIds.length)return [...rows];
+ const members=ANCIENTS_RECOVERED_IDS.map(id=>eligibleRows.find(r=>r.background_id===id)).filter(Boolean);
+ const group={activity_id:'ancients-recovered',members,matchedIds};
+ let inserted=false;
+ return rows.flatMap(r=>{if(!ids.has(r.background_id))return [r];if(inserted)return [];inserted=true;return [group]});
+}

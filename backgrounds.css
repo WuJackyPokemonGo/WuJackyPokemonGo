@@ -27,3 +27,21 @@ dialog{background:#fffdf5;color:#493b1d;border:1px solid #decd9f;border-radius:1
 }
 
 .carddetail{display:block;align-self:flex-end;margin-top:auto;padding-top:12px;font-size:12px;line-height:1.6;color:#825c10;white-space:nowrap}
+
+/* Only Ancients Recovered is grouped; source entries stay independent. */
+.activity-group{min-width:0;align-self:start}
+.activity-group.is-expanded{grid-column:1/-1}
+.activity-summary{cursor:pointer;list-style:none;width:100%;box-sizing:border-box}
+.activity-summary::-webkit-details-marker{display:none}
+.activity-summary:focus-visible{outline:3px solid #a46a09;outline-offset:-3px}
+.activity-mosaic{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;background:#fff6d9;align-content:center}
+.activity-mosaic .picture{position:relative;display:block;aspect-ratio:1;min-width:0;width:100%;height:auto}
+.activity-mosaic .picture img,.activity-variant .picture img{object-fit:contain}
+.activity-variants{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:12px;background:#fff9e8;border-top:1px solid #e9dfbe}
+.activity-variant{min-width:0}
+.activity-variant .cardbutton{display:flex;flex-direction:column;height:100%;min-width:0}
+.activity-variant .cardvisual{width:100%;aspect-ratio:1;min-height:0;border-right:0;border-bottom:1px solid #e9dfbe}
+.activity-variant .cardbody{flex:1;width:100%;box-sizing:border-box}
+.activity-variant .cardname,.activity-variant .english{display:block;overflow:visible;white-space:normal;overflow-wrap:anywhere;-webkit-line-clamp:unset}
+.activity-variant.search-match{outline:2px solid #b68114;outline-offset:-2px}
+@media(max-width:700px){.activity-variants{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:8px}.activity-mosaic{aspect-ratio:3/2}.activity-variant .cardbody{padding:10px 8px}}
