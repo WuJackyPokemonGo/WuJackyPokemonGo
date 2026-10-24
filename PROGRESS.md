@@ -4,7 +4,7 @@
 
 新增0、刪除0、修正16筆，維持276筆。長野實際開始日補為10/1（兩份社群來源交叉核對）；波士頓補延期規則及領取期、標為已推出；逐隻取得方式補正與不確定款式明示；7筆活動地區補齊。目前269筆已推出活動紀錄、4筆即將推出、3筆未確認素材。日期待核3筆、取得條件部分待核9筆、圖樣待核3筆，互有重疊，共9筆。`complete:false`。
 
-測試155/155、build通過。新增詳情見 `docs/BACKGROUND-EVIDENCE-REVIEW-2026-10-24.md` 與逐欄差異 `docs/backgrounds-evidence-review-2026-10-24.json`。發布狀態見 `docs/background-evidence-deployment-2026-10-24.json`（待發布驗證後建立）。舊輪次部署與計數為歷史紀錄，不能代替本輪驗證。
+測試155/155、build通過。新增詳情見 `docs/BACKGROUND-EVIDENCE-REVIEW-2026-10-24.md` 與逐欄差異 `docs/backgrounds-evidence-review-2026-10-24.json`。發布狀態見 `docs/background-evidence-deployment-2026-10-24.json`。本輪提交02f9634，CI及Pages成功，公開JSON、HTML、bundle逐位元相符。公開RPC：11商品、0覆寫、276合併紀錄、269已推出、4即將推出、3待核、16有效商品關聯、0無效關聯。舊輪次部署與計數為歷史紀錄。
 
 ## 前次：第二輪來源圖片整理
 

@@ -50,3 +50,5 @@
 - 更新圖鑑JSON和背景bundle快取版本；既有中英文搜尋、篩選與穩定ID回歸測試通過。
 - 完整16筆逐欄修改前後差異：`backgrounds-evidence-review-2026-10-24.json`。
 - 本輪沒有重新逐像素比對345張圖片，也沒有重新宣稱全量歷史發放條件已證實。
+
+發布驗證：提交 `02f963448b50552a12199f785087a137b1b41755` 的Store checks與Pages部署成功；公開JSON、HTML與背景bundle逐位元一致。公開RPC核對11商品、0覆寫、276紀錄、16筆有效商品關聯、0無效關聯。未重做視覺截圖。詳見 `background-evidence-deployment-2026-10-24.json`。

@@ -1,0 +1,36 @@
+{
+  "commit": "02f963448b50552a12199f785087a137b1b41755",
+  "ci": "success",
+  "pages": "success",
+  "tests_passed": 155,
+  "build": "success",
+  "files": [
+    {
+      "path": "data/backgrounds.json",
+      "matches": true,
+      "sha256": "2e2b175881dda983a2c7aa92727c16b0e650997c62b7ec2e5cfcd73b06f96bac"
+    },
+    {
+      "path": "backgrounds.html",
+      "matches": true,
+      "sha256": "6d37127c677bc2954f516bc5e47563aa76388644ede9be291ee0d2376ffbd501"
+    },
+    {
+      "path": "assets/backgrounds.bundle.js",
+      "matches": true,
+      "sha256": "87c029e0252b1b6a1bbb3cc950bee55c1b9399399b213bc58f2860b09428eda9"
+    }
+  ],
+  "public_rpc": {
+    "products": 11,
+    "overrides": 0,
+    "records": 276,
+    "checked": 269,
+    "upcoming": 4,
+    "pending": 3,
+    "linked_records": 16,
+    "invalid_links": 0
+  },
+  "visual_browser_check": "not repeated; data-only corrections use the existing detail layout",
+  "complete": false
+}
