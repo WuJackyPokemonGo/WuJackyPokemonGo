@@ -1,0 +1,13 @@
+{
+  "commit": "66824e8d8e91acee39de36eb96262b810c03e4a0",
+  "tests_passed": 160,
+  "ci": "success",
+  "pages": "success",
+  "mobile_width": 390,
+  "visible_cards": 48,
+  "visible_chinese_detail_cues": 48,
+  "visible_english_detail_cues": 48,
+  "detail_cue_alignment": "bottom right, flex-end",
+  "clicked_detail_opens_dialog": true,
+  "screenshot": "docs/images/mobile-detail-link-live-2026-10-24.jpg"
+}
