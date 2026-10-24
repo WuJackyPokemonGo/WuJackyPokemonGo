@@ -41,7 +41,7 @@ export function backgroundArtworkGallery(row,referenceData){
 }
 
 // Presentation only: preserve all source rows, IDs, artwork and deep links.
-export const ANCIENTS_RECOVERED_IDS=Object.freeze(['BG-0265','BG-0271','BG-0272','BG-0273','BG-0274','BG-0275']);
+export const ANCIENTS_RECOVERED_IDS=/* @__PURE__ */Object.freeze(['BG-0265','BG-0271','BG-0272','BG-0273','BG-0274','BG-0275']);
 export function groupBackgroundCards(rows,{eligibleRows=rows}={}){
  const ids=new Set(ANCIENTS_RECOVERED_IDS),matchedIds=rows.filter(r=>ids.has(r.background_id)).map(r=>r.background_id);
  if(!matchedIds.length)return [...rows];

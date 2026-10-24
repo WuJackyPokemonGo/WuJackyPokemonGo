@@ -47,3 +47,8 @@
   - 第二階段：串接金流，付款成功更新訂單與扣庫存，未付款逾期釋放保留庫存，避免超賣。
   - 第三階段：依商品交付條件評估自動交付；需好友、星塵或約時間交易的商品保留人工流程。
   - 商品可分別設定直接購買或先詢價；沿用既有商品、庫存、中英文搜尋及後台功能。
+
+
+## 2026-10-24 Ancients Recovered presentation grouping
+
+Six original Regi records remain unchanged; one expandable activity card, two-column mobile children, contain artwork, original modal/deep links. 187 tests passed. Production browser: 18 CN/EN/dex searches, six modal IDs, 320/390/430px, collapse and year/type filtering passed. Other activities: 44 review options only, no grouping applied. Full report: docs/background-grouping-review.html. Raw data still 276 / released 269.
