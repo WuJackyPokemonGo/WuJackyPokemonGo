@@ -1,0 +1,36 @@
+{
+  "commit": "76b2fb9e72664cef43b412eaabc4522710a8f1df",
+  "ci": "success",
+  "pages": "success",
+  "tests_passed": 156,
+  "build": "success",
+  "records": 276,
+  "added": 0,
+  "changed": 2,
+  "review_counts": {
+    "date_details_pending": 3,
+    "acquisition_method_pending": 8,
+    "backgrounds_pending": 3
+  },
+  "remaining_unique_records": 8,
+  "complete": false,
+  "live_files": [
+    {
+      "path": "data/backgrounds.json",
+      "matches": true,
+      "sha256": "cb910de6f0873ce68199cb38b1a4bc0e24ff49b2ff61a4e4cc98b8f79e66ff27"
+    },
+    {
+      "path": "backgrounds.html",
+      "matches": true,
+      "sha256": "492948740550fc7f2e85d483d3f4f23c23ecc434e520d271f2cfe21502eaf86e"
+    },
+    {
+      "path": "assets/backgrounds.bundle.js",
+      "matches": true,
+      "sha256": "c536fb44d59fc23480f4cf1eaf3823a58e565d9414ef4724b113633d0aec2d91"
+    }
+  ],
+  "browser_visual_check": "not repeated; data-only changes preserve existing layout",
+  "database_writes": 0
+}
