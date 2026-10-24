@@ -1,0 +1,392 @@
+[
+  {
+    "name": "曠野地帶 長崎",
+    "widths": [
+      {
+        "dialogScrollWidth": 250,
+        "dialogWidth": 250,
+        "evolutionSorted": true,
+        "flatSorted": null,
+        "groups": [
+          {
+            "count": 3,
+            "name": "團體戰",
+            "sorted": true
+          },
+          {
+            "count": 1,
+            "name": "極巨戰（超極巨化）",
+            "sorted": true
+          },
+          {
+            "count": 5,
+            "name": "蓋章／GO 集章",
+            "sorted": true
+          },
+          {
+            "count": 15,
+            "name": "調查獎勵",
+            "sorted": true
+          }
+        ],
+        "width": 320
+      },
+      {
+        "dialogScrollWidth": 320,
+        "dialogWidth": 320,
+        "evolutionSorted": true,
+        "flatSorted": null,
+        "groups": [
+          {
+            "count": 3,
+            "name": "團體戰",
+            "sorted": true
+          },
+          {
+            "count": 1,
+            "name": "極巨戰（超極巨化）",
+            "sorted": true
+          },
+          {
+            "count": 5,
+            "name": "蓋章／GO 集章",
+            "sorted": true
+          },
+          {
+            "count": 15,
+            "name": "調查獎勵",
+            "sorted": true
+          }
+        ],
+        "width": 390
+      },
+      {
+        "dialogScrollWidth": 360,
+        "dialogWidth": 360,
+        "evolutionSorted": true,
+        "flatSorted": null,
+        "groups": [
+          {
+            "count": 3,
+            "name": "團體戰",
+            "sorted": true
+          },
+          {
+            "count": 1,
+            "name": "極巨戰（超極巨化）",
+            "sorted": true
+          },
+          {
+            "count": 5,
+            "name": "蓋章／GO 集章",
+            "sorted": true
+          },
+          {
+            "count": 15,
+            "name": "調查獎勵",
+            "sorted": true
+          }
+        ],
+        "width": 430
+      }
+    ],
+    "englishHeadings": [
+      "Raids",
+      "Max Battles (Gigantamax)",
+      "GO Stamp Rally",
+      "Research rewards"
+    ]
+  },
+  {
+    "name": "GO Tour 2026 台南",
+    "widths": [
+      {
+        "dialogScrollWidth": 250,
+        "dialogWidth": 250,
+        "evolutionSorted": true,
+        "flatSorted": null,
+        "groups": [
+          {
+            "count": 9,
+            "name": "一般團體戰（日間，含超級團體戰）",
+            "sorted": true
+          },
+          {
+            "count": 7,
+            "name": "超級之夜｜Mega Night",
+            "sorted": true
+          },
+          {
+            "count": 1,
+            "name": "其他／取得方式待核對",
+            "sorted": true
+          }
+        ],
+        "width": 320
+      },
+      {
+        "dialogScrollWidth": 320,
+        "dialogWidth": 320,
+        "evolutionSorted": true,
+        "flatSorted": null,
+        "groups": [
+          {
+            "count": 9,
+            "name": "一般團體戰（日間，含超級團體戰）",
+            "sorted": true
+          },
+          {
+            "count": 7,
+            "name": "超級之夜｜Mega Night",
+            "sorted": true
+          },
+          {
+            "count": 1,
+            "name": "其他／取得方式待核對",
+            "sorted": true
+          }
+        ],
+        "width": 390
+      },
+      {
+        "dialogScrollWidth": 360,
+        "dialogWidth": 360,
+        "evolutionSorted": true,
+        "flatSorted": null,
+        "groups": [
+          {
+            "count": 9,
+            "name": "一般團體戰（日間，含超級團體戰）",
+            "sorted": true
+          },
+          {
+            "count": 7,
+            "name": "超級之夜｜Mega Night",
+            "sorted": true
+          },
+          {
+            "count": 1,
+            "name": "其他／取得方式待核對",
+            "sorted": true
+          }
+        ],
+        "width": 430
+      }
+    ],
+    "englishHeadings": [
+      "Daytime raids (including Mega Raids)",
+      "Mega Night",
+      "Other / route awaiting verification"
+    ]
+  },
+  {
+    "name": "GO Tour 2026 洛杉磯",
+    "widths": [
+      {
+        "dialogScrollWidth": 250,
+        "dialogWidth": 250,
+        "evolutionSorted": true,
+        "flatSorted": null,
+        "groups": [
+          {
+            "count": 9,
+            "name": "一般團體戰（日間，含超級團體戰）",
+            "sorted": true
+          },
+          {
+            "count": 7,
+            "name": "超級之夜｜Mega Night",
+            "sorted": true
+          },
+          {
+            "count": 1,
+            "name": "其他／取得方式待核對",
+            "sorted": true
+          }
+        ],
+        "width": 320
+      },
+      {
+        "dialogScrollWidth": 320,
+        "dialogWidth": 320,
+        "evolutionSorted": true,
+        "flatSorted": null,
+        "groups": [
+          {
+            "count": 9,
+            "name": "一般團體戰（日間，含超級團體戰）",
+            "sorted": true
+          },
+          {
+            "count": 7,
+            "name": "超級之夜｜Mega Night",
+            "sorted": true
+          },
+          {
+            "count": 1,
+            "name": "其他／取得方式待核對",
+            "sorted": true
+          }
+        ],
+        "width": 390
+      },
+      {
+        "dialogScrollWidth": 360,
+        "dialogWidth": 360,
+        "evolutionSorted": true,
+        "flatSorted": null,
+        "groups": [
+          {
+            "count": 9,
+            "name": "一般團體戰（日間，含超級團體戰）",
+            "sorted": true
+          },
+          {
+            "count": 7,
+            "name": "超級之夜｜Mega Night",
+            "sorted": true
+          },
+          {
+            "count": 1,
+            "name": "其他／取得方式待核對",
+            "sorted": true
+          }
+        ],
+        "width": 430
+      }
+    ],
+    "englishHeadings": [
+      "Daytime raids (including Mega Raids)",
+      "Mega Night",
+      "Other / route awaiting verification"
+    ]
+  },
+  {
+    "name": "2026 寶可夢世界錦標賽",
+    "widths": [
+      {
+        "dialogScrollWidth": 250,
+        "dialogWidth": 250,
+        "evolutionSorted": true,
+        "flatSorted": true,
+        "groups": [],
+        "width": 320
+      },
+      {
+        "dialogScrollWidth": 320,
+        "dialogWidth": 320,
+        "evolutionSorted": true,
+        "flatSorted": true,
+        "groups": [],
+        "width": 390
+      },
+      {
+        "dialogScrollWidth": 360,
+        "dialogWidth": 360,
+        "evolutionSorted": true,
+        "flatSorted": true,
+        "groups": [],
+        "width": 430
+      }
+    ],
+    "englishHeadings": []
+  },
+  {
+    "name": "曠野地帶 福岡",
+    "widths": [
+      {
+        "dialogScrollWidth": 250,
+        "dialogWidth": 250,
+        "evolutionSorted": true,
+        "flatSorted": null,
+        "groups": [
+          {
+            "count": 2,
+            "name": "傳說團體戰",
+            "sorted": true
+          },
+          {
+            "count": 2,
+            "name": "顫弦蠑螈・一般",
+            "sorted": true
+          },
+          {
+            "count": 2,
+            "name": "顫弦蠑螈・極巨化",
+            "sorted": true
+          },
+          {
+            "count": 1,
+            "name": "顫弦蠑螈・超極巨化",
+            "sorted": true
+          }
+        ],
+        "width": 320
+      },
+      {
+        "dialogScrollWidth": 320,
+        "dialogWidth": 320,
+        "evolutionSorted": true,
+        "flatSorted": null,
+        "groups": [
+          {
+            "count": 2,
+            "name": "傳說團體戰",
+            "sorted": true
+          },
+          {
+            "count": 2,
+            "name": "顫弦蠑螈・一般",
+            "sorted": true
+          },
+          {
+            "count": 2,
+            "name": "顫弦蠑螈・極巨化",
+            "sorted": true
+          },
+          {
+            "count": 1,
+            "name": "顫弦蠑螈・超極巨化",
+            "sorted": true
+          }
+        ],
+        "width": 390
+      },
+      {
+        "dialogScrollWidth": 360,
+        "dialogWidth": 360,
+        "evolutionSorted": true,
+        "flatSorted": null,
+        "groups": [
+          {
+            "count": 2,
+            "name": "傳說團體戰",
+            "sorted": true
+          },
+          {
+            "count": 2,
+            "name": "顫弦蠑螈・一般",
+            "sorted": true
+          },
+          {
+            "count": 2,
+            "name": "顫弦蠑螈・極巨化",
+            "sorted": true
+          },
+          {
+            "count": 1,
+            "name": "顫弦蠑螈・超極巨化",
+            "sorted": true
+          }
+        ],
+        "width": 430
+      }
+    ],
+    "englishHeadings": [
+      "Legendary raids",
+      "Toxtricity · Regular",
+      "Toxtricity · Dynamax",
+      "Toxtricity · Gigantamax"
+    ]
+  }
+]
