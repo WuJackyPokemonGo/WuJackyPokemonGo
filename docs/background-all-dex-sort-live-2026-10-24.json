@@ -1,0 +1,598 @@
+[
+  {
+    "name": "GO Fest 2026 東京",
+    "widths": [
+      {
+        "evolutionCount": 0,
+        "evolutionSorted": true,
+        "flatCount": null,
+        "flatSorted": null,
+        "overflow": false,
+        "sections": [
+          {
+            "count": 3,
+            "sorted": true,
+            "title": "一般團體戰"
+          },
+          {
+            "count": 4,
+            "sorted": true,
+            "title": "暗影團體戰"
+          },
+          {
+            "count": 2,
+            "sorted": true,
+            "title": "原始團體戰"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "會場壓軸超級團體戰"
+          },
+          {
+            "count": 2,
+            "sorted": true,
+            "title": "調查獎勵"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "其他／取得方式待核對"
+          }
+        ],
+        "width": 320
+      },
+      {
+        "evolutionCount": 0,
+        "evolutionSorted": true,
+        "flatCount": null,
+        "flatSorted": null,
+        "overflow": false,
+        "sections": [
+          {
+            "count": 3,
+            "sorted": true,
+            "title": "一般團體戰"
+          },
+          {
+            "count": 4,
+            "sorted": true,
+            "title": "暗影團體戰"
+          },
+          {
+            "count": 2,
+            "sorted": true,
+            "title": "原始團體戰"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "會場壓軸超級團體戰"
+          },
+          {
+            "count": 2,
+            "sorted": true,
+            "title": "調查獎勵"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "其他／取得方式待核對"
+          }
+        ],
+        "width": 390
+      },
+      {
+        "evolutionCount": 0,
+        "evolutionSorted": true,
+        "flatCount": null,
+        "flatSorted": null,
+        "overflow": false,
+        "sections": [
+          {
+            "count": 3,
+            "sorted": true,
+            "title": "一般團體戰"
+          },
+          {
+            "count": 4,
+            "sorted": true,
+            "title": "暗影團體戰"
+          },
+          {
+            "count": 2,
+            "sorted": true,
+            "title": "原始團體戰"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "會場壓軸超級團體戰"
+          },
+          {
+            "count": 2,
+            "sorted": true,
+            "title": "調查獎勵"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "其他／取得方式待核對"
+          }
+        ],
+        "width": 430
+      }
+    ],
+    "englishHeadings": [
+      "Regular raids",
+      "Shadow Raids",
+      "Primal Raids",
+      "Park finale Super Mega Raids",
+      "Research rewards",
+      "Other / route awaiting verification"
+    ]
+  },
+  {
+    "name": "GO Fest 2026 芝加哥",
+    "widths": [
+      {
+        "evolutionCount": 2,
+        "evolutionSorted": true,
+        "flatCount": null,
+        "flatSorted": null,
+        "overflow": false,
+        "sections": [
+          {
+            "count": 3,
+            "sorted": true,
+            "title": "一般團體戰"
+          },
+          {
+            "count": 4,
+            "sorted": true,
+            "title": "暗影團體戰"
+          },
+          {
+            "count": 2,
+            "sorted": true,
+            "title": "原始團體戰"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "會場壓軸超級團體戰"
+          },
+          {
+            "count": 3,
+            "sorted": true,
+            "title": "調查獎勵"
+          }
+        ],
+        "width": 320
+      },
+      {
+        "evolutionCount": 2,
+        "evolutionSorted": true,
+        "flatCount": null,
+        "flatSorted": null,
+        "overflow": false,
+        "sections": [
+          {
+            "count": 3,
+            "sorted": true,
+            "title": "一般團體戰"
+          },
+          {
+            "count": 4,
+            "sorted": true,
+            "title": "暗影團體戰"
+          },
+          {
+            "count": 2,
+            "sorted": true,
+            "title": "原始團體戰"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "會場壓軸超級團體戰"
+          },
+          {
+            "count": 3,
+            "sorted": true,
+            "title": "調查獎勵"
+          }
+        ],
+        "width": 390
+      },
+      {
+        "evolutionCount": 2,
+        "evolutionSorted": true,
+        "flatCount": null,
+        "flatSorted": null,
+        "overflow": false,
+        "sections": [
+          {
+            "count": 3,
+            "sorted": true,
+            "title": "一般團體戰"
+          },
+          {
+            "count": 4,
+            "sorted": true,
+            "title": "暗影團體戰"
+          },
+          {
+            "count": 2,
+            "sorted": true,
+            "title": "原始團體戰"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "會場壓軸超級團體戰"
+          },
+          {
+            "count": 3,
+            "sorted": true,
+            "title": "調查獎勵"
+          }
+        ],
+        "width": 430
+      }
+    ],
+    "englishHeadings": [
+      "Regular raids",
+      "Shadow Raids",
+      "Primal Raids",
+      "Park finale Super Mega Raids",
+      "Research rewards"
+    ]
+  },
+  {
+    "name": "GO Fest 2026 哥本哈根",
+    "widths": [
+      {
+        "evolutionCount": 1,
+        "evolutionSorted": true,
+        "flatCount": null,
+        "flatSorted": null,
+        "overflow": false,
+        "sections": [
+          {
+            "count": 3,
+            "sorted": true,
+            "title": "一般團體戰"
+          },
+          {
+            "count": 4,
+            "sorted": true,
+            "title": "暗影團體戰"
+          },
+          {
+            "count": 2,
+            "sorted": true,
+            "title": "原始團體戰"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "會場壓軸超級團體戰"
+          },
+          {
+            "count": 2,
+            "sorted": true,
+            "title": "調查獎勵"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "其他／取得方式待核對"
+          }
+        ],
+        "width": 320
+      },
+      {
+        "evolutionCount": 1,
+        "evolutionSorted": true,
+        "flatCount": null,
+        "flatSorted": null,
+        "overflow": false,
+        "sections": [
+          {
+            "count": 3,
+            "sorted": true,
+            "title": "一般團體戰"
+          },
+          {
+            "count": 4,
+            "sorted": true,
+            "title": "暗影團體戰"
+          },
+          {
+            "count": 2,
+            "sorted": true,
+            "title": "原始團體戰"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "會場壓軸超級團體戰"
+          },
+          {
+            "count": 2,
+            "sorted": true,
+            "title": "調查獎勵"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "其他／取得方式待核對"
+          }
+        ],
+        "width": 390
+      },
+      {
+        "evolutionCount": 1,
+        "evolutionSorted": true,
+        "flatCount": null,
+        "flatSorted": null,
+        "overflow": false,
+        "sections": [
+          {
+            "count": 3,
+            "sorted": true,
+            "title": "一般團體戰"
+          },
+          {
+            "count": 4,
+            "sorted": true,
+            "title": "暗影團體戰"
+          },
+          {
+            "count": 2,
+            "sorted": true,
+            "title": "原始團體戰"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "會場壓軸超級團體戰"
+          },
+          {
+            "count": 2,
+            "sorted": true,
+            "title": "調查獎勵"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "其他／取得方式待核對"
+          }
+        ],
+        "width": 430
+      }
+    ],
+    "englishHeadings": [
+      "Regular raids",
+      "Shadow Raids",
+      "Primal Raids",
+      "Park finale Super Mega Raids",
+      "Research rewards",
+      "Other / route awaiting verification"
+    ]
+  },
+  {
+    "name": "曠野地帶 2025",
+    "widths": [
+      {
+        "evolutionCount": 2,
+        "evolutionSorted": true,
+        "flatCount": null,
+        "flatSorted": null,
+        "overflow": false,
+        "sections": [
+          {
+            "count": 7,
+            "sorted": true,
+            "title": "前導活動團體戰｜深入荒野"
+          },
+          {
+            "count": 3,
+            "sorted": true,
+            "title": "全球活動團體戰（含暗影）"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "極巨戰（超極巨化）"
+          }
+        ],
+        "width": 320
+      },
+      {
+        "evolutionCount": 2,
+        "evolutionSorted": true,
+        "flatCount": null,
+        "flatSorted": null,
+        "overflow": false,
+        "sections": [
+          {
+            "count": 7,
+            "sorted": true,
+            "title": "前導活動團體戰｜深入荒野"
+          },
+          {
+            "count": 3,
+            "sorted": true,
+            "title": "全球活動團體戰（含暗影）"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "極巨戰（超極巨化）"
+          }
+        ],
+        "width": 390
+      },
+      {
+        "evolutionCount": 2,
+        "evolutionSorted": true,
+        "flatCount": null,
+        "flatSorted": null,
+        "overflow": false,
+        "sections": [
+          {
+            "count": 7,
+            "sorted": true,
+            "title": "前導活動團體戰｜深入荒野"
+          },
+          {
+            "count": 3,
+            "sorted": true,
+            "title": "全球活動團體戰（含暗影）"
+          },
+          {
+            "count": 1,
+            "sorted": true,
+            "title": "極巨戰（超極巨化）"
+          }
+        ],
+        "width": 430
+      }
+    ],
+    "englishHeadings": [
+      "Lead-in raids · Into the Wild",
+      "Global-event raids (including Shadow)",
+      "Max Battles (Gigantamax)"
+    ]
+  },
+  {
+    "name": "火焰鳥隊伍背景",
+    "widths": [
+      {
+        "evolutionCount": 62,
+        "evolutionSorted": true,
+        "flatCount": 41,
+        "flatSorted": true,
+        "overflow": false,
+        "sections": [],
+        "width": 320
+      },
+      {
+        "evolutionCount": 62,
+        "evolutionSorted": true,
+        "flatCount": 41,
+        "flatSorted": true,
+        "overflow": false,
+        "sections": [],
+        "width": 390
+      },
+      {
+        "evolutionCount": 62,
+        "evolutionSorted": true,
+        "flatCount": 41,
+        "flatSorted": true,
+        "overflow": false,
+        "sections": [],
+        "width": 430
+      }
+    ]
+  },
+  {
+    "name": "社群日 2024",
+    "widths": [
+      {
+        "evolutionCount": 29,
+        "evolutionSorted": true,
+        "flatCount": 16,
+        "flatSorted": true,
+        "overflow": false,
+        "sections": [],
+        "width": 320
+      },
+      {
+        "evolutionCount": 29,
+        "evolutionSorted": true,
+        "flatCount": 16,
+        "flatSorted": true,
+        "overflow": false,
+        "sections": [],
+        "width": 390
+      },
+      {
+        "evolutionCount": 29,
+        "evolutionSorted": true,
+        "flatCount": 16,
+        "flatSorted": true,
+        "overflow": false,
+        "sections": [],
+        "width": 430
+      }
+    ]
+  },
+  {
+    "name": "活動背景－GO Fest 2026 Global",
+    "widths": [
+      {
+        "evolutionCount": 0,
+        "evolutionSorted": true,
+        "flatCount": 91,
+        "flatSorted": true,
+        "overflow": false,
+        "sections": [],
+        "width": 320
+      },
+      {
+        "evolutionCount": 0,
+        "evolutionSorted": true,
+        "flatCount": 91,
+        "flatSorted": true,
+        "overflow": false,
+        "sections": [],
+        "width": 390
+      },
+      {
+        "evolutionCount": 0,
+        "evolutionSorted": true,
+        "flatCount": 91,
+        "flatSorted": true,
+        "overflow": false,
+        "sections": [],
+        "width": 430
+      }
+    ]
+  },
+  {
+    "name": "傳說之路",
+    "widths": [
+      {
+        "evolutionCount": 0,
+        "evolutionSorted": true,
+        "flatCount": 94,
+        "flatSorted": true,
+        "overflow": false,
+        "sections": [],
+        "width": 320
+      },
+      {
+        "evolutionCount": 0,
+        "evolutionSorted": true,
+        "flatCount": 94,
+        "flatSorted": true,
+        "overflow": false,
+        "sections": [],
+        "width": 390
+      },
+      {
+        "evolutionCount": 0,
+        "evolutionSorted": true,
+        "flatCount": 94,
+        "flatSorted": true,
+        "overflow": false,
+        "sections": [],
+        "width": 430
+      }
+    ]
+  }
+]
