@@ -1,0 +1,738 @@
+{
+  "as_of": "2026-10-24",
+  "added": 0,
+  "removed": 0,
+  "changed": 2,
+  "complete": false,
+  "review_counts": {
+    "date_details_pending": 3,
+    "acquisition_method_pending": 8,
+    "backgrounds_pending": 3
+  },
+  "changes": [
+    {
+      "background_id": "BG-0136",
+      "before": {
+        "name_en": "GO Fest 2026 Tokyo",
+        "type": "location",
+        "dates_source": "May 28th - May 31st 2026",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/gf26_tokyo.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 128,
+            "name_en": "Paldean Tauros Aqua",
+            "name_zh": "肯泰羅",
+            "variant_id": "tauros-paldea-aqua",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地三星團體戰，有機會附地標背景。",
+            "method_en": "Chance from the host-city three-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 150,
+            "name_en": "Mewtwo",
+            "name_zh": "超夢",
+            "variant_id": "mewtwo",
+            "acquisition": "encounter",
+            "method_zh": "公園場次最後30分鐘的超級團體戰保證地標背景；城市體驗另有分支限時調查。",
+            "method_en": "End-of-park Super Mega Raids guarantee the city background. City Experience also includes branching Timed Research.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 144,
+            "name_en": "Articuno",
+            "name_zh": "急凍鳥",
+            "variant_id": "articuno",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地傳說團體戰，有機會附地標背景。",
+            "method_en": "Chance from local five-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 144,
+            "name_en": "Shadow Articuno",
+            "name_zh": "急凍鳥",
+            "variant_id": "articuno-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 245,
+            "name_en": "Suicune",
+            "name_zh": "水君",
+            "variant_id": "suicune",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地傳說團體戰，有機會附地標背景。",
+            "method_en": "Chance from local five-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 245,
+            "name_en": "Shadow Suicune",
+            "name_zh": "水君",
+            "variant_id": "suicune-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 383,
+            "name_en": "Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加原始團體戰，捕獲的一般蓋歐卡／固拉多有機會附背景。",
+            "method_en": "Chance on regular Kyogre/Groudon caught from ticketed Primal Raids.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 382,
+            "name_en": "Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加原始團體戰，捕獲的一般蓋歐卡／固拉多有機會附背景。",
+            "method_en": "Chance on regular Kyogre/Groudon caught from ticketed Primal Raids.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 383,
+            "name_en": "Shadow Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 382,
+            "name_en": "Shadow Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 131,
+            "name_en": "Blanche-themed Lapras",
+            "name_zh": "拉普拉斯（Blanche-themed Lapras）",
+            "variant_id": "lapras-spring-2023-mystic",
+            "acquisition": "encounter",
+            "method_zh": "此城市地標背景的個別發放方式未確認；全球隊伍特殊背景的 GO Pass 不能作為此款證據。",
+            "method_en": "This city Location Background route is unconfirmed. A global GO Pass with a team Special Background does not establish this city variant.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 807,
+            "name_en": "Zeraora",
+            "name_zh": "捷拉奧拉",
+            "variant_id": "zeraora",
+            "acquisition": "encounter",
+            "method_zh": "公園特殊調查獎勵；同年度跨城市只可捕捉一次捷拉奧拉，其後改發糖果。",
+            "method_en": "Park Special Research reward; one Zeraora catch across the host cities, with Candy replacing repeat rewards.",
+            "method_status": "reviewed"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "official-event-confirmed",
+        "background_id": "BG-0136",
+        "name_zh": "GO Fest 2026 東京",
+        "release_state": "released",
+        "official_sources": [
+          "https://pokemongo.com/news/mega-mewtwo-gofest-2026",
+          "https://pokemongo.com/en/news/save-the-date-go-fest-2026",
+          "https://pokemongo.com/en/news/know-before-you-go-gofest-2026-in-person-events"
+        ],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "有效票券時段的指定團體戰有機會獲得地標背景；暗影與一般形態分開列出。公園末30分鐘超級超夢團體戰保證背景。公園特殊調查獎勵捷拉奧拉；隊長服裝款的地標背景與個別取得條件仍未確認，不能套用全球隊伍特殊背景。",
+        "method_en": "Eligible ticketed raids offer a chance of the city background; Shadow and regular forms are distinct. End-of-park Super Mega Raids guarantee background Mewtwo. Park Special Research awards Zeraora. The city-background route for team-leader costumes remains unconfirmed; global team Special Backgrounds are separate.",
+        "series": "GO Fest",
+        "series_zh": "GO Fest",
+        "year": "2026",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2026-tokyo",
+          "https://leekduck.com/events/pokemon-go-fest-2026-tokyo/",
+          "https://bulbapedia.bulbagarden.net/wiki/Zeraora_(GO)"
+        ],
+        "evolved_pokemon": [],
+        "checked_on": "2026-10-24",
+        "region_en": "Japan",
+        "region_zh": "日本",
+        "verification_scope": "background-and-eligibility",
+        "method_status": "partial",
+        "start_date": "2026-05-25",
+        "end_date": "2026-06-01",
+        "date_note_zh": "此期間包含城市體驗限時調查；公園主活動日期另依票券。",
+        "date_note_en": "Range includes City Experience research; park dates follow the ticket.",
+        "reference_ids": [
+          "gf26_tokyo"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "name_en": "GO Fest 2026 Tokyo",
+        "type": "location",
+        "dates_source": "May 28th - May 31st 2026",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/gf26_tokyo.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 128,
+            "name_en": "Paldean Tauros Aqua",
+            "name_zh": "肯泰羅",
+            "variant_id": "tauros-paldea-aqua",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地三星團體戰，有機會附地標背景。",
+            "method_en": "Chance from the host-city three-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 150,
+            "name_en": "Mewtwo",
+            "name_zh": "超夢",
+            "variant_id": "mewtwo",
+            "acquisition": "encounter",
+            "method_zh": "公園場次最後30分鐘的超級團體戰保證地標背景；城市體驗另有分支限時調查。",
+            "method_en": "End-of-park Super Mega Raids guarantee the city background. City Experience also includes branching Timed Research.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 144,
+            "name_en": "Articuno",
+            "name_zh": "急凍鳥",
+            "variant_id": "articuno",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地傳說團體戰，有機會附地標背景。",
+            "method_en": "Chance from local five-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 144,
+            "name_en": "Shadow Articuno",
+            "name_zh": "急凍鳥",
+            "variant_id": "articuno-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 245,
+            "name_en": "Suicune",
+            "name_zh": "水君",
+            "variant_id": "suicune",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地傳說團體戰，有機會附地標背景。",
+            "method_en": "Chance from local five-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 245,
+            "name_en": "Shadow Suicune",
+            "name_zh": "水君",
+            "variant_id": "suicune-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 383,
+            "name_en": "Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加原始團體戰，捕獲的一般蓋歐卡／固拉多有機會附背景。",
+            "method_en": "Chance on regular Kyogre/Groudon caught from ticketed Primal Raids.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 382,
+            "name_en": "Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加原始團體戰，捕獲的一般蓋歐卡／固拉多有機會附背景。",
+            "method_en": "Chance on regular Kyogre/Groudon caught from ticketed Primal Raids.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 383,
+            "name_en": "Shadow Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 382,
+            "name_en": "Shadow Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 131,
+            "name_en": "Blanche-themed Lapras",
+            "name_zh": "拉普拉斯（Blanche-themed Lapras）",
+            "variant_id": "lapras-spring-2023-mystic",
+            "acquisition": "encounter",
+            "method_zh": "Tokyo Complete 最終城市限時調查可遇見 Blanche 配飾拉普拉斯；需先完成四區城市挑戰及擊敗克里夫。此獎勵是否保證東京地標背景仍未確認，不能套用全球 GO Pass 的隊伍特殊背景。",
+            "method_en": "Tokyo Complete awards Blanche-accessory Lapras after the four City District challenges and defeating Cliff. A guaranteed Tokyo Location Background on this reward remains unconfirmed; the global GO Pass team Special Background is separate.",
+            "method_status": "unconfirmed",
+            "method_sources": [
+              "https://leekduck.com/events/pokemon-go-fest-2026-tokyo/",
+              "https://www.serebii.net/pokemongo/todaysviewresearch/gofest2026:tokyocomplete.shtml"
+            ]
+          },
+          {
+            "dex": 807,
+            "name_en": "Zeraora",
+            "name_zh": "捷拉奧拉",
+            "variant_id": "zeraora",
+            "acquisition": "encounter",
+            "method_zh": "公園特殊調查獎勵；同年度跨城市只可捕捉一次捷拉奧拉，其後改發糖果。",
+            "method_en": "Park Special Research reward; one Zeraora catch across the host cities, with Candy replacing repeat rewards.",
+            "method_status": "reviewed"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "official-event-confirmed",
+        "background_id": "BG-0136",
+        "name_zh": "GO Fest 2026 東京",
+        "release_state": "released",
+        "official_sources": [
+          "https://pokemongo.com/news/mega-mewtwo-gofest-2026",
+          "https://pokemongo.com/en/news/save-the-date-go-fest-2026",
+          "https://pokemongo.com/en/news/know-before-you-go-gofest-2026-in-person-events"
+        ],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "有效票券時段的指定團體戰有機會獲得地標背景；暗影與一般形態分開列出。公園末30分鐘超級超夢團體戰保證背景。公園特殊調查獎勵捷拉奧拉；隊長服裝款的地標背景與個別取得條件仍未確認，不能套用全球隊伍特殊背景。",
+        "method_en": "Eligible ticketed raids offer a chance of the city background; Shadow and regular forms are distinct. End-of-park Super Mega Raids guarantee background Mewtwo. Park Special Research awards Zeraora. The city-background route for team-leader costumes remains unconfirmed; global team Special Backgrounds are separate.",
+        "series": "GO Fest",
+        "series_zh": "GO Fest",
+        "year": "2026",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2026-tokyo",
+          "https://leekduck.com/events/pokemon-go-fest-2026-tokyo/",
+          "https://bulbapedia.bulbagarden.net/wiki/Zeraora_(GO)"
+        ],
+        "evolved_pokemon": [],
+        "checked_on": "2026-10-24",
+        "region_en": "Japan",
+        "region_zh": "日本",
+        "verification_scope": "background-and-eligibility",
+        "method_status": "partial",
+        "start_date": "2026-05-25",
+        "end_date": "2026-06-01",
+        "date_note_zh": "此期間包含城市體驗限時調查；公園主活動日期另依票券。",
+        "date_note_en": "Range includes City Experience research; park dates follow the ticket.",
+        "reference_ids": [
+          "gf26_tokyo"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      }
+    },
+    {
+      "background_id": "BG-0140",
+      "before": {
+        "name_en": "GO Fest 2026 Chicago",
+        "type": "location",
+        "dates_source": "June 5th - 7th 2026",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/gf26_chicago.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 128,
+            "name_en": "Paldean Tauros Blaze",
+            "name_zh": "肯泰羅",
+            "variant_id": "tauros-paldea-blaze",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地三星團體戰，有機會附地標背景。",
+            "method_en": "Chance from the host-city three-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 150,
+            "name_en": "Mewtwo",
+            "name_zh": "超夢",
+            "variant_id": "mewtwo",
+            "acquisition": "encounter",
+            "method_zh": "公園場次最後30分鐘的超級團體戰保證地標背景；城市體驗另有分支限時調查。",
+            "method_en": "End-of-park Super Mega Raids guarantee the city background. City Experience also includes branching Timed Research.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 145,
+            "name_en": "Zapdos",
+            "name_zh": "閃電鳥",
+            "variant_id": "zapdos",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地傳說團體戰，有機會附地標背景。",
+            "method_en": "Chance from local five-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 145,
+            "name_en": "Shadow Zapdos",
+            "name_zh": "閃電鳥",
+            "variant_id": "zapdos-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 243,
+            "name_en": "Raikou",
+            "name_zh": "雷公",
+            "variant_id": "raikou",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地傳說團體戰，有機會附地標背景。",
+            "method_en": "Chance from local five-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 243,
+            "name_en": "Shadow Raikou",
+            "name_zh": "雷公",
+            "variant_id": "raikou-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 382,
+            "name_en": "Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加原始團體戰，捕獲的一般蓋歐卡／固拉多有機會附背景。",
+            "method_en": "Chance on regular Kyogre/Groudon caught from ticketed Primal Raids.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 383,
+            "name_en": "Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加原始團體戰，捕獲的一般蓋歐卡／固拉多有機會附背景。",
+            "method_en": "Chance on regular Kyogre/Groudon caught from ticketed Primal Raids.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 382,
+            "name_en": "Shadow Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 383,
+            "name_en": "Shadow Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 239,
+            "name_en": "Spark-themed Elekid",
+            "name_zh": "電擊怪（Spark-themed Elekid）",
+            "variant_id": "elekid-spring-2023-instinct",
+            "acquisition": "encounter",
+            "method_zh": "此城市地標背景的個別發放方式未確認；全球隊伍特殊背景的 GO Pass 不能作為此款證據。",
+            "method_en": "This city Location Background route is unconfirmed. A global GO Pass with a team Special Background does not establish this city variant.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 807,
+            "name_en": "Zeraora",
+            "name_zh": "捷拉奧拉",
+            "variant_id": "zeraora",
+            "acquisition": "encounter",
+            "method_zh": "公園特殊調查獎勵；同年度跨城市只可捕捉一次捷拉奧拉，其後改發糖果。",
+            "method_en": "Park Special Research reward; one Zeraora catch across the host cities, with Candy replacing repeat rewards.",
+            "method_status": "reviewed"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "official-event-confirmed",
+        "background_id": "BG-0140",
+        "name_zh": "GO Fest 2026 芝加哥",
+        "release_state": "released",
+        "official_sources": [
+          "https://pokemongo.com/news/mega-mewtwo-gofest-2026",
+          "https://pokemongo.com/en/news/save-the-date-go-fest-2026",
+          "https://pokemongo.com/en/news/know-before-you-go-gofest-2026-in-person-events"
+        ],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "有效票券時段的指定團體戰有機會獲得地標背景；暗影與一般形態分開列出。公園末30分鐘超級超夢團體戰保證背景。公園特殊調查獎勵捷拉奧拉；隊長服裝款的地標背景與個別取得條件仍未確認，不能套用全球隊伍特殊背景。",
+        "method_en": "Eligible ticketed raids offer a chance of the city background; Shadow and regular forms are distinct. End-of-park Super Mega Raids guarantee background Mewtwo. Park Special Research awards Zeraora. The city-background route for team-leader costumes remains unconfirmed; global team Special Backgrounds are separate.",
+        "series": "GO Fest",
+        "series_zh": "GO Fest",
+        "year": "2026",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2026-chicago",
+          "https://leekduck.com/events/pokemon-go-fest-2026-chicago/",
+          "https://bulbapedia.bulbagarden.net/wiki/Zeraora_(GO)"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 125,
+            "name_en": "Spark-themed Electabuzz",
+            "name_zh": "電擊獸（Spark-themed Electabuzz）",
+            "variant_id": "electabuzz-spring-2023-instinct",
+            "acquisition": "evolution",
+            "method_zh": "由相同背景的原始服裝款進化保留；原始款地標背景資格仍待確認。",
+            "method_en": "Inherited by evolution only if the source costume has this city background; source eligibility remains unconfirmed.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 466,
+            "name_en": "Spark-themed Electivire",
+            "name_zh": "電擊魔獸（Spark-themed Electivire）",
+            "variant_id": "electivire-spring-2023-instinct",
+            "acquisition": "evolution",
+            "method_zh": "由相同背景的原始服裝款進化保留；原始款地標背景資格仍待確認。",
+            "method_en": "Inherited by evolution only if the source costume has this city background; source eligibility remains unconfirmed.",
+            "method_status": "unconfirmed"
+          }
+        ],
+        "checked_on": "2026-10-24",
+        "region_en": "United States",
+        "region_zh": "美國",
+        "verification_scope": "background-and-eligibility",
+        "method_status": "partial",
+        "start_date": "2026-06-04",
+        "end_date": "2026-06-07",
+        "date_note_zh": "此期間包含城市體驗限時調查；公園主活動日期另依票券。",
+        "date_note_en": "Range includes City Experience research; park dates follow the ticket.",
+        "reference_ids": [
+          "gf26_chicago"
+        ],
+        "reference_review": "images-compared-2026-10-24"
+      },
+      "after": {
+        "name_en": "GO Fest 2026 Chicago",
+        "type": "location",
+        "dates_source": "June 5th - 7th 2026",
+        "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/gf26_chicago.webp?v=20260816",
+        "pokemon": [
+          {
+            "dex": 128,
+            "name_en": "Paldean Tauros Blaze",
+            "name_zh": "肯泰羅",
+            "variant_id": "tauros-paldea-blaze",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地三星團體戰，有機會附地標背景。",
+            "method_en": "Chance from the host-city three-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 150,
+            "name_en": "Mewtwo",
+            "name_zh": "超夢",
+            "variant_id": "mewtwo",
+            "acquisition": "encounter",
+            "method_zh": "公園場次最後30分鐘的超級團體戰保證地標背景；城市體驗另有分支限時調查。",
+            "method_en": "End-of-park Super Mega Raids guarantee the city background. City Experience also includes branching Timed Research.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 145,
+            "name_en": "Zapdos",
+            "name_zh": "閃電鳥",
+            "variant_id": "zapdos",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地傳說團體戰，有機會附地標背景。",
+            "method_en": "Chance from local five-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 145,
+            "name_en": "Shadow Zapdos",
+            "name_zh": "閃電鳥",
+            "variant_id": "zapdos-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 243,
+            "name_en": "Raikou",
+            "name_zh": "雷公",
+            "variant_id": "raikou",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加當地傳說團體戰，有機會附地標背景。",
+            "method_en": "Chance from local five-star raids during eligible ticketed hours.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 243,
+            "name_en": "Shadow Raikou",
+            "name_zh": "雷公",
+            "variant_id": "raikou-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 382,
+            "name_en": "Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加原始團體戰，捕獲的一般蓋歐卡／固拉多有機會附背景。",
+            "method_en": "Chance on regular Kyogre/Groudon caught from ticketed Primal Raids.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 383,
+            "name_en": "Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券參加原始團體戰，捕獲的一般蓋歐卡／固拉多有機會附背景。",
+            "method_en": "Chance on regular Kyogre/Groudon caught from ticketed Primal Raids.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 382,
+            "name_en": "Shadow Kyogre",
+            "name_zh": "蓋歐卡",
+            "variant_id": "kyogre-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 383,
+            "name_en": "Shadow Groudon",
+            "name_zh": "固拉多",
+            "variant_id": "groudon-shadow",
+            "acquisition": "encounter",
+            "method_zh": "持有效活動票券於指定時段的暗影傳說團體戰捕捉，有機會附背景；保留暗影形態。",
+            "method_en": "Chance from eligible ticketed five-star Shadow Raids; this entry retains the Shadow form.",
+            "method_status": "reviewed"
+          },
+          {
+            "dex": 239,
+            "name_en": "Spark-themed Elekid",
+            "name_zh": "電擊怪（Spark-themed Elekid）",
+            "variant_id": "elekid-spring-2023-instinct",
+            "acquisition": "encounter",
+            "method_zh": "完成芝加哥四個城市區域的限時調查後，解鎖 Chicago Complete 最終限時調查；擊敗幹部希爾拉後，領取 Spark 配飾電擊怪。現場採訪記錄明確記載保證城市背景，並非全球 GO Pass 的隊伍特殊背景。",
+            "method_en": "Finish all four Chicago City District Timed Research sets to unlock Chicago Complete, defeat Sierra, then claim Spark-accessory Elekid. A firsthand event report explicitly records a guaranteed city Location Background; this is separate from the global GO Pass team Special Background.",
+            "method_status": "reviewed",
+            "method_sources": [
+              "https://operationrainfall.com/2026/06/19/review-pokemon-go-fest-2026-chicago-was-the-best-event-yet/",
+              "https://www.serebii.net/pokemongo/todaysviewresearch/gofest2026:chicagocomplete.shtml"
+            ],
+            "method_evidence": "firsthand-report-crosschecked"
+          },
+          {
+            "dex": 807,
+            "name_en": "Zeraora",
+            "name_zh": "捷拉奧拉",
+            "variant_id": "zeraora",
+            "acquisition": "encounter",
+            "method_zh": "公園特殊調查獎勵；同年度跨城市只可捕捉一次捷拉奧拉，其後改發糖果。",
+            "method_en": "Park Special Research reward; one Zeraora catch across the host cities, with Candy replacing repeat rewards.",
+            "method_status": "reviewed"
+          }
+        ],
+        "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "verification": "official-event-confirmed",
+        "background_id": "BG-0140",
+        "name_zh": "GO Fest 2026 芝加哥",
+        "release_state": "released",
+        "official_sources": [
+          "https://pokemongo.com/news/mega-mewtwo-gofest-2026",
+          "https://pokemongo.com/en/news/save-the-date-go-fest-2026",
+          "https://pokemongo.com/en/news/know-before-you-go-gofest-2026-in-person-events"
+        ],
+        "notes": [],
+        "related_product_ids": [],
+        "method_zh": "有效票券時段的指定團體戰有機會獲得地標背景；暗影與一般形態分開列出。公園末30分鐘超級超夢團體戰保證背景。公園特殊調查獎勵捷拉奧拉。完成四區城市限時調查及 Chicago Complete 可得城市背景電擊怪（現場採訪記錄與調查名錄交叉核對）。",
+        "method_en": "Eligible ticketed raids can award the city Location Background, with regular and Shadow forms listed separately. Park-finale Super Mega Mewtwo raids guarantee a background; park Special Research awards Zeraora. Complete all four City District challenges and Chicago Complete for city-background Elekid, cross-checked using a firsthand event report and the research catalog.",
+        "series": "GO Fest",
+        "series_zh": "GO Fest",
+        "year": "2026",
+        "year_verified": false,
+        "catalog_sources": [
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2026-chicago",
+          "https://leekduck.com/events/pokemon-go-fest-2026-chicago/",
+          "https://bulbapedia.bulbagarden.net/wiki/Zeraora_(GO)",
+          "https://operationrainfall.com/2026/06/19/review-pokemon-go-fest-2026-chicago-was-the-best-event-yet/",
+          "https://www.serebii.net/pokemongo/todaysviewresearch/gofest2026:chicagocomplete.shtml"
+        ],
+        "evolved_pokemon": [
+          {
+            "dex": 125,
+            "name_en": "Spark-themed Electabuzz",
+            "name_zh": "電擊獸（Spark-themed Electabuzz）",
+            "variant_id": "electabuzz-spring-2023-instinct",
+            "acquisition": "evolution",
+            "method_zh": "由相同背景的原始服裝款進化保留；原始款地標背景資格仍待確認。",
+            "method_en": "Inherited by evolution only if the source costume has this city background; source eligibility remains unconfirmed.",
+            "method_status": "unconfirmed"
+          },
+          {
+            "dex": 466,
+            "name_en": "Spark-themed Electivire",
+            "name_zh": "電擊魔獸（Spark-themed Electivire）",
+            "variant_id": "electivire-spring-2023-instinct",
+            "acquisition": "evolution",
+            "method_zh": "由相同背景的原始服裝款進化保留；原始款地標背景資格仍待確認。",
+            "method_en": "Inherited by evolution only if the source costume has this city background; source eligibility remains unconfirmed.",
+            "method_status": "unconfirmed"
+          }
+        ],
+        "checked_on": "2026-10-24",
+        "region_en": "United States",
+        "region_zh": "美國",
+        "verification_scope": "background-and-eligibility",
+        "method_status": "reviewed",
+        "start_date": "2026-06-04",
+        "end_date": "2026-06-07",
+        "date_note_zh": "此期間包含城市體驗限時調查；公園主活動日期另依票券。",
+        "date_note_en": "Range includes City Experience research; park dates follow the ticket.",
+        "reference_ids": [
+          "gf26_chicago"
+        ],
+        "reference_review": "images-compared-2026-10-24",
+        "evidence_reviewed_on": "2026-10-24"
+      }
+    }
+  ]
+}

@@ -25,11 +25,21 @@ test('country filters find Copenhagen and Worlds without including source-only u
 });
 test('unproven species routes remain explicitly unconfirmed within otherwise confirmed events',()=>{
  assert.equal(by('BG-0119').pokemon.find(p=>p.dex===25).method_status,'unconfirmed');
- for(const id of ['BG-0136','BG-0140','BG-0141']){
+ for(const id of ['BG-0136','BG-0141']){
   const r=by(id);assert.equal(r.method_status,'partial');
   assert.ok(r.pokemon.filter(p=>p.name_en.includes('themed')).every(p=>p.method_status==='unconfirmed'));
   assert.ok(r.pokemon.filter(p=>p.name_en.includes('Shadow')).every(p=>p.method_en.includes('Shadow Raids')));
  }
  assert.equal(by('BG-0190').pokemon.find(p=>p.dex===65).method_status,'unconfirmed');
  assert.equal(data.complete,false);
+});
+
+test('Chicago city-background Elekid uses firsthand local research evidence rather than a global GO Pass',()=>{
+ const r=by('BG-0140'); const p=r.pokemon.find(p=>p.dex===239);
+ assert.equal(p.method_status,'reviewed'); assert.equal(r.method_status,'reviewed');
+ assert.equal(p.method_evidence,'firsthand-report-crosschecked');
+ assert.match(p.method_en,/four Chicago City District/);assert.match(p.method_en,/Sierra/);
+ assert.ok(p.method_sources.some(u=>u.includes('operationrainfall.com')));
+ assert.ok(!r.official_sources.some(u=>u.includes('operationrainfall.com')));
+ assert.equal(by('BG-0136').pokemon.find(p=>p.dex===131).method_status,'unconfirmed');
 });
