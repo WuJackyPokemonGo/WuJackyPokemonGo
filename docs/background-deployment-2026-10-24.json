@@ -1,0 +1,49 @@
+{
+  "commit": "ff64c6435119c65fc911f49885deebb274fa6dfb",
+  "ci": "success",
+  "pages": "success",
+  "files": [
+    {
+      "path": "data/backgrounds.json",
+      "matches": true,
+      "sha256": "3d8fb2b687204fb57e91e73849f4d092b99265c4f998892086347ff9b23b614e"
+    },
+    {
+      "path": "data/background-reference-facts.json",
+      "matches": true,
+      "sha256": "22addc0cc0aae27b8386fa67436f1b08c0fa32b01da018fa210a85c2abadb93a"
+    },
+    {
+      "path": "assets/backgrounds.bundle.js",
+      "matches": true,
+      "sha256": "7447dfd9e5819b263ec8b94fe4679dc9802abfe7705a88eb480ecb487e57b009"
+    },
+    {
+      "path": "assets/cloud-admin.bundle.js",
+      "matches": true,
+      "sha256": "f50f38df647a10faf0b72f8a8fd21d5683304b8c98f061b63b1c04d52b6c2b3c"
+    },
+    {
+      "path": "backgrounds.html",
+      "matches": true,
+      "sha256": "54ab8ea43d789a1f6c846ce35213f7c8747c00b007fd0dbb678daace60de3610"
+    },
+    {
+      "path": "admin.html",
+      "matches": true,
+      "sha256": "e3a1a0b332df9f672c8b3c7f931b9c6970ef300c32186628b6f18b020eb60ba1"
+    }
+  ],
+  "browser_checks": {
+    "counts": {
+      "all": 276,
+      "checked": 268,
+      "upcoming": 5,
+      "pending": 3
+    },
+    "regi_search_results": 6,
+    "retired_BG_0270_opens": "BG-0261 Tinkaton",
+    "site_errors_observed": 0,
+    "browser_extension_metadata_errors": "Excluded from site error count"
+  }
+}
