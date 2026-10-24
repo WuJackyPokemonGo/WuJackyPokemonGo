@@ -45,3 +45,16 @@ dialog{background:#fffdf5;color:#493b1d;border:1px solid #decd9f;border-radius:1
 .activity-variant .cardname,.activity-variant .english{display:block;overflow:visible;white-space:normal;overflow-wrap:anywhere;-webkit-line-clamp:unset}
 .activity-variant.search-match{outline:2px solid #b68114;outline-offset:-2px}
 @media(max-width:700px){.activity-variants{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:8px}.activity-mosaic{aspect-ratio:3/2}.activity-variant .cardbody{padding:10px 8px}}
+
+/* Acquisition sections within existing background details. */
+.pokemon.has-route-sections{display:block}
+.pokemon-route{margin:18px 0 0;padding:14px;background:#fff7da;border:1px solid #e6d29a;border-radius:10px;min-width:0}
+.pokemon-route h4{font-size:15px;line-height:1.6;margin:0 0 8px;color:#694b12;overflow-wrap:anywhere}
+.pokemon-route>.subtle{margin:6px 0 10px}
+.route-explanation{font-size:12px;line-height:1.8;color:#7b6c4a}
+.route-source{display:inline-block;font-size:12px;min-height:32px;margin-bottom:8px;line-height:32px;color:#825c10}
+.pokemon-route .pokemon{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0}.pokemon-route .pokemon-item small{max-width:100%}
+.pokemon-item{min-width:0;overflow-wrap:anywhere}
+.pokemon-form{color:#79560d;font-weight:650}
+.route-pending{color:#915825}
+@media(max-width:480px){.pokemon-route{padding:11px 9px}.pokemon-route .pokemon{grid-template-columns:1fr}}

@@ -1,0 +1,51 @@
+{
+  "baseline": "34200207853b6103d4bb3726a6f2b3633d233c08",
+  "changes": [
+    {
+      "background_id": "BG-0022",
+      "before_encounters": 5,
+      "after_encounters": 7,
+      "changed_fields": [
+        "pokemon",
+        "official_sources",
+        "method_zh",
+        "method_en",
+        "evidence_reviewed_on"
+      ]
+    },
+    {
+      "background_id": "BG-0070",
+      "before_encounters": 18,
+      "after_encounters": 20,
+      "changed_fields": [
+        "pokemon",
+        "evidence_reviewed_on"
+      ]
+    },
+    {
+      "background_id": "BG-0122",
+      "before_encounters": 17,
+      "after_encounters": 17,
+      "changed_fields": [
+        "pokemon",
+        "official_sources",
+        "catalog_sources"
+      ]
+    },
+    {
+      "background_id": "BG-0123",
+      "before_encounters": 17,
+      "after_encounters": 17,
+      "changed_fields": [
+        "pokemon",
+        "official_sources",
+        "catalog_sources"
+      ]
+    }
+  ],
+  "raw_records": 276,
+  "supabase_overrides": 0,
+  "supabase_written": false,
+  "unrelated_records_unchanged": true,
+  "san_francisco_data_unchanged": true
+}
