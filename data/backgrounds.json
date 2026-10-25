@@ -1987,18 +1987,14 @@
           "name_en": "Gigantamax Toxtricity (Amped Form)",
           "name_zh": "超極巨化顫弦蠑螈（高調的樣子）",
           "variant_id": "toxtricity-gigantamax-amped",
-          "acquisition": "encounter",
-          "method_zh": "超極巨化後，高調與低調的外觀相同；此處依未超極巨化時的樣子分列。",
-          "method_en": "Amped and Low Key Forms share the same Gigantamax appearance; entries are separated by their non-Gigantamax form."
+          "acquisition": "encounter"
         },
         {
           "dex": 849,
           "name_en": "Gigantamax Toxtricity (Low Key Form)",
           "name_zh": "超極巨化顫弦蠑螈（低調的樣子）",
           "variant_id": "toxtricity-gigantamax-low-key",
-          "acquisition": "encounter",
-          "method_zh": "超極巨化後，高調與低調的外觀相同；此處依未超極巨化時的樣子分列。",
-          "method_en": "Amped and Low Key Forms share the same Gigantamax appearance; entries are separated by their non-Gigantamax form."
+          "acquisition": "encounter"
         },
         {
           "dex": 849,

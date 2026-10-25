@@ -21,7 +21,7 @@ test('Fukuoka distinguishes both base forms for regular, Dynamax and Gigantamax'
  const r=by('BG-0022'),ss=detailPokemonSections(r);assert.deepEqual(ss.map(s=>[s.id,s.pokemon.length]),[['legends',2],['normal',2],['dynamax',2],['gigantamax',2]]);
  for(const p of ss.find(s=>s.id==='dynamax').pokemon){assert.equal(p.dex,849);assert.equal(p.method_status,'reviewed');assert.ok(p.method_sources[0].includes('pokemongolive.com'))}
  assert.equal(pokemonFormLabel(ss.find(s=>s.id==='normal').pokemon[0]),'高調的樣子');assert.equal(pokemonFormLabel(ss.find(s=>s.id==='dynamax').pokemon[1],'en'),'Low Key Form');
- const gmax=ss.find(s=>s.id==='gigantamax').pokemon;assert.deepEqual(gmax.map(p=>pokemonFormLabel(p)),['高調的樣子','低調的樣子']);assert.deepEqual(gmax.map(p=>pokemonFormLabel(p,'en')),['Amped Form','Low Key Form']);assert.ok(gmax.every(p=>p.method_zh.includes('外觀相同')&&p.method_en.includes('same Gigantamax appearance')));
+ const gmax=ss.find(s=>s.id==='gigantamax').pokemon;assert.deepEqual(gmax.map(p=>pokemonFormLabel(p)),['高調的樣子','低調的樣子']);assert.deepEqual(gmax.map(p=>pokemonFormLabel(p,'en')),['Amped Form','Low Key Form']);assert.ok(gmax.every(p=>!p.method_zh&&!p.method_en));
  for(const q of ['極巨化顫弦蠑螈','Dynamax Toxtricity','#0849'])assert.ok(backgroundMatch(r,q));assert.equal(new Set(r.pokemon.map(p=>p.variant_id)).size,8);
 });
 test('new unmatched edited encounters stay visible in an unassigned group',()=>{const r=by('BG-0122'),extra={dex:25,name_en:'Pikachu',name_zh:'皮卡丘'};assert.ok(detailPokemonSections({...r,pokemon:[...r.pokemon,extra]}).find(s=>s.id==='unassigned').pokemon.includes(extra))});
