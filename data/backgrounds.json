@@ -8393,14 +8393,6 @@
           "method_zh": "6～9月園內團體戰；需入園票券，每日可參加一次，附園區地標背景。",
           "method_en": "Park raid in June–September. Admission required; one raid per day, with the park Location Background.",
           "method_status": "reviewed"
-        },
-        {
-          "dex": 25,
-          "name_en": "Pikachu",
-          "name_zh": "皮卡丘",
-          "method_zh": "背景資格未確認：官方只列為園內野外出現，未宣告皮卡丘可附此背景。",
-          "method_en": "Background eligibility unconfirmed: the official announcement lists wild Pikachu, but does not award this background to it.",
-          "method_status": "unconfirmed"
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -8413,8 +8405,8 @@
       ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "需入園票券。園內團體戰每日可參加一次：2–5月閃電鳥、6–9月火焰鳥、10–1月急凍鳥，附園區地標背景。原名錄的皮卡丘背景尚待確認。",
-      "method_en": "Park admission required. Daily raid: Zapdos Feb–May, Moltres Jun–Sep, Articuno Oct–Jan, with park backgrounds. Pikachu eligibility remains unconfirmed.",
+      "method_zh": "需入園票券。園內團體戰每日可參加一次：2–5月閃電鳥、6–9月火焰鳥、10–1月急凍鳥，附園區地標背景。",
+      "method_en": "Park admission required. Daily raid: Zapdos Feb–May, Moltres Jun–Sep, Articuno Oct–Jan, with park backgrounds.",
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2026",
@@ -8424,11 +8416,11 @@
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokemon-park"
       ],
       "evolved_pokemon": [],
-      "checked_on": "2026-10-24",
+      "checked_on": "2026-10-25",
       "region_en": "Japan",
       "region_zh": "日本",
       "verification_scope": "background-and-eligibility",
-      "method_status": "partial",
+      "method_status": "reviewed",
       "start_date": "2026-02-05",
       "date_note_zh": "2026/2/5 起於開園時間提供；未公告結束日期。",
       "date_note_en": "From February 5, 2026 during park hours; no end announced.",
@@ -25887,7 +25879,7 @@
   },
   "review_counts": {
     "date_details_pending": 3,
-    "acquisition_method_pending": 8,
+    "acquisition_method_pending": 7,
     "backgrounds_pending": 3
   },
   "image_review": {

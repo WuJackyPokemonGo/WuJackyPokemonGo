@@ -24,7 +24,7 @@ test('country filters find Copenhagen and Worlds without including source-only u
  for(const id of ['BG-0072','BG-0276','BG-0277'])assert.ok(!visible.includes(by(id)));
 });
 test('unproven species routes remain explicitly unconfirmed within otherwise confirmed events',()=>{
- assert.equal(by('BG-0119').pokemon.find(p=>p.dex===25).method_status,'unconfirmed');
+ assert.ok(!by('BG-0119').pokemon.some(p=>p.dex===25));assert.deepEqual(by('BG-0119').pokemon.map(p=>p.dex),[144,145,146]);assert.equal(by('BG-0119').method_status,'reviewed');
  for(const id of ['BG-0136','BG-0141']){
   const r=by(id);assert.equal(r.method_status,'partial');
   assert.ok(r.pokemon.filter(p=>p.name_en.includes('themed')).every(p=>p.method_status==='unconfirmed'));
