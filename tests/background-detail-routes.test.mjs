@@ -13,9 +13,9 @@ test('Nagasaki retains every encounter, with separate raids, Max, stamps and res
  assert.ok(group('research').some(p=>p.dex===635));assert.ok(group('research').some(p=>p.dex===730));assert.equal(group('research').find(p=>p.dex===38).variant_id,'ninetales-alola');
  assert.deepEqual(new Set(ss.flatMap(s=>s.pokemon)),new Set(r.pokemon));assert.equal(r.pokemon.length,20);assert.equal(r.evolved_pokemon.length,6);
 });
-for(const id of ['BG-0122','BG-0123'])test(`${id} Mega Night has the six announced evening encounters plus added Dragonite and keeps uncertain Inkay outside confirmed raids`,()=>{
+for(const id of ['BG-0122','BG-0123'])test(`${id} Mega Night has the six announced evening encounters plus added Dragonite and excludes Inkay from city backgrounds`,()=>{
  const ss=detailPokemonSections(by(id));assert.deepEqual(ss.find(s=>s.id==='mega-night').pokemon.map(p=>p.dex),[6,149,181,254,334,373,445]);
- assert.deepEqual(ss.find(s=>s.id==='day-raids').pokemon.map(p=>p.dex),[71,130,282,359,448,679,687,716,717]);assert.deepEqual(ss.find(s=>s.id==='unassigned').pokemon.map(p=>p.dex),[686]);assert.equal(new Set(ss.flatMap(s=>s.pokemon)).size,17);
+ assert.deepEqual(ss.find(s=>s.id==='day-raids').pokemon.map(p=>p.dex),[71,130,282,359,448,679,687,716,717]);assert.ok(!by(id).pokemon.some(p=>p.dex===686));assert.ok(!ss.find(s=>s.id==='unassigned'));assert.equal(new Set(ss.flatMap(s=>s.pokemon)).size,16);
 });
 test('Fukuoka explicitly distinguishes regular, Dynamax and Gigantamax without replacing original variants',()=>{
  const r=by('BG-0022'),ss=detailPokemonSections(r);assert.deepEqual(ss.map(s=>[s.id,s.pokemon.length]),[['legends',2],['normal',2],['dynamax',2],['gigantamax',1]]);
