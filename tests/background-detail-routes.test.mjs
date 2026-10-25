@@ -17,11 +17,12 @@ for(const id of ['BG-0122','BG-0123'])test(`${id} Mega Night has the six announc
  const ss=detailPokemonSections(by(id));assert.deepEqual(ss.find(s=>s.id==='mega-night').pokemon.map(p=>p.dex),[6,149,181,254,334,373,445]);
  assert.deepEqual(ss.find(s=>s.id==='day-raids').pokemon.map(p=>p.dex),[71,130,282,359,448,679,687,716,717]);assert.ok(!by(id).pokemon.some(p=>p.dex===686));assert.ok(!ss.find(s=>s.id==='unassigned'));assert.equal(new Set(ss.flatMap(s=>s.pokemon)).size,16);
 });
-test('Fukuoka explicitly distinguishes regular, Dynamax and Gigantamax without replacing original variants',()=>{
- const r=by('BG-0022'),ss=detailPokemonSections(r);assert.deepEqual(ss.map(s=>[s.id,s.pokemon.length]),[['legends',2],['normal',2],['dynamax',2],['gigantamax',1]]);
+test('Fukuoka distinguishes both base forms for regular, Dynamax and Gigantamax',()=>{
+ const r=by('BG-0022'),ss=detailPokemonSections(r);assert.deepEqual(ss.map(s=>[s.id,s.pokemon.length]),[['legends',2],['normal',2],['dynamax',2],['gigantamax',2]]);
  for(const p of ss.find(s=>s.id==='dynamax').pokemon){assert.equal(p.dex,849);assert.equal(p.method_status,'reviewed');assert.ok(p.method_sources[0].includes('pokemongolive.com'))}
  assert.equal(pokemonFormLabel(ss.find(s=>s.id==='normal').pokemon[0]),'高調的樣子');assert.equal(pokemonFormLabel(ss.find(s=>s.id==='dynamax').pokemon[1],'en'),'Low Key Form');
- for(const q of ['極巨化顫弦蠑螈','Dynamax Toxtricity','#0849'])assert.ok(backgroundMatch(r,q));assert.equal(new Set(r.pokemon.map(p=>p.variant_id)).size,7);
+ const gmax=ss.find(s=>s.id==='gigantamax').pokemon;assert.deepEqual(gmax.map(p=>pokemonFormLabel(p)),['高調的樣子','低調的樣子']);assert.deepEqual(gmax.map(p=>pokemonFormLabel(p,'en')),['Amped Form','Low Key Form']);assert.ok(gmax.every(p=>p.method_zh.includes('外觀相同')&&p.method_en.includes('same Gigantamax appearance')));
+ for(const q of ['極巨化顫弦蠑螈','Dynamax Toxtricity','#0849'])assert.ok(backgroundMatch(r,q));assert.equal(new Set(r.pokemon.map(p=>p.variant_id)).size,8);
 });
 test('new unmatched edited encounters stay visible in an unassigned group',()=>{const r=by('BG-0122'),extra={dex:25,name_en:'Pikachu',name_zh:'皮卡丘'};assert.ok(detailPokemonSections({...r,pokemon:[...r.pokemon,extra]}).find(s=>s.id==='unassigned').pokemon.includes(extra))});
 test('unrelated events and original background counts remain unchanged by detail presentation',()=>{const r=by('BG-0265');assert.deepEqual(detailPokemonRows(r),r.pokemon);assert.deepEqual(detailPokemonSections(r),[]);assert.equal(data.records.length,276);assert.equal(groupBackgroundCards(data.records).length,271)});
