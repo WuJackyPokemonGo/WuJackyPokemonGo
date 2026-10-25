@@ -42,7 +42,7 @@ function routesFor(row){
   route('legends','傳說團體戰','Legendary raids',[483,484]),
   {...route('normal','顫弦蠑螈・一般','Toxtricity · Regular',[]),variants:['toxtricity-amped','toxtricity-low-key']},
   {...route('dynamax','顫弦蠑螈・極巨化','Toxtricity · Dynamax',[]),variants:['toxtricity-dynamax-amped','toxtricity-dynamax-low-key']},
-  {...route('gigantamax','顫弦蠑螈・超極巨化','Toxtricity · Gigantamax',[]),variants:['toxtricity-gigantamax']}
+  {...route('gigantamax','顫弦蠑螈・超極巨化','Toxtricity · Gigantamax',[]),variants:['toxtricity-gigantamax','toxtricity-gigantamax-amped','toxtricity-gigantamax-low-key']}
  ];
  return [];
 }
