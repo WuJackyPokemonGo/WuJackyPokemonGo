@@ -1,0 +1,19 @@
+const el=(tag,text)=>Object.assign(document.createElement(tag),{textContent:text});
+const field=(label,name,value,type='text')=>{const l=el('label',label),i=el('input','');i.name=name;i.type=type;if(type==='checkbox')i.checked=value===true;else i.value=value??'';l.append(i);return l};
+export function initCheckoutAdminUI({client,run,notify,refresh}){
+ const section=el('section','');section.className='card';section.append(el('h3','自助下單設定'),el('p','銀行資訊與保留期限請先核對；匯款回報不會自動記為收款。'));
+ const open=el('button','讀取自助下單設定');open.type='button';const body=el('div','');section.append(open,body);document.getElementById('settingsWorkspace').append(section);
+ let configVersion=null,epoch=0;
+ async function rpc(action,payload={}){const {data,error}=await client.rpc('admin_checkout',{p_action:action,p_payload:payload});if(error)throw error;return data}
+ function renderSettings(data){configVersion=data.version;body.replaceChildren();const form=el('form','');for(const [label,key,type] of [['開放買家下單','enabled','checkbox'],['銀行名稱','bank_name'],['銀行代碼（3 碼）','bank_code'],['收款帳號','bank_account'],['戶名','account_name'],['付款保留分鐘（10–1440）','hold_minutes','number'],['回報匯款後保留小時（1–72）','report_hold_hours','number'],['每單最多件數（1–99）','max_units','number'],['交易說明版本','terms_version'],['Turnstile 公開 Site Key','turnstile_site_key']])form.append(field(label,key,data.config[key],type));for(const [label,key] of [['中文交易說明','terms_zh'],['英文交易說明','terms_en']]){const l=el('label',label),input=el('textarea','');input.name=key;input.value=data.config[key]||'';input.maxLength=2000;l.append(input);form.append(l)}const save=el('button','儲存已核對設定');form.append(save);form.onsubmit=e=>{e.preventDefault();run(async()=>{const v=Object.fromEntries(new FormData(form));v.enabled=form.elements.enabled.checked;for(const k of ['hold_minutes','report_hold_hours','max_units'])v[k]=Number(v[k]);const version=epoch;const saved=await rpc('save_settings',{config:v,version:configVersion});if(version!==epoch)return;renderSettings(saved);notify('自助下單設定已儲存。')})};body.append(form,el('p','Edge Function 允許來源、Turnstile Secret 與驗證網域須由部署端設定；此處不保存秘密金鑰。'))}
+ open.onclick=()=>run(async()=>{const version=epoch;const data=await rpc('settings');if(version===epoch)renderSettings(data)});
+ return {clear(){epoch++;body.replaceChildren();configVersion=null},async extendOrder(order,body,actions){const version=epoch;let data;try{data=await rpc('detail',{id:order.id})}catch(error){if(error.code==='P0002'||error.code==='PGRST202')return;throw error}if(version!==epoch)return;
+  for(const b of actions.querySelectorAll('button'))if(b.textContent==='編輯資料／品項')b.remove();
+  body.append(el('h3','買家自助下單'),el('p','保留期限：'+new Date(data.snapshot.hold_until).toLocaleString('zh-TW',{timeZone:'Asia/Taipei'})+(data.snapshot.expired?'（已過期，請先聯絡再處理）':'')));
+  if(data.report)body.append(el('p',`買家回報（尚未核款）：NT$ ${data.report.amount} ／末五碼 ${data.report.last_five} ／台灣時間 ${new Date(data.report.paid_at).toLocaleString('zh-TW',{timeZone:'Asia/Taipei'})}`));
+  body.append(el('p','商品與售價快照已鎖定；需變更品項請取消原單後重新建立。請在下方「登錄實際收款」核對帳款。'));
+  if(!['cancelled','completed','refunded','refund_pending','arrived_for_check'].includes(order.status)){
+   const form=el('form','');form.append(el('h4','核款後準備交付'));for(const i of order.order_items){const f=field(i.product_name_snapshot+'：實際每件成本',i.id,i.unit_cost_snapshot_twd,'number');const input=f.querySelector('input');input.min='0';input.max='9999999999.99';input.step='0.01';input.required=true;form.append(f)}const ready=el('button','已核對收款與成本，標記待人工交付');ready.disabled=order.received_amount_twd!==order.public_subtotal_twd||order.refund_amount_twd!==0;form.append(ready);form.onsubmit=e=>{e.preventDefault();run(async()=>{const costs=Object.fromEntries(new FormData(form));await rpc('ready',{id:order.id,version:order.updated_at,costs});await refresh();document.getElementById('orderDetailDialog').close();notify('已標記待人工交付；交貨後請按「完成交付並扣庫存」。')})};body.append(form);
+  }
+ }};
+}
