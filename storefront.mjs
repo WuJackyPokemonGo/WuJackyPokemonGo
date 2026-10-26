@@ -1,3 +1,4 @@
+import {initCheckoutEntry} from './checkout-entry.mjs';
 import {tr,t,getLocale,setLocale,productName,productDescription,bindStaticTranslations,initLanguageHint} from './storefront-locale.mjs';
 import {applyContactLink,initContactLinks} from './contact.mjs';
 import {initAnalytics} from './analytics.mjs';
@@ -24,3 +25,5 @@ async function load(){const statusBox=$('loadStatus');statusBox.hidden=false;sta
 const updateLanguageHint=initLanguageHint();$('language').value=getLocale();
 $('language').onchange=()=>{setLocale($('language').value);updateLanguageHint();translateStatic();initContactLinks();renderFilters();renderProducts();renderCart();if(active)renderDetail(active);window.dispatchEvent(new Event('wj-language-change'))};
 load();
+
+initCheckoutEntry();
