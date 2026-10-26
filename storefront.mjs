@@ -1,3 +1,4 @@
+import {initCheckoutEntry} from './checkout-entry.mjs';
 import {backgroundsForProduct,loadBackgroundRecords} from './product-backgrounds.mjs';
 import {productLink} from './product-link.mjs';
 import {tr,t,getLocale,localeTag,setLocale,productName,productDescription,bindStaticTranslations,initLanguageHint} from './storefront-locale.mjs';
@@ -47,3 +48,5 @@ const updateLanguageHint=initLanguageHint();$('language').value=getLocale();
 $('language').onchange=()=>{setLocale($('language').value);$('catalogMessage').hidden=true;updateLanguageHint();translateStatic();initContactLinks();renderFilters();renderProducts();renderCart();if(active)renderDetail(active);window.dispatchEvent(new Event('wj-language-change'))};
 load();
 document.addEventListener('click',e=>{if(e.target.closest?.('a[data-contact-line]')){track('line_click');if(fromBackground())track('bg_line_click')}});
+
+initCheckoutEntry();
