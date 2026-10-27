@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-25",
+  "as_of": "2026-10-27",
   "complete": false,
   "sources": [
     "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -360,7 +360,9 @@
     "https://leekduck.com/events/go-pass-road-to-kalos/",
     "https://nintendowire.com/guides/pokemon-go/season-of-precious-paths/a-beautiful-day-to-celebrate-timed-research/",
     "https://leekduck.com/events/pokemon-go-wild-area-2025-nagasaki-japan/",
-    "https://leekduck.com/events/pokemon-go-wild-area-2025-global/"
+    "https://leekduck.com/events/pokemon-go-wild-area-2025-global/",
+    "https://www.serebii.net/pokemongo/reallifeevents/pokemonnightout.shtml",
+    "https://leekduck.com/events/pokemon-night-out-los-angeles-2026/"
   ],
   "records": [
     {
@@ -15933,6 +15935,36 @@
           ],
           "method_zh": "活動場館現場三星團體戰捕獲，保證洛杉磯地標背景。",
           "method_en": "Event-venue three-star raid encounter guarantees the Los Angeles Location Background."
+        },
+        {
+          "dex": 849,
+          "name_en": "Toxtricity (Amped Form)",
+          "name_zh": "顫弦蠑螈（高調的樣子）",
+          "variant_id": "toxtricity-amped",
+          "acquisition": "encounter",
+          "method_status": "reviewed",
+          "method_sources": [
+            "https://pokemongo.com/news/pokemon-night-out-irl-details2026",
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonnightout.shtml",
+            "https://leekduck.com/events/pokemon-night-out-los-angeles-2026/"
+          ],
+          "method_zh": "於洛杉磯活動場館領取限時調查，選擇高調路線並完成任務，獲得帶洛杉磯地標背景的顫弦蠑螈；高調／低調二選一。",
+          "method_en": "Claim the venue Timed Research in Los Angeles, choose Amped Form and complete its tasks to encounter Toxtricity with the Los Angeles Location Background. Choose one of the two forms."
+        },
+        {
+          "dex": 849,
+          "name_en": "Toxtricity (Low Key Form)",
+          "name_zh": "顫弦蠑螈（低調的樣子）",
+          "variant_id": "toxtricity-low-key",
+          "acquisition": "encounter",
+          "method_status": "reviewed",
+          "method_sources": [
+            "https://pokemongo.com/news/pokemon-night-out-irl-details2026",
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonnightout.shtml",
+            "https://leekduck.com/events/pokemon-night-out-los-angeles-2026/"
+          ],
+          "method_zh": "於洛杉磯活動場館領取限時調查，選擇低調路線並完成任務，獲得帶洛杉磯地標背景的顫弦蠑螈；高調／低調二選一。",
+          "method_en": "Claim the venue Timed Research in Los Angeles, choose Low Key Form and complete its tasks to encounter Toxtricity with the Los Angeles Location Background. Choose one of the two forms."
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -15944,17 +15976,18 @@
         "https://pokemongo.com/news/pokemon-night-out-irl-details2026"
       ],
       "notes": [
-        "皮卡丘與耿鬼的現場團體戰保證洛杉磯地標背景；限時調查的顫弦蠑螈未獲官方背景資格確認，不列入。"
+        "皮卡丘與耿鬼由現場團體戰取得；顫弦蠑螈由限時調查取得，高調／低調二選一。",
+        "2026-10-27：Serebii 活動頁已列出高調與低調顫弦蠑螈具洛杉磯地標背景資格，據此補列；官方公告確認調查形態，未單獨說明其背景資格。"
       ],
       "start_date": "2026-10-24",
       "related_product_ids": [],
-      "method_zh": "活動場館的一星皮卡丘、三星耿鬼團體戰；依城市獲得地標背景。",
-      "method_en": "Event-venue one-star Pikachu and three-star Gengar raids award the city’s Location Background.",
+      "method_zh": "活動場館的一星皮卡丘、三星耿鬼團體戰保證洛杉磯地標背景；現場限時調查可二選一取得高調或低調顫弦蠑螈，附洛杉磯地標背景。",
+      "method_en": "Event-venue one-star Pikachu and three-star Gengar raids guarantee the Los Angeles Location Background. Venue Timed Research awards either Amped Form or Low Key Form Toxtricity with that background, according to the chosen branch.",
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2026",
       "year_verified": true,
-      "checked_on": "2026-10-25",
+      "checked_on": "2026-10-27",
       "region_en": "United States",
       "region_zh": "美國",
       "reference_ids": [
@@ -15962,7 +15995,11 @@
       ],
       "reference_review": "images-compared-2026-10-24",
       "end_date": "2026-10-24",
-      "method_status": "reviewed"
+      "method_status": "reviewed",
+      "catalog_sources": [
+        "https://www.serebii.net/pokemongo/reallifeevents/pokemonnightout.shtml",
+        "https://leekduck.com/events/pokemon-night-out-los-angeles-2026/"
+      ]
     },
     {
       "name_en": "GO Wild Area 2026 Sendai Tohoku",
