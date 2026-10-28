@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-27",
+  "as_of": "2026-10-28",
   "complete": false,
   "sources": [
     "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -362,7 +362,8 @@
     "https://leekduck.com/events/pokemon-go-wild-area-2025-nagasaki-japan/",
     "https://leekduck.com/events/pokemon-go-wild-area-2025-global/",
     "https://www.serebii.net/pokemongo/reallifeevents/pokemonnightout.shtml",
-    "https://leekduck.com/events/pokemon-night-out-los-angeles-2026/"
+    "https://leekduck.com/events/pokemon-night-out-los-angeles-2026/",
+    "https://pokemongo.com/es-MX/news/dia-de-muertos-2026"
   ],
   "records": [
     {
@@ -25867,6 +25868,63 @@
       ],
       "reference_review": "images-compared-2026-10-24",
       "evidence_reviewed_on": "2026-10-24"
+    },
+    {
+      "background_id": "BG-0278",
+      "name_en": "Día de Muertos 2026 — Cubone Special Background",
+      "name_zh": "2026 亡靈節－卡拉卡拉特殊背景",
+      "type": "special",
+      "dates_source": "Official Mexico announcement: October 27–November 5, 2026 (local time)",
+      "start_date": "2026-10-27",
+      "end_date": "2026-11-05",
+      "year": "2026",
+      "year_verified": true,
+      "region_en": "Mexico",
+      "region_zh": "墨西哥",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "image_source": "https://assets.dittobase.com/go/backgrounds/sb-dia-de-muertos-2026.jpg",
+      "source": "https://pokemongo.com/es-MX/news/dia-de-muertos-2026",
+      "official_sources": [
+        "https://pokemongo.com/es-MX/news/dia-de-muertos-2026"
+      ],
+      "catalog_sources": [
+        "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "https://www.dittobase.com/pokemon-go/backgrounds/sb-dia-de-muertos-2026"
+      ],
+      "verification": "official-event-confirmed",
+      "verification_scope": "background-and-eligibility",
+      "release_state": "released",
+      "checked_on": "2026-10-28",
+      "pokemon": [
+        {
+          "dex": 104,
+          "name_en": "Cubone (Cempasúchil Crown)",
+          "name_zh": "卡拉卡拉（金盞花花冠）",
+          "variant_id": "cubone-fall-2023",
+          "acquisition": "encounter"
+        }
+      ],
+      "evolved_pokemon": [
+        {
+          "dex": 105,
+          "name_en": "Marowak (Cempasúchil Crown)",
+          "name_zh": "嘎啦嘎啦（金盞花花冠）",
+          "variant_id": "marowak-fall-2023",
+          "acquisition": "evolution"
+        }
+      ],
+      "method_zh": "墨西哥當地10/27 10:00～11/5 20:00：薰香及活動小隊挑戰的金盞花花冠卡拉卡拉有機會帶特殊背景；限時調查獎勵明列附特殊背景。進化嘎啦嘎啦為背景繼承，不另算直接遭遇。",
+      "method_en": "Mexico, October 27 at 10:00 to November 5 at 20:00 local time: Incense and event Party Challenge Cubone wearing a cempasúchil crown may have a Special Background; Timed Research explicitly awards one with the background. Marowak inherits it by evolution, not a direct encounter.",
+      "notes": [
+        "官方明列卡拉卡拉為特殊背景；10/31起墨西哥城夜巡靈及超極巨耿鬼為地點背景，圖樣尚未比對，不併入本筆。",
+        "Serebii圖片檔名與標題誤寫2029；活動年份依官方2026公告，不沿用檔名推定年份。"
+      ],
+      "related_product_ids": [],
+      "reference_ids": [
+        "dia-de-muertos-2026-cubone"
+      ],
+      "reference_review": "official-and-catalog-crosschecked-2026-10-28"
     }
   ],
   "additional_announced_events": [
@@ -25899,6 +25957,54 @@
       "notes": [
         "官方已公告五星團體戰及五星極巨對戰可得新特殊背景；圖樣待確認，暫不計入有圖片的圖鑑款數。"
       ]
+    },
+    {
+      "name_en": "Día de Muertos 2026 — Mexico City Location Background",
+      "name_zh": "2026 亡靈節－墨西哥城地點背景",
+      "start_date": "2026-10-31",
+      "end_date": "2026-11-05",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "official_sources": [
+        "https://pokemongo.com/es-MX/news/dia-de-muertos-2026"
+      ],
+      "notes": [
+        "當地10/31 10:00起，改革大道活動限時調查與GO集章獎勵明列金盞花花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。",
+        "地點背景圖樣待確認，不套用卡拉卡拉特殊背景圖片，也不算已發放款數。"
+      ]
+    },
+    {
+      "name_en": "Festival of Lights 2026 Special Background",
+      "name_zh": "2026 光之祭典特殊背景",
+      "start_date": "2026-11-06",
+      "end_date": "2026-11-08",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "official_sources": [
+        "https://pokemongo.com/en/news/festival-of-lights-2026"
+      ],
+      "notes": [
+        "印度限定；紗麗與庫爾塔皮卡丘團體戰及Sparkle O’Clock野外有機會帶特殊背景，分支限時調查獎勵明列附背景。",
+        "限時調查11/1 06:00開放；開放任務不等於已能完成所有條件或實際取得，首次取得日期與圖樣仍待確認。"
+      ]
+    },
+    {
+      "name_en": "GO Wild Area 2026 Global Special Background",
+      "name_zh": "2026 全球曠野地帶特殊背景",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-15",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "official_sources": [
+        "https://pokemongo.com/en/gowildarea/global"
+      ],
+      "notes": [
+        "官方明列現代夾克怪力、極巨帝牙盧卡、極巨帕路奇亞、萊希拉姆、捷克羅姆、酋雷姆、超極巨鋁鋼龍有機會帶特殊背景；持票特殊調查超極巨鋁鋼龍明列附背景。",
+        "圖樣待確認，不套用2025背景或仙台／墨西哥城地點背景，不計入已發放款數。"
+      ]
     }
   ],
   "coverage_note_zh": "收錄數是活動／圖樣工作紀錄，不是獨立已發放款數。日期採來源當地時間；多次發放與個別款開始日分開說明。尚有來源衝突及個別取得條件待核實。",
@@ -25910,7 +26016,7 @@
   },
   "counts": {
     "catalog-crosschecked": 55,
-    "official-event-confirmed": 215,
+    "official-event-confirmed": 216,
     "catalogued-needs-event-check": 3,
     "upcoming": 3
   },

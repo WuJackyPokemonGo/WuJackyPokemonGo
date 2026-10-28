@@ -1,0 +1,115 @@
+{
+  "as_of": "2026-10-28",
+  "base_receipt": "background-coverage-acceptance-2026-10-24.json",
+  "scope_zh": "重新下載Serebii及Dittobase名錄，比較來源位置／條目網址增減，核對新增條目對應。非每個寶可夢全部發放條件驗證；PokéXperience本輪僅讀到載入頁，沿用歷史素材收據，未全量重驗。",
+  "catalog_records": 277,
+  "released_records": 271,
+  "complete": false,
+  "new_released_background_ids": [
+    "BG-0278"
+  ],
+  "sources": {
+    "serebii": {
+      "url": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+      "rows": 273,
+      "previous_rows": 272,
+      "added": [
+        {
+          "source_url": "https://www.serebii.net/pokemongo/locationcard/th/diademuertos2029.jpg",
+          "background_id": "BG-0278",
+          "note": "來源檔名2029疑似誤植，官方確認2026；該圖片HTTP404，不使用。"
+        }
+      ],
+      "removed": [],
+      "html_sha256": "1e7972e91919361fe75e40ac2b174037b018bcf113e45cd86c074d207da40bd8"
+    },
+    "dittobase": {
+      "url": "https://www.dittobase.com/pokemon-go/backgrounds",
+      "rows": 263,
+      "previous_rows": 253,
+      "count_basis": "HTML內唯一背景明細連結，非頁面顯示259的篩選計數",
+      "added": [
+        {
+          "source_url": "https://www.dittobase.com/pokemon-go/backgrounds/lc-2026-jp-jetgreen",
+          "background_id": "BG-0195"
+        },
+        {
+          "source_url": "https://www.dittobase.com/pokemon-go/backgrounds/lc-fc-seoul-2026",
+          "background_id": "BG-0269"
+        },
+        {
+          "source_url": "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokemon-night-out-la-2026",
+          "background_id": "BG-0211"
+        },
+        {
+          "source_url": "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokemon-night-out-london-2026",
+          "background_id": "BG-0214"
+        },
+        {
+          "source_url": "https://www.dittobase.com/pokemon-go/backgrounds/lc-tpc30th-malaysia",
+          "background_id": "BG-0191"
+        },
+        {
+          "source_url": "https://www.dittobase.com/pokemon-go/backgrounds/lc-tpc30th-philippines",
+          "background_id": "BG-0194"
+        },
+        {
+          "source_url": "https://www.dittobase.com/pokemon-go/backgrounds/lc-tpc30th-singapore",
+          "background_id": "BG-0193"
+        },
+        {
+          "source_url": "https://www.dittobase.com/pokemon-go/backgrounds/lc-tpc30th-taiwan",
+          "background_id": "BG-0192"
+        },
+        {
+          "source_url": "https://www.dittobase.com/pokemon-go/backgrounds/sb-dia-de-muertos-2026",
+          "background_id": "BG-0278"
+        },
+        {
+          "source_url": "https://www.dittobase.com/pokemon-go/backgrounds/sb-moonlight-2026",
+          "background_id": "BG-0263"
+        }
+      ],
+      "removed": [],
+      "html_sha256": "6a4bd99a6b3bf6ac1299037ec50e4bcd41e4dc4ebde5eb39cdc74b5b2fafaaff"
+    },
+    "pokexperience": {
+      "url": "https://pokexperience.com/backgrounds/",
+      "status": "loading-shell-only",
+      "full_recheck": false,
+      "previous_mapped_assets": 345
+    }
+  },
+  "image_check": {
+    "url": "https://assets.dittobase.com/go/backgrounds/sb-dia-de-muertos-2026.jpg",
+    "status": 200,
+    "bytes": 126762,
+    "sha256": "be115676c74cef1804c10d653ec4dc547048d1cbe5dedc16b4f99e16293ca3d4",
+    "visually_inspected": true
+  },
+  "missing_from_reviewed_catalogs": [],
+  "remaining_evidence_ids": [
+    "BG-0072",
+    "BG-0136",
+    "BG-0141",
+    "BG-0190",
+    "BG-0238",
+    "BG-0276",
+    "BG-0277"
+  ],
+  "owner_keep_unchanged_ids": [
+    "BG-0072",
+    "BG-0276",
+    "BG-0277"
+  ],
+  "announced_without_verified_artwork": [
+    "Día de Muertos 2026 Mexico City",
+    "Festival of Lights 2026",
+    "GO Wild Area 2026 Global"
+  ],
+  "limitations_zh": [
+    "只完成來源名錄範圍的增量收錄核對，不宣稱全球絕無缺漏。",
+    "卡拉卡拉特殊背景與墨西哥城夜巡靈／超極巨耿鬼地點背景分開，不推定圖樣相同。",
+    "官方墨西哥語系公告含小隊挑戰及10/31 10:00；無語系頁曾列14:00，採在地語系並保留來源差異。"
+  ]
+}

@@ -25,11 +25,11 @@ test('Fukuoka distinguishes both base forms for regular, Dynamax and Gigantamax'
  for(const q of ['極巨化顫弦蠑螈','Dynamax Toxtricity','#0849'])assert.ok(backgroundMatch(r,q));assert.equal(new Set(r.pokemon.map(p=>p.variant_id)).size,8);
 });
 test('new unmatched edited encounters stay visible in an unassigned group',()=>{const r=by('BG-0122'),extra={dex:25,name_en:'Pikachu',name_zh:'皮卡丘'};assert.ok(detailPokemonSections({...r,pokemon:[...r.pokemon,extra]}).find(s=>s.id==='unassigned').pokemon.includes(extra))});
-test('unrelated events and original background counts remain unchanged by detail presentation',()=>{const r=by('BG-0265');assert.deepEqual(detailPokemonRows(r),r.pokemon);assert.deepEqual(detailPokemonSections(r),[]);assert.equal(data.records.length,276);assert.equal(groupBackgroundCards(data.records).length,271)});
+test('unrelated events and original background counts remain unchanged by detail presentation',()=>{const r=by('BG-0265');assert.deepEqual(detailPokemonRows(r),r.pokemon);assert.deepEqual(detailPokemonSections(r),[]);assert.equal(data.records.length,277);assert.equal(groupBackgroundCards(data.records).length,272)});
 
 // Across the entire collection, presentation may reorder but cannot add/drop or
 // mutate entries. Stable ties preserve costumes/forms sharing a dex number.
-test('all 276 background encounter/evolution lists sort by dex with stable ties and identity preservation',()=>{
+test('all background encounter/evolution lists sort by dex with stable ties and identity preservation',()=>{
  for(const r of data.records){const snapshot=JSON.stringify(r);for(const evolved of [false,true]){const raw=r[evolved?'evolved_pokemon':'pokemon']??[],ordered=detailPokemonRows(r,{evolved});assert.ok(asc(ordered),r.background_id);assert.equal(ordered.length,raw.length);assert.deepEqual(new Set(ordered),new Set(raw));for(const dex of new Set(raw.map(p=>p.dex)))assert.deepEqual(ordered.filter(p=>p.dex===dex),raw.filter(p=>p.dex===dex));}assert.equal(JSON.stringify(r),snapshot)}
 });
 for(const id of ['BG-0136','BG-0140','BG-0141'])test(`${id} separates reviewed regular, Shadow, Primal, finale and research without certifying pending costumes`,()=>{

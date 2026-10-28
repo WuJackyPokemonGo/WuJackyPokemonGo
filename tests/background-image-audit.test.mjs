@@ -6,8 +6,8 @@ import {mergeBackgroundOverrides} from '../backgrounds-admin-service.mjs';
 const read=p=>JSON.parse(readFileSync(new URL(p,import.meta.url)));
 const data=read('../data/backgrounds.json'),refs=read('../data/background-reference-facts.json');
 const by=id=>data.records.find(r=>r.background_id===id);
-test('all 345 source images have one valid disposition and resolve to a stable catalog id',()=>{
- assert.equal(refs.entries.length,345);assert.equal(new Set(refs.entries.map(e=>e.reference_id)).size,345);
+test('all current source images have one valid disposition and resolve to a stable catalog id',()=>{
+ assert.equal(refs.entries.length,346);assert.equal(new Set(refs.entries.map(e=>e.reference_id)).size,346);
  for(const e of refs.entries){assert.ok(by(e.background_id),e.reference_id);assert.ok(['primary','alternate-reference','component'].includes(e.display_role))}
  const ids=new Set(refs.entries.map(e=>e.background_id));
  for(const id of ids)assert.equal(publicBackgroundReferences(by(id),refs).length,1,id);

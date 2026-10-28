@@ -31,8 +31,8 @@ test('documented image approval status is distinct from a valid public image URL
 });
 test('full reference coverage retains first-seen semantics and never overwrites verified encounter forms',()=>{
  const facts=JSON.parse(readFileSync(new URL('../data/background-reference-facts.json',import.meta.url)));
- assert.equal(facts.entries.length,345);assert.equal(new Set(facts.entries.map(x=>x.reference_id)).size,345);
- assert.equal(facts.entries.filter(x=>x.background_id).length,345);assert.equal(facts.unresolved_references.length,2);
+ assert.equal(facts.entries.length,346);assert.equal(new Set(facts.entries.map(x=>x.reference_id)).size,346);
+ assert.equal(facts.entries.filter(x=>x.background_id).length,346);assert.equal(facts.unresolved_references.length,2);
  for(const x of facts.entries){if(x.background_id)assert.ok(rows.some(r=>r.background_id===x.background_id));assert.ok(['release','asset_first_seen'].includes(x.date_kind));assert.ok(Array.isArray(x.species));}
  assert.equal(facts.entries.find(x=>x.reference_id==='esa_science_museum_london').date_kind,'asset_first_seen');
  assert.equal(rows.find(x=>x.background_id==='BG-0202').pokemon.length,9);
