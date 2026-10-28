@@ -27,5 +27,18 @@ test('current source additions all map to real records without rewriting histori
   for(const row of audit.sources[source].added)assert.ok(data.records.some(r=>r.background_id===row.background_id));
  }
  assert.equal(audit.sources.pokexperience.full_recheck,false);
- assert.equal(data.records.length,audit.catalog_records);assert.equal(filterBackgrounds(data.records).length,audit.released_records);
+ assert.equal(data.records.filter(r=>r.background_id!=='BG-0279').length,audit.catalog_records);assert.equal(filterBackgrounds(data.records).length,audit.released_records);
+});
+
+// Owner-supplied Bangkok artwork is a preview; it must never imply release.
+test('Bangkok preview is searchable and linked while excluded from released backgrounds',()=>{
+ const row=data.records.find(r=>r.background_id==='BG-0279');
+ assert.equal(row.release_state,'upcoming');assert.equal(row.region_en,'Thailand');
+ assert.ok(!filterBackgrounds(data.records).includes(row));
+ assert.ok(filterBackgrounds(data.records,{state:'upcoming',query:'曼谷'}).includes(row));
+ assert.ok(filterBackgrounds(data.records,{state:'upcoming',query:'Bangkok'}).includes(row));
+ assert.match(referenceArtwork(row,refs),/pokexciting-bangkok-preview\.png$/);
+ assert.deepEqual(row.related_product_ids,['8d58e354-cc8c-4e2c-a5dd-3ce744b312df']);
+ assert.match(row.artwork_note_en,/not an in-game catch/);
+ assert.ok(!data.additional_announced_events.some(r=>r.name_en==='PokéXciting Bangkok'));
 });

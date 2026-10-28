@@ -26123,24 +26123,56 @@
         "dia-de-muertos-2026-cubone"
       ],
       "reference_review": "official-and-catalog-crosschecked-2026-10-28"
-    }
-  ],
-  "additional_announced_events": [
+    },
     {
-      "name_en": "PokéXciting Bangkok",
-      "name_zh": "PokéXciting 曼谷",
+      "name_en": "PokéXciting Bangkok, Thailand (Orange Afro)",
+      "name_zh": "PokéXciting 泰國曼谷（橘色爆炸頭）",
       "start_date": "2027-02-13",
       "end_date": "2027-02-14",
       "release_state": "upcoming",
       "verification": "official-event-confirmed",
-      "image_source": null,
+      "image_source": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/pokexciting-bangkok-preview.png",
       "official_sources": [
-        "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026"
+        "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
+        "https://th.portal-pokemon.com/30th/topics/20261026_01/?lang=en"
       ],
       "notes": [
-        "官方已公告活動及GO集章背景機制；個別背景素材待確認，不計入已發放款數。"
+        "素材預覽已由使用者提供；尚未發放，不計入已發放款數。"
+      ],
+      "background_id": "BG-0279",
+      "type": "location",
+      "artwork_preview_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/pokexciting-bangkok-preview.png",
+      "source": "https://th.portal-pokemon.com/30th/topics/20261026_01/?lang=en",
+      "series": "PokéXciting",
+      "series_zh": "PokéXciting",
+      "region_en": "Thailand",
+      "region_zh": "泰國",
+      "year": "2027",
+      "year_verified": true,
+      "checked_on": "2026-10-28",
+      "date_note_zh": "所列為曼谷實體活動日期；背景實際開放時間與集章地點以 Pokémon GO 官方後續公告為準。",
+      "date_note_en": "Dates refer to the Bangkok in-person event. Background availability and stamp location remain subject to further Pokémon GO announcements.",
+      "artwork_note_zh": "使用者提供的素材預覽截圖，擷取右側拼圖左上角曼谷橘色小圖；非遊戲捕獲實拍，不代表已開放取得。",
+      "artwork_note_en": "Asset preview supplied by the owner, cropped from the upper-left orange Bangkok tile in the right-hand collage. This is not an in-game catch screenshot or proof of release.",
+      "method_zh": "官方已預告 PokéXciting 皮卡丘與 GO 集章地區背景機制；曼谷的背景取得地點、開放日期與細節待官方後續公告。",
+      "method_en": "PokéXciting Pikachu and Location Background stamp encounters have been announced. Bangkok-specific acquisition location, availability and details await further official announcements.",
+      "pokemon": [
+        {
+          "dex": 25,
+          "name_zh": "皮卡丘（橘色爆炸頭）",
+          "name_en": "Pikachu (Orange Afro)"
+        }
+      ],
+      "evolved_pokemon": [],
+      "related_product_ids": [
+        "8d58e354-cc8c-4e2c-a5dd-3ce744b312df"
+      ],
+      "notes_en": [
+        "Asset preview provided by the owner. Upcoming; excluded from released counts."
       ]
-    },
+    }
+  ],
+  "additional_announced_events": [
     {
       "name_zh": "深入荒野 2026 新特殊背景",
       "name_en": "Into the Wild 2026 new Special Background",
@@ -26216,7 +26248,7 @@
     "catalog-crosschecked": 55,
     "official-event-confirmed": 216,
     "catalogued-needs-event-check": 3,
-    "upcoming": 3
+    "upcoming": 4
   },
   "review_counts": {
     "date_details_pending": 3,

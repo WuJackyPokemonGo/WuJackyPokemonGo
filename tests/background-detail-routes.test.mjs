@@ -25,7 +25,7 @@ test('Fukuoka distinguishes both base forms for regular, Dynamax and Gigantamax'
  for(const q of ['極巨化顫弦蠑螈','Dynamax Toxtricity','#0849'])assert.ok(backgroundMatch(r,q));assert.equal(new Set(r.pokemon.map(p=>p.variant_id)).size,8);
 });
 test('new unmatched edited encounters stay visible in an unassigned group',()=>{const r=by('BG-0122'),extra={dex:25,name_en:'Pikachu',name_zh:'皮卡丘'};assert.ok(detailPokemonSections({...r,pokemon:[...r.pokemon,extra]}).find(s=>s.id==='unassigned').pokemon.includes(extra))});
-test('unrelated events and original background counts remain unchanged by detail presentation',()=>{const r=by('BG-0265');assert.deepEqual(detailPokemonRows(r),r.pokemon);assert.deepEqual(detailPokemonSections(r),[]);assert.equal(data.records.length,277);assert.equal(groupBackgroundCards(data.records).length,272)});
+test('unrelated events and original background counts remain unchanged by detail presentation',()=>{const r=by('BG-0265');assert.deepEqual(detailPokemonRows(r),r.pokemon);assert.deepEqual(detailPokemonSections(r),[]);assert.equal(data.records.length,278);assert.equal(groupBackgroundCards(data.records).length,273)});
 
 // Across the entire collection, presentation may reorder but cannot add/drop or
 // mutate entries. Stable ties preserve costumes/forms sharing a dex number.
