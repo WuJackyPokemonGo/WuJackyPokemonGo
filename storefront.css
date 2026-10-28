@@ -86,11 +86,12 @@ html[lang="en"] .region-slide figcaption span[lang="zh-Hant"]{display:none}
 }
 @media(prefers-reduced-motion:reduce){.region-slide,.region-dot span{transition:none}}
 
-/* Compact phone artwork: show the central Pokémon group rather than wallpaper margins. */
+/* Mobile artwork viewport: crop wallpaper margins using a dedicated image frame. */
 @media(max-width:900px){
- .region-stage{height:380px;min-height:0;grid-template-rows:minmax(0,1fr)}
- .region-slide{display:block;min-height:0;overflow:hidden}
- .region-slide img{position:absolute;left:0;top:calc((100% - 28px)*-.54);width:100%;height:calc((100% - 28px)*2);max-width:none;object-fit:contain;object-position:center}
- .region-slide figcaption{position:absolute;bottom:0;left:0;width:100%;height:28px;padding:5px 8px}
+ .region-stage{height:340px;min-height:0;grid-template-rows:minmax(0,1fr)}
+ .region-slide{display:grid;grid-template-rows:minmax(0,1fr) 28px;min-height:0;height:100%;overflow:hidden}
+ .region-art{position:relative;min-height:0;overflow:hidden}
+ .region-art img{position:absolute;left:0;top:-54%;width:100%;height:200%;max-width:none;min-height:0;object-fit:contain;object-position:center}
+ .region-slide figcaption{position:static;height:28px;padding:5px 8px}
 }
-@media(max-width:600px){.region-stage{height:clamp(290px,88vw,360px)}}
+@media(max-width:600px){.region-stage{height:330px}}
