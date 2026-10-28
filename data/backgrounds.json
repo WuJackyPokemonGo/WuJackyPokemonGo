@@ -9456,7 +9456,7 @@
         {
           "dex": 128,
           "name_en": "Paldean Tauros Aqua",
-          "name_zh": "肯泰羅",
+          "name_zh": "肯泰羅（帕底亞的樣子・水瀾種）",
           "variant_id": "tauros-paldea-aqua",
           "acquisition": "encounter",
           "method_zh": "持有效活動票券參加當地三星團體戰，有機會附地標背景。",
@@ -9873,7 +9873,7 @@
         {
           "dex": 128,
           "name_en": "Paldean Tauros Blaze",
-          "name_zh": "肯泰羅",
+          "name_zh": "肯泰羅（帕底亞的樣子・火熾種）",
           "variant_id": "tauros-paldea-blaze",
           "acquisition": "encounter",
           "method_zh": "持有效活動票券參加當地三星團體戰，有機會附地標背景。",
@@ -10071,7 +10071,7 @@
         {
           "dex": 128,
           "name_en": "Paldean Tauros Combat",
-          "name_zh": "肯泰羅",
+          "name_zh": "肯泰羅（帕底亞的樣子・鬥戰種）",
           "variant_id": "tauros-paldea-combat",
           "acquisition": "encounter",
           "method_zh": "持有效活動票券參加當地三星團體戰，有機會附地標背景。",
@@ -23579,7 +23579,7 @@
         {
           "dex": 128,
           "name_en": "Paldean Tauros Aqua",
-          "name_zh": "肯泰羅",
+          "name_zh": "肯泰羅（帕底亞的樣子・水瀾種）",
           "variant_id": "tauros-paldea-aqua",
           "acquisition": "encounter"
         }
