@@ -10,6 +10,10 @@ let locale=resolveLocale(savedLocale,browserLanguages,typeof navigator==='undefi
 export const getLocale=()=>locale;
 export function setLocale(value){locale=value==='en'?'en':'zh';try{localStorage.setItem('wj_store_locale',locale)}catch{};return locale}
 export const labels={
+'從喜歡的款式開始，收藏你的下一段旅程。':'Find a favorite. Start your next collection.',
+'探索背景圖鑑 ↗':'Explore backgrounds ↗',
+'挑選商品，加入清單後透過 LINE 確認。':'Choose your favorites, then confirm your inquiry on LINE.',
+
 '背景收藏圖鑑 ↗':'Background collection ↗',
 '官方 LINE ↗':'Official LINE ↗','尋找你的下一隻收藏。':'Find your next collectible.',
 '瀏覽商品、整理想詢問的清單，再透過 LINE 與我確認供貨和交付方式。':'Browse the collection, make an inquiry list, then contact me on LINE to confirm availability and delivery.',
