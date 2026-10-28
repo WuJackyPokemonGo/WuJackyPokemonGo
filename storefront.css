@@ -34,3 +34,14 @@ body{background:#f7f6f2}.wrap{width:min(1160px,100%)}
 /* Sold-out items keep the original colors and remain available for restock inquiries. */
 .card-sold-out .product-media .cover{filter:brightness(.88)}
 .card-sold-out .product-media .status.sold{background:#263447;color:#fff;box-shadow:0 2px 8px #0002}
+
+/* Warm beige collection background with a quiet, seamless Poké Ball pattern. */
+:root{background:#efe2c5}
+body{
+ background-color:#efe2c5;
+ background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22320%22%20height%3D%22300%22%20viewBox%3D%220%200%20320%20300%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%239c834b%22%20stroke-width%3D%222.5%22%20opacity%3D%22.17%22%3E%3Cg%20transform%3D%22translate(62%2065)%20rotate(-16)%22%3E%3Ccircle%20r%3D%2234%22%2F%3E%3Cpath%20d%3D%22M-34%200h23m22%200h23%22%2F%3E%3Ccircle%20r%3D%2211%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(228%20112)%20rotate(18)%22%3E%3Ccircle%20r%3D%2229%22%2F%3E%3Cpath%20d%3D%22M-29%200h19m20%200h19%22%2F%3E%3Ccircle%20r%3D%2210%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(128%20242)%20rotate(12)%22%3E%3Ccircle%20r%3D%2233%22%2F%3E%3Cpath%20d%3D%22M-33%200h22m22%200h22%22%2F%3E%3Ccircle%20r%3D%2211%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+ background-repeat:repeat;
+ background-size:320px 300px;
+}
+.footer{background:#e9dcc0;border-color:#d9cba9}
+@media(max-width:600px){body{background-size:280px 262.5px}}
