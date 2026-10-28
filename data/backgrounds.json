@@ -9559,13 +9559,17 @@
           "name_zh": "拉普拉斯（Blanche-themed Lapras）",
           "variant_id": "lapras-spring-2023-mystic",
           "acquisition": "encounter",
-          "method_zh": "Tokyo Complete 最終城市限時調查可遇見 Blanche 配飾拉普拉斯；需先完成四區城市挑戰及擊敗克里夫。此獎勵是否保證東京地標背景仍未確認，不能套用全球 GO Pass 的隊伍特殊背景。",
-          "method_en": "Tokyo Complete awards Blanche-accessory Lapras after the four City District challenges and defeating Cliff. A guaranteed Tokyo Location Background on this reward remains unconfirmed; the global GO Pass team Special Background is separate.",
-          "method_status": "unconfirmed",
+          "method_zh": "Tokyo Complete 最終城市限時調查獎勵 Blanche 配飾拉普拉斯；既有調查名錄記載先完成四區城市挑戰及擊敗克里夫。據使用者提供的玩家回報，此配飾獎勵保證東京地標背景，每帳號1隻；保證及數量屬玩家回報，並非官方公告認證。",
+          "method_en": "Tokyo Complete awards Blanche-accessory Lapras after the four City District challenges and defeating Cliff, as documented in the existing research catalog. According to the owner-provided player report, this costume reward guarantees the Tokyo Location Background, one reward per account. The guarantee and quantity are player-reported, not certified by an official announcement.",
+          "method_status": "reviewed",
           "method_sources": [
             "https://leekduck.com/events/pokemon-go-fest-2026-tokyo/",
             "https://www.serebii.net/pokemongo/todaysviewresearch/gofest2026:tokyocomplete.shtml"
-          ]
+          ],
+          "method_evidence": "owner-provided-player-report",
+          "reward_per_account": 1,
+          "reward_quantity_evidence": "owner-provided-player-report",
+          "owner_evidence_note_zh": "2026/10/28使用者提供對話截圖：內嵌芝加哥電擊怪實物截圖；玩家文字回報三地區配飾均有背景、每帳號1隻。東京與哥本哈根未附個別實物畫面。"
         },
         {
           "dex": 807,
@@ -9590,8 +9594,8 @@
       ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "有效票券時段的指定團體戰有機會獲得地標背景；暗影與一般形態分開列出。公園末30分鐘超級超夢團體戰保證背景。公園特殊調查獎勵捷拉奧拉；隊長服裝款的地標背景與個別取得條件仍未確認，不能套用全球隊伍特殊背景。",
-      "method_en": "Eligible ticketed raids offer a chance of the city background; Shadow and regular forms are distinct. End-of-park Super Mega Raids guarantee background Mewtwo. Park Special Research awards Zeraora. The city-background route for team-leader costumes remains unconfirmed; global team Special Backgrounds are separate.",
+      "method_zh": "有效票券時段的指定團體戰有機會獲得地標背景；暗影與一般形態分開列出。公園末30分鐘超級超夢團體戰保證背景。公園特殊調查獎勵捷拉奧拉。隊長配飾款城市調查獎勵依使用者提供的玩家回報，保證對應城市地標背景，每帳號1隻；此為玩家回報，與全球隊伍特殊背景分開。",
+      "method_en": "Eligible ticketed raids offer a chance of the city background; Shadow and regular forms are distinct. End-of-park Super Mega Raids guarantee background Mewtwo. Park Special Research awards Zeraora. According to the owner-provided player report, the city-research team-leader costume reward guarantees the corresponding city Location Background, one per account; this is player-reported and separate from global team Special Backgrounds.",
       "series": "GO Fest",
       "series_zh": "GO Fest",
       "year": "2026",
@@ -9603,11 +9607,11 @@
         "https://bulbapedia.bulbagarden.net/wiki/Zeraora_(GO)"
       ],
       "evolved_pokemon": [],
-      "checked_on": "2026-10-24",
+      "checked_on": "2026-10-28",
       "region_en": "Japan",
       "region_zh": "日本",
       "verification_scope": "background-and-eligibility",
-      "method_status": "partial",
+      "method_status": "reviewed",
       "start_date": "2026-05-25",
       "end_date": "2026-06-01",
       "date_note_zh": "此期間包含城市體驗限時調查；公園主活動日期另依票券。",
@@ -9615,7 +9619,8 @@
       "reference_ids": [
         "gf26_tokyo"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "evidence_reviewed_on": "2026-10-28"
     },
     {
       "name_en": "GO Fest Tokyo Koto",
@@ -9971,14 +9976,17 @@
           "name_zh": "電擊怪（Spark-themed Elekid）",
           "variant_id": "elekid-spring-2023-instinct",
           "acquisition": "encounter",
-          "method_zh": "完成芝加哥四個城市區域的限時調查後，解鎖 Chicago Complete 最終限時調查；擊敗幹部希爾拉後，領取 Spark 配飾電擊怪。現場採訪記錄明確記載保證城市背景，並非全球 GO Pass 的隊伍特殊背景。",
-          "method_en": "Finish all four Chicago City District Timed Research sets to unlock Chicago Complete, defeat Sierra, then claim Spark-accessory Elekid. A firsthand event report explicitly records a guaranteed city Location Background; this is separate from the global GO Pass team Special Background.",
+          "method_zh": "完成芝加哥四個城市區域的限時調查後，解鎖 Chicago Complete 最終限時調查；擊敗幹部希爾拉後，領取 Spark 配飾電擊怪。現場採訪記錄明確記載保證城市背景，並非全球 GO Pass 的隊伍特殊背景。 使用者另提供電擊怪附芝加哥城市背景的遊戲截圖，並轉述玩家確認此活動配飾獎勵每帳號1隻；數量屬玩家回報。",
+          "method_en": "Finish all four Chicago City District Timed Research sets to unlock Chicago Complete, defeat Sierra, then claim Spark-accessory Elekid. A firsthand event report explicitly records a guaranteed city Location Background; this is separate from the global GO Pass team Special Background. The owner also supplied an in-game screenshot of Elekid with the Chicago city background and a player report of one costume reward per account for this event; the quantity is player-reported.",
           "method_status": "reviewed",
           "method_sources": [
             "https://operationrainfall.com/2026/06/19/review-pokemon-go-fest-2026-chicago-was-the-best-event-yet/",
             "https://www.serebii.net/pokemongo/todaysviewresearch/gofest2026:chicagocomplete.shtml"
           ],
-          "method_evidence": "firsthand-report-crosschecked"
+          "method_evidence": "firsthand-report-crosschecked",
+          "reward_per_account": 1,
+          "reward_quantity_evidence": "owner-provided-player-report",
+          "owner_evidence_note_zh": "2026/10/28使用者提供對話截圖：內嵌芝加哥電擊怪實物截圖；玩家文字回報三地區配飾均有背景、每帳號1隻。東京與哥本哈根未附個別實物畫面。"
         },
         {
           "dex": 807,
@@ -10003,8 +10011,8 @@
       ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "有效票券時段的指定團體戰有機會獲得地標背景；暗影與一般形態分開列出。公園末30分鐘超級超夢團體戰保證背景。公園特殊調查獎勵捷拉奧拉。完成四區城市限時調查及 Chicago Complete 可得城市背景電擊怪（現場採訪記錄與調查名錄交叉核對）。",
-      "method_en": "Eligible ticketed raids can award the city Location Background, with regular and Shadow forms listed separately. Park-finale Super Mega Mewtwo raids guarantee a background; park Special Research awards Zeraora. Complete all four City District challenges and Chicago Complete for city-background Elekid, cross-checked using a firsthand event report and the research catalog.",
+      "method_zh": "有效票券時段的指定團體戰有機會獲得地標背景；暗影與一般形態分開列出。公園末30分鐘超級超夢團體戰保證背景。公園特殊調查獎勵捷拉奧拉。完成四區城市限時調查及 Chicago Complete 可得城市背景電擊怪（現場採訪記錄與調查名錄交叉核對）。 使用者提供實物截圖及玩家回報：該配飾獎勵每帳號1隻。",
+      "method_en": "Eligible ticketed raids can award the city Location Background, with regular and Shadow forms listed separately. Park-finale Super Mega Mewtwo raids guarantee a background; park Special Research awards Zeraora. Complete all four City District challenges and Chicago Complete for city-background Elekid, cross-checked using a firsthand event report and the research catalog. An owner-provided screenshot corroborates the city-background costume; a player reports one reward per account.",
       "series": "GO Fest",
       "series_zh": "GO Fest",
       "year": "2026",
@@ -10024,9 +10032,9 @@
           "name_zh": "電擊獸（Spark-themed Electabuzz）",
           "variant_id": "electabuzz-spring-2023-instinct",
           "acquisition": "evolution",
-          "method_zh": "由相同背景的原始服裝款進化保留；原始款地標背景資格仍待確認。",
-          "method_en": "Inherited by evolution only if the source costume has this city background; source eligibility remains unconfirmed.",
-          "method_status": "unconfirmed"
+          "method_zh": "由相同城市背景的隊長配飾原始款進化繼承背景；進化不是額外調查獎勵，不增加每帳號原始配飾獎勵名額。",
+          "method_en": "Inherits the same city background by evolving the source team-leader costume. Evolution is not an additional research reward and does not increase the original costume reward allowance per account.",
+          "method_status": "reviewed"
         },
         {
           "dex": 466,
@@ -10034,12 +10042,12 @@
           "name_zh": "電擊魔獸（Spark-themed Electivire）",
           "variant_id": "electivire-spring-2023-instinct",
           "acquisition": "evolution",
-          "method_zh": "由相同背景的原始服裝款進化保留；原始款地標背景資格仍待確認。",
-          "method_en": "Inherited by evolution only if the source costume has this city background; source eligibility remains unconfirmed.",
-          "method_status": "unconfirmed"
+          "method_zh": "由相同城市背景的隊長配飾原始款進化繼承背景；進化不是額外調查獎勵，不增加每帳號原始配飾獎勵名額。",
+          "method_en": "Inherits the same city background by evolving the source team-leader costume. Evolution is not an additional research reward and does not increase the original costume reward allowance per account.",
+          "method_status": "reviewed"
         }
       ],
-      "checked_on": "2026-10-24",
+      "checked_on": "2026-10-28",
       "region_en": "United States",
       "region_zh": "美國",
       "verification_scope": "background-and-eligibility",
@@ -10052,7 +10060,7 @@
         "gf26_chicago"
       ],
       "reference_review": "images-compared-2026-10-24",
-      "evidence_reviewed_on": "2026-10-24"
+      "evidence_reviewed_on": "2026-10-28"
     },
     {
       "name_en": "GO Fest 2026 Copenhagen",
@@ -10166,9 +10174,13 @@
           "name_zh": "小火馬（Candela-themed Ponyta）",
           "variant_id": "ponyta-spring-2023-valor",
           "acquisition": "encounter",
-          "method_zh": "此城市地標背景的個別發放方式未確認；全球隊伍特殊背景的 GO Pass 不能作為此款證據。",
-          "method_en": "This city Location Background route is unconfirmed. A global GO Pass with a team Special Background does not establish this city variant.",
-          "method_status": "unconfirmed"
+          "method_zh": "哥本哈根城市調查的 Candela 配飾小火馬獎勵；據使用者提供的玩家回報，此配飾獎勵保證哥本哈根地標背景，每帳號1隻。保證及數量屬玩家回報，並非官方公告認證。",
+          "method_en": "Candela-accessory Ponyta is the Copenhagen city-research reward. According to the owner-provided player report, this costume reward guarantees the Copenhagen Location Background, one reward per account. The guarantee and quantity are player-reported, not certified by an official announcement.",
+          "method_status": "reviewed",
+          "method_evidence": "owner-provided-player-report",
+          "reward_per_account": 1,
+          "reward_quantity_evidence": "owner-provided-player-report",
+          "owner_evidence_note_zh": "2026/10/28使用者提供對話截圖：內嵌芝加哥電擊怪實物截圖；玩家文字回報三地區配飾均有背景、每帳號1隻。東京與哥本哈根未附個別實物畫面。"
         },
         {
           "dex": 807,
@@ -10193,8 +10205,8 @@
       ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "有效票券時段的指定團體戰有機會獲得地標背景；暗影與一般形態分開列出。公園末30分鐘超級超夢團體戰保證背景。公園特殊調查獎勵捷拉奧拉；隊長服裝款的地標背景與個別取得條件仍未確認，不能套用全球隊伍特殊背景。",
-      "method_en": "Eligible ticketed raids offer a chance of the city background; Shadow and regular forms are distinct. End-of-park Super Mega Raids guarantee background Mewtwo. Park Special Research awards Zeraora. The city-background route for team-leader costumes remains unconfirmed; global team Special Backgrounds are separate.",
+      "method_zh": "有效票券時段的指定團體戰有機會獲得地標背景；暗影與一般形態分開列出。公園末30分鐘超級超夢團體戰保證背景。公園特殊調查獎勵捷拉奧拉。隊長配飾款城市調查獎勵依使用者提供的玩家回報，保證對應城市地標背景，每帳號1隻；此為玩家回報，與全球隊伍特殊背景分開。",
+      "method_en": "Eligible ticketed raids offer a chance of the city background; Shadow and regular forms are distinct. End-of-park Super Mega Raids guarantee background Mewtwo. Park Special Research awards Zeraora. According to the owner-provided player report, the city-research team-leader costume reward guarantees the corresponding city Location Background, one per account; this is player-reported and separate from global team Special Backgrounds.",
       "series": "GO Fest",
       "series_zh": "GO Fest",
       "year": "2026",
@@ -10212,16 +10224,16 @@
           "name_zh": "烈焰馬（Candela-themed Rapidash）",
           "variant_id": "rapidash-spring-2023-valor",
           "acquisition": "evolution",
-          "method_zh": "由相同背景的原始服裝款進化保留；原始款地標背景資格仍待確認。",
-          "method_en": "Inherited by evolution only if the source costume has this city background; source eligibility remains unconfirmed.",
-          "method_status": "unconfirmed"
+          "method_zh": "由相同城市背景的隊長配飾原始款進化繼承背景；進化不是額外調查獎勵，不增加每帳號原始配飾獎勵名額。",
+          "method_en": "Inherits the same city background by evolving the source team-leader costume. Evolution is not an additional research reward and does not increase the original costume reward allowance per account.",
+          "method_status": "reviewed"
         }
       ],
-      "checked_on": "2026-10-24",
+      "checked_on": "2026-10-28",
       "region_en": "Denmark",
       "region_zh": "丹麥",
       "verification_scope": "background-and-eligibility",
-      "method_status": "partial",
+      "method_status": "reviewed",
       "start_date": "2026-06-11",
       "end_date": "2026-06-14",
       "date_note_zh": "此期間包含城市體驗限時調查；公園主活動日期另依票券。",
@@ -10230,7 +10242,8 @@
         "gf26_copenhagen"
       ],
       "reference_review": "images-compared-2026-10-24",
-      "location_en": "Copenhagen"
+      "location_en": "Copenhagen",
+      "evidence_reviewed_on": "2026-10-28"
     },
     {
       "name_en": "Tokyo Swallows",
@@ -26022,7 +26035,7 @@
   },
   "review_counts": {
     "date_details_pending": 3,
-    "acquisition_method_pending": 7,
+    "acquisition_method_pending": 5,
     "backgrounds_pending": 3
   },
   "image_review": {

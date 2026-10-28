@@ -32,11 +32,11 @@ test('unrelated events and original background counts remain unchanged by detail
 test('all background encounter/evolution lists sort by dex with stable ties and identity preservation',()=>{
  for(const r of data.records){const snapshot=JSON.stringify(r);for(const evolved of [false,true]){const raw=r[evolved?'evolved_pokemon':'pokemon']??[],ordered=detailPokemonRows(r,{evolved});assert.ok(asc(ordered),r.background_id);assert.equal(ordered.length,raw.length);assert.deepEqual(new Set(ordered),new Set(raw));for(const dex of new Set(raw.map(p=>p.dex)))assert.deepEqual(ordered.filter(p=>p.dex===dex),raw.filter(p=>p.dex===dex));}assert.equal(JSON.stringify(r),snapshot)}
 });
-for(const id of ['BG-0136','BG-0140','BG-0141'])test(`${id} separates reviewed regular, Shadow, Primal, finale and research without certifying pending costumes`,()=>{
+for(const id of ['BG-0136','BG-0140','BG-0141'])test(`${id} separates reviewed regular, Shadow, Primal, finale and research with individually reviewed city costume rewards`,()=>{
  const r=by(id),ss=detailPokemonSections(r),find=id=>ss.find(s=>s.id===id);
  assert.equal(find('raids').pokemon.length,3);assert.equal(find('shadow-raids').pokemon.length,4);assert.equal(find('primal-raids').pokemon.length,2);assert.equal(find('super-mega').pokemon.length,1);assert.ok(find('research').pokemon.some(p=>p.dex===807));assert.ok(find('research').pokemon.some(p=>p.dex===150));
  assert.deepEqual(new Set(ss.flatMap(s=>s.pokemon)),new Set(r.pokemon));assert.ok(ss.every(s=>asc(s.pokemon)));
- if(id==='BG-0140'){assert.ok(find('research').pokemon.some(p=>p.dex===239));assert.ok(!find('unassigned'))}else{assert.equal(find('unassigned').pokemon.length,1);assert.equal(find('unassigned').pokemon[0].method_status,'unconfirmed')}
+ assert.ok(find('research').pokemon.some(p=>p.dex===({'BG-0136':131,'BG-0140':239,'BG-0141':77}[id])));assert.ok(!find('unassigned')); 
  const altered={...r,pokemon:r.pokemon.map(p=>p.dex===807?{...p,method_status:'unconfirmed'}:p)};assert.ok(detailPokemonSections(altered).find(s=>s.id==='unassigned').pokemon.some(p=>p.dex===807));
 });
 test('Wild Area global preserves event dates, Shadow forms and Max route separately without adding research assumptions',()=>{

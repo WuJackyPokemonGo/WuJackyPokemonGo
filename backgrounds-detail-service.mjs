@@ -20,7 +20,7 @@ function routesFor(row){
    reviewed({...route('shadow-raids','暗影團體戰','Shadow Raids',[],'保留暗影形態，不與一般形態混列。','Shadow forms remain separate from regular encounters.',source),variants:city.shadow}),
    reviewed({...route('primal-raids','原始團體戰','Primal Raids',[],'列出捕獲的蓋歐卡／固拉多，並非將原始形態當作捕獲形態。','Lists the caught Kyogre/Groudon rather than treating Primal forms as caught encounters.',source),variants:['kyogre','groudon']}),
    reviewed({...route('super-mega','會場壓軸超級團體戰','Park finale Super Mega Raids',[],'會場壓軸團體戰捕獲超夢；票券與入場條件以活動規定為準。','Mewtwo encounter from the park finale; event ticket and admission requirements apply.',source),variants:['mewtwo']}),
-   reviewed({...route('research','調查獎勵','Research rewards',[],'僅列已有逐款取得證據的調查獎勵；超夢另有城市分支限時調查途徑。','Only individually reviewed research routes are included; Mewtwo also has a city branching Timed Research route.',source),variants:['zeraora','mewtwo','elekid-spring-2023-instinct']})
+   reviewed({...route('research','調查獎勵','Research rewards',[],'僅列已有逐款取得證據的調查獎勵；超夢另有城市分支限時調查途徑。','Only individually reviewed research routes are included; Mewtwo also has a city branching Timed Research route.',source),variants:['zeraora','mewtwo','elekid-spring-2023-instinct','lapras-spring-2023-mystic','ponyta-spring-2023-valor']})
   ];
  }
  if(row.background_id==='BG-0238')return [
