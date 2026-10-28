@@ -10,6 +10,9 @@ let locale=resolveLocale(savedLocale,browserLanguages,typeof navigator==='undefi
 export const getLocale=()=>locale;
 export function setLocale(value){locale=value==='en'?'en':'zh';try{localStorage.setItem('wj_store_locale',locale)}catch{};return locale}
 export const labels={
+"單區：NT$ 100\n四款一套：NT$ 300\n\n爆炸頭髮色對照：\n馬來西亞・吉隆坡：藍綠色\n台灣・台北：粉紅色\n新加坡：藍色\n菲律賓・馬尼拉：紅色\n\n以上為四款爆炸頭髮色，各款附對應地區背景。泰國曼谷橘色款另列為即將推出，不包含在本四色套組。":"Single region: NT$ 100\nSet of four: NT$ 300\n\nAfro hair colors:\nKuala Lumpur, Malaysia: Turquoise\nTaipei, Taiwan: Pink\nSingapore: Blue\nManila, Philippines: Red\n\nThese are the four afro hair colors, each with its corresponding Location Background. The orange Bangkok, Thailand variant is listed separately as Coming soon and is not included in this four-color set.",
+"泰國・曼谷：橘色爆炸頭皮卡丘。\nPokéXciting! 曼谷活動預定於 2027/02/13–02/14 舉行。\n即將推出；售價與供貨待確認，暫不開放加入詢價清單。\n此款獨立預告，不包含在現有四色套組。":"Bangkok, Thailand: Orange Afro Pikachu.\nThe PokéXciting! Bangkok event is scheduled for February 13–14, 2027.\nComing soon. Price and availability are to be confirmed; this item cannot be added to the inquiry list yet.\nThis is a separate preview and is not included in the existing four-color set.",
+
 '從喜歡的款式開始，收藏你的下一段旅程。':'Find a favorite. Start your next collection.',
 '探索背景圖鑑 ↗':'Explore backgrounds ↗',
 '挑選商品，加入清單後透過 LINE 確認。':'Choose your favorites, then confirm your inquiry on LINE.',

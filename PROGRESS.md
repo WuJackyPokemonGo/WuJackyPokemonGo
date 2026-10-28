@@ -1,3 +1,9 @@
+## 2026-10-28 PokéXciting! 髮色與泰國預告
+
+商品 189 補上吉隆坡藍綠、台北粉紅、新加坡藍、馬尼拉紅的爆炸頭髮色與中英搜尋別名；原單區100／四款300與庫存保留。新增 POKEXCITING-TH（8d58e354-cc8c-4e2c-a5dd-3ce744b312df），泰國曼谷橘色款為 published / coming_soon，售價未定、無庫存或圖片推測、不能加入詢價；獨立於四色套組。官方曼谷活動2027/02/13–02/14。兩筆說明新增英文對照。209項測試與build通過。
+
+來源：https://th.portal-pokemon.com/30th/topics/20261026_01/?lang=en 、 https://pokemongo.com/en/news/event-kuala-lumpur-30th-anniversary-2026 、 https://sg.portal-pokemon.com/30th/topics/20260812_01/ 、 https://tw.portal-pokemon.com/30th/topics/20260701_01/?lang=en 、 https://ph.portal-pokemon.com/30th/topics/pokexciting_news0/
+
 ## 2026-10-28 已售罄商品展示
 
 已售罄商品卡保留彩色原圖，亮度 88%，深色已售罄標籤；商品卡與詳細頁改為中英文詢問補貨按鈕。預設推薦排序將已售罄排在其他商品後面，價格與名稱排序維持各自排序條件。商品資料與庫存未變更。
