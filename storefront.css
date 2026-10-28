@@ -45,3 +45,43 @@ body{
 }
 .footer{background:#e9dcc0;border-color:#d9cba9}
 @media(max-width:600px){body{background-size:280px 262.5px}}
+
+/* Region artwork header. Navigation remains separate and readable. */
+.header{background:#f7edda;color:#18283e;padding:24px 28px;border-bottom:1px solid #dfcfaa}
+.header .brand small{color:#786849}
+.header .language-control>span,.header .language-control>span small{color:#655b49}
+.header .header-cart{background:#fff9ec;border-color:#d7c7a5;color:#273d56}
+.header .header-cart:hover{background:#f0e1bf}
+.header .language-hint{background:#fff9ec;border-color:#e1d1af;color:#665d4c}
+.header .language-hint button{color:#665d4c}
+.region-showcase{background:#f7edda;border-bottom:1px solid #d7c7a5;outline-offset:-4px}
+.region-stage{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));max-width:1440px;margin:auto}
+.region-slide{margin:0;min-width:0;position:relative;background:var(--region-b)}
+.region-slide img{display:block;width:100%;height:auto;aspect-ratio:3/8;object-fit:contain}
+.region-slide figcaption{padding:8px 2px;text-align:center;font-size:11px;font-weight:650;line-height:1.5;background:#fff8eae8;color:#37404c}
+.region-slide figcaption span[lang="en"]{display:none}
+html[lang="en"] .region-slide figcaption span[lang="en"]{display:inline}
+html[lang="en"] .region-slide figcaption span[lang="zh-Hant"]{display:none}
+.region-carousel-controls{display:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:900px){
+ .region-stage{display:grid;grid-template-columns:1fr;height:min(66svh,500px);min-height:290px;overflow:hidden;isolation:isolate;touch-action:pan-y}
+ .region-slide{grid-area:1/1;display:grid;grid-template-rows:minmax(0,1fr) auto;height:100%;width:100%;background:linear-gradient(115deg,var(--region-a),var(--region-b));opacity:0;visibility:hidden;transition:opacity .55s ease,visibility 0s .55s;pointer-events:none}
+ .region-slide.is-active{opacity:1;visibility:visible;transition:opacity .55s ease;pointer-events:auto;z-index:1}
+ .region-slide img{height:100%;width:100%;min-height:0;aspect-ratio:auto;object-fit:contain}
+ .region-slide figcaption{font-size:12px;padding:6px 8px;background:#fff8eaf5}
+ .region-carousel-controls{display:flex;align-items:center;justify-content:center;gap:3px;padding:6px 8px;background:#f7edda}
+ .region-carousel-controls button{border:0;background:transparent;color:#5f5139;min-width:30px;min-height:36px;border-radius:6px;padding:0;display:inline-flex;align-items:center;justify-content:center}
+ .region-carousel-controls button:hover{background:#eaddc1}
+ .region-prev,.region-next{font-size:26px}
+ .region-toggle{font-size:15px;margin-left:4px}
+ .region-dots{display:flex;align-items:center;gap:0}
+ .region-dot span{width:6px;height:6px;border-radius:50%;background:#c9b78f;transition:background .2s,transform .2s}
+ .region-dot.is-active span{background:#384c60;transform:scale(1.35)}
+}
+@media(max-width:600px){
+ .header{padding:19px 16px 16px}
+ .region-stage{height:min(60svh,460px)}
+ .region-carousel-controls button{min-width:26px}
+}
+@media(prefers-reduced-motion:reduce){.region-slide,.region-dot span{transition:none}}
