@@ -19,7 +19,7 @@ if (gallery) {
   function schedule() {
     stop();
     if (compact.matches && !paused && !hovering && !focused && !touching && !document.hidden) {
-      timer = setTimeout(() => { show(current + 1); schedule(); }, 5000);
+      timer = setTimeout(() => { show(current + 1); schedule(); }, 3000);
     }
   }
   function show(index, manual = false) {
@@ -57,8 +57,12 @@ if (gallery) {
   });
   gallery.addEventListener('pointerenter', event => { if (event.pointerType === 'mouse') { hovering = true; stop(); } });
   gallery.addEventListener('pointerleave', event => { if (event.pointerType === 'mouse') { hovering = false; schedule(); } });
-  gallery.addEventListener('focusin', () => { focused = true; stop(); });
-  gallery.addEventListener('focusout', event => { focused = gallery.contains(event.relatedTarget); schedule(); });
+  gallery.addEventListener('pointerdown', () => { focused = false; });
+  gallery.addEventListener('focusin', event => {
+    focused = Boolean(event.target?.matches?.(':focus-visible'));
+    schedule();
+  });
+  gallery.addEventListener('focusout', event => { focused = gallery.contains(event.relatedTarget) && Boolean(event.relatedTarget?.matches?.(':focus-visible')); schedule(); });
   stage.addEventListener('pointerdown', event => {
     if (!compact.matches || !event.isPrimary) return;
     start = {x: event.clientX, y: event.clientY, id: event.pointerId};

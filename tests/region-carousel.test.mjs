@@ -35,9 +35,9 @@ function setup({compact = true, reduced = false} = {}) {
     ticking: () => Boolean(timer), delay: () => delay, tick() { const run = timer; timer = undefined; run?.(); }};
 }
 
-test('mobile advances every five seconds and loops through all nine images', () => {
+test('mobile advances every three seconds and loops through all nine images', () => {
   const ui = setup();
-  assert.equal(ui.delay(), 5000);
+  assert.equal(ui.delay(), 3000);
   for (let i = 0; i < 18; i++) { assert.equal(ui.active(), i % 9); ui.tick(); }
   assert.equal(ui.announcement.textContent, undefined);
   assert.equal(ui.slides.filter(s => s.attributes['aria-hidden'] === 'false').length, 1);
@@ -60,7 +60,7 @@ test('pause, hidden tab, focus and reduced-motion stop automatic playback', () =
   ui.toggle.fire('click'); assert.equal(ui.ticking(), true);
   ui.document.hidden = true; ui.document.fire('visibilitychange'); assert.equal(ui.ticking(), false);
   ui.document.hidden = false; ui.document.fire('visibilitychange'); assert.equal(ui.ticking(), true);
-  ui.gallery.fire('focusin'); assert.equal(ui.ticking(), false);
+  ui.gallery.fire('focusin', {target: {matches: () => true}}); assert.equal(ui.ticking(), false);
   ui.gallery.fire('focusout', {relatedTarget: null}); assert.equal(ui.ticking(), true);
   const reduced = setup({reduced: true}); assert.equal(reduced.ticking(), false);
   reduced.next.fire('click'); assert.equal(reduced.active(), 1);
@@ -72,4 +72,17 @@ test('desktop exposes all nine panels and does not auto-advance', () => {
   ui.media.matches = true; ui.media.fire('change'); assert.equal(ui.ticking(), true);
   ui.media.matches = false; ui.media.fire('change'); assert.equal(ui.ticking(), false);
   assert.ok(ui.slides.every(slide => slide.attributes['aria-hidden'] === 'false'));
+});
+
+test('touching a carousel dot does not leave autoplay paused after focus', () => {
+  const ui = setup();
+  ui.gallery.fire('focusin', {target: {matches: () => true}});
+  assert.equal(ui.ticking(), false);
+  ui.gallery.fire('pointerdown', {pointerType: 'touch'});
+  ui.gallery.fire('focusin', {target: {matches: () => false}});
+  ui.dots[2].fire('click');
+  assert.equal(ui.active(), 2);
+  assert.equal(ui.ticking(), true);
+  ui.tick();
+  assert.equal(ui.active(), 3);
 });

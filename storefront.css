@@ -91,7 +91,7 @@ html[lang="en"] .region-slide figcaption span[lang="zh-Hant"]{display:none}
  .region-stage{height:340px;min-height:0;grid-template-rows:minmax(0,1fr)}
  .region-slide{display:grid;grid-template-rows:minmax(0,1fr) 28px;min-height:0;height:100%;overflow:hidden}
  .region-art{position:relative;min-height:0;overflow:hidden}
- .region-art img{position:absolute;left:0;top:-54%;width:100%;height:200%;max-width:none;min-height:0;object-fit:contain;object-position:center}
+ .region-art img{position:absolute;left:0;top:-20%;width:100%;height:155%;max-width:none;min-height:0;object-fit:contain;object-position:center}
  .region-slide figcaption{position:static;height:28px;padding:5px 8px}
 }
-@media(max-width:600px){.region-stage{height:330px}}
+@media(max-width:600px){.region-stage{height:380px}}
