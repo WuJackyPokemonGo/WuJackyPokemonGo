@@ -30,3 +30,7 @@ body{background:#f7f6f2}.wrap{width:min(1160px,100%)}
 @media(prefers-reduced-motion:reduce){.card,.product-media .cover{transition:none}}
 .hero-link{margin-top:16px}.header-cart:disabled{opacity:.5;cursor:wait}
 @media(max-width:600px){.hero-copy,.hero-link,.header-note{display:none}.header{padding-bottom:20px}.catalog-caption{display:none}.catalog-intro{margin-bottom:16px}.catalog-intro h1{font-size:24px}}
+
+/* Sold-out items keep the original colors and remain available for restock inquiries. */
+.card-sold-out .product-media .cover{filter:brightness(.88)}
+.card-sold-out .product-media .status.sold{background:#263447;color:#fff;box-shadow:0 2px 8px #0002}
