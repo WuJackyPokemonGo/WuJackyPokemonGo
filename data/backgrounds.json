@@ -13612,9 +13612,13 @@
           "name_zh": "暴雪王",
           "variant_id": "abomasnow",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 306,
@@ -13622,9 +13626,13 @@
           "name_zh": "波士可多拉",
           "variant_id": "aggron",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 65,
@@ -13632,9 +13640,13 @@
           "name_zh": "胡地",
           "variant_id": "alakazam",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 334,
@@ -13642,9 +13654,13 @@
           "name_zh": "七夕青鳥",
           "variant_id": "altaria",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 181,
@@ -13652,9 +13668,13 @@
           "name_zh": "電龍",
           "variant_id": "ampharos",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 354,
@@ -13662,9 +13682,13 @@
           "name_zh": "詛咒娃娃",
           "variant_id": "banette",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 15,
@@ -13672,9 +13696,13 @@
           "name_zh": "大針蜂",
           "variant_id": "beedrill",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 323,
@@ -13682,9 +13710,13 @@
           "name_zh": "噴火駝",
           "variant_id": "camerupt",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 149,
@@ -13692,9 +13724,13 @@
           "name_zh": "快龍",
           "variant_id": "dragonite",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 870,
@@ -13702,9 +13738,13 @@
           "name_zh": "列陣兵",
           "variant_id": "falinks",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 94,
@@ -13712,9 +13752,13 @@
           "name_zh": "耿鬼",
           "variant_id": "gengar",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 362,
@@ -13722,9 +13766,13 @@
           "name_zh": "冰鬼護",
           "variant_id": "glalie",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 130,
@@ -13732,9 +13780,13 @@
           "name_zh": "暴鯉龍",
           "variant_id": "gyarados",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 229,
@@ -13742,9 +13794,13 @@
           "name_zh": "黑魯加",
           "variant_id": "houndoom",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 428,
@@ -13752,9 +13808,13 @@
           "name_zh": "長耳兔",
           "variant_id": "lopunny",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 687,
@@ -13762,9 +13822,13 @@
           "name_zh": "烏賊王",
           "variant_id": "malamar",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 310,
@@ -13772,9 +13836,13 @@
           "name_zh": "雷電獸",
           "variant_id": "manectric",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 308,
@@ -13782,9 +13850,13 @@
           "name_zh": "恰雷姆",
           "variant_id": "medicham",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 127,
@@ -13792,9 +13864,13 @@
           "name_zh": "凱羅斯",
           "variant_id": "pinsir",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 26,
@@ -13802,9 +13878,13 @@
           "name_zh": "雷丘",
           "variant_id": "raichu",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 319,
@@ -13812,9 +13892,13 @@
           "name_zh": "巨牙鯊",
           "variant_id": "sharpedo",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 227,
@@ -13822,9 +13906,13 @@
           "name_zh": "盔甲鳥",
           "variant_id": "skarmory",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 80,
@@ -13832,9 +13920,13 @@
           "name_zh": "呆殼獸",
           "variant_id": "slowbro",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 121,
@@ -13842,9 +13934,13 @@
           "name_zh": "寶石海星",
           "variant_id": "starmie",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 208,
@@ -13852,9 +13948,13 @@
           "name_zh": "大鋼蛇",
           "variant_id": "steelix",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
         {
           "dex": 71,
@@ -13862,9 +13962,85 @@
           "name_zh": "大食花",
           "variant_id": "victreebel",
           "acquisition": "encounter",
-          "method_zh": "名錄列出此款，但逐隻城市背景發放條件仍未確認；一般超級團體戰或全球特殊背景不能直接推定。",
-          "method_en": "Listed by catalogs, but its individual city-background distribution remains unconfirmed; ordinary Mega Raids or global Special Backgrounds do not establish it.",
-          "method_status": "unconfirmed"
+          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
+          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+          ],
+          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
+        },
+        {
+          "dex": 142,
+          "name_en": "Aerodactyl",
+          "name_zh": "化石翼龍",
+          "variant_id": "aerodactyl",
+          "acquisition": "encounter",
+          "method_zh": "先前背景素材名錄與玩家持有清單均列有舊金山城市背景；閉幕後現場超級團體戰為玩家回報的取得途徑。個別時段、背景機率及完整官方條件仍待確認，不標示保證背景。",
+          "method_en": "The retained background catalog and player inventories list the San Francisco Location Background. Post-closing-ceremony in-person Mega Raids are the player-reported acquisition route. Individual timing, background odds and complete official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "background_evidence": "retained-catalog-and-player-inventory",
+          "method_evidence": "player-report-not-official-guarantee",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/",
+            "https://pokemongotrading.com/profile/kingatb/inventory",
+            "https://pokemongotrading.com/profile/Hallows"
+          ],
+          "evidence_reviewed_on": "2026-10-28"
+        },
+        {
+          "dex": 302,
+          "name_en": "Sableye",
+          "name_zh": "勾魂眼",
+          "variant_id": "sableye",
+          "acquisition": "encounter",
+          "method_zh": "先前背景素材名錄與玩家持有清單均列有舊金山城市背景；閉幕後現場超級團體戰為玩家回報的取得途徑。個別時段、背景機率及完整官方條件仍待確認，不標示保證背景。",
+          "method_en": "The retained background catalog and player inventories list the San Francisco Location Background. Post-closing-ceremony in-person Mega Raids are the player-reported acquisition route. Individual timing, background odds and complete official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "background_evidence": "retained-catalog-and-player-inventory",
+          "method_evidence": "player-report-not-official-guarantee",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/",
+            "https://pokemongotrading.com/profile/kingatb/inventory",
+            "https://pokemongotrading.com/profile/Hallows"
+          ],
+          "evidence_reviewed_on": "2026-10-28"
+        },
+        {
+          "dex": 303,
+          "name_en": "Mawile",
+          "name_zh": "大嘴娃",
+          "variant_id": "mawile",
+          "acquisition": "encounter",
+          "method_zh": "先前背景素材名錄與玩家持有清單均列有舊金山城市背景；閉幕後現場超級團體戰為玩家回報的取得途徑。個別時段、背景機率及完整官方條件仍待確認，不標示保證背景。",
+          "method_en": "The retained background catalog and player inventories list the San Francisco Location Background. Post-closing-ceremony in-person Mega Raids are the player-reported acquisition route. Individual timing, background odds and complete official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "background_evidence": "retained-catalog-and-player-inventory",
+          "method_evidence": "player-report-not-official-guarantee",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/",
+            "https://pokemongotrading.com/profile/kingatb/inventory",
+            "https://pokemongotrading.com/profile/Hallows"
+          ],
+          "evidence_reviewed_on": "2026-10-28"
+        },
+        {
+          "dex": 531,
+          "name_en": "Audino",
+          "name_zh": "差不多娃娃",
+          "variant_id": "audino",
+          "acquisition": "encounter",
+          "method_zh": "先前背景素材名錄與玩家持有清單均列有舊金山城市背景；閉幕後現場超級團體戰為玩家回報的取得途徑。個別時段、背景機率及完整官方條件仍待確認，不標示保證背景。",
+          "method_en": "The retained background catalog and player inventories list the San Francisco Location Background. Post-closing-ceremony in-person Mega Raids are the player-reported acquisition route. Individual timing, background odds and complete official conditions remain unconfirmed; a guaranteed background is not claimed.",
+          "method_status": "unconfirmed",
+          "background_evidence": "retained-catalog-and-player-inventory",
+          "method_evidence": "player-report-not-official-guarantee",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/",
+            "https://pokemongotrading.com/profile/kingatb/inventory",
+            "https://pokemongotrading.com/profile/Hallows"
+          ],
+          "evidence_reviewed_on": "2026-10-28"
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -13873,10 +14049,14 @@
       "name_zh": "2026 寶可夢世界錦標賽",
       "release_state": "released",
       "official_sources": [],
-      "notes": [],
+      "notes": [
+        "本輪補入差不多娃娃、化石翼龍、大嘴娃、勾魂眼；背景存在依保存名錄及玩家持有回報，並非全部取得條件已獲官方確認。",
+        "目前列40款原始遭遇＋3款進化；保存的PokéXperience 42個物種名稱包含3款進化，兩款皮卡丘合用一個名稱，與此處逐款計數口徑不同。",
+        "拉帝亞斯／拉帝歐斯維持移除。巨鉗螳螂、艾路雷朵、暴飛龍有相互矛盾的現場回報；代歐奇希斯僅見團戰資訊，未核實城市背景資格，均不直接補入。"
+      ],
       "related_product_ids": [],
-      "method_zh": "舊金山7個指定地標現場團體戰保證當地背景，每地每日一次；科斯莫古太空裝皮卡丘可由 GO 集章取得，最多6次。現場田野調查的兩款皮卡丘有背景機會。8/30超級超夢X Unity團體戰保證普通超夢城市背景。其他名錄超級團體戰款仍待逐隻核實。",
-      "method_en": "Seven designated San Francisco raid locations guarantee the city background, once daily per location. The Cosmog spacesuit Pikachu Stamp Rally offers up to six encounters; local Pikachu Field Research has a background chance. The August 30 Mega Mewtwo X Unity raid guarantees background Mewtwo. Other catalog-only Mega routes remain unconfirmed.",
+      "method_zh": "舊金山7個指定地標現場團體戰保證當地背景，每地每日一次；科斯莫古太空裝皮卡丘可由 GO 集章取得，最多6次。現場田野調查的兩款皮卡丘有背景機會。8/30超級超夢X Unity團體戰保證普通超夢城市背景。閉幕後超級團體戰背景依社群回報另行記錄，包含本輪補齊的四款；其機率與個別官方條件仍待核對，不套用指定地標團戰的保證背景規則。",
+      "method_en": "Seven designated San Francisco raid locations guarantee the city background, once daily per location. The Cosmog spacesuit Pikachu Stamp Rally offers up to six encounters; local Pikachu Field Research has a background chance. The August 30 Mega Mewtwo X Unity raid guarantees background Mewtwo. Post-closing-ceremony Mega variants are supported by community reports, including the four additions in this review; individual odds and official conditions remain pending. The guaranteed Special Raid Location rule is not extended to these encounters.",
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2026",
@@ -13885,7 +14065,11 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2026-san-francisco",
         "https://leekduck.com/events/pokemon-world-championships-2026-san-francisco/",
-        "https://pogomate.com/en/events/world-championships-2026"
+        "https://pogomate.com/en/events/world-championships-2026",
+        "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/",
+        "https://pokemongotrading.com/profile/kingatb/inventory",
+        "https://pokemongotrading.com/profile/Hallows",
+        "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
       ],
       "evolved_pokemon": [
         {
@@ -13910,7 +14094,7 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-10-25",
+      "checked_on": "2026-10-28",
       "region_en": "United States",
       "region_zh": "美國",
       "verification_scope": "background-and-eligibility",
@@ -13922,7 +14106,8 @@
         "WCS2026_san_francisco"
       ],
       "reference_review": "images-compared-2026-10-24",
-      "location_en": "San Francisco, California"
+      "location_en": "San Francisco, California",
+      "evidence_reviewed_on": "2026-10-28"
     },
     {
       "name_en": "PokeXciting Malaysia",

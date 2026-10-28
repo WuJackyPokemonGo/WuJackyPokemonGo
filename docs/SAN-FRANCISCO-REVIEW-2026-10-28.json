@@ -1,0 +1,312 @@
+{
+  "as_of": "2026-10-28",
+  "background_id": "BG-0190",
+  "added_variant_ids": [
+    "aerodactyl",
+    "sableye",
+    "mawile",
+    "audino"
+  ],
+  "before_direct": 36,
+  "after_direct": 40,
+  "evolution_only": 3,
+  "retained_reference_id": "WCS2026_san_francisco",
+  "retained_reference_name_count": 42,
+  "retained_reference_mapping": [
+    {
+      "source_name": "Abomasnow",
+      "variant_ids": [
+        "abomasnow"
+      ]
+    },
+    {
+      "source_name": "Aerodactyl",
+      "variant_ids": [
+        "aerodactyl"
+      ]
+    },
+    {
+      "source_name": "Aggron",
+      "variant_ids": [
+        "aggron"
+      ]
+    },
+    {
+      "source_name": "Alakazam",
+      "variant_ids": [
+        "alakazam"
+      ]
+    },
+    {
+      "source_name": "Altaria",
+      "variant_ids": [
+        "altaria"
+      ]
+    },
+    {
+      "source_name": "Ampharos",
+      "variant_ids": [
+        "ampharos"
+      ]
+    },
+    {
+      "source_name": "Audino",
+      "variant_ids": [
+        "audino"
+      ]
+    },
+    {
+      "source_name": "Banette",
+      "variant_ids": [
+        "banette"
+      ]
+    },
+    {
+      "source_name": "Beedrill",
+      "variant_ids": [
+        "beedrill"
+      ]
+    },
+    {
+      "source_name": "Camerupt",
+      "variant_ids": [
+        "camerupt"
+      ]
+    },
+    {
+      "source_name": "Crocalor",
+      "variant_ids": [
+        "crocalor"
+      ]
+    },
+    {
+      "source_name": "Dewgong",
+      "variant_ids": [
+        "dewgong"
+      ]
+    },
+    {
+      "source_name": "Dragonite",
+      "variant_ids": [
+        "dragonite"
+      ]
+    },
+    {
+      "source_name": "Duraludon",
+      "variant_ids": [
+        "duraludon"
+      ]
+    },
+    {
+      "source_name": "Exeggutor",
+      "variant_ids": [
+        "exeggutor-alola"
+      ]
+    },
+    {
+      "source_name": "Falinks",
+      "variant_ids": [
+        "falinks"
+      ]
+    },
+    {
+      "source_name": "Fuecoco",
+      "variant_ids": [
+        "fuecoco"
+      ]
+    },
+    {
+      "source_name": "Gengar",
+      "variant_ids": [
+        "gengar"
+      ]
+    },
+    {
+      "source_name": "Glalie",
+      "variant_ids": [
+        "glalie"
+      ]
+    },
+    {
+      "source_name": "Gyarados",
+      "variant_ids": [
+        "gyarados"
+      ]
+    },
+    {
+      "source_name": "Houndoom",
+      "variant_ids": [
+        "houndoom"
+      ]
+    },
+    {
+      "source_name": "Kingler",
+      "variant_ids": [
+        "kingler"
+      ]
+    },
+    {
+      "source_name": "Linoone",
+      "variant_ids": [
+        "linoone"
+      ]
+    },
+    {
+      "source_name": "Lopunny",
+      "variant_ids": [
+        "lopunny"
+      ]
+    },
+    {
+      "source_name": "Malamar",
+      "variant_ids": [
+        "malamar"
+      ]
+    },
+    {
+      "source_name": "Manectric",
+      "variant_ids": [
+        "manectric"
+      ]
+    },
+    {
+      "source_name": "Mawile",
+      "variant_ids": [
+        "mawile"
+      ]
+    },
+    {
+      "source_name": "Medicham",
+      "variant_ids": [
+        "medicham"
+      ]
+    },
+    {
+      "source_name": "Mewtwo",
+      "variant_ids": [
+        "mewtwo"
+      ]
+    },
+    {
+      "source_name": "Pikachu",
+      "variant_ids": [
+        "pikachu-wcs-2026",
+        "pikachu-pxp-2026"
+      ]
+    },
+    {
+      "source_name": "Pinsir",
+      "variant_ids": [
+        "pinsir"
+      ]
+    },
+    {
+      "source_name": "Raichu",
+      "variant_ids": [
+        "raichu"
+      ]
+    },
+    {
+      "source_name": "Rayquaza",
+      "variant_ids": [
+        "rayquaza"
+      ]
+    },
+    {
+      "source_name": "Sableye",
+      "variant_ids": [
+        "sableye"
+      ]
+    },
+    {
+      "source_name": "Sharpedo",
+      "variant_ids": [
+        "sharpedo"
+      ]
+    },
+    {
+      "source_name": "Skarmory",
+      "variant_ids": [
+        "skarmory"
+      ]
+    },
+    {
+      "source_name": "Skeledirge",
+      "variant_ids": [
+        "skeledirge"
+      ]
+    },
+    {
+      "source_name": "Slowbro",
+      "variant_ids": [
+        "slowbro"
+      ]
+    },
+    {
+      "source_name": "Starmie",
+      "variant_ids": [
+        "starmie"
+      ]
+    },
+    {
+      "source_name": "Steelix",
+      "variant_ids": [
+        "steelix"
+      ]
+    },
+    {
+      "source_name": "Victreebel",
+      "variant_ids": [
+        "victreebel"
+      ]
+    },
+    {
+      "source_name": "Zigzagoon",
+      "variant_ids": [
+        "zigzagoon"
+      ]
+    }
+  ],
+  "comparison_note": "42 labels minus three evolution-only labels plus one extra costume Pikachu = 40 direct encounter variants. Snapshot counts are not a claim of a newly re-downloaded full PokéXperience list.",
+  "dittobase_snapshot_variants": 39,
+  "dittobase_snapshot_note": "36 direct + 3 evolution, missing the four additions; current direct source page could not be fetched through search, so use previously downloaded main index HTML snapshot.",
+  "sources": [
+    "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/",
+    "https://pokemongotrading.com/profile/kingatb/inventory",
+    "https://pokemongotrading.com/profile/Hallows",
+    "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml",
+    "https://leekduck.com/events/pokemon-world-championships-2026-san-francisco/"
+  ],
+  "excluded_or_unresolved": [
+    {
+      "variant_ids": [
+        "latias",
+        "latios"
+      ],
+      "action": "keep excluded; owner correction retained despite Serebii listing"
+    },
+    {
+      "variant_ids": [
+        "scizor",
+        "gallade",
+        "salamence"
+      ],
+      "action": "not added; contradictory attendee reports, no corroborating city-background evidence found"
+    },
+    {
+      "variant_ids": [
+        "deoxys",
+        "deoxys-attack",
+        "deoxys-defense",
+        "deoxys-speed"
+      ],
+      "action": "not added; event raid availability alone does not establish city-background eligibility"
+    }
+  ],
+  "limitations": [
+    "Player inventories are self-declared listings, not inspected in-game ownership screenshots.",
+    "The thread contains a seen/not-seen list and conflicting comments; it is not a complete official guarantee.",
+    "All four additions retain method_status unconfirmed for exact acquisition conditions.",
+    "Only this San Francisco record was reviewed; no claim that all worldwide backgrounds were rechecked."
+  ]
+}
