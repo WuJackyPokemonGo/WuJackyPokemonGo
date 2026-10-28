@@ -14110,28 +14110,29 @@
       "evidence_reviewed_on": "2026-10-28"
     },
     {
-      "name_en": "PokeXciting Malaysia",
+      "name_en": "PokeXciting Malaysia (Turquoise Afro)",
       "type": "location",
       "dates_source": "September 12th - January 24th 2027",
       "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/tpc30th_malaysia.webp?v=20260816",
       "pokemon": [
         {
           "dex": 25,
-          "name_en": "Pikachu (PokéXciting Malaysia)",
-          "name_zh": "皮卡丘"
+          "name_en": "Pikachu (Turquoise Afro)",
+          "name_zh": "皮卡丘（藍綠色爆炸頭）"
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
       "verification": "official-event-confirmed",
       "background_id": "BG-0191",
-      "name_zh": "PokéXciting 馬來西亞",
+      "name_zh": "PokéXciting 馬來西亞（藍綠色爆炸頭）",
       "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
         "https://pokemongo.com/en/news/event-apac-stamp-rally-2026"
       ],
       "notes": [
-        "跨區集章與各城市實體活動的五章集章為不同取得途徑；以跨區公告更新首次可得日。"
+        "跨區集章與各城市實體活動的五章集章為不同取得途徑；以跨區公告更新首次可得日。",
+        "爆炸頭髮色：藍綠色；顏色指皮卡丘裝扮的髮色。"
       ],
       "start_date": "2026-09-12",
       "related_product_ids": [
@@ -14148,7 +14149,8 @@
       "region_zh": "馬來西亞",
       "end_date": "2029-09-11",
       "notes_en": [
-        "Cross-region and city-launch rallies are separate acquisition routes. Dates reflect the cross-region announcement."
+        "Cross-region and city-launch rallies are separate acquisition routes. Dates reflect the cross-region announcement.",
+        "Afro hair color: Turquoise. This refers to Pikachu’s costume hair color."
       ],
       "reference_ids": [
         "tpc30th_malaysia"
@@ -14156,28 +14158,29 @@
       "reference_review": "images-compared-2026-10-24"
     },
     {
-      "name_en": "PokeXciting Taiwan",
+      "name_en": "PokeXciting Taiwan (Pink Afro)",
       "type": "location",
       "dates_source": "September 12th - January 24th 2027",
       "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/tpc30th_taiwan.webp?v=20260816",
       "pokemon": [
         {
           "dex": 25,
-          "name_en": "Pikachu (PokéXciting Taiwan)",
-          "name_zh": "皮卡丘"
+          "name_en": "Pikachu (Pink Afro)",
+          "name_zh": "皮卡丘（粉紅色爆炸頭）"
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
       "verification": "official-event-confirmed",
       "background_id": "BG-0192",
-      "name_zh": "PokéXciting 台灣",
+      "name_zh": "PokéXciting 台灣（粉紅色爆炸頭）",
       "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
         "https://pokemongo.com/en/news/event-apac-stamp-rally-2026"
       ],
       "notes": [
-        "跨區集章與各城市實體活動的五章集章為不同取得途徑；以跨區公告更新首次可得日。"
+        "跨區集章與各城市實體活動的五章集章為不同取得途徑；以跨區公告更新首次可得日。",
+        "爆炸頭髮色：粉紅色；顏色指皮卡丘裝扮的髮色。"
       ],
       "start_date": "2026-09-12",
       "related_product_ids": [
@@ -14194,7 +14197,8 @@
       "region_zh": "台灣",
       "end_date": "2029-09-11",
       "notes_en": [
-        "Cross-region and city-launch rallies are separate acquisition routes. Dates reflect the cross-region announcement."
+        "Cross-region and city-launch rallies are separate acquisition routes. Dates reflect the cross-region announcement.",
+        "Afro hair color: Pink. This refers to Pikachu’s costume hair color."
       ],
       "reference_ids": [
         "tpc30th_taiwan"
@@ -14202,28 +14206,29 @@
       "reference_review": "images-compared-2026-10-24"
     },
     {
-      "name_en": "PokeXciting Singapore",
+      "name_en": "PokeXciting Singapore (Blue Afro)",
       "type": "location",
       "dates_source": "September 12th - January 24th 2027",
       "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/tpc30th_singapore.webp?v=20260816",
       "pokemon": [
         {
           "dex": 25,
-          "name_en": "Pikachu (PokéXciting Singapore)",
-          "name_zh": "皮卡丘"
+          "name_en": "Pikachu (Blue Afro)",
+          "name_zh": "皮卡丘（深藍色爆炸頭）"
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
       "verification": "official-event-confirmed",
       "background_id": "BG-0193",
-      "name_zh": "PokéXciting 新加坡",
+      "name_zh": "PokéXciting 新加坡（深藍色爆炸頭）",
       "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
         "https://pokemongo.com/en/news/event-apac-stamp-rally-2026"
       ],
       "notes": [
-        "跨區集章與各城市實體活動的五章集章為不同取得途徑；以跨區公告更新首次可得日。"
+        "跨區集章與各城市實體活動的五章集章為不同取得途徑；以跨區公告更新首次可得日。",
+        "爆炸頭髮色：深藍色；顏色指皮卡丘裝扮的髮色。"
       ],
       "start_date": "2026-09-12",
       "related_product_ids": [
@@ -14240,7 +14245,8 @@
       "region_zh": "新加坡",
       "end_date": "2029-09-11",
       "notes_en": [
-        "Cross-region and city-launch rallies are separate acquisition routes. Dates reflect the cross-region announcement."
+        "Cross-region and city-launch rallies are separate acquisition routes. Dates reflect the cross-region announcement.",
+        "Afro hair color: Blue. This refers to Pikachu’s costume hair color."
       ],
       "reference_ids": [
         "tpc30th_singapore"
@@ -14248,28 +14254,29 @@
       "reference_review": "images-compared-2026-10-24"
     },
     {
-      "name_en": "PokeXciting Philippines",
+      "name_en": "PokeXciting Philippines (Red Afro)",
       "type": "location",
       "dates_source": "September 12th 2026 - January 24th 2027",
       "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/tpc30th_philippines.webp?v=20260816",
       "pokemon": [
         {
           "dex": 25,
-          "name_en": "Pikachu (PokéXciting Philippines)",
-          "name_zh": "皮卡丘"
+          "name_en": "Pikachu (Red Afro)",
+          "name_zh": "皮卡丘（紅色爆炸頭）"
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
       "verification": "official-event-confirmed",
       "background_id": "BG-0194",
-      "name_zh": "PokéXciting 菲律賓",
+      "name_zh": "PokéXciting 菲律賓（紅色爆炸頭）",
       "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
         "https://pokemongo.com/en/news/event-apac-stamp-rally-2026"
       ],
       "notes": [
-        "跨區集章與各城市實體活動的五章集章為不同取得途徑；以跨區公告更新首次可得日。"
+        "跨區集章與各城市實體活動的五章集章為不同取得途徑；以跨區公告更新首次可得日。",
+        "爆炸頭髮色：紅色；顏色指皮卡丘裝扮的髮色。"
       ],
       "start_date": "2026-09-12",
       "related_product_ids": [
@@ -14286,7 +14293,8 @@
       "region_zh": "菲律賓",
       "end_date": "2029-09-11",
       "notes_en": [
-        "Cross-region and city-launch rallies are separate acquisition routes. Dates reflect the cross-region announcement."
+        "Cross-region and city-launch rallies are separate acquisition routes. Dates reflect the cross-region announcement.",
+        "Afro hair color: Red. This refers to Pikachu’s costume hair color."
       ],
       "reference_ids": [
         "tpc30th_philippines"
