@@ -5,6 +5,10 @@ export function detailPokemonRows(row,{evolved=false}={}){const rows=row[evolved
 const nagasakiSource='https://pokemongo.com/gowildarea/nagasaki/gameplay';
 const route=(id,zh,en,dex,note_zh='',note_en='',source='')=>({id,label_zh:zh,label_en:en,dex,note_zh,note_en,source});
 function routesFor(row){
+ if(row.background_id==='BG-0235')return [
+  {...route('dark-skies-2025','2025 已確認｜極巨化','2025 confirmed · Dynamax',[],'2025/8/18～24；不代表本次復刻全部再開放。','Aug 18–24, 2025; this does not establish availability in the return event.','https://pokemongo.com/gofestmaxfinale'),variants:(row.pokemon??[]).filter(p=>!p.variant_id?.includes('gigantamax')).map(p=>p.variant_id)},
+  {...route('max-finale-2025','2025 已確認｜超極巨化','2025 confirmed · Gigantamax',[],'2025/8/23～24；顫弦蠑螈高低調分列。','Aug 23–24, 2025; Amped and Low Key Toxtricity are separate.','https://pokemongo.com/gofestmaxfinale'),variants:(row.pokemon??[]).filter(p=>p.variant_id?.includes('gigantamax')).map(p=>p.variant_id)}
+ ];
  if(['BG-0136','BG-0140','BG-0141'].includes(row.background_id)){
   const source='https://pokemongo.com/en/news/know-before-you-go-gofest-2026-in-person-events';
   // Only existing individually reviewed variants are placed in verified routes.

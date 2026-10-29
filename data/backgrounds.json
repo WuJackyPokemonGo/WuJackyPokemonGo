@@ -20948,362 +20948,572 @@
           "name_en": "Bulbasaur",
           "name_zh": "妙蛙種子",
           "variant_id": "bulbasaur",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 4,
           "name_en": "Charmander",
           "name_zh": "小火龍",
           "variant_id": "charmander",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 7,
           "name_en": "Squirtle",
           "name_zh": "傑尼龜",
           "variant_id": "squirtle",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 10,
           "name_en": "Caterpie",
           "name_zh": "綠毛蟲",
           "variant_id": "caterpie",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 66,
           "name_en": "Machop",
           "name_zh": "腕力",
           "variant_id": "machop",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 92,
           "name_en": "Gastly",
           "name_zh": "鬼斯",
           "variant_id": "gastly",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 98,
           "name_en": "Krabby",
           "name_zh": "大鉗蟹",
           "variant_id": "krabby",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 113,
           "name_en": "Chansey",
           "name_zh": "吉利蛋",
           "variant_id": "chansey",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 138,
           "name_en": "Omanyte",
           "name_zh": "菊石獸",
           "variant_id": "omanyte",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 140,
           "name_en": "Kabuto",
           "name_zh": "化石盔",
           "variant_id": "kabuto",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 144,
           "name_en": "Articuno",
           "name_zh": "急凍鳥",
           "variant_id": "articuno",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 145,
           "name_en": "Zapdos",
           "name_zh": "閃電鳥",
           "variant_id": "zapdos",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 146,
           "name_en": "Moltres",
           "name_zh": "火焰鳥",
           "variant_id": "moltres",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 213,
           "name_en": "Shuckle",
           "name_zh": "壺壺",
           "variant_id": "shuckle",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 243,
           "name_en": "Raikou",
           "name_zh": "雷公",
           "variant_id": "raikou",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 244,
           "name_en": "Entei",
           "name_zh": "炎帝",
           "variant_id": "entei",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 245,
           "name_en": "Suicune",
           "name_zh": "水君",
           "variant_id": "suicune",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 302,
           "name_en": "Sableye",
           "name_zh": "勾魂眼",
           "variant_id": "sableye",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 320,
           "name_en": "Wailmer",
           "name_zh": "吼吼鯨",
           "variant_id": "wailmer",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 374,
           "name_en": "Beldum",
           "name_zh": "鐵啞鈴",
           "variant_id": "beldum",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 380,
           "name_en": "Latias",
           "name_zh": "拉帝亞斯",
           "variant_id": "latias",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 381,
           "name_en": "Latios",
           "name_zh": "拉帝歐斯",
           "variant_id": "latios",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 519,
           "name_en": "Pidove",
           "name_zh": "豆豆鴿",
           "variant_id": "pidove",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 529,
           "name_en": "Drilbur",
           "name_zh": "螺釘地鼠",
           "variant_id": "drilbur",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 554,
           "name_en": "Darumaka",
           "name_zh": "火紅不倒翁",
           "variant_id": "darumaka",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 568,
           "name_en": "Trubbish",
           "name_zh": "破破袋",
           "variant_id": "trubbish",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 615,
           "name_en": "Cryogonal",
           "name_zh": "幾何雪花",
           "variant_id": "cryogonal",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 766,
           "name_en": "Passimian",
           "name_zh": "投擲猴",
           "variant_id": "passimian",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 810,
           "name_en": "Grookey",
           "name_zh": "敲音猴",
           "variant_id": "grookey",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 813,
           "name_en": "Scorbunny",
           "name_zh": "炎兔兒",
           "variant_id": "scorbunny",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 816,
           "name_en": "Sobble",
           "name_zh": "淚眼蜥",
           "variant_id": "sobble",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 819,
           "name_en": "Skwovet",
           "name_zh": "貪心栗鼠",
           "variant_id": "skwovet",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 821,
           "name_en": "Rookidee",
           "name_zh": "稚山雀",
           "variant_id": "rookidee",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 831,
           "name_en": "Wooloo",
           "name_zh": "毛辮羊",
           "variant_id": "wooloo",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 849,
           "name_en": "Toxtricity Amped",
-          "name_zh": "顫弦蠑螈",
+          "name_zh": "顫弦蠑螈（高調・極巨化）",
           "variant_id": "toxtricity-amped",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 849,
           "name_en": "Toxtricity Low Key",
-          "name_zh": "顫弦蠑螈",
+          "name_zh": "顫弦蠑螈（低調・極巨化）",
           "variant_id": "toxtricity-low-key",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 856,
           "name_en": "Hatenna",
           "name_zh": "迷布莉姆",
           "variant_id": "hatenna",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 870,
           "name_en": "Falinks",
           "name_zh": "列陣兵",
           "variant_id": "falinks",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Dark Skies／Max Finale 極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Dark Skies / Max Finale Dynamax catches."
         },
         {
           "dex": 3,
           "name_en": "Gigantamax Venusaur",
           "name_zh": "妙蛙花",
           "variant_id": "venusaur-gigantamax",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Max Finale 超極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Max Finale Gigantamax catches."
         },
         {
           "dex": 6,
           "name_en": "Gigantamax Charizard",
           "name_zh": "噴火龍",
           "variant_id": "charizard-gigantamax",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Max Finale 超極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Max Finale Gigantamax catches."
         },
         {
           "dex": 9,
           "name_en": "Gigantamax Blastoise",
           "name_zh": "水箭龜",
           "variant_id": "blastoise-gigantamax",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Max Finale 超極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Max Finale Gigantamax catches."
         },
         {
           "dex": 12,
           "name_en": "Gigantamax Butterfree",
           "name_zh": "巴大蝶",
           "variant_id": "butterfree-gigantamax",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Max Finale 超極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Max Finale Gigantamax catches."
         },
         {
           "dex": 68,
           "name_en": "Gigantamax Machamp",
           "name_zh": "怪力",
           "variant_id": "machamp-gigantamax",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Max Finale 超極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Max Finale Gigantamax catches."
         },
         {
           "dex": 94,
           "name_en": "Gigantamax Gengar",
           "name_zh": "耿鬼",
           "variant_id": "gengar-gigantamax",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Max Finale 超極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Max Finale Gigantamax catches."
         },
         {
           "dex": 99,
           "name_en": "Gigantamax Kingler",
           "name_zh": "巨鉗蟹",
           "variant_id": "kingler-gigantamax",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Max Finale 超極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Max Finale Gigantamax catches."
         },
         {
           "dex": 131,
           "name_en": "Gigantamax Lapras",
           "name_zh": "拉普拉斯",
           "variant_id": "lapras-gigantamax",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Max Finale 超極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Max Finale Gigantamax catches."
         },
         {
           "dex": 143,
           "name_en": "Gigantamax Snorlax",
           "name_zh": "卡比獸",
           "variant_id": "snorlax-gigantamax",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Max Finale 超極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Max Finale Gigantamax catches."
         },
         {
           "dex": 812,
           "name_en": "Gigantamax Rillaboom",
           "name_zh": "轟擂金剛猩",
           "variant_id": "rillaboom-gigantamax",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Max Finale 超極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Max Finale Gigantamax catches."
         },
         {
           "dex": 815,
           "name_en": "Gigantamax Cinderace",
           "name_zh": "閃焰王牌",
           "variant_id": "cinderace-gigantamax",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Max Finale 超極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Max Finale Gigantamax catches."
         },
         {
           "dex": 818,
           "name_en": "Gigantamax Inteleon",
           "name_zh": "千面避役",
           "variant_id": "inteleon-gigantamax",
-          "acquisition": "encounter"
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Max Finale 超極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Max Finale Gigantamax catches."
         },
         {
           "dex": 849,
-          "name_en": "Gigantamax Toxtricity",
-          "name_zh": "顫弦蠑螈",
-          "variant_id": "toxtricity-gigantamax",
-          "acquisition": "encounter"
+          "name_en": "Gigantamax Toxtricity (Amped Form)",
+          "name_zh": "顫弦蠑螈（高調・超極巨化）",
+          "variant_id": "toxtricity-gigantamax-amped",
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Max Finale 超極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Max Finale Gigantamax catches."
         },
         {
-          "dex": 848,
-          "name_en": "Toxel",
-          "name_zh": "毒電嬰"
+          "dex": 849,
+          "name_en": "Gigantamax Toxtricity (Low Key Form)",
+          "name_zh": "顫弦蠑螈（低調・超極巨化）",
+          "variant_id": "toxtricity-gigantamax-low-key",
+          "acquisition": "max-battle",
+          "method_status": "reviewed",
+          "source": "https://pokemongo.com/gofestmaxfinale",
+          "method_zh": "2025 Max Finale 超極巨對戰捕捉，有機會附背景。",
+          "method_en": "Chance from 2025 Max Finale Gigantamax catches."
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -21312,19 +21522,21 @@
       "name_zh": "暗黑蒼穹",
       "release_state": "released",
       "official_sources": [
-        "https://pokemongo.com/gofestmaxfinale"
+        "https://pokemongo.com/gofestmaxfinale",
+        "https://pokemongo.com/en/news/dynamax-trails-eternamax-eternatus-2026"
       ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "Dark Skies／Max Finale 活動極巨對戰捕捉對應極巨化與超極巨化寶可夢，有機會附特殊背景。",
-      "method_en": "Chance from eligible Dynamax and Gigantamax catches in Dark Skies and Max Finale Max Battles.",
+      "method_zh": "暗黑蒼穹（俗稱紫黑）：2025/8/18～24 的 Dark Skies／Max Finale 活動極巨對戰與超極巨對戰捕捉，有機會附特殊背景。下方分列歷史取得、復刻預告及待核對項目。",
+      "method_en": "Dark Skies: chance from eligible Dynamax and Gigantamax catches during Aug 18–24, 2025. Historical encounters, return previews and unresolved catalog entries are listed separately below.",
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2025",
       "year_verified": false,
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
-        "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-fest-2025-dark-skies"
+        "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-fest-2025-dark-skies",
+        "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
       ],
       "evolved_pokemon": [
         {
@@ -21580,7 +21792,7 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-10-24",
+      "checked_on": "2026-10-29",
       "region_en": "Multiple regions",
       "region_zh": "多地／全球活動",
       "verification_scope": "background-and-eligibility",
@@ -21589,7 +21801,709 @@
       "reference_ids": [
         "dark_skies"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "search_aliases": [
+        "紫黑",
+        "紫黑背景",
+        "暗黑蒼穹",
+        "Dark Skies"
+      ],
+      "unconfirmed_pokemon": [
+        {
+          "dex": 848,
+          "name_en": "Toxel",
+          "name_zh": "毒電嬰",
+          "variant_id": "toxel",
+          "method_status": "unconfirmed",
+          "method_zh": "名錄有列出，但尚無可核實的紫黑背景取得途徑；不計入已確認款數。",
+          "method_en": "Listed by a catalog, but no verified route to this background; excluded from confirmed counts."
+        }
+      ],
+      "upcoming_pokemon": [
+        {
+          "dex": 1,
+          "name_en": "Bulbasaur",
+          "name_zh": "妙蛙種子",
+          "variant_id": "bulbasaur",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 4,
+          "name_en": "Charmander",
+          "name_zh": "小火龍",
+          "variant_id": "charmander",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 7,
+          "name_en": "Squirtle",
+          "name_zh": "傑尼龜",
+          "variant_id": "squirtle",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 10,
+          "name_en": "Caterpie",
+          "name_zh": "綠毛蟲",
+          "variant_id": "caterpie",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 25,
+          "name_en": "Pikachu",
+          "name_zh": "皮卡丘",
+          "variant_id": "pikachu",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 58,
+          "name_en": "Growlithe",
+          "name_zh": "卡蒂狗",
+          "variant_id": "growlithe",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 63,
+          "name_en": "Abra",
+          "name_zh": "凱西",
+          "variant_id": "abra",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 66,
+          "name_en": "Machop",
+          "name_zh": "腕力",
+          "variant_id": "machop",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 92,
+          "name_en": "Gastly",
+          "name_zh": "鬼斯",
+          "variant_id": "gastly",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 98,
+          "name_en": "Krabby",
+          "name_zh": "大鉗蟹",
+          "variant_id": "krabby",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 106,
+          "name_en": "Hitmonlee",
+          "name_zh": "飛腿郎",
+          "variant_id": "hitmonlee",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 107,
+          "name_en": "Hitmonchan",
+          "name_zh": "快拳郎",
+          "variant_id": "hitmonchan",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 111,
+          "name_en": "Rhyhorn",
+          "name_zh": "獨角犀牛",
+          "variant_id": "rhyhorn",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 113,
+          "name_en": "Chansey",
+          "name_zh": "吉利蛋",
+          "variant_id": "chansey",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 125,
+          "name_en": "Electabuzz",
+          "name_zh": "電擊獸",
+          "variant_id": "electabuzz",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 126,
+          "name_en": "Magmar",
+          "name_zh": "鴨嘴火獸",
+          "variant_id": "magmar",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 133,
+          "name_en": "Eevee",
+          "name_zh": "伊布",
+          "variant_id": "eevee",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 138,
+          "name_en": "Omanyte",
+          "name_zh": "菊石獸",
+          "variant_id": "omanyte",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 140,
+          "name_en": "Kabuto",
+          "name_zh": "化石盔",
+          "variant_id": "kabuto",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 163,
+          "name_en": "Hoothoot",
+          "name_zh": "咕咕",
+          "variant_id": "hoothoot",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 213,
+          "name_en": "Shuckle",
+          "name_zh": "壺壺",
+          "variant_id": "shuckle",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 215,
+          "name_en": "Sneasel",
+          "name_zh": "狃拉",
+          "variant_id": "sneasel",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 237,
+          "name_en": "Hitmontop",
+          "name_zh": "戰舞郎",
+          "variant_id": "hitmontop",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 280,
+          "name_en": "Ralts",
+          "name_zh": "拉魯拉絲",
+          "variant_id": "ralts",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 302,
+          "name_en": "Sableye",
+          "name_zh": "勾魂眼",
+          "variant_id": "sableye",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 303,
+          "name_en": "Mawile",
+          "name_zh": "大嘴娃",
+          "variant_id": "mawile",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 320,
+          "name_en": "Wailmer",
+          "name_zh": "吼吼鯨",
+          "variant_id": "wailmer",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 328,
+          "name_en": "Trapinch",
+          "name_zh": "大顎蟻",
+          "variant_id": "trapinch",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 374,
+          "name_en": "Beldum",
+          "name_zh": "鐵啞鈴",
+          "variant_id": "beldum",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 415,
+          "name_en": "Combee",
+          "name_zh": "三蜜蜂",
+          "variant_id": "combee",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 519,
+          "name_en": "Pidove",
+          "name_zh": "豆豆鴿",
+          "variant_id": "pidove",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 524,
+          "name_en": "Roggenrola",
+          "name_zh": "石丸子",
+          "variant_id": "roggenrola",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 527,
+          "name_en": "Woobat",
+          "name_zh": "滾滾蝙蝠",
+          "variant_id": "woobat",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 529,
+          "name_en": "Drilbur",
+          "name_zh": "螺釘地鼠",
+          "variant_id": "drilbur",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 554,
+          "name_en": "Darumaka",
+          "name_zh": "火紅不倒翁",
+          "variant_id": "darumaka",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 568,
+          "name_en": "Trubbish",
+          "name_zh": "破破袋",
+          "variant_id": "trubbish",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 615,
+          "name_en": "Cryogonal",
+          "name_zh": "幾何雪花",
+          "variant_id": "cryogonal",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 633,
+          "name_en": "Deino",
+          "name_zh": "單首龍",
+          "variant_id": "deino",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 686,
+          "name_en": "Inkay",
+          "name_zh": "好啦魷",
+          "variant_id": "inkay",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 761,
+          "name_en": "Bounsweet",
+          "name_zh": "甜竹竹",
+          "variant_id": "bounsweet",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 766,
+          "name_en": "Passimian",
+          "name_zh": "投擲猴",
+          "variant_id": "passimian",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 780,
+          "name_en": "Drampa",
+          "name_zh": "老翁龍",
+          "variant_id": "drampa",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 810,
+          "name_en": "Grookey",
+          "name_zh": "敲音猴",
+          "variant_id": "grookey",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 813,
+          "name_en": "Scorbunny",
+          "name_zh": "炎兔兒",
+          "variant_id": "scorbunny",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 816,
+          "name_en": "Sobble",
+          "name_zh": "淚眼蜥",
+          "variant_id": "sobble",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 819,
+          "name_en": "Skwovet",
+          "name_zh": "貪心栗鼠",
+          "variant_id": "skwovet",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 821,
+          "name_en": "Rookidee",
+          "name_zh": "稚山雀",
+          "variant_id": "rookidee",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 831,
+          "name_en": "Wooloo",
+          "name_zh": "毛辮羊",
+          "variant_id": "wooloo",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 849,
+          "name_en": "Toxtricity Amped",
+          "name_zh": "顫弦蠑螈（高調・極巨化）",
+          "variant_id": "toxtricity-amped",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 849,
+          "name_en": "Toxtricity Low Key",
+          "name_zh": "顫弦蠑螈（低調・極巨化）",
+          "variant_id": "toxtricity-low-key",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 850,
+          "name_en": "Sizzlipede",
+          "name_zh": "燒火蚣",
+          "variant_id": "sizzlipede",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 857,
+          "name_en": "Hattrem",
+          "name_zh": "提布莉姆",
+          "variant_id": "hattrem",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        },
+        {
+          "dex": 870,
+          "name_en": "Falinks",
+          "name_zh": "列陣兵",
+          "variant_id": "falinks",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed"
+        },
+        {
+          "dex": 884,
+          "name_en": "Duraludon",
+          "name_zh": "鋁鋼龍",
+          "variant_id": "duraludon",
+          "start_date": "2026-11-16",
+          "end_date": "2026-11-23",
+          "release_state": "upcoming",
+          "method_status": "unconfirmed",
+          "acquisition": "max-battle",
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        }
+      ],
+      "return_note_zh": "2026/11/16 10:00～11/23 20:00：Dynamax Trails。官方確認極巨對戰及 GO Pass 有特殊背景，並排除傳說與幻之寶可夢；名錄目前將背景列為暗黑蒼穹（紫黑），是否沿用同圖及逐款發放仍待活動確認。下方預告不計入歷史取得款數；野外出現不等於可取得背景。",
+      "return_note_en": "Dynamax Trails: Nov 16, 2026, 10:00–Nov 23, 20:00 local time. Officially announced Special Backgrounds from Max Battles and GO Pass; Legendary and Mythical Pokémon are excluded from the returning Dynamax pool. Catalogs currently identify Dark Skies; artwork reuse and individual releases await event confirmation. Preview entries are excluded from historical counts. Wild spawns do not establish background eligibility.",
+      "audit_2026_10_29": {
+        "historical_encounters": 52,
+        "historical_evolutions": 36,
+        "upcoming_encounters": 54,
+        "new_return_candidates": [
+          25,
+          58,
+          63,
+          106,
+          107,
+          111,
+          125,
+          126,
+          133,
+          163,
+          215,
+          237,
+          280,
+          303,
+          328,
+          415,
+          524,
+          527,
+          633,
+          686,
+          761,
+          780,
+          850,
+          857,
+          884
+        ],
+        "note_zh": "2025 官方清單逐款比對；超極巨顫弦蠑螈依高低調分列。毒電嬰保留待核對，不將較新極巨寶可夢倒填為 2025 已發放。2026 預告依官方活動與 Serebii 事件名錄，背景同圖尚待確認。"
+      }
     },
     {
       "name_en": "Tales of Transformation",
