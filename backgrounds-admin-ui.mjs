@@ -32,7 +32,7 @@ export function initBackgroundAdminUI({client,journal,run,notify,getProducts,sho
  }
  function productsOptions(row){
   const select=$('backgroundRelatedProducts');select.replaceChildren();const selected=new Set(row.related_product_ids??[]),products=getProducts();
-  for(const p of products){const o=node('option',`${p.sku}｜${p.name_zh}${p.publication_status==='published'&&p.is_live?'':'（尚未公開）'}`);o.value=p.id;o.selected=selected.has(p.id);select.append(o)}
+  for(const p of products){const o=node('option',`${p.sku?p.sku+'｜':''}${p.name_zh}${p.publication_status==='published'&&p.is_live?'':'（尚未公開）'}`);o.value=p.id;o.selected=selected.has(p.id);select.append(o)}
   // Preserve relations to archived records absent from the current admin list.
   for(const id of selected)if(!products.some(p=>p.id===id)){const o=node('option',`既有關聯商品 ${id}`);o.value=id;o.selected=true;select.append(o)}
  }

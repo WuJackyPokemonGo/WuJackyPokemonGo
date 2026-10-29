@@ -1,12 +1,13 @@
 // Database permissions enforce access even if this UI is changed or bypassed.
 export function productPayload(values) {
   const sku=String(values.sku??'').trim(),name=String(values.name_zh??'').trim();
-  if(!sku||!name)throw Error('請填寫商品編號與名稱。');
+  if(!name)throw Error('請填寫商品名稱。');
+  if(sku.length>80)throw Error('商品編號最多 80 字。');
   const raw=String(values.public_price_twd??'').trim();
   if(raw!==''&&(!/^\d+$/.test(raw)||!Number.isSafeInteger(Number(raw))||Number(raw)>2147483647))throw Error('售價請填 0 至 2,147,483,647 的整數，或留空。');
   if(!['draft','published','archived'].includes(values.publication_status))throw Error('請選擇有效的上架狀態。');
   if(!['available','low_stock','sold_out','inquiry_only','coming_soon'].includes(values.supply_status))throw Error('請選擇有效的供貨狀態。');
-  return {sku,name_zh:name,name_en:String(values.name_en??'').trim(),description_public:String(values.description_public??'').trim(),public_price_twd:raw===''?null:Number(raw),price_is_inquiry:raw==='',publication_status:values.publication_status,supply_status:values.supply_status};
+  return {sku:sku||null,name_zh:name,name_en:String(values.name_en??'').trim(),description_public:String(values.description_public??'').trim(),public_price_twd:raw===''?null:Number(raw),price_is_inquiry:raw==='',publication_status:values.publication_status,supply_status:values.supply_status};
 }
 export function createAdminService(client, randomUUID=()=>crypto.randomUUID(), journal=null) {
   let pending=null,actorId=null;

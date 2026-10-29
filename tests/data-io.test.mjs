@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {parseCSV,planImport,exportCSV} from '../csv-import.mjs';
 import {TABLES,PROJECT,canonical,toBase64,digest,encryptBackup,decryptBackup,validateBundle,createDataIOService} from '../data-io-service.mjs';
-const product={id:'p1',sku:'WJ-001',name_zh:'木守宮',name_en:'Treecko',aliases:['異色,背景'],description_public:'第一行\n第二行',publication_status:'draft',supply_status:'inquiry_only',public_price_twd:null,manual_sort_order:0,low_stock_threshold:3,pokedex_number:252,first_stocked_at:'2026-10-20T03:00:00+00:00',updated_at:'2026-10-20T05:00:00Z',category_assignments:[{category_id:'c1'}]};
+const product={id:'11111111-1111-4111-8111-111111111111',sku:'WJ-001',name_zh:'木守宮',name_en:'Treecko',aliases:['異色,背景'],description_public:'第一行\n第二行',publication_status:'draft',supply_status:'inquiry_only',public_price_twd:null,manual_sort_order:0,low_stock_threshold:3,pokedex_number:252,first_stocked_at:'2026-10-20T03:00:00+00:00',updated_at:'2026-10-20T05:00:00Z',category_assignments:[{category_id:'c1'}]};
 const categories=[{id:'c1',name:'異色'}];
 const csv=tail=>'schema_version,sku,name_zh'+tail;
 test('CSV handles BOM, CRLF, commas, escaped quotes and multiline cells',()=>{assert.deepEqual(parseCSV('\uFEFFschema_version,sku,name_zh\r\n1,A,"木守宮,""異色""\n背景"\r\n').rows[0].values,{schema_version:'1',sku:'A',name_zh:'木守宮,"異色"\n背景'})});

@@ -7,7 +7,7 @@ test('product save allows inquiry prices and cannot overwrite private stock or f
   assert.equal(p.sku,'TEST-001');assert.equal(p.name_zh,'皮卡丘');assert.equal(p.public_price_twd,null);assert.equal(p.price_is_inquiry,true);
   assert.equal('quantity_on_hand' in p,false);assert.equal('unit_cost_twd' in p,false);assert.equal('created_by' in p,false);
 });
-for(const bad of [{sku:' '},{name_zh:' '},{public_price_twd:'1.5'},{public_price_twd:'-1'},{public_price_twd:'2147483648'},{publication_status:'unknown'},{supply_status:'unknown'}])test('invalid product values fail before a database request: '+JSON.stringify(bad),()=>assert.throws(()=>productPayload({...valid,...bad})));
+for(const bad of [{name_zh:' '},{public_price_twd:'1.5'},{public_price_twd:'-1'},{public_price_twd:'2147483648'},{publication_status:'unknown'},{supply_status:'unknown'}])test('invalid product values fail before a database request: '+JSON.stringify(bad),()=>assert.throws(()=>productPayload({...valid,...bad})));
 test('unknown network outcome retries the identical inventory request key',async()=>{
   const calls=[];let count=0;
   const service=createAdminService({rpc:async(name,args)=>{calls.push({...args});if(count++===0)throw Error('network lost after commit');return{data:[{new_quantity:10}],error:null}}},()=> 'stable-request-key');
