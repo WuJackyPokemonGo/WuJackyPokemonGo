@@ -11,3 +11,21 @@ test('Osaka individual-price notes translate both saved newline representations 
 
 test('first visit follows the preferred browser language; Chinese locales use Traditional Chinese and other languages use English',()=>{assert.equal(resolveLocale(null,['en-US']),'en');assert.equal(resolveLocale(null,['vi-VN','zh-TW']),'en');assert.equal(resolveLocale(null,['zh-TW','en-US']),'zh');assert.equal(resolveLocale(null,['zh-CN']),'zh');assert.equal(resolveLocale(null,[],'en-GB'),'en')});
 test('explicit visitor language preference overrides browser language',()=>{assert.equal(resolveLocale('zh',['en-US']),'zh');assert.equal(resolveLocale('en',['zh-TW']),'en');assert.equal(resolveLocale('invalid',['en-US']),'en')});
+test('share-link language takes priority; unsupported values retain normal fallback',()=>{assert.equal(resolveLocale('zh',['zh-TW'],'zh-Hant','en'),'en');assert.equal(resolveLocale('en',['en-US'],'en-US','zh'),'zh');for(const value of [null,'','fr','EN'])assert.equal(resolveLocale('zh',['en-US'],'en-US',value),'zh')});
+test('share links initialize and remember language while preserving background selection, even with storage blocked',async()=>{
+ const previousLocation=Object.getOwnPropertyDescriptor(globalThis,'location'),previousStorage=Object.getOwnPropertyDescriptor(globalThis,'localStorage');
+ try{
+  for(const blocked of [false,true]){
+   let saved='zh';
+   Object.defineProperty(globalThis,'location',{configurable:true,value:{href:'https://example.com/backgrounds.html?background=BG-0001&lang=en'}});
+   Object.defineProperty(globalThis,'localStorage',{configurable:true,value:{getItem(){if(blocked)throw Error('blocked');return saved},setItem(key,value){if(blocked)throw Error('blocked');saved=value}}});
+   const module=await import('../storefront-locale.mjs?share-link-test='+blocked);
+   assert.equal(module.getLocale(),'en');if(!blocked)assert.equal(saved,'en');
+   assert.equal(new URL(location.href).searchParams.get('background'),'BG-0001');
+   module.setLocale('zh');assert.equal(module.getLocale(),'zh');
+  }
+ }finally{
+  if(previousLocation)Object.defineProperty(globalThis,'location',previousLocation);else delete globalThis.location;
+  if(previousStorage)Object.defineProperty(globalThis,'localStorage',previousStorage);else delete globalThis.localStorage;
+ }
+});

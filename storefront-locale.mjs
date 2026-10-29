@@ -1,12 +1,15 @@
 export const tr = (zh,en,locale=getLocale()) => locale==='en'?en:zh;
-export function resolveLocale(saved,languages=[],fallback='zh-Hant'){
+export function resolveLocale(saved,languages=[],fallback='zh-Hant',requested=null){
+ if(requested==='zh'||requested==='en')return requested;
  if(saved==='zh'||saved==='en')return saved;
  const preferred=languages.find(value=>typeof value==='string'&&value.trim())||fallback;
  return /^zh(?:-|$)/i.test(preferred)?'zh':'en';
 }
 let savedLocale=null;try{savedLocale=localStorage.getItem('wj_store_locale')}catch{}
+let requestedLocale=null;try{requestedLocale=new URL(location.href).searchParams.get('lang')}catch{}
 const browserLanguages=typeof navigator==='undefined'?[]:Array.from(navigator.languages??[]);
-let locale=resolveLocale(savedLocale,browserLanguages,typeof navigator==='undefined'?'zh-Hant':navigator.language||'zh-Hant');
+let locale=resolveLocale(savedLocale,browserLanguages,typeof navigator==='undefined'?'zh-Hant':navigator.language||'zh-Hant',requestedLocale);
+if(requestedLocale==='zh'||requestedLocale==='en'){try{localStorage.setItem('wj_store_locale',locale)}catch{}}
 export const getLocale=()=>locale;
 export function setLocale(value){locale=value==='en'?'en':'zh';try{localStorage.setItem('wj_store_locale',locale)}catch{};return locale}
 export const labels={
