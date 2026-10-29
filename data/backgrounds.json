@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-28",
+  "as_of": "2026-10-29",
   "complete": false,
   "sources": [
     "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -16219,42 +16219,72 @@
           "name_en": "Machamp Modern Jacket",
           "name_zh": "怪力（Machamp Modern Jacket）",
           "variant_id": "machamp-modern-jacket",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "穿現代夾克怪力：持票現場三星團體戰捕獲，有機會附地點背景。",
+          "method_en": "Modern-jacket Machamp: ticketed in-person three-star raids, chance of a Location Background.",
+          "method_sources": [
+            "https://pokemongo.com/gowildarea/sendai/gameplay"
+          ]
         },
         {
           "dex": 483,
           "name_en": "Dynamax Dialga",
-          "name_zh": "帝牙盧卡",
+          "name_zh": "帝牙盧卡（極巨化）",
           "variant_id": "dialga-dynamax",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "持票現場極巨對戰捕獲，有機會附地點背景。",
+          "method_en": "Ticketed in-person Max Battles, chance of a Location Background.",
+          "method_sources": [
+            "https://pokemongo.com/gowildarea/sendai/gameplay"
+          ]
         },
         {
           "dex": 484,
           "name_en": "Dynamax Palkia",
-          "name_zh": "帕路奇亞",
+          "name_zh": "帕路奇亞（極巨化）",
           "variant_id": "palkia-dynamax",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "持票現場極巨對戰捕獲，有機會附地點背景。",
+          "method_en": "Ticketed in-person Max Battles, chance of a Location Background.",
+          "method_sources": [
+            "https://pokemongo.com/gowildarea/sendai/gameplay"
+          ]
         },
         {
           "dex": 889,
           "name_en": "Zamazenta (Hero of Many Battles)",
           "name_zh": "藏瑪然特",
           "variant_id": "zamazenta",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "持票現場五星團體戰捕獲有機會附地點背景。官方對戰形態列劍之王蒼響／盾之王藏瑪然特；既有捕獲形態名錄保留，不另計一隻遭遇。",
+          "method_en": "Ticketed in-person five-star raids may award the Location Background. The official battle forms are Crowned Sword Zacian / Crowned Shield Zamazenta; existing catch-form catalog entries are retained, not counted as extra encounters.",
+          "method_sources": [
+            "https://pokemongo.com/gowildarea/sendai/gameplay"
+          ]
         },
         {
           "dex": 884,
           "name_en": "Gigantamax Duraludon",
-          "name_zh": "鋁鋼龍",
+          "name_zh": "鋁鋼龍（超極巨化）",
           "variant_id": "duraludon-gigantamax",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "持票現場六星極巨對戰捕獲有機會附地點背景；活動特殊調查明列附地點背景。",
+          "method_en": "Ticketed in-person six-star Max Battles may award the Location Background; event Special Research explicitly awards it.",
+          "method_sources": [
+            "https://pokemongo.com/gowildarea/sendai/gameplay"
+          ]
         },
         {
           "dex": 888,
           "name_en": "Zacian (Hero of Many Battles)",
           "name_zh": "蒼響",
           "variant_id": "zacian",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "持票現場五星團體戰捕獲有機會附地點背景。官方對戰形態列劍之王蒼響／盾之王藏瑪然特；既有捕獲形態名錄保留，不另計一隻遭遇。",
+          "method_en": "Ticketed in-person five-star raids may award the Location Background. The official battle forms are Crowned Sword Zacian / Crowned Shield Zamazenta; existing catch-form catalog entries are retained, not counted as extra encounters.",
+          "method_sources": [
+            "https://pokemongo.com/gowildarea/sendai/gameplay"
+          ]
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -16263,12 +16293,15 @@
       "name_zh": "曠野地帶 2026 仙台 東北",
       "release_state": "upcoming",
       "official_sources": [
-        "https://pokemongo.com/gowildarea/sendai/gameplay"
+        "https://pokemongo.com/gowildarea/sendai/gameplay",
+        "https://pokemongo.com/news/go-wild-area-stamp-rally-details-2026"
       ],
-      "notes": [],
+      "notes": [
+        "2026-10-29核對官方澄清：GO集章僅限主票券日期當地10:00–20:00；加購額外日不增加集章，但可再取得鋼／龍屬性限時調查。七處集章站可任意順序造訪；公告未承諾集章獎勵帶背景，不把它直接列為背景取得方式。"
+      ],
       "related_product_ids": [],
-      "method_zh": "持票活動的指定現場團體戰、極巨對戰及特殊調查；各寶可夢的背景條件依官方活動頁面。",
-      "method_en": "Eligible ticketed in-person raids, Max Battles and Special Research; requirements vary by Pokémon.",
+      "method_zh": "持票訓練家在活動期間參與指定現場團體戰與極巨對戰，成功捕獲後有機會獲得仙台地點背景；遠距對戰不提供地點背景。持票特殊調查明列附背景的超極巨鋁鋼龍。各寶可夢條件見下方。",
+      "method_en": "Ticket-holding Trainers may receive the Sendai Location Background from eligible in-person raids and Max Battles; remote battles do not award Location Backgrounds. Ticketed Special Research explicitly awards Gigantamax Duraludon with the background. See species-specific routes below.",
       "series": "GO Wild Area",
       "series_zh": "曠野地帶",
       "year": "2026",
@@ -16278,7 +16311,7 @@
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-sendai-2026"
       ],
       "evolved_pokemon": [],
-      "checked_on": "2026-10-23",
+      "checked_on": "2026-10-29",
       "start_date": "2026-11-06",
       "end_date": "2026-11-08",
       "region_en": "Japan",
@@ -16286,7 +16319,12 @@
       "reference_ids": [
         "lc_2026_gwa_sendai"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "notes_en": [
+        "Official clarification checked October 29: the GO Stamp Rally runs only on the main ticketed day, 10:00–20:00 local time. Extra Day add-ons do not add stamp rallies, but do grant repeat Steel-/Dragon-type Timed Research. The seven stamps may be visited in any order. Background rewards from the stamp rally are not promised."
+      ],
+      "date_note_zh": "GO集章：僅主票券日期10:00–20:00（當地時間）；額外日加購不增加集章。額外日鋼／龍限時調查為不同內容，不能混為背景保證。",
+      "date_note_en": "GO Stamp Rally: main ticketed day only, 10:00–20:00 local time. Extra Day add-ons do not add a stamp rally. Repeat Steel-/Dragon-type Timed Research is separate and does not establish background eligibility."
     },
     {
       "name_en": "GO Wild Area 2026 Mexico City",
@@ -16299,42 +16337,72 @@
           "name_en": "Machamp Modern Jacket",
           "name_zh": "怪力（Machamp Modern Jacket）",
           "variant_id": "machamp-modern-jacket",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "穿現代夾克怪力：持票現場三星團體戰捕獲，有機會附地點背景。",
+          "method_en": "Modern-jacket Machamp: ticketed in-person three-star raids, chance of a Location Background.",
+          "method_sources": [
+            "https://pokemongo.com/gowildarea/mexico-city/gameplay"
+          ]
         },
         {
           "dex": 483,
           "name_en": "Dynamax Dialga",
-          "name_zh": "帝牙盧卡",
+          "name_zh": "帝牙盧卡（極巨化）",
           "variant_id": "dialga-dynamax",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "持票現場極巨對戰捕獲，有機會附地點背景。",
+          "method_en": "Ticketed in-person Max Battles, chance of a Location Background.",
+          "method_sources": [
+            "https://pokemongo.com/gowildarea/mexico-city/gameplay"
+          ]
         },
         {
           "dex": 484,
           "name_en": "Dynamax Palkia",
-          "name_zh": "帕路奇亞",
+          "name_zh": "帕路奇亞（極巨化）",
           "variant_id": "palkia-dynamax",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "持票現場極巨對戰捕獲，有機會附地點背景。",
+          "method_en": "Ticketed in-person Max Battles, chance of a Location Background.",
+          "method_sources": [
+            "https://pokemongo.com/gowildarea/mexico-city/gameplay"
+          ]
         },
         {
           "dex": 884,
           "name_en": "Gigantamax Duraludon",
-          "name_zh": "鋁鋼龍",
+          "name_zh": "鋁鋼龍（超極巨化）",
           "variant_id": "duraludon-gigantamax",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "持票現場六星極巨對戰捕獲有機會附地點背景；活動特殊調查明列附地點背景。",
+          "method_en": "Ticketed in-person six-star Max Battles may award the Location Background; event Special Research explicitly awards it.",
+          "method_sources": [
+            "https://pokemongo.com/gowildarea/mexico-city/gameplay"
+          ]
         },
         {
           "dex": 889,
           "name_en": "Zamazenta (Hero of Many Battles)",
           "name_zh": "藏瑪然特",
           "variant_id": "zamazenta",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "持票現場五星團體戰捕獲有機會附地點背景。官方對戰形態列劍之王蒼響／盾之王藏瑪然特；既有捕獲形態名錄保留，不另計一隻遭遇。",
+          "method_en": "Ticketed in-person five-star raids may award the Location Background. The official battle forms are Crowned Sword Zacian / Crowned Shield Zamazenta; existing catch-form catalog entries are retained, not counted as extra encounters.",
+          "method_sources": [
+            "https://pokemongo.com/gowildarea/mexico-city/gameplay"
+          ]
         },
         {
           "dex": 888,
           "name_en": "Zacian (Hero of Many Battles)",
           "name_zh": "蒼響",
           "variant_id": "zacian",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "持票現場五星團體戰捕獲有機會附地點背景。官方對戰形態列劍之王蒼響／盾之王藏瑪然特；既有捕獲形態名錄保留，不另計一隻遭遇。",
+          "method_en": "Ticketed in-person five-star raids may award the Location Background. The official battle forms are Crowned Sword Zacian / Crowned Shield Zamazenta; existing catch-form catalog entries are retained, not counted as extra encounters.",
+          "method_sources": [
+            "https://pokemongo.com/gowildarea/mexico-city/gameplay"
+          ]
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -16343,12 +16411,15 @@
       "name_zh": "曠野地帶 2026 墨西哥城",
       "release_state": "upcoming",
       "official_sources": [
-        "https://pokemongo.com/gowildarea/mexico-city/gameplay"
+        "https://pokemongo.com/gowildarea/mexico-city/gameplay",
+        "https://pokemongo.com/news/go-wild-area-stamp-rally-details-2026"
       ],
-      "notes": [],
+      "notes": [
+        "2026-10-29核對官方澄清：GO集章僅限主票券日期當地10:00–20:00；加購額外日不增加集章，但可再取得鋼／龍屬性限時調查。七處集章站可任意順序造訪；公告未承諾集章獎勵帶背景，不把它直接列為背景取得方式。"
+      ],
       "related_product_ids": [],
-      "method_zh": "持票活動的指定現場團體戰、極巨對戰及特殊調查；各寶可夢的背景條件依官方活動頁面。",
-      "method_en": "Eligible ticketed in-person raids, Max Battles and Special Research; requirements vary by Pokémon.",
+      "method_zh": "持票訓練家在活動期間參與指定現場團體戰與極巨對戰，成功捕獲後有機會獲得墨西哥城地點背景；遠距對戰不提供地點背景。持票特殊調查明列附背景的超極巨鋁鋼龍。各寶可夢條件見下方。",
+      "method_en": "Ticket-holding Trainers may receive the Mexico City Location Background from eligible in-person raids and Max Battles; remote battles do not award Location Backgrounds. Ticketed Special Research explicitly awards Gigantamax Duraludon with the background. See species-specific routes below.",
       "series": "GO Wild Area",
       "series_zh": "曠野地帶",
       "year": "2026",
@@ -16358,7 +16429,7 @@
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-mexico-city-2026"
       ],
       "evolved_pokemon": [],
-      "checked_on": "2026-10-23",
+      "checked_on": "2026-10-29",
       "start_date": "2026-11-06",
       "end_date": "2026-11-08",
       "region_en": "Mexico",
@@ -16366,7 +16437,12 @@
       "reference_ids": [
         "lc_2026_gwa_mexico_city"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "notes_en": [
+        "Official clarification checked October 29: the GO Stamp Rally runs only on the main ticketed day, 10:00–20:00 local time. Extra Day add-ons do not add stamp rallies, but do grant repeat Steel-/Dragon-type Timed Research. The seven stamps may be visited in any order. Background rewards from the stamp rally are not promised."
+      ],
+      "date_note_zh": "GO集章：僅主票券日期10:00–20:00（當地時間）；額外日加購不增加集章。額外日鋼／龍限時調查為不同內容，不能混為背景保證。",
+      "date_note_en": "GO Stamp Rally: main ticketed day only, 10:00–20:00 local time. Extra Day add-ons do not add a stamp rally. Repeat Steel-/Dragon-type Timed Research is separate and does not establish background eligibility."
     },
     {
       "name_en": "Night Out - London",
@@ -23138,6 +23214,16 @@
           "dex": 570,
           "name_en": "Zorua",
           "name_zh": "索羅亞"
+        },
+        {
+          "dex": 624,
+          "name_zh": "駒刀小兵",
+          "name_en": "Pawniard",
+          "variant_id": "pawniard",
+          "acquisition": "encounter",
+          "start_date": "2026-11-21",
+          "method_zh": "即將推出：2026/11/21當地14:00–17:00社群日野外有機會帶2026年度特殊背景；付費特殊調查明列三次附背景遭遇。普通誘餌模組14:00–21:00、部分田野調查與社群大使報到限時調查亦列背景機會／獎勵，依官方規則。",
+          "method_en": "Upcoming: November 21, 2026, 14:00–17:00 local Community Day wild encounters may have the 2026 yearly Special Background; paid Special Research explicitly awards three background encounters. Regular Lure Modules (14:00–21:00), some Field Research and Community Ambassador check-in Timed Research also offer background opportunities/rewards as specified by the official rules."
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -23148,7 +23234,8 @@
       "official_sources": [
         "https://pokemongo.com/news/communityday-january-2026-grookey",
         "https://pokemongo.com/en/news/communityday-october-2026-zorua",
-        "https://pokemongo.com/news/communitydayclassic-piplup-jan-2026"
+        "https://pokemongo.com/news/communitydayclassic-piplup-jan-2026",
+        "https://pokemongo.com/news/communityday-november-2026-pawniard"
       ],
       "notes": [
         "年度背景有不同動畫畫格／素材名稱；目前合併保留為一組，不因素材筆數重複計算。"
@@ -23292,7 +23379,7 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-10-24",
+      "checked_on": "2026-10-29",
       "region_en": "Multiple regions",
       "region_zh": "多地／全球活動",
       "verification_scope": "background-and-eligibility",
@@ -27108,6 +27195,48 @@
       ],
       "notes": [
         "官方已公告五星團體戰及五星極巨對戰可得新特殊背景；圖樣待確認，暫不計入有圖片的圖鑑款數。"
+      ],
+      "type": "special",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "checked_on": "2026-10-29",
+      "region_en": "Global",
+      "region_zh": "全球",
+      "pokemon": [
+        {
+          "dex": 888,
+          "name_zh": "蒼響（劍之王團體戰）",
+          "name_en": "Zacian (Crowned Sword raids)"
+        },
+        {
+          "dex": 889,
+          "name_zh": "藏瑪然特（盾之王團體戰）",
+          "name_en": "Zamazenta (Crowned Shield raids)"
+        },
+        {
+          "dex": 379,
+          "name_zh": "雷吉斯奇魯（極巨化）",
+          "name_en": "Dynamax Registeel"
+        },
+        {
+          "dex": 895,
+          "name_zh": "雷吉鐸拉戈（極巨化）",
+          "name_en": "Dynamax Regidrago"
+        },
+        {
+          "dex": 380,
+          "name_zh": "拉帝亞斯（極巨化）",
+          "name_en": "Dynamax Latias"
+        },
+        {
+          "dex": 381,
+          "name_zh": "拉帝歐斯（極巨化）",
+          "name_en": "Dynamax Latios"
+        }
+      ],
+      "notes_en": [
+        "November 9 at 10:00–November 13 at 20:00 local time. Eligible five-star raids and five-star Max Battles may award a new Special Background. Artwork awaits confirmation. Dynamax Meltan from GO Pass is not explicitly promised this background."
       ]
     },
     {
@@ -27124,6 +27253,16 @@
       "notes": [
         "當地10/31 10:00起，改革大道活動限時調查與GO集章獎勵明列金盞花花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。",
         "地點背景圖樣待確認，不套用卡拉卡拉特殊背景圖片，也不算已發放款數。"
+      ],
+      "type": "location",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "checked_on": "2026-10-29",
+      "region_en": "Mexico",
+      "region_zh": "墨西哥",
+      "notes_en": [
+        "October 31 at 10:00–November 5 at 20:00 local time, Paseo de la Reforma. Local research and stamp rewards list cempasúchil-crown Duskull with a Location Background; Gigantamax Gengar battles offer a chance. The artwork is unconfirmed and is not the Cubone Special Background."
       ]
     },
     {
@@ -27140,6 +27279,16 @@
       "notes": [
         "印度限定；紗麗與庫爾塔皮卡丘團體戰及Sparkle O’Clock野外有機會帶特殊背景，分支限時調查獎勵明列附背景。",
         "限時調查11/1 06:00開放；開放任務不等於已能完成所有條件或實際取得，首次取得日期與圖樣仍待確認。"
+      ],
+      "type": "special",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "checked_on": "2026-10-29",
+      "region_en": "India",
+      "region_zh": "印度",
+      "notes_en": [
+        "India, November 6–8. Saree/kurta Pikachu raids and Sparkle O’Clock wild encounters may have a Special Background; branched Timed Research lists a background reward. Research starts November 1 at 06:00, which does not establish the first obtainable date. Artwork is unconfirmed."
       ]
     },
     {
@@ -27156,6 +27305,82 @@
       "notes": [
         "官方明列現代夾克怪力、極巨帝牙盧卡、極巨帕路奇亞、萊希拉姆、捷克羅姆、酋雷姆、超極巨鋁鋼龍有機會帶特殊背景；持票特殊調查超極巨鋁鋼龍明列附背景。",
         "圖樣待確認，不套用2025背景或仙台／墨西哥城地點背景，不計入已發放款數。"
+      ],
+      "type": "special",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "checked_on": "2026-10-29",
+      "region_en": "Global",
+      "region_zh": "全球",
+      "notes_en": [
+        "November 14–15. Modern-jacket Machamp, Dynamax Dialga/Palkia, Reshiram, Zekrom, Kyurem and Gigantamax Duraludon are listed with Special Background opportunities. Ticketed Special Research explicitly awards Gigantamax Duraludon with the background. Artwork awaits confirmation; do not substitute the 2025 or city background."
+      ]
+    },
+    {
+      "event_id": "dynamax-trails-2026",
+      "name_zh": "Dynamax Trails 2026 特殊背景預告",
+      "name_en": "Dynamax Trails 2026 Special Background preview",
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-23",
+      "year": "2026",
+      "type": "special",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "region_en": "Global",
+      "region_zh": "全球",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-10-29",
+      "official_sources": [
+        "https://pokemongo.com/news/dynamax-trails-eternamax-eternatus-2026"
+      ],
+      "notes": [
+        "活動時間為當地11/16 10:00–11/23 20:00；已登場的非傳說、非幻之極巨化寶可夢可能出現在極巨對戰，捕獲有機會帶特殊背景。",
+        "GO Pass免費及豪華路線明列帶特殊背景的活動極巨化寶可夢遭遇；符合深入荒野第一階段條件者可於11/14 10:00提前取得通行證。逐隻名單與背景圖樣未公布，不能視為舊暗黑蒼穹復刻。",
+        "無極汰那是通行證的另一項獎勵，官方未承諾其帶特殊背景；無極巨化無極汰那對戰後不可捕獲，不列為背景遭遇。"
+      ],
+      "notes_en": [
+        "Local event hours: November 16 at 10:00–November 23 at 20:00. Previously released non-Legendary, non-Mythical Dynamax Pokémon may appear in Max Battles, with a chance of a Special Background after catching.",
+        "Both GO Pass tracks list event-themed Dynamax Pokémon with Special Backgrounds. Trainers who claimed Into the Wild Tier 1 receive early pass access on November 14 at 10:00. Individual species and artwork are unannounced; this is not evidence of a Dark Skies rerun.",
+        "Eternatus is listed as a separate pass reward without a promised background. Eternamax Eternatus cannot be caught after its battle and is not a background encounter."
+      ]
+    },
+    {
+      "event_id": "pawniard-community-day-2026",
+      "background_id": "BG-0240",
+      "name_zh": "2026/11 駒刀小兵社群日（年度背景）",
+      "name_en": "November 2026 Pawniard Community Day (yearly background)",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-21",
+      "year": "2026",
+      "type": "special",
+      "series": "Community Day",
+      "series_zh": "社群日",
+      "region_en": "Global",
+      "region_zh": "全球",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-10-29",
+      "official_sources": [
+        "https://pokemongo.com/news/communityday-november-2026-pawniard"
+      ],
+      "pokemon": [
+        {
+          "dex": 624,
+          "name_zh": "駒刀小兵",
+          "name_en": "Pawniard"
+        }
+      ],
+      "notes": [
+        "11/21當地14:00–17:00，野外駒刀小兵有機會帶2026年度特殊背景；付費特殊調查明列三次附背景遭遇。",
+        "普通誘餌模組的背景機會持續至21:00；部分田野調查及社群大使報到限時調查亦列附背景遭遇。沿用BG-0240年度背景，不新增獨立圖樣。"
+      ],
+      "notes_en": [
+        "November 21, 14:00–17:00 local time: wild Pawniard may have the yearly 2026 Special Background; paid Special Research explicitly awards three background encounters.",
+        "Regular Lure Module background opportunities continue until 21:00. Some Field Research and Community Ambassador check-in Timed Research also list background encounters. This reuses the BG-0240 yearly background, not a new pattern."
       ]
     }
   ],

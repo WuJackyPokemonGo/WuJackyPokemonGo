@@ -50,3 +50,9 @@ export function groupBackgroundCards(rows,{eligibleRows=rows}={}){
  let inserted=false;
  return rows.flatMap(r=>{if(!ids.has(r.background_id))return [r];if(inserted)return [];inserted=true;return [group]});
 }
+
+// Announced events without verified artwork remain separate from released counts.
+export function filterBackgroundAnnouncements(rows,options={}){
+ if(options.stockOnly||!['verified','all','upcoming',undefined].includes(options.state))return [];
+ return filterBackgrounds(rows.map(r=>({...r,release_state:'upcoming',related_product_ids:[]})),{...options,state:'upcoming',stockOnly:false,products:[]});
+}
