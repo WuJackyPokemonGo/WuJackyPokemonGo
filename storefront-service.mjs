@@ -1,3 +1,4 @@
+import {catalogAssetPath} from './catalog-assets.mjs';
 import {tr,t,productName} from './storefront-locale.mjs';
 import {STAGING_URL,STAGING_PUBLISHABLE_KEY} from './staging-config.mjs';
 export const PUBLIC_STORAGE=STAGING_URL+'/storage/v1/object/public/storefront-thumbnails/';
@@ -16,7 +17,7 @@ export function stockLabel(p,locale='zh'){
  if(!known)return {text:p.status==='low_stock'?tr('庫存偏低','Low stock',locale):tr('庫存待確認','Stock to confirm',locale),tone:p.status==='low_stock'?'low':'pending'};
  return p.is_low_stock||p.status==='low_stock'?{text:tr(`剩餘 ${p.stock_quantity.toLocaleString('zh-TW')} 帳`,`${p.stock_quantity.toLocaleString('en-US')} left`,locale),tone:'low'}:{text:tr(`庫存：${p.stock_quantity.toLocaleString('zh-TW')} 帳`,`In stock: ${p.stock_quantity.toLocaleString('en-US')}`,locale),tone:'normal'};
 }
-export function imageURL(path){if(!/^[0-9a-f-]{36}\/[0-9a-f-]{36}-thumb\.(webp|png)$/i.test(String(path)))return '';return PUBLIC_STORAGE+String(path).split('/').map(encodeURIComponent).join('/')}
+export function imageURL(path){const asset=catalogAssetPath(path);if(asset)return asset;if(!/^[0-9a-f-]{36}\/[0-9a-f-]{36}-thumb\.(webp|png)$/i.test(String(path)))return '';return PUBLIC_STORAGE+String(path).split('/').map(encodeURIComponent).join('/')}
 export function monthTaipei(value){const d=new Date(value);if(!Number.isFinite(d.getTime()))return '';const parts=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit'}).formatToParts(d);return parts.find(x=>x.type==='year').value+'-'+parts.find(x=>x.type==='month').value}
 export function tagsFor(p){const tags=(p.tags??[]).filter(t=>t!=='本月新庫存');return p.first_stocked_at&&monthTaipei(p.first_stocked_at)===monthTaipei(new Date())?[...tags,'本月新庫存']:tags}
 export function searchMatch(p,keyword){

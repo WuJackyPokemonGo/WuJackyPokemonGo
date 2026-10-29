@@ -21602,7 +21602,10 @@
         "https://pokemongo.com/en/news/dynamax-trails-eternamax-eternatus-2026"
       ],
       "notes": [],
-      "related_product_ids": [],
+      "related_product_ids": [
+        "72d40e23-fa06-44c7-8d6a-caa662364e1a",
+        "20df8d2e-5ca5-44c1-a476-c120e1d72c46"
+      ],
       "method_zh": "暗黑蒼穹（俗稱紫黑）：2025/8/18～24 的 Dark Skies／Max Finale 活動極巨對戰與超極巨對戰捕捉，有機會附特殊背景。下方分列歷史取得、復刻預告及待核對項目。",
       "method_en": "Dark Skies: chance from eligible Dynamax and Gigantamax catches during Aug 18–24, 2025. Historical encounters, return previews and unresolved catalog entries are listed separately below.",
       "series": "Other",

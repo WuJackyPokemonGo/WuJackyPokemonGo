@@ -1,3 +1,4 @@
+import {catalogAssetPath} from './catalog-assets.mjs';
 import {productPayload} from './cloud-admin-service.mjs';
 import {imageType} from './image-upload.mjs';
 export const BUCKET='product-images';
@@ -38,7 +39,7 @@ export function createCatalogService(client){
   async save(values,existing,ids){const payload=catalogPayload(values);if(payload.is_live&&existing)await publishImages(existing.id);return checked(await client.rpc('admin_save_catalog_product',{p_id:existing?.id??null,p_expected_updated_at:existing?.updated_at??null,p_values:payload,p_category_ids:[...new Set(ids)]}))},
   async history(productId){return checked(await client.from('inventory_movements').select('id,quantity_delta,quantity_before,quantity_after,reason,created_at').eq('product_id',productId).order('created_at',{ascending:false}).limit(50))},
   async preview(){return pageAll('catalog_preview','*','manual_sort_order')},
-  async signed(path){return checked(await media().createSignedUrl(path,300)).signedUrl},
+  async signed(path){const asset=catalogAssetPath(path);if(asset)return asset;return checked(await media().createSignedUrl(path,300)).signedUrl},
   async addImage(productId,{original,thumbnail,extension,alt}){
    const thumbnailType=imageType(new Uint8Array(await thumbnail.slice(0,12).arrayBuffer()));if(!['image/webp','image/png'].includes(thumbnailType.mime)||thumbnail.size>2*1024*1024)throw Error('縮圖格式或大小不符，請重新上傳圖片。');
    const id=crypto.randomUUID(),path=`${productId}/${id}-original.${extension}`,thumb=`${productId}/${id}-thumb.${thumbnailType.extension}`;
