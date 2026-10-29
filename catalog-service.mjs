@@ -1,16 +1,17 @@
+import {parsePokedexNumbers,storedPokedexNumbers} from './pokedex-numbers.mjs';
 import {catalogAssetPath} from './catalog-assets.mjs';
 import {productPayload} from './cloud-admin-service.mjs';
 import {imageType} from './image-upload.mjs';
 export const BUCKET='product-images';
 const checked=({data,error})=>{if(error)throw error;return data};
 export function catalogPayload(values){
- const base=productPayload(values);
+ const base=productPayload(values),numbers=parsePokedexNumbers('pokedex_numbers' in values?values.pokedex_numbers:values.pokedex_number);
  const integer=(name,def,min=0)=>{const raw=String(values[name]??'').trim();if(raw==='')return def;if(!/^\d+$/.test(raw)||!Number.isSafeInteger(Number(raw))||Number(raw)<min||Number(raw)>2147483647)throw Error('圖鑑編號、排序與門檻請填有效整數。');return Number(raw)};
  const aliases=Array.isArray(values.aliases)?values.aliases:String(values.aliases??'').split(/[,，\n]/);
  const clean=[...new Set(aliases.map(x=>String(x).trim()).filter(Boolean))];if(clean.length>30||clean.some(x=>x.length>100))throw Error('搜尋別名最多 30 個，每個最多 100 字。');
  const first=String(values.first_stocked_at??'').trim();if(first&&!/^\d{4}-\d{2}-\d{2}$/.test(first))throw Error('請選擇有效的首次入庫日期。');
  if(first&&(!Number.isFinite(Date.parse(first))||new Date(first).toISOString().slice(0,10)!==first))throw Error('請選擇有效的首次入庫日期。');
- return {...base,is_live:values.is_live===true||values.is_live==='on',aliases:clean,pokedex_number:integer('pokedex_number',null,1),manual_sort_order:integer('manual_sort_order',0),low_stock_threshold:integer('low_stock_threshold',3),first_stocked_at:first?first+'T00:00:00+08:00':null};
+ return {...base,is_live:values.is_live===true||values.is_live==='on',aliases:clean,pokedex_number:numbers[0]??null,pokedex_numbers:numbers,manual_sort_order:integer('manual_sort_order',0),low_stock_threshold:integer('low_stock_threshold',3),first_stocked_at:first?first+'T00:00:00+08:00':null};
 }
 export function createCatalogService(client){
  const media=()=>client.storage.from(BUCKET);
@@ -33,7 +34,7 @@ export function createCatalogService(client){
   const rows=[];for(let offset=0;;offset+=200){const batch=checked(await client.from(table).select(selection).order(order).order('id').range(offset,offset+199));rows.push(...batch);if(batch.length<200)break;if(rows.length>=20000)throw Error('資料超過本次載入上限，請縮小範圍。')}return rows;
  }
  return {
-  list:()=>pageAll('products','id,sku,name_zh,name_en,is_live,aliases,pokedex_number,description_public,public_price_twd,price_is_inquiry,publication_status,supply_status,manual_sort_order,low_stock_threshold,first_stocked_at,updated_at,inventory_balances(quantity_on_hand),inventory_valuations(unit_cost_twd,updated_at),category_assignments(category_id),product_images(id,storage_path,thumbnail_path,public_path,alt_text,sort_order,is_approved)','manual_sort_order'),
+  list:()=>pageAll('products','id,sku,name_zh,name_en,is_live,aliases,pokedex_number,pokedex_numbers,description_public,public_price_twd,price_is_inquiry,publication_status,supply_status,manual_sort_order,low_stock_threshold,first_stocked_at,updated_at,inventory_balances(quantity_on_hand),inventory_valuations(unit_cost_twd,updated_at),category_assignments(category_id),product_images(id,storage_path,thumbnail_path,public_path,alt_text,sort_order,is_approved)','manual_sort_order'),
   categories:()=>pageAll('product_categories','id,name,sort_order','sort_order'),
   async addCategory(name){name=name.trim();if(!name||name.length>60)throw Error('分類名稱請填 1～60 個字。');return checked(await client.from('product_categories').insert({name}).select('id,name,sort_order').single())},
   async save(values,existing,ids){const payload=catalogPayload(values);if(payload.is_live&&existing)await publishImages(existing.id);return checked(await client.rpc('admin_save_catalog_product',{p_id:existing?.id??null,p_expected_updated_at:existing?.updated_at??null,p_values:payload,p_category_ids:[...new Set(ids)]}))},
@@ -53,5 +54,5 @@ export function createCatalogService(client){
 }
 export function monthKeyTaipei(value){const d=new Date(value);if(!Number.isFinite(d.getTime()))return '';return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit'}).format(d)}
 export function publicProduct(row){
- return {id:row.id,sku:row.sku,name:row.name_zh,name_en:row.name_en,aliases:row.aliases??[],dex:row.pokedex_number,tags:[...(row.tags??[]),...(row.first_stocked_at&&monthKeyTaipei(row.first_stocked_at)===monthKeyTaipei(new Date())?['本月新庫存']:[])],description:row.description_public,price:row.price_is_inquiry?null:row.public_price_twd,status:row.supply_status,images:row.images??[]};
+ return {id:row.id,sku:row.sku,name:row.name_zh,name_en:row.name_en,aliases:row.aliases??[],dex:row.pokedex_number,dex_numbers:storedPokedexNumbers(row),tags:[...(row.tags??[]),...(row.first_stocked_at&&monthKeyTaipei(row.first_stocked_at)===monthKeyTaipei(new Date())?['本月新庫存']:[])],description:row.description_public,price:row.price_is_inquiry?null:row.public_price_twd,status:row.supply_status,images:row.images??[]};
 }

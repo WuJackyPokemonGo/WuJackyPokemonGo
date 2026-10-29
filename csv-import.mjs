@@ -1,6 +1,7 @@
+import {storedPokedexNumbers} from './pokedex-numbers.mjs';
 import {catalogPayload} from './catalog-service.mjs';
-export const CSV_COLUMNS=['schema_version','product_id','sku','name_zh','name_en','aliases','pokedex_number','description_public','publication_status','supply_status','public_price_twd','low_stock_threshold','manual_sort_order','first_stocked_at','tag_names'];
-const labels={product_id:'既有商品識別',sku:'商品編號',name_zh:'中文名稱',name_en:'英文名稱',aliases:'搜尋別名',pokedex_number:'圖鑑編號',description_public:'商品說明',publication_status:'上架狀態',supply_status:'供貨狀態',public_price_twd:'售價',low_stock_threshold:'低庫存門檻',manual_sort_order:'顯示順序',first_stocked_at:'首次入庫日期',tag_names:'分類'};
+export const CSV_COLUMNS=['schema_version','product_id','sku','name_zh','name_en','aliases','pokedex_number','pokedex_numbers','description_public','publication_status','supply_status','public_price_twd','low_stock_threshold','manual_sort_order','first_stocked_at','tag_names'];
+const labels={product_id:'既有商品識別',sku:'商品編號',name_zh:'中文名稱',name_en:'英文名稱',aliases:'搜尋別名',pokedex_number:'圖鑑編號（舊單值）',pokedex_numbers:'圖鑑編號（複數）',description_public:'商品說明',publication_status:'上架狀態',supply_status:'供貨狀態',public_price_twd:'售價',low_stock_threshold:'低庫存門檻',manual_sort_order:'顯示順序',first_stocked_at:'首次入庫日期',tag_names:'分類'};
 export const fieldLabel=key=>labels[key]||key;
 const bytes=text=>new TextEncoder().encode(text).length;
 export function parseCSV(text){
@@ -23,7 +24,7 @@ export function parseCSV(text){
 }
 function arrayCell(value,label,max,length){let rows;try{rows=JSON.parse(value||'[]')}catch{throw Error(label+'需填 JSON 陣列，例如 ["異色","背景"]。')}if(!Array.isArray(rows)||rows.some(v=>typeof v!=='string')||rows.length>max||rows.some(v=>v.trim().length>length))throw Error(label+'格式或長度無效。');return [...new Set(rows.map(v=>v.trim()).filter(Boolean))]}
 const day=value=>value?new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value)):'';
-function baseValues(p){return {sku:p?.sku??'',name_zh:p?.name_zh??'',name_en:p?.name_en??'',aliases:p?.aliases??[],pokedex_number:p?.pokedex_number??'',description_public:p?.description_public??'',publication_status:p?.publication_status??'draft',supply_status:p?.supply_status??'inquiry_only',public_price_twd:p?.public_price_twd??'',low_stock_threshold:p?.low_stock_threshold??3,manual_sort_order:p?.manual_sort_order??0,first_stocked_at:day(p?.first_stocked_at)}}
+function baseValues(p){return {sku:p?.sku??'',name_zh:p?.name_zh??'',name_en:p?.name_en??'',aliases:p?.aliases??[],pokedex_number:p?.pokedex_number??'',pokedex_numbers:storedPokedexNumbers(p),description_public:p?.description_public??'',publication_status:p?.publication_status??'draft',supply_status:p?.supply_status??'inquiry_only',public_price_twd:p?.public_price_twd??'',low_stock_threshold:p?.low_stock_threshold??3,manual_sort_order:p?.manual_sort_order??0,first_stocked_at:day(p?.first_stocked_at)}}
 function normalize(v){const p=catalogPayload(v);delete p.is_live;if(String(p.sku).length>80||String(p.name_zh).length>100||p.name_en.length>100||p.description_public.length>1000)throw Error('商品編號或文字超過長度限制。');return p}
 export function planImport(text,products,categories){
  const parsed=parseCSV(text),bySKU=new Map(products.filter(p=>p.sku).map(p=>[p.sku,p])),byID=new Map(products.map(p=>[p.id,p])),seen=new Set(),seenIDs=new Set(),entries=[],errors=[];
@@ -36,7 +37,7 @@ export function planImport(text,products,categories){
   if(sku&&seen.has(sku))throw Error('同一份 CSV 商品編號重複：'+sku);if(sku)seen.add(sku);
   if(old&&seenIDs.has(old.id))throw Error('同一份 CSV 重複更新同一件商品。');if(old)seenIDs.add(old.id);
   if(productID&&sku&&bySKU.has(sku)&&bySKU.get(sku).id!==productID)throw Error('商品編號已屬於另一件商品。');
-  const base=baseValues(old),merged={...base,...v,sku};if('aliases' in v)merged.aliases=arrayCell(v.aliases,'搜尋別名',30,100);
+  const base=baseValues(old),merged={...base,...v,sku};if('pokedex_number' in v&&!('pokedex_numbers' in v))merged.pokedex_numbers=v.pokedex_number;if('aliases' in v)merged.aliases=arrayCell(v.aliases,'搜尋別名',30,100);
   const beforeTags=(old?.category_assignments??[]).map(a=>categories.find(c=>c.id===a.category_id)?.name).filter(Boolean).sort();
   const tags='tag_names' in v?arrayCell(v.tag_names,'分類',30,60).sort():beforeTags;
   const payload=normalize(merged),before=old?normalize(base):null;
@@ -51,5 +52,5 @@ export function planImport(text,products,categories){
  return {entries,errors,payload,inserted:entries.filter(e=>e.kind==='insert').length,updated:entries.filter(e=>e.kind==='update').length,skipped:entries.filter(e=>e.kind==='skip').length,liveUpdates:writes.filter(e=>e.live).length};
 }
 function csvCell(value){let v=String(value??'');if(/^'|^\s*[=+@\-\t\r]/.test(v))v="'"+v;return '"'+v.replaceAll('"','""')+'"'}
-export function exportCSV(products=[],categories=[]){const rows=products.map(p=>({...baseValues(p),schema_version:'1',product_id:p.id??'',aliases:JSON.stringify(p.aliases??[]),tag_names:JSON.stringify((p.category_assignments??[]).map(a=>categories.find(c=>c.id===a.category_id)?.name).filter(Boolean))}));return '\uFEFF'+[CSV_COLUMNS.join(','),...rows.map(r=>CSV_COLUMNS.map(k=>csvCell(r[k])).join(','))].join('\r\n')+'\r\n'}
+export function exportCSV(products=[],categories=[]){const rows=products.map(p=>({...baseValues(p),schema_version:'1',product_id:p.id??'',pokedex_numbers:JSON.stringify(storedPokedexNumbers(p)),aliases:JSON.stringify(p.aliases??[]),tag_names:JSON.stringify((p.category_assignments??[]).map(a=>categories.find(c=>c.id===a.category_id)?.name).filter(Boolean))}));return '\uFEFF'+[CSV_COLUMNS.join(','),...rows.map(r=>CSV_COLUMNS.map(k=>csvCell(r[k])).join(','))].join('\r\n')+'\r\n'}
 export function templateCSV(){return exportCSV([{sku:'',name_zh:'請替換為商品名稱',publication_status:'draft',supply_status:'inquiry_only',aliases:[],category_assignments:[]}])}
