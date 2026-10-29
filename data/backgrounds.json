@@ -3313,7 +3313,9 @@
       "release_state": "released",
       "official_sources": [],
       "notes": [],
-      "related_product_ids": [],
+      "related_product_ids": [
+        "4b099bcd-cfbc-4892-995e-2431aa9228e9"
+      ],
       "method_zh": "6月持票 GO Fest 團體戰／極巨對戰機率取得；小火龍另於9/13起巴黎超級進化集章發放，重用相同巴黎圖樣。",
       "method_en": "June ticketed raids/Max Battles; Charmander comes from the September 13 Paris rally reusing this artwork.",
       "series": "GO Fest",
@@ -4720,10 +4722,10 @@
       "official_sources": [
         "https://pokemongo.com/news/stamprallyfrance"
       ],
-      "notes": [
-        "現有巴黎商品未指明兩款背景中的哪一款，暫不建立精確款式庫存關聯。"
+      "notes": [],
+      "related_product_ids": [
+        "4b099bcd-cfbc-4892-995e-2431aa9228e9"
       ],
-      "related_product_ids": [],
       "method_zh": "9/13–14 巴黎超級進化 GO 集章的小火龍獎勵，包含兩個新圖樣及重用 GO Fest 巴黎圖樣。各章對應款以名錄為準；不另建立重複圖樣。",
       "method_en": "Paris Mega Evolution stamp rewards: two new designs and reused GO Fest artwork; no duplicate artwork entry.",
       "series": "Other",
@@ -4785,10 +4787,10 @@
       "official_sources": [
         "https://pokemongo.com/news/stamprallyfrance"
       ],
-      "notes": [
-        "現有巴黎商品未指明兩款背景中的哪一款，暫不建立精確款式庫存關聯。"
+      "notes": [],
+      "related_product_ids": [
+        "4b099bcd-cfbc-4892-995e-2431aa9228e9"
       ],
-      "related_product_ids": [],
       "method_zh": "9/13–14 巴黎超級進化 GO 集章的小火龍獎勵，包含兩個新圖樣及重用 GO Fest 巴黎圖樣。各章對應款以名錄為準；不另建立重複圖樣。",
       "method_en": "Paris Mega Evolution stamp rewards: two new designs and reused GO Fest artwork; no duplicate artwork entry.",
       "series": "Other",
