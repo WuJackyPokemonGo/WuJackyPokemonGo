@@ -21718,8 +21718,8 @@
         "72d40e23-fa06-44c7-8d6a-caa662364e1a",
         "20df8d2e-5ca5-44c1-a476-c120e1d72c46"
       ],
-      "method_zh": "暗黑蒼穹（俗稱紫黑）：2025/8/18～24 的 Dark Skies／Max Finale 活動極巨對戰與超極巨對戰捕捉，有機會附特殊背景。下方分列歷史取得、復刻預告及待核對項目。",
-      "method_en": "Dark Skies: chance from eligible Dynamax and Gigantamax catches during Aug 18–24, 2025. Historical encounters, return previews and unresolved catalog entries are listed separately below.",
+      "method_zh": "暗黑蒼穹（俗稱紫黑）：2025/8/18～24 的 Dark Skies／Max Finale 活動極巨對戰與超極巨對戰捕捉，有機會附特殊背景。下方分列歷史取得及復刻預告。",
+      "method_en": "Dark Skies: chance from eligible Dynamax and Gigantamax catches during Aug 18–24, 2025. Historical encounters and return previews are listed separately below.",
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2025",
@@ -21998,17 +21998,6 @@
         "紫黑背景",
         "暗黑蒼穹",
         "Dark Skies"
-      ],
-      "unconfirmed_pokemon": [
-        {
-          "dex": 848,
-          "name_en": "Toxel",
-          "name_zh": "毒電嬰",
-          "variant_id": "toxel",
-          "method_status": "unconfirmed",
-          "method_zh": "名錄有列出，但尚無可核實的紫黑背景取得途徑；不計入已確認款數。",
-          "method_en": "Listed by a catalog, but no verified route to this background; excluded from confirmed counts."
-        }
       ],
       "upcoming_pokemon": [
         {
@@ -22693,7 +22682,7 @@
           857,
           884
         ],
-        "note_zh": "2025 官方清單逐款比對；超極巨顫弦蠑螈依高低調分列。毒電嬰保留待核對，不將較新極巨寶可夢倒填為 2025 已發放。2026 預告依官方活動與 Serebii 事件名錄，背景同圖尚待確認。"
+        "note_zh": "2025 官方清單逐款比對；超極巨顫弦蠑螈依高低調分列。不將較新極巨寶可夢倒填為 2025 已發放。2026 預告依官方活動與 Serebii 事件名錄，背景同圖尚待確認。"
       }
     },
     {

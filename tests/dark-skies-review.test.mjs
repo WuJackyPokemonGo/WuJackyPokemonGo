@@ -13,7 +13,8 @@ test('historical Max encounters preserve 38 Dynamax and 14 separately tracked Gi
  assert.deepEqual(sections.map(s=>s.pokemon.length),[38,14]);
  assert.equal(row.pokemon.length,52);assert.equal(row.evolved_pokemon.length,36);
  assert.deepEqual(row.pokemon.filter(p=>p.variant_id.startsWith('toxtricity-gigantamax')).map(p=>p.variant_id).sort(),['toxtricity-gigantamax-amped','toxtricity-gigantamax-low-key']);
- assert.ok(!row.pokemon.some(p=>p.dex===848));assert.ok(row.unconfirmed_pokemon.some(p=>p.dex===848&&p.method_status==='unconfirmed'));
+ assert.ok(!row.pokemon.some(p=>p.dex===848));assert.ok(!(row.unconfirmed_pokemon??[]).some(p=>p.dex===848));
+ for(const q of ['毒電嬰','Toxel','#0848'])assert.equal(backgroundMatch(row,q),false,q);
 });
 test('announced 2026 candidates never count as historical releases or establish shiny availability',()=>{
  assert.equal(row.upcoming_pokemon.length,54);
