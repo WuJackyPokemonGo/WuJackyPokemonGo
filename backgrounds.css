@@ -58,3 +58,5 @@ dialog{background:#fffdf5;color:#493b1d;border:1px solid #decd9f;border-radius:1
 .pokemon-form{color:#79560d;font-weight:650}
 .route-pending{color:#915825}
 @media(max-width:480px){.pokemon-route{padding:11px 9px}.pokemon-route .pokemon{grid-template-columns:1fr}}
+
+.stockhint.pending{color:#8a6324}#refreshStock{width:100%;margin-top:12px}#refreshStock:disabled{opacity:.5;cursor:wait}
