@@ -27383,21 +27383,29 @@
       "verification": "official-event-confirmed",
       "image_source": null,
       "official_sources": [
-        "https://pokemongo.com/es-MX/news/dia-de-muertos-2026"
+        "https://pokemongo.com/es-MX/news/dia-de-muertos-2026",
+        "https://pokemongo.com/seasons/forever-forward",
+        "https://pokemongo.com/news/shadow-raid-max-battle-update"
       ],
       "notes": [
         "當地10/31 10:00起，改革大道活動限時調查與GO集章獎勵明列金盞花花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。",
-        "地點背景圖樣待確認，不套用卡拉卡拉特殊背景圖片，也不算已發放款數。"
+        "地點背景圖樣待確認，不套用卡拉卡拉特殊背景圖片，也不算已發放款數。",
+        "活動時間：墨西哥城 2026/10/31 10:00～11/5 20:00（UTC−6）；台灣 11/1 00:00～11/6 10:00（UTC+8）。",
+        "超極巨耿鬼可挑戰時段（台灣時間；扣除墨西哥當地夜間）：11/1～11/5 每天 00:00～11:00、20:00～24:00；11/6 僅 00:00～10:00。依一般極巨對戰當地 06:00～21:00 與活動起訖推算，非本次公告另列的專屬時段；以實際能量點開放及官方修訂為準。",
+        "遠距：依現行極巨對戰規則可使用遠距團體戰入場券並消耗所需極巨粒子參戰；本次公告未明確說明遠距能否取得地點背景，列為待確認。"
       ],
       "type": "location",
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2026",
-      "checked_on": "2026-10-29",
+      "checked_on": "2026-10-30",
       "region_en": "Mexico",
       "region_zh": "墨西哥",
       "notes_en": [
-        "October 31 at 10:00–November 5 at 20:00 local time, Paseo de la Reforma. Local research and stamp rewards list cempasúchil-crown Duskull with a Location Background; Gigantamax Gengar battles offer a chance. The artwork is unconfirmed and is not the Cubone Special Background."
+        "October 31 at 10:00–November 5 at 20:00 local time, Paseo de la Reforma. Local research and stamp rewards list cempasúchil-crown Duskull with a Location Background; Gigantamax Gengar battles offer a chance. The artwork is unconfirmed and is not the Cubone Special Background.",
+        "Event window: Mexico City, Oct 31, 2026 at 10:00–Nov 5 at 20:00 (UTC−6); Taiwan, Nov 1 at 00:00–Nov 6 at 10:00 (UTC+8).",
+        "Gigantamax Gengar battle windows in Taiwan time, excluding Mexico City's overnight closure: Nov 1–5, daily 00:00–11:00 and 20:00–24:00; Nov 6, 00:00–10:00 only. Inferred from the usual local 06:00–21:00 Max Battle hours and the event window, not separately confirmed event-specific hours. Actual Power Spot availability and official updates apply.",
+        "Remote participation follows the current Max Battle rules: a Remote Raid Pass and the required Max Particles. This event announcement does not explicitly confirm whether remote participants can receive the Location Background; eligibility remains unconfirmed."
       ]
     },
     {
