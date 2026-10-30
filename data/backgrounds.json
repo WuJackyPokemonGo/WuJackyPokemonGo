@@ -27388,10 +27388,10 @@
         "https://pokemongo.com/news/shadow-raid-max-battle-update"
       ],
       "notes": [
-        "當地10/31 10:00起，改革大道活動限時調查與GO集章獎勵明列金盞花花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。",
+        "改革大道活動限時調查與GO集章獎勵明列金盞花花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。開始時刻有來源差異，見下方說明。",
         "地點背景圖樣待確認，不套用卡拉卡拉特殊背景圖片，也不算已發放款數。",
-        "活動時間：墨西哥城 2026/10/31 10:00～11/5 20:00（UTC−6）；台灣 11/1 00:00～11/6 10:00（UTC+8）。",
-        "超極巨耿鬼可挑戰時段（台灣時間；扣除墨西哥當地夜間）：11/1～11/5 每天 00:00～11:00、20:00～24:00；11/6 僅 00:00～10:00。依一般極巨對戰當地 06:00～21:00 與活動起訖推算，非本次公告另列的專屬時段；以實際能量點開放及官方修訂為準。",
+        "開始時間待釐清：截至2026/10/30，官方西文墨西哥頁面寫10/31 10:00（台灣11/1 00:00），Centro Pokémon與WikiDex寫10/31 14:00（台灣11/1 04:00）。墨西哥城UTC−6、台灣UTC+8，相差14小時；不可將其中一個開始時刻視為已排除爭議。結束時間均為當地11/5 20:00，即台灣11/6 10:00。",
+        "超極巨耿鬼推算可挑戰時段（台灣時間；扣除當地夜間）：11/1首段開始待確認，若當地10:00開始為00:00～11:00，若14:00開始則為04:00～11:00；11/1另有20:00～24:00；11/2～11/5每天00:00～11:00、20:00～24:00；11/6僅00:00～10:00。依一般極巨對戰當地06:00～21:00及活動起訖推算，非本次公告另列的專屬時段；以實際能量點開放及官方修訂為準。",
         "遠距：依現行極巨對戰規則可使用遠距團體戰入場券並消耗所需極巨粒子參戰；本次公告未明確說明遠距能否取得地點背景，列為待確認。"
       ],
       "type": "location",
@@ -27402,10 +27402,14 @@
       "region_en": "Mexico",
       "region_zh": "墨西哥",
       "notes_en": [
-        "October 31 at 10:00–November 5 at 20:00 local time, Paseo de la Reforma. Local research and stamp rewards list cempasúchil-crown Duskull with a Location Background; Gigantamax Gengar battles offer a chance. The artwork is unconfirmed and is not the Cubone Special Background.",
-        "Event window: Mexico City, Oct 31, 2026 at 10:00–Nov 5 at 20:00 (UTC−6); Taiwan, Nov 1 at 00:00–Nov 6 at 10:00 (UTC+8).",
-        "Gigantamax Gengar battle windows in Taiwan time, excluding Mexico City's overnight closure: Nov 1–5, daily 00:00–11:00 and 20:00–24:00; Nov 6, 00:00–10:00 only. Inferred from the usual local 06:00–21:00 Max Battle hours and the event window, not separately confirmed event-specific hours. Actual Power Spot availability and official updates apply.",
+        "Paseo de la Reforma: local research and stamp rewards list cempasúchil-crown Duskull with a Location Background; Gigantamax Gengar battles offer a chance. Artwork remains unconfirmed. Sources disagree on the starting hour; see below.",
+        "Start time unresolved as of Oct 30, 2026: the official es-MX page says Oct 31 at 10:00 (Taiwan Nov 1 at 00:00), while Centro Pokémon and WikiDex say 14:00 (Taiwan Nov 1 at 04:00). Taiwan is 14 hours ahead of Mexico City. The end is Nov 5 at 20:00 in Mexico City, or Nov 6 at 10:00 in Taiwan.",
+        "Inferred Gigantamax Gengar windows in Taiwan time: Nov 1 first window starts at 00:00 if the local start is 10:00, or 04:00 if it is 14:00, ending at 11:00; Nov 1 also 20:00–24:00. Nov 2–5 daily 00:00–11:00 and 20:00–24:00; Nov 6 only 00:00–10:00. Based on usual local 06:00–21:00 Max Battle hours, not confirmed event-specific hours. Actual Power Spot availability and official revisions apply.",
         "Remote participation follows the current Max Battle rules: a Remote Raid Pass and the required Max Particles. This event announcement does not explicitly confirm whether remote participants can receive the Location Background; eligibility remains unconfirmed."
+      ],
+      "catalog_sources": [
+        "https://www.centropkmn.com/go/eventos/dia-de-muertos-2026/",
+        "https://www.wikidex.net/wiki/B%C3%BAsqueda_de_sellos_en_D%C3%ADa_de_Muertos_2026/Caza_de_sellos_de_D%C3%ADa_de_Muertos_2026"
       ]
     },
     {
