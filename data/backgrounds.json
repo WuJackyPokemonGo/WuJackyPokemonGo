@@ -14366,9 +14366,9 @@
             "basis": "confirmed"
           }
         },
-        "conditions_zh": "本卡為新加坡實體活動日期；活動集章附當地背景，與9/12起已開放的跨區集章為不同路線，不把既有背景改成未推出。",
-        "conditions_en": "This card describes the Singapore launch event. Local stamp rewards have the Location Background; the cross-region rally already available since September 12 is a separate route. The existing background remains released.",
-        "eligible_zh": "皮卡丘（藍色爆炸頭）。",
+        "conditions_zh": "本卡為新加坡實體活動日期；活動集章附當地背景，與9/12起已開放的跨區集章為不同路線，不把既有背景改成未推出。 官方另列實體集章自當地活動開始起持續一個月；本卡狀態依兩天實體活動判定。",
+        "conditions_en": "This card describes the Singapore launch event. Local stamp rewards have the Location Background; the cross-region rally already available since September 12 is a separate route. The existing background remains released. The official local stamp rally continues for one month from the local event start; this card’s status follows the two-day launch event.",
+        "eligible_zh": "皮卡丘（深藍色爆炸頭）。",
         "eligible_en": "Pikachu (Blue Afro).",
         "remote_participation": {
           "basis": "confirmed",
@@ -14384,12 +14384,11 @@
         "sources": [
           "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
           "https://pokemongo.com/en/news/event-apac-stamp-rally-2026",
-          "https://pokemongo.com/news/event-singapore-30th-anniversary-2026",
-          "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026"
+          "https://pokemongo.com/news/event-singapore-30th-anniversary-2026"
         ],
         "background_type": "location",
         "artwork_status": "catalogued",
-        "title_zh": "PokéXciting 新加坡實體活動（藍色爆炸頭）",
+        "title_zh": "PokéXciting 新加坡實體活動（深藍色爆炸頭）",
         "title_en": "PokéXciting Singapore launch event (Blue Afro)"
       }
     },
@@ -14439,7 +14438,44 @@
       "reference_ids": [
         "tpc30th_philippines"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "activity": {
+        "id": "pokexciting-manila-launch-2027",
+        "schedule": {
+          "start": "2027-01-23T10:00",
+          "end": "2027-01-24T22:00",
+          "zone": "Asia/Manila",
+          "basis": "confirmed",
+          "daily": {
+            "start": "10:00",
+            "end": "22:00",
+            "basis": "confirmed"
+          }
+        },
+        "conditions_zh": "馬尼拉SM Mall of Asia周邊實體活動，集滿五枚指定集章可遇見附地點背景的當地款皮卡丘。官方另列實體集章自當地活動開始起持續一個月；本卡狀態依兩天實體活動判定。與9/12起已開放的跨區集章分開，既有菲律賓背景維持已推出。",
+        "conditions_en": "At the Manila event around SM Mall of Asia, collect five designated stamps to encounter the regional Pikachu with a Location Background. The local rally continues for one month from the event start; this card follows the two-day launch. This is separate from the cross-region rally already available since September 12; the existing Philippine background remains released.",
+        "eligible_zh": "皮卡丘（紅色爆炸頭）。",
+        "eligible_en": "Pikachu (Red Afro).",
+        "remote_participation": {
+          "basis": "confirmed",
+          "text_zh": "此取得方式需在活動地區進行；不是遠距團體戰。",
+          "text_en": "This acquisition route requires playing in the event region; it is not a remote raid."
+        },
+        "remote_background": {
+          "basis": "confirmed",
+          "text_zh": "限當地遭遇／調查／集章；不適用遠距團體戰取得。",
+          "text_en": "Local encounters/research/stamps only; remote raid background acquisition is not applicable."
+        },
+        "checked_on": "2026-10-31",
+        "sources": [
+          "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
+          "https://pokemongo.com/en/news/event-apac-stamp-rally-2026"
+        ],
+        "background_type": "location",
+        "artwork_status": "catalogued",
+        "title_zh": "PokéXciting 菲律賓馬尼拉實體活動（紅色爆炸頭）",
+        "title_en": "PokéXciting Manila launch event (Red Afro)"
+      }
     },
     {
       "name_en": "Pokemon Jet Green",
