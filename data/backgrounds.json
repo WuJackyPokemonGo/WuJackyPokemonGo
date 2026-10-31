@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-29",
+  "as_of": "2026-10-31",
   "complete": false,
   "sources": [
     "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -14352,7 +14352,46 @@
       "reference_ids": [
         "tpc30th_singapore"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "activity": {
+        "id": "pokexciting-singapore-launch-2026",
+        "schedule": {
+          "start": "2026-11-07T10:00",
+          "end": "2026-11-08T22:00",
+          "zone": "Asia/Singapore",
+          "basis": "confirmed",
+          "daily": {
+            "start": "10:00",
+            "end": "22:00",
+            "basis": "confirmed"
+          }
+        },
+        "conditions_zh": "本卡為新加坡實體活動日期；活動集章附當地背景，與9/12起已開放的跨區集章為不同路線，不把既有背景改成未推出。",
+        "conditions_en": "This card describes the Singapore launch event. Local stamp rewards have the Location Background; the cross-region rally already available since September 12 is a separate route. The existing background remains released.",
+        "eligible_zh": "皮卡丘（藍色爆炸頭）。",
+        "eligible_en": "Pikachu (Blue Afro).",
+        "remote_participation": {
+          "basis": "confirmed",
+          "text_zh": "此取得方式需在活動地區進行；不是遠距團體戰。",
+          "text_en": "This acquisition route requires playing in the event region; it is not a remote raid."
+        },
+        "remote_background": {
+          "basis": "confirmed",
+          "text_zh": "限當地遭遇／調查／集章；不適用遠距團體戰取得。",
+          "text_en": "Local encounters/research/stamps only; remote raid background acquisition is not applicable."
+        },
+        "checked_on": "2026-10-31",
+        "sources": [
+          "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
+          "https://pokemongo.com/en/news/event-apac-stamp-rally-2026",
+          "https://pokemongo.com/news/event-singapore-30th-anniversary-2026",
+          "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026"
+        ],
+        "background_type": "location",
+        "artwork_status": "catalogued",
+        "title_zh": "PokéXciting 新加坡實體活動（藍色爆炸頭）",
+        "title_en": "PokéXciting Singapore launch event (Blue Afro)"
+      }
     },
     {
       "name_en": "PokeXciting Philippines (Red Afro)",
@@ -16314,7 +16353,38 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/reallifeevents/pokemonnightout.shtml",
         "https://leekduck.com/events/pokemon-night-out-los-angeles-2026/"
-      ]
+      ],
+      "activity": {
+        "id": "night-out-los-angeles-2026",
+        "schedule": {
+          "date_only": true,
+          "start_date": "2026-10-24",
+          "end_date": "2026-10-24",
+          "zone": "America/Los_Angeles",
+          "basis": "confirmed"
+        },
+        "conditions_zh": "一星皮卡丘、三星耿鬼團體戰捕獲帶當地地點背景；官方未列本筆遊戲完整起訖時刻。顫弦蠑螈的調查與背景資格沿用圖鑑的逐項證據，不擴大保證。",
+        "conditions_en": "One-star Pikachu and three-star Gengar raids award the local Location Background. Complete gameplay start/end hours are not stated. Toxtricity research/background eligibility retains the catalog’s per-form evidence, without a new blanket guarantee.",
+        "eligible_zh": "皮卡丘、耿鬼；顫弦蠑螈（高調／低調調查路線二選一）。",
+        "eligible_en": "Pikachu, Gengar; Toxtricity (choose Amped or Low Key in venue research).",
+        "remote_participation": {
+          "basis": "inferred",
+          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
+          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
+          "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
+        },
+        "checked_on": "2026-10-31",
+        "sources": [
+          "https://pokemongo.com/news/pokemon-night-out-irl-details2026",
+          "https://pokemongo.com/news/shadow-raid-max-battle-update"
+        ],
+        "background_type": "location",
+        "artwork_status": "catalogued"
+      }
     },
     {
       "name_en": "GO Wild Area 2026 Sendai Tohoku",
@@ -16432,7 +16502,43 @@
         "Official clarification checked October 29: the GO Stamp Rally runs only on the main ticketed day, 10:00–20:00 local time. Extra Day add-ons do not add stamp rallies, but do grant repeat Steel-/Dragon-type Timed Research. The seven stamps may be visited in any order. Background rewards from the stamp rally are not promised."
       ],
       "date_note_zh": "GO集章：僅主票券日期10:00–20:00（當地時間）；額外日加購不增加集章。額外日鋼／龍限時調查為不同內容，不能混為背景保證。",
-      "date_note_en": "GO Stamp Rally: main ticketed day only, 10:00–20:00 local time. Extra Day add-ons do not add a stamp rally. Repeat Steel-/Dragon-type Timed Research is separate and does not establish background eligibility."
+      "date_note_en": "GO Stamp Rally: main ticketed day only, 10:00–20:00 local time. Extra Day add-ons do not add a stamp rally. Repeat Steel-/Dragon-type Timed Research is separate and does not establish background eligibility.",
+      "activity": {
+        "id": "wild-area-sendai-2026",
+        "schedule": {
+          "start": "2026-11-06T10:00",
+          "end": "2026-11-08T18:00",
+          "zone": "Asia/Tokyo",
+          "basis": "confirmed",
+          "daily": {
+            "start": "10:00",
+            "end": "18:00",
+            "basis": "confirmed"
+          }
+        },
+        "conditions_zh": "持票訓練家在活動期間參與指定現場團體戰與極巨對戰，成功捕獲後有機會獲得仙台地點背景；遠距對戰不提供地點背景。持票特殊調查明列附背景的超極巨鋁鋼龍。各寶可夢條件見下方。 GO集章僅主票券日期10:00–20:00，額外日不新增集章；集章不等於背景保證。",
+        "conditions_en": "Ticket-holding Trainers may receive the Sendai Location Background from eligible in-person raids and Max Battles; remote battles do not award Location Backgrounds. Ticketed Special Research explicitly awards Gigantamax Duraludon with the background. See species-specific routes below. GO Stamp Rally: main ticketed day only, 10:00–20:00. Extra Day add-ons do not add a stamp rally; stamp rewards are not a background guarantee.",
+        "eligible_zh": "現代夾克怪力、極巨化帝牙盧卡／帕路奇亞、超極巨化鋁鋼龍；蒼響／藏瑪然特捕獲形態沿用百戰勇者，對戰形態為劍之王／盾之王。",
+        "eligible_en": "Modern-jacket Machamp, Dynamax Dialga/Palkia, Gigantamax Duraludon; Zacian/Zamazenta retain Hero of Many Battles catch entries, distinct from Crowned Sword/Shield battle forms.",
+        "remote_participation": {
+          "basis": "inferred",
+          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
+          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
+        },
+        "remote_background": {
+          "basis": "confirmed",
+          "text_zh": "官方明確限定現場團體戰／極巨對戰；遠距參戰沒有本活動地點背景資格。",
+          "text_en": "Officially restricted to in-person raids/Max Battles; remote participants cannot receive this event’s Location Background."
+        },
+        "checked_on": "2026-10-31",
+        "sources": [
+          "https://pokemongo.com/gowildarea/sendai/gameplay",
+          "https://pokemongo.com/news/go-wild-area-stamp-rally-details-2026",
+          "https://pokemongo.com/news/shadow-raid-max-battle-update"
+        ],
+        "background_type": "location",
+        "artwork_status": "catalogued"
+      }
     },
     {
       "name_en": "GO Wild Area 2026 Mexico City",
@@ -16550,7 +16656,43 @@
         "Official clarification checked October 29: the GO Stamp Rally runs only on the main ticketed day, 10:00–20:00 local time. Extra Day add-ons do not add stamp rallies, but do grant repeat Steel-/Dragon-type Timed Research. The seven stamps may be visited in any order. Background rewards from the stamp rally are not promised."
       ],
       "date_note_zh": "GO集章：僅主票券日期10:00–20:00（當地時間）；額外日加購不增加集章。額外日鋼／龍限時調查為不同內容，不能混為背景保證。",
-      "date_note_en": "GO Stamp Rally: main ticketed day only, 10:00–20:00 local time. Extra Day add-ons do not add a stamp rally. Repeat Steel-/Dragon-type Timed Research is separate and does not establish background eligibility."
+      "date_note_en": "GO Stamp Rally: main ticketed day only, 10:00–20:00 local time. Extra Day add-ons do not add a stamp rally. Repeat Steel-/Dragon-type Timed Research is separate and does not establish background eligibility.",
+      "activity": {
+        "id": "wild-area-mexico-city-2026",
+        "schedule": {
+          "start": "2026-11-06T10:00",
+          "end": "2026-11-08T18:00",
+          "zone": "America/Mexico_City",
+          "basis": "confirmed",
+          "daily": {
+            "start": "10:00",
+            "end": "18:00",
+            "basis": "confirmed"
+          }
+        },
+        "conditions_zh": "持票訓練家在活動期間參與指定現場團體戰與極巨對戰，成功捕獲後有機會獲得墨西哥城地點背景；遠距對戰不提供地點背景。持票特殊調查明列附背景的超極巨鋁鋼龍。各寶可夢條件見下方。 GO集章僅主票券日期10:00–20:00，額外日不新增集章；集章不等於背景保證。",
+        "conditions_en": "Ticket-holding Trainers may receive the Mexico City Location Background from eligible in-person raids and Max Battles; remote battles do not award Location Backgrounds. Ticketed Special Research explicitly awards Gigantamax Duraludon with the background. See species-specific routes below. GO Stamp Rally: main ticketed day only, 10:00–20:00. Extra Day add-ons do not add a stamp rally; stamp rewards are not a background guarantee.",
+        "eligible_zh": "現代夾克怪力、極巨化帝牙盧卡／帕路奇亞、超極巨化鋁鋼龍；蒼響／藏瑪然特捕獲形態沿用百戰勇者，對戰形態為劍之王／盾之王。",
+        "eligible_en": "Modern-jacket Machamp, Dynamax Dialga/Palkia, Gigantamax Duraludon; Zacian/Zamazenta retain Hero of Many Battles catch entries, distinct from Crowned Sword/Shield battle forms.",
+        "remote_participation": {
+          "basis": "inferred",
+          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
+          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
+        },
+        "remote_background": {
+          "basis": "confirmed",
+          "text_zh": "官方明確限定現場團體戰／極巨對戰；遠距參戰沒有本活動地點背景資格。",
+          "text_en": "Officially restricted to in-person raids/Max Battles; remote participants cannot receive this event’s Location Background."
+        },
+        "checked_on": "2026-10-31",
+        "sources": [
+          "https://pokemongo.com/gowildarea/mexico-city/gameplay",
+          "https://pokemongo.com/news/go-wild-area-stamp-rally-details-2026",
+          "https://pokemongo.com/news/shadow-raid-max-battle-update"
+        ],
+        "background_type": "location",
+        "artwork_status": "catalogued"
+      }
     },
     {
       "name_en": "Night Out - London",
@@ -16594,7 +16736,38 @@
       "reference_ids": [
         "2026_pno_london"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "activity": {
+        "id": "night-out-london-2026",
+        "schedule": {
+          "date_only": true,
+          "start_date": "2026-11-10",
+          "end_date": "2026-11-10",
+          "zone": "Europe/London",
+          "basis": "confirmed"
+        },
+        "conditions_zh": "活動場館一星皮卡丘、三星耿鬼團體戰捕獲帶倫敦地點背景；官方未列本筆遊戲完整起訖時刻。",
+        "conditions_en": "One-star Pikachu and three-star Gengar raids at the venue award the London Location Background. Complete gameplay start/end hours are not stated.",
+        "eligible_zh": "皮卡丘、耿鬼。",
+        "eligible_en": "Pikachu and Gengar.",
+        "remote_participation": {
+          "basis": "inferred",
+          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
+          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
+          "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
+        },
+        "checked_on": "2026-10-31",
+        "sources": [
+          "https://pokemongo.com/news/pokemon-night-out-irl-details2026",
+          "https://pokemongo.com/news/shadow-raid-max-battle-update"
+        ],
+        "background_type": "location",
+        "artwork_status": "catalogued"
+      }
     },
     {
       "name_en": "GO Fest 2024 Wormhole",
@@ -27266,7 +27439,37 @@
       "reference_ids": [
         "dia-de-muertos-2026-cubone"
       ],
-      "reference_review": "official-and-catalog-crosschecked-2026-10-28"
+      "reference_review": "official-and-catalog-crosschecked-2026-10-28",
+      "activity": {
+        "id": "dia-de-muertos-cubone-2026",
+        "schedule": {
+          "start": "2026-10-27T10:00",
+          "end": "2026-11-05T20:00",
+          "zone": "America/Mexico_City",
+          "basis": "confirmed",
+          "reference_local": true
+        },
+        "conditions_zh": "墨西哥境內薰香及活動小隊挑戰的花冠卡拉卡拉有機會附特殊背景；限時調查明列附背景。嘎啦嘎啦為進化繼承。",
+        "conditions_en": "In Mexico, Incense and event Party Challenges may award cempasúchil-crown Cubone with a Special Background; Timed Research explicitly awards it. Marowak inherits it through evolution.",
+        "eligible_zh": "卡拉卡拉（金盞花花冠）；嘎啦嘎啦由進化取得。",
+        "eligible_en": "Cubone wearing a cempasúchil crown; Marowak by evolution.",
+        "remote_participation": {
+          "basis": "confirmed",
+          "text_zh": "此取得方式需在活動地區進行；不是遠距團體戰。",
+          "text_en": "This acquisition route requires playing in the event region; it is not a remote raid."
+        },
+        "remote_background": {
+          "basis": "confirmed",
+          "text_zh": "限當地遭遇／調查／集章；不適用遠距團體戰取得。",
+          "text_en": "Local encounters/research/stamps only; remote raid background acquisition is not applicable."
+        },
+        "checked_on": "2026-10-31",
+        "sources": [
+          "https://pokemongo.com/es-MX/news/dia-de-muertos-2026"
+        ],
+        "background_type": "special",
+        "artwork_status": "catalogued"
+      }
     },
     {
       "name_en": "PokéXciting Bangkok, Thailand (Orange Afro)",
@@ -27313,7 +27516,43 @@
       ],
       "notes_en": [
         "Asset preview provided by the owner. Upcoming; excluded from released counts."
-      ]
+      ],
+      "activity": {
+        "id": "pokexciting-bangkok-2027",
+        "schedule": {
+          "start": "2027-02-13T10:00",
+          "end": "2027-02-14T22:00",
+          "zone": "Asia/Bangkok",
+          "basis": "confirmed",
+          "daily": {
+            "start": "10:00",
+            "end": "22:00",
+            "basis": "confirmed"
+          }
+        },
+        "conditions_zh": "官方總公告列各區活動10:00–22:00；曼谷橘色款及活動日期已公布。曼谷背景的集章位置、實際開放細節仍待後續公告；素材預覽不等於已發放。",
+        "conditions_en": "The general announcement lists event hours of 10:00–22:00 in each region. Bangkok’s orange variant and dates are announced. Bangkok background stamp location and acquisition details remain unannounced; the asset preview is not proof of release.",
+        "eligible_zh": "皮卡丘（橘色爆炸頭）。",
+        "eligible_en": "Pikachu (Orange Afro).",
+        "remote_participation": {
+          "basis": "inferred",
+          "text_zh": "GO集章依一般規則需造訪當地；曼谷活動具體細節待公告。",
+          "text_en": "GO stamps generally require visiting the location; Bangkok-specific details await announcement."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "曼谷背景的具體取得規則及遠距資格未公布。",
+          "text_en": "Bangkok-specific background acquisition and remote eligibility are unannounced."
+        },
+        "checked_on": "2026-10-31",
+        "sources": [
+          "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
+          "https://th.portal-pokemon.com/30th/topics/20261026_01/?lang=en"
+        ],
+        "background_type": "location",
+        "artwork_status": "owner-preview-not-released",
+        "conditions_basis": "pending"
+      }
     }
   ],
   "additional_announced_events": [
@@ -27372,7 +27611,38 @@
       ],
       "notes_en": [
         "November 9 at 10:00–November 13 at 20:00 local time. Eligible five-star raids and five-star Max Battles may award a new Special Background. Artwork awaits confirmation. Dynamax Meltan from GO Pass is not explicitly promised this background."
-      ]
+      ],
+      "activity": {
+        "id": "into-the-wild-2026",
+        "schedule": {
+          "start": "2026-11-09T10:00",
+          "end": "2026-11-13T20:00",
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "rolling_local": true
+        },
+        "conditions_zh": "指定五星團體戰、五星極巨對戰成功捕獲有機會附新特殊背景。GO Pass極巨美錄坦未承諾附背景。",
+        "conditions_en": "Eligible five-star raids and five-star Max Battles may award a new Special Background. GO Pass Dynamax Meltan is not promised this background.",
+        "eligible_zh": "劍之王蒼響／盾之王藏瑪然特團體戰；極巨化雷吉斯奇魯、雷吉鐸拉戈、拉帝亞斯、拉帝歐斯。",
+        "eligible_en": "Crowned Sword Zacian / Crowned Shield Zamazenta raids; Dynamax Registeel, Regidrago, Latias and Latios.",
+        "remote_participation": {
+          "basis": "inferred",
+          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
+          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
+          "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
+        },
+        "checked_on": "2026-10-31",
+        "sources": [
+          "https://pokemongo.com/news/into-the-wild-2026",
+          "https://pokemongo.com/news/shadow-raid-max-battle-update"
+        ],
+        "background_type": "special",
+        "artwork_status": "pending"
+      }
     },
     {
       "name_en": "Día de Muertos 2026 — Mexico City Location Background",
@@ -27410,7 +27680,56 @@
       "catalog_sources": [
         "https://www.centropkmn.com/go/eventos/dia-de-muertos-2026/",
         "https://www.wikidex.net/wiki/B%C3%BAsqueda_de_sellos_en_D%C3%ADa_de_Muertos_2026/Caza_de_sellos_de_D%C3%ADa_de_Muertos_2026"
-      ]
+      ],
+      "activity": {
+        "id": "dia-de-muertos-mexico-city-2026",
+        "schedule": {
+          "start": "2026-10-31T10:00",
+          "end": "2026-11-05T20:00",
+          "zone": "America/Mexico_City",
+          "basis": "pending",
+          "alternative_starts": [
+            {
+              "local": "2026-10-31T14:00",
+              "label_zh": "其他來源14:00（待釐清）",
+              "label_en": "Other sources: 14:00 (unresolved)"
+            }
+          ]
+        },
+        "conditions_zh": "改革大道當地限時調查及GO集章明列花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。",
+        "conditions_en": "Paseo de la Reforma local Timed Research and GO Stamp Rally list a cempasúchil-crown Duskull with a Location Background. Six-star Gigantamax Gengar battles offer a background chance.",
+        "eligible_zh": "夜巡靈（金盞花花冠）；耿鬼（超極巨化）。",
+        "eligible_en": "Duskull wearing a cempasúchil crown; Gigantamax Gengar.",
+        "remote_participation": {
+          "basis": "inferred",
+          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
+          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
+          "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
+        },
+        "checked_on": "2026-10-31",
+        "sources": [
+          "https://pokemongo.com/es-MX/news/dia-de-muertos-2026",
+          "https://pokemongo.com/seasons/forever-forward",
+          "https://pokemongo.com/news/shadow-raid-max-battle-update",
+          "https://www.centropkmn.com/go/eventos/dia-de-muertos-2026/",
+          "https://www.wikidex.net/wiki/B%C3%BAsqueda_de_sellos_en_D%C3%ADa_de_Muertos_2026/Caza_de_sellos_de_D%C3%ADa_de_Muertos_2026"
+        ],
+        "background_type": "location",
+        "artwork_status": "pending",
+        "uncertainty_zh": "開始時刻待釐清：官方es-MX公告為10:00，Centro Pokémon／WikiDex為14:00。首日兩種台灣時間均保留；不把任一時刻視為已排除爭議。背景圖樣與遠距背景資格待確認。",
+        "uncertainty_en": "Start-time conflict: the official es-MX announcement says 10:00; Centro Pokémon/WikiDex say 14:00. Both Taiwan conversions are retained. Artwork and remote background eligibility are unconfirmed.",
+        "battle_window": {
+          "start": "06:00",
+          "end": "21:00",
+          "basis": "inferred"
+        },
+        "window_note_zh": "以下僅為超極巨耿鬼可挑戰時段推算：以一般當地06:00–21:00極巨對戰規則，與活動期間取交集；非本次活動明列專屬時段。首日有兩種候選，實際能量點及官方修訂優先。",
+        "window_note_en": "Inferred Gigantamax Gengar battle windows only: usual local 06:00–21:00 Max Battle hours intersected with the event period, not event-specific confirmed hours. Two first-day scenarios remain; actual Power Spots and official revisions take precedence."
+      }
     },
     {
       "name_en": "Festival of Lights 2026 Special Background",
@@ -27436,7 +27755,37 @@
       "region_zh": "印度",
       "notes_en": [
         "India, November 6–8. Saree/kurta Pikachu raids and Sparkle O’Clock wild encounters may have a Special Background; branched Timed Research lists a background reward. Research starts November 1 at 06:00, which does not establish the first obtainable date. Artwork is unconfirmed."
-      ]
+      ],
+      "activity": {
+        "id": "festival-of-lights-2026",
+        "schedule": {
+          "start": "2026-11-06T10:00",
+          "end": "2026-11-08T20:00",
+          "zone": "Asia/Kolkata",
+          "basis": "confirmed"
+        },
+        "conditions_zh": "紗麗／庫爾塔皮卡丘團體戰及Sparkle O’Clock野外有機會附特殊背景，分支限時調查明列附背景。調查11/1 06:00開放，不當作背景已可取得。",
+        "conditions_en": "Saree/kurta Pikachu raids and Sparkle O’Clock wild encounters offer a Special Background chance; branched Timed Research lists the background. Research opens November 1 at 06:00, not proof that the background is already obtainable.",
+        "eligible_zh": "皮卡丘（紗麗、庫爾塔服裝）。",
+        "eligible_en": "Pikachu wearing a saree or kurta.",
+        "remote_participation": {
+          "basis": "inferred",
+          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
+          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
+          "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
+        },
+        "checked_on": "2026-10-31",
+        "sources": [
+          "https://pokemongo.com/en/news/festival-of-lights-2026",
+          "https://pokemongo.com/news/shadow-raid-max-battle-update"
+        ],
+        "background_type": "special",
+        "artwork_status": "pending"
+      }
     },
     {
       "name_en": "GO Wild Area 2026 Global Special Background",
@@ -27462,7 +27811,43 @@
       "region_zh": "全球",
       "notes_en": [
         "November 14–15. Modern-jacket Machamp, Dynamax Dialga/Palkia, Reshiram, Zekrom, Kyurem and Gigantamax Duraludon are listed with Special Background opportunities. Ticketed Special Research explicitly awards Gigantamax Duraludon with the background. Artwork awaits confirmation; do not substitute the 2025 or city background."
-      ]
+      ],
+      "activity": {
+        "id": "wild-area-global-2026",
+        "schedule": {
+          "start": "2026-11-14T10:00",
+          "end": "2026-11-15T18:00",
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "rolling_local": true,
+          "daily": {
+            "start": "10:00",
+            "end": "18:00",
+            "basis": "confirmed"
+          }
+        },
+        "conditions_zh": "指定團體戰、極巨對戰捕獲有機會附特殊背景；持票特殊調查明列附背景超極巨鋁鋼龍。每日10:00–18:00。",
+        "conditions_en": "Eligible raids and Max Battles offer a Special Background chance; ticketed Special Research explicitly awards Gigantamax Duraludon with the background. Daily 10:00–18:00.",
+        "eligible_zh": "現代夾克怪力、極巨帝牙盧卡／帕路奇亞、萊希拉姆、捷克羅姆、酋雷姆、超極巨鋁鋼龍。",
+        "eligible_en": "Modern-jacket Machamp, Dynamax Dialga/Palkia, Reshiram, Zekrom, Kyurem and Gigantamax Duraludon.",
+        "remote_participation": {
+          "basis": "inferred",
+          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
+          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
+          "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
+        },
+        "checked_on": "2026-10-31",
+        "sources": [
+          "https://pokemongo.com/en/gowildarea/global",
+          "https://pokemongo.com/news/shadow-raid-max-battle-update"
+        ],
+        "background_type": "special",
+        "artwork_status": "pending"
+      }
     },
     {
       "event_id": "dynamax-trails-2026",
@@ -27492,7 +27877,40 @@
         "Local event hours: November 16 at 10:00–November 23 at 20:00. Previously released non-Legendary, non-Mythical Dynamax Pokémon may appear in Max Battles, with a chance of a Special Background after catching.",
         "Both GO Pass tracks list event-themed Dynamax Pokémon with Special Backgrounds. Trainers who claimed Into the Wild Tier 1 receive early pass access on November 14 at 10:00. Individual species and artwork are unannounced; this is not evidence of a Dark Skies rerun.",
         "Eternatus is listed as a separate pass reward without a promised background. Eternamax Eternatus cannot be caught after its battle and is not a background encounter."
-      ]
+      ],
+      "activity": {
+        "id": "dynamax-trails-2026",
+        "schedule": {
+          "start": "2026-11-16T10:00",
+          "end": "2026-11-23T20:00",
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "rolling_local": true
+        },
+        "conditions_zh": "非傳說／非幻之既有極巨化寶可夢對戰捕獲有機會附特殊背景；免費及豪華GO Pass明列附背景的活動極巨化遭遇。符合條件可11/14 10:00提前取得通行證，非背景提前開放保證。",
+        "conditions_en": "Previously released non-Legendary/non-Mythical Dynamax catches may have a Special Background; both GO Pass tracks list background encounters. Qualified Trainers get early pass access November 14 at 10:00; this is not a guaranteed early background release.",
+        "eligible_zh": "官方以族群描述資格，逐隻名單待確認；無極汰那未承諾附背景，無極巨化無極汰那不可捕獲。",
+        "eligible_en": "Eligibility is described as a group; the species list is unconfirmed. Eternatus is not promised a background; Eternamax Eternatus is not catchable.",
+        "remote_participation": {
+          "basis": "inferred",
+          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
+          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
+          "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
+        },
+        "checked_on": "2026-10-31",
+        "sources": [
+          "https://pokemongo.com/news/dynamax-trails-eternamax-eternatus-2026",
+          "https://pokemongo.com/news/shadow-raid-max-battle-update"
+        ],
+        "background_type": "special",
+        "artwork_status": "pending",
+        "uncertainty_zh": "背景圖樣及逐隻名單待確認，不能把本公告直接視為舊暗黑蒼穹／紫黑復刻證據。",
+        "uncertainty_en": "Artwork and individual species await confirmation. This announcement alone does not establish reuse of the old Dark Skies artwork."
+      }
     },
     {
       "event_id": "pawniard-community-day-2026",
@@ -27528,7 +27946,40 @@
       "notes_en": [
         "November 21, 14:00–17:00 local time: wild Pawniard may have the yearly 2026 Special Background; paid Special Research explicitly awards three background encounters.",
         "Regular Lure Module background opportunities continue until 21:00. Some Field Research and Community Ambassador check-in Timed Research also list background encounters. This reuses the BG-0240 yearly background, not a new pattern."
-      ]
+      ],
+      "activity": {
+        "id": "pawniard-community-day-2026",
+        "schedule": {
+          "start": "2026-11-21T14:00",
+          "end": "2026-11-21T17:00",
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "rolling_local": true
+        },
+        "conditions_zh": "野外機率年度背景，付費特殊調查明列三次背景遭遇；普通誘餌機會延長至21:00，指定田野與社群大使報到調查亦有背景遭遇。沿用2026年度背景。",
+        "conditions_en": "Wild encounters may have the yearly background; paid Special Research lists three background encounters. Regular Lure opportunities extend to 21:00; specified Field Research and Community Ambassador check-in research also offer backgrounds. Reuses the 2026 yearly design.",
+        "eligible_zh": "駒刀小兵；進化取得與直接遭遇分開，不新增推測形態。",
+        "eligible_en": "Pawniard; evolution is separate from a direct encounter, with no speculative forms added.",
+        "remote_participation": {
+          "basis": "confirmed",
+          "text_zh": "此取得方式需在活動地區進行；不是遠距團體戰。",
+          "text_en": "This acquisition route requires playing in the event region; it is not a remote raid."
+        },
+        "remote_background": {
+          "basis": "confirmed",
+          "text_zh": "限當地遭遇／調查／集章；不適用遠距團體戰取得。",
+          "text_en": "Local encounters/research/stamps only; remote raid background acquisition is not applicable."
+        },
+        "checked_on": "2026-10-31",
+        "sources": [
+          "https://pokemongo.com/news/communityday-november-2026-pawniard"
+        ],
+        "background_type": "special",
+        "artwork_status": "existing-yearly-background",
+        "background_ids": [
+          "BG-0240"
+        ]
+      }
     }
   ],
   "coverage_note_zh": "收錄數是活動／圖樣工作紀錄，不是獨立已發放款數。日期採來源當地時間；多次發放與個別款開始日分開說明。尚有來源衝突及個別取得條件待核實。",
