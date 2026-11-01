@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-31",
+  "as_of": "2026-11-01",
   "complete": false,
   "sources": [
     "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -14380,7 +14380,7 @@
           "text_zh": "限當地遭遇／調查／集章；不適用遠距團體戰取得。",
           "text_en": "Local encounters/research/stamps only; remote raid background acquisition is not applicable."
         },
-        "checked_on": "2026-10-31",
+        "checked_on": "2026-11-01",
         "sources": [
           "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
           "https://pokemongo.com/en/news/event-apac-stamp-rally-2026",
@@ -14466,7 +14466,7 @@
           "text_zh": "限當地遭遇／調查／集章；不適用遠距團體戰取得。",
           "text_en": "Local encounters/research/stamps only; remote raid background acquisition is not applicable."
         },
-        "checked_on": "2026-10-31",
+        "checked_on": "2026-11-01",
         "sources": [
           "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
           "https://pokemongo.com/en/news/event-apac-stamp-rally-2026"
@@ -16413,7 +16413,7 @@
           "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
           "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
         },
-        "checked_on": "2026-10-31",
+        "checked_on": "2026-11-01",
         "sources": [
           "https://pokemongo.com/news/pokemon-night-out-irl-details2026",
           "https://pokemongo.com/news/shadow-raid-max-battle-update"
@@ -16566,7 +16566,7 @@
           "text_zh": "官方明確限定現場團體戰／極巨對戰；遠距參戰沒有本活動地點背景資格。",
           "text_en": "Officially restricted to in-person raids/Max Battles; remote participants cannot receive this event’s Location Background."
         },
-        "checked_on": "2026-10-31",
+        "checked_on": "2026-11-01",
         "sources": [
           "https://pokemongo.com/gowildarea/sendai/gameplay",
           "https://pokemongo.com/news/go-wild-area-stamp-rally-details-2026",
@@ -16720,7 +16720,7 @@
           "text_zh": "官方明確限定現場團體戰／極巨對戰；遠距參戰沒有本活動地點背景資格。",
           "text_en": "Officially restricted to in-person raids/Max Battles; remote participants cannot receive this event’s Location Background."
         },
-        "checked_on": "2026-10-31",
+        "checked_on": "2026-11-01",
         "sources": [
           "https://pokemongo.com/gowildarea/mexico-city/gameplay",
           "https://pokemongo.com/news/go-wild-area-stamp-rally-details-2026",
@@ -16796,7 +16796,7 @@
           "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
           "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
         },
-        "checked_on": "2026-10-31",
+        "checked_on": "2026-11-01",
         "sources": [
           "https://pokemongo.com/news/pokemon-night-out-irl-details2026",
           "https://pokemongo.com/news/shadow-raid-max-battle-update"
@@ -27499,7 +27499,7 @@
           "text_zh": "限當地遭遇／調查／集章；不適用遠距團體戰取得。",
           "text_en": "Local encounters/research/stamps only; remote raid background acquisition is not applicable."
         },
-        "checked_on": "2026-10-31",
+        "checked_on": "2026-11-01",
         "sources": [
           "https://pokemongo.com/es-MX/news/dia-de-muertos-2026"
         ],
@@ -27580,7 +27580,7 @@
           "text_zh": "曼谷背景的具體取得規則及遠距資格未公布。",
           "text_en": "Bangkok-specific background acquisition and remote eligibility are unannounced."
         },
-        "checked_on": "2026-10-31",
+        "checked_on": "2026-11-01",
         "sources": [
           "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
           "https://th.portal-pokemon.com/30th/topics/20261026_01/?lang=en"
@@ -27610,7 +27610,7 @@
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2026",
-      "checked_on": "2026-10-29",
+      "checked_on": "2026-11-01",
       "region_en": "Global",
       "region_zh": "全球",
       "pokemon": [
@@ -27671,7 +27671,7 @@
           "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
           "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
         },
-        "checked_on": "2026-10-31",
+        "checked_on": "2026-11-01",
         "sources": [
           "https://pokemongo.com/news/into-the-wild-2026",
           "https://pokemongo.com/news/shadow-raid-max-battle-update"
@@ -27698,24 +27698,28 @@
         "地點背景圖樣待確認，不套用卡拉卡拉特殊背景圖片，也不算已發放款數。",
         "開始時間待釐清：截至2026/10/30，官方西文墨西哥頁面寫10/31 10:00（台灣11/1 00:00），Centro Pokémon與WikiDex寫10/31 14:00（台灣11/1 04:00）。墨西哥城UTC−6、台灣UTC+8，相差14小時；不可將其中一個開始時刻視為已排除爭議。結束時間均為當地11/5 20:00，即台灣11/6 10:00。",
         "超極巨耿鬼推算可挑戰時段（台灣時間；扣除當地夜間）：11/1首段開始待確認，若當地10:00開始為00:00～11:00，若14:00開始則為04:00～11:00；11/1另有20:00～24:00；11/2～11/5每天00:00～11:00、20:00～24:00；11/6僅00:00～10:00。依一般極巨對戰當地06:00～21:00及活動起訖推算，非本次公告另列的專屬時段；以實際能量點開放及官方修訂為準。",
-        "遠距：依現行極巨對戰規則可使用遠距團體戰入場券並消耗所需極巨粒子參戰；本次公告未明確說明遠距能否取得地點背景，列為待確認。"
+        "遠距：依現行極巨對戰規則可使用遠距團體戰入場券並消耗所需極巨粒子參戰；本次公告未明確說明遠距能否取得地點背景，列為待確認。",
+        "2026/11/1複核：官方明列夜巡靈為地點背景，Serebii卻與卡拉卡拉特殊背景混列；Dittobase直接頁面仍僅列曠野地帶陣容。現有名錄不足確認實際圖樣，維持獨立活動，不併入卡拉卡拉或曠野地帶。"
       ],
       "type": "location",
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2026",
-      "checked_on": "2026-10-30",
+      "checked_on": "2026-11-01",
       "region_en": "Mexico",
       "region_zh": "墨西哥",
       "notes_en": [
         "Paseo de la Reforma: local research and stamp rewards list cempasúchil-crown Duskull with a Location Background; Gigantamax Gengar battles offer a chance. Artwork remains unconfirmed. Sources disagree on the starting hour; see below.",
         "Start time unresolved as of Oct 30, 2026: the official es-MX page says Oct 31 at 10:00 (Taiwan Nov 1 at 00:00), while Centro Pokémon and WikiDex say 14:00 (Taiwan Nov 1 at 04:00). Taiwan is 14 hours ahead of Mexico City. The end is Nov 5 at 20:00 in Mexico City, or Nov 6 at 10:00 in Taiwan.",
         "Inferred Gigantamax Gengar windows in Taiwan time: Nov 1 first window starts at 00:00 if the local start is 10:00, or 04:00 if it is 14:00, ending at 11:00; Nov 1 also 20:00–24:00. Nov 2–5 daily 00:00–11:00 and 20:00–24:00; Nov 6 only 00:00–10:00. Based on usual local 06:00–21:00 Max Battle hours, not confirmed event-specific hours. Actual Power Spot availability and official revisions apply.",
-        "Remote participation follows the current Max Battle rules: a Remote Raid Pass and the required Max Particles. This event announcement does not explicitly confirm whether remote participants can receive the Location Background; eligibility remains unconfirmed."
+        "Remote participation follows the current Max Battle rules: a Remote Raid Pass and the required Max Particles. This event announcement does not explicitly confirm whether remote participants can receive the Location Background; eligibility remains unconfirmed.",
+        "November 1 review: the official announcement specifies a Location Background for Duskull, while Serebii lists it with the Cubone Special Background. The direct Dittobase page still lists only the Wild Area roster. These catalogs do not resolve the actual artwork; keep the events separate from Cubone and Wild Area."
       ],
       "catalog_sources": [
         "https://www.centropkmn.com/go/eventos/dia-de-muertos-2026/",
-        "https://www.wikidex.net/wiki/B%C3%BAsqueda_de_sellos_en_D%C3%ADa_de_Muertos_2026/Caza_de_sellos_de_D%C3%ADa_de_Muertos_2026"
+        "https://www.wikidex.net/wiki/B%C3%BAsqueda_de_sellos_en_D%C3%ADa_de_Muertos_2026/Caza_de_sellos_de_D%C3%ADa_de_Muertos_2026",
+        "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-mexico-city-2026"
       ],
       "activity": {
         "id": "dia-de-muertos-mexico-city-2026",
@@ -27746,18 +27750,20 @@
           "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
           "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
         },
-        "checked_on": "2026-10-31",
+        "checked_on": "2026-11-01",
         "sources": [
           "https://pokemongo.com/es-MX/news/dia-de-muertos-2026",
           "https://pokemongo.com/seasons/forever-forward",
           "https://pokemongo.com/news/shadow-raid-max-battle-update",
           "https://www.centropkmn.com/go/eventos/dia-de-muertos-2026/",
-          "https://www.wikidex.net/wiki/B%C3%BAsqueda_de_sellos_en_D%C3%ADa_de_Muertos_2026/Caza_de_sellos_de_D%C3%ADa_de_Muertos_2026"
+          "https://www.wikidex.net/wiki/B%C3%BAsqueda_de_sellos_en_D%C3%ADa_de_Muertos_2026/Caza_de_sellos_de_D%C3%ADa_de_Muertos_2026",
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-mexico-city-2026"
         ],
         "background_type": "location",
         "artwork_status": "pending",
-        "uncertainty_zh": "開始時刻待釐清：官方es-MX公告為10:00，Centro Pokémon／WikiDex為14:00。首日兩種台灣時間均保留；不把任一時刻視為已排除爭議。背景圖樣與遠距背景資格待確認。",
-        "uncertainty_en": "Start-time conflict: the official es-MX announcement says 10:00; Centro Pokémon/WikiDex say 14:00. Both Taiwan conversions are retained. Artwork and remote background eligibility are unconfirmed.",
+        "uncertainty_zh": "開始時刻待釐清：官方es-MX公告為10:00，Centro Pokémon／WikiDex為14:00。首日兩種台灣時間均保留；不把任一時刻視為已排除爭議。背景圖樣與遠距背景資格待確認。 2026/11/1複核：官方明列夜巡靈為地點背景，Serebii卻與卡拉卡拉特殊背景混列；Dittobase直接頁面仍僅列曠野地帶陣容。現有名錄不足確認實際圖樣，維持獨立活動，不併入卡拉卡拉或曠野地帶。",
+        "uncertainty_en": "Start-time conflict: the official es-MX announcement says 10:00; Centro Pokémon/WikiDex say 14:00. Both Taiwan conversions are retained. Artwork and remote background eligibility are unconfirmed. November 1 review: the official announcement specifies a Location Background for Duskull, while Serebii lists it with the Cubone Special Background. The direct Dittobase page still lists only the Wild Area roster. These catalogs do not resolve the actual artwork; keep the events separate from Cubone and Wild Area.",
         "battle_window": {
           "start": "06:00",
           "end": "21:00",
@@ -27786,7 +27792,7 @@
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2026",
-      "checked_on": "2026-10-29",
+      "checked_on": "2026-11-01",
       "region_en": "India",
       "region_zh": "印度",
       "notes_en": [
@@ -27800,8 +27806,8 @@
           "zone": "Asia/Kolkata",
           "basis": "confirmed"
         },
-        "conditions_zh": "紗麗／庫爾塔皮卡丘團體戰及Sparkle O’Clock野外有機會附特殊背景，分支限時調查明列附背景。調查11/1 06:00開放，不當作背景已可取得。",
-        "conditions_en": "Saree/kurta Pikachu raids and Sparkle O’Clock wild encounters offer a Special Background chance; branched Timed Research lists the background. Research opens November 1 at 06:00, not proof that the background is already obtainable.",
+        "conditions_zh": "紗麗／庫爾塔皮卡丘團體戰及Sparkle O’Clock野外有機會附特殊背景，分支限時調查明列附背景。調查印度時間11/1 06:00（Asia/Kolkata，UTC+05:30；台灣11/1 08:30）開放，不當作背景已可取得。",
+        "conditions_en": "Saree/kurta Pikachu raids and Sparkle O’Clock wild encounters offer a Special Background chance; branched Timed Research lists the background. Research opens November 1 at 06:00 India time (Asia/Kolkata, UTC+05:30; November 1 at 08:30 in Taiwan), not proof that the background is already obtainable.",
         "eligible_zh": "皮卡丘（紗麗、庫爾塔服裝）。",
         "eligible_en": "Pikachu wearing a saree or kurta.",
         "remote_participation": {
@@ -27814,7 +27820,7 @@
           "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
           "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
         },
-        "checked_on": "2026-10-31",
+        "checked_on": "2026-11-01",
         "sources": [
           "https://pokemongo.com/en/news/festival-of-lights-2026",
           "https://pokemongo.com/news/shadow-raid-max-battle-update"
@@ -27842,7 +27848,7 @@
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2026",
-      "checked_on": "2026-10-29",
+      "checked_on": "2026-11-01",
       "region_en": "Global",
       "region_zh": "全球",
       "notes_en": [
@@ -27876,7 +27882,7 @@
           "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
           "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
         },
-        "checked_on": "2026-10-31",
+        "checked_on": "2026-11-01",
         "sources": [
           "https://pokemongo.com/en/gowildarea/global",
           "https://pokemongo.com/news/shadow-raid-max-battle-update"
@@ -27900,7 +27906,7 @@
       "release_state": "upcoming",
       "verification": "official-event-confirmed",
       "image_source": null,
-      "checked_on": "2026-10-29",
+      "checked_on": "2026-11-01",
       "official_sources": [
         "https://pokemongo.com/news/dynamax-trails-eternamax-eternatus-2026"
       ],
@@ -27937,7 +27943,7 @@
           "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
           "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
         },
-        "checked_on": "2026-10-31",
+        "checked_on": "2026-11-01",
         "sources": [
           "https://pokemongo.com/news/dynamax-trails-eternamax-eternatus-2026",
           "https://pokemongo.com/news/shadow-raid-max-battle-update"
@@ -27964,7 +27970,7 @@
       "release_state": "upcoming",
       "verification": "official-event-confirmed",
       "image_source": null,
-      "checked_on": "2026-10-29",
+      "checked_on": "2026-11-01",
       "official_sources": [
         "https://pokemongo.com/news/communityday-november-2026-pawniard"
       ],
@@ -28006,7 +28012,7 @@
           "text_zh": "限當地遭遇／調查／集章；不適用遠距團體戰取得。",
           "text_en": "Local encounters/research/stamps only; remote raid background acquisition is not applicable."
         },
-        "checked_on": "2026-10-31",
+        "checked_on": "2026-11-01",
         "sources": [
           "https://pokemongo.com/news/communityday-november-2026-pawniard"
         ],
