@@ -22,6 +22,14 @@ export function activityState(event,now=Date.now()){
  let session=null;if(s.daily){const p=parts(now,zone),clock=`${p.hour}:${p.minute}`;session=clock>=s.daily.start&&clock<s.daily.end}
  return {status:'in_progress',basis:'confirmed',session_open:session};
 }
+// An early research opening is distinct from the main event and artwork release.
+// Hide this preview once the main event starts; this does not assert a research deadline.
+export function activityEarlyAccess(event,now=Date.now()){
+ const p=event.activity.early_access,s=event.activity.schedule;if(!p||s.date_only)return null;
+ const zone=p.zone??s.zone,start=zonedInstant(p.start,zone),mainStart=zonedInstant(s.start,s.zone);
+ if(now>=mainStart)return null;
+ return {open:now>=start,local:formatZoned(start,zone)+' · '+zone+' ('+zoneOffset(start,zone)+')',taiwan:formatZoned(start,'Asia/Taipei')+' · UTC+08:00'};
+}
 export function sortActivityEvents(events,now=Date.now()){
  const rank={in_progress:0,time_unknown:1,upcoming:2,ended:3},time=e=>{const s=e.activity.schedule;return zonedInstant(s.date_only?s.start_date+'T00:00':s.start,s.zone||'Asia/Taipei')};
  return [...events].sort((a,b)=>{const sa=activityState(a,now).status,sb=activityState(b,now).status;return rank[sa]-rank[sb]||(sa==='ended'?time(b)-time(a):time(a)-time(b))||a.event_id.localeCompare(b.event_id)});

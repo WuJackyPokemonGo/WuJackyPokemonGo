@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-01",
+  "as_of": "2026-11-02",
   "complete": false,
   "sources": [
     "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -27792,7 +27792,7 @@
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2026",
-      "checked_on": "2026-11-01",
+      "checked_on": "2026-11-02",
       "region_en": "India",
       "region_zh": "印度",
       "notes_en": [
@@ -27820,13 +27820,18 @@
           "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
           "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
         },
-        "checked_on": "2026-11-01",
+        "checked_on": "2026-11-02",
         "sources": [
           "https://pokemongo.com/en/news/festival-of-lights-2026",
           "https://pokemongo.com/news/shadow-raid-max-battle-update"
         ],
         "background_type": "special",
-        "artwork_status": "pending"
+        "artwork_status": "pending",
+        "early_access": {
+          "start": "2026-11-01T06:00",
+          "zone": "Asia/Kolkata",
+          "basis": "confirmed"
+        }
       }
     },
     {

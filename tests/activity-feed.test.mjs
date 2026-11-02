@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';
-import {zonedInstant,formatZoned,zoneOffset,collectActivityEvents,activityState,sortActivityEvents,activityTimeLines,activityWindows} from '../activity-feed-service.mjs';
+import {zonedInstant,formatZoned,zoneOffset,collectActivityEvents,activityState,sortActivityEvents,activityTimeLines,activityWindows,activityEarlyAccess} from '../activity-feed-service.mjs';
 const data=JSON.parse(readFileSync(new URL('../data/backgrounds.json',import.meta.url)));const events=collectActivityEvents(data),get=id=>events.find(r=>r.event_id===id);
 test('IANA conversions preserve Mexico, half-hour India and date-specific daylight saving',()=>{
  assert.equal(formatZoned(zonedInstant('2026-10-31T10:00','America/Mexico_City'),'Asia/Taipei'),'2026/11/01 00:00');
@@ -35,3 +35,12 @@ test('feed contains 14 unique events with complete evidence fields without mutat
 });
 
 test("Manila physical launch remains upcoming while its existing cross-region background stays released",()=>{const e=get("pokexciting-manila-launch-2027");assert.equal(e.release_state,"released");assert.equal(e.activity.schedule.start,"2027-01-23T10:00");assert.equal(activityState(e,Date.parse("2026-10-31T00:00Z")).status,"upcoming");assert.match(e.activity.conditions_en,/one month/);assert.match(activityTimeLines(e).taiwan,/2027\/01\/23 10:00/)});
+
+test('early research opening has its own exact boundary without releasing artwork or changing main-event dates',()=>{
+ const r=get('festival-of-lights-2026');const before=JSON.stringify(r);
+ assert.equal(activityEarlyAccess(r,Date.parse('2026-11-01T00:29:59Z')).open,false);
+ const open=activityEarlyAccess(r,Date.parse('2026-11-01T00:30:00Z'));assert.equal(open.open,true);assert.match(open.taiwan,/2026\/11\/01 08:30/);
+ assert.equal(activityState(r,Date.parse('2026-11-02T00:00Z')).status,'upcoming');assert.equal(r.activity.artwork_status,'pending');assert.equal(r.image_source,null);
+ assert.equal(activityEarlyAccess(r,Date.parse('2026-11-06T04:30Z')),null);assert.equal(activityState(r,Date.parse('2026-11-06T04:30Z')).status,'in_progress');assert.equal(JSON.stringify(r),before);
+ assert.equal(activityEarlyAccess(get('wild-area-sendai-2026'),Date.parse('2026-11-02T00:00Z')),null);
+});
