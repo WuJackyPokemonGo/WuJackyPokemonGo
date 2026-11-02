@@ -16,7 +16,7 @@ test('Mexico Cubone is released, searchable and uses a verified working image in
 });
 test('announced city Location Backgrounds stay separate from the released Cubone Special Background',()=>{
  const event=data.records.find(r=>r.background_id==='BG-0280');
- assert.equal(event.start_date,'2026-10-31');assert.equal(event.release_state,'released');assert.match(event.image_source,/duskull-owner\.jpeg$/);
+ assert.equal(event.start_date,'2026-10-31');assert.equal(event.release_state,'released');assert.equal(event.image_source,data.records.find(r=>r.background_id==='BG-0008').image_source);
  assert.ok(!data.records.find(r=>r.background_id==='BG-0278').pokemon.some(p=>[92,93,94,355].includes(p.dex)));
  for(const id of audit.owner_keep_unchanged_ids)assert.equal(data.records.find(r=>r.background_id===id).release_state,'needs-verification');
  assert.equal(data.complete,false);

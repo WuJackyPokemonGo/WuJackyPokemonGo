@@ -14,10 +14,10 @@ test('conflicting starts remain unresolved between candidates and end boundary i
  for(const [time,status]of [['2026-10-31T15:59Z','upcoming'],['2026-10-31T16:00Z','time_unknown'],['2026-10-31T19:59Z','time_unknown'],['2026-10-31T20:00Z','in_progress'],['2026-11-06T02:00Z','ended']])assert.equal(activityState(r,Date.parse(time)).status,status,time);
  const t=activityTimeLines(r);assert.match(t.taiwan,/2026\/11\/01 00:00 或 2026\/11\/01 04:00/);assert.match(t.taiwan,/2026\/11\/06 10:00/);
 });
-test('daily Max windows exclude overnight and retain both first-day scenarios without duplicate later days',()=>{
- const windows=activityWindows(get('dia-de-muertos-mexico-city-2026'));assert.equal(windows.length,7);assert.equal(new Set(windows.map(x=>x.start+':'+x.end)).size,7);
- assert.match(windows[0].local,/10:00/);assert.match(windows[1].local,/14:00/);assert.ok(windows.every(x=>x.basis==='inferred'));assert.match(windows.at(-1).local,/2026\/11\/05 20:00$/);assert.match(windows.at(-1).taiwan,/2026\/11\/06 10:00$/);
- for(const w of windows)assert.ok(w.end>w.start&&w.end-w.start<=15*3600000);
+test('reported Mexico windows replace broad inferred hours without asserting official confirmation',()=>{
+ const r=get('dia-de-muertos-mexico-city-2026'),windows=activityWindows(r);assert.equal(windows.length,4);
+ assert.match(windows[0].local,/2026\/11\/02 19:00 → 2026\/11\/02 20:00/);assert.match(windows[0].taiwan,/2026\/11\/03 09:00 → 2026\/11\/03 10:00/);
+ assert.match(windows.at(-1).taiwan,/2026\/11\/06 09:00 → 2026\/11\/06 10:00/);assert.ok(windows.every(w=>w.basis==='pending'&&w.end-w.start===3600000));assert.match(r.activity.window_note_zh,/非官方確認/);assert.match(r.activity.reported_info_zh,/未獲官方確認/);
  const daily=get('wild-area-sendai-2026');assert.equal(activityState(daily,Date.parse('2026-11-06T12:00Z')).session_open,false);assert.equal(activityState(daily,Date.parse('2026-11-06T01:00Z')).session_open,true);assert.equal(activityWindows(daily).length,3);
 });
 test('date-only events never invent midnight and worldwide local-time events identify Taiwan status basis',()=>{

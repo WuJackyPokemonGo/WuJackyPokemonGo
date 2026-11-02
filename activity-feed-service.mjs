@@ -44,7 +44,7 @@ export function activityTimeLines(event,locale='zh'){
 }
 export function activityWindows(event){
  const s=event.activity.schedule,w=event.activity.battle_window??s.daily;if(!w||s.date_only||s.rolling_local)return [];
- const zone=s.zone,begin=s.start.slice(0,10),finish=s.end.slice(0,10),startCases=[{local:s.start,label_zh:'官方開始時刻',label_en:'Official start'},...(s.alternative_starts??[])],out=[],seen=new Set();
+ const zone=s.zone,begin=[s.start.slice(0,10),w.start_date??''].sort().at(-1),finish=[s.end.slice(0,10),w.end_date??s.end.slice(0,10)].sort()[0],startCases=[{local:s.start,label_zh:'官方開始時刻',label_en:'Official start'},...(s.alternative_starts??[])],out=[],seen=new Set();
  for(let day=Date.parse(begin+'T00:00Z'),end=Date.parse(finish+'T00:00Z');day<=end&&out.length<100;day+=86400000){const date=new Date(day).toISOString().slice(0,10);for(const c of startCases){const start=Math.max(zonedInstant(date+'T'+w.start,zone),zonedInstant(c.local,zone)),stop=Math.min(zonedInstant(date+'T'+w.end,zone),zonedInstant(s.end,zone));if(start>=stop)continue;const key=start+':'+stop;if(seen.has(key))continue;seen.add(key);out.push({start,end:stop,local:formatZoned(start,zone)+' → '+formatZoned(stop,zone),taiwan:formatZoned(start,'Asia/Taipei')+' → '+formatZoned(stop,'Asia/Taipei'),basis:w.basis??'confirmed',scenario_zh:c.label_zh,scenario_en:c.label_en})}}
  return out.sort((a,b)=>a.start-b.start||a.end-b.end);
 }

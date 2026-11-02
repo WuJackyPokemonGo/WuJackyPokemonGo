@@ -27602,7 +27602,7 @@
       "end_date": "2026-11-05",
       "release_state": "released",
       "verification": "official-event-confirmed",
-      "image_source": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg",
+      "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/cs23_mexico_city.webp?v=20260816",
       "official_sources": [
         "https://pokemongo.com/es-MX/news/dia-de-muertos-2026",
         "https://pokemongo.com/seasons/forever-forward",
@@ -27612,7 +27612,7 @@
         "沿用2023年「城市狩獵 墨西哥城」探險帽伊布的同款獨立天使紀念碑地點背景（BG-0008），不是新增背景圖樣。此判斷依既有背景素材與使用者實拍比對；2026亡靈節活動、寶可夢及取得條件仍獨立記錄。",
         "2026/11/2依使用者原圖實拍確認圖樣與實際推出；官方公告核對寶可夢及取得方式。",
         "與卡拉卡拉特殊背景、曠野地帶墨西哥城活動各自獨立，不因同城或外部名錄混列而合併。",
-        "開始時間10:00／14:00仍有來源歧異；遠距取得背景資格及本活動專屬耿鬼每日出現時段仍待確認。"
+        "活動起始10:00／14:00來源歧異仍保留。TrainersGO的每日19:00–20:00、2個點及每房100人為社群回報待確認；遠距取得背景資格亦未確認。"
       ],
       "type": "location",
       "series": "Other",
@@ -27625,14 +27625,16 @@
         "Reuses the Angel of Independence Location Background from 2023 City Safari: Mexico City explorer-hat Eevee (BG-0008), rather than introducing new artwork. This identification is based on comparison of the existing artwork and owner catch screenshots; the 2026 Día de Muertos event, Pokémon and acquisition conditions remain separate.",
         "Artwork and availability confirmed from original owner catch screenshots received November 2; Pokémon and acquisition routes follow the official announcement.",
         "Keep separate from the Cubone Special Background and GO Wild Area: Mexico City event, regardless of shared city or conflicting external catalogs.",
-        "The 10:00/14:00 start-time conflict, remote background eligibility and event-specific daily Gengar appearance hours remain unresolved."
+        "The event-start conflict (10:00 / 14:00) remains. TrainersGO’s daily 19:00–20:00 window, two spots and 100-per-lobby claim are unconfirmed community reports; remote background eligibility is also unconfirmed."
       ],
       "catalog_sources": [
         "https://www.centropkmn.com/go/eventos/dia-de-muertos-2026/",
         "https://www.wikidex.net/wiki/B%C3%BAsqueda_de_sellos_en_D%C3%ADa_de_Muertos_2026/Caza_de_sellos_de_D%C3%ADa_de_Muertos_2026",
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-mexico-city-2026",
-        "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2023-mexico-city"
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2023-mexico-city",
+        "https://x.com/trainersgo2022/status/2116701530732503182",
+        "https://teapaw.org/trainersgo2022/status/2116701530732503182"
       ],
       "activity": {
         "id": "dia-de-muertos-mexico-city-2026",
@@ -27672,60 +27674,46 @@
           "https://www.wikidex.net/wiki/B%C3%BAsqueda_de_sellos_en_D%C3%ADa_de_Muertos_2026/Caza_de_sellos_de_D%C3%ADa_de_Muertos_2026",
           "https://www.serebii.net/pokemongo/backgrounds.shtml",
           "https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-mexico-city-2026",
-          "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-gengar-owner.jpeg",
-          "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg",
-          "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2023-mexico-city"
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2023-mexico-city",
+          "https://x.com/trainersgo2022/status/2116701530732503182",
+          "https://teapaw.org/trainersgo2022/status/2116701530732503182"
         ],
         "background_type": "location",
-        "artwork_status": "owner-catch-confirmed",
-        "uncertainty_zh": "開始時刻待釐清：官方es-MX公告為10:00，Centro Pokémon／WikiDex為14:00。首日兩種台灣時間均保留。遠距背景資格及本活動專屬耿鬼每日出現時段仍待確認；圖樣已由使用者原圖實拍補證。",
-        "uncertainty_en": "Start-time conflict remains: official es-MX says 10:00, Centro Pokémon/WikiDex say 14:00. Both Taiwan conversions are retained. Remote background eligibility and event-specific daily Gengar appearance hours remain unconfirmed; artwork is now supported by original owner catch screenshots.",
+        "artwork_status": "existing",
+        "uncertainty_zh": "活動起始10:00／14:00來源歧異仍保留。TrainersGO的每日19:00–20:00、2個點及每房100人為社群回報待確認；遠距取得背景資格亦未確認。",
+        "uncertainty_en": "The event-start conflict (10:00 / 14:00) remains. TrainersGO’s daily 19:00–20:00 window, two spots and 100-per-lobby claim are unconfirmed community reports; remote background eligibility is also unconfirmed.",
         "battle_window": {
-          "start": "06:00",
-          "end": "21:00",
-          "basis": "inferred"
+          "start": "19:00",
+          "end": "20:00",
+          "start_date": "2026-11-02",
+          "end_date": "2026-11-05",
+          "basis": "pending",
+          "source_url": "https://x.com/trainersgo2022/status/2116701530732503182"
         },
-        "window_note_zh": "以下僅為超極巨耿鬼可挑戰時段推算：以一般當地06:00–21:00極巨對戰規則，與活動期間取交集；非本次活動明列專屬時段。首日有兩種候選，實際能量點及官方修訂優先。",
-        "window_note_en": "Inferred Gigantamax Gengar battle windows only: usual local 06:00–21:00 Max Battle hours intersected with the event period, not event-specific confirmed hours. Two first-day scenarios remain; actual Power Spots and official revisions take precedence."
+        "window_note_zh": "TrainersGO原文使用「Posiblemente／Por confirmar」（可能／待確認），非官方確認每日固定開放。以下依回報列11/2查核時的後續候選場次：墨西哥城11/2–11/5每日19:00–20:00，換算台灣11/3–11/6每日09:00–10:00。1小時指回報的對戰點開放窗口，不是單場戰鬥可打1小時；實際遊戲顯示優先。",
+        "window_note_en": "TrainersGO explicitly says “Posiblemente / Por confirmar” (possibly / to be confirmed), not an officially confirmed fixed daily schedule. These candidate future sessions as checked November 2 are Mexico City November 2–5, 19:00–20:00, equivalent to Taiwan November 3–6, 09:00–10:00. One hour refers to the reported Power Spot availability window, not the battle timer. Follow the actual in-game schedule.",
+        "battle_window_label_zh": "超極巨耿鬼社群回報：當地19:00–20:00（UTC−06:00）／台灣翌日09:00–10:00（UTC+08:00），每日固定開放仍待確認。",
+        "battle_window_label_en": "Gigantamax Gengar community report: 19:00–20:00 local (UTC−06:00) / 09:00–10:00 the next day in Taiwan (UTC+08:00); a fixed daily schedule remains unconfirmed.",
+        "reported_info_zh": "TrainersGO回報似乎只有2個對戰點、開放窗口1小時、每房最多100人；點數、容量及後續是否每天維持皆未獲官方確認。",
+        "reported_info_en": "TrainersGO reports apparently two battle spots, a one-hour availability window and up to 100 trainers per lobby. Spot count, capacity and whether these recur daily are not officially confirmed."
       },
       "background_id": "BG-0280",
       "source": "https://pokemongo.com/es-MX/news/dia-de-muertos-2026",
       "year_verified": true,
       "related_product_ids": [],
       "verification_scope": "official-event-and-owner-catch-artwork",
-      "artwork_preview_source": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg",
-      "artwork_variants": [
-        {
-          "image_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-gengar-owner.jpeg",
-          "label_zh": "超極巨耿鬼｜使用者原圖實拍",
-          "label_en": "Gigantamax Gengar | original owner catch screenshot",
-          "source_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-gengar-owner.jpeg",
-          "received_on": "2026-11-02",
-          "sha256": "393f556445ca602a16afb32e361feffab05a55281faccb5d0f94dfc44c724e9a"
-        },
-        {
-          "image_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg",
-          "label_zh": "金盞花花冠夜巡靈｜使用者原圖實拍",
-          "label_en": "Cempasúchil-crown Duskull | original owner catch screenshot",
-          "source_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg",
-          "received_on": "2026-11-02",
-          "sha256": "892097c696a6efad7c55193cd28b981981788a0597c5f3ab952a1ff7e9bc21c0"
-        }
-      ],
+      "artwork_preview_source": "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2023-mexico-city",
+      "artwork_variants": [],
       "owner_evidence": [
         {
-          "image_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-gengar-owner.jpeg",
           "label_zh": "超極巨耿鬼｜使用者原圖實拍",
           "label_en": "Gigantamax Gengar | original owner catch screenshot",
-          "source_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-gengar-owner.jpeg",
           "received_on": "2026-11-02",
           "sha256": "393f556445ca602a16afb32e361feffab05a55281faccb5d0f94dfc44c724e9a"
         },
         {
-          "image_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg",
           "label_zh": "金盞花花冠夜巡靈｜使用者原圖實拍",
           "label_en": "Cempasúchil-crown Duskull | original owner catch screenshot",
-          "source_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg",
           "received_on": "2026-11-02",
           "sha256": "892097c696a6efad7c55193cd28b981981788a0597c5f3ab952a1ff7e9bc21c0"
         }
@@ -27736,8 +27724,8 @@
       "reference_review": "official-eligibility-owner-original-catches-2026-11-02",
       "date_note_zh": "活動日期依官方公告。開始時刻10:00／14:00歧異仍保留；11/2收到實拍，照片未顯示捕獲日期，不據此推定首次取得時刻。",
       "date_note_en": "Event dates follow the official announcement. The 10:00/14:00 start-time conflict is retained. Catch screenshots received November 2 do not show catch dates and do not establish the first obtainable instant.",
-      "artwork_note_zh": "沿用2023年「城市狩獵 墨西哥城」探險帽伊布的同款獨立天使紀念碑地點背景（BG-0008），不是新增背景圖樣。此判斷依既有背景素材與使用者實拍比對；2026亡靈節活動、寶可夢及取得條件仍獨立記錄。 使用者提供夜巡靈與超極巨耿鬼的遊戲實拍，兩者顯示相同墨西哥城獨立天使紀念碑地點背景。參考圖保留原圖，含寶可夢與介面，非純背景素材；不以此推定遠距背景資格。",
-      "artwork_note_en": "Reuses the Angel of Independence Location Background from 2023 City Safari: Mexico City explorer-hat Eevee (BG-0008), rather than introducing new artwork. This identification is based on comparison of the existing artwork and owner catch screenshots; the 2026 Día de Muertos event, Pokémon and acquisition conditions remain separate. Owner-supplied in-game catches show Duskull and Gigantamax Gengar with the same Mexico City Angel of Independence Location Background. Original images include Pokémon and the game UI; they are not clean background assets and do not prove remote eligibility.",
+      "artwork_note_zh": "沿用2023年「城市狩獵 墨西哥城」探險帽伊布的同款獨立天使紀念碑地點背景（BG-0008），不是新增背景圖樣。此判斷依既有背景素材與使用者實拍比對；2026亡靈節活動、寶可夢及取得條件仍獨立記錄。 展示沿用既有墨西哥城伊布背景素材；使用者實拍不公開展示。遠距取得背景資格仍待確認。",
+      "artwork_note_en": "Reuses the Angel of Independence Location Background from 2023 City Safari: Mexico City explorer-hat Eevee (BG-0008), rather than introducing new artwork. This identification is based on comparison of the existing artwork and owner catch screenshots; the 2026 Día de Muertos event, Pokémon and acquisition conditions remain separate. Displays the existing Mexico City Eevee artwork; owner catch screenshots are not publicly displayed. Remote background eligibility remains unconfirmed.",
       "pokemon": [
         {
           "dex": 94,
@@ -27793,7 +27781,8 @@
         "text_zh": "沿用2023年「城市狩獵 墨西哥城」探險帽伊布的同款獨立天使紀念碑地點背景（BG-0008），不是新增背景圖樣。此判斷依既有背景素材與使用者實拍比對；2026亡靈節活動、寶可夢及取得條件仍獨立記錄。",
         "text_en": "Reuses the Angel of Independence Location Background from 2023 City Safari: Mexico City explorer-hat Eevee (BG-0008), rather than introducing new artwork. This identification is based on comparison of the existing artwork and owner catch screenshots; the 2026 Día de Muertos event, Pokémon and acquisition conditions remain separate.",
         "source_url": "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2023-mexico-city"
-      }
+      },
+      "artwork_preview_url": "https://pokexperience.com/pokemon-variants/backgrounds/cs23_mexico_city.webp?v=20260816"
     }
   ],
   "additional_announced_events": [
