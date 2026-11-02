@@ -898,7 +898,9 @@
       "name_zh": "城市狩獵 墨西哥城",
       "release_state": "released",
       "official_sources": [],
-      "notes": [],
+      "notes": [
+        "2026亡靈節超極巨耿鬼與金盞花花冠夜巡靈沿用此背景圖樣（依既有素材與實拍比對）；活動及取得方式另見BG-0280，不合併活動。"
+      ],
       "related_product_ids": [],
       "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
       "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
@@ -979,7 +981,10 @@
       "reference_ids": [
         "cs23_mexico_city"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "notes_en": [
+        "The 2026 Día de Muertos Gigantamax Gengar and cempasúchil-crown Duskull reuse this artwork (visual comparison with original assets and catch screenshots). See BG-0280 for separate event and acquisition details."
+      ]
     },
     {
       "name_en": "GO Tour Los Angeles",
@@ -27604,6 +27609,7 @@
         "https://pokemongo.com/news/shadow-raid-max-battle-update"
       ],
       "notes": [
+        "沿用2023年「城市狩獵 墨西哥城」探險帽伊布的同款獨立天使紀念碑地點背景（BG-0008），不是新增背景圖樣。此判斷依既有背景素材與使用者實拍比對；2026亡靈節活動、寶可夢及取得條件仍獨立記錄。",
         "2026/11/2依使用者原圖實拍確認圖樣與實際推出；官方公告核對寶可夢及取得方式。",
         "與卡拉卡拉特殊背景、曠野地帶墨西哥城活動各自獨立，不因同城或外部名錄混列而合併。",
         "開始時間10:00／14:00仍有來源歧異；遠距取得背景資格及本活動專屬耿鬼每日出現時段仍待確認。"
@@ -27616,6 +27622,7 @@
       "region_en": "Mexico",
       "region_zh": "墨西哥",
       "notes_en": [
+        "Reuses the Angel of Independence Location Background from 2023 City Safari: Mexico City explorer-hat Eevee (BG-0008), rather than introducing new artwork. This identification is based on comparison of the existing artwork and owner catch screenshots; the 2026 Día de Muertos event, Pokémon and acquisition conditions remain separate.",
         "Artwork and availability confirmed from original owner catch screenshots received November 2; Pokémon and acquisition routes follow the official announcement.",
         "Keep separate from the Cubone Special Background and GO Wild Area: Mexico City event, regardless of shared city or conflicting external catalogs.",
         "The 10:00/14:00 start-time conflict, remote background eligibility and event-specific daily Gengar appearance hours remain unresolved."
@@ -27624,7 +27631,8 @@
         "https://www.centropkmn.com/go/eventos/dia-de-muertos-2026/",
         "https://www.wikidex.net/wiki/B%C3%BAsqueda_de_sellos_en_D%C3%ADa_de_Muertos_2026/Caza_de_sellos_de_D%C3%ADa_de_Muertos_2026",
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
-        "https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-mexico-city-2026"
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-mexico-city-2026",
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2023-mexico-city"
       ],
       "activity": {
         "id": "dia-de-muertos-mexico-city-2026",
@@ -27641,8 +27649,8 @@
             }
           ]
         },
-        "conditions_zh": "改革大道當地限時調查及GO集章明列花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。",
-        "conditions_en": "Paseo de la Reforma local Timed Research and GO Stamp Rally list a cempasúchil-crown Duskull with a Location Background. Six-star Gigantamax Gengar battles offer a background chance.",
+        "conditions_zh": "改革大道當地限時調查及GO集章明列花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。 背景沿用2023墨西哥城探險帽伊布同款（實拍與既有素材比對），不是新背景圖樣。",
+        "conditions_en": "Paseo de la Reforma local Timed Research and GO Stamp Rally list a cempasúchil-crown Duskull with a Location Background. Six-star Gigantamax Gengar battles offer a background chance. The artwork reuses the 2023 Mexico City explorer-hat Eevee background (visual comparison with existing artwork), rather than a new design.",
         "eligible_zh": "夜巡靈（金盞花花冠）；耿鬼（超極巨化）。",
         "eligible_en": "Duskull wearing a cempasúchil crown; Gigantamax Gengar.",
         "remote_participation": {
@@ -27665,7 +27673,8 @@
           "https://www.serebii.net/pokemongo/backgrounds.shtml",
           "https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-mexico-city-2026",
           "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-gengar-owner.jpeg",
-          "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg"
+          "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2023-mexico-city"
         ],
         "background_type": "location",
         "artwork_status": "owner-catch-confirmed",
@@ -27727,8 +27736,8 @@
       "reference_review": "official-eligibility-owner-original-catches-2026-11-02",
       "date_note_zh": "活動日期依官方公告。開始時刻10:00／14:00歧異仍保留；11/2收到實拍，照片未顯示捕獲日期，不據此推定首次取得時刻。",
       "date_note_en": "Event dates follow the official announcement. The 10:00/14:00 start-time conflict is retained. Catch screenshots received November 2 do not show catch dates and do not establish the first obtainable instant.",
-      "artwork_note_zh": "使用者提供夜巡靈與超極巨耿鬼的遊戲實拍，兩者顯示相同墨西哥城獨立天使紀念碑地點背景。參考圖保留原圖，含寶可夢與介面，非純背景素材；不以此推定遠距背景資格。",
-      "artwork_note_en": "Owner-supplied in-game catches show Duskull and Gigantamax Gengar with the same Mexico City Angel of Independence Location Background. Original images include Pokémon and the game UI; they are not clean background assets and do not prove remote eligibility.",
+      "artwork_note_zh": "沿用2023年「城市狩獵 墨西哥城」探險帽伊布的同款獨立天使紀念碑地點背景（BG-0008），不是新增背景圖樣。此判斷依既有背景素材與使用者實拍比對；2026亡靈節活動、寶可夢及取得條件仍獨立記錄。 使用者提供夜巡靈與超極巨耿鬼的遊戲實拍，兩者顯示相同墨西哥城獨立天使紀念碑地點背景。參考圖保留原圖，含寶可夢與介面，非純背景素材；不以此推定遠距背景資格。",
+      "artwork_note_en": "Reuses the Angel of Independence Location Background from 2023 City Safari: Mexico City explorer-hat Eevee (BG-0008), rather than introducing new artwork. This identification is based on comparison of the existing artwork and owner catch screenshots; the 2026 Día de Muertos event, Pokémon and acquisition conditions remain separate. Owner-supplied in-game catches show Duskull and Gigantamax Gengar with the same Mexico City Angel of Independence Location Background. Original images include Pokémon and the game UI; they are not clean background assets and do not prove remote eligibility.",
       "pokemon": [
         {
           "dex": 94,
@@ -27776,7 +27785,15 @@
         }
       ],
       "method_zh": "當地限時調查與GO集章獎勵的花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。實拍確認圖樣及實際推出；遠距背景資格仍待確認。",
-      "method_en": "Local Timed Research and GO Stamp Rally award cempasúchil-crown Duskull with the Location Background; six-star Gigantamax Gengar Max Battles offer a background chance. Artwork and availability are confirmed by catch screenshots; remote background eligibility remains unconfirmed."
+      "method_en": "Local Timed Research and GO Stamp Rally award cempasúchil-crown Duskull with the Location Background; six-star Gigantamax Gengar Max Battles offer a background chance. Artwork and availability are confirmed by catch screenshots; remote background eligibility remains unconfirmed.",
+      "artwork_reuse": {
+        "background_id": "BG-0008",
+        "basis": "visual-comparison",
+        "checked_on": "2026-11-02",
+        "text_zh": "沿用2023年「城市狩獵 墨西哥城」探險帽伊布的同款獨立天使紀念碑地點背景（BG-0008），不是新增背景圖樣。此判斷依既有背景素材與使用者實拍比對；2026亡靈節活動、寶可夢及取得條件仍獨立記錄。",
+        "text_en": "Reuses the Angel of Independence Location Background from 2023 City Safari: Mexico City explorer-hat Eevee (BG-0008), rather than introducing new artwork. This identification is based on comparison of the existing artwork and owner catch screenshots; the 2026 Día de Muertos event, Pokémon and acquisition conditions remain separate.",
+        "source_url": "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2023-mexico-city"
+      }
     }
   ],
   "additional_announced_events": [

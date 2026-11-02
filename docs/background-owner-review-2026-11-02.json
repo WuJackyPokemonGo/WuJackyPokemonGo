@@ -45,5 +45,12 @@
   "other_events_kept_separate": [
     "BG-0278",
     "BG-0213"
-  ]
+  ],
+  "artwork_reuse_correction": {
+    "background_id": "BG-0280",
+    "reuses_background_id": "BG-0008",
+    "basis": "visual-comparison",
+    "new_artwork_count": 0,
+    "note_zh": "沿用2023年「城市狩獵 墨西哥城」探險帽伊布的同款獨立天使紀念碑地點背景（BG-0008），不是新增背景圖樣。此判斷依既有背景素材與使用者實拍比對；2026亡靈節活動、寶可夢及取得條件仍獨立記錄。"
+  }
 }
