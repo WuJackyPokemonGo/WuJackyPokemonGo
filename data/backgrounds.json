@@ -27468,7 +27468,7 @@
       "method_zh": "墨西哥當地10/27 10:00～11/5 20:00：薰香及活動小隊挑戰的金盞花花冠卡拉卡拉有機會帶特殊背景；限時調查獎勵明列附特殊背景。進化嘎啦嘎啦為背景繼承，不另算直接遭遇。",
       "method_en": "Mexico, October 27 at 10:00 to November 5 at 20:00 local time: Incense and event Party Challenge Cubone wearing a cempasúchil crown may have a Special Background; Timed Research explicitly awards one with the background. Marowak inherits it by evolution, not a direct encounter.",
       "notes": [
-        "官方明列卡拉卡拉為特殊背景；10/31起墨西哥城夜巡靈及超極巨耿鬼為地點背景，圖樣尚未比對，不併入本筆。",
+        "官方明列卡拉卡拉為特殊背景；11/2實拍已比對，花冠夜巡靈與超極巨耿鬼為另款地點背景（BG-0280），不併入本筆。",
         "Serebii圖片檔名與標題誤寫2029；活動年份依官方2026公告，不沿用檔名推定年份。"
       ],
       "related_product_ids": [],
@@ -27589,6 +27589,194 @@
         "artwork_status": "owner-preview-not-released",
         "conditions_basis": "pending"
       }
+    },
+    {
+      "name_en": "Día de Muertos 2026 — Mexico City Location Background",
+      "name_zh": "2026 亡靈節－墨西哥城地點背景",
+      "start_date": "2026-10-31",
+      "end_date": "2026-11-05",
+      "release_state": "released",
+      "verification": "official-event-confirmed",
+      "image_source": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg",
+      "official_sources": [
+        "https://pokemongo.com/es-MX/news/dia-de-muertos-2026",
+        "https://pokemongo.com/seasons/forever-forward",
+        "https://pokemongo.com/news/shadow-raid-max-battle-update"
+      ],
+      "notes": [
+        "2026/11/2依使用者原圖實拍確認圖樣與實際推出；官方公告核對寶可夢及取得方式。",
+        "與卡拉卡拉特殊背景、曠野地帶墨西哥城活動各自獨立，不因同城或外部名錄混列而合併。",
+        "開始時間10:00／14:00仍有來源歧異；遠距取得背景資格及本活動專屬耿鬼每日出現時段仍待確認。"
+      ],
+      "type": "location",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "checked_on": "2026-11-02",
+      "region_en": "Mexico",
+      "region_zh": "墨西哥",
+      "notes_en": [
+        "Artwork and availability confirmed from original owner catch screenshots received November 2; Pokémon and acquisition routes follow the official announcement.",
+        "Keep separate from the Cubone Special Background and GO Wild Area: Mexico City event, regardless of shared city or conflicting external catalogs.",
+        "The 10:00/14:00 start-time conflict, remote background eligibility and event-specific daily Gengar appearance hours remain unresolved."
+      ],
+      "catalog_sources": [
+        "https://www.centropkmn.com/go/eventos/dia-de-muertos-2026/",
+        "https://www.wikidex.net/wiki/B%C3%BAsqueda_de_sellos_en_D%C3%ADa_de_Muertos_2026/Caza_de_sellos_de_D%C3%ADa_de_Muertos_2026",
+        "https://www.serebii.net/pokemongo/backgrounds.shtml",
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-mexico-city-2026"
+      ],
+      "activity": {
+        "id": "dia-de-muertos-mexico-city-2026",
+        "schedule": {
+          "start": "2026-10-31T10:00",
+          "end": "2026-11-05T20:00",
+          "zone": "America/Mexico_City",
+          "basis": "pending",
+          "alternative_starts": [
+            {
+              "local": "2026-10-31T14:00",
+              "label_zh": "其他來源14:00（待釐清）",
+              "label_en": "Other sources: 14:00 (unresolved)"
+            }
+          ]
+        },
+        "conditions_zh": "改革大道當地限時調查及GO集章明列花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。",
+        "conditions_en": "Paseo de la Reforma local Timed Research and GO Stamp Rally list a cempasúchil-crown Duskull with a Location Background. Six-star Gigantamax Gengar battles offer a background chance.",
+        "eligible_zh": "夜巡靈（金盞花花冠）；耿鬼（超極巨化）。",
+        "eligible_en": "Duskull wearing a cempasúchil crown; Gigantamax Gengar.",
+        "remote_participation": {
+          "basis": "inferred",
+          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
+          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
+          "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
+        },
+        "checked_on": "2026-11-02",
+        "sources": [
+          "https://pokemongo.com/es-MX/news/dia-de-muertos-2026",
+          "https://pokemongo.com/seasons/forever-forward",
+          "https://pokemongo.com/news/shadow-raid-max-battle-update",
+          "https://www.centropkmn.com/go/eventos/dia-de-muertos-2026/",
+          "https://www.wikidex.net/wiki/B%C3%BAsqueda_de_sellos_en_D%C3%ADa_de_Muertos_2026/Caza_de_sellos_de_D%C3%ADa_de_Muertos_2026",
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-mexico-city-2026",
+          "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-gengar-owner.jpeg",
+          "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg"
+        ],
+        "background_type": "location",
+        "artwork_status": "owner-catch-confirmed",
+        "uncertainty_zh": "開始時刻待釐清：官方es-MX公告為10:00，Centro Pokémon／WikiDex為14:00。首日兩種台灣時間均保留。遠距背景資格及本活動專屬耿鬼每日出現時段仍待確認；圖樣已由使用者原圖實拍補證。",
+        "uncertainty_en": "Start-time conflict remains: official es-MX says 10:00, Centro Pokémon/WikiDex say 14:00. Both Taiwan conversions are retained. Remote background eligibility and event-specific daily Gengar appearance hours remain unconfirmed; artwork is now supported by original owner catch screenshots.",
+        "battle_window": {
+          "start": "06:00",
+          "end": "21:00",
+          "basis": "inferred"
+        },
+        "window_note_zh": "以下僅為超極巨耿鬼可挑戰時段推算：以一般當地06:00–21:00極巨對戰規則，與活動期間取交集；非本次活動明列專屬時段。首日有兩種候選，實際能量點及官方修訂優先。",
+        "window_note_en": "Inferred Gigantamax Gengar battle windows only: usual local 06:00–21:00 Max Battle hours intersected with the event period, not event-specific confirmed hours. Two first-day scenarios remain; actual Power Spots and official revisions take precedence."
+      },
+      "background_id": "BG-0280",
+      "source": "https://pokemongo.com/es-MX/news/dia-de-muertos-2026",
+      "year_verified": true,
+      "related_product_ids": [],
+      "verification_scope": "official-event-and-owner-catch-artwork",
+      "artwork_preview_source": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg",
+      "artwork_variants": [
+        {
+          "image_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-gengar-owner.jpeg",
+          "label_zh": "超極巨耿鬼｜使用者原圖實拍",
+          "label_en": "Gigantamax Gengar | original owner catch screenshot",
+          "source_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-gengar-owner.jpeg",
+          "received_on": "2026-11-02",
+          "sha256": "393f556445ca602a16afb32e361feffab05a55281faccb5d0f94dfc44c724e9a"
+        },
+        {
+          "image_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg",
+          "label_zh": "金盞花花冠夜巡靈｜使用者原圖實拍",
+          "label_en": "Cempasúchil-crown Duskull | original owner catch screenshot",
+          "source_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg",
+          "received_on": "2026-11-02",
+          "sha256": "892097c696a6efad7c55193cd28b981981788a0597c5f3ab952a1ff7e9bc21c0"
+        }
+      ],
+      "owner_evidence": [
+        {
+          "image_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-gengar-owner.jpeg",
+          "label_zh": "超極巨耿鬼｜使用者原圖實拍",
+          "label_en": "Gigantamax Gengar | original owner catch screenshot",
+          "source_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-gengar-owner.jpeg",
+          "received_on": "2026-11-02",
+          "sha256": "393f556445ca602a16afb32e361feffab05a55281faccb5d0f94dfc44c724e9a"
+        },
+        {
+          "image_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg",
+          "label_zh": "金盞花花冠夜巡靈｜使用者原圖實拍",
+          "label_en": "Cempasúchil-crown Duskull | original owner catch screenshot",
+          "source_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg",
+          "received_on": "2026-11-02",
+          "sha256": "892097c696a6efad7c55193cd28b981981788a0597c5f3ab952a1ff7e9bc21c0"
+        }
+      ],
+      "reference_ids": [
+        "dia-de-muertos-2026-mexico-city"
+      ],
+      "reference_review": "official-eligibility-owner-original-catches-2026-11-02",
+      "date_note_zh": "活動日期依官方公告。開始時刻10:00／14:00歧異仍保留；11/2收到實拍，照片未顯示捕獲日期，不據此推定首次取得時刻。",
+      "date_note_en": "Event dates follow the official announcement. The 10:00/14:00 start-time conflict is retained. Catch screenshots received November 2 do not show catch dates and do not establish the first obtainable instant.",
+      "artwork_note_zh": "使用者提供夜巡靈與超極巨耿鬼的遊戲實拍，兩者顯示相同墨西哥城獨立天使紀念碑地點背景。參考圖保留原圖，含寶可夢與介面，非純背景素材；不以此推定遠距背景資格。",
+      "artwork_note_en": "Owner-supplied in-game catches show Duskull and Gigantamax Gengar with the same Mexico City Angel of Independence Location Background. Original images include Pokémon and the game UI; they are not clean background assets and do not prove remote eligibility.",
+      "pokemon": [
+        {
+          "dex": 94,
+          "name_zh": "耿鬼（超極巨化）",
+          "name_en": "Gigantamax Gengar",
+          "variant_id": "gengar-gigantamax",
+          "acquisition": "encounter",
+          "method_zh": "活動區域六星極巨對戰捕獲，有機會附地點背景；使用者實拍已確認存在。遠距取得背景資格待確認。",
+          "method_en": "Six-star Max Battles in the event area offer a Location Background chance, confirmed by owner catch screenshots. Remote background eligibility remains unconfirmed.",
+          "method_sources": [
+            "https://pokemongo.com/es-MX/news/dia-de-muertos-2026"
+          ]
+        },
+        {
+          "dex": 355,
+          "name_zh": "夜巡靈（金盞花花冠）",
+          "name_en": "Duskull (Cempasúchil Crown)",
+          "variant_id": "duskull-cempasuchil-crown",
+          "acquisition": "encounter",
+          "method_zh": "改革大道活動當地限時調查及GO集章獎勵，官方明列附地點背景；使用者實拍已確認存在。",
+          "method_en": "Paseo de la Reforma local Timed Research and GO Stamp Rally explicitly award the Location Background; confirmed by owner catch screenshots.",
+          "method_sources": [
+            "https://pokemongo.com/es-MX/news/dia-de-muertos-2026"
+          ]
+        }
+      ],
+      "evolved_pokemon": [
+        {
+          "dex": 356,
+          "name_zh": "彷徨夜靈（金盞花花冠）",
+          "name_en": "Dusclops (Cempasúchil Crown)",
+          "variant_id": "dusclops-cempasuchil-crown",
+          "acquisition": "evolution",
+          "method_zh": "由帶背景的金盞花花冠夜巡靈進化繼承；不是直接遭遇。",
+          "method_en": "Inherited by evolving cempasúchil-crown Duskull with the background; not a direct encounter."
+        },
+        {
+          "dex": 477,
+          "name_zh": "黑夜魔靈（金盞花花冠）",
+          "name_en": "Dusknoir (Cempasúchil Crown)",
+          "variant_id": "dusknoir-cempasuchil-crown",
+          "acquisition": "evolution",
+          "method_zh": "由帶背景的金盞花花冠夜巡靈進化繼承；不是直接遭遇。",
+          "method_en": "Inherited by evolving cempasúchil-crown Duskull with the background; not a direct encounter."
+        }
+      ],
+      "method_zh": "當地限時調查與GO集章獎勵的花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。實拍確認圖樣及實際推出；遠距背景資格仍待確認。",
+      "method_en": "Local Timed Research and GO Stamp Rally award cempasúchil-crown Duskull with the Location Background; six-star Gigantamax Gengar Max Battles offer a background chance. Artwork and availability are confirmed by catch screenshots; remote background eligibility remains unconfirmed."
     }
   ],
   "additional_announced_events": [
@@ -27678,99 +27866,6 @@
         ],
         "background_type": "special",
         "artwork_status": "pending"
-      }
-    },
-    {
-      "name_en": "Día de Muertos 2026 — Mexico City Location Background",
-      "name_zh": "2026 亡靈節－墨西哥城地點背景",
-      "start_date": "2026-10-31",
-      "end_date": "2026-11-05",
-      "release_state": "upcoming",
-      "verification": "official-event-confirmed",
-      "image_source": null,
-      "official_sources": [
-        "https://pokemongo.com/es-MX/news/dia-de-muertos-2026",
-        "https://pokemongo.com/seasons/forever-forward",
-        "https://pokemongo.com/news/shadow-raid-max-battle-update"
-      ],
-      "notes": [
-        "改革大道活動限時調查與GO集章獎勵明列金盞花花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。開始時刻有來源差異，見下方說明。",
-        "地點背景圖樣待確認，不套用卡拉卡拉特殊背景圖片，也不算已發放款數。",
-        "開始時間待釐清：截至2026/10/30，官方西文墨西哥頁面寫10/31 10:00（台灣11/1 00:00），Centro Pokémon與WikiDex寫10/31 14:00（台灣11/1 04:00）。墨西哥城UTC−6、台灣UTC+8，相差14小時；不可將其中一個開始時刻視為已排除爭議。結束時間均為當地11/5 20:00，即台灣11/6 10:00。",
-        "超極巨耿鬼推算可挑戰時段（台灣時間；扣除當地夜間）：11/1首段開始待確認，若當地10:00開始為00:00～11:00，若14:00開始則為04:00～11:00；11/1另有20:00～24:00；11/2～11/5每天00:00～11:00、20:00～24:00；11/6僅00:00～10:00。依一般極巨對戰當地06:00～21:00及活動起訖推算，非本次公告另列的專屬時段；以實際能量點開放及官方修訂為準。",
-        "遠距：依現行極巨對戰規則可使用遠距團體戰入場券並消耗所需極巨粒子參戰；本次公告未明確說明遠距能否取得地點背景，列為待確認。",
-        "2026/11/1複核：官方明列夜巡靈為地點背景，Serebii卻與卡拉卡拉特殊背景混列；Dittobase直接頁面仍僅列曠野地帶陣容。現有名錄不足確認實際圖樣，維持獨立活動，不併入卡拉卡拉或曠野地帶。"
-      ],
-      "type": "location",
-      "series": "Other",
-      "series_zh": "其他活動",
-      "year": "2026",
-      "checked_on": "2026-11-01",
-      "region_en": "Mexico",
-      "region_zh": "墨西哥",
-      "notes_en": [
-        "Paseo de la Reforma: local research and stamp rewards list cempasúchil-crown Duskull with a Location Background; Gigantamax Gengar battles offer a chance. Artwork remains unconfirmed. Sources disagree on the starting hour; see below.",
-        "Start time unresolved as of Oct 30, 2026: the official es-MX page says Oct 31 at 10:00 (Taiwan Nov 1 at 00:00), while Centro Pokémon and WikiDex say 14:00 (Taiwan Nov 1 at 04:00). Taiwan is 14 hours ahead of Mexico City. The end is Nov 5 at 20:00 in Mexico City, or Nov 6 at 10:00 in Taiwan.",
-        "Inferred Gigantamax Gengar windows in Taiwan time: Nov 1 first window starts at 00:00 if the local start is 10:00, or 04:00 if it is 14:00, ending at 11:00; Nov 1 also 20:00–24:00. Nov 2–5 daily 00:00–11:00 and 20:00–24:00; Nov 6 only 00:00–10:00. Based on usual local 06:00–21:00 Max Battle hours, not confirmed event-specific hours. Actual Power Spot availability and official revisions apply.",
-        "Remote participation follows the current Max Battle rules: a Remote Raid Pass and the required Max Particles. This event announcement does not explicitly confirm whether remote participants can receive the Location Background; eligibility remains unconfirmed.",
-        "November 1 review: the official announcement specifies a Location Background for Duskull, while Serebii lists it with the Cubone Special Background. The direct Dittobase page still lists only the Wild Area roster. These catalogs do not resolve the actual artwork; keep the events separate from Cubone and Wild Area."
-      ],
-      "catalog_sources": [
-        "https://www.centropkmn.com/go/eventos/dia-de-muertos-2026/",
-        "https://www.wikidex.net/wiki/B%C3%BAsqueda_de_sellos_en_D%C3%ADa_de_Muertos_2026/Caza_de_sellos_de_D%C3%ADa_de_Muertos_2026",
-        "https://www.serebii.net/pokemongo/backgrounds.shtml",
-        "https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-mexico-city-2026"
-      ],
-      "activity": {
-        "id": "dia-de-muertos-mexico-city-2026",
-        "schedule": {
-          "start": "2026-10-31T10:00",
-          "end": "2026-11-05T20:00",
-          "zone": "America/Mexico_City",
-          "basis": "pending",
-          "alternative_starts": [
-            {
-              "local": "2026-10-31T14:00",
-              "label_zh": "其他來源14:00（待釐清）",
-              "label_en": "Other sources: 14:00 (unresolved)"
-            }
-          ]
-        },
-        "conditions_zh": "改革大道當地限時調查及GO集章明列花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。",
-        "conditions_en": "Paseo de la Reforma local Timed Research and GO Stamp Rally list a cempasúchil-crown Duskull with a Location Background. Six-star Gigantamax Gengar battles offer a background chance.",
-        "eligible_zh": "夜巡靈（金盞花花冠）；耿鬼（超極巨化）。",
-        "eligible_en": "Duskull wearing a cempasúchil crown; Gigantamax Gengar.",
-        "remote_participation": {
-          "basis": "inferred",
-          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
-          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
-        },
-        "remote_background": {
-          "basis": "pending",
-          "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
-          "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
-        },
-        "checked_on": "2026-11-01",
-        "sources": [
-          "https://pokemongo.com/es-MX/news/dia-de-muertos-2026",
-          "https://pokemongo.com/seasons/forever-forward",
-          "https://pokemongo.com/news/shadow-raid-max-battle-update",
-          "https://www.centropkmn.com/go/eventos/dia-de-muertos-2026/",
-          "https://www.wikidex.net/wiki/B%C3%BAsqueda_de_sellos_en_D%C3%ADa_de_Muertos_2026/Caza_de_sellos_de_D%C3%ADa_de_Muertos_2026",
-          "https://www.serebii.net/pokemongo/backgrounds.shtml",
-          "https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-mexico-city-2026"
-        ],
-        "background_type": "location",
-        "artwork_status": "pending",
-        "uncertainty_zh": "開始時刻待釐清：官方es-MX公告為10:00，Centro Pokémon／WikiDex為14:00。首日兩種台灣時間均保留；不把任一時刻視為已排除爭議。背景圖樣與遠距背景資格待確認。 2026/11/1複核：官方明列夜巡靈為地點背景，Serebii卻與卡拉卡拉特殊背景混列；Dittobase直接頁面仍僅列曠野地帶陣容。現有名錄不足確認實際圖樣，維持獨立活動，不併入卡拉卡拉或曠野地帶。",
-        "uncertainty_en": "Start-time conflict: the official es-MX announcement says 10:00; Centro Pokémon/WikiDex say 14:00. Both Taiwan conversions are retained. Artwork and remote background eligibility are unconfirmed. November 1 review: the official announcement specifies a Location Background for Duskull, while Serebii lists it with the Cubone Special Background. The direct Dittobase page still lists only the Wild Area roster. These catalogs do not resolve the actual artwork; keep the events separate from Cubone and Wild Area.",
-        "battle_window": {
-          "start": "06:00",
-          "end": "21:00",
-          "basis": "inferred"
-        },
-        "window_note_zh": "以下僅為超極巨耿鬼可挑戰時段推算：以一般當地06:00–21:00極巨對戰規則，與活動期間取交集；非本次活動明列專屬時段。首日有兩種候選，實際能量點及官方修訂優先。",
-        "window_note_en": "Inferred Gigantamax Gengar battle windows only: usual local 06:00–21:00 Max Battle hours intersected with the event period, not event-specific confirmed hours. Two first-day scenarios remain; actual Power Spots and official revisions take precedence."
       }
     },
     {

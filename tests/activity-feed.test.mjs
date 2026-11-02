@@ -29,7 +29,7 @@ test('feed contains 14 unique events with complete evidence fields without mutat
  const statuses=events.map(r=>activityState(r,Date.parse('2026-10-31T00:00Z')).status);assert.equal(statuses.filter(s=>s==='in_progress').length,1);assert.equal(statuses.filter(s=>s==='upcoming').length,12);assert.equal(statuses.filter(s=>s==='ended').length,1);
  for(const r of events){for(const f of ['conditions_zh','conditions_en','eligible_zh','eligible_en','checked_on','background_type','artwork_status'])assert.ok(r.activity[f],r.event_id+' '+f);assert.ok(r.activity.sources.length);for(const f of ['remote_participation','remote_background'])assert.ok(['confirmed','inferred','pending'].includes(r.activity[f].basis));}
  const sorted=sortActivityEvents(events,Date.parse('2026-10-31T00:00Z'));assert.equal(sorted[0].event_id,'dia-de-muertos-cubone-2026');assert.equal(sorted.at(-1).event_id,'night-out-los-angeles-2026');assert.equal(JSON.stringify(data),before);
- assert.equal(data.records.length,278);assert.equal(data.records.filter(r=>r.release_state==='needs-verification').length,3);
+ assert.equal(data.records.length,279);assert.equal(data.records.filter(r=>r.release_state==='needs-verification').length,3);
  for(const id of ['wild-area-sendai-2026','wild-area-mexico-city-2026'])assert.equal(get(id).activity.remote_background.basis,'confirmed');assert.equal(get('dia-de-muertos-mexico-city-2026').activity.remote_background.basis,'pending');
  const html=readFileSync(new URL('../backgrounds.html',import.meta.url),'utf8');assert.equal(html.match(/id="announcedBackgrounds"/g).length,1);
 });

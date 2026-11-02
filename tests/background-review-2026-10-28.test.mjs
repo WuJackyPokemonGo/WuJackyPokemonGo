@@ -15,8 +15,8 @@ test('Mexico Cubone is released, searchable and uses a verified working image in
  assert.match(row.method_en,/Party Challenge/);assert.match(row.method_en,/Timed Research/);
 });
 test('announced city Location Backgrounds stay separate from the released Cubone Special Background',()=>{
- const event=data.additional_announced_events.find(r=>r.name_en.includes('Mexico City Location Background'));
- assert.equal(event.start_date,'2026-10-31');assert.equal(event.release_state,'upcoming');assert.equal(event.image_source,null);
+ const event=data.records.find(r=>r.background_id==='BG-0280');
+ assert.equal(event.start_date,'2026-10-31');assert.equal(event.release_state,'released');assert.match(event.image_source,/duskull-owner\.jpeg$/);
  assert.ok(!data.records.find(r=>r.background_id==='BG-0278').pokemon.some(p=>[92,93,94,355].includes(p.dex)));
  for(const id of audit.owner_keep_unchanged_ids)assert.equal(data.records.find(r=>r.background_id===id).release_state,'needs-verification');
  assert.equal(data.complete,false);
@@ -27,7 +27,7 @@ test('current source additions all map to real records without rewriting histori
   for(const row of audit.sources[source].added)assert.ok(data.records.some(r=>r.background_id===row.background_id));
  }
  assert.equal(audit.sources.pokexperience.full_recheck,false);
- assert.equal(data.records.filter(r=>r.background_id!=='BG-0279').length,audit.catalog_records);assert.equal(filterBackgrounds(data.records).length,audit.released_records);
+ assert.equal(data.records.filter(r=>!['BG-0279','BG-0280'].includes(r.background_id)).length,audit.catalog_records);assert.equal(filterBackgrounds(data.records.filter(r=>r.background_id!=='BG-0280')).length,audit.released_records);
 });
 
 // Owner-supplied Bangkok artwork is a preview; it must never imply release.

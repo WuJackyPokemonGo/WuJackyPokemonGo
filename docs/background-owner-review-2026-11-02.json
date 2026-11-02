@@ -1,0 +1,49 @@
+{
+  "checked_on": "2026-11-02",
+  "new_released_background_ids": [
+    "BG-0280"
+  ],
+  "before": {
+    "catalog_records": 278,
+    "released_records": 271
+  },
+  "after": {
+    "catalog_records": 279,
+    "released_records": 272
+  },
+  "resolved": [
+    "owner-catch-artwork",
+    "observed-release",
+    "Gigantamax Gengar and cempasuchil-crown Duskull pictured"
+  ],
+  "unresolved": [
+    "10:00/14:00 start conflict",
+    "remote background eligibility",
+    "event-specific daily Gengar windows",
+    "first obtainable instant"
+  ],
+  "catch_dates_visible": false,
+  "source": "https://pokemongo.com/es-MX/news/dia-de-muertos-2026",
+  "owner_evidence": [
+    {
+      "image_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-gengar-owner.jpeg",
+      "label_zh": "超極巨耿鬼｜使用者原圖實拍",
+      "label_en": "Gigantamax Gengar | original owner catch screenshot",
+      "source_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-gengar-owner.jpeg",
+      "received_on": "2026-11-02",
+      "sha256": "393f556445ca602a16afb32e361feffab05a55281faccb5d0f94dfc44c724e9a"
+    },
+    {
+      "image_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg",
+      "label_zh": "金盞花花冠夜巡靈｜使用者原圖實拍",
+      "label_en": "Cempasúchil-crown Duskull | original owner catch screenshot",
+      "source_url": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/dia-de-muertos-mexico-city-2026-duskull-owner.jpeg",
+      "received_on": "2026-11-02",
+      "sha256": "892097c696a6efad7c55193cd28b981981788a0597c5f3ab952a1ff7e9bc21c0"
+    }
+  ],
+  "other_events_kept_separate": [
+    "BG-0278",
+    "BG-0213"
+  ]
+}
