@@ -1,0 +1,109 @@
+{
+  "checked_on": "2026-11-03",
+  "baseline_commit": "67e0019f053d7e6e491b91a8f2fa0cfd9204d555",
+  "content_changed_background_ids": [
+    "BG-0279"
+  ],
+  "new_backgrounds": 0,
+  "new_artwork": 0,
+  "change_kind": "existing-official-announcement-venue-completion",
+  "before": {
+    "method_zh": "官方已預告 PokéXciting 皮卡丘與 GO 集章地區背景機制；曼谷的背景取得地點、開放日期與細節待官方後續公告。",
+    "method_en": "PokéXciting Pikachu and Location Background stamp encounters have been announced. Bangkok-specific acquisition location, availability and details await further official announcements.",
+    "conditions_zh": "官方總公告列各區活動10:00–22:00；曼谷橘色款及活動日期已公布。曼谷背景的集章位置、實際開放細節仍待後續公告；素材預覽不等於已發放。",
+    "conditions_en": "The general announcement lists event hours of 10:00–22:00 in each region. Bangkok’s orange variant and dates are announced. Bangkok background stamp location and acquisition details remain unannounced; the asset preview is not proof of release."
+  },
+  "after": {
+    "method_zh": "曼谷實體活動會場已公告為 centralwOrld；官方已預告 PokéXciting 皮卡丘與 GO 集章地區背景機制，但會場不等於已確認集章補給站，背景取得點、實際開放日期與細節仍待後續公告。",
+    "method_en": "The Bangkok in-person venue is confirmed as centralwOrld. PokéXciting Pikachu and the Location Background stamp mechanism are announced, but the venue does not establish the exact stamp PokéStop; background acquisition points, availability and details await further announcements.",
+    "conditions_zh": "實體活動會場為曼谷 centralwOrld，日期2027/2/13–2/14；官方總公告列當地每日10:00–22:00。背景集章補給站位置及實際開放細節仍待公告；會場已公布不等於集章點已確認，素材預覽也不等於已發放。",
+    "conditions_en": "The in-person event is at centralwOrld, Bangkok, on February 13–14, 2027; the general announcement lists daily local hours of 10:00–22:00. Exact background stamp PokéStops and acquisition availability remain unannounced. A confirmed venue does not confirm the stamp location, and the asset preview is not proof of release."
+  },
+  "official_venue_source": "https://th.portal-pokemon.com/30th/topics/20261026_01/?lang=en",
+  "original_venue_announcement_date": "2026-10-26",
+  "reviewed_activity_ids": [
+    "pokexciting-singapore-launch-2026",
+    "pokexciting-manila-launch-2027",
+    "night-out-los-angeles-2026",
+    "wild-area-sendai-2026",
+    "wild-area-mexico-city-2026",
+    "night-out-london-2026",
+    "dia-de-muertos-cubone-2026",
+    "pokexciting-bangkok-2027",
+    "dia-de-muertos-mexico-city-2026",
+    "into-the-wild-2026",
+    "festival-of-lights-2026",
+    "wild-area-global-2026",
+    "dynamax-trails-2026",
+    "pawniard-community-day-2026"
+  ],
+  "counts": {
+    "records": 279,
+    "released": 272,
+    "upcoming": 4,
+    "needs_verification": 3,
+    "activities": 14,
+    "in_progress": 2,
+    "upcoming_activities": 11,
+    "ended": 1
+  },
+  "activity_status_changes": [],
+  "no_background_announced_in": [
+    "https://pokemongo.com/news/pgo-explorer-gadget-2026-update",
+    "https://pokemongo.com/news/twilight-wishes-2026",
+    "https://pokemongo.com/news/pokemon-center-bangkok-opens-2026",
+    "https://pokemongo.com/news/minior-meteor-showers-2026"
+  ],
+  "retained_pending": [
+    "Bangkok exact stamp PokéStops and background availability",
+    "Mexico City 10:00/14:00 start conflict",
+    "Mexico community-reported daily battle window, spot count and lobby capacity",
+    "remote background eligibility where not explicitly confirmed",
+    "unannounced background artwork/species details"
+  ],
+  "preserved": [
+    "BG-0280 reuses BG-0008 artwork",
+    "no public Mexico owner photos",
+    "Ancients Recovered only six-record presentation merge",
+    "existing related product links without any product, stock or price mutations"
+  ],
+  "sources": [
+    "https://pokemongo.com/news",
+    "https://pokemongo.com/news/pgo-explorer-gadget-2026-update",
+    "https://pokemongo.com/news/twilight-wishes-2026",
+    "https://pokemongo.com/news/pokemon-center-bangkok-opens-2026",
+    "https://pokemongo.com/news/dynamax-trails-eternamax-eternatus-2026",
+    "https://pokemongo.com/news/communityday-november-2026-pawniard",
+    "https://pokemongo.com/gowildarea/sendai/gameplay",
+    "https://pokemongo.com/gowildarea/mexico-city/gameplay",
+    "https://pokemongo.com/en/gowildarea/global",
+    "https://pokemongo.com/news/go-wild-area-stamp-rally-details-2026",
+    "https://pokemongo.com/news/into-the-wild-2026",
+    "https://pokemongo.com/en/news/festival-of-lights-2026",
+    "https://pokemongo.com/es-MX/news/dia-de-muertos-2026",
+    "https://pokemongo.com/news/pokemon-night-out-irl-details2026",
+    "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
+    "https://pokemongo.com/en/news/event-apac-stamp-rally-2026",
+    "https://pokemongo.com/news/event-singapore-30th-anniversary-2026",
+    "https://th.portal-pokemon.com/30th/topics/20261026_01/?lang=en"
+  ],
+  "limitations": [
+    "TrainersGO mirror could not be retrieved today; previous community claims remain pending, not reconfirmed.",
+    "Reviewed latest news index and relevant current/future event announcements; not a full historical re-audit."
+  ],
+  "metadata_corrections": [
+    {
+      "field": "counts.official-event-confirmed",
+      "before": 216,
+      "after": 217,
+      "reason": "Reconcile released verification subtotals after existing BG-0280 addition; total records remain 279 and released remain 272."
+    }
+  ],
+  "last_check_dates_refreshed": 14,
+  "validation": {
+    "tests_passed": 246,
+    "build": "passed",
+    "product_associations": "unchanged",
+    "count_subtotals_match_records": true
+  }
+}
