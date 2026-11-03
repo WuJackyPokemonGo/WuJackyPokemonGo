@@ -10,7 +10,7 @@
     "mexico-hawlucha-ongoing-stamp-rally-2026",
     "trainer-profile-background-rollout-2026"
   ],
-  "artwork_status": "unconfirmed; no existing artwork substituted",
+  "artwork_status": "same-city reuse subsequently confirmed by site owner; BG-0281 uses BG-0212 artwork and BG-0282 uses BG-0213 artwork",
   "before": {
     "records": 279,
     "released": 272,
@@ -23,7 +23,6 @@
   },
   "acquisition_start_utc": "2026-11-03T00:00:00Z",
   "unresolved": [
-    "stamp artwork and reuse",
     "other Special Background profile support dates"
   ],
   "preserved": [
@@ -42,5 +41,11 @@
     "failed": 0,
     "build": "passed",
     "diff_check": "passed"
+  },
+  "owner_correction": {
+    "checked_on": "2026-11-03",
+    "basis": "owner-confirmed",
+    "official_scope": "background reward and acquisition; artwork reuse supplied by site owner",
+    "activities_remain_separate": true
   }
 }

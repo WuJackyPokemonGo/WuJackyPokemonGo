@@ -1,12 +1,12 @@
 import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';
 import {collectActivityEvents,activityState,activityTimeLines,activityWindows,zonedInstant} from '../activity-feed-service.mjs';import {backgroundArtworkGallery,filterBackgrounds,groupBackgroundCards} from '../backgrounds-service.mjs';
 const data=JSON.parse(readFileSync(new URL('../data/backgrounds.json',import.meta.url))),events=collectActivityEvents(data),get=id=>events.find(e=>e.event_id===id);
-test('ongoing stamp rallies use the same absolute opening instant without invented expiry or existing artwork',()=>{
+test('ongoing stamp rallies use the same absolute opening instant without invented expiry and preserve owner-confirmed city artwork reuse',()=>{
  for(const [id,dex]of [['sendai-lapras-ongoing-stamp-rally-2026',131],['mexico-hawlucha-ongoing-stamp-rally-2026',701]]){
   const e=get(id),s=e.activity.schedule;assert.equal(zonedInstant(s.start,s.zone),Date.parse('2026-11-03T00:00Z'));assert.equal(s.end,null);assert.equal(s.open_ended,true);
   assert.equal(activityState(e,Date.parse('2026-11-02T23:59:59Z')).status,'upcoming');assert.equal(activityState(e,Date.parse('2026-11-03T00:00Z')).status,'in_progress');assert.equal(activityState(e,Date.parse('2031-01-01T00:00Z')).status,'in_progress');
   const t=activityTimeLines(e);assert.match(t.taiwan,/2026\/11\/03 08:00/);assert.match(t.local,/未定結束日/);assert.match(activityTimeLines(e,'en').local,/no end date/);assert.deepEqual(activityWindows(e),[]);
-  assert.equal(e.pokemon.length,1);assert.equal(e.pokemon[0].dex,dex);assert.equal(e.image_source,null);assert.equal(e.activity.artwork_status,'pending');assert.deepEqual(backgroundArtworkGallery(e),[]);assert.deepEqual(e.related_product_ids,[]);assert.ok(filterBackgrounds(data.records).some(r=>r.background_id===e.background_id));assert.match(e.activity.remote_background.text_en,/not applicable/);
+  assert.equal(e.pokemon.length,1);assert.equal(e.pokemon[0].dex,dex);const original=data.records.find(r=>r.background_id===(dex===131?'BG-0212':'BG-0213'));assert.equal(e.image_source,original.image_source);assert.equal(e.artwork_reuses_background_id,original.background_id);assert.equal(e.activity.artwork_status,'owner-confirmed-reuse');assert.equal(e.artwork_confirmation.basis,'owner-confirmed');assert.equal(backgroundArtworkGallery(e).length,1);assert.deepEqual(e.related_product_ids,[]);assert.ok(filterBackgrounds(data.records).some(r=>r.background_id===e.background_id));assert.match(e.activity.remote_background.text_en,/not applicable/);
  }
  for(const id of ['wild-area-sendai-2026','wild-area-mexico-city-2026'])assert.equal(activityState(get(id),Date.parse('2026-11-03T00:00Z')).status,'upcoming');
  assert.deepEqual(groupBackgroundCards(data.records).filter(r=>r.activity_id).map(r=>[r.activity_id,r.members.length]),[['ancients-recovered',6]]);
