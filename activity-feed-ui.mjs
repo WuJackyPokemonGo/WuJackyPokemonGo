@@ -18,10 +18,10 @@ function card(r,now,onBackground){
  if(meta.schedule.date_only)box.append(el('p',s.status==='ended'?tr('已結束依活動日期推定；精確時刻未公布。','Ended status is inferred from the event date; exact hours were not announced.'):tr('官方只列日期，未把午夜當成開始時間。','Only dates are announced; midnight is not assumed as the start.'),'activity-basis'));
  if(pick(meta,'battle_window_label'))box.append(el('p',pick(meta,'battle_window_label'),'activity-daily'));
  box.append(el('p',tr('適用：','Eligible: ')+pick(meta,'eligible'),'activity-eligible'));
- const bg=meta.background_type==='location'?tr('地點背景','Location Background'):meta.background_type==='special'?tr('特殊背景','Special Background'):tr('背景未公告','Background unannounced');
- box.append(el('p',bg+' · '+(meta.artwork_status==='pending'?tr('圖樣待確認','Artwork unconfirmed'):meta.artwork_status==='owner-catch-confirmed'?tr('使用者實拍已確認','Confirmed by owner catch screenshots'):meta.artwork_status==='owner-preview-not-released'?tr('素材預覽，未發放','Asset preview, unreleased'):tr('沿用圖鑑／既有圖樣','Existing catalog artwork')),'activity-background'));
+ const bg=meta.kind==='feature'?tr('展示功能（非新增背景）','Display feature (not a new background)'):meta.background_type==='location'?tr('地點背景','Location Background'):meta.background_type==='special'?tr('特殊背景','Special Background'):tr('背景未公告','Background unannounced');
+ box.append(el('p',bg+' · '+(meta.artwork_status==='feature-only'?tr('分階段開放','Phased rollout'):meta.artwork_status==='pending'?tr('圖樣待確認','Artwork unconfirmed'):meta.artwork_status==='owner-catch-confirmed'?tr('使用者實拍已確認','Confirmed by owner catch screenshots'):meta.artwork_status==='owner-preview-not-released'?tr('素材預覽，未發放','Asset preview, unreleased'):tr('沿用圖鑑／既有圖樣','Existing catalog artwork')),'activity-background'));
  details.open=expanded.has(r.event_id);details.ontoggle=()=>{details.open?expanded.add(r.event_id):expanded.delete(r.event_id)};details.append(summary);
- fact(details,tr('取得條件','Acquisition'),pick(meta,'conditions'),meta.conditions_basis??'confirmed');
+ fact(details,meta.kind==='feature'?tr('功能條件','Feature conditions'):tr('取得條件','Acquisition'),pick(meta,'conditions'),meta.conditions_basis??'confirmed');
  fact(details,tr('遠距參與','Remote participation'),pick(meta.remote_participation,'text'),meta.remote_participation?.basis);
  fact(details,tr('遠距取得背景','Remote background eligibility'),pick(meta.remote_background,'text'),meta.remote_background?.basis);
  if(pick(meta,'reported_info'))fact(details,tr('社群回報（非官方確認）','Community report (not officially confirmed)'),pick(meta,'reported_info'),'pending');

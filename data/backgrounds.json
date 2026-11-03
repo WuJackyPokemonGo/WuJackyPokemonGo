@@ -363,7 +363,9 @@
     "https://leekduck.com/events/pokemon-go-wild-area-2025-global/",
     "https://www.serebii.net/pokemongo/reallifeevents/pokemonnightout.shtml",
     "https://leekduck.com/events/pokemon-night-out-los-angeles-2026/",
-    "https://pokemongo.com/es-MX/news/dia-de-muertos-2026"
+    "https://pokemongo.com/es-MX/news/dia-de-muertos-2026",
+    "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026",
+    "https://pokemongo.com/en/news/get-ready-for-gowildarea-2026"
   ],
   "records": [
     {
@@ -16516,7 +16518,8 @@
         "https://pokemongo.com/news/go-wild-area-stamp-rally-details-2026"
       ],
       "notes": [
-        "2026-10-29核對官方澄清：GO集章僅限主票券日期當地10:00–20:00；加購額外日不增加集章，但可再取得鋼／龍屬性限時調查。七處集章站可任意順序造訪；公告未承諾集章獎勵帶背景，不把它直接列為背景取得方式。"
+        "2026-10-29核對官方澄清：GO集章僅限主票券日期當地10:00–20:00；加購額外日不增加集章，但可再取得鋼／龍屬性限時調查。七處集章站可任意順序造訪；公告未承諾集章獎勵帶背景，不把它直接列為背景取得方式。",
+        "另有已開放的長期集章活動；背景圖樣關係待核對，不變更本筆持票活動日期。"
       ],
       "related_product_ids": [],
       "method_zh": "持票訓練家在活動期間參與指定現場團體戰與極巨對戰，成功捕獲後有機會獲得仙台地點背景；遠距對戰不提供地點背景。持票特殊調查明列附背景的超極巨鋁鋼龍。各寶可夢條件見下方。",
@@ -16540,7 +16543,8 @@
       ],
       "reference_review": "images-compared-2026-10-24",
       "notes_en": [
-        "Official clarification checked October 29: the GO Stamp Rally runs only on the main ticketed day, 10:00–20:00 local time. Extra Day add-ons do not add stamp rallies, but do grant repeat Steel-/Dragon-type Timed Research. The seven stamps may be visited in any order. Background rewards from the stamp rally are not promised."
+        "Official clarification checked October 29: the GO Stamp Rally runs only on the main ticketed day, 10:00–20:00 local time. Extra Day add-ons do not add stamp rallies, but do grant repeat Steel-/Dragon-type Timed Research. The seven stamps may be visited in any order. Background rewards from the stamp rally are not promised.",
+        "A separate ongoing stamp rally is open; artwork reuse is unconfirmed. Ticketed dates stay unchanged."
       ],
       "date_note_zh": "GO集章：僅主票券日期10:00–20:00（當地時間）；額外日加購不增加集章。額外日鋼／龍限時調查為不同內容，不能混為背景保證。",
       "date_note_en": "GO Stamp Rally: main ticketed day only, 10:00–20:00 local time. Extra Day add-ons do not add a stamp rally. Repeat Steel-/Dragon-type Timed Research is separate and does not establish background eligibility.",
@@ -16670,7 +16674,8 @@
         "https://pokemongo.com/news/go-wild-area-stamp-rally-details-2026"
       ],
       "notes": [
-        "2026-10-29核對官方澄清：GO集章僅限主票券日期當地10:00–20:00；加購額外日不增加集章，但可再取得鋼／龍屬性限時調查。七處集章站可任意順序造訪；公告未承諾集章獎勵帶背景，不把它直接列為背景取得方式。"
+        "2026-10-29核對官方澄清：GO集章僅限主票券日期當地10:00–20:00；加購額外日不增加集章，但可再取得鋼／龍屬性限時調查。七處集章站可任意順序造訪；公告未承諾集章獎勵帶背景，不把它直接列為背景取得方式。",
+        "另有已開放的長期集章活動；背景圖樣關係待核對，不變更本筆持票活動日期。"
       ],
       "related_product_ids": [],
       "method_zh": "持票訓練家在活動期間參與指定現場團體戰與極巨對戰，成功捕獲後有機會獲得墨西哥城地點背景；遠距對戰不提供地點背景。持票特殊調查明列附背景的超極巨鋁鋼龍。各寶可夢條件見下方。",
@@ -16694,7 +16699,8 @@
       ],
       "reference_review": "images-compared-2026-10-24",
       "notes_en": [
-        "Official clarification checked October 29: the GO Stamp Rally runs only on the main ticketed day, 10:00–20:00 local time. Extra Day add-ons do not add stamp rallies, but do grant repeat Steel-/Dragon-type Timed Research. The seven stamps may be visited in any order. Background rewards from the stamp rally are not promised."
+        "Official clarification checked October 29: the GO Stamp Rally runs only on the main ticketed day, 10:00–20:00 local time. Extra Day add-ons do not add stamp rallies, but do grant repeat Steel-/Dragon-type Timed Research. The seven stamps may be visited in any order. Background rewards from the stamp rally are not promised.",
+        "A separate ongoing stamp rally is open; artwork reuse is unconfirmed. Ticketed dates stay unchanged."
       ],
       "date_note_zh": "GO集章：僅主票券日期10:00–20:00（當地時間）；額外日加購不增加集章。額外日鋼／龍限時調查為不同內容，不能混為背景保證。",
       "date_note_en": "GO Stamp Rally: main ticketed day only, 10:00–20:00 local time. Extra Day add-ons do not add a stamp rally. Repeat Steel-/Dragon-type Timed Research is separate and does not establish background eligibility.",
@@ -27785,6 +27791,158 @@
         "source_url": "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2023-mexico-city"
       },
       "artwork_preview_url": "https://pokexperience.com/pokemon-variants/backgrounds/cs23_mexico_city.webp?v=20260816"
+    },
+    {
+      "background_id": "BG-0281",
+      "name_zh": "仙台・東北｜拉普拉斯長期集章地點背景",
+      "name_en": "Sendai • Tohoku — Lapras Ongoing Stamp Rally Background",
+      "start_date": "2026-11-03",
+      "end_date": null,
+      "release_state": "released",
+      "verification": "official-event-confirmed",
+      "verification_scope": "official-announcement-acquisition-confirmed-artwork-unconfirmed",
+      "image_source": null,
+      "artwork_status": "pending",
+      "official_sources": [
+        "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026"
+      ],
+      "source": "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026",
+      "type": "location",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "year_verified": true,
+      "region_zh": "日本",
+      "region_en": "Japan",
+      "checked_on": "2026-11-03",
+      "pokemon": [
+        {
+          "dex": 131,
+          "name_zh": "拉普拉斯",
+          "name_en": "Lapras",
+          "acquisition": "encounter"
+        }
+      ],
+      "evolved_pokemon": [],
+      "related_product_ids": [],
+      "method_zh": "所有訓練家均可到當地完成八章集章，領取附地點背景的拉普拉斯；與持票曠野週末集章分開。",
+      "method_en": "Eight local stamps award Lapras with a Location Background; no event ticket required.",
+      "date_note_zh": "統一於PST 2026/11/2 16:00開放，即台灣11/3 08:00；目前未定結束日。",
+      "date_note_en": "Starts November 2, 16:00 PST; Taiwan November 3, 08:00. No planned end date.",
+      "artwork_note_zh": "背景獎勵已由官方確認；圖樣及與既有同城背景的關係仍待核對，暫不套用圖片。",
+      "artwork_note_en": "Reward confirmed; artwork and reuse unconfirmed.",
+      "notes": [
+        "長期集章與11/6–11/8持票曠野活動獨立。"
+      ],
+      "notes_en": [],
+      "activity": {
+        "id": "sendai-lapras-ongoing-stamp-rally-2026",
+        "schedule": {
+          "start": "2026-11-03T09:00",
+          "end": null,
+          "zone": "Asia/Tokyo",
+          "basis": "confirmed",
+          "open_ended": true
+        },
+        "conditions_zh": "所有訓練家均可到當地完成八章集章，領取附地點背景的拉普拉斯；與持票曠野週末集章分開。",
+        "conditions_en": "Eight local stamps award Lapras with a Location Background; no event ticket required.",
+        "eligible_zh": "拉普拉斯（未公告特殊服裝或極巨形態）。",
+        "eligible_en": "Lapras; no special costume or Max form announced.",
+        "remote_participation": {
+          "basis": "confirmed",
+          "text_zh": "需造訪當地集章，不是遠距團體戰。",
+          "text_en": "Local visits required; not a remote battle."
+        },
+        "remote_background": {
+          "basis": "confirmed",
+          "text_zh": "由當地集章獎勵取得，不適用遠距團戰。",
+          "text_en": "Local stamp reward; remote raids not applicable."
+        },
+        "background_type": "location",
+        "artwork_status": "pending",
+        "checked_on": "2026-11-03",
+        "sources": [
+          "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026"
+        ],
+        "uncertainty_zh": "背景圖樣及是否沿用既有同城圖樣待確認；不併入曠野持票活動。",
+        "uncertainty_en": "Artwork/reuse unconfirmed; separate from ticketed Wild Area."
+      }
+    },
+    {
+      "background_id": "BG-0282",
+      "name_zh": "墨西哥城｜摔角鷹人長期集章地點背景",
+      "name_en": "Mexico City — Hawlucha Ongoing Stamp Rally Background",
+      "start_date": "2026-11-02",
+      "end_date": null,
+      "release_state": "released",
+      "verification": "official-event-confirmed",
+      "verification_scope": "official-announcement-acquisition-confirmed-artwork-unconfirmed",
+      "image_source": null,
+      "artwork_status": "pending",
+      "official_sources": [
+        "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026"
+      ],
+      "source": "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026",
+      "type": "location",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "year_verified": true,
+      "region_zh": "墨西哥",
+      "region_en": "Mexico",
+      "checked_on": "2026-11-03",
+      "pokemon": [
+        {
+          "dex": 701,
+          "name_zh": "摔角鷹人",
+          "name_en": "Hawlucha",
+          "acquisition": "encounter"
+        }
+      ],
+      "evolved_pokemon": [],
+      "related_product_ids": [],
+      "method_zh": "所有訓練家均可到當地完成八章集章，領取附地點背景的摔角鷹人；與持票曠野週末集章分開。",
+      "method_en": "Eight local stamps award Hawlucha with a Location Background; no event ticket required.",
+      "date_note_zh": "統一於PST 2026/11/2 16:00開放，即台灣11/3 08:00；目前未定結束日。",
+      "date_note_en": "Starts November 2, 16:00 PST; Taiwan November 3, 08:00. No planned end date.",
+      "artwork_note_zh": "背景獎勵已由官方確認；圖樣及與既有同城背景的關係仍待核對，暫不套用圖片。",
+      "artwork_note_en": "Reward confirmed; artwork and reuse unconfirmed.",
+      "notes": [
+        "長期集章與11/6–11/8持票曠野活動獨立。"
+      ],
+      "notes_en": [],
+      "activity": {
+        "id": "mexico-hawlucha-ongoing-stamp-rally-2026",
+        "schedule": {
+          "start": "2026-11-02T18:00",
+          "end": null,
+          "zone": "America/Mexico_City",
+          "basis": "confirmed",
+          "open_ended": true
+        },
+        "conditions_zh": "所有訓練家均可到當地完成八章集章，領取附地點背景的摔角鷹人；與持票曠野週末集章分開。",
+        "conditions_en": "Eight local stamps award Hawlucha with a Location Background; no event ticket required.",
+        "eligible_zh": "摔角鷹人（未公告特殊服裝或極巨形態）。",
+        "eligible_en": "Hawlucha; no special costume or Max form announced.",
+        "remote_participation": {
+          "basis": "confirmed",
+          "text_zh": "需造訪當地集章，不是遠距團體戰。",
+          "text_en": "Local visits required; not a remote battle."
+        },
+        "remote_background": {
+          "basis": "confirmed",
+          "text_zh": "由當地集章獎勵取得，不適用遠距團戰。",
+          "text_en": "Local stamp reward; remote raids not applicable."
+        },
+        "background_type": "location",
+        "artwork_status": "pending",
+        "checked_on": "2026-11-03",
+        "sources": [
+          "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026"
+        ],
+        "uncertainty_zh": "背景圖樣及是否沿用既有同城圖樣待確認；不併入曠野持票活動。",
+        "uncertainty_en": "Artwork/reuse unconfirmed; separate from ticketed Wild Area."
+      }
     }
   ],
   "additional_announced_events": [
@@ -28130,6 +28288,62 @@
           "BG-0240"
         ]
       }
+    },
+    {
+      "event_id": "trainer-profile-background-rollout-2026",
+      "name_zh": "夥伴背景顯示於訓練家個人檔案",
+      "name_en": "Buddy backgrounds on Trainer profiles",
+      "type": "feature",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "全球",
+      "region_en": "Global",
+      "start_date": "2026-11-06",
+      "end_date": null,
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-03",
+      "official_sources": [
+        "https://pokemongo.com/en/news/get-ready-for-gowildarea-2026"
+      ],
+      "related_product_ids": [],
+      "activity": {
+        "id": "trainer-profile-background-rollout-2026",
+        "kind": "feature",
+        "schedule": {
+          "start": "2026-11-06T10:00",
+          "end": null,
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "rolling_local": true,
+          "open_ended": true
+        },
+        "conditions_zh": "各地11/6 10:00起展示2026仙台／墨西哥曠野地點背景；11/9 10:00起支援本屆全球曠野特殊背景及過往地點背景。好友也須等各自當地10:00；其他特殊背景陸續開放。",
+        "conditions_en": "Local rollout: November 6, 10:00, Wild Area city backgrounds; November 9, 10:00, Wild Area 2026 Special Background and prior Location Backgrounds. Friends follow their own local clock; other Special Backgrounds follow later.",
+        "eligible_zh": "帶相應背景的夥伴；展示功能不改變背景捕獲資格。",
+        "eligible_en": "Buddies with supported backgrounds; display only.",
+        "remote_participation": {
+          "basis": "confirmed",
+          "text_zh": "不適用：個人檔案展示功能。",
+          "text_en": "Not applicable: profile display."
+        },
+        "remote_background": {
+          "basis": "confirmed",
+          "text_zh": "不新增遠距取得資格。",
+          "text_en": "No new remote acquisition entitlement."
+        },
+        "background_type": "display",
+        "artwork_status": "feature-only",
+        "checked_on": "2026-11-03",
+        "sources": [
+          "https://pokemongo.com/en/news/get-ready-for-gowildarea-2026"
+        ],
+        "background_ids": [],
+        "uncertainty_zh": "展示開放不等於提前取得背景；其他特殊背景的支援時程待公告。",
+        "uncertainty_en": "Display support does not release rewards early; other Special Background dates unannounced."
+      }
     }
   ],
   "coverage_note_zh": "收錄數是活動／圖樣工作紀錄，不是獨立已發放款數。日期採來源當地時間；多次發放與個別款開始日分開說明。尚有來源衝突及個別取得條件待核實。",
@@ -28141,7 +28355,7 @@
   },
   "counts": {
     "catalog-crosschecked": 55,
-    "official-event-confirmed": 217,
+    "official-event-confirmed": 219,
     "catalogued-needs-event-check": 3,
     "upcoming": 4
   },

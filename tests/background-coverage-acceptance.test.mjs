@@ -9,7 +9,7 @@ const audit=read('../docs/background-coverage-acceptance-2026-10-24.json');
 const latest=read('../docs/background-coverage-review-2026-10-28.json');
 const by=id=>data.records.find(r=>r.background_id===id);
 test('every source row resolves to a real entry and every released entry is visible and source-backed',()=>{
- const owner=read('../docs/background-owner-review-2026-11-02.json');const ids=new Set([...latest.new_released_background_ids,...owner.new_released_background_ids]);
+ const owner=read('../docs/background-owner-review-2026-11-02.json'),stamps=read('../docs/background-new-announcements-2026-11-03.json');const ids=new Set([...latest.new_released_background_ids,...owner.new_released_background_ids,...stamps.new_released_background_ids]);
  for(const source of Object.values(audit.sources)){
   assert.equal(source.rows,source.mapping.length);
   for(const item of source.mapping){
@@ -19,9 +19,9 @@ test('every source row resolves to a real entry and every released entry is visi
  const released=data.records.filter(r=>r.release_state==='released');
  const visible=new Set(filterBackgrounds(data.records).map(r=>r.background_id));
  // October 24 snapshot predates the Los Angeles event; retain its historical receipt.
- assert.equal(released.length,latest.released_records+owner.new_released_background_ids.length);
+ assert.equal(released.length,latest.released_records+owner.new_released_background_ids.length+stamps.new_released_background_ids.length);
  assert.equal(by('BG-0211').release_state,'released');
- for(const r of released){assert.ok(ids.has(r.background_id),r.background_id);assert.ok(visible.has(r.background_id),r.background_id);assert.ok(safeBackgroundImage(referenceArtwork(r,refs)),r.background_id)}
+ for(const r of released){assert.ok(ids.has(r.background_id),r.background_id);assert.ok(visible.has(r.background_id),r.background_id);if(r.artwork_status==='pending'){assert.equal(referenceArtwork(r,refs),'');assert.equal(r.verification,'official-event-confirmed');assert.ok(r.official_sources.length)}else assert.ok(safeBackgroundImage(referenceArtwork(r,refs)),r.background_id)}
  assert.deepEqual(audit.unmapped_source_assets,[]);assert.deepEqual(audit.missing_released_backgrounds,[]);
  for(const x of audit.excluded_records)if(x.background_id!=='BG-0211')assert.ok(!visible.has(x.background_id));
 });
@@ -44,5 +44,5 @@ test('gallery rejects invalid or duplicate URLs without exposing component textu
  const row=by('BG-0264'),main=referenceArtwork(row,refs);
  const images=backgroundArtworkGallery({...row,artwork_variants:[null,{image_url:'javascript:alert(1)'},{image_url:'http://example.com/insecure.jpg'},{image_url:main}]},refs);
  assert.equal(images.length,1);assert.equal(images[0].image_url,main);
- for(const r of filterBackgrounds(data.records))assert.ok(backgroundArtworkGallery(r,refs).length>=1,r.background_id);
+ for(const r of filterBackgrounds(data.records)){if(r.artwork_status==='pending')assert.deepEqual(backgroundArtworkGallery(r,refs),[]);else assert.ok(backgroundArtworkGallery(r,refs).length>=1,r.background_id);}
 });

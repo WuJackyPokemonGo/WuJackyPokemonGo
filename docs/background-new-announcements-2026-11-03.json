@@ -1,0 +1,46 @@
+{
+  "checked_on": "2026-11-03",
+  "baseline_commit": "88ea6dde1eea53293cb3ff74931420e7c1592146",
+  "new_released_background_ids": [
+    "BG-0281",
+    "BG-0282"
+  ],
+  "new_activities": [
+    "sendai-lapras-ongoing-stamp-rally-2026",
+    "mexico-hawlucha-ongoing-stamp-rally-2026",
+    "trainer-profile-background-rollout-2026"
+  ],
+  "artwork_status": "unconfirmed; no existing artwork substituted",
+  "before": {
+    "records": 279,
+    "released": 272,
+    "activities": 14
+  },
+  "after": {
+    "records": 281,
+    "released": 274,
+    "activities": 17
+  },
+  "acquisition_start_utc": "2026-11-03T00:00:00Z",
+  "unresolved": [
+    "stamp artwork and reuse",
+    "other Special Background profile support dates"
+  ],
+  "preserved": [
+    "ticketed Wild Area events stay separate and upcoming",
+    "Mexico owner photos absent",
+    "only Ancients Recovered six-record merge",
+    "no product, stock or price changes"
+  ],
+  "sources": [
+    "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026",
+    "https://pokemongo.com/en/news/get-ready-for-gowildarea-2026"
+  ],
+  "validation": {
+    "tests": 248,
+    "passed": 248,
+    "failed": 0,
+    "build": "passed",
+    "diff_check": "passed"
+  }
+}
