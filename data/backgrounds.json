@@ -27614,7 +27614,8 @@
       "official_sources": [
         "https://pokemongo.com/es-MX/news/dia-de-muertos-2026",
         "https://pokemongo.com/seasons/forever-forward",
-        "https://pokemongo.com/news/shadow-raid-max-battle-update"
+        "https://pokemongo.com/news/shadow-raid-max-battle-update",
+        "https://pokemongo.com/news/gowa_cdmx_additional_info"
       ],
       "notes": [
         "沿用2023年「城市狩獵 墨西哥城」探險帽伊布的同款獨立天使紀念碑地點背景（BG-0008），不是新增背景圖樣。此判斷依既有背景素材與使用者實拍比對；2026亡靈節活動、寶可夢及取得條件仍獨立記錄。",
@@ -27626,7 +27627,7 @@
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2026",
-      "checked_on": "2026-11-02",
+      "checked_on": "2026-11-04",
       "region_en": "Mexico",
       "region_zh": "墨西哥",
       "notes_en": [
@@ -27659,8 +27660,8 @@
             }
           ]
         },
-        "conditions_zh": "改革大道當地限時調查及GO集章明列花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。 背景沿用2023墨西哥城探險帽伊布同款（實拍與既有素材比對），不是新背景圖樣。",
-        "conditions_en": "Paseo de la Reforma local Timed Research and GO Stamp Rally list a cempasúchil-crown Duskull with a Location Background. Six-star Gigantamax Gengar battles offer a background chance. The artwork reuses the 2023 Mexico City explorer-hat Eevee background (visual comparison with existing artwork), rather than a new design.",
+        "conditions_zh": "改革大道當地限時調查及GO集章明列花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。 背景沿用2023墨西哥城探險帽伊布同款（實拍與既有素材比對），不是新背景圖樣。 官方補充：改革大道獨立天使紀念碑附近，其中一座 Pokémon GO Mexicráneos 裝置是亡靈節集章站。11/6–11/8 是曠野週末的展示日期，官方尚未公告該集章站延長開放。",
+        "conditions_en": "Paseo de la Reforma local Timed Research and GO Stamp Rally list a cempasúchil-crown Duskull with a Location Background. Six-star Gigantamax Gengar battles offer a background chance. The artwork reuses the 2023 Mexico City explorer-hat Eevee background (visual comparison with existing artwork), rather than a new design. Official update: One Pokémon GO Mexicráneos installation near the Angel of Independence on Paseo de la Reforma is a Día de Muertos Stamp Rally stop. November 6–8 are the Wild Area display dates; extended in-game stamp availability has not been announced.",
         "eligible_zh": "夜巡靈（金盞花花冠）；耿鬼（超極巨化）。",
         "eligible_en": "Duskull wearing a cempasúchil crown; Gigantamax Gengar.",
         "remote_participation": {
@@ -27673,7 +27674,7 @@
           "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
           "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
         },
-        "checked_on": "2026-11-03",
+        "checked_on": "2026-11-04",
         "sources": [
           "https://pokemongo.com/es-MX/news/dia-de-muertos-2026",
           "https://pokemongo.com/seasons/forever-forward",
@@ -27684,7 +27685,8 @@
           "https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-mexico-city-2026",
           "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2023-mexico-city",
           "https://x.com/trainersgo2022/status/2116701530732503182",
-          "https://teapaw.org/trainersgo2022/status/2116701530732503182"
+          "https://teapaw.org/trainersgo2022/status/2116701530732503182",
+          "https://pokemongo.com/news/gowa_cdmx_additional_info"
         ],
         "background_type": "location",
         "artwork_status": "existing",
@@ -27780,8 +27782,8 @@
           "method_en": "Inherited by evolving cempasúchil-crown Duskull with the background; not a direct encounter."
         }
       ],
-      "method_zh": "當地限時調查與GO集章獎勵的花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。實拍確認圖樣及實際推出；遠距背景資格仍待確認。",
-      "method_en": "Local Timed Research and GO Stamp Rally award cempasúchil-crown Duskull with the Location Background; six-star Gigantamax Gengar Max Battles offer a background chance. Artwork and availability are confirmed by catch screenshots; remote background eligibility remains unconfirmed.",
+      "method_zh": "當地限時調查與GO集章獎勵的花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。實拍確認圖樣及實際推出；遠距背景資格仍待確認。 官方補充：改革大道獨立天使紀念碑附近，其中一座 Pokémon GO Mexicráneos 裝置是亡靈節集章站。11/6–11/8 是曠野週末的展示日期，官方尚未公告該集章站延長開放。",
+      "method_en": "Local Timed Research and GO Stamp Rally award cempasúchil-crown Duskull with the Location Background; six-star Gigantamax Gengar Max Battles offer a background chance. Artwork and availability are confirmed by catch screenshots; remote background eligibility remains unconfirmed. Official update: One Pokémon GO Mexicráneos installation near the Angel of Independence on Paseo de la Reforma is a Día de Muertos Stamp Rally stop. November 6–8 are the Wild Area display dates; extended in-game stamp availability has not been announced.",
       "artwork_reuse": {
         "background_id": "BG-0008",
         "basis": "visual-comparison",
