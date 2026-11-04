@@ -16341,8 +16341,8 @@
             "https://www.serebii.net/pokemongo/reallifeevents/pokemonnightout.shtml",
             "https://leekduck.com/events/pokemon-night-out-los-angeles-2026/"
           ],
-          "method_zh": "於洛杉磯活動場館領取限時調查，選擇高調路線並完成任務，獲得帶洛杉磯地標背景的顫弦蠑螈；高調／低調二選一。",
-          "method_en": "Claim the venue Timed Research in Los Angeles, choose Amped Form and complete its tasks to encounter Toxtricity with the Los Angeles Location Background. Choose one of the two forms."
+          "method_zh": "洛杉磯場館限時調查的高調路線獎勵。地標背景資格依活動名錄，官方未單獨確認該調查必帶背景。",
+          "method_en": "Los Angeles venue Timed Research, Amped branch. The event catalog lists the local background; a research background guarantee is not stated officially."
         },
         {
           "dex": 849,
@@ -16356,8 +16356,8 @@
             "https://www.serebii.net/pokemongo/reallifeevents/pokemonnightout.shtml",
             "https://leekduck.com/events/pokemon-night-out-los-angeles-2026/"
           ],
-          "method_zh": "於洛杉磯活動場館領取限時調查，選擇低調路線並完成任務，獲得帶洛杉磯地標背景的顫弦蠑螈；高調／低調二選一。",
-          "method_en": "Claim the venue Timed Research in Los Angeles, choose Low Key Form and complete its tasks to encounter Toxtricity with the Los Angeles Location Background. Choose one of the two forms."
+          "method_zh": "洛杉磯場館限時調查的低調路線獎勵。地標背景資格依活動名錄，官方未單獨確認該調查必帶背景。",
+          "method_en": "Los Angeles venue Timed Research, Low Key branch. The event catalog lists the local background; a research background guarantee is not stated officially."
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -16379,8 +16379,8 @@
         "5130ca87-874a-47c9-bfda-86bb448fbac5",
         "2c3f2865-51d4-4595-95a8-e8d8491460c3"
       ],
-      "method_zh": "活動場館的一星皮卡丘、三星耿鬼團體戰保證洛杉磯地標背景；現場限時調查可二選一取得高調或低調顫弦蠑螈，附洛杉磯地標背景。",
-      "method_en": "Event-venue one-star Pikachu and three-star Gengar raids guarantee the Los Angeles Location Background. Venue Timed Research awards either Amped Form or Low Key Form Toxtricity with that background, according to the chosen branch.",
+      "method_zh": "場館的一星皮卡丘、三星耿鬼團體戰保證洛杉磯地標背景。官方確認場館限時調查的顫弦蠑螈高調／低調路線；兩形態的洛杉磯地標背景資格依活動名錄，官方未明列該調查必帶背景。",
+      "method_en": "Venue one-star Pikachu and three-star Gengar raids guarantee the Los Angeles Location Background. The official announcement lists both Toxtricity research branches; the event catalog lists both forms with the local background. The official announcement does not separately guarantee a research background.",
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2026",
@@ -23358,8 +23358,8 @@
       "related_product_ids": [
         "6e21261b-cc8b-4950-9849-d33632f80e68"
       ],
-      "method_zh": "11/10–14 Into the Wild：指定五星／暗影五星團體戰捕捉暗影洛奇亞、暗影鳳王、四隻卡璞與奈克洛茲瑪時有背景機會。11/15–16全球活動：暗影克雷色利亞、暗影達克萊伊、披風穿著熊及超極巨長毛巨魔由團體戰／極巨對戰機率取得。特殊調查的個別背景保證條件仍待確認。",
-      "method_en": "Nov 10–14 Into the Wild: eligible five-star/Shadow raids offer background Shadow Lugia, Shadow Ho-Oh, the four Tapu and Necrozma. Nov 15–16 Global: raids/Max Battles offer Shadow Cresselia, Shadow Darkrai, caped Bewear and Gigantamax Grimmsnarl. Individual Special Research guarantees still require confirmation.",
+      "method_zh": "11/10–14 Into the Wild：指定五星／暗影五星團體戰捕捉暗影洛奇亞、暗影鳳王、四隻卡璞與奈克洛茲瑪時有背景機會。11/15–16全球活動：暗影克雷色利亞、暗影達克萊伊、披風穿著熊及超極巨長毛巨魔由團體戰／極巨對戰機率取得。全球持票特殊調查兩路線皆有第 5 階段穿著熊及第 6 階段超極巨長毛巨魔遭遇；現有調查名錄未標註這兩筆必帶背景。",
+      "method_en": "Nov 10–14 Into the Wild: eligible five-star/Shadow raids offer background Shadow Lugia, Shadow Ho-Oh, the four Tapu and Necrozma. Nov 15–16 Global: raids/Max Battles offer Shadow Cresselia, Shadow Darkrai, caped Bewear and Gigantamax Grimmsnarl. Both ticketed global Special Research branches award Bewear at step 5 and Gigantamax Grimmsnarl at step 6. The research listings do not establish a guaranteed background for either reward.",
       "series": "GO Wild Area",
       "series_zh": "曠野地帶",
       "year": "2025",
@@ -23367,7 +23367,8 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/sb-gowildarea-2025-global",
-        "https://leekduck.com/events/pokemon-go-wild-area-2025-global/"
+        "https://leekduck.com/events/pokemon-go-wild-area-2025-global/",
+        "https://www.serebii.net/pokemongo/events/gowildarea2025.shtml"
       ],
       "evolved_pokemon": [
         {
@@ -27529,7 +27530,8 @@
       "image_source": "https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/backgrounds/pokexciting-bangkok-preview.png",
       "official_sources": [
         "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
-        "https://th.portal-pokemon.com/30th/topics/20261026_01/?lang=en"
+        "https://th.portal-pokemon.com/30th/topics/20261026_01/?lang=en",
+        "https://pokemongo.com/en/news/event-apac-stamp-rally-2026"
       ],
       "notes": [
         "素材預覽已由使用者提供；尚未發放，不計入已發放款數。",
@@ -27597,7 +27599,8 @@
         "checked_on": "2026-11-03",
         "sources": [
           "https://pokemongo.com/en/news/event-apac-30th-anniversary-2026",
-          "https://th.portal-pokemon.com/30th/topics/20261026_01/?lang=en"
+          "https://th.portal-pokemon.com/30th/topics/20261026_01/?lang=en",
+          "https://pokemongo.com/en/news/event-apac-stamp-rally-2026"
         ],
         "background_type": "location",
         "artwork_status": "owner-preview-not-released",
@@ -27622,7 +27625,7 @@
         "沿用2023年「城市狩獵 墨西哥城」探險帽伊布的同款獨立天使紀念碑地點背景（BG-0008），不是新增背景圖樣。此判斷依既有背景素材與使用者實拍比對；2026亡靈節活動、寶可夢及取得條件仍獨立記錄。",
         "2026/11/2依使用者原圖實拍確認圖樣與實際推出；官方公告核對寶可夢及取得方式。",
         "與卡拉卡拉特殊背景、曠野地帶墨西哥城活動各自獨立，不因同城或外部名錄混列而合併。",
-        "活動起始10:00／14:00來源歧異仍保留。TrainersGO的每日19:00–20:00、2個點及每房100人為社群回報待確認；遠距取得背景資格亦未確認。"
+        "官方公告的改革大道活動為當地 10/31 10:00 至 11/5 20:00。另有 14:00 的非官方說法。耿鬼每日 19:00–20:00、2 個點與每房 100 人為待確認的社群回報，與官方活動起訖分開。遠距參戰及遠距取得背景資格仍待查證。"
       ],
       "type": "location",
       "series": "Other",
@@ -27652,23 +27655,16 @@
           "start": "2026-10-31T10:00",
           "end": "2026-11-05T20:00",
           "zone": "America/Mexico_City",
-          "basis": "pending",
-          "alternative_starts": [
-            {
-              "local": "2026-10-31T14:00",
-              "label_zh": "其他來源14:00（待釐清）",
-              "label_en": "Other sources: 14:00 (unresolved)"
-            }
-          ]
+          "basis": "confirmed"
         },
         "conditions_zh": "改革大道當地限時調查及GO集章明列花冠夜巡靈附地點背景；六星極巨對戰超極巨耿鬼有機會附地點背景。 背景沿用2023墨西哥城探險帽伊布同款（實拍與既有素材比對），不是新背景圖樣。 官方補充：改革大道獨立天使紀念碑附近，其中一座 Pokémon GO Mexicráneos 裝置是亡靈節集章站。11/6–11/8 是曠野週末的展示日期，官方尚未公告該集章站延長開放。",
         "conditions_en": "Paseo de la Reforma local Timed Research and GO Stamp Rally list a cempasúchil-crown Duskull with a Location Background. Six-star Gigantamax Gengar battles offer a background chance. The artwork reuses the 2023 Mexico City explorer-hat Eevee background (visual comparison with existing artwork), rather than a new design. Official update: One Pokémon GO Mexicráneos installation near the Angel of Independence on Paseo de la Reforma is a Día de Muertos Stamp Rally stop. November 6–8 are the Wild Area display dates; extended in-game stamp availability has not been announced.",
         "eligible_zh": "夜巡靈（金盞花花冠）；耿鬼（超極巨化）。",
         "eligible_en": "Duskull wearing a cempasúchil crown; Gigantamax Gengar.",
         "remote_participation": {
-          "basis": "inferred",
-          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
-          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
+          "basis": "pending",
+          "text_zh": "官方公告活動區域的六星極巨對戰；該場次是否可遠距參戰仍待確認。",
+          "text_en": "The official announcement lists six-star Max Battles in the event area; remote participation in these specific battles remains unverified."
         },
         "remote_background": {
           "basis": "pending",
@@ -27691,8 +27687,8 @@
         ],
         "background_type": "location",
         "artwork_status": "existing",
-        "uncertainty_zh": "活動起始10:00／14:00來源歧異仍保留。TrainersGO的每日19:00–20:00、2個點及每房100人為社群回報待確認；遠距取得背景資格亦未確認。",
-        "uncertainty_en": "The event-start conflict (10:00 / 14:00) remains. TrainersGO’s daily 19:00–20:00 window, two spots and 100-per-lobby claim are unconfirmed community reports; remote background eligibility is also unconfirmed.",
+        "uncertainty_zh": "官方公告的改革大道活動為當地 10/31 10:00 至 11/5 20:00。另有 14:00 的非官方說法。耿鬼每日 19:00–20:00、2 個點與每房 100 人為待確認的社群回報，與官方活動起訖分開。遠距參戰及遠距取得背景資格仍待查證。",
+        "uncertainty_en": "Official Paseo de la Reforma event hours are October 31 at 10:00 through November 5 at 20:00 local time. An unofficial report cites 14:00. Gengar's daily 19:00–20:00 window, two spots and 100-per-lobby claim are unconfirmed community reports. Remote access and background eligibility remain unverified.",
         "battle_window": {
           "start": "19:00",
           "end": "20:00",
@@ -27828,8 +27824,8 @@
       ],
       "evolved_pokemon": [],
       "related_product_ids": [],
-      "method_zh": "所有訓練家均可到當地完成八章集章，領取附地點背景的拉普拉斯；與持票曠野週末集章分開。",
-      "method_en": "Eight local stamps award Lapras with a Location Background; no event ticket required.",
+      "method_zh": "所有訓練家均可到當地完成八章集章，領取附地點背景的拉普拉斯；與持票曠野週末集章分開。圖樣沿用仙台・東北曠野地帶地點背景（BG-0212，含蒼響等對戰遭遇）。",
+      "method_en": "Eight local stamps award Lapras with a Location Background; no event ticket required. The artwork is shared with the Sendai • Tohoku Wild Area Location Background (BG-0212), which lists Zacian among its battle encounters.",
       "date_note_zh": "統一於PST 2026/11/2 16:00開放，即台灣11/3 08:00；目前未定結束日。",
       "date_note_en": "Starts November 2, 16:00 PST; Taiwan November 3, 08:00. No planned end date.",
       "artwork_note_zh": "依站長補充確認，沿用同城曠野地點背景，與之後蒼響等寶可夢相同；集章與持票曠野活動的時間、取得條件仍分開。背景獎勵與集章條件由官方公告確認。",
@@ -27910,8 +27906,8 @@
       ],
       "evolved_pokemon": [],
       "related_product_ids": [],
-      "method_zh": "所有訓練家均可到當地完成八章集章，領取附地點背景的摔角鷹人；與持票曠野週末集章分開。",
-      "method_en": "Eight local stamps award Hawlucha with a Location Background; no event ticket required.",
+      "method_zh": "所有訓練家均可到當地完成八章集章，領取附地點背景的摔角鷹人；與持票曠野週末集章分開。圖樣沿用墨西哥城曠野地帶地點背景（BG-0213，含蒼響等對戰遭遇）。",
+      "method_en": "Eight local stamps award Hawlucha with a Location Background; no event ticket required. The artwork is shared with the Mexico City Wild Area Location Background (BG-0213), which lists Zacian among its battle encounters.",
       "date_note_zh": "統一於PST 2026/11/2 16:00開放，即台灣11/3 08:00；目前未定結束日。",
       "date_note_en": "Starts November 2, 16:00 PST; Taiwan November 3, 08:00. No planned end date.",
       "artwork_note_zh": "依站長補充確認，沿用同城曠野地點背景，與之後蒼響等寶可夢相同；集章與持票曠野活動的時間、取得條件仍分開。背景獎勵與集章條件由官方公告確認。",
