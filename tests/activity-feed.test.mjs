@@ -45,12 +45,12 @@ test('early research opening has its own exact boundary without releasing artwor
  assert.equal(activityEarlyAccess(get('wild-area-sendai-2026'),Date.parse('2026-11-02T00:00Z')),null);
 });
 
-test('November calendar includes four missing events without asserting a background or unknown raid hours',()=>{
+test('November calendar includes four missing events without asserting background rewards',()=>{
  for(const id of ['halloween-part-two-2026','minior-leonids-2026','twilight-wishes-2026','super-mega-raid-day-2026-11']){
   const e=get(id);assert.equal(e.activity.kind,'event');assert.ok(e.activity.sources[0].startsWith('https://pokemongo.com/'));
  }
- assert.equal(get('super-mega-raid-day-2026-11').activity.schedule.date_only,true);
- assert.match(activityTimeLines(get('super-mega-raid-day-2026-11')).local,/待公布/);
+ assert.equal(get('super-mega-raid-day-2026-11').activity.schedule.start,'2026-11-28T14:00');
+ assert.equal(get('super-mega-raid-day-2026-11').activity.schedule.end,'2026-11-28T17:00');
  assert.equal(get('minior-leonids-2026').activity.schedule.start,'2026-11-14T17:00');
  assert.equal(get('twilight-wishes-2026').activity.schedule.end,'2026-11-30T20:00');
 });

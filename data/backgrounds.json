@@ -28535,8 +28535,8 @@
     },
     {
       "event_id": "super-mega-raid-day-2026-11",
-      "name_zh": "極致超級團體戰日",
-      "name_en": "Super Mega Raid Day",
+      "name_zh": "皮可西極致超級團體戰日",
+      "name_en": "Clefable Super Mega Raid Day",
       "type": "event",
       "series": "Other",
       "series_zh": "其他活動",
@@ -28548,15 +28548,16 @@
       "release_state": "upcoming",
       "verification": "official-event-confirmed",
       "image_source": null,
-      "checked_on": "2026-11-05",
+      "checked_on": "2026-11-06",
       "official_sources": [
-        "https://pokemongo.com/zh-Hant/news/save-the-date-s24"
+        "https://pokemongo.com/zh-Hant/news/save-the-date-s24",
+        "https://pokemongolive.com/en/news/clefable-super-mega-raid-day-2026"
       ],
       "notes": [
-        "官方已公告11月28日舉行，詳細時段與主角待公告。"
+        "超級皮可西首度在極致超級團體戰登場，捕捉的皮可西已解鎖超級等級 1。官方公告未列背卡獎勵。"
       ],
       "notes_en": [
-        "November 28 is officially announced. Event hours and featured Pokémon await announcement."
+        "Mega Clefable debuts in Super Mega Raids. Clefable caught there have Mega Level 1 unlocked. The official announcement lists no background reward."
       ],
       "activity": {
         "id": "super-mega-raid-day-2026-11",
@@ -28565,17 +28566,17 @@
           "zone": "Asia/Taipei",
           "basis": "confirmed",
           "rolling_local": true,
-          "date_only": true,
-          "start_date": "2026-11-28",
-          "end_date": "2026-11-28"
+          "start": "2026-11-28T14:00",
+          "end": "2026-11-28T17:00"
         },
-        "conditions_zh": "官方已公告11月28日舉行，詳細時段與主角待公告。",
-        "conditions_en": "November 28 is officially announced. Event hours and featured Pokémon await announcement.",
-        "eligible_zh": "活動日程資訊，背景取得資格依各活動公告。",
-        "eligible_en": "Event schedule. Background eligibility follows each event announcement.",
-        "checked_on": "2026-11-05",
+        "conditions_zh": "超級皮可西首度在極致超級團體戰登場，捕捉的皮可西已解鎖超級等級 1。官方公告未列背卡獎勵。",
+        "conditions_en": "Mega Clefable debuts in Super Mega Raids. Clefable caught there have Mega Level 1 unlocked. The official announcement lists no background reward.",
+        "eligible_zh": "超級皮可西（對戰形態），捕捉時為皮可西。",
+        "eligible_en": "Mega Clefable (battle form), encountered as Clefable after the raid.",
+        "checked_on": "2026-11-06",
         "sources": [
-          "https://pokemongo.com/zh-Hant/news/save-the-date-s24"
+          "https://pokemongo.com/zh-Hant/news/save-the-date-s24",
+          "https://pokemongolive.com/en/news/clefable-super-mega-raid-day-2026"
         ]
       }
     }
