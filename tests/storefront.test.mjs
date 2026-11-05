@@ -9,11 +9,12 @@ test('inquiry distinguishes unknown prices and sold-out items without treating i
 test('recent stock includes 14 Taiwan dates across months and ignores stored stock tags',()=>{
  const now='2026-11-01T16:00:00Z';
  const tags=['背景','本月新庫存','最近新庫存'];
+ assert.deepEqual(tagsFor({tags,first_stocked_at:now},now),["背景"]);
  for(const date of ['2026-10-19T16:00:00Z','2026-11-01T16:00:00Z']){
-  assert.deepEqual(tagsFor({tags,first_stocked_at:date},now),['背景','最近新庫存']);
+  assert.deepEqual(tagsFor({tags,first_published_at:date},now),['背景','最近新庫存']);
  }
  for(const date of ['2026-10-19T15:59:59Z','2026-11-02T16:00:00Z',null,'invalid']){
-  assert.deepEqual(tagsFor({tags,first_stocked_at:date},now),['背景']);
+  assert.deepEqual(tagsFor({tags,first_published_at:date},now),['背景']);
  }
 });
 test('normal public stock shows the real account quantity',()=>assert.deepEqual(stockLabel(publicStockFields('available',77,3)),{text:'庫存：77 帳',tone:'normal'}));
