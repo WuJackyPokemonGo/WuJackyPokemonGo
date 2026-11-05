@@ -9,12 +9,12 @@ test('inquiry distinguishes unknown prices and sold-out items without treating i
 test('recent stock includes 14 Taiwan dates across months and ignores stored stock tags',()=>{
  const now='2026-11-01T16:00:00Z';
  const tags=['背景','本月新庫存','最近新庫存'];
- assert.deepEqual(tagsFor({tags,first_stocked_at:now},now),["背景"]);
+ assert.deepEqual(tagsFor({tags,first_published_at:now},now),["背景"]);
  for(const date of ['2026-10-19T16:00:00Z','2026-11-01T16:00:00Z']){
-  assert.deepEqual(tagsFor({tags,first_published_at:date},now),['背景','最近新庫存']);
+  assert.deepEqual(tagsFor({tags,first_stocked_at:date},now),['背景','最近新庫存']);
  }
  for(const date of ['2026-10-19T15:59:59Z','2026-11-02T16:00:00Z',null,'invalid']){
-  assert.deepEqual(tagsFor({tags,first_published_at:date},now),['背景']);
+  assert.deepEqual(tagsFor({tags,first_stocked_at:date},now),['背景']);
  }
 });
 test('normal public stock shows the real account quantity',()=>assert.deepEqual(stockLabel(publicStockFields('available',77,3)),{text:'庫存：77 帳',tone:'normal'}));
@@ -22,3 +22,11 @@ test('low stock uses an orange badge at the product threshold, without changing 
 test('zero stock displays sold out rather than an urgent low-stock claim',()=>assert.deepEqual(stockLabel(publicStockFields('available',0,3)),{text:'已售罄',tone:'sold'}));
 test('unconfirmed supply and missing ledger quantities are not fabricated as zero',()=>{for(const q of [null,undefined,-1,'2',NaN,2147483648])assert.deepEqual(stockLabel(publicStockFields('available',q,3)),{text:'庫存待確認',tone:'pending'});assert.equal(publicStockFields('inquiry_only',12,3).stock_quantity,null);assert.deepEqual(stockLabel(publicStockFields('inquiry_only',0,3)),{text:'庫存待確認',tone:'pending'});assert.deepEqual(stockLabel(publicStockFields('coming_soon',2,3)),{text:'即將推出',tone:'pending'})});
 test('manual low-stock status retains the notice without inventing a quantity',()=>{assert.deepEqual(stockLabel(publicStockFields('low_stock',null,3)),{text:'庫存偏低',tone:'low'});assert.equal(stockLabel(publicStockFields('low_stock',25,3)).text,'剩餘 25 帳')});
+
+test('recent stock follows the entered stock date instead of publication or a stored tag',()=>{
+ const now='2026-11-05T00:00:00Z';
+ assert.deepEqual(tagsFor({tags:['最近新庫存'],first_stocked_at:'2026-10-01T00:00:00+08:00',first_published_at:now},now),[]);
+ assert.deepEqual(tagsFor({tags:[],first_stocked_at:'2026-11-05T00:00:00+08:00',first_published_at:'2026-10-01'},now),['最近新庫存']);
+ assert.deepEqual(tagsFor({tags:['最近新庫存'],first_stocked_at:'2026-10-23T00:00:00+08:00'},now),['最近新庫存']);
+ assert.deepEqual(tagsFor({tags:['最近新庫存'],first_stocked_at:'2026-10-22T00:00:00+08:00'},now),[]);
+});

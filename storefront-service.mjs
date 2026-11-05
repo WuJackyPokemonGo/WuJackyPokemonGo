@@ -26,7 +26,7 @@ function taipeiDay(value){
 }
 export function tagsFor(p,now=new Date()){
  const tags=(p.tags??[]).filter(tag=>tag!=='本月新庫存'&&tag!==RECENT_STOCK_TAG);
- const age=p.first_published_at?taipeiDay(now)-taipeiDay(p.first_published_at):NaN;
+ const age=p.first_stocked_at?taipeiDay(now)-taipeiDay(p.first_stocked_at):NaN;
  if(age>=0&&age<14)tags.push(RECENT_STOCK_TAG);
  return tags;
 }
