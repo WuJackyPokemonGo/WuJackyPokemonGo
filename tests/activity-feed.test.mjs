@@ -24,10 +24,10 @@ test('date-only events never invent midnight and worldwide local-time events ide
  const r=get('night-out-los-angeles-2026');assert.equal(activityState(r,Date.parse('2026-10-25T08:00Z')).status,'ended');assert.equal(activityState(r,Date.parse('2026-10-24T20:00Z')).status,'time_unknown');assert.equal(activityState(r,Date.parse('2026-10-25T08:00Z')).basis,'inferred');assert.match(activityTimeLines(r).taiwan,/待當地時刻確認/);assert.doesNotMatch(activityTimeLines(r).local,/00:00/);
  const global=get('wild-area-global-2026');assert.match(activityTimeLines(global,'en').taiwan,/not at one shared Taiwan instant/);assert.equal(activityState(global,Date.parse('2026-11-14T02:00Z')).status,'in_progress');assert.equal(activityWindows(global).length,0);
 });
-test('feed contains 17 unique events with complete evidence fields without mutating catalog release states',()=>{
- const before=JSON.stringify(data);assert.equal(events.length,17);assert.equal(new Set(events.map(r=>r.event_id )).size,17);
- const statuses=events.map(r=>activityState(r,Date.parse('2026-10-31T00:00Z')).status);assert.equal(statuses.filter(s=>s==='in_progress').length,1);assert.equal(statuses.filter(s=>s==='upcoming').length,15);assert.equal(statuses.filter(s=>s==='ended').length,1);
- for(const r of events){for(const f of ['conditions_zh','conditions_en','eligible_zh','eligible_en','checked_on','background_type','artwork_status'])assert.ok(r.activity[f],r.event_id+' '+f);assert.ok(r.activity.sources.length);for(const f of ['remote_participation','remote_background'])assert.ok(['confirmed','inferred','pending'].includes(r.activity[f].basis));}
+test('feed contains 21 unique events with complete evidence fields without mutating catalog release states',()=>{
+ const before=JSON.stringify(data);assert.equal(events.length,21);assert.equal(new Set(events.map(r=>r.event_id )).size,21);
+ const statuses=events.map(r=>activityState(r,Date.parse('2026-10-31T00:00Z')).status);assert.equal(statuses.filter(s=>s==='in_progress').length,1);assert.equal(statuses.filter(s=>s==='upcoming').length,19);assert.equal(statuses.filter(s=>s==='ended').length,1);
+ for(const r of events.filter(r=>r.activity.kind!=='event')){for(const f of ['conditions_zh','conditions_en','eligible_zh','eligible_en','checked_on','background_type','artwork_status'])assert.ok(r.activity[f],r.event_id+' '+f);assert.ok(r.activity.sources.length);for(const f of ['remote_participation','remote_background'])assert.ok(['confirmed','inferred','pending'].includes(r.activity[f].basis));}
  const sorted=sortActivityEvents(events,Date.parse('2026-10-31T00:00Z'));assert.equal(sorted[0].event_id,'dia-de-muertos-cubone-2026');assert.equal(sorted.at(-1).event_id,'night-out-los-angeles-2026');assert.equal(JSON.stringify(data),before);
  assert.equal(data.records.length,281);assert.equal(data.records.filter(r=>r.release_state==='needs-verification').length,3);
  for(const id of ['wild-area-sendai-2026','wild-area-mexico-city-2026'])assert.equal(get(id).activity.remote_background.basis,'confirmed');assert.equal(get('dia-de-muertos-mexico-city-2026').activity.remote_background.basis,'pending');
@@ -43,4 +43,14 @@ test('early research opening has its own exact boundary without releasing artwor
  assert.equal(activityState(r,Date.parse('2026-11-02T00:00Z')).status,'upcoming');assert.equal(r.activity.artwork_status,'pending');assert.equal(r.image_source,null);
  assert.equal(activityEarlyAccess(r,Date.parse('2026-11-06T04:30Z')),null);assert.equal(activityState(r,Date.parse('2026-11-06T04:30Z')).status,'in_progress');assert.equal(JSON.stringify(r),before);
  assert.equal(activityEarlyAccess(get('wild-area-sendai-2026'),Date.parse('2026-11-02T00:00Z')),null);
+});
+
+test('November calendar includes four missing events without asserting a background or unknown raid hours',()=>{
+ for(const id of ['halloween-part-two-2026','minior-leonids-2026','twilight-wishes-2026','super-mega-raid-day-2026-11']){
+  const e=get(id);assert.equal(e.activity.kind,'event');assert.ok(e.activity.sources[0].startsWith('https://pokemongo.com/'));
+ }
+ assert.equal(get('super-mega-raid-day-2026-11').activity.schedule.date_only,true);
+ assert.match(activityTimeLines(get('super-mega-raid-day-2026-11')).local,/待公布/);
+ assert.equal(get('minior-leonids-2026').activity.schedule.start,'2026-11-14T17:00');
+ assert.equal(get('twilight-wishes-2026').activity.schedule.end,'2026-11-30T20:00');
 });

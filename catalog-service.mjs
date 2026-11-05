@@ -56,3 +56,11 @@ export function createCatalogService(client){
 export function publicProduct(row){
  return {id:row.id,sku:row.sku,name:row.name_zh,name_en:row.name_en,aliases:row.aliases??[],dex:row.pokedex_number,dex_numbers:storedPokedexNumbers(row),tags:tagsFor(row),description:row.description_public,price:row.price_is_inquiry?null:row.public_price_twd,status:row.supply_status,images:row.images??[]};
 }
+
+export function sortCatalogProducts(products, order='default') {
+ const rows=[...products];
+ const byName=(a,b)=>String(a.name_zh??'').localeCompare(String(b.name_zh??''),'zh-Hant')||String(a.id).localeCompare(String(b.id));
+ if(order==='name')return rows.sort(byName);
+ if(order==='newest')return rows.sort((a,b)=>(Date.parse(b.created_at)||0)-(Date.parse(a.created_at)||0)||byName(a,b));
+ return rows;
+}

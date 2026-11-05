@@ -27963,7 +27963,7 @@
   ],
   "additional_announced_events": [
     {
-      "name_zh": "深入荒野 2026 新特殊背景",
+      "name_zh": "曠野週 2026 新特殊背景",
       "name_en": "Into the Wild 2026 new Special Background",
       "start_date": "2026-11-09",
       "end_date": "2026-11-13",
@@ -28396,6 +28396,187 @@
         "background_ids": [],
         "uncertainty_zh": "展示開放不等於提前取得背景；其他特殊背景的支援時程待公告。",
         "uncertainty_en": "Display support does not release rewards early; other Special Background dates unannounced."
+      }
+    },
+    {
+      "event_id": "halloween-part-two-2026",
+      "name_zh": "萬聖節2026 Part 2",
+      "name_en": "Halloween 2026 Part 2",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "全球",
+      "region_en": "Global",
+      "start_date": "2026-11-01",
+      "end_date": "2026-11-05",
+      "release_state": "released",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-05",
+      "official_sources": [
+        "https://pokemongo.com/zh-Hant/news/halloween-part-2-2026"
+      ],
+      "notes": [
+        "異色墓仔狗首度登場；一星團體戰包含帽子與披肩皮卡丘、蝴蝶結來悲茶。"
+      ],
+      "notes_en": [
+        "Shiny Greavard debuts. One-star raids feature hat-and-capelet Pikachu and bow-wearing Sinistea."
+      ],
+      "activity": {
+        "id": "halloween-part-two-2026",
+        "kind": "event",
+        "schedule": {
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "rolling_local": true,
+          "start": "2026-11-01T10:00",
+          "end": "2026-11-05T20:00"
+        },
+        "conditions_zh": "異色墓仔狗首度登場；一星團體戰包含帽子與披肩皮卡丘、蝴蝶結來悲茶。",
+        "conditions_en": "Shiny Greavard debuts. One-star raids feature hat-and-capelet Pikachu and bow-wearing Sinistea.",
+        "eligible_zh": "活動日程資訊，背景取得資格依各活動公告。",
+        "eligible_en": "Event schedule. Background eligibility follows each event announcement.",
+        "checked_on": "2026-11-05",
+        "sources": [
+          "https://pokemongo.com/zh-Hant/news/halloween-part-2-2026"
+        ]
+      }
+    },
+    {
+      "event_id": "minior-leonids-2026",
+      "name_zh": "小隕星雨：獅子座流星雨",
+      "name_en": "Minior Showers: Leonids",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "全球",
+      "region_en": "Global",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-19",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-05",
+      "official_sources": [
+        "https://pokemongo.com/zh-Hant/news/minior-meteor-showers-2026"
+      ],
+      "notes": [
+        "流星雨期間有機會在地圖遇見小隕星，捕捉可獲得更多星星沙子。"
+      ],
+      "notes_en": [
+        "Minior may appear in the wild during the meteor shower, with extra Stardust for catches."
+      ],
+      "activity": {
+        "id": "minior-leonids-2026",
+        "kind": "event",
+        "schedule": {
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "rolling_local": true,
+          "start": "2026-11-14T17:00",
+          "end": "2026-11-19T23:59"
+        },
+        "conditions_zh": "流星雨期間有機會在地圖遇見小隕星，捕捉可獲得更多星星沙子。",
+        "conditions_en": "Minior may appear in the wild during the meteor shower, with extra Stardust for catches.",
+        "eligible_zh": "活動日程資訊，背景取得資格依各活動公告。",
+        "eligible_en": "Event schedule. Background eligibility follows each event announcement.",
+        "checked_on": "2026-11-05",
+        "sources": [
+          "https://pokemongo.com/zh-Hant/news/minior-meteor-showers-2026"
+        ]
+      }
+    },
+    {
+      "event_id": "twilight-wishes-2026",
+      "name_zh": "黃昏時分的心願",
+      "name_en": "Twilight Wishes",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "全球",
+      "region_en": "Global",
+      "start_date": "2026-11-24",
+      "end_date": "2026-11-30",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-05",
+      "official_sources": [
+        "https://pokemongo.com/zh-Hant/news/twilight-wishes-2026"
+      ],
+      "notes": [
+        "遇見異色海星星與小灰怪的機率提高；GO Pass里程碑提供活動獎勵。"
+      ],
+      "notes_en": [
+        "Increased Shiny Staryu and Elgyem chances. GO Pass milestones provide event bonuses."
+      ],
+      "activity": {
+        "id": "twilight-wishes-2026",
+        "kind": "event",
+        "schedule": {
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "rolling_local": true,
+          "start": "2026-11-24T10:00",
+          "end": "2026-11-30T20:00"
+        },
+        "conditions_zh": "遇見異色海星星與小灰怪的機率提高；GO Pass里程碑提供活動獎勵。",
+        "conditions_en": "Increased Shiny Staryu and Elgyem chances. GO Pass milestones provide event bonuses.",
+        "eligible_zh": "活動日程資訊，背景取得資格依各活動公告。",
+        "eligible_en": "Event schedule. Background eligibility follows each event announcement.",
+        "checked_on": "2026-11-05",
+        "sources": [
+          "https://pokemongo.com/zh-Hant/news/twilight-wishes-2026"
+        ]
+      }
+    },
+    {
+      "event_id": "super-mega-raid-day-2026-11",
+      "name_zh": "極致超級團體戰日",
+      "name_en": "Super Mega Raid Day",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "全球",
+      "region_en": "Global",
+      "start_date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-05",
+      "official_sources": [
+        "https://pokemongo.com/zh-Hant/news/save-the-date-s24"
+      ],
+      "notes": [
+        "官方已公告11月28日舉行，詳細時段與主角待公告。"
+      ],
+      "notes_en": [
+        "November 28 is officially announced. Event hours and featured Pokémon await announcement."
+      ],
+      "activity": {
+        "id": "super-mega-raid-day-2026-11",
+        "kind": "event",
+        "schedule": {
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "rolling_local": true,
+          "date_only": true,
+          "start_date": "2026-11-28",
+          "end_date": "2026-11-28"
+        },
+        "conditions_zh": "官方已公告11月28日舉行，詳細時段與主角待公告。",
+        "conditions_en": "November 28 is officially announced. Event hours and featured Pokémon await announcement.",
+        "eligible_zh": "活動日程資訊，背景取得資格依各活動公告。",
+        "eligible_en": "Event schedule. Background eligibility follows each event announcement.",
+        "checked_on": "2026-11-05",
+        "sources": [
+          "https://pokemongo.com/zh-Hant/news/save-the-date-s24"
+        ]
       }
     }
   ],

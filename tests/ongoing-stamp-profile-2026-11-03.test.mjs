@@ -16,5 +16,5 @@ test('profile rollout is a feature event with no new capture entitlement or cata
  assert.equal(activityState(e,Date.parse('2026-11-06T01:59:59Z')).status,'upcoming');assert.equal(activityState(e,Date.parse('2026-11-06T02:00Z')).status,'in_progress');assert.match(activityTimeLines(e,'en').local,/Each region/);assert.match(e.activity.conditions_zh,/11\/9/);assert.match(e.activity.uncertainty_en,/does not release rewards early/);
  assert.throws(()=>activityState({activity:{schedule:{start:'2026-11-03T10:00',zone:'Asia/Taipei'}}}));
  assert.equal(data.records.length,281);assert.equal(filterBackgrounds(data.records).length,274);assert.equal(Object.values(data.counts).reduce((a,b)=>a+b,0),281);
- const states=events.map(e=>activityState(e,Date.parse('2026-11-03T09:00Z')).status);assert.equal(states.filter(s=>s==='in_progress').length,4);assert.equal(states.filter(s=>s==='upcoming').length,12);assert.equal(states.filter(s=>s==='ended').length,1);
+ const states=events.map(e=>activityState(e,Date.parse('2026-11-03T09:00Z')).status);assert.equal(states.filter(s=>s==='in_progress').length,5);assert.equal(states.filter(s=>s==='upcoming').length,15);assert.equal(states.filter(s=>s==='ended').length,1);
 });

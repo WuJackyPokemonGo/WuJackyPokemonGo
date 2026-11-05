@@ -10,3 +10,12 @@ test('catalog pagination does not truncate at first 200 records',async()=>{const
 test('public DTO strips accidentally provided private fields',()=>{const p=publicProduct({id:'p',name_zh:'A',price_is_inquiry:true,public_price_twd:9,unit_cost_twd:5,quantity_on_hand:99,source_reference:'private',tags:[]});assert.equal(p.price,null);assert.equal('quantity_on_hand' in p,false);assert.equal('unit_cost_twd' in p,false);assert.equal('source_reference' in p,false)});
 test('image header detection rejects SVG and spoofed formats',()=>{assert.equal(imageType(new Uint8Array([255,216,255])).mime,'image/jpeg');assert.equal(imageType(new Uint8Array([137,80,78,71,13,10,26,10])).mime,'image/png');assert.throws(()=>imageType(new TextEncoder().encode('<svg/>')))});
 test('image metadata failure never deletes an uncertain upload',async()=>{const uploads=[];const s=createCatalogService({storage:{from:()=>({upload:async(path)=>{uploads.push(path);return{data:{},error:null}}})},from:()=>({insert(){return this},select(){return this},single:async()=>({error:Error('disconnected after metadata commit')})})});await assert.rejects(s.addImage('p',{original:new Blob(['x'],{type:'image/png'}),thumbnail:new Blob([new Uint8Array([82,73,70,70,0,0,0,0,87,69,66,80])],{type:'image/webp'}),extension:'png',alt:'x'}),/disconnected/);assert.equal(uploads.length,2);assert.match(uploads[0],/original.png$/);assert.match(uploads[1],/thumb.webp$/)});
+
+test('admin sorting preserves the default order and supports newest and name without mutating input',async()=>{
+ const {sortCatalogProducts}=await import('../catalog-service.mjs');
+ const products=[{id:'b',name_zh:'B',created_at:'2026-11-01'},{id:'a',name_zh:'A',created_at:'2026-11-03'},{id:'c',name_zh:'C',created_at:null}];
+ assert.deepEqual(sortCatalogProducts(products).map(p=>p.id),['b','a','c']);
+ assert.deepEqual(sortCatalogProducts(products,'newest').map(p=>p.id),['a','b','c']);
+ assert.deepEqual(sortCatalogProducts(products,'name').map(p=>p.id),['a','b','c']);
+ assert.deepEqual(products.map(p=>p.id),['b','a','c']);
+});
