@@ -9,10 +9,10 @@ test('IANA conversions preserve Mexico, half-hour India and date-specific daylig
  assert.equal(zoneOffset(zonedInstant('2026-11-10T12:00','Europe/London'),'Europe/London'),'UTC+00:00');
  assert.throws(()=>zonedInstant('2026-03-08T02:30','America/Los_Angeles'));assert.throws(()=>zonedInstant('2026-02-30T10:00','Asia/Taipei'));
 });
-test('conflicting starts remain unresolved between candidates and end boundary is exclusive',()=>{
+test('official Mexico City event starts at 10:00 and its end boundary is exclusive',()=>{
  const r=get('dia-de-muertos-mexico-city-2026');
- for(const [time,status]of [['2026-10-31T15:59Z','upcoming'],['2026-10-31T16:00Z','time_unknown'],['2026-10-31T19:59Z','time_unknown'],['2026-10-31T20:00Z','in_progress'],['2026-11-06T02:00Z','ended']])assert.equal(activityState(r,Date.parse(time)).status,status,time);
- const t=activityTimeLines(r);assert.match(t.taiwan,/2026\/11\/01 00:00 或 2026\/11\/01 04:00/);assert.match(t.taiwan,/2026\/11\/06 10:00/);
+ for(const [time,status]of [['2026-10-31T15:59Z','upcoming'],['2026-10-31T16:00Z','in_progress'],['2026-10-31T19:59Z','in_progress'],['2026-10-31T20:00Z','in_progress'],['2026-11-06T02:00Z','ended']])assert.equal(activityState(r,Date.parse(time)).status,status,time);
+ const t=activityTimeLines(r);assert.match(t.taiwan,/2026\/11\/01 00:00/);assert.match(t.taiwan,/2026\/11\/06 10:00/);
 });
 test('reported Mexico windows replace broad inferred hours without asserting official confirmation',()=>{
  const r=get('dia-de-muertos-mexico-city-2026'),windows=activityWindows(r);assert.equal(windows.length,4);

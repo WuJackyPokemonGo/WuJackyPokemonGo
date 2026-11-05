@@ -28125,7 +28125,7 @@
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2026",
-      "checked_on": "2026-11-03",
+      "checked_on": "2026-11-05",
       "region_en": "Global",
       "region_zh": "全球",
       "notes_en": [
@@ -28159,14 +28159,51 @@
           "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
           "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
         },
-        "checked_on": "2026-11-03",
+        "checked_on": "2026-11-05",
         "sources": [
           "https://pokemongo.com/en/gowildarea/global",
           "https://pokemongo.com/news/shadow-raid-max-battle-update"
         ],
         "background_type": "special",
         "artwork_status": "pending"
-      }
+      },
+      "pokemon": [
+        {
+          "dex": 68,
+          "name_zh": "怪力（現代夾克）",
+          "name_en": "Machamp wearing a modern jacket"
+        },
+        {
+          "dex": 483,
+          "name_zh": "帝牙盧卡（極巨化）",
+          "name_en": "Dynamax Dialga"
+        },
+        {
+          "dex": 484,
+          "name_zh": "帕路奇亞（極巨化）",
+          "name_en": "Dynamax Palkia"
+        },
+        {
+          "dex": 643,
+          "name_zh": "萊希拉姆",
+          "name_en": "Reshiram"
+        },
+        {
+          "dex": 644,
+          "name_zh": "捷克羅姆",
+          "name_en": "Zekrom"
+        },
+        {
+          "dex": 646,
+          "name_zh": "酋雷姆",
+          "name_en": "Kyurem"
+        },
+        {
+          "dex": 884,
+          "name_zh": "鋁鋼龍（超極巨化）",
+          "name_en": "Gigantamax Duraludon"
+        }
+      ]
     },
     {
       "event_id": "dynamax-trails-2026",

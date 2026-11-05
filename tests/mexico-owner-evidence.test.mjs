@@ -3,7 +3,7 @@ const data=JSON.parse(readFileSync(new URL('../data/backgrounds.json',import.met
 test('Mexico owner catches become one released independent record without duplicate announcement or stock',()=>{
  assert.equal(r.artwork_reuse.background_id,'BG-0008');assert.equal(r.artwork_reuse.basis,'visual-comparison');assert.match(r.artwork_note_zh,/不是新增背景圖樣/);assert.equal(r.release_state,'released');assert.equal(r.type,'location');assert.deepEqual(r.pokemon.map(p=>p.dex),[94,355]);assert.equal(r.pokemon[0].variant_id,'gengar-gigantamax');assert.deepEqual(r.evolved_pokemon.map(p=>p.dex),[356,477]);assert.ok(r.evolved_pokemon.every(p=>p.acquisition==='evolution'));
  assert.equal(collectActivityEvents(data).filter(e=>e.event_id==='dia-de-muertos-mexico-city-2026').length,1);assert.ok(!data.additional_announced_events.some(e=>e.activity?.id==='dia-de-muertos-mexico-city-2026'));
- assert.ok(filterBackgrounds(data.records).includes(r));assert.deepEqual(r.related_product_ids,[]);assert.equal(r.activity.remote_background.basis,'pending');assert.equal(r.activity.schedule.basis,'pending');assert.equal(r.activity.artwork_status,'existing');
+ assert.ok(filterBackgrounds(data.records).includes(r));assert.deepEqual(r.related_product_ids,[]);assert.equal(r.activity.remote_background.basis,'pending');assert.equal(r.activity.schedule.basis,'confirmed');assert.equal(r.activity.artwork_status,'existing');
  assert.equal(by('BG-0213').release_state,'upcoming');assert.deepEqual(by('BG-0278').pokemon.map(p=>p.dex),[104]);assert.deepEqual(groupBackgroundCards(data.records).filter(c=>c.activity_id).map(c=>c.activity_id),['ancients-recovered']);
 });
 test('public artwork reuses the existing Mexico City Eevee asset without displaying owner photos',()=>{
