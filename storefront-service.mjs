@@ -18,8 +18,18 @@ export function stockLabel(p,locale='zh'){
  return p.is_low_stock||p.status==='low_stock'?{text:tr(`剩餘 ${p.stock_quantity.toLocaleString('zh-TW')} 帳`,`${p.stock_quantity.toLocaleString('en-US')} left`,locale),tone:'low'}:{text:tr(`庫存：${p.stock_quantity.toLocaleString('zh-TW')} 帳`,`In stock: ${p.stock_quantity.toLocaleString('en-US')}`,locale),tone:'normal'};
 }
 export function imageURL(path){const asset=catalogAssetPath(path);if(asset)return asset;if(!/^[0-9a-f-]{36}\/[0-9a-f-]{36}-thumb\.(webp|png)$/i.test(String(path)))return '';return PUBLIC_STORAGE+String(path).split('/').map(encodeURIComponent).join('/')}
-export function monthTaipei(value){const d=new Date(value);if(!Number.isFinite(d.getTime()))return '';const parts=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit'}).formatToParts(d);return parts.find(x=>x.type==='year').value+'-'+parts.find(x=>x.type==='month').value}
-export function tagsFor(p){const tags=(p.tags??[]).filter(t=>t!=='本月新庫存');return p.first_stocked_at&&monthTaipei(p.first_stocked_at)===monthTaipei(new Date())?[...tags,'本月新庫存']:tags}
+export const RECENT_STOCK_TAG='最近新庫存';
+const taipeiDate=new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'});
+function taipeiDay(value){
+ const date=new Date(value);
+ return Number.isFinite(date.getTime())?Date.parse(taipeiDate.format(date)+'T00:00:00Z')/86400000:NaN;
+}
+export function tagsFor(p,now=new Date()){
+ const tags=(p.tags??[]).filter(tag=>tag!=='本月新庫存'&&tag!==RECENT_STOCK_TAG);
+ const age=p.first_stocked_at?taipeiDay(now)-taipeiDay(p.first_stocked_at):NaN;
+ if(age>=0&&age<14)tags.push(RECENT_STOCK_TAG);
+ return tags;
+}
 export function searchMatch(p,keyword){
  const normalize=v=>String(v??'').normalize('NFKC').toLowerCase().replace(/\s+/g,'');
  const term=normalize(keyword),aliases=p.aliases??[];

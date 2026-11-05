@@ -1,3 +1,4 @@
+import {tagsFor} from './storefront-service.mjs';
 import {parsePokedexNumbers,storedPokedexNumbers} from './pokedex-numbers.mjs';
 import {catalogAssetPath} from './catalog-assets.mjs';
 import {productPayload} from './cloud-admin-service.mjs';
@@ -52,7 +53,6 @@ export function createCatalogService(client){
   async updateImage(id,values){if(!Number.isInteger(values.sort_order)||values.sort_order<0||values.sort_order>2147483647||String(values.alt_text).length>200)throw Error('圖片順序或說明無效。');if(values.is_approved){const image=checked(await client.from('product_images').select('id,product_id,thumbnail_path,public_path,products(is_live)').eq('id',id).single());if(image.products?.is_live)await publishThumbnail(image)}if(!Number.isInteger(values.sort_order)||values.sort_order<0||values.sort_order>2147483647||String(values.alt_text).length>200)throw Error('圖片順序或說明無效。');return checked(await client.from('product_images').update({sort_order:values.sort_order,alt_text:values.alt_text,is_approved:Boolean(values.is_approved)}).eq('id',id).select('id').single())}
  };
 }
-export function monthKeyTaipei(value){const d=new Date(value);if(!Number.isFinite(d.getTime()))return '';return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit'}).format(d)}
 export function publicProduct(row){
- return {id:row.id,sku:row.sku,name:row.name_zh,name_en:row.name_en,aliases:row.aliases??[],dex:row.pokedex_number,dex_numbers:storedPokedexNumbers(row),tags:[...(row.tags??[]),...(row.first_stocked_at&&monthKeyTaipei(row.first_stocked_at)===monthKeyTaipei(new Date())?['本月新庫存']:[])],description:row.description_public,price:row.price_is_inquiry?null:row.public_price_twd,status:row.supply_status,images:row.images??[]};
+ return {id:row.id,sku:row.sku,name:row.name_zh,name_en:row.name_en,aliases:row.aliases??[],dex:row.pokedex_number,dex_numbers:storedPokedexNumbers(row),tags:tagsFor(row),description:row.description_public,price:row.price_is_inquiry?null:row.public_price_twd,status:row.supply_status,images:row.images??[]};
 }

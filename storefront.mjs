@@ -2,7 +2,7 @@ import {productLink} from './product-link.mjs';
 import {tr,t,getLocale,setLocale,productName,productDescription,bindStaticTranslations,initLanguageHint} from './storefront-locale.mjs';
 import {applyContactLink,initContactLinks} from './contact.mjs';
 import {initAnalytics} from './analytics.mjs';
-import {loadPublicCatalog,imageURL,tagsFor,searchMatch,inquiryText,stockLabel} from './storefront-service.mjs';
+import {loadPublicCatalog,imageURL,tagsFor,RECENT_STOCK_TAG,searchMatch,inquiryText,stockLabel} from './storefront-service.mjs';
 const $=id=>document.getElementById(id),money=v=>v==null?t('私訊詢價'):'NT$ '+v.toLocaleString('zh-TW');
 const translateStatic=bindStaticTranslations();translateStatic();initContactLinks();const track=initAnalytics();let searchTimer=null,lastSearch='',messageTimer=null;
 const statusLabels={available:'可供貨',low_stock:'庫存偏低',sold_out:'已售罄',inquiry_only:'供貨待確認',coming_soon:'即將推出'};
@@ -23,7 +23,7 @@ function renderProducts(){
  if(!list.length){const empty=el('div',null,'empty');empty.append(el('h2',products.length?t('沒有符合的商品'):t('商品陸續整理中')),el('p',products.length?t('試試其他名稱或分類。'):t('新商品會陸續上架，歡迎稍後回來查看。')));const link=applyContactLink(el('a','','line-link'),t('透過官方 LINE 詢問'));empty.append(link);box.append(empty);return}
  for(const p of list){
   const card=el('article',null,'card'+(p.status==='sold_out'?' card-sold-out':'')),body=el('div',null,'cardbody'),media=button('',()=>openDetail(p),'product-media');media.setAttribute('aria-label',tr('查看商品：','View product: ')+productName(p));media.append(cover(p),status(p));
-  const tags=el('div',null,'product-tags');for(const tag of tagsFor(p)){const tone=tag.includes('背景')?' tag-background':tag==='色違'?' tag-shiny':tag==='本月新庫存'?' tag-new':tag.includes('LV.1')?' tag-level':'';tags.append(el('span',t(tag),'product-tag'+tone))}
+  const tags=el('div',null,'product-tags');for(const tag of tagsFor(p)){const tone=tag.includes('背景')?' tag-background':tag==='色違'?' tag-shiny':tag===RECENT_STOCK_TAG?' tag-new':tag.includes('LV.1')?' tag-level':'';tags.append(el('span',t(tag),'product-tag'+tone))}
   const purchase=el('div',null,'card-purchase'),price=el('div',null,'price');if(p.price!=null){price.append(el('small','NT$'),el('strong',p.price.toLocaleString('zh-TW')))}else{price.classList.add('price-inquiry');price.textContent=t('私訊詢價')}
   purchase.append(price,stock(p));const actions=el('div',null,'card-actions'),detail=button(t('查看商品'),()=>openDetail(p),'btn alt');detail.setAttribute('aria-label',tr('查看商品：','View product: ')+productName(p));
   const label=p.status==='coming_soon'?t('即將推出'):p.status==='sold_out'?tr('詢問補貨','Restock inquiry'):tr('＋ 加入清單','＋ Add to list');const add=button(label,()=>addToInquiry(p),'btn card-add');add.disabled=p.status==='coming_soon';add.setAttribute('aria-label',(p.status==='sold_out'?tr('詢問補貨：','Restock inquiry: '):tr('加入詢價清單：','Add to inquiry list: '))+productName(p));actions.append(detail,add);

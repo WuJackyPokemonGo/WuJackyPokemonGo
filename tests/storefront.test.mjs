@@ -1,12 +1,21 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {loadPublicCatalog,searchMatch,imageURL,inquiryText,tagsFor,monthTaipei,publicStockFields,stockLabel} from '../storefront-service.mjs';
+import {loadPublicCatalog,searchMatch,imageURL,inquiryText,tagsFor,publicStockFields,stockLabel} from '../storefront-service.mjs';
 const p={id:'p',sku:'WJ-001',name:'木守宮',name_en:'Treecko',aliases:['色違'],dex:252,tags:['背景'],images:[],price:100,status:'available'};
 test('public catalog fetch uses only the read endpoint and parses pagination',async()=>{const calls=[];const rows=await loadPublicCatalog(async(url,options)=>{const body=JSON.parse(options.body);calls.push({url,body});return{ok:true,json:async()=>Array.from({length:body.p_offset===0?100:1},()=>p)}});assert.equal(rows.length,101);assert.equal(calls[1].body.p_offset,100);assert.ok(calls.every(x=>x.url.endsWith('/rpc/storefront_catalog')))});
 test('public loader reports unavailable or malformed data instead of fabricating inventory',async()=>{await assert.rejects(loadPublicCatalog(async()=>({ok:false})));await assert.rejects(loadPublicCatalog(async()=>({ok:true,json:async()=>[{id:1}]})))});
 test('search supports Traditional Chinese, English spaces and leading-zero dex',()=>{assert.ok(searchMatch(p,'TREE CKO'));assert.ok(searchMatch(p,'木守宮'));assert.ok(searchMatch(p,'0252'));assert.ok(searchMatch(p,'背景'));assert.equal(searchMatch(p,'不存在'),false)});
 test('images accept only public thumbnail paths, never original private objects or arbitrary URLs',()=>{assert.equal(imageURL('https://evil.example/p.png'),'');assert.equal(imageURL('p/secret-original.jpg'),'');const u='11111111-1111-4111-8111-111111111111';assert.ok(imageURL(u+'/'+u+'-thumb.webp').includes('/object/public/storefront-thumbnails/'));assert.ok(imageURL(u+'/'+u+'-thumb.png').includes('/object/public/storefront-thumbnails/'));assert.equal(imageURL(u+'/'+u+'-original.png'),'')});
 test('inquiry distinguishes unknown prices and sold-out items without treating it as an order',()=>{const text=inquiryText([p,{...p,id:'q',name:'未知價格',price:null,status:'sold_out'}],[{id:'p',qty:2},{id:'q',qty:1}],'想確認供貨');assert.match(text,/NT\$ 200/);assert.match(text,/不含詢價商品/);assert.match(text,/已售罄/);assert.match(text,/不代表訂單成立/);assert.match(text,/想確認供貨/)});
-test('monthly-stock tags use Taiwan month boundaries',()=>{assert.equal(monthTaipei('2026-09-30T16:00:00Z'),'2026-10');assert.equal(tagsFor({...p,tags:['本月新庫存'],first_stocked_at:'2000-01-01'}).includes('本月新庫存'),false)});
+test('recent stock includes 14 Taiwan dates across months and ignores stored stock tags',()=>{
+ const now='2026-11-01T16:00:00Z';
+ const tags=['背景','本月新庫存','最近新庫存'];
+ for(const date of ['2026-10-19T16:00:00Z','2026-11-01T16:00:00Z']){
+  assert.deepEqual(tagsFor({tags,first_stocked_at:date},now),['背景','最近新庫存']);
+ }
+ for(const date of ['2026-10-19T15:59:59Z','2026-11-02T16:00:00Z',null,'invalid']){
+  assert.deepEqual(tagsFor({tags,first_stocked_at:date},now),['背景']);
+ }
+});
 test('normal public stock shows the real account quantity',()=>assert.deepEqual(stockLabel(publicStockFields('available',77,3)),{text:'庫存：77 帳',tone:'normal'}));
 test('low stock uses an orange badge at the product threshold, without changing order',()=>{const rows=[{id:'first',...publicStockFields('available',77,3)},{id:'second',...publicStockFields('available',2,3)}];assert.deepEqual(stockLabel(rows[1]),{text:'剩餘 2 帳',tone:'low'});assert.deepEqual(rows.map(r=>r.id),['first','second']);assert.equal(publicStockFields('available',3,3).is_low_stock,true);assert.equal(publicStockFields('available',3,2).is_low_stock,false)});
 test('zero stock displays sold out rather than an urgent low-stock claim',()=>assert.deepEqual(stockLabel(publicStockFields('available',0,3)),{text:'已售罄',tone:'sold'}));
