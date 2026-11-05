@@ -19,3 +19,13 @@ test('admin sorting preserves the default order and supports newest and name wit
  assert.deepEqual(sortCatalogProducts(products,'name').map(p=>p.id),['a','b','c']);
  assert.deepEqual(products.map(p=>p.id),['b','a','c']);
 });
+
+test('newest sorting uses creation dates returned by the catalog list query',async()=>{
+ const {sortCatalogProducts}=await import('../catalog-service.mjs');
+ const records=[{id:'old',name_zh:'A',created_at:'2026-11-01T00:00:00Z'},{id:'new',name_zh:'Z',created_at:'2026-11-05T00:00:00Z'}];
+ let selection;
+ const service=createCatalogService({from:()=>({select(fields){selection=fields;return this},order(){return this},async range(){return {data:records.map(row=>Object.fromEntries(Object.entries(row).filter(([key])=>selection.split(',').includes(key)))),error:null}}})});
+ const loaded=await service.list();
+ assert.deepEqual(sortCatalogProducts(loaded,'newest').map(p=>p.id),['new','old']);
+ assert.deepEqual(sortCatalogProducts(loaded,'name').map(p=>p.id),['old','new']);
+});
