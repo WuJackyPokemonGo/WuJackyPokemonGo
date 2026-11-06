@@ -16521,7 +16521,7 @@
       "verification": "official-event-confirmed",
       "background_id": "BG-0212",
       "name_zh": "曠野地帶 2026 仙台 東北",
-      "release_state": "upcoming",
+      "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/gowildarea/sendai/gameplay",
         "https://pokemongo.com/news/go-wild-area-stamp-rally-details-2026"
@@ -28595,9 +28595,9 @@
   },
   "counts": {
     "catalog-crosschecked": 55,
-    "official-event-confirmed": 219,
+    "official-event-confirmed": 220,
     "catalogued-needs-event-check": 3,
-    "upcoming": 4
+    "upcoming": 3
   },
   "review_counts": {
     "date_details_pending": 3,
