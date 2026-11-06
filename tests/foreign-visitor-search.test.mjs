@@ -32,3 +32,12 @@ test('inquiries in other languages keep the Chinese product name for the owner',
  const ja=inquiryText([p],[{id:'x',qty:2}],'','ja');assert.match(ja,/Pikachu - Test（皮卡丘-測試） × 2/);
  const zh=inquiryText([p],[{id:'x',qty:1}],'','zh');assert.match(zh,/皮卡丘-測試 × 1/);assert.ok(!zh.includes('（皮卡丘-測試）'));
 });
+test('every translation row and region name covers all nine languages',async()=>{
+ const {additionalLocales}=await import('../storefront-translations.mjs');const {backgroundLabels}=await import('../backgrounds-translations.mjs');const {REGION_NAMES}=await import('../region-names.mjs');
+ assert.deepEqual(additionalLocales,['ja','ko','vi','th','id','es','pt']);
+ const src=readFileSync(new URL('../storefront-translations.mjs',import.meta.url),'utf8');const rows=[...src.matchAll(/^ '(?:[^'\\]|\\.)*'\s*:\s*\[(.*)\],?$/gm)];assert.ok(rows.length>100);
+ for(const m of rows)assert.equal(JSON.parse('['+m[1].replace(/'/g,'"')+']').length,7,m[0].slice(0,40));
+ for(const [k,v] of Object.entries(backgroundLabels))assert.equal(v.length,7,k);
+ for(const [k,v] of Object.entries(REGION_NAMES))assert.equal(v.length,7,k);
+ for(const p of ['../index.html','../backgrounds.html']){const html=readFileSync(new URL(p,import.meta.url),'utf8');for(const [code,flag] of [['zh','🇹🇼'],['en','🇺🇸'],['ja','🇯🇵'],['ko','🇰🇷'],['vi','🇻🇳'],['th','🇹🇭'],['id','🇮🇩'],['es','🇪🇸'],['pt','🇧🇷']])assert.ok(html.includes(`<option value="${code}">${flag} `),p+' '+code)}
+});
