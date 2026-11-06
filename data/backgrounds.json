@@ -26228,16 +26228,6 @@
           "name_zh": "萊希拉姆"
         },
         {
-          "dex": 643,
-          "name_en": "Reshiram",
-          "name_zh": "萊希拉姆"
-        },
-        {
-          "dex": 644,
-          "name_en": "Zekrom",
-          "name_zh": "捷克羅姆"
-        },
-        {
           "dex": 644,
           "name_en": "Zekrom",
           "name_zh": "捷克羅姆"
@@ -26412,7 +26402,8 @@
         "https://pokemongo.com/news/road-of-legends-2026"
       ],
       "notes": [
-        "背景取得期間為 2026/7/6～7/12；Road of Legends 主活動為 7/6～7/10，之後銜接 GO Fest 全球活動。"
+        "背景取得期間為 2026/7/6～7/12；Road of Legends 主活動為 7/6～7/10，之後銜接 GO Fest 全球活動。",
+        "2026-11-06：原名單萊希拉姆、捷克羅姆各列兩次，為7/6五星團體戰與之後再度登場（捷克羅姆週二、萊希拉姆週三）重複計入，同一背景款式只保留一筆。依據：LeekDuck GO Fest 2026特殊背景頁。"
       ],
       "related_product_ids": [],
       "method_zh": "指定五星、原始及超級團體戰捕獲後，有機會帶特殊背景；各寶可夢出現日期不同。",
@@ -26432,7 +26423,10 @@
       "reference_ids": [
         "roadoflegends"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "catalog_sources": [
+        "https://leekduck.com/gofest-2026/special-backgrounds/"
+      ]
     },
     {
       "name_en": "Mewtwo",

@@ -18,9 +18,9 @@ test('declared review counts match the records that are still pending',()=>{
  assert.deepEqual(date,['BG-0072','BG-0276','BG-0277']);assert.deepEqual(method,['BG-0072','BG-0190','BG-0238','BG-0276','BG-0277']);
  assert.deepEqual(d.review_counts,{date_details_pending:3,acquisition_method_pending:5,backgrounds_pending:3});
 });
-test('form variants carry a Chinese form label so zh entries are distinguishable',()=>{
+test('form variants carry a Chinese form label and no record repeats an identical encounter',()=>{
  for(const r of d.records)for(const p of [...r.pokemon??[],...r.evolved_pokemon??[]])
   if(/Origin|Therian|Attack|Defense|Speed|Drive/.test(p.name_en??'')&&[386,483,484,487,641,642,645,649,905].includes(p.dex))assert.match(p.name_zh,/（.+(形態|卡帶)）$/,r.background_id+' '+p.name_en);
  const dupes=[];for(const r of d.records){const seen=new Map();for(const p of r.pokemon??[]){const k=p.dex+'|'+p.name_zh+'|'+p.name_en+'|'+(p.variant_id??'');seen.set(k,(seen.get(k)??0)+1)}for(const [k,n] of seen)if(n>1)dupes.push(r.background_id+' '+k)}
- assert.deepEqual(dupes,['BG-0257 643|萊希拉姆|Reshiram|','BG-0257 644|捷克羅姆|Zekrom|'],'only the known Road of Legends pair awaits a source check');
+ assert.deepEqual(dupes,[],'no record lists the same encounter twice');
 });
