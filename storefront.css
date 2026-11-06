@@ -59,9 +59,11 @@ body{
 .region-slide{margin:0;min-width:0;position:relative;background:var(--region-b)}
 .region-slide img{display:block;width:100%;height:auto;aspect-ratio:3/8;object-fit:contain}
 .region-slide figcaption{padding:8px 2px;text-align:center;font-size:11px;font-weight:650;line-height:1.5;background:#fff8eae8;color:#37404c}
-.region-slide figcaption span[lang="en"]{display:none}
+.region-slide figcaption span[lang="en"],.region-slide figcaption span[lang="ja"],.region-slide figcaption span[lang="ko"],.region-slide figcaption span[lang="vi"],.region-slide figcaption span[lang="th"]{display:none}
 html[lang="en"] .region-slide figcaption span[lang="en"]{display:inline}
 html[lang="en"] .region-slide figcaption span[lang="zh-Hant"]{display:none}
+html[lang="ja"] .region-slide figcaption span[lang="ja"],html[lang="ko"] .region-slide figcaption span[lang="ko"],html[lang="vi"] .region-slide figcaption span[lang="vi"],html[lang="th"] .region-slide figcaption span[lang="th"]{display:inline}
+html:not([lang="zh-Hant"]) .region-slide figcaption span[lang="zh-Hant"]{display:none}
 .region-carousel-controls{display:none}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media(max-width:900px){
