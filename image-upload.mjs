@@ -10,11 +10,13 @@ export async function encodeThumbnail(canvas){
  }
  throw Error('圖片縮圖產生失敗，請重新選取圖片後再試。');
 }
+// Thumbnails are shown at about 180–360 px wide; Safari can only encode PNG, so keep shrinking toward a light file.
+export const THUMBNAIL_TARGET_BYTES=400*1024,THUMBNAIL_MIN_EDGE=480;
 export async function createThumbnail(img,{createCanvas=()=>document.createElement('canvas'),encode=encodeThumbnail}={}){
  const canvas=createCanvas();let limit=900;
  for(let attempt=0;attempt<7;attempt++){
   const scale=Math.min(1,limit/Math.max(img.naturalWidth,img.naturalHeight));canvas.width=Math.max(1,Math.round(img.naturalWidth*scale));canvas.height=Math.max(1,Math.round(img.naturalHeight*scale));const context=canvas.getContext('2d');if(!context)throw Error('此瀏覽器暫時無法處理圖片，請重新開啟後台後再試。');context.drawImage(img,0,0,canvas.width,canvas.height);
-  const blob=await encode(canvas);if(blob.size<=2*1024*1024)return blob;limit=Math.max(1,Math.floor(limit*.8));
+  const blob=await encode(canvas);if(blob.size<=THUMBNAIL_TARGET_BYTES||(limit<=THUMBNAIL_MIN_EDGE&&blob.size<=2*1024*1024))return blob;limit=Math.max(1,Math.floor(limit*.8));
  }
  throw Error('圖片縮圖仍超過 2 MB，請選擇較小的圖片後再試。');
 }

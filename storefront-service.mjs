@@ -1,5 +1,6 @@
 import {catalogAssetPath} from './catalog-assets.mjs';
 import {allLocalPokemonNames} from './pokemon-names.mjs';
+import {OPTIMIZED_THUMBNAILS} from './thumbnail-manifest.mjs';
 import {tr,t,productName,supportedLocales} from './storefront-locale.mjs';
 import {STAGING_URL,STAGING_PUBLISHABLE_KEY} from './staging-config.mjs';
 export const PUBLIC_STORAGE=STAGING_URL+'/storage/v1/object/public/storefront-thumbnails/';
@@ -21,7 +22,7 @@ export function stockLabel(p,locale='zh'){
  const template=low?tr('剩餘 {n} 帳','{n} left',locale):tr('庫存：{n} 帳','In stock: {n}',locale);
  return {text:template.replace('{n}',count),tone:low?'low':'normal'};
 }
-export function imageURL(path){const asset=catalogAssetPath(path);if(asset)return asset;if(!/^[0-9a-f-]{36}\/[0-9a-f-]{36}-thumb\.(webp|png)$/i.test(String(path)))return '';return PUBLIC_STORAGE+String(path).split('/').map(encodeURIComponent).join('/')}
+export function imageURL(path){const optimized=Object.hasOwn(OPTIMIZED_THUMBNAILS,String(path))?OPTIMIZED_THUMBNAILS[String(path)]:'';if(optimized)return optimized;const asset=catalogAssetPath(path);if(asset)return asset;if(!/^[0-9a-f-]{36}\/[0-9a-f-]{36}-thumb\.(webp|png)$/i.test(String(path)))return '';return PUBLIC_STORAGE+String(path).split('/').map(encodeURIComponent).join('/')}
 export const RECENT_STOCK_TAG='最近新庫存';
 const taipeiDate=new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'});
 function taipeiDay(value){
