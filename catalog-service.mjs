@@ -61,6 +61,9 @@ export function sortCatalogProducts(products, order='default') {
  const rows=[...products];
  const byName=(a,b)=>String(a.name_zh??'').localeCompare(String(b.name_zh??''),'zh-Hant')||String(a.id).localeCompare(String(b.id));
  if(order==='name')return rows.sort(byName);
- if(order==='newest')return rows.sort((a,b)=>(Date.parse(b.created_at)||0)-(Date.parse(a.created_at)||0)||byName(a,b));
+ if(order==='newest'){
+  const stocked=p=>Date.parse(p.first_stocked_at)||0;
+  return rows.sort((a,b)=>stocked(b)-stocked(a)||(Date.parse(b.created_at)||0)-(Date.parse(a.created_at)||0)||byName(a,b));
+ }
  return rows;
 }
