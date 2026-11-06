@@ -28083,21 +28083,23 @@
         "gwa26-global"
       ],
       "official_sources": [
-        "https://pokemongo.com/en/gowildarea/global"
+        "https://pokemongo.com/en/gowildarea/global",
+        "https://pokemongo.com/news/into-the-wild-2026"
       ],
       "catalog_sources": [
-        "https://pokexperience.com/backgrounds/"
+        "https://pokexperience.com/backgrounds/",
+        "https://leekduck.com/pokemon-go-wild-area/special-backgrounds/"
       ],
       "series": "Other",
       "series_zh": "其他活動",
       "region_en": "Global",
       "region_zh": "多地／全球活動",
-      "start_date": "2026-11-14",
+      "start_date": "2026-11-09",
       "end_date": "2026-11-15",
-      "date_note_zh": "各地當地時間11/14–15 10:00–18:00。",
-      "date_note_en": "November 14–15, 10:00–18:00 local time.",
-      "method_zh": "活動期間團體戰、極巨對戰成功捕獲指定寶可夢有機會附新特殊背景；持票特殊調查的超極巨鋁鋼龍遭遇明列附特殊背景。",
-      "method_en": "Successful catches from eligible raids and Max Battles during the event have a chance of the new Special Background; the ticketed Special Research Gigantamax Duraludon encounter explicitly has it.",
+      "date_note_zh": "曠野週 11/9～11/13；全球週末 11/14～11/15，每日 10:00～18:00（當地時間）。",
+      "date_note_en": "Into the Wild: November 9–13. Global weekend: November 14–15, 10:00–18:00 daily (local time).",
+      "method_zh": "曠野週的指定五星團體戰、五星極巨對戰，以及全球週末的指定團體戰、極巨對戰，成功捕獲均有機會附同款背景。持票的全球特殊調查保證遇到附背景的超極巨鋁鋼龍。",
+      "method_en": "Eligible five-star raid and Max Battle catches during Into the Wild and eligible raid and Max Battle catches during the global weekend can have the same Special Background. The ticketed Global Special Research guarantees a Gigantamax Duraludon encounter with the background.",
       "pokemon": [
         {
           "dex": 68,
@@ -28105,6 +28107,39 @@
           "name_zh": "怪力（現代夾克）",
           "variant_id": "machamp-modern-jacket",
           "acquisition": "encounter"
+        },
+        {
+          "dex": 379,
+          "name_zh": "雷吉斯奇魯（極巨化）",
+          "name_en": "Dynamax Registeel",
+          "acquisition": "encounter",
+          "method_zh": "11/9～11/13 曠野週指定對戰捕獲有機會附背景。",
+          "method_en": "Chance after an eligible battle catch during Into the Wild (November 9–13).",
+          "method_sources": [
+            "https://pokemongo.com/news/into-the-wild-2026"
+          ]
+        },
+        {
+          "dex": 380,
+          "name_zh": "拉帝亞斯（極巨化）",
+          "name_en": "Dynamax Latias",
+          "acquisition": "encounter",
+          "method_zh": "11/9～11/13 曠野週指定對戰捕獲有機會附背景。",
+          "method_en": "Chance after an eligible battle catch during Into the Wild (November 9–13).",
+          "method_sources": [
+            "https://pokemongo.com/news/into-the-wild-2026"
+          ]
+        },
+        {
+          "dex": 381,
+          "name_zh": "拉帝歐斯（極巨化）",
+          "name_en": "Dynamax Latios",
+          "acquisition": "encounter",
+          "method_zh": "11/9～11/13 曠野週指定對戰捕獲有機會附背景。",
+          "method_en": "Chance after an eligible battle catch during Into the Wild (November 9–13).",
+          "method_sources": [
+            "https://pokemongo.com/news/into-the-wild-2026"
+          ]
         },
         {
           "dex": 483,
@@ -28147,6 +28182,39 @@
           "name_zh": "鋁鋼龍（超極巨化）",
           "variant_id": "duraludon-gigantamax",
           "acquisition": "encounter"
+        },
+        {
+          "dex": 888,
+          "name_zh": "蒼響（劍之王團體戰）",
+          "name_en": "Zacian (Crowned Sword raids)",
+          "acquisition": "encounter",
+          "method_zh": "11/9～11/13 曠野週指定對戰捕獲有機會附背景。",
+          "method_en": "Chance after an eligible battle catch during Into the Wild (November 9–13).",
+          "method_sources": [
+            "https://pokemongo.com/news/into-the-wild-2026"
+          ]
+        },
+        {
+          "dex": 889,
+          "name_zh": "藏瑪然特（盾之王團體戰）",
+          "name_en": "Zamazenta (Crowned Shield raids)",
+          "acquisition": "encounter",
+          "method_zh": "11/9～11/13 曠野週指定對戰捕獲有機會附背景。",
+          "method_en": "Chance after an eligible battle catch during Into the Wild (November 9–13).",
+          "method_sources": [
+            "https://pokemongo.com/news/into-the-wild-2026"
+          ]
+        },
+        {
+          "dex": 895,
+          "name_zh": "雷吉鐸拉戈（極巨化）",
+          "name_en": "Dynamax Regidrago",
+          "acquisition": "encounter",
+          "method_zh": "11/9～11/13 曠野週指定對戰捕獲有機會附背景。",
+          "method_en": "Chance after an eligible battle catch during Into the Wild (November 9–13).",
+          "method_sources": [
+            "https://pokemongo.com/news/into-the-wild-2026"
+          ]
         }
       ],
       "notes": [
@@ -28286,13 +28354,13 @@
         "https://pokemongo.com/news/into-the-wild-2026"
       ],
       "notes": [
-        "官方已公告五星團體戰及五星極巨對戰可得新特殊背景；圖樣待確認，暫不計入有圖片的圖鑑款數。"
+        "曠野週與全球週末共用同一款背景。"
       ],
       "type": "special",
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2026",
-      "checked_on": "2026-11-03",
+      "checked_on": "2026-11-06",
       "region_en": "Global",
       "region_zh": "全球",
       "pokemon": [
@@ -28328,7 +28396,7 @@
         }
       ],
       "notes_en": [
-        "November 9 at 10:00–November 13 at 20:00 local time. Eligible five-star raids and five-star Max Battles may award a new Special Background. Artwork awaits confirmation. Dynamax Meltan from GO Pass is not explicitly promised this background."
+        "Into the Wild and the global weekend share one Special Background. Dynamax Meltan from GO Pass is not listed as eligible."
       ],
       "activity": {
         "id": "into-the-wild-2026",
@@ -28353,13 +28421,17 @@
           "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
           "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
         },
-        "checked_on": "2026-11-03",
+        "checked_on": "2026-11-06",
         "sources": [
           "https://pokemongo.com/news/into-the-wild-2026",
-          "https://pokemongo.com/news/shadow-raid-max-battle-update"
+          "https://pokemongo.com/news/shadow-raid-max-battle-update",
+          "https://leekduck.com/pokemon-go-wild-area/special-backgrounds/"
         ],
         "background_type": "special",
-        "artwork_status": "pending"
+        "artwork_status": "catalogued",
+        "background_ids": [
+          "BG-0284"
+        ]
       }
     },
     {
