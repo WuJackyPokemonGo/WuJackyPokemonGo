@@ -10,7 +10,7 @@ export function resolveLocale(saved,languages=[],fallback='zh-Hant',requested=nu
  if(supportedLocales.includes(saved))return saved;
  const preferred=languages.find(value=>typeof value==='string'&&value.trim())||fallback;
  const language=preferred.trim().toLowerCase().split('-')[0];
- return supportedLocales.includes(language)?language:'en';
+ return language==='zh'?'zh':'en';
 }
 let savedLocale=null;try{savedLocale=localStorage.getItem('wj_store_locale')}catch{}
 let requestedLocale=null;try{requestedLocale=new URL(location.href).searchParams.get('lang')}catch{}

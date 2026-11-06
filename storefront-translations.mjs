@@ -1,3 +1,5 @@
+import {backgroundLabels} from './backgrounds-translations.mjs';
+
 // Column order matches the additional storefront locale codes.
 export const additionalLocales = ['ja', 'ko', 'vi', 'th'];
 
@@ -110,4 +112,4 @@ const rows = {
  '匿名統計只累計瀏覽與清單操作，保留 30 天；不記錄姓名、聯絡資料、完整 IP 或搜尋文字，並遵守瀏覽器隱私設定。': ['閲覧とリスト操作のみを匿名で集計し、30日間保存します。氏名、連絡先、完全なIPアドレス、検索語は記録せず、ブラウザーのプライバシー設定に従います。','조회 및 목록 동작만 익명으로 집계하며 30일간 보관합니다. 이름, 연락처, 전체 IP 주소, 검색어를 기록하지 않으며 브라우저 개인정보 설정을 따릅니다.','Chỉ đếm lượt xem và thao tác danh sách, lưu trong 30 ngày. Không ghi tên, thông tin liên hệ, địa chỉ IP đầy đủ hay từ khóa tìm kiếm và tôn trọng cài đặt quyền riêng tư của trình duyệt.','นับเฉพาะการเข้าชมและการใช้งานรายการ เก็บไว้ 30 วัน ไม่บันทึกชื่อ ข้อมูลติดต่อ ที่อยู่ IP แบบเต็ม หรือคำค้นหา และปฏิบัติตามการตั้งค่าความเป็นส่วนตัวของเบราว์เซอร์'],
 };
 
-export const translatedLabel = (key, locale) => rows[key]?.[additionalLocales.indexOf(locale)];
+export const translatedLabel = (key, locale) => (rows[key]??backgroundLabels[key])?.[additionalLocales.indexOf(locale)];

@@ -9,7 +9,7 @@ test('English inquiry hides SKU and preserves product name, quantity, price and 
 test('English low-stock labels retain accurate quantity and tone',()=>assert.deepEqual(stockLabel({status:'low_stock',stock_quantity:5},'en'),{text:'5 left',tone:'low'}));
 test('Osaka individual-price notes translate both saved newline representations without changing amounts',()=>{for(const sep of ['\n','\\n']){const description=['小火龍1/200','皮卡丘、傑尼龜、妙蛙種子1/150','四隻各一套500'].join(sep);const translated=productDescription({description},'en');assert.match(translated,/Charmander: NT\$200/);assert.match(translated,/NT\$150/);assert.match(translated,/NT\$500/);assert.equal(productDescription({description},'zh'),description)}});
 
-test('first visit follows the preferred browser language; supported locales are matched by language code and unsupported languages use English',()=>{assert.equal(resolveLocale(null,['en-US']),'en');assert.equal(resolveLocale(null,['vi-VN','zh-TW']),'vi');assert.equal(resolveLocale(null,['zh-TW','en-US']),'zh');assert.equal(resolveLocale(null,['zh-CN']),'zh');assert.equal(resolveLocale(null,[],'en-GB'),'en')});
+test('first visit follows the preferred browser language; only Chinese or English are selected automatically',()=>{assert.equal(resolveLocale(null,['en-US']),'en');assert.equal(resolveLocale(null,['vi-VN','zh-TW']),'en');assert.equal(resolveLocale(null,['zh-TW','en-US']),'zh');assert.equal(resolveLocale(null,['zh-CN']),'zh');assert.equal(resolveLocale(null,[],'en-GB'),'en')});
 test('explicit visitor language preference overrides browser language',()=>{assert.equal(resolveLocale('zh',['en-US']),'zh');assert.equal(resolveLocale('en',['zh-TW']),'en');assert.equal(resolveLocale('invalid',['en-US']),'en')});
 test('share-link language takes priority; unsupported values retain normal fallback',()=>{assert.equal(resolveLocale('zh',['zh-TW'],'zh-Hant','en'),'en');assert.equal(resolveLocale('en',['en-US'],'en-US','zh'),'zh');for(const value of [null,'','fr','EN'])assert.equal(resolveLocale('zh',['en-US'],'en-US',value),'zh')});
 test('share links initialize and remember language while preserving background selection, even with storage blocked',async()=>{
@@ -44,6 +44,8 @@ test('new storefront locales localize categories, stock and inquiries and surviv
   assert.equal(url.searchParams.get('product'),'product-id');
   assert.equal(resolveLocale('zh',['en-US'],'zh-Hant',url.searchParams.get('lang')),lang);
   assert.equal(t('背景',lang),category);
+  assert.notEqual(t('背景收藏圖鑑',lang),'背景收藏圖鑑');
+  assert.equal(resolveLocale(lang,['zh-TW']),lang);
   assert.ok(searchMatch(expo,category));
   assert.ok(stockLabel({status:'available',stock_quantity:10},lang).text.includes(stock));
   assert.ok(inquiryText([expo],[], '',lang).includes(t('詢價清單',lang)));
