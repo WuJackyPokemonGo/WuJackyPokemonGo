@@ -17,3 +17,7 @@ test('sitemap lists both public pages in nine languages and admin stays out of s
  const xml=read('sitemap.xml').toString();assert.equal((xml.match(/<url>/g)||[]).length,18);assert.ok(!xml.includes('admin'));
  for(const p of ['admin.html','cloud-admin.html'])assert.match(read(p).toString(),/<meta name="robots" content="noindex,nofollow">/);
 });
+test('Google Search Console verification file stays published',async()=>{
+ const {readFileSync}=await import('node:fs');
+ assert.equal(readFileSync(new URL('../google207adf49eab3425e.html',import.meta.url),'utf8').trim(),'google-site-verification: google207adf49eab3425e.html');
+});
