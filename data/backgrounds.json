@@ -27959,6 +27959,318 @@
         "statement_en": "Reuses the same city Wild Area background as the upcoming Zacian and other encounters."
       },
       "artwork_preview_source": "https://pokexperience.com/pokemon-variants/backgrounds/"
+    },
+    {
+      "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+      "related_product_ids": [],
+      "year": "2026",
+      "year_verified": true,
+      "checked_on": "2026-11-06",
+      "evidence_reviewed_on": "2026-11-06",
+      "background_id": "BG-0283",
+      "name_zh": "2026 光之祭典（印度）",
+      "name_en": "Festival of Lights 2026",
+      "type": "special",
+      "release_state": "released",
+      "verification": "official-event-confirmed",
+      "image_source": "https://www.serebii.net/pokemongo/locationcard/th/festivaloflights.jpg",
+      "official_sources": [
+        "https://pokemongo.com/en/news/festival-of-lights-2026"
+      ],
+      "catalog_sources": [
+        "https://www.serebii.net/pokemongo/backgrounds.shtml"
+      ],
+      "series": "Other",
+      "series_zh": "其他活動",
+      "region_en": "India",
+      "region_zh": "印度",
+      "start_date": "2026-11-01",
+      "end_date": "2026-11-08",
+      "date_note_zh": "分支限時調查自印度時間11/1 06:00開放，獎勵明列附特殊背景的皮卡丘；團體戰與Sparkle O’Clock為11/6 10:00–11/8 20:00。",
+      "date_note_en": "Branched Timed Research opened November 1 at 06:00 India time and lists a Special Background Pikachu; raids and Sparkle O’Clock run November 6, 10:00 to November 8, 20:00.",
+      "method_zh": "印度限定。分支限時調查擇一獲得附特殊背景的紗麗或庫爾塔皮卡丘；活動期間團體戰及Sparkle O’Clock（18:00、18:30、19:00、19:30各五分鐘）野外出現的紗麗／庫爾塔皮卡丘有機會附特殊背景。",
+      "method_en": "India only. Branched Timed Research awards saree or kurta Pikachu with the Special Background; during the event, raids and Sparkle O’Clock wild spawns (five minutes at 18:00, 18:30, 19:00, 19:30) give saree/kurta Pikachu a chance of the background.",
+      "method_status": "reviewed",
+      "pokemon": [
+        {
+          "dex": 25,
+          "name_en": "Pikachu (Saree)",
+          "name_zh": "皮卡丘（紗麗）",
+          "variant_id": "pikachu-saree",
+          "acquisition": "encounter"
+        },
+        {
+          "dex": 25,
+          "name_en": "Pikachu (Kurta)",
+          "name_zh": "皮卡丘（庫爾塔）",
+          "variant_id": "pikachu-kurta",
+          "acquisition": "encounter"
+        }
+      ],
+      "notes": [
+        "2026-11-06：Serebii背景名錄已收錄此圖樣，與2026年3月色彩節（BG-0250）圖樣不同，不合併。",
+        "原列於已公告待確認圖樣清單，今日依官方公告與Serebii圖樣移入正式圖鑑。"
+      ],
+      "notes_en": [
+        "Serebii now lists this artwork; it differs from the March 2026 Festival of Colors background (BG-0250) and is kept separate."
+      ],
+      "search_aliases": [
+        "Festival of Lights",
+        "光之祭典",
+        "排燈節",
+        "Diwali",
+        "印度",
+        "India",
+        "紗麗皮卡丘",
+        "庫爾塔皮卡丘",
+        "Saree Pikachu",
+        "Kurta Pikachu"
+      ],
+      "activity": {
+        "id": "festival-of-lights-2026",
+        "schedule": {
+          "start": "2026-11-06T10:00",
+          "end": "2026-11-08T20:00",
+          "zone": "Asia/Kolkata",
+          "basis": "confirmed"
+        },
+        "conditions_zh": "紗麗／庫爾塔皮卡丘團體戰及Sparkle O’Clock野外有機會附特殊背景，分支限時調查明列附背景。調查印度時間11/1 06:00（Asia/Kolkata，UTC+05:30；台灣11/1 08:30）開放，不當作背景已可取得。",
+        "conditions_en": "Saree/kurta Pikachu raids and Sparkle O’Clock wild encounters offer a Special Background chance; branched Timed Research lists the background. Research opens November 1 at 06:00 India time (Asia/Kolkata, UTC+05:30; November 1 at 08:30 in Taiwan), not proof that the background is already obtainable.",
+        "eligible_zh": "皮卡丘（紗麗、庫爾塔服裝）。",
+        "eligible_en": "Pikachu wearing a saree or kurta.",
+        "remote_participation": {
+          "basis": "inferred",
+          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
+          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
+          "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
+        },
+        "checked_on": "2026-11-06",
+        "sources": [
+          "https://pokemongo.com/en/news/festival-of-lights-2026",
+          "https://pokemongo.com/news/shadow-raid-max-battle-update"
+        ],
+        "background_type": "special",
+        "artwork_status": "catalogued",
+        "early_access": {
+          "start": "2026-11-01T06:00",
+          "zone": "Asia/Kolkata",
+          "basis": "confirmed"
+        },
+        "background_ids": [
+          "BG-0283"
+        ]
+      }
+    },
+    {
+      "source": "https://pokexperience.com/backgrounds/",
+      "related_product_ids": [],
+      "year": "2026",
+      "year_verified": true,
+      "checked_on": "2026-11-06",
+      "evidence_reviewed_on": "2026-11-06",
+      "background_id": "BG-0284",
+      "name_zh": "曠野地帶 2026 全球",
+      "name_en": "GO Wild Area 2026 Global",
+      "type": "special",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/gwa26-global.webp?v=20261106",
+      "reference_ids": [
+        "gwa26-global"
+      ],
+      "official_sources": [
+        "https://pokemongo.com/en/gowildarea/global"
+      ],
+      "catalog_sources": [
+        "https://pokexperience.com/backgrounds/"
+      ],
+      "series": "Other",
+      "series_zh": "其他活動",
+      "region_en": "Global",
+      "region_zh": "多地／全球活動",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-15",
+      "date_note_zh": "各地當地時間11/14–15 10:00–18:00。",
+      "date_note_en": "November 14–15, 10:00–18:00 local time.",
+      "method_zh": "活動期間團體戰、極巨對戰成功捕獲指定寶可夢有機會附新特殊背景；持票特殊調查的超極巨鋁鋼龍遭遇明列附特殊背景。",
+      "method_en": "Successful catches from eligible raids and Max Battles during the event have a chance of the new Special Background; the ticketed Special Research Gigantamax Duraludon encounter explicitly has it.",
+      "pokemon": [
+        {
+          "dex": 68,
+          "name_en": "Machamp Modern Jacket",
+          "name_zh": "怪力（現代夾克）",
+          "variant_id": "machamp-modern-jacket",
+          "acquisition": "encounter"
+        },
+        {
+          "dex": 483,
+          "name_en": "Dynamax Dialga",
+          "name_zh": "帝牙盧卡（極巨化）",
+          "variant_id": "dialga-dynamax",
+          "acquisition": "encounter"
+        },
+        {
+          "dex": 484,
+          "name_en": "Dynamax Palkia",
+          "name_zh": "帕路奇亞（極巨化）",
+          "variant_id": "palkia-dynamax",
+          "acquisition": "encounter"
+        },
+        {
+          "dex": 643,
+          "name_en": "Reshiram",
+          "name_zh": "萊希拉姆",
+          "variant_id": "reshiram",
+          "acquisition": "encounter"
+        },
+        {
+          "dex": 644,
+          "name_en": "Zekrom",
+          "name_zh": "捷克羅姆",
+          "variant_id": "zekrom",
+          "acquisition": "encounter"
+        },
+        {
+          "dex": 646,
+          "name_en": "Kyurem",
+          "name_zh": "酋雷姆",
+          "variant_id": "kyurem",
+          "acquisition": "encounter"
+        },
+        {
+          "dex": 884,
+          "name_en": "Gigantamax Duraludon",
+          "name_zh": "鋁鋼龍（超極巨化）",
+          "variant_id": "duraludon-gigantamax",
+          "acquisition": "encounter"
+        }
+      ],
+      "notes": [
+        "官方明列現代夾克怪力、極巨帝牙盧卡、極巨帕路奇亞、萊希拉姆、捷克羅姆、酋雷姆、超極巨鋁鋼龍有機會帶特殊背景；持票特殊調查超極巨鋁鋼龍明列附背景。",
+        "2026-11-06：PokéXperience已收錄圖樣（gwa26-global），與仙台、墨西哥城地點背景及2025全球背景不同；活動未開始，不計入已發放款數。PokéXperience標6隻、官方列7隻，以官方為準。"
+      ],
+      "notes_en": [
+        "Artwork from PokéXperience (gwa26-global); upcoming, not counted as released. Official list of seven Pokémon is used."
+      ],
+      "search_aliases": [
+        "GO Wild Area 2026",
+        "Wild Area Global",
+        "全球曠野",
+        "曠野地帶全球",
+        "2026曠野"
+      ],
+      "activity": {
+        "id": "wild-area-global-2026",
+        "schedule": {
+          "start": "2026-11-14T10:00",
+          "end": "2026-11-15T18:00",
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "rolling_local": true,
+          "daily": {
+            "start": "10:00",
+            "end": "18:00",
+            "basis": "confirmed"
+          }
+        },
+        "conditions_zh": "指定團體戰、極巨對戰捕獲有機會附特殊背景；持票特殊調查明列附背景超極巨鋁鋼龍。每日10:00–18:00。",
+        "conditions_en": "Eligible raids and Max Battles offer a Special Background chance; ticketed Special Research explicitly awards Gigantamax Duraludon with the background. Daily 10:00–18:00.",
+        "eligible_zh": "現代夾克怪力、極巨帝牙盧卡／帕路奇亞、萊希拉姆、捷克羅姆、酋雷姆、超極巨鋁鋼龍。",
+        "eligible_en": "Modern-jacket Machamp, Dynamax Dialga/Palkia, Reshiram, Zekrom, Kyurem and Gigantamax Duraludon.",
+        "remote_participation": {
+          "basis": "inferred",
+          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
+          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
+          "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
+        },
+        "checked_on": "2026-11-06",
+        "sources": [
+          "https://pokemongo.com/en/gowildarea/global",
+          "https://pokemongo.com/news/shadow-raid-max-battle-update"
+        ],
+        "background_type": "special",
+        "artwork_status": "catalogued",
+        "background_ids": [
+          "BG-0284"
+        ]
+      }
+    },
+    {
+      "source": "https://pokexperience.com/backgrounds/",
+      "related_product_ids": [],
+      "year": "2026",
+      "year_verified": false,
+      "checked_on": "2026-11-06",
+      "evidence_reviewed_on": "2026-11-06",
+      "background_id": "BG-0285",
+      "name_zh": "寶可夢人孔蓋－群馬",
+      "name_en": "Pokelid Gunma",
+      "type": "location",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/lc_pokelid_gunma.webp?v=20261106",
+      "reference_ids": [
+        "lc_pokelid_gunma"
+      ],
+      "official_sources": [
+        "https://pokemongo.com/ja/news/pokelid_full"
+      ],
+      "catalog_sources": [
+        "https://pokexperience.com/backgrounds/",
+        "https://www.4gamer.net/games/999/G999905/20261023029/",
+        "https://getnews.jp/archives/3750883",
+        "https://pokemongo.gamewith.jp/article/show/541631"
+      ],
+      "series": "Poké Lids",
+      "series_zh": "寶可夢人孔蓋",
+      "region_en": "Japan",
+      "region_zh": "日本",
+      "date_note_zh": "10/23公布群馬縣5市町（沼田、館林、澀川、下仁田、長野原）設置人孔蓋，10/28起至11月下旬陸續設置；遊戲內補給站與集章開放日尚未確認。",
+      "date_note_en": "Announced October 23 for five Gunma municipalities, installed from October 28 through late November; in-game PokéStop and stamp availability not yet confirmed.",
+      "method_zh": "依全國人孔蓋集章規則：親自到訪同一都道府縣的寶可夢人孔蓋補給站，每收集兩枚當地印章獲得帶該地背景的皮卡丘；好友贈送印章不計入。群馬是否已在遊戲內開放仍待確認。",
+      "method_en": "Under the nationwide Poké Lid rule, collect two in-person stamps in the same prefecture for a Pikachu with that background; gifted stamps do not count. In-game availability for Gunma is not yet confirmed.",
+      "pokemon": [
+        {
+          "dex": 25,
+          "name_en": "Pikachu",
+          "name_zh": "皮卡丘",
+          "variant_id": "pikachu",
+          "acquisition": "encounter"
+        }
+      ],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
+      "notes": [
+        "圖樣為吹割瀑布（沼田市），取自PokéXperience；Serebii、Dittobase尚未收錄，GameWith一覽表標示調查中。",
+        "確認有人在遊戲內取得後再改為已推出。"
+      ],
+      "notes_en": [
+        "Artwork (Fukiware Falls, Numata) from PokéXperience; not yet on Serebii or Dittobase. Mark released once obtained in game."
+      ],
+      "search_aliases": [
+        "群馬",
+        "Gunma",
+        "ポケふた",
+        "Poké Lid",
+        "人孔蓋",
+        "吹割瀑布",
+        "沼田"
+      ]
     }
   ],
   "additional_announced_events": [
@@ -28049,166 +28361,6 @@
         "background_type": "special",
         "artwork_status": "pending"
       }
-    },
-    {
-      "name_en": "Festival of Lights 2026 Special Background",
-      "name_zh": "2026 光之祭典特殊背景",
-      "start_date": "2026-11-06",
-      "end_date": "2026-11-08",
-      "release_state": "upcoming",
-      "verification": "official-event-confirmed",
-      "image_source": null,
-      "official_sources": [
-        "https://pokemongo.com/en/news/festival-of-lights-2026"
-      ],
-      "notes": [
-        "印度限定；紗麗與庫爾塔皮卡丘團體戰及Sparkle O’Clock野外有機會帶特殊背景，分支限時調查獎勵明列附背景。",
-        "限時調查11/1 06:00開放；開放任務不等於已能完成所有條件或實際取得，首次取得日期與圖樣仍待確認。"
-      ],
-      "type": "special",
-      "series": "Other",
-      "series_zh": "其他活動",
-      "year": "2026",
-      "checked_on": "2026-11-03",
-      "region_en": "India",
-      "region_zh": "印度",
-      "notes_en": [
-        "India, November 6–8. Saree/kurta Pikachu raids and Sparkle O’Clock wild encounters may have a Special Background; branched Timed Research lists a background reward. Research starts November 1 at 06:00, which does not establish the first obtainable date. Artwork is unconfirmed."
-      ],
-      "activity": {
-        "id": "festival-of-lights-2026",
-        "schedule": {
-          "start": "2026-11-06T10:00",
-          "end": "2026-11-08T20:00",
-          "zone": "Asia/Kolkata",
-          "basis": "confirmed"
-        },
-        "conditions_zh": "紗麗／庫爾塔皮卡丘團體戰及Sparkle O’Clock野外有機會附特殊背景，分支限時調查明列附背景。調查印度時間11/1 06:00（Asia/Kolkata，UTC+05:30；台灣11/1 08:30）開放，不當作背景已可取得。",
-        "conditions_en": "Saree/kurta Pikachu raids and Sparkle O’Clock wild encounters offer a Special Background chance; branched Timed Research lists the background. Research opens November 1 at 06:00 India time (Asia/Kolkata, UTC+05:30; November 1 at 08:30 in Taiwan), not proof that the background is already obtainable.",
-        "eligible_zh": "皮卡丘（紗麗、庫爾塔服裝）。",
-        "eligible_en": "Pikachu wearing a saree or kurta.",
-        "remote_participation": {
-          "basis": "inferred",
-          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
-          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
-        },
-        "remote_background": {
-          "basis": "pending",
-          "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
-          "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
-        },
-        "checked_on": "2026-11-03",
-        "sources": [
-          "https://pokemongo.com/en/news/festival-of-lights-2026",
-          "https://pokemongo.com/news/shadow-raid-max-battle-update"
-        ],
-        "background_type": "special",
-        "artwork_status": "pending",
-        "early_access": {
-          "start": "2026-11-01T06:00",
-          "zone": "Asia/Kolkata",
-          "basis": "confirmed"
-        }
-      }
-    },
-    {
-      "name_en": "GO Wild Area 2026 Global Special Background",
-      "name_zh": "2026 全球曠野地帶特殊背景",
-      "start_date": "2026-11-14",
-      "end_date": "2026-11-15",
-      "release_state": "upcoming",
-      "verification": "official-event-confirmed",
-      "image_source": null,
-      "official_sources": [
-        "https://pokemongo.com/en/gowildarea/global"
-      ],
-      "notes": [
-        "官方明列現代夾克怪力、極巨帝牙盧卡、極巨帕路奇亞、萊希拉姆、捷克羅姆、酋雷姆、超極巨鋁鋼龍有機會帶特殊背景；持票特殊調查超極巨鋁鋼龍明列附背景。",
-        "圖樣待確認，不套用2025背景或仙台／墨西哥城地點背景，不計入已發放款數。"
-      ],
-      "type": "special",
-      "series": "Other",
-      "series_zh": "其他活動",
-      "year": "2026",
-      "checked_on": "2026-11-05",
-      "region_en": "Global",
-      "region_zh": "全球",
-      "notes_en": [
-        "November 14–15. Modern-jacket Machamp, Dynamax Dialga/Palkia, Reshiram, Zekrom, Kyurem and Gigantamax Duraludon are listed with Special Background opportunities. Ticketed Special Research explicitly awards Gigantamax Duraludon with the background. Artwork awaits confirmation; do not substitute the 2025 or city background."
-      ],
-      "activity": {
-        "id": "wild-area-global-2026",
-        "schedule": {
-          "start": "2026-11-14T10:00",
-          "end": "2026-11-15T18:00",
-          "zone": "Asia/Taipei",
-          "basis": "confirmed",
-          "rolling_local": true,
-          "daily": {
-            "start": "10:00",
-            "end": "18:00",
-            "basis": "confirmed"
-          }
-        },
-        "conditions_zh": "指定團體戰、極巨對戰捕獲有機會附特殊背景；持票特殊調查明列附背景超極巨鋁鋼龍。每日10:00–18:00。",
-        "conditions_en": "Eligible raids and Max Battles offer a Special Background chance; ticketed Special Research explicitly awards Gigantamax Duraludon with the background. Daily 10:00–18:00.",
-        "eligible_zh": "現代夾克怪力、極巨帝牙盧卡／帕路奇亞、萊希拉姆、捷克羅姆、酋雷姆、超極巨鋁鋼龍。",
-        "eligible_en": "Modern-jacket Machamp, Dynamax Dialga/Palkia, Reshiram, Zekrom, Kyurem and Gigantamax Duraludon.",
-        "remote_participation": {
-          "basis": "inferred",
-          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
-          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
-        },
-        "remote_background": {
-          "basis": "pending",
-          "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
-          "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
-        },
-        "checked_on": "2026-11-05",
-        "sources": [
-          "https://pokemongo.com/en/gowildarea/global",
-          "https://pokemongo.com/news/shadow-raid-max-battle-update"
-        ],
-        "background_type": "special",
-        "artwork_status": "pending"
-      },
-      "pokemon": [
-        {
-          "dex": 68,
-          "name_zh": "怪力（現代夾克）",
-          "name_en": "Machamp wearing a modern jacket"
-        },
-        {
-          "dex": 483,
-          "name_zh": "帝牙盧卡（極巨化）",
-          "name_en": "Dynamax Dialga"
-        },
-        {
-          "dex": 484,
-          "name_zh": "帕路奇亞（極巨化）",
-          "name_en": "Dynamax Palkia"
-        },
-        {
-          "dex": 643,
-          "name_zh": "萊希拉姆",
-          "name_en": "Reshiram"
-        },
-        {
-          "dex": 644,
-          "name_zh": "捷克羅姆",
-          "name_en": "Zekrom"
-        },
-        {
-          "dex": 646,
-          "name_zh": "酋雷姆",
-          "name_en": "Kyurem"
-        },
-        {
-          "dex": 884,
-          "name_zh": "鋁鋼龍（超極巨化）",
-          "name_en": "Gigantamax Duraludon"
-        }
-      ]
     },
     {
       "event_id": "dynamax-trails-2026",
@@ -28590,12 +28742,12 @@
   },
   "counts": {
     "catalog-crosschecked": 55,
-    "official-event-confirmed": 220,
+    "official-event-confirmed": 221,
     "catalogued-needs-event-check": 3,
-    "upcoming": 3
+    "upcoming": 5
   },
   "review_counts": {
-    "date_details_pending": 3,
+    "date_details_pending": 4,
     "acquisition_method_pending": 5,
     "backgrounds_pending": 3
   },

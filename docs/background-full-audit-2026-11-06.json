@@ -174,12 +174,22 @@
    "id": "BG-0280",
    "cat": "reference",
    "msg": "reference_id not in facts dia-de-muertos-2026-mexico-city"
+  },
+  {
+   "id": "BG-0284",
+   "cat": "reference",
+   "msg": "reference_id not in facts gwa26-global"
+  },
+  {
+   "id": "BG-0285",
+   "cat": "reference",
+   "msg": "reference_id not in facts lc_pokelid_gunma"
   }
  ],
  "info": {
   "id_range": [
    1,
-   282
+   285
   ],
   "id_gaps": [
    "BG-0270"
@@ -369,22 +379,23 @@
    "BG-0258 released",
    "BG-0279 upcoming",
    "BG-0281 released",
-   "BG-0282 released"
+   "BG-0282 released",
+   "BG-0283 released"
   ],
   "counts_declared": {
    "catalog-crosschecked": 55,
-   "official-event-confirmed": 220,
+   "official-event-confirmed": 221,
    "catalogued-needs-event-check": 3,
-   "upcoming": 3
+   "upcoming": 5
   },
   "counts_actual": {
    "catalog-crosschecked": 55,
-   "official-event-confirmed": 220,
+   "official-event-confirmed": 221,
    "catalogued-needs-event-check": 3,
-   "upcoming": 3
+   "upcoming": 5
   },
   "review_declared": {
-   "date_details_pending": 3,
+   "date_details_pending": 4,
    "acquisition_method_pending": 5,
    "backgrounds_pending": 3
   },
@@ -407,12 +418,12 @@
     "BG-0277"
    ]
   },
-  "total": 281,
+  "total": 284,
   "by_year": {
    "2023": 8,
    "2024": 26,
    "2025": 78,
-   "2026": 165,
+   "2026": 168,
    "2027": 1,
    "null": 1,
    "": 2

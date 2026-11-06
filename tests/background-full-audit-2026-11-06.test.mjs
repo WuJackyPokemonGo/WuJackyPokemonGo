@@ -3,8 +3,8 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const d=JSON.parse(readFileSync(new URL('../data/backgrounds.json',import.meta.url),'utf8'));
 const iso=s=>/^\d{4}-\d{2}-\d{2}$/.test(s)&&!Number.isNaN(Date.parse(s));
-test('281 records, unique ids, the only id gap is the BG-0270 redirect',()=>{
- const ids=d.records.map(r=>r.background_id);assert.equal(ids.length,281);assert.equal(new Set(ids).size,281);
+test('284 records, unique ids, the only id gap is the BG-0270 redirect',()=>{
+ const ids=d.records.map(r=>r.background_id);assert.equal(ids.length,284);assert.equal(new Set(ids).size,284);
  const nums=new Set(ids.map(x=>+x.slice(3)));const gaps=[];for(let n=1;n<=Math.max(...nums);n++)if(!nums.has(n))gaps.push(n);
  assert.deepEqual(gaps,[270]);assert.equal(d.redirects['BG-0270'],'BG-0261');
 });
@@ -13,10 +13,10 @@ test('dates are valid ISO, end is not before start, released records have a star
   if(r.start_date&&r.end_date)assert.ok(r.end_date>=r.start_date,r.background_id);if(r.release_state==='released')assert.ok(r.start_date,r.background_id)}
 });
 test('declared review counts match the records that are still pending',()=>{
- const date=d.records.filter(r=>r.release_state!=='upcoming'&&!r.start_date).map(r=>r.background_id);
+ const date=d.records.filter(r=>!r.start_date).map(r=>r.background_id);
  const method=d.records.filter(r=>['unconfirmed','partial'].includes(r.method_status)).map(r=>r.background_id);
- assert.deepEqual(date,['BG-0072','BG-0276','BG-0277']);assert.deepEqual(method,['BG-0072','BG-0190','BG-0238','BG-0276','BG-0277']);
- assert.deepEqual(d.review_counts,{date_details_pending:3,acquisition_method_pending:5,backgrounds_pending:3});
+ assert.deepEqual(date,['BG-0072','BG-0276','BG-0277','BG-0285']);assert.deepEqual(method,['BG-0072','BG-0190','BG-0238','BG-0276','BG-0277']);
+ assert.deepEqual(d.review_counts,{date_details_pending:4,acquisition_method_pending:5,backgrounds_pending:3});
 });
 test('form variants carry a Chinese form label and no record repeats an identical encounter',()=>{
  for(const r of d.records)for(const p of [...r.pokemon??[],...r.evolved_pokemon??[]])

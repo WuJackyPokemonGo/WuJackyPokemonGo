@@ -1,0 +1,82 @@
+{
+  "as_of": "2026-11-06",
+  "scope_zh": "重新下載Serebii、Dittobase名錄全文，並以瀏覽器載入PokéXperience背景頁取得全部素材，與圖鑑既有對應逐一比對漏列。",
+  "catalog_records": 284,
+  "released_records": 276,
+  "complete": false,
+  "new_released_background_ids": [
+    "BG-0283"
+  ],
+  "new_upcoming_background_ids": [
+    "BG-0284",
+    "BG-0285"
+  ],
+  "sources": {
+    "serebii": {
+      "url": "https://www.serebii.net/pokemongo/backgrounds.shtml",
+      "rows": 274,
+      "previous_rows": 273,
+      "html_sha256": "9dbbce86fa0c41757399218148f055c10e263d76ef721c775025efd72356fc23",
+      "added": [
+        {
+          "source_image": "festivaloflights.jpg",
+          "background_id": "BG-0283",
+          "note": "光之祭典2026，新收錄。"
+        },
+        {
+          "source_image": "diademuertos2026.jpg",
+          "background_id": "BG-0278",
+          "note": "原diademuertos2029檔名已修正，同一背景。"
+        }
+      ]
+    },
+    "dittobase": {
+      "url": "https://www.dittobase.com/pokemon-go/backgrounds",
+      "detail_links": 263,
+      "previous_detail_links": 263,
+      "html_sha256": "3e9c33efd363b78f9140281f7193d73c4bbcfa8ba672fb24b0f67505d9581208",
+      "unreferenced_slugs_mapped": {
+        "lc-pokemon-night-out-london-2026": "BG-0214",
+        "lc-pokemon-night-out-la-2026": "BG-0211",
+        "lc-fc-seoul-2026": "BG-0269",
+        "sb-moonlight-2026": "BG-0263",
+        "lc-2026-jp-jetgreen": "BG-0195",
+        "lc-tpc30th-malaysia": "BG-0191",
+        "lc-tpc30th-taiwan": "BG-0192",
+        "lc-tpc30th-singapore": "BG-0193",
+        "lc-tpc30th-philippines": "BG-0194",
+        "lc-2026-br-001": "BG-0276"
+      },
+      "note": "10筆未被紀錄引用的網址均對應既有紀錄；巴西lc-2026-br-001只有圖，無日期與寶可夢，BG-0276維持待核。"
+    },
+    "pokexperience": {
+      "url": "https://pokexperience.com/backgrounds/",
+      "assets": 355,
+      "previous_assets": 345,
+      "method": "Chromium載入並捲動整頁收集素材網址",
+      "new_assets": {
+        "2026_gowa_sendai": "BG-0212（同圖換檔名）",
+        "2026_gowa_mexicocity": "BG-0213（同圖換檔名）",
+        "fc2026_seoul": "BG-0269（同圖換檔名）",
+        "night_out2026_la": "BG-0211（同圖換檔名）",
+        "night_out2026_london": "BG-0214（同圖換檔名）",
+        "dia_de_muertos_2026": "BG-0278（同圖樣）",
+        "2026diadelosmuertos": "BG-0278（同圖樣）",
+        "gwa26-global": "BG-0284 新增",
+        "lc_pokelid_gunma": "BG-0285 新增",
+        "nationaltrustclumberpark2": "未收錄：與BG-0168兩張圖不同，Serebii、Dittobase均未列，無佐證"
+      }
+    }
+  },
+  "unresolved_assets": [
+    {
+      "reference_id": "nationaltrustclumberpark2",
+      "related_background_id": "BG-0168",
+      "reason": "只見於PokéXperience，其他名錄未佐證，不新增。"
+    }
+  ],
+  "limitations_zh": [
+    "比對範圍是三份名錄有列出的背景；名錄都沒列的背景無法由此發現。",
+    "群馬人孔蓋遊戲內開放日待確認，暫列即將推出。"
+  ]
+}
