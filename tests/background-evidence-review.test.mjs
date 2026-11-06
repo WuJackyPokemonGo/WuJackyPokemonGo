@@ -30,7 +30,7 @@ test('owner-reviewed costume routes retain source labels while unrelated unprove
   assert.ok(r.pokemon.filter(p=>p.name_en.includes('themed')).every(p=>p.method_status==='reviewed'&&p.method_evidence==='owner-provided-player-report')); 
   assert.ok(r.pokemon.filter(p=>p.name_en.includes('Shadow')).every(p=>p.method_en.includes('Shadow Raids')));
  }
- assert.equal(by('BG-0190').pokemon.find(p=>p.dex===65).method_status,'unconfirmed');
+ {const p=by('BG-0190').pokemon.find(p=>p.dex===65);assert.equal(p.method_status,'reviewed');assert.equal(p.method_evidence,'owner-provided-player-screenshot')}
  assert.equal(data.complete,false);
 });
 

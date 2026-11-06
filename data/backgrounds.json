@@ -11971,7 +11971,7 @@
       ],
       "notes": [
         "官方7/31更新：延長至12/31；來源總表舊的9/6截止日不採用。",
-        "2026-11-06：Serebii、Dittobase及PokéXperience新素材（nationaltrustclumberpark2）均為林蔭步道，改為目前顯示圖樣；草原教堂景僅見於PokéXperience 7/18初版素材，列為先前版本。官方未公告換圖。"
+        "2026-11-06：依使用者確認，目前背景為草原與教堂景（打開時顯示）；林蔭步道（Serebii、Dittobase仍使用）為先前版本，列於下方。"
       ],
       "start_date": "2026-07-18",
       "end_date": "2026-12-31",
@@ -12029,16 +12029,14 @@
       "reference_review": "images-compared-2026-10-24",
       "artwork_variants": [
         {
-          "image_url": "https://pokexperience.com/pokemon-variants/backgrounds/nationaltrustclumberpark.jpg?v=20260816",
-          "label_zh": "先前版本・草原與教堂（PokéXperience 7/18初版素材）",
-          "label_en": "Previous version · meadow and church (PokéXperience July 18 asset)",
-          "source_url": "https://pokexperience.com/backgrounds/"
+          "image_url": "https://www.serebii.net/pokemongo/locationcard/th/nationaltrustclumberpark.jpg",
+          "label_zh": "先前版本・林蔭步道",
+          "label_en": "Previous version · tree-lined path",
+          "source_url": "https://www.serebii.net/pokemongo/backgrounds.shtml"
         }
       ],
       "artwork_note_zh": "此地點背景曾有素材更新記錄；下方保留不同名錄版本供比較，仍為同一筆 Clumber Park 背景，不另計可收集款數。各版本精確切換時間未確認。",
-      "artwork_note_en": "An asset update has been reported. Both catalog versions are shown below for comparison within this one Clumber Park entry. Their exact switchover time is unconfirmed.",
-      "artwork_preview_url": "https://www.serebii.net/pokemongo/locationcard/th/nationaltrustclumberpark.jpg",
-      "artwork_preview_source": "https://www.serebii.net/pokemongo/backgrounds.shtml"
+      "artwork_note_en": "An asset update has been reported. Both catalog versions are shown below for comparison within this one Clumber Park entry. Their exact switchover time is unconfirmed."
     },
     {
       "name_en": "National Trust Dunham Massey",
@@ -13928,13 +13926,13 @@
           "name_zh": "胡地",
           "variant_id": "alakazam",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "使用者提供玩家帳號實物截圖（2026-11-06），確認帶舊金山地點背景；不在Serebii閉幕後團戰名單，取得途徑未見官方說明。原依社群回報列入，現已有實物佐證。",
+          "method_en": "Player account screenshots provided by the owner (2026-11-06) confirm the San Francisco Location Background. Not on Serebii's post-event raid list; the acquisition route is not officially documented. Originally listed from community reports, now backed by in-game evidence.",
+          "method_status": "reviewed",
           "method_sources": [
             "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
           ],
-          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
+          "method_evidence": "owner-provided-player-screenshot"
         },
         {
           "dex": 334,
@@ -13942,13 +13940,13 @@
           "name_zh": "七夕青鳥",
           "variant_id": "altaria",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "使用者提供玩家帳號實物截圖（2026-11-06），確認帶舊金山地點背景；不在Serebii閉幕後團戰名單，取得途徑未見官方說明。原依社群回報列入，現已有實物佐證。",
+          "method_en": "Player account screenshots provided by the owner (2026-11-06) confirm the San Francisco Location Background. Not on Serebii's post-event raid list; the acquisition route is not officially documented. Originally listed from community reports, now backed by in-game evidence.",
+          "method_status": "reviewed",
           "method_sources": [
             "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
           ],
-          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
+          "method_evidence": "owner-provided-player-screenshot"
         },
         {
           "dex": 181,
@@ -13984,13 +13982,13 @@
           "name_zh": "大針蜂",
           "variant_id": "beedrill",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "使用者提供玩家帳號實物截圖（2026-11-06），確認帶舊金山地點背景；不在Serebii閉幕後團戰名單，取得途徑未見官方說明。原依社群回報列入，現已有實物佐證。",
+          "method_en": "Player account screenshots provided by the owner (2026-11-06) confirm the San Francisco Location Background. Not on Serebii's post-event raid list; the acquisition route is not officially documented. Originally listed from community reports, now backed by in-game evidence.",
+          "method_status": "reviewed",
           "method_sources": [
             "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
           ],
-          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
+          "method_evidence": "owner-provided-player-screenshot"
         },
         {
           "dex": 323,
@@ -14068,13 +14066,13 @@
           "name_zh": "暴鯉龍",
           "variant_id": "gyarados",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "使用者提供玩家帳號實物截圖（2026-11-06），確認帶舊金山地點背景；不在Serebii閉幕後團戰名單，取得途徑未見官方說明。原依社群回報列入，現已有實物佐證。",
+          "method_en": "Player account screenshots provided by the owner (2026-11-06) confirm the San Francisco Location Background. Not on Serebii's post-event raid list; the acquisition route is not officially documented. Originally listed from community reports, now backed by in-game evidence.",
+          "method_status": "reviewed",
           "method_sources": [
             "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
           ],
-          "method_evidence": "catalog-and-community-report-individual-conditions-pending"
+          "method_evidence": "owner-provided-player-screenshot"
         },
         {
           "dex": 229,
@@ -14264,11 +14262,11 @@
           "name_zh": "化石翼龍",
           "variant_id": "aerodactyl",
           "acquisition": "encounter",
-          "method_zh": "先前背景素材名錄與玩家持有清單均列有舊金山城市背景；閉幕後現場超級團體戰為玩家回報的取得途徑。個別時段、背景機率及完整官方條件仍待確認，不標示保證背景。",
-          "method_en": "The retained background catalog and player inventories list the San Francisco Location Background. Post-closing-ceremony in-person Mega Raids are the player-reported acquisition route. Individual timing, background odds and complete official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "使用者提供玩家帳號實物截圖（2026-11-06），確認帶舊金山地點背景；不在Serebii閉幕後團戰名單，取得途徑未見官方說明。原依社群回報列入，現已有實物佐證。",
+          "method_en": "Player account screenshots provided by the owner (2026-11-06) confirm the San Francisco Location Background. Not on Serebii's post-event raid list; the acquisition route is not officially documented. Originally listed from community reports, now backed by in-game evidence.",
+          "method_status": "reviewed",
           "background_evidence": "retained-catalog-and-player-inventory",
-          "method_evidence": "player-report-not-official-guarantee",
+          "method_evidence": "owner-provided-player-screenshot",
           "method_sources": [
             "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/",
             "https://pokemongotrading.com/profile/kingatb/inventory",
@@ -14282,11 +14280,11 @@
           "name_zh": "勾魂眼",
           "variant_id": "sableye",
           "acquisition": "encounter",
-          "method_zh": "先前背景素材名錄與玩家持有清單均列有舊金山城市背景；閉幕後現場超級團體戰為玩家回報的取得途徑。個別時段、背景機率及完整官方條件仍待確認，不標示保證背景。",
-          "method_en": "The retained background catalog and player inventories list the San Francisco Location Background. Post-closing-ceremony in-person Mega Raids are the player-reported acquisition route. Individual timing, background odds and complete official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "使用者提供玩家帳號實物截圖（2026-11-06），確認帶舊金山地點背景；不在Serebii閉幕後團戰名單，取得途徑未見官方說明。原依社群回報列入，現已有實物佐證。",
+          "method_en": "Player account screenshots provided by the owner (2026-11-06) confirm the San Francisco Location Background. Not on Serebii's post-event raid list; the acquisition route is not officially documented. Originally listed from community reports, now backed by in-game evidence.",
+          "method_status": "reviewed",
           "background_evidence": "retained-catalog-and-player-inventory",
-          "method_evidence": "player-report-not-official-guarantee",
+          "method_evidence": "owner-provided-player-screenshot",
           "method_sources": [
             "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/",
             "https://pokemongotrading.com/profile/kingatb/inventory",
@@ -14300,11 +14298,11 @@
           "name_zh": "大嘴娃",
           "variant_id": "mawile",
           "acquisition": "encounter",
-          "method_zh": "先前背景素材名錄與玩家持有清單均列有舊金山城市背景；閉幕後現場超級團體戰為玩家回報的取得途徑。個別時段、背景機率及完整官方條件仍待確認，不標示保證背景。",
-          "method_en": "The retained background catalog and player inventories list the San Francisco Location Background. Post-closing-ceremony in-person Mega Raids are the player-reported acquisition route. Individual timing, background odds and complete official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "使用者提供玩家帳號實物截圖（2026-11-06），確認帶舊金山地點背景；不在Serebii閉幕後團戰名單，取得途徑未見官方說明。原依社群回報列入，現已有實物佐證。",
+          "method_en": "Player account screenshots provided by the owner (2026-11-06) confirm the San Francisco Location Background. Not on Serebii's post-event raid list; the acquisition route is not officially documented. Originally listed from community reports, now backed by in-game evidence.",
+          "method_status": "reviewed",
           "background_evidence": "retained-catalog-and-player-inventory",
-          "method_evidence": "player-report-not-official-guarantee",
+          "method_evidence": "owner-provided-player-screenshot",
           "method_sources": [
             "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/",
             "https://pokemongotrading.com/profile/kingatb/inventory",
@@ -14318,11 +14316,11 @@
           "name_zh": "差不多娃娃",
           "variant_id": "audino",
           "acquisition": "encounter",
-          "method_zh": "先前背景素材名錄與玩家持有清單均列有舊金山城市背景；閉幕後現場超級團體戰為玩家回報的取得途徑。個別時段、背景機率及完整官方條件仍待確認，不標示保證背景。",
-          "method_en": "The retained background catalog and player inventories list the San Francisco Location Background. Post-closing-ceremony in-person Mega Raids are the player-reported acquisition route. Individual timing, background odds and complete official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "使用者提供玩家帳號實物截圖（2026-11-06），確認帶舊金山地點背景；不在Serebii閉幕後團戰名單，取得途徑未見官方說明。原依社群回報列入，現已有實物佐證。",
+          "method_en": "Player account screenshots provided by the owner (2026-11-06) confirm the San Francisco Location Background. Not on Serebii's post-event raid list; the acquisition route is not officially documented. Originally listed from community reports, now backed by in-game evidence.",
+          "method_status": "reviewed",
           "background_evidence": "retained-catalog-and-player-inventory",
-          "method_evidence": "player-report-not-official-guarantee",
+          "method_evidence": "owner-provided-player-screenshot",
           "method_sources": [
             "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/",
             "https://pokemongotrading.com/profile/kingatb/inventory",
@@ -14342,7 +14340,8 @@
         "本輪補入差不多娃娃、化石翼龍、大嘴娃、勾魂眼；背景存在依保存名錄及玩家持有回報，並非全部取得條件已獲官方確認。",
         "目前列40款原始遭遇＋3款進化；保存的PokéXperience 42個物種名稱包含3款進化，兩款皮卡丘合用一個名稱，與此處逐款計數口徑不同。",
         "拉帝亞斯／拉帝歐斯維持移除。巨鉗螳螂、艾路雷朵、暴飛龍有相互矛盾的現場回報；代歐奇希斯僅見團戰資訊，未核實城市背景資格，均不直接補入。",
-        "2026-11-06：Serebii活動頁「Post Event」四星超級團體戰名單核對22款，改為已核對（機率取得）；胡地、七夕青鳥、大針蜂、暴鯉龍、化石翼龍、勾魂眼、大嘴娃、差不多娃娃8款不在該名單，維持依社群回報標示。使用者確認本筆核對結案。"
+        "2026-11-06：Serebii活動頁「Post Event」四星超級團體戰名單核對22款，改為已核對（機率取得）；胡地、七夕青鳥、大針蜂、暴鯉龍、化石翼龍、勾魂眼、大嘴娃、差不多娃娃8款不在該名單，維持依社群回報標示。使用者確認本筆核對結案。",
+        "2026-11-06：使用者提供朋友帳號截圖，「舊金山」標籤40隻均帶地點背景標記，與本筆40款直接遭遇逐一相符；先前僅社群回報的8款（胡地、七夕青鳥、大針蜂、暴鯉龍、化石翼龍、勾魂眼、大嘴娃、差不多娃娃）改為實物確認。截圖為私人帳號資料，不公開。"
       ],
       "related_product_ids": [],
       "method_zh": "舊金山7個指定地標現場團體戰保證當地背景，每地每日一次；科斯莫古太空裝皮卡丘可由 GO 集章取得，最多6次。現場田野調查的兩款皮卡丘有背景機會。8/30超級超夢X Unity團體戰保證普通超夢城市背景。閉幕後超級團體戰背景依社群回報另行記錄，包含本輪補齊的四款；其機率與個別官方條件仍待核對，不套用指定地標團戰的保證背景規則。 名單核對：本站收錄 40 款直接遭遇與 3 款進化繼承，共 43 款。保存名錄的 42 個名稱已含 3 款進化，兩款皮卡丘合用一個名稱。舊站 38 款直接遭遇為移除拉帝亞斯、拉帝歐斯前的推算值，原始 38 款清單未取得。閉幕後團戰的個別取得條件依證據標示。",
