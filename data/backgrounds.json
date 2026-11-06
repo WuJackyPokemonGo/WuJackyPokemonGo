@@ -394,11 +394,13 @@
       "background_id": "BG-0001",
       "name_zh": "GO Tour 拉斯維加斯",
       "release_state": "released",
-      "official_sources": [],
+      "official_sources": [
+        "https://pokemongo.com/news/location-card-new-feature"
+      ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "於活動限定團體戰捕捉對應寶可夢，有機會附上該城市背景；現場活動票券與加購適用時段依當年規則。",
-      "method_en": "Chance from event raids for the listed species; event-ticket and add-on hours follow that year’s rules.",
+      "method_zh": "官方確認指定地點的現場團體戰捕獲才有機會獲得拉斯維加斯地點背景，圖鑑收錄蓋歐卡及固拉多。",
+      "method_en": "The official announcement describes a chance of a Las Vegas Location Card after an eligible in-person raid catch at a designated location. The catalog lists Kyogre and Groudon.",
       "series": "GO Tour",
       "series_zh": "GO Tour",
       "year": "2023",
@@ -516,8 +518,8 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "於活動限定團體戰捕捉對應寶可夢，有機會附上該城市背景；現場活動票券與加購適用時段依當年規則。",
-      "method_en": "Chance from event raids for the listed species; event-ticket and add-on hours follow that year’s rules.",
+      "method_zh": "於持票活動日參與克雷色利亞、哲爾尼亞斯、伊裴爾塔爾或超級烈空坐團體戰，成功捕獲後有機會附主辦城市地點背景。",
+      "method_en": "During the ticketed event day, successfully catching Cresselia, Xerneas, Yveltal, or Rayquaza after its Mega Raid could award the host city's Location Card.",
       "series": "GO Fest",
       "series_zh": "GO Fest",
       "year": "2023",
@@ -525,7 +527,8 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2023-osaka",
-        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
+        "https://leekduck.com/events/pokemon-go-fest-2023-osaka-japan/"
       ],
       "evolved_pokemon": [],
       "start_date": "2023-08-04",
@@ -583,8 +586,8 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "於活動限定團體戰捕捉對應寶可夢，有機會附上該城市背景；現場活動票券與加購適用時段依當年規則。",
-      "method_en": "Chance from event raids for the listed species; event-ticket and add-on hours follow that year’s rules.",
+      "method_zh": "於持票活動日參與克雷色利亞、哲爾尼亞斯、伊裴爾塔爾或超級烈空坐團體戰，成功捕獲後有機會附主辦城市地點背景。",
+      "method_en": "During the ticketed event day, successfully catching Cresselia, Xerneas, Yveltal, or Rayquaza after its Mega Raid could award the host city's Location Card.",
       "series": "GO Fest",
       "series_zh": "GO Fest",
       "year": "2023",
@@ -592,7 +595,8 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2023-london",
-        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
+        "https://leekduck.com/events/pokemon-go-fest-2023-london-england/"
       ],
       "evolved_pokemon": [],
       "start_date": "2023-08-04",
@@ -650,8 +654,8 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "於活動限定團體戰捕捉對應寶可夢，有機會附上該城市背景；現場活動票券與加購適用時段依當年規則。",
-      "method_en": "Chance from event raids for the listed species; event-ticket and add-on hours follow that year’s rules.",
+      "method_zh": "於持票活動日參與克雷色利亞、哲爾尼亞斯、伊裴爾塔爾或超級烈空坐團體戰，成功捕獲後有機會附主辦城市地點背景。",
+      "method_en": "During the ticketed event day, successfully catching Cresselia, Xerneas, Yveltal, or Rayquaza after its Mega Raid could award the host city's Location Card.",
       "series": "GO Fest",
       "series_zh": "GO Fest",
       "year": "2023",
@@ -659,7 +663,8 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2023-new-york",
-        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
+        "https://leekduck.com/events/pokemon-go-fest-2023-new-york-city-usa/"
       ],
       "evolved_pokemon": [],
       "start_date": "2023-08-18",
