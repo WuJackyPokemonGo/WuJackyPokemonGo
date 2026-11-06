@@ -22,5 +22,5 @@ test('group does not restore entries excluded by non-search filters or overrides
  assert.ok(!groupBackgroundCards(filterBackgrounds(records,{type:'location'})).some(c=>c.activity_id));
 });
 test('released and all-entry counts are independent from presentation-card counts',()=>{
- assert.equal(records.length,284);const released=filterBackgrounds(records);assert.equal(released.length,276);assert.equal(groupBackgroundCards(released).length,271);assert.equal(groupBackgroundCards(records).length,279);
+ assert.equal(records.length,282);const released=filterBackgrounds(records);assert.equal(released.length,275);assert.equal(groupBackgroundCards(released).length,270);assert.equal(groupBackgroundCards(records).length,277);
 });

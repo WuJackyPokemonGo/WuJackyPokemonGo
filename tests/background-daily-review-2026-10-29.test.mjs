@@ -9,7 +9,7 @@ test('announced previews respect state, stock, dex, year, region and language se
  for(const query of ['Dynamax Trails','特殊背景預告'])assert.equal(filterBackgroundAnnouncements(rows,{query}).filter(x=>x.event_id==='dynamax-trails-2026').length,1);
  assert.ok(filterBackgroundAnnouncements(rows,{query:'#0624',year:'2026',region:'Global'}).some(x=>x.event_id==='pawniard-community-day-2026'));
  assert.equal(filterBackgroundAnnouncements(rows,{query:'Dynamax Trails',region:'India'}).length,0);
- assert.equal(filterBackgrounds(data.records).length,count);assert.equal(count,276);
+ assert.equal(filterBackgrounds(data.records).length,count);assert.equal(count,275);
 });
 test('Dynamax Trails is upcoming, no substituted artwork or asserted Eternatus encounter and no duplicate event',()=>{
  const found=rows.filter(x=>x.event_id==='dynamax-trails-2026');assert.equal(found.length,1);const r=found[0];
@@ -24,6 +24,6 @@ test('Pawniard reuses the annual background but its future date and acquisition 
  const a=rows.find(x=>x.event_id==='pawniard-community-day-2026');assert.equal(a.background_id,r.background_id);assert.equal(a.release_state,'upcoming');
 });
 test('Wild Area clarification does not turn stamp rewards or remote battles into confirmed background routes',()=>{
- for(const id of ['BG-0212','BG-0213']){const r=data.records.find(x=>x.background_id===id);assert.equal(r.release_state,id==='BG-0212'?'released':'upcoming');assert.equal(r.pokemon.length,6);assert.match(r.date_note_en,/main ticketed day only, 10:00–20:00/);assert.match(r.date_note_en,/Extra Day/);assert.match(r.method_en,/remote battles do not award/);assert.match(r.notes_en.join(' '),/stamp rally are not promised/);assert.match(r.pokemon.find(x=>x.dex===884).method_en,/Special Research explicitly/)}
+ for(const id of ['BG-0212','BG-0213']){const r=data.records.find(x=>x.background_id===id);assert.equal(r.release_state,'released');assert.equal(r.pokemon.length,7);assert.ok(r.pokemon.some(x=>x.dex===(id==='BG-0212'?131:701)&&x.method_status==='reviewed'));assert.equal(data.redirects[id==='BG-0212'?'BG-0281':'BG-0282'],id);assert.match(r.date_note_en,/main ticketed day only, 10:00–20:00/);assert.match(r.date_note_en,/Extra Day/);assert.match(r.method_en,/remote battles do not award/);assert.match(r.notes_en.join(' '),/stamp rally are not promised/);assert.match(r.pokemon.find(x=>x.dex===884).method_en,/Special Research explicitly/)}
  assert.deepEqual(groupBackgroundCards(data.records).filter(x=>x.activity_id).map(x=>x.activity_id),['ancients-recovered']);
 });

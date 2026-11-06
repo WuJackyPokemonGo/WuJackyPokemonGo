@@ -27,7 +27,7 @@ test('current source additions all map to real records without rewriting histori
   for(const row of audit.sources[source].added)assert.ok(data.records.some(r=>r.background_id===row.background_id));
  }
  assert.equal(audit.sources.pokexperience.full_recheck,false);
- assert.equal(data.records.filter(r=>!['BG-0279','BG-0280','BG-0281','BG-0282','BG-0283','BG-0284','BG-0285'].includes(r.background_id)).length,audit.catalog_records);assert.equal(filterBackgrounds(data.records.filter(r=>!['BG-0212','BG-0280','BG-0281','BG-0282','BG-0283'].includes(r.background_id))).length,audit.released_records);
+ assert.equal(data.records.filter(r=>!['BG-0279','BG-0280','BG-0281','BG-0282','BG-0283','BG-0284','BG-0285'].includes(r.background_id)).length,audit.catalog_records);assert.equal(filterBackgrounds(data.records.filter(r=>!['BG-0212','BG-0213','BG-0280','BG-0283'].includes(r.background_id))).length,audit.released_records);
 });
 
 // Owner-supplied Bangkok artwork is a preview; it must never imply release.

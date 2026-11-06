@@ -5,7 +5,8 @@
   "released_records": 276,
   "complete": false,
   "new_released_background_ids": [
-    "BG-0283"
+    "BG-0283",
+    "BG-0213"
   ],
   "new_upcoming_background_ids": [
     "BG-0284",
@@ -132,5 +133,14 @@
       }
     ],
     "not_compared": "Dittobase無名單或無對應網址的紀錄（23筆）未做逐隻比對：PokéXperience數量另行比對。"
+  },
+  "shared_background_merge": {
+    "date": "2026-11-06",
+    "merged": {
+      "BG-0281": "BG-0212",
+      "BG-0282": "BG-0213"
+    },
+    "reason": "官方長期集章公告寫明拉普拉斯附仙台・東北地點背景、摔角鷹人附墨西哥城地點背景，與曠野地帶城市背景（含蒼響）為同一張；併入並轉向，避免重複計算圖樣。墨西哥城背景自11/2長期集章即可取得，BG-0213改為已推出。",
+    "source": "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026"
   }
 }
