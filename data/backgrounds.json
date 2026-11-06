@@ -28171,8 +28171,8 @@
       "end_date": "2026-11-08",
       "date_note_zh": "分支限時調查自印度時間11/1 06:00開放，獎勵明列附特殊背景的皮卡丘；團體戰與Sparkle O’Clock為11/6 10:00–11/8 20:00。",
       "date_note_en": "Branched Timed Research opened November 1 at 06:00 India time and lists a Special Background Pikachu; raids and Sparkle O’Clock run November 6, 10:00 to November 8, 20:00.",
-      "method_zh": "印度限定。分支限時調查擇一獲得附特殊背景的紗麗或庫爾塔皮卡丘；活動期間團體戰及Sparkle O’Clock（18:00、18:30、19:00、19:30各五分鐘）野外出現的紗麗／庫爾塔皮卡丘有機會附特殊背景。",
-      "method_en": "India only. Branched Timed Research awards saree or kurta Pikachu with the Special Background; during the event, raids and Sparkle O’Clock wild spawns (five minutes at 18:00, 18:30, 19:00, 19:30) give saree/kurta Pikachu a chance of the background.",
+      "method_zh": "印度限定。分支限時調查可擇一獲得必帶特殊背景的紗麗或庫爾塔皮卡丘。兩種服裝從團體戰或 Sparkle O’Clock（印度時間 18:00、18:30、19:00、19:30，各五分鐘）野外遭遇取得時，皆為機率附背，官方未公布機率。11/6 有玩家回報遠距團體戰兩種服裝各取得一隻附背；屬社群實測。",
+      "method_en": "India only. Branched Timed Research guarantees the Special Background on the chosen saree or kurta Pikachu. Both costumes have a chance of the background in raids or Sparkle O’Clock wild encounters (five minutes at 18:00, 18:30, 19:00 and 19:30 India time). No official rate was published. A November 6 community report shows one remote raid catch with the background for each costume.",
       "method_status": "reviewed",
       "pokemon": [
         {
@@ -28223,13 +28223,13 @@
         "eligible_en": "Pikachu wearing a saree or kurta.",
         "remote_participation": {
           "basis": "inferred",
-          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
-          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
+          "text_zh": "依現行一般團體戰規則可透過邀請遠距參戰；已有玩家回報成功參與。",
+          "text_en": "Remote participation is available through invitations under the standard raid rules; a player reported joining remotely."
         },
         "remote_background": {
           "basis": "pending",
-          "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
-          "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
+          "text_zh": "11/6 有玩家回報兩種服裝皆曾透過遠距團體戰取得特殊背景。官方未單獨公布遠距背板規則或機率；兩筆實測無法推定必背。",
+          "text_en": "On November 6, a player reported receiving the Special Background from a remote raid for each costume. The official announcement does not specify separate remote rates or rules; two catches do not establish a guarantee."
         },
         "checked_on": "2026-11-06",
         "sources": [
