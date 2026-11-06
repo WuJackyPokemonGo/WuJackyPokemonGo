@@ -1,0 +1,742 @@
+{
+  "as_of": "2026-11-06",
+  "scope": "personal",
+  "website_record": "BG-0190",
+  "note_zh": "個人版名單，與網站版分開；以網站版BG-0190為核對基準，不回寫網站資料。owned欄位留給本人填寫（true/false）。",
+  "counts": {
+    "direct": 40,
+    "evolution": 3,
+    "total": 43
+  },
+  "reconciliation": [
+    {
+      "count": 38,
+      "meaning_zh": "舊站直接遭遇數：36款＋拉帝亞斯＋拉帝歐斯（飛機兄妹）。為移除兩隻前的推算值，原始38款清單未取得。",
+      "status": "superseded"
+    },
+    {
+      "count": 40,
+      "meaning_zh": "網站版目前直接遭遇數：36款＋2026-10-28補入化石翼龍、勾魂眼、大嘴娃、差不多娃娃；不含拉帝亞斯、拉帝歐斯。另有3款進化繼承，合計43款。",
+      "status": "baseline"
+    },
+    {
+      "count": 42,
+      "meaning_zh": "PokéXperience保存名錄的物種標籤數：含3款進化（炙燙鱷、骨紋巨聲鱷、直衝熊），兩款皮卡丘共用一個Pikachu標籤。42−3＋1＝40。",
+      "status": "reconciled"
+    },
+    {
+      "count": 39,
+      "meaning_zh": "Dittobase舊快照：36直接＋3進化，缺10-28補入的4款。僅供參考。",
+      "status": "reference"
+    }
+  ],
+  "excluded": [
+    {
+      "variant_ids": [
+        "latias",
+        "latios"
+      ],
+      "reason": "keep excluded; owner correction retained despite Serebii listing"
+    },
+    {
+      "variant_ids": [
+        "scizor",
+        "gallade",
+        "salamence"
+      ],
+      "reason": "not added; contradictory attendee reports, no corroborating city-background evidence found"
+    },
+    {
+      "variant_ids": [
+        "deoxys",
+        "deoxys-attack",
+        "deoxys-defense",
+        "deoxys-speed"
+      ],
+      "reason": "not added; event raid availability alone does not establish city-background eligibility"
+    }
+  ],
+  "direct": [
+    {
+      "dex": 15,
+      "variant_id": "beedrill",
+      "name_zh": "大針蜂",
+      "name_en": "Beedrill",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 25,
+      "variant_id": "pikachu-pxp-2026",
+      "name_zh": "皮卡丘（PokémonXP Pikachu）",
+      "name_en": "PokémonXP Pikachu",
+      "kind": "direct",
+      "method_status": "reviewed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 25,
+      "variant_id": "pikachu-wcs-2026",
+      "name_zh": "皮卡丘（World Championships 2026 Pikachu）",
+      "name_en": "World Championships 2026 Pikachu",
+      "kind": "direct",
+      "method_status": "reviewed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 26,
+      "variant_id": "raichu",
+      "name_zh": "雷丘",
+      "name_en": "Raichu",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 65,
+      "variant_id": "alakazam",
+      "name_zh": "胡地",
+      "name_en": "Alakazam",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 71,
+      "variant_id": "victreebel",
+      "name_zh": "大食花",
+      "name_en": "Victreebel",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 80,
+      "variant_id": "slowbro",
+      "name_zh": "呆殼獸",
+      "name_en": "Slowbro",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 87,
+      "variant_id": "dewgong",
+      "name_zh": "白海獅",
+      "name_en": "Dewgong",
+      "kind": "direct",
+      "method_status": "reviewed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 94,
+      "variant_id": "gengar",
+      "name_zh": "耿鬼",
+      "name_en": "Gengar",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 99,
+      "variant_id": "kingler",
+      "name_zh": "巨鉗蟹",
+      "name_en": "Kingler",
+      "kind": "direct",
+      "method_status": "reviewed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 103,
+      "variant_id": "exeggutor-alola",
+      "name_zh": "椰蛋樹",
+      "name_en": "Alolan Exeggutor",
+      "kind": "direct",
+      "method_status": "reviewed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 121,
+      "variant_id": "starmie",
+      "name_zh": "寶石海星",
+      "name_en": "Starmie",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 127,
+      "variant_id": "pinsir",
+      "name_zh": "凱羅斯",
+      "name_en": "Pinsir",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 130,
+      "variant_id": "gyarados",
+      "name_zh": "暴鯉龍",
+      "name_en": "Gyarados",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 142,
+      "variant_id": "aerodactyl",
+      "name_zh": "化石翼龍",
+      "name_en": "Aerodactyl",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": true,
+      "owned": null
+    },
+    {
+      "dex": 149,
+      "variant_id": "dragonite",
+      "name_zh": "快龍",
+      "name_en": "Dragonite",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 150,
+      "variant_id": "mewtwo",
+      "name_zh": "超夢",
+      "name_en": "Mewtwo",
+      "kind": "direct",
+      "method_status": "reviewed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 181,
+      "variant_id": "ampharos",
+      "name_zh": "電龍",
+      "name_en": "Ampharos",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 208,
+      "variant_id": "steelix",
+      "name_zh": "大鋼蛇",
+      "name_en": "Steelix",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 227,
+      "variant_id": "skarmory",
+      "name_zh": "盔甲鳥",
+      "name_en": "Skarmory",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 229,
+      "variant_id": "houndoom",
+      "name_zh": "黑魯加",
+      "name_en": "Houndoom",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 263,
+      "variant_id": "zigzagoon",
+      "name_zh": "蛇紋熊",
+      "name_en": "Zigzagoon",
+      "kind": "direct",
+      "method_status": "reviewed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 302,
+      "variant_id": "sableye",
+      "name_zh": "勾魂眼",
+      "name_en": "Sableye",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": true,
+      "owned": null
+    },
+    {
+      "dex": 303,
+      "variant_id": "mawile",
+      "name_zh": "大嘴娃",
+      "name_en": "Mawile",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": true,
+      "owned": null
+    },
+    {
+      "dex": 306,
+      "variant_id": "aggron",
+      "name_zh": "波士可多拉",
+      "name_en": "Aggron",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 308,
+      "variant_id": "medicham",
+      "name_zh": "恰雷姆",
+      "name_en": "Medicham",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 310,
+      "variant_id": "manectric",
+      "name_zh": "雷電獸",
+      "name_en": "Manectric",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 319,
+      "variant_id": "sharpedo",
+      "name_zh": "巨牙鯊",
+      "name_en": "Sharpedo",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 323,
+      "variant_id": "camerupt",
+      "name_zh": "噴火駝",
+      "name_en": "Camerupt",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 334,
+      "variant_id": "altaria",
+      "name_zh": "七夕青鳥",
+      "name_en": "Altaria",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 354,
+      "variant_id": "banette",
+      "name_zh": "詛咒娃娃",
+      "name_en": "Banette",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 362,
+      "variant_id": "glalie",
+      "name_zh": "冰鬼護",
+      "name_en": "Glalie",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 384,
+      "variant_id": "rayquaza",
+      "name_zh": "烈空坐",
+      "name_en": "Rayquaza",
+      "kind": "direct",
+      "method_status": "reviewed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 428,
+      "variant_id": "lopunny",
+      "name_zh": "長耳兔",
+      "name_en": "Lopunny",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 460,
+      "variant_id": "abomasnow",
+      "name_zh": "暴雪王",
+      "name_en": "Abomasnow",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 531,
+      "variant_id": "audino",
+      "name_zh": "差不多娃娃",
+      "name_en": "Audino",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": true,
+      "owned": null
+    },
+    {
+      "dex": 687,
+      "variant_id": "malamar",
+      "name_zh": "烏賊王",
+      "name_en": "Malamar",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 870,
+      "variant_id": "falinks",
+      "name_zh": "列陣兵",
+      "name_en": "Falinks",
+      "kind": "direct",
+      "method_status": "unconfirmed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 884,
+      "variant_id": "duraludon",
+      "name_zh": "鋁鋼龍",
+      "name_en": "Duraludon",
+      "kind": "direct",
+      "method_status": "reviewed",
+      "added_2026_10_28": false,
+      "owned": null
+    },
+    {
+      "dex": 909,
+      "variant_id": "fuecoco",
+      "name_zh": "呆火鱷",
+      "name_en": "Fuecoco",
+      "kind": "direct",
+      "method_status": "reviewed",
+      "added_2026_10_28": false,
+      "owned": null
+    }
+  ],
+  "evolution": [
+    {
+      "dex": 264,
+      "variant_id": "linoone",
+      "name_zh": "直衝熊",
+      "name_en": "Linoone",
+      "kind": "evolution",
+      "owned": null
+    },
+    {
+      "dex": 910,
+      "variant_id": "crocalor",
+      "name_zh": "炙燙鱷",
+      "name_en": "Crocalor",
+      "kind": "evolution",
+      "owned": null
+    },
+    {
+      "dex": 911,
+      "variant_id": "skeledirge",
+      "name_zh": "骨紋巨聲鱷",
+      "name_en": "Skeledirge",
+      "kind": "evolution",
+      "owned": null
+    }
+  ],
+  "pokexperience_42_label_mapping": [
+    {
+      "source_name": "Abomasnow",
+      "variant_ids": [
+        "abomasnow"
+      ]
+    },
+    {
+      "source_name": "Aerodactyl",
+      "variant_ids": [
+        "aerodactyl"
+      ]
+    },
+    {
+      "source_name": "Aggron",
+      "variant_ids": [
+        "aggron"
+      ]
+    },
+    {
+      "source_name": "Alakazam",
+      "variant_ids": [
+        "alakazam"
+      ]
+    },
+    {
+      "source_name": "Altaria",
+      "variant_ids": [
+        "altaria"
+      ]
+    },
+    {
+      "source_name": "Ampharos",
+      "variant_ids": [
+        "ampharos"
+      ]
+    },
+    {
+      "source_name": "Audino",
+      "variant_ids": [
+        "audino"
+      ]
+    },
+    {
+      "source_name": "Banette",
+      "variant_ids": [
+        "banette"
+      ]
+    },
+    {
+      "source_name": "Beedrill",
+      "variant_ids": [
+        "beedrill"
+      ]
+    },
+    {
+      "source_name": "Camerupt",
+      "variant_ids": [
+        "camerupt"
+      ]
+    },
+    {
+      "source_name": "Crocalor",
+      "variant_ids": [
+        "crocalor"
+      ]
+    },
+    {
+      "source_name": "Dewgong",
+      "variant_ids": [
+        "dewgong"
+      ]
+    },
+    {
+      "source_name": "Dragonite",
+      "variant_ids": [
+        "dragonite"
+      ]
+    },
+    {
+      "source_name": "Duraludon",
+      "variant_ids": [
+        "duraludon"
+      ]
+    },
+    {
+      "source_name": "Exeggutor",
+      "variant_ids": [
+        "exeggutor-alola"
+      ]
+    },
+    {
+      "source_name": "Falinks",
+      "variant_ids": [
+        "falinks"
+      ]
+    },
+    {
+      "source_name": "Fuecoco",
+      "variant_ids": [
+        "fuecoco"
+      ]
+    },
+    {
+      "source_name": "Gengar",
+      "variant_ids": [
+        "gengar"
+      ]
+    },
+    {
+      "source_name": "Glalie",
+      "variant_ids": [
+        "glalie"
+      ]
+    },
+    {
+      "source_name": "Gyarados",
+      "variant_ids": [
+        "gyarados"
+      ]
+    },
+    {
+      "source_name": "Houndoom",
+      "variant_ids": [
+        "houndoom"
+      ]
+    },
+    {
+      "source_name": "Kingler",
+      "variant_ids": [
+        "kingler"
+      ]
+    },
+    {
+      "source_name": "Linoone",
+      "variant_ids": [
+        "linoone"
+      ]
+    },
+    {
+      "source_name": "Lopunny",
+      "variant_ids": [
+        "lopunny"
+      ]
+    },
+    {
+      "source_name": "Malamar",
+      "variant_ids": [
+        "malamar"
+      ]
+    },
+    {
+      "source_name": "Manectric",
+      "variant_ids": [
+        "manectric"
+      ]
+    },
+    {
+      "source_name": "Mawile",
+      "variant_ids": [
+        "mawile"
+      ]
+    },
+    {
+      "source_name": "Medicham",
+      "variant_ids": [
+        "medicham"
+      ]
+    },
+    {
+      "source_name": "Mewtwo",
+      "variant_ids": [
+        "mewtwo"
+      ]
+    },
+    {
+      "source_name": "Pikachu",
+      "variant_ids": [
+        "pikachu-wcs-2026",
+        "pikachu-pxp-2026"
+      ]
+    },
+    {
+      "source_name": "Pinsir",
+      "variant_ids": [
+        "pinsir"
+      ]
+    },
+    {
+      "source_name": "Raichu",
+      "variant_ids": [
+        "raichu"
+      ]
+    },
+    {
+      "source_name": "Rayquaza",
+      "variant_ids": [
+        "rayquaza"
+      ]
+    },
+    {
+      "source_name": "Sableye",
+      "variant_ids": [
+        "sableye"
+      ]
+    },
+    {
+      "source_name": "Sharpedo",
+      "variant_ids": [
+        "sharpedo"
+      ]
+    },
+    {
+      "source_name": "Skarmory",
+      "variant_ids": [
+        "skarmory"
+      ]
+    },
+    {
+      "source_name": "Skeledirge",
+      "variant_ids": [
+        "skeledirge"
+      ]
+    },
+    {
+      "source_name": "Slowbro",
+      "variant_ids": [
+        "slowbro"
+      ]
+    },
+    {
+      "source_name": "Starmie",
+      "variant_ids": [
+        "starmie"
+      ]
+    },
+    {
+      "source_name": "Steelix",
+      "variant_ids": [
+        "steelix"
+      ]
+    },
+    {
+      "source_name": "Victreebel",
+      "variant_ids": [
+        "victreebel"
+      ]
+    },
+    {
+      "source_name": "Zigzagoon",
+      "variant_ids": [
+        "zigzagoon"
+      ]
+    }
+  ]
+}
