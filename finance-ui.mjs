@@ -26,15 +26,67 @@ export function initFinanceUI({client,run,notify,operations,getProducts}){
  function extendPurchase(p,row){if(p.cancelled_at){row.append(el('p','取消原因：'+p.cancellation_reason,'muted'));return}if(p.received_at)return;const actions=el('div',null,'actions');actions.append(btn('編輯未到貨採購',()=>openForm('編輯採購',[{key:'purchased_at',label:'實際採購日期',type:'date',value:p.purchased_at,required:true},{key:'quantity',label:'採購數量',type:'number',min:1,max:2147483647,step:1,value:p.quantity,required:true},{key:'unit_cost_twd',label:'單位成本（NT$）',type:'number',min:0,max:9999999999.99,step:.01,value:p.unit_cost_twd,required:true},{key:'extra_cost_twd',label:'其他採購費用（NT$）',type:'number',min:0,max:9999999999.99,step:.01,value:p.extra_cost_twd,required:true},{key:'supplier_name',label:'供應商',maxLength:120,value:p.supplier_name},{key:'source_url',label:'訂購參考',maxLength:1000,value:p.source_url},{key:'notes_private',label:'內部備註',type:'textarea',maxLength:2000,value:p.notes_private},reason],v=>mutate('edit_purchase',{...purchasePayload({...v,product_id:p.product_id}),id:p.id,expected_updated_at:p.updated_at,reason:v.reason},'採購已更新，庫存尚未增加。'))),btn('取消未到貨採購',()=>openForm('取消未到貨採購',[reason],v=>mutate('cancel_purchase',{id:p.id,expected_updated_at:p.updated_at,reason:v.reason},'採購已取消，原紀錄保留。'))));row.append(actions)}
  function openCost(p){const current=p.inventory_valuations?.unit_cost_twd;openForm('確認庫存成本：'+p.name_zh,[{key:'unit_cost_twd',label:'目前在庫每件平均成本（NT$）',type:'number',min:0,max:9999999999.99,step:.01,required:true,value:current==null?'':Number(current).toFixed(2),note:`目前在庫 ${p.inventory_balances?.quantity_on_hand??0} 件。這會更正目前庫存估值，已建立訂單的成本快照維持原紀錄。`},reason],v=>mutate('set_inventory_cost',{product_id:p.id,unit_cost_twd:decimal(v.unit_cost_twd,'庫存成本'),reason:v.reason},'庫存成本已確認，後續到貨會依加權平均重算。'))}
  function table(headers,rows){const wrap=el('div',null,'table-scroll'),t=el('table'),head=el('thead'),h=el('tr');headers.forEach(x=>h.append(el('th',x)));head.append(h);t.append(head);const body=el('tbody');for(const r of rows){const tr=el('tr');r.forEach(v=>{const cell=el('td');cell.append(v instanceof Node?v:String(v??''));tr.append(cell)});body.append(tr)}t.append(body);wrap.append(t);return wrap}
- async function loadReport(){const version=epoch,from=date($('reportFrom').value),to=date($('reportTo').value);const [r,a]=await Promise.all([query('report',{from,to}),client.rpc('admin_analytics_report',{p_from:from,p_to:to}).then(checked)]);if(version!==epoch)return;report=r;const box=$('reportSummary');box.replaceChildren();const s=r.summary;for(const[label,key]of[['認列營收','sales_twd'],['抵減營收退款','sales_refunds_twd'],['淨銷貨成本','net_cogs_twd'],['平台手續費','fees_twd'],['其他訂單成本','other_cost_twd'],['營運費用','expenses_twd'],['估算淨利','estimated_profit_twd'],['實際收款','receipts_twd'],['實際退款','cash_refunds_twd'],['收退款淨額','net_receipts_twd'],['目前尚待收款','outstanding_twd'],['目前庫存估值（已知部分）','stock_value_twd']]){const card=el('div',null,'metric');card.append(el('small',label),el('strong',money(s[key])));box.append(card)}
+ async function loadReport(){const version=epoch,from=date($('reportFrom').value),to=date($('reportTo').value);const r=await query('report',{from,to});if(version!==epoch)return;report=r;const box=$('reportSummary');box.replaceChildren();const s=r.summary;for(const[label,key]of[['認列營收','sales_twd'],['抵減營收退款','sales_refunds_twd'],['淨銷貨成本','net_cogs_twd'],['平台手續費','fees_twd'],['其他訂單成本','other_cost_twd'],['營運費用','expenses_twd'],['估算淨利','estimated_profit_twd'],['實際收款','receipts_twd'],['實際退款','cash_refunds_twd'],['收退款淨額','net_receipts_twd'],['目前尚待收款','outstanding_twd'],['目前庫存估值（已知部分）','stock_value_twd']]){const card=el('div',null,'metric');card.append(el('small',label),el('strong',money(s[key])));box.append(card)}
   $('reportWarnings').textContent=`成本未確認 ${s.unknown_cost_rows} 筆；退款營收分類未確認 ${s.unclassified_refunds} 筆；未記錄日期的舊收退款 ${s.undated_payment_entries} 筆；庫存成本未確認 ${s.unknown_stock_products} 件。庫存對帳差異 ${s.inventory_mismatches} 件，收退款對帳差異 ${s.payment_mismatches} 筆。`;
   $('reportDetails').replaceChildren(el('h3','通路已完成銷售'),table(['通路','已完成訂單','認列營收','平台費'],r.channels.map(c=>[CHANNELS[c.channel],c.orders,money(c.sales_twd),money(c.fees_twd)])),el('h3','商品銷售排行'),table(['商品','銷售件數','商品收入'],r.products.map(p=>[p.name,p.quantity,money(p.sales_twd)])),el('h3','每日金額'),table(['台灣日期','認列營收','實收','實退','營運費用'],r.daily.map(d=>[d.date,money(d.sales_twd),money(d.receipts_twd),money(d.refunds_twd),money(d.expenses_twd)])));
   const tasks=r.tasks;$('businessTasks').textContent=`待確認 ${tasks.pending_review} 筆 · 待付款 ${tasks.awaiting_payment} 筆 · 已收待叫貨 ${tasks.paid_waiting} 筆 · 到貨待驗 ${tasks.arrived_for_check} 筆 · 退款處理 ${tasks.refund_pending} 筆 · 低庫存 ${tasks.low_stock} 件`;
-  const events=a.events??{};$('analyticsSummary').replaceChildren(el('p',`背景圖鑑瀏覽 ${events.background_page_view??0} 次 · 背景詳情瀏覽 ${events.background_view??0} 次`),table(['點閱次數','背景圖鑑編號'],(a.backgrounds??[]).map(p=>{const link=el('a',p.background_id);link.href='backgrounds.html?background='+encodeURIComponent(p.background_id);return [p.views,link]})),
-   el('p',`庫存網站瀏覽 ${events.page_view??0} 次 · 每日匿名工作階段合計 ${a.sessions??0} · 商品瀏覽 ${events.product_view??0} 次 · 搜尋無結果 ${events.search_empty??0} 次 · 加入清單 ${events.cart_add??0} 次 · 移除 ${events.cart_remove??0} 次 · 成功複製詢價 ${events.inquiry_copy??0} 次`),el('p','匿名工作階段是每日估算值；複製詢價不代表已傳送訊息或成立訂單。僅保留最近 30 天資料。','muted'),table(['點閱次數','庫存商品'],(a.popular??[]).map(p=>[p.views,p.name||'已封存商品'])));if(a.daily_cap_reached)$('analyticsSummary').append(el('p','部分日期達到統計上限，數字可能低於實際次數。','notice'));await loadExpenses();sync();
+  await loadExpenses();sync();
+ }
+ function renderTrafficChart(daily,from,to){
+  const byDay=new Map(daily.map(row=>[row.day,row]));
+  const series=[
+   {key:'page_views',name:'庫存網站',color:'#1d4ed8'},
+   {key:'background_page_views',name:'背景圖鑑',color:'#047857'}
+  ];
+  const rows=[];
+  for(let time=Date.parse(from);time<=Date.parse(to);time+=86400000){
+   const day=new Date(time).toISOString().slice(0,10);
+   rows.push({day,...byDay.get(day)});
+  }
+  const value=(row,key)=>Number(row[key])||0;
+  const peak=Math.max(0,...rows.flatMap(row=>series.map(({key})=>value(row,key))));
+  const chart=$('analyticsChart');chart.replaceChildren();
+  if(!peak){chart.append(el('p','這段期間沒有已記錄的網站瀏覽。','muted'));return}
+  const limit=Math.ceil(peak/4)*4;
+  const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
+  svg.setAttribute('viewBox','0 0 640 280');svg.setAttribute('role','img');
+  svg.setAttribute('aria-label','庫存網站與背景圖鑑每日瀏覽次數折線圖');
+  const draw=(tag,attrs,text)=>{
+   const n=document.createElementNS(svg.namespaceURI,tag);
+   for(const [key,val] of Object.entries(attrs))n.setAttribute(key,val);
+   if(text!=null)n.textContent=text;
+   svg.append(n);
+  };
+  const x=i=>rows.length===1?336:60+i*552/(rows.length-1);
+  const y=n=>236-n*210/limit;
+  for(let n=0;n<=limit;n+=limit/4){
+   draw('line',{x1:60,x2:612,y1:y(n),y2:y(n),stroke:'#cbd5e1'});
+   draw('text',{x:51,y:y(n)+5,'text-anchor':'end',fill:'#334155'},n);
+  }
+  const ticks=new Set([0,Math.floor((rows.length-1)/2),rows.length-1]);
+  for(const i of ticks)draw('text',{x:x(i),y:264,'text-anchor':'middle',fill:'#334155'},rows[i].day.slice(5));
+  const legend=el('p',null,'traffic-legend');
+  for(const {key,name,color} of series){
+   const label=el('span',name);label.style.color=color;legend.append(label);
+   const points=rows.map((row,i)=>[x(i),y(value(row,key))]);
+   if(points.length>1)draw('polyline',{points:points.map(p=>p.join(',')).join(' '),fill:'none',stroke:color,'stroke-width':3,'stroke-linejoin':'round'});
+   for(const [cx,cy] of points)draw('circle',{cx,cy,r:points.length>45?0:3,fill:color});
+  }
+  const details=el('details');details.append(el('summary','查看每日數字'),table(['台灣日期',...series.map(s=>s.name)],rows.map(row=>[row.day,...series.map(s=>value(row,s.key))])));
+  chart.append(legend,svg,details);
+ }
+ async function loadAnalytics(){
+  const version=epoch,from=date($('analyticsFrom').value),to=date($('analyticsTo').value);
+  $('analyticsChart').replaceChildren();$('analyticsSummary').textContent='正在載入網站統計…';
+  const a=checked(await client.rpc('admin_analytics_report',{p_from:from,p_to:to}));
+  if(version!==epoch)return;
+  const events=a.events??{};renderTrafficChart(a.daily??[],from,to);$('analyticsSummary').replaceChildren(el('p',`背景圖鑑瀏覽 ${events.background_page_view??0} 次 · 背景詳情瀏覽 ${events.background_view??0} 次`),table(['點閱次數','背景圖鑑編號'],(a.backgrounds??[]).map(p=>{const link=el('a',p.background_id);link.href='backgrounds.html?background='+encodeURIComponent(p.background_id);return [p.views,link]})),
+   el('p',`庫存網站瀏覽 ${events.page_view??0} 次 · 每日匿名工作階段合計 ${a.sessions??0} · 商品瀏覽 ${events.product_view??0} 次 · 搜尋無結果 ${events.search_empty??0} 次 · 加入清單 ${events.cart_add??0} 次 · 移除 ${events.cart_remove??0} 次 · 成功複製詢價 ${events.inquiry_copy??0} 次`),el('p','匿名工作階段是每日估算值；複製詢價不代表已傳送訊息或成立訂單。僅保留最近 30 天資料。','muted'),table(['點閱次數','庫存商品'],(a.popular??[]).map(p=>[p.views,p.name||'已封存商品'])));if(a.daily_cap_reached)$('analyticsSummary').append(el('p','部分日期達到統計上限，數字可能低於實際次數。','notice'));
  }
  async function loadExpenses(){const version=epoch,rows=[];for(let offset=0;offset<2000;offset+=200){const batch=checked(await client.from('expenses').select('*').gte('spent_at',$('reportFrom').value).lte('spent_at',$('reportTo').value).order('spent_at',{ascending:false}).order('id').range(offset,offset+199));rows.push(...batch);if(batch.length<200)break}if(version!==epoch)return;$('expenseList').replaceChildren();if(rows.length===2000)$('expenseList').append(el('p','畫面顯示最多 2,000 筆，完整資料可匯出 Excel。','notice'));for(const e of rows){const row=el('article',null,'product');row.append(el('strong',`${e.spent_at}｜${e.category}｜${money(e.amount_twd)}${e.voided_at?'（已作廢）':''}`),el('p',e.note_private||'','order-detail-line'));if(!e.voided_at)row.append(btn('更正誤記（作廢）',()=>openForm('作廢費用紀錄',[reason],async v=>{await mutate('void_expense',{id:e.id,reason:v.reason},'費用誤記已作廢。');await loadReport()})));$('expenseList').append(row)}}
  $('addExpense').onclick=()=>openForm('新增實際費用',[{key:'spent_at',label:'實際支出日期',type:'date',required:true},{key:'category',label:'費用類別',required:true,maxLength:60},{key:'amount_twd',label:'實際支出金額（NT$）',type:'number',min:0,max:9999999999.99,step:.01,required:true},{key:'channel',label:'相關通路（可不指定）',options:[['','不指定'],...Object.entries(CHANNELS)]},{key:'note_private',label:'內部備註',type:'textarea',maxLength:2000},reason],async v=>{await mutate('create_expense',{spent_at:date(v.spent_at),category:v.category.trim(),amount_twd:decimal(v.amount_twd,'費用'),channel:v.channel||null,note_private:v.note_private,reason:v.reason},'實際費用已記錄。');await loadReport()});
+ $('analyticsForm').onsubmit=e=>{e.preventDefault();run(loadAnalytics)};
+ $('tabAnalytics').onclick=()=>run(async()=>{operations.showView('analytics');await loadAnalytics()});
  $('reportForm').onsubmit=e=>{e.preventDefault();run(loadReport)};$('tabReports').onclick=()=>run(async()=>{operations.showView('reports');await loadReport()});
  $('exportExcel').onclick=()=>run(async()=>{if(!report)return;const version=epoch,document=checked(await client.rpc('admin_backup_document'));if(version!==epoch)return;const blob=reportWorkbook(report,document),url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download=`wu-jacky-report-${report.from}-${report.to}.xlsx`;a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);notify('Excel 已產生，含私人訂單、成本與收退款明細，請保存到自己的裝置。')});
  function renderFee(){const channel=$('feeRuleChannel').value,r=settings?.fee_rules?.[channel];$('feeRulePercent').value=r?(r.basis_points/100).toString():'';$('feeRuleFixed').value=r?r.fixed_twd:'';$('feeRuleRounding').value=r?.rounding??'round';$('feeRuleEnabled').checked=r?.enabled??false;$('feeRulesStatus').textContent=r?'這個通路已設定費率，可在訂單中選擇自動計算。':'這個通路尚未設定費率；訂單須手動填寫實際手續費。'}
@@ -47,6 +99,8 @@ export function initFinanceUI({client,run,notify,operations,getProducts}){
  $('orderForm').elements.fee_twd.addEventListener('input',()=>{$('orderForm').elements.fee_mode.value='manual';$('orderForm').elements.fee_rule_version.value=''});
  $('orderForm').addEventListener('input',event=>{const form=$('orderForm'),control=event.target;if(form.elements.fee_mode.value==='auto'&&(['channel','private_adjustments_twd'].includes(control.name)||['quantity','sale_unit_price_twd'].includes(control.dataset.field))){form.elements.fee_mode.value='manual';form.elements.fee_rule_version.value='';form.elements.fee_twd.value='';notify('訂單金額或通路已變更，請重新計算或填寫確認後的手續費。')}});
  for(const[k,v]of Object.entries(CHANNELS)){const o=el('option',v);o.value=k;$('feeRuleChannel').append(o)}
+ $('analyticsTo').value=today();
+ $('analyticsFrom').value=new Date(Date.parse(today())-29*86400000).toISOString().slice(0,10);
  $('reportTo').value=today();$('reportFrom').value=today().slice(0,8)+'01';function sync(){$('exportExcel').disabled=!report}
- return {extendOrder,extendPurchase,openCost,sync,async openDashboard(){operations.showView('reports');await loadReport()},clear(){epoch++;report=null;settings=null;jobStatus=null;submitForm=null;for(const id of ['reportSummary','reportDetails','analyticsSummary','expenseList','jobStatusList','financeActionForm'])$(id).replaceChildren();$('businessTasks').textContent='';$('reportWarnings').textContent='';$('discordWebhook').value='';sync()}};
+ return {extendOrder,extendPurchase,openCost,sync,async openDashboard(){operations.showView('reports');await loadReport()},clear(){epoch++;report=null;settings=null;jobStatus=null;submitForm=null;for(const id of ['reportSummary','reportDetails','analyticsChart','analyticsSummary','expenseList','jobStatusList','financeActionForm'])$(id).replaceChildren();$('businessTasks').textContent='';$('reportWarnings').textContent='';$('discordWebhook').value='';sync()}};
 }
