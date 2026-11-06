@@ -1012,7 +1012,7 @@
         {
           "dex": 483,
           "name_en": "Dialga Origin",
-          "name_zh": "帝牙盧卡",
+          "name_zh": "帝牙盧卡（起源形態）",
           "variant_id": "dialga-origin",
           "acquisition": "encounter"
         },
@@ -1026,7 +1026,7 @@
         {
           "dex": 484,
           "name_en": "Palkia Origin",
-          "name_zh": "帕路奇亞",
+          "name_zh": "帕路奇亞（起源形態）",
           "variant_id": "palkia-origin",
           "acquisition": "encounter"
         }
@@ -1977,14 +1977,14 @@
         {
           "dex": 483,
           "name_en": "Dialga Origin",
-          "name_zh": "帝牙盧卡",
+          "name_zh": "帝牙盧卡（起源形態）",
           "variant_id": "dialga-origin",
           "acquisition": "encounter"
         },
         {
           "dex": 484,
           "name_en": "Palkia Origin",
-          "name_zh": "帕路奇亞",
+          "name_zh": "帕路奇亞（起源形態）",
           "variant_id": "palkia-origin",
           "acquisition": "encounter"
         },
@@ -19453,14 +19453,14 @@
         {
           "dex": 483,
           "name_en": "Dialga Origin",
-          "name_zh": "帝牙盧卡",
+          "name_zh": "帝牙盧卡（起源形態）",
           "variant_id": "dialga-origin",
           "acquisition": "encounter"
         },
         {
           "dex": 484,
           "name_en": "Palkia Origin",
-          "name_zh": "帕路奇亞",
+          "name_zh": "帕路奇亞（起源形態）",
           "variant_id": "palkia-origin",
           "acquisition": "encounter"
         },
@@ -20295,7 +20295,7 @@
         {
           "dex": 641,
           "name_en": "Tornadus Therian",
-          "name_zh": "龍捲雲",
+          "name_zh": "龍捲雲（靈獸形態）",
           "variant_id": "tornadus-therian",
           "acquisition": "encounter"
         },
@@ -20309,7 +20309,7 @@
         {
           "dex": 645,
           "name_en": "Landorus Therian",
-          "name_zh": "土地雲",
+          "name_zh": "土地雲（靈獸形態）",
           "variant_id": "landorus-therian",
           "acquisition": "encounter"
         },
@@ -20530,7 +20530,7 @@
         {
           "dex": 642,
           "name_en": "Thundurus Therian",
-          "name_zh": "雷電雲",
+          "name_zh": "雷電雲（靈獸形態）",
           "variant_id": "thundurus-therian",
           "acquisition": "encounter"
         },
@@ -20544,7 +20544,7 @@
         {
           "dex": 645,
           "name_en": "Landorus Therian",
-          "name_zh": "土地雲",
+          "name_zh": "土地雲（靈獸形態）",
           "variant_id": "landorus-therian",
           "acquisition": "encounter"
         },
@@ -24790,7 +24790,7 @@
         {
           "dex": 483,
           "name_en": "Dialga Origin",
-          "name_zh": "帝牙盧卡",
+          "name_zh": "帝牙盧卡（起源形態）",
           "variant_id": "dialga-origin",
           "acquisition": "encounter"
         }
@@ -24872,7 +24872,7 @@
         {
           "dex": 484,
           "name_en": "Palkia Origin",
-          "name_zh": "帕路奇亞",
+          "name_zh": "帕路奇亞（起源形態）",
           "variant_id": "palkia-origin",
           "acquisition": "encounter"
         }
@@ -25266,7 +25266,7 @@
         {
           "dex": 483,
           "name_en": "Dialga Origin",
-          "name_zh": "帝牙盧卡",
+          "name_zh": "帝牙盧卡（起源形態）",
           "variant_id": "dialga-origin",
           "acquisition": "encounter"
         },
@@ -25280,7 +25280,7 @@
         {
           "dex": 484,
           "name_en": "Palkia Origin",
-          "name_zh": "帕路奇亞",
+          "name_zh": "帕路奇亞（起源形態）",
           "variant_id": "palkia-origin",
           "acquisition": "encounter"
         },
@@ -25350,7 +25350,7 @@
         {
           "dex": 487,
           "name_en": "Giratina Origin",
-          "name_zh": "騎拉帝納",
+          "name_zh": "騎拉帝納（起源形態）",
           "variant_id": "giratina-origin",
           "acquisition": "encounter"
         },
@@ -25560,7 +25560,7 @@
         {
           "dex": 641,
           "name_en": "Tornadus Therian",
-          "name_zh": "龍捲雲",
+          "name_zh": "龍捲雲（靈獸形態）",
           "variant_id": "tornadus-therian",
           "acquisition": "encounter"
         },
@@ -25574,7 +25574,7 @@
         {
           "dex": 642,
           "name_en": "Thundurus Therian",
-          "name_zh": "雷電雲",
+          "name_zh": "雷電雲（靈獸形態）",
           "variant_id": "thundurus-therian",
           "acquisition": "encounter"
         },
@@ -25588,7 +25588,7 @@
         {
           "dex": 645,
           "name_en": "Landorus Therian",
-          "name_zh": "土地雲",
+          "name_zh": "土地雲（靈獸形態）",
           "variant_id": "landorus-therian",
           "acquisition": "encounter"
         },
@@ -25602,7 +25602,7 @@
         {
           "dex": 905,
           "name_en": "Enamorus Therian",
-          "name_zh": "眷戀雲",
+          "name_zh": "眷戀雲（靈獸形態）",
           "variant_id": "enamorus-therian",
           "acquisition": "encounter"
         },
@@ -25616,21 +25616,21 @@
         {
           "dex": 386,
           "name_en": "Deoxys Attack",
-          "name_zh": "代歐奇希斯",
+          "name_zh": "代歐奇希斯（攻擊形態）",
           "variant_id": "deoxys-attack",
           "acquisition": "encounter"
         },
         {
           "dex": 386,
           "name_en": "Deoxys Defense",
-          "name_zh": "代歐奇希斯",
+          "name_zh": "代歐奇希斯（防禦形態）",
           "variant_id": "deoxys-defense",
           "acquisition": "encounter"
         },
         {
           "dex": 386,
           "name_en": "Deoxys Speed",
-          "name_zh": "代歐奇希斯",
+          "name_zh": "代歐奇希斯（速度形態）",
           "variant_id": "deoxys-speed",
           "acquisition": "encounter"
         },
@@ -26090,17 +26090,17 @@
         {
           "dex": 386,
           "name_en": "Deoxys (Attack Forme)",
-          "name_zh": "代歐奇希斯"
+          "name_zh": "代歐奇希斯（攻擊形態）"
         },
         {
           "dex": 386,
           "name_en": "Deoxys (Defense Forme)",
-          "name_zh": "代歐奇希斯"
+          "name_zh": "代歐奇希斯（防禦形態）"
         },
         {
           "dex": 386,
           "name_en": "Deoxys (Speed Forme)",
-          "name_zh": "代歐奇希斯"
+          "name_zh": "代歐奇希斯（速度形態）"
         },
         {
           "dex": 445,
@@ -26140,7 +26140,7 @@
         {
           "dex": 483,
           "name_en": "Dialga (Origin Forme)",
-          "name_zh": "帝牙盧卡"
+          "name_zh": "帝牙盧卡（起源形態）"
         },
         {
           "dex": 484,
@@ -26150,7 +26150,7 @@
         {
           "dex": 484,
           "name_en": "Palkia (Origin Forme)",
-          "name_zh": "帕路奇亞"
+          "name_zh": "帕路奇亞（起源形態）"
         },
         {
           "dex": 485,
@@ -26170,7 +26170,7 @@
         {
           "dex": 487,
           "name_en": "Giratina (Origin Forme)",
-          "name_zh": "騎拉帝納"
+          "name_zh": "騎拉帝納（起源形態）"
         },
         {
           "dex": 488,
@@ -26210,7 +26210,7 @@
         {
           "dex": 641,
           "name_en": "Tornadus (Therian Forme)",
-          "name_zh": "龍捲雲"
+          "name_zh": "龍捲雲（靈獸形態）"
         },
         {
           "dex": 642,
@@ -26220,7 +26220,7 @@
         {
           "dex": 642,
           "name_en": "Thundurus (Therian Forme)",
-          "name_zh": "雷電雲"
+          "name_zh": "雷電雲（靈獸形態）"
         },
         {
           "dex": 643,
@@ -26250,7 +26250,7 @@
         {
           "dex": 645,
           "name_en": "Landorus (Therian Forme)",
-          "name_zh": "土地雲"
+          "name_zh": "土地雲（靈獸形態）"
         },
         {
           "dex": 646,
@@ -26265,22 +26265,22 @@
         {
           "dex": 649,
           "name_en": "Genesect (Shock Drive)",
-          "name_zh": "蓋諾賽克特"
+          "name_zh": "蓋諾賽克特（閃電卡帶）"
         },
         {
           "dex": 649,
           "name_en": "Genesect (Burn Drive)",
-          "name_zh": "蓋諾賽克特"
+          "name_zh": "蓋諾賽克特（火焰卡帶）"
         },
         {
           "dex": 649,
           "name_en": "Genesect (Chill Drive)",
-          "name_zh": "蓋諾賽克特"
+          "name_zh": "蓋諾賽克特（冰凍卡帶）"
         },
         {
           "dex": 649,
           "name_en": "Genesect (Douse Drive)",
-          "name_zh": "蓋諾賽克特"
+          "name_zh": "蓋諾賽克特（水流卡帶）"
         },
         {
           "dex": 716,
@@ -26400,7 +26400,7 @@
         {
           "dex": 905,
           "name_en": "Enamorus (Therian Forme)",
-          "name_zh": "眷戀雲"
+          "name_zh": "眷戀雲（靈獸形態）"
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",

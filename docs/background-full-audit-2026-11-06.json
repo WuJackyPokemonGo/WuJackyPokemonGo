@@ -1,0 +1,421 @@
+{
+ "issues": [
+  {
+   "id": "BG-0070",
+   "cat": "pokemon",
+   "msg": "duplicate variant_id primarina,hydreigon"
+  },
+  {
+   "id": "BG-0072",
+   "cat": "field",
+   "msg": "missing year"
+  },
+  {
+   "id": "BG-0144",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0145",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0146",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0147",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0148",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0149",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0150",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0151",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0152",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0153",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0154",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0155",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0156",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0157",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0158",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0159",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0160",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0191",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0192",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0193",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0194",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0211",
+   "cat": "pokemon",
+   "msg": "duplicate variant_id "
+  },
+  {
+   "id": "BG-0214",
+   "cat": "pokemon",
+   "msg": "duplicate variant_id "
+  },
+  {
+   "id": "BG-0240",
+   "cat": "pokemon",
+   "msg": "duplicate variant_id "
+  },
+  {
+   "id": "BG-0257",
+   "cat": "pokemon",
+   "msg": "duplicate variant_id "
+  },
+  {
+   "id": "BG-0266",
+   "cat": "date",
+   "msg": "span > 400 days"
+  },
+  {
+   "id": "BG-0276",
+   "cat": "field",
+   "msg": "missing year"
+  },
+  {
+   "id": "BG-0276",
+   "cat": "field",
+   "msg": "missing region_zh"
+  },
+  {
+   "id": "BG-0276",
+   "cat": "field",
+   "msg": "missing region_en"
+  },
+  {
+   "id": "BG-0277",
+   "cat": "field",
+   "msg": "missing year"
+  },
+  {
+   "id": "BG-0277",
+   "cat": "field",
+   "msg": "missing region_zh"
+  },
+  {
+   "id": "BG-0277",
+   "cat": "field",
+   "msg": "missing region_en"
+  },
+  {
+   "id": "BG-0280",
+   "cat": "reference",
+   "msg": "reference_id not in facts dia-de-muertos-2026-mexico-city"
+  }
+ ],
+ "info": {
+  "id_range": [
+   1,
+   282
+  ],
+  "id_gaps": [
+   "BG-0270"
+  ],
+  "redirects": {
+   "BG-0270": "BG-0261"
+  },
+  "dex_name_conflicts": [
+   {
+    "dex": "849",
+    "names": [
+     "顫弦蠑螈 x11 e.g. BG-0022,BG-0022,BG-0211",
+     "超極巨化顫弦蠑螈 x2 e.g. BG-0022,BG-0022",
+     "極巨化顫弦蠑螈 x2 e.g. BG-0022,BG-0022"
+    ]
+   }
+  ],
+  "shared_image": [
+   [
+    "https://pokexperience.com/pokemon-variants/backgrounds/cs23_mexico_city.webp?v=20260816",
+    [
+     "BG-0008",
+     "BG-0280"
+    ]
+   ],
+   [
+    "https://pokexperience.com/pokemon-variants/backgrounds/lc_2026_gwa_sendai.webp?v=20260816",
+    [
+     "BG-0212",
+     "BG-0281"
+    ]
+   ],
+   [
+    "https://pokexperience.com/pokemon-variants/backgrounds/lc_2026_gwa_mexico_city.webp?v=20260816",
+    [
+     "BG-0213",
+     "BG-0282"
+    ]
+   ]
+  ],
+  "same_date_region_pokemon": [
+   [
+    "2025-08-29|United States|pikachu",
+    [
+     "BG-0058",
+     "BG-0059"
+    ]
+   ],
+   [
+    "2025-09-13|France|charmander",
+    [
+     "BG-0062",
+     "BG-0063"
+    ]
+   ],
+   [
+    "2025-11-07|Japan|pikachu",
+    [
+     "BG-0073",
+     "BG-0074",
+     "BG-0075",
+     "BG-0076",
+     "BG-0078"
+    ]
+   ],
+   [
+    "2026-01-28|Japan|pikachu",
+    [
+     "BG-0085",
+     "BG-0086",
+     "BG-0087",
+     "BG-0088",
+     "BG-0089",
+     "BG-0090",
+     "BG-0091",
+     "BG-0092",
+     "BG-0093",
+     "BG-0094",
+     "BG-0095",
+     "BG-0096",
+     "BG-0097",
+     "BG-0098",
+     "BG-0099",
+     "BG-0100",
+     "BG-0101",
+     "BG-0102",
+     "BG-0103",
+     "BG-0104",
+     "BG-0105",
+     "BG-0106",
+     "BG-0107",
+     "BG-0108",
+     "BG-0109",
+     "BG-0110",
+     "BG-0111",
+     "BG-0112",
+     "BG-0113",
+     "BG-0114",
+     "BG-0115",
+     "BG-0116",
+     "BG-0117",
+     "BG-0118",
+     "BG-0267"
+    ]
+   ],
+   [
+    "2026-07-01|Japan|pikachu",
+    [
+     "BG-0144",
+     "BG-0146",
+     "BG-0147",
+     "BG-0148",
+     "BG-0149",
+     "BG-0150",
+     "BG-0151",
+     "BG-0152",
+     "BG-0153",
+     "BG-0154",
+     "BG-0155",
+     "BG-0156",
+     "BG-0157",
+     "BG-0158",
+     "BG-0159",
+     "BG-0160",
+     "BG-0266"
+    ]
+   ],
+   [
+    "2026-07-18|United Kingdom|sewaddle+treecko",
+    [
+     "BG-0162",
+     "BG-0163",
+     "BG-0164",
+     "BG-0165",
+     "BG-0168",
+     "BG-0172",
+     "BG-0173",
+     "BG-0188"
+    ]
+   ],
+   [
+    "2026-07-18|United Kingdom|seedot+treecko",
+    [
+     "BG-0166",
+     "BG-0174",
+     "BG-0175",
+     "BG-0176",
+     "BG-0183",
+     "BG-0185",
+     "BG-0186",
+     "BG-0187"
+    ]
+   ],
+   [
+    "2026-07-18|United Kingdom|hoppip+treecko",
+    [
+     "BG-0167",
+     "BG-0178",
+     "BG-0180",
+     "BG-0181",
+     "BG-0182",
+     "BG-0184"
+    ]
+   ],
+   [
+    "2026-07-18|United Kingdom|pineco+treecko",
+    [
+     "BG-0169",
+     "BG-0170",
+     "BG-0171",
+     "BG-0177",
+     "BG-0179"
+    ]
+   ],
+   [
+    "2026-07-11|Multiple regions|",
+    [
+     "BG-0258",
+     "BG-0259"
+    ]
+   ]
+  ],
+  "same_name_en": [],
+  "records_without_reference_asset": [
+   "BG-0018 released",
+   "BG-0039 released",
+   "BG-0258 released",
+   "BG-0279 upcoming",
+   "BG-0281 released",
+   "BG-0282 released"
+  ],
+  "counts_declared": {
+   "catalog-crosschecked": 55,
+   "official-event-confirmed": 220,
+   "catalogued-needs-event-check": 3,
+   "upcoming": 3
+  },
+  "counts_actual": {
+   "catalog-crosschecked": 55,
+   "official-event-confirmed": 220,
+   "catalogued-needs-event-check": 3,
+   "upcoming": 3
+  },
+  "review_declared": {
+   "date_details_pending": 3,
+   "acquisition_method_pending": 5,
+   "backgrounds_pending": 3
+  },
+  "review_actual": {
+   "date": [
+    "BG-0072",
+    "BG-0276",
+    "BG-0277"
+   ],
+   "method": [
+    "BG-0072",
+    "BG-0190",
+    "BG-0238",
+    "BG-0276",
+    "BG-0277"
+   ],
+   "backgrounds": [
+    "BG-0072",
+    "BG-0276",
+    "BG-0277"
+   ]
+  },
+  "total": 281,
+  "by_year": {
+   "2023": 8,
+   "2024": 26,
+   "2025": 78,
+   "2026": 165,
+   "2027": 1,
+   "null": 1,
+   "": 2
+  }
+ }
+}
