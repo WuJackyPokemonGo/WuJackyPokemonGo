@@ -23849,7 +23849,9 @@
         "年度背景有不同動畫畫格／素材名稱；目前合併保留為一組，不因素材筆數重複計算。",
         "2026-11-06：依Dittobase背景頁補列進化繼承款。"
       ],
-      "related_product_ids": [],
+      "related_product_ids": [
+        "af6b226d-a462-4ddb-ab66-0b46f0d72a24"
+      ],
       "method_zh": "2026 年各社群日及經典社群日依當期規則取得年度特殊背景；並非全年每天皆可獲得。帶背景的原始遭遇款可進化保留背景。",
       "method_en": "Available during individual 2026 Community Day and Community Day Classic events under each event’s rules, not continuously throughout the year. Evolutions retain the background.",
       "series": "Community & Season",
@@ -26129,7 +26131,10 @@
       ],
       "start_date": "2026-07-06",
       "end_date": "2026-07-12",
-      "related_product_ids": [],
+      "related_product_ids": [
+        "a2897287-4cb1-4c11-8bce-3d2f6d7dba1d",
+        "dd9f267b-dcbc-430c-b7d7-0f345d926fdb"
+      ],
       "method_zh": "7/6–12 指定五星、原始及超級團體戰（超夢除外），捕捉後有機會附十週年紀念特殊背景。",
       "method_en": "Eligible non-Mewtwo five-star, Primal and Mega raids July 6–12 may award the anniversary background.",
       "series": "GO Fest",
@@ -26717,7 +26722,10 @@
         "背景取得期間為 2026/7/6～7/12；Road of Legends 主活動為 7/6～7/10，之後銜接 GO Fest 全球活動。",
         "2026-11-06：原名單萊希拉姆、捷克羅姆各列兩次，為7/6五星團體戰與之後再度登場（捷克羅姆週二、萊希拉姆週三）重複計入，同一背景款式只保留一筆。依據：LeekDuck GO Fest 2026特殊背景頁。"
       ],
-      "related_product_ids": [],
+      "related_product_ids": [
+        "a2897287-4cb1-4c11-8bce-3d2f6d7dba1d",
+        "dd9f267b-dcbc-430c-b7d7-0f345d926fdb"
+      ],
       "method_zh": "指定五星、原始及超級團體戰捕獲後，有機會帶特殊背景；各寶可夢出現日期不同。",
       "method_en": "Eligible five-star, Primal and Mega Raid catches may have the Special Background. Individual Pokémon have different raid schedules.",
       "series": "Other",
