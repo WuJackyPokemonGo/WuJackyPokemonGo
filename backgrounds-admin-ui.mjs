@@ -1,3 +1,4 @@
+import {BACKGROUNDS_DATA_URL} from './background-data.mjs';
 import {createBackgroundAdminService,mergeBackgroundOverrides,backgroundEditPayload,backgroundPokemonText} from './backgrounds-admin-service.mjs';
 import {backgroundMatch,safeBackgroundImage} from './backgrounds-service.mjs';
 const $=id=>document.getElementById(id);
@@ -25,7 +26,7 @@ export function initBackgroundAdminUI({client,journal,run,notify,getProducts,sho
  }
  async function load(){
   const version=epoch;
-  const response=await fetch('data/backgrounds.json?v=20261023-crosscheck',{signal:AbortSignal.timeout(15000)});
+  const response=await fetch(BACKGROUNDS_DATA_URL,{signal:AbortSignal.timeout(15000)});
   if(!response.ok)throw Error('無法載入背景基礎資料。');
   const data=await response.json();const overrides=await service.list();if(version!==epoch)return;
   base=data.records;rows=mergeBackgroundOverrides(base,overrides,{includeHidden:true});loaded=true;render();
