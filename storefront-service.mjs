@@ -1,5 +1,5 @@
 import {catalogAssetPath} from './catalog-assets.mjs';
-import {tr,t,productName} from './storefront-locale.mjs';
+import {tr,t,productName,supportedLocales} from './storefront-locale.mjs';
 import {STAGING_URL,STAGING_PUBLISHABLE_KEY} from './staging-config.mjs';
 export const PUBLIC_STORAGE=STAGING_URL+'/storage/v1/object/public/storefront-thumbnails/';
 export function publicStockFields(supply,quantity,threshold=3){
@@ -15,7 +15,10 @@ export function stockLabel(p,locale='zh'){
  if(p.status==='sold_out'||p.stock_quantity===0)return {text:tr('已售罄','Sold out',locale),tone:'sold'};
  const known=Number.isInteger(p.stock_quantity)&&p.stock_quantity>0&&p.stock_quantity<=2147483647;
  if(!known)return {text:p.status==='low_stock'?tr('庫存偏低','Low stock',locale):tr('庫存待確認','Stock to confirm',locale),tone:p.status==='low_stock'?'low':'pending'};
- return p.is_low_stock||p.status==='low_stock'?{text:tr(`剩餘 ${p.stock_quantity.toLocaleString('zh-TW')} 帳`,`${p.stock_quantity.toLocaleString('en-US')} left`,locale),tone:'low'}:{text:tr(`庫存：${p.stock_quantity.toLocaleString('zh-TW')} 帳`,`In stock: ${p.stock_quantity.toLocaleString('en-US')}`,locale),tone:'normal'};
+ const low=p.is_low_stock||p.status==='low_stock';
+ const count=p.stock_quantity.toLocaleString(locale==='zh'?'zh-TW':locale);
+ const template=low?tr('剩餘 {n} 帳','{n} left',locale):tr('庫存：{n} 帳','In stock: {n}',locale);
+ return {text:template.replace('{n}',count),tone:low?'low':'normal'};
 }
 export function imageURL(path){const asset=catalogAssetPath(path);if(asset)return asset;if(!/^[0-9a-f-]{36}\/[0-9a-f-]{36}-thumb\.(webp|png)$/i.test(String(path)))return '';return PUBLIC_STORAGE+String(path).split('/').map(encodeURIComponent).join('/')}
 export const RECENT_STOCK_TAG='最近新庫存';
@@ -35,10 +38,11 @@ export function searchMatch(p,keyword){
  const term=normalize(keyword),aliases=p.aliases??[];
  if(!term)return true;
  if(/^#?\d+$/.test(term)){const number=Number(term.replace('#',''));return [p.dex,...(p.dex_numbers??[]),...aliases.filter(a=>/^#?\d+$/.test(String(a))).map(a=>String(a).replace('#',''))].some(n=>n!=null&&Number(n)===number)||normalize(p.sku)===term}
- return normalize([p.name,p.name_en,p.sku,...aliases,...tagsFor(p),...tagsFor(p).map(tag=>t(tag,'en'))].join(' ')).includes(term);
+ const tags=tagsFor(p).flatMap(tag=>supportedLocales.map(locale=>t(tag,locale)));
+ return normalize([p.name,p.name_en,p.sku,...aliases,...tags].join(' ')).includes(term);
 }
 export function inquiryText(products,cart,note='',locale='zh'){
- const lines=[tr('Wu Jacky Pokémon GO 詢價清單','Wu Jacky Pokémon GO — Inquiry list',locale),tr('（此內容為詢價，不代表訂單成立）','(This is an inquiry, not a confirmed order.)',locale),''];let total=0,unknown=false;
+ const lines=[tr('Wu Jacky Pokémon GO 詢價清單','Wu Jacky Pokémon GO — '+t('詢價清單',locale),locale),tr('（此內容為詢價，不代表訂單成立）','(This is an inquiry, not a confirmed order.)',locale),''];let total=0,unknown=false;
  for(const item of cart){const p=products.find(p=>p.id===item.id);if(!p)continue;lines.push(`${productName(p,locale)} × ${item.qty}｜${p.price==null?t('私訊詢價',locale):'NT$ '+(p.price*item.qty).toLocaleString('zh-TW')}${p.status==='sold_out'?'｜'+t('已售罄，請確認能否補貨',locale):''}`);if(p.price==null)unknown=true;else total+=p.price*item.qty}
  lines.push(t('公開價格小計：',locale)+'NT$ '+total.toLocaleString('zh-TW')+(unknown?t('（不含詢價商品）',locale):''));if(note.trim())lines.push(tr('備註：','Notes: ',locale)+note.trim());lines.push(tr('請協助確認供貨、最終價格及交付方式。','Please confirm availability, final prices and delivery.',locale));return lines.join('\n');
 }

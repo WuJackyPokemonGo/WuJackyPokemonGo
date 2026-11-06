@@ -1,17 +1,24 @@
-export const tr = (zh,en,locale=getLocale()) => locale==='en'?en:zh;
+import {additionalLocales, translatedLabel} from './storefront-translations.mjs';
+
+export const supportedLocales = ['zh', 'en', ...additionalLocales];
+export const localeTag = (value = getLocale()) => value === 'zh' ? 'zh-Hant' : value;
+export const tr = (zh,en,locale=getLocale()) => locale==='zh'?zh:translatedLabel(zh,locale)??en;
+const bilingualPage = typeof document !== 'undefined' && !document.getElementById('language')?.querySelector('option[value="ja"]');
+const pageLocale = value => bilingualPage && additionalLocales.includes(value) ? 'en' : value;
 export function resolveLocale(saved,languages=[],fallback='zh-Hant',requested=null){
- if(requested==='zh'||requested==='en')return requested;
- if(saved==='zh'||saved==='en')return saved;
+ if(supportedLocales.includes(requested))return requested;
+ if(supportedLocales.includes(saved))return saved;
  const preferred=languages.find(value=>typeof value==='string'&&value.trim())||fallback;
- return /^zh(?:-|$)/i.test(preferred)?'zh':'en';
+ const language=preferred.trim().toLowerCase().split('-')[0];
+ return supportedLocales.includes(language)?language:'en';
 }
 let savedLocale=null;try{savedLocale=localStorage.getItem('wj_store_locale')}catch{}
 let requestedLocale=null;try{requestedLocale=new URL(location.href).searchParams.get('lang')}catch{}
 const browserLanguages=typeof navigator==='undefined'?[]:Array.from(navigator.languages??[]);
-let locale=resolveLocale(savedLocale,browserLanguages,typeof navigator==='undefined'?'zh-Hant':navigator.language||'zh-Hant',requestedLocale);
-if(requestedLocale==='zh'||requestedLocale==='en'){try{localStorage.setItem('wj_store_locale',locale)}catch{}}
+let locale=pageLocale(resolveLocale(savedLocale,browserLanguages,typeof navigator==='undefined'?'zh-Hant':navigator.language||'zh-Hant',requestedLocale));
+if(supportedLocales.includes(requestedLocale)&&pageLocale(requestedLocale)===requestedLocale){try{localStorage.setItem('wj_store_locale',locale)}catch{}}
 export const getLocale=()=>locale;
-export function setLocale(value){locale=value==='en'?'en':'zh';try{localStorage.setItem('wj_store_locale',locale)}catch{};return locale}
+export function setLocale(value){locale=pageLocale(supportedLocales.includes(value)?value:'zh');try{localStorage.setItem('wj_store_locale',locale)}catch{};return locale}
 export const labels={
 '複製商品連結':'Copy product link','商品連結':'Product link',
 "商品內容：ESA 太空裝皮卡丘，六國背景。\n單隻價格：NT$ 80\n六國各一套組價格：NT$ 450":"Contents: Astronaut Pikachu with six ESA Location Backgrounds.\nSingle Pokémon: NT$ 80\nSet of six, one from each country: NT$ 450",
@@ -42,14 +49,30 @@ export const labels={
 '私訊詢價':'Ask for price','商品圖片整理中':'Image coming soon','全部':'All','沒有符合的商品':'No matching products','商品陸續整理中':'More products coming soon','試試其他名稱或分類。':'Try another name or category.','新商品會陸續上架，歡迎稍後回來查看。':'New products will be added. Please check back soon.','透過官方 LINE 詢問':'Ask on official LINE','查看商品':'View product','查看另一張商品圖片':'View another product image','移除':'Remove','已售罄，請確認能否補貨':'Sold out — please ask about restocking','清單目前是空的。':'Your list is empty.','公開價格小計：':'Listed-price subtotal: ','（不含詢價商品）':' (excludes unpriced items)','確定清空詢價清單？':'Clear your inquiry list?','已複製，可以貼到官方 LINE。':'Copied. You can paste it into LINE.','請在文字框長按全選後複製。':'Press and hold in the text box to select and copy.','商品資料暫時無法載入，請稍後重試。':'Products could not be loaded. Please try again.','重新載入':'Retry',
 '小火龍1/200\\n皮卡丘、傑尼龜、妙蛙種子1/150\\n四隻各一套500':'Charmander: NT$200 each\nPikachu, Squirtle or Bulbasaur: NT$150 each\nOne of each (4 total): NT$500'
 };
-export const t=(text,lang=getLocale())=>lang==='en'?(labels[text]??text):text;
-export const productName=(p,lang=getLocale())=>lang==='en'?(p.name_en?.trim()||p.name):p.name;
-export const productDescription=(p,lang=getLocale())=>lang==='en'?(p.description_en||labels[p.description]||labels[String(p.description??'').replaceAll('\n','\\n')]||p.description):p.description;
+export const t=(text,lang=getLocale())=>tr(text,labels[text]??text,lang);
+export const productName=(p,lang=getLocale())=>lang==='zh'?p.name:(p.name_en?.trim()||p.name);
+export const productDescription=(p,lang=getLocale())=>lang==='zh'?p.description:(p.description_en||labels[p.description]||labels[String(p.description??'').replaceAll('\n','\\n')]||p.description);
+
 export function bindStaticTranslations(root=document){
- const texts=[],attrs=[];const walker=document.createTreeWalker(root.body,NodeFilter.SHOW_TEXT);
- while(walker.nextNode()){const n=walker.currentNode,key=n.textContent.trim();if(labels[key]&&!['STYLE','SCRIPT'].includes(n.parentElement.tagName))texts.push([n,n.textContent,key])}
- root.querySelectorAll('[placeholder],[aria-label],[data-contact-label]').forEach(n=>{for(const key of ['placeholder','aria-label','data-contact-label']){const value=n.getAttribute(key);if(labels[value])attrs.push([n,key,value])}});
- return ()=>{root.documentElement.lang=getLocale()==='en'?'en':'zh-Hant';root.title=tr('Wu Jacky Pokémon GO｜商品目錄','Wu Jacky Pokémon GO | Collection');for(const[n,original,key]of texts)n.textContent=getLocale()==='en'?original.replace(key,t(key)):original;for(const[n,key,value]of attrs)n.setAttribute(key,t(value))};
+ const texts=[],attrs=[];
+ const walker=document.createTreeWalker(root.body,NodeFilter.SHOW_TEXT);
+ const translatable=key=>Object.hasOwn(labels,key)||translatedLabel(key,'ja')!==undefined;
+ while(walker.nextNode()){
+  const node=walker.currentNode,key=node.textContent.trim();
+  if(translatable(key)&&!['STYLE','SCRIPT'].includes(node.parentElement.tagName))texts.push([node,node.textContent,key]);
+ }
+ root.querySelectorAll('[placeholder],[aria-label],[data-contact-label]').forEach(node=>{
+  for(const attr of ['placeholder','aria-label','data-contact-label']){
+   const value=node.getAttribute(attr);
+   if(translatable(value))attrs.push([node,attr,value]);
+  }
+ });
+ return ()=>{
+  root.documentElement.lang=localeTag();
+  root.title=getLocale()==='zh'?'Wu Jacky Pokémon GO｜商品目錄':'Wu Jacky Pokémon GO | '+tr('商品目錄','Collection');
+  for(const [node,original,key] of texts)node.textContent=original.replace(key,()=>t(key));
+  for(const [node,attr,value] of attrs)node.setAttribute(attr,t(value));
+ };
 }
 
 export function initLanguageHint(){
