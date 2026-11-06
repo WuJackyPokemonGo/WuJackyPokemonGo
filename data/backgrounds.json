@@ -16726,8 +16726,8 @@
             "basis": "confirmed"
           }
         },
-        "conditions_zh": "持票訓練家在活動期間參與指定現場團體戰與極巨對戰，成功捕獲後有機會獲得墨西哥城地點背景；遠距對戰不提供地點背景。持票特殊調查明列附背景的超極巨鋁鋼龍。各寶可夢條件見下方。 GO集章僅主票券日期10:00–20:00，額外日不新增集章；集章不等於背景保證。",
-        "conditions_en": "Ticket-holding Trainers may receive the Mexico City Location Background from eligible in-person raids and Max Battles; remote battles do not award Location Backgrounds. Ticketed Special Research explicitly awards Gigantamax Duraludon with the background. See species-specific routes below. GO Stamp Rally: main ticketed day only, 10:00–20:00. Extra Day add-ons do not add a stamp rally; stamp rewards are not a background guarantee.",
+        "conditions_zh": "持票訓練家在活動期間參與指定現場團體戰與極巨對戰，成功捕獲後有機會獲得墨西哥城地點背景；遠距對戰不提供地點背景。持票特殊調查明列附背景的超極巨鋁鋼龍。各寶可夢條件見下方。 GO集章僅主票券日期10:00–20:00，額外日不新增集章；集章不等於背景保證。 11/6 週五革命紀念碑現場體驗提前結束。皮卡丘與伊布見面會為當地 10:00–12:50（台灣 11/7 00:00–02:50），訓練家見面活動為當地 12:00–14:00（台灣 11/7 02:00–04:00）。週六、週日現場體驗照常，遊戲內活動不受影響。",
+        "conditions_en": "Ticket-holding Trainers may receive the Mexico City Location Background from eligible in-person raids and Max Battles; remote battles do not award Location Backgrounds. Ticketed Special Research explicitly awards Gigantamax Duraludon with the background. See species-specific routes below. GO Stamp Rally: main ticketed day only, 10:00–20:00. Extra Day add-ons do not add a stamp rally; stamp rewards are not a background guarantee. Friday Nov 6 experiences at Monumento a la Revolución end early. Pikachu and Eevee meet-and-greet: 10:00–12:50 local (Nov 7, 00:00–02:50 Taiwan). Notable Trainer appearances: 12:00–14:00 local (Nov 7, 02:00–04:00 Taiwan). Weekend experiences and gameplay proceed as planned.",
         "eligible_zh": "現代夾克怪力、極巨化帝牙盧卡／帕路奇亞、超極巨化鋁鋼龍；蒼響／藏瑪然特捕獲形態沿用百戰勇者，對戰形態為劍之王／盾之王。",
         "eligible_en": "Modern-jacket Machamp, Dynamax Dialga/Palkia, Gigantamax Duraludon; Zacian/Zamazenta retain Hero of Many Battles catch entries, distinct from Crowned Sword/Shield battle forms.",
         "remote_participation": {
@@ -16740,11 +16740,12 @@
           "text_zh": "官方明確限定現場團體戰／極巨對戰；遠距參戰沒有本活動地點背景資格。",
           "text_en": "Officially restricted to in-person raids/Max Battles; remote participants cannot receive this event’s Location Background."
         },
-        "checked_on": "2026-11-03",
+        "checked_on": "2026-11-06",
         "sources": [
           "https://pokemongo.com/gowildarea/mexico-city/gameplay",
           "https://pokemongo.com/news/go-wild-area-stamp-rally-details-2026",
-          "https://pokemongo.com/news/shadow-raid-max-battle-update"
+          "https://pokemongo.com/news/shadow-raid-max-battle-update",
+          "https://pokemongo.com/news/gowildarea-mexicocity-friday-update"
         ],
         "background_type": "location",
         "artwork_status": "catalogued"
