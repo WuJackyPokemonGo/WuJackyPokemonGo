@@ -10384,7 +10384,9 @@
         "https://pokemongo.com/news/assistant_pikachu",
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -10400,7 +10402,15 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-fukuoka"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "region_en": "Japan",
       "region_zh": "日本",
@@ -10445,7 +10455,9 @@
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html",
         "https://shop.pokemon.co.jp/ja/shop/common/events/202610/000604.html?shop=pokemoncenter-megatokyo"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -10461,7 +10473,15 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-golab"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "region_en": "Japan",
       "region_zh": "日本",
@@ -10494,7 +10514,9 @@
         "https://pokemongo.com/news/assistant_pikachu",
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -10510,7 +10532,15 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-hiroshima"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "region_en": "Japan",
       "region_zh": "日本",
@@ -10543,7 +10573,9 @@
         "https://pokemongo.com/news/assistant_pikachu",
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -10559,7 +10591,15 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-kagawa"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "region_en": "Japan",
       "region_zh": "日本",
@@ -10592,7 +10632,9 @@
         "https://pokemongo.com/news/assistant_pikachu",
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -10608,7 +10650,15 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-kanazawa"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "region_en": "Japan",
       "region_zh": "日本",
@@ -10641,7 +10691,9 @@
         "https://pokemongo.com/news/assistant_pikachu",
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -10657,7 +10709,15 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-kyoto"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "region_en": "Japan",
       "region_zh": "日本",
@@ -10690,7 +10750,9 @@
         "https://pokemongo.com/news/assistant_pikachu",
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -10706,7 +10768,15 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-megatokyo"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "region_en": "Japan",
       "region_zh": "日本",
@@ -10739,7 +10809,9 @@
         "https://pokemongo.com/news/assistant_pikachu",
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -10755,7 +10827,15 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-nagoya"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "region_en": "Japan",
       "region_zh": "日本",
@@ -10788,7 +10868,9 @@
         "https://pokemongo.com/news/assistant_pikachu",
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -10804,7 +10886,15 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-okinawa"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "region_en": "Japan",
       "region_zh": "日本",
@@ -10837,7 +10927,9 @@
         "https://pokemongo.com/news/assistant_pikachu",
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -10853,7 +10945,15 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-osaka"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "region_en": "Japan",
       "region_zh": "日本",
@@ -10886,7 +10986,9 @@
         "https://pokemongo.com/news/assistant_pikachu",
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -10902,7 +11004,15 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-osakadx"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "region_en": "Japan",
       "region_zh": "日本",
@@ -10935,7 +11045,9 @@
         "https://pokemongo.com/news/assistant_pikachu",
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -10951,7 +11063,15 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-sapporo"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "region_en": "Japan",
       "region_zh": "日本",
@@ -10984,7 +11104,9 @@
         "https://pokemongo.com/news/assistant_pikachu",
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -11000,7 +11122,15 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-shibuya"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "region_en": "Japan",
       "region_zh": "日本",
@@ -11033,7 +11163,9 @@
         "https://pokemongo.com/news/assistant_pikachu",
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -11049,7 +11181,15 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-skytreetown"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "region_en": "Japan",
       "region_zh": "日本",
@@ -11082,7 +11222,9 @@
         "https://pokemongo.com/news/assistant_pikachu",
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -11098,7 +11240,15 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-tohoku"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "region_en": "Japan",
       "region_zh": "日本",
@@ -11131,7 +11281,9 @@
         "https://pokemongo.com/news/assistant_pikachu",
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -11147,7 +11299,15 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-tokyobay"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "region_en": "Japan",
       "region_zh": "日本",
@@ -11180,7 +11340,9 @@
         "https://pokemongo.com/news/assistant_pikachu",
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -11196,7 +11358,15 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-tokyodx"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "region_en": "Japan",
       "region_zh": "日本",
@@ -14513,7 +14683,9 @@
       "official_sources": [
         "https://pokemongo.com/news/2026_ana_green"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "19b2e1ff-934f-4260-b4c9-4d977513fca9"
       ],
@@ -14532,7 +14704,23 @@
         "2026_jp_sky_adventure_green",
         "pokemonjetgreen"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "evolved_pokemon": [
+        {
+          "dex": 2,
+          "name_en": "Ivysaur",
+          "name_zh": "妙蛙草",
+          "variant_id": "ivysaur",
+          "acquisition": "evolution"
+        },
+        {
+          "dex": 3,
+          "name_en": "Venusaur",
+          "name_zh": "妙蛙花",
+          "variant_id": "venusaur",
+          "acquisition": "evolution"
+        }
+      ]
     },
     {
       "name_en": "City Safari - Brisbane",
@@ -16378,7 +16566,8 @@
       ],
       "notes": [
         "皮卡丘與耿鬼由現場團體戰取得；顫弦蠑螈由限時調查取得，高調／低調二選一。",
-        "2026-10-27：Serebii 活動頁已列出高調與低調顫弦蠑螈具洛杉磯地標背景資格，據此補列；官方公告確認調查形態，未單獨說明其背景資格。"
+        "2026-10-27：Serebii 活動頁已列出高調與低調顫弦蠑螈具洛杉磯地標背景資格，據此補列；官方公告確認調查形態，未單獨說明其背景資格。",
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
       ],
       "start_date": "2026-10-24",
       "related_product_ids": [
@@ -16436,7 +16625,16 @@
         ],
         "background_type": "location",
         "artwork_status": "catalogued"
-      }
+      },
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ]
     },
     {
       "name_en": "GO Wild Area 2026 Sendai Tohoku",
@@ -16766,6 +16964,34 @@
           "dex": 94,
           "name_en": "Gengar",
           "name_zh": "耿鬼"
+        },
+        {
+          "dex": 849,
+          "name_en": "Toxtricity (Amped Form)",
+          "name_zh": "顫弦蠑螈（高調的樣子）",
+          "variant_id": "toxtricity-amped",
+          "acquisition": "encounter",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://pokemongo.com/news/pokemon-night-out-irl-details2026",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokemon-night-out-london-2026"
+          ],
+          "method_zh": "倫敦場館限時調查可遇高調／低調顫弦蠑螈（二選一）；官方未明列此調查必帶背景，依活動名錄列入。",
+          "method_en": "Venue Timed Research offers Amped or Low Key Toxtricity (choose one); the official post does not state a guaranteed background, listed per catalog."
+        },
+        {
+          "dex": 849,
+          "name_en": "Toxtricity (Low Key Form)",
+          "name_zh": "顫弦蠑螈（低調的樣子）",
+          "variant_id": "toxtricity-low-key",
+          "acquisition": "encounter",
+          "method_status": "unconfirmed",
+          "method_sources": [
+            "https://pokemongo.com/news/pokemon-night-out-irl-details2026",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokemon-night-out-london-2026"
+          ],
+          "method_zh": "倫敦場館限時調查可遇高調／低調顫弦蠑螈（二選一）；官方未明列此調查必帶背景，依活動名錄列入。",
+          "method_en": "Venue Timed Research offers Amped or Low Key Toxtricity (choose one); the official post does not state a guaranteed background, listed per catalog."
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -16777,7 +17003,9 @@
         "https://pokemongo.com/news/pokemon-night-out-irl-details2026"
       ],
       "notes": [
-        "一星皮卡丘、三星耿鬼的現場團體戰捕獲可有該城市地標背景；不自行填入未公告遊戲時間。"
+        "一星皮卡丘、三星耿鬼的現場團體戰捕獲可有該城市地標背景；不自行填入未公告遊戲時間。",
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。",
+        "2026-11-06：官方公告確認倫敦場館限時調查有高調／低調顫弦蠑螈，Dittobase列入倫敦背景，比照洛杉磯BG-0211補列；背景保證仍待活動實際確認。"
       ],
       "start_date": "2026-11-10",
       "related_product_ids": [],
@@ -16824,7 +17052,16 @@
         ],
         "background_type": "location",
         "artwork_status": "catalogued"
-      }
+      },
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ]
     },
     {
       "name_en": "GO Fest 2024 Wormhole",
@@ -20403,11 +20640,6 @@
           "name_zh": "皮卡丘（Rosa's Visor Pikachu）",
           "variant_id": "pikachu-rosa",
           "acquisition": "encounter"
-        },
-        {
-          "dex": 644,
-          "name_en": "Zekrom",
-          "name_zh": "捷克羅姆"
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -20418,7 +20650,9 @@
       "official_sources": [
         "https://pokemongo.com/news/road-to-unova-event"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依官方合眾之路公告，黑版：靈獸形態龍捲雲與萊希拉姆可帶此背景；移除誤列的捷克羅姆。"
+      ],
       "related_product_ids": [],
       "method_zh": "2025 合眾之路五星團體戰機率取得黑版／白版背景；兩色頭目分配依官方清單。後續全球 GO Tour 與再發放為分開時段。",
       "method_en": "Chance from Road to Unova five-star raids, with species-specific Black/White eligibility; later GO Tour and reruns are separate windows.",
@@ -20638,11 +20872,6 @@
           "name_zh": "皮卡丘（Rosa's Visor Pikachu）",
           "variant_id": "pikachu-rosa",
           "acquisition": "encounter"
-        },
-        {
-          "dex": 643,
-          "name_en": "Reshiram",
-          "name_zh": "萊希拉姆"
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -20653,7 +20882,9 @@
       "official_sources": [
         "https://pokemongo.com/news/road-to-unova-event"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依官方合眾之路公告，白版：靈獸形態雷電雲與捷克羅姆可帶此背景；移除誤列的萊希拉姆。"
+      ],
       "related_product_ids": [],
       "method_zh": "2025 合眾之路五星團體戰機率取得黑版／白版背景；兩色頭目分配依官方清單。後續全球 GO Tour 與再發放為分開時段。",
       "method_en": "Chance from Road to Unova five-star raids, with species-specific Black/White eligibility; later GO Tour and reruns are separate windows.",
@@ -23577,7 +23808,8 @@
         "https://pokemongo.com/news/communityday-november-2026-pawniard"
       ],
       "notes": [
-        "年度背景有不同動畫畫格／素材名稱；目前合併保留為一組，不因素材筆數重複計算。"
+        "年度背景有不同動畫畫格／素材名稱；目前合併保留為一組，不因素材筆數重複計算。",
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
       ],
       "related_product_ids": [],
       "method_zh": "2026 年各社群日及經典社群日依當期規則取得年度特殊背景；並非全年每天皆可獲得。帶背景的原始遭遇款可進化保留背景。",
@@ -23715,6 +23947,48 @@
           "name_en": "Inteleon",
           "name_zh": "千面避役",
           "variant_id": "inteleon",
+          "acquisition": "evolution"
+        },
+        {
+          "dex": 828,
+          "name_en": "Thievul",
+          "name_zh": "狐大盜",
+          "variant_id": "thievul",
+          "acquisition": "evolution"
+        },
+        {
+          "dex": 444,
+          "name_en": "Gabite",
+          "name_zh": "尖牙陸鯊",
+          "variant_id": "gabite",
+          "acquisition": "evolution"
+        },
+        {
+          "dex": 445,
+          "name_en": "Garchomp",
+          "name_zh": "烈咬陸鯊",
+          "variant_id": "garchomp",
+          "acquisition": "evolution"
+        },
+        {
+          "dex": 571,
+          "name_en": "Zoroark",
+          "name_zh": "索羅亞克",
+          "variant_id": "zoroark",
+          "acquisition": "evolution"
+        },
+        {
+          "dex": 625,
+          "name_en": "Bisharp",
+          "name_zh": "劈斬司令",
+          "variant_id": "bisharp",
+          "acquisition": "evolution"
+        },
+        {
+          "dex": 983,
+          "name_en": "Kingambit",
+          "name_zh": "仆刀將軍",
+          "variant_id": "kingambit",
           "acquisition": "evolution"
         }
       ],
@@ -26715,7 +26989,9 @@
       "official_sources": [
         "https://pokemongo.com/news/dancing-in-the-moonlight-2026"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "73b2ec0a-1ab6-4d26-b0b2-850a1f754ed9",
         "9521886f-7266-4c0c-999a-5de41eb8cbf0",
@@ -26736,7 +27012,16 @@
         "mid_autumn",
         "moonlight"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "evolved_pokemon": [
+        {
+          "dex": 36,
+          "name_en": "Clefable",
+          "name_zh": "皮可西",
+          "variant_id": "clefable",
+          "acquisition": "evolution"
+        }
+      ]
     },
     {
       "name_en": "Pattern of the Wild",
@@ -26861,7 +27146,9 @@
       "official_sources": [
         "https://shop.pokemon.co.jp/ja/shop/common/events/202606/000336.html"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+      ],
       "related_product_ids": [
         "10f638a9-3211-4e17-806a-152e1a8afb45"
       ],
@@ -26882,7 +27169,15 @@
       "catalog_sources": [
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokecenter-yokohama"
       ],
-      "evolved_pokemon": [],
+      "evolved_pokemon": [
+        {
+          "dex": 26,
+          "name_en": "Raichu",
+          "name_zh": "雷丘",
+          "variant_id": "raichu",
+          "acquisition": "evolution"
+        }
+      ],
       "checked_on": "2026-10-23",
       "start_date": "2026-07-01",
       "end_date": "2027-08-31",

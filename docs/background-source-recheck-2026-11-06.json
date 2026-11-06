@@ -78,5 +78,59 @@
   "limitations_zh": [
     "比對範圍是三份名錄有列出的背景；名錄都沒列的背景無法由此發現。",
     "群馬人孔蓋遊戲內開放日待確認，暫列即將推出。"
-  ]
+  ],
+  "per_record_pokemon_check": {
+    "method": "Dittobase 263個背景詳情頁內嵌名單（含manuallyEvolved旗標），以圖鑑號比對每筆直接遭遇與進化款。",
+    "compared": 261,
+    "identical_before_fixes": 229,
+    "identical_after_fixes": 254,
+    "fixes": {
+      "added_evolutions": 29,
+      "records": "寶可夢中心18筆與洛杉磯、倫敦Night Out補雷丘；月光補皮可西；ANA綠色飛機補妙蛙草、妙蛙花；社群日2026補狐大盜、尖牙陸鯊、烈咬陸鯊、索羅亞克、劈斬司令、仆刀將軍",
+      "london_toxtricity": "BG-0214補高調／低調顫弦蠑螈（官方公告＋Dittobase）",
+      "unova": "BG-0227移除捷克羅姆、BG-0228移除萊希拉姆（官方合眾之路公告）"
+    },
+    "remaining_differences": [
+      {
+        "background_id": "BG-0014",
+        "dex": 805,
+        "decision": "保留",
+        "reason": "Serebii馬德里名單與攻略列壘磊石，Dittobase未列"
+      },
+      {
+        "background_id": "BG-0077",
+        "dex": 181,
+        "decision": "待核",
+        "reason": "Serebii列電龍於長崎人孔蓋，Dittobase只列皮卡丘／雷丘，電龍改列曠野地帶長崎；來源衝突"
+      },
+      {
+        "background_id": "BG-0190",
+        "dex": [
+          142,
+          302,
+          303,
+          531
+        ],
+        "decision": "保留",
+        "reason": "10/28依社群回報補入，Dittobase快照未更新"
+      },
+      {
+        "background_id": "BG-0213",
+        "dex": 888,
+        "decision": "保留",
+        "reason": "官方玩法頁五星團體戰同列劍之王蒼響與盾之王藏瑪然特，Dittobase漏列蒼響"
+      },
+      {
+        "background_ids": [
+          "BG-0220",
+          "BG-0221",
+          "BG-0222"
+        ],
+        "dex": 28,
+        "decision": "待核",
+        "reason": "Serebii名單寫作「Sandslash ()」形態空白，Dittobase未列"
+      }
+    ],
+    "not_compared": "Dittobase無名單或無對應網址的紀錄（23筆）未做逐隻比對：PokéXperience數量另行比對。"
+  }
 }
