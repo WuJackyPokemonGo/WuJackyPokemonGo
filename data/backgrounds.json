@@ -5706,7 +5706,8 @@
       "release_state": "needs-verification",
       "official_sources": [],
       "notes": [
-        "來源名稱或日期疑似有誤，需另找活動公告。"
+        "來源名稱或日期疑似有誤，需另找活動公告。",
+        "2026-11-06：依使用者決定永久保留為待確認素材，不列入第05項結案條件。"
       ],
       "related_product_ids": [],
       "method_zh": "僅確認存在釜山煙火背景素材；未查得可靠的遊戲發放日期、寶可夢或取得證據，不作已發放款。",
@@ -5728,7 +5729,8 @@
       ],
       "reference_review": "images-compared-2026-10-24",
       "method_status": "unconfirmed",
-      "evidence_reviewed_on": "2026-10-24"
+      "evidence_reviewed_on": "2026-10-24",
+      "owner_retained": true
     },
     {
       "name_en": "Pokelid Okinawa",
@@ -5950,11 +5952,6 @@
           "name_zh": "皮卡丘",
           "variant_id": "pikachu",
           "acquisition": "encounter"
-        },
-        {
-          "dex": 181,
-          "name_en": "Ampharos",
-          "name_zh": "電龍"
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -5965,7 +5962,9 @@
       "official_sources": [
         "https://pokemongo.com/news/pokelidsr_kyushu_okinawa"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：電龍改列曠野地帶長崎BG-0070（全民集章獎勵），不列於人孔蓋背景；Dittobase長崎人孔蓋只列皮卡丘／雷丘。依使用者決定。"
+      ],
       "related_product_ids": [],
       "method_zh": "親自到訪同一都道府縣的寶可夢人孔蓋補給站，每收集兩枚當地印章，獲得帶該地背景的皮卡丘；好友贈送印章不計入遭遇獎勵。",
       "method_en": "Collect two in-person Poké Lid stamps in the same prefecture to encounter Pikachu with that prefecture’s background. Gifted stamps do not count toward encounters.",
@@ -11971,7 +11970,8 @@
         "https://pokemongo.com/news/nationaltrust-2026"
       ],
       "notes": [
-        "官方7/31更新：延長至12/31；來源總表舊的9/6截止日不採用。"
+        "官方7/31更新：延長至12/31；來源總表舊的9/6截止日不採用。",
+        "2026-11-06：Serebii、Dittobase及PokéXperience新素材（nationaltrustclumberpark2）均為林蔭步道，改為目前顯示圖樣；草原教堂景僅見於PokéXperience 7/18初版素材，列為先前版本。官方未公告換圖。"
       ],
       "start_date": "2026-07-18",
       "end_date": "2026-12-31",
@@ -12029,14 +12029,16 @@
       "reference_review": "images-compared-2026-10-24",
       "artwork_variants": [
         {
-          "image_url": "https://www.serebii.net/pokemongo/locationcard/th/nationaltrustclumberpark.jpg",
-          "label_zh": "另一名錄版本・林蔭步道",
-          "label_en": "Alternate catalog version · tree-lined path",
-          "source_url": "https://www.serebii.net/pokemongo/backgrounds.shtml"
+          "image_url": "https://pokexperience.com/pokemon-variants/backgrounds/nationaltrustclumberpark.jpg?v=20260816",
+          "label_zh": "先前版本・草原與教堂（PokéXperience 7/18初版素材）",
+          "label_en": "Previous version · meadow and church (PokéXperience July 18 asset)",
+          "source_url": "https://pokexperience.com/backgrounds/"
         }
       ],
       "artwork_note_zh": "此地點背景曾有素材更新記錄；下方保留不同名錄版本供比較，仍為同一筆 Clumber Park 背景，不另計可收集款數。各版本精確切換時間未確認。",
-      "artwork_note_en": "An asset update has been reported. Both catalog versions are shown below for comparison within this one Clumber Park entry. Their exact switchover time is unconfirmed."
+      "artwork_note_en": "An asset update has been reported. Both catalog versions are shown below for comparison within this one Clumber Park entry. Their exact switchover time is unconfirmed.",
+      "artwork_preview_url": "https://www.serebii.net/pokemongo/locationcard/th/nationaltrustclumberpark.jpg",
+      "artwork_preview_source": "https://www.serebii.net/pokemongo/backgrounds.shtml"
     },
     {
       "name_en": "National Trust Dunham Massey",
@@ -13898,11 +13900,11 @@
           "name_zh": "暴雪王",
           "variant_id": "abomasnow",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -13912,11 +13914,11 @@
           "name_zh": "波士可多拉",
           "variant_id": "aggron",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -13954,11 +13956,11 @@
           "name_zh": "電龍",
           "variant_id": "ampharos",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -13968,11 +13970,11 @@
           "name_zh": "詛咒娃娃",
           "variant_id": "banette",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -13996,11 +13998,11 @@
           "name_zh": "噴火駝",
           "variant_id": "camerupt",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14010,11 +14012,11 @@
           "name_zh": "快龍",
           "variant_id": "dragonite",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14024,11 +14026,11 @@
           "name_zh": "列陣兵",
           "variant_id": "falinks",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14038,11 +14040,11 @@
           "name_zh": "耿鬼",
           "variant_id": "gengar",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14052,11 +14054,11 @@
           "name_zh": "冰鬼護",
           "variant_id": "glalie",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14080,11 +14082,11 @@
           "name_zh": "黑魯加",
           "variant_id": "houndoom",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14094,11 +14096,11 @@
           "name_zh": "長耳兔",
           "variant_id": "lopunny",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14108,11 +14110,11 @@
           "name_zh": "烏賊王",
           "variant_id": "malamar",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14122,11 +14124,11 @@
           "name_zh": "雷電獸",
           "variant_id": "manectric",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14136,11 +14138,11 @@
           "name_zh": "恰雷姆",
           "variant_id": "medicham",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14150,11 +14152,11 @@
           "name_zh": "凱羅斯",
           "variant_id": "pinsir",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14164,11 +14166,11 @@
           "name_zh": "雷丘",
           "variant_id": "raichu",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14178,11 +14180,11 @@
           "name_zh": "巨牙鯊",
           "variant_id": "sharpedo",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14192,11 +14194,11 @@
           "name_zh": "盔甲鳥",
           "variant_id": "skarmory",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14206,11 +14208,11 @@
           "name_zh": "呆殼獸",
           "variant_id": "slowbro",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14220,11 +14222,11 @@
           "name_zh": "寶石海星",
           "variant_id": "starmie",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14234,11 +14236,11 @@
           "name_zh": "大鋼蛇",
           "variant_id": "steelix",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14248,11 +14250,11 @@
           "name_zh": "大食花",
           "variant_id": "victreebel",
           "acquisition": "encounter",
-          "method_zh": "背景名錄已收錄；閉幕後現場超級團體戰及城市背景有社群回報，個別發放時段、機率與完整官方條件仍待核對，不標示保證背景。",
-          "method_en": "Retained background catalogs and community reports support this city variant and post-closing-ceremony in-person Mega Raids. Individual distribution timing, odds and full official conditions remain unconfirmed; a guaranteed background is not claimed.",
-          "method_status": "unconfirmed",
+          "method_zh": "閉幕後（Post Event）四星超級團體戰捕獲，有機會附舊金山地點背景（機率取得，非保證）。",
+          "method_en": "Post-event four-star Mega Raid catch; chance of the San Francisco Location Background (not guaranteed).",
+          "method_status": "reviewed",
           "method_sources": [
-            "https://www.reddit.com/r/TheSilphRoad/comments/1w5o6nm/closing_ceremony_mega_sf_backgroud_list/"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonxpandworldchampionships2026.shtml"
           ],
           "method_evidence": "catalog-and-community-report-individual-conditions-pending"
         },
@@ -14339,7 +14341,8 @@
       "notes": [
         "本輪補入差不多娃娃、化石翼龍、大嘴娃、勾魂眼；背景存在依保存名錄及玩家持有回報，並非全部取得條件已獲官方確認。",
         "目前列40款原始遭遇＋3款進化；保存的PokéXperience 42個物種名稱包含3款進化，兩款皮卡丘合用一個名稱，與此處逐款計數口徑不同。",
-        "拉帝亞斯／拉帝歐斯維持移除。巨鉗螳螂、艾路雷朵、暴飛龍有相互矛盾的現場回報；代歐奇希斯僅見團戰資訊，未核實城市背景資格，均不直接補入。"
+        "拉帝亞斯／拉帝歐斯維持移除。巨鉗螳螂、艾路雷朵、暴飛龍有相互矛盾的現場回報；代歐奇希斯僅見團戰資訊，未核實城市背景資格，均不直接補入。",
+        "2026-11-06：Serebii活動頁「Post Event」四星超級團體戰名單核對22款，改為已核對（機率取得）；胡地、七夕青鳥、大針蜂、暴鯉龍、化石翼龍、勾魂眼、大嘴娃、差不多娃娃8款不在該名單，維持依社群回報標示。使用者確認本筆核對結案。"
       ],
       "related_product_ids": [],
       "method_zh": "舊金山7個指定地標現場團體戰保證當地背景，每地每日一次；科斯莫古太空裝皮卡丘可由 GO 集章取得，最多6次。現場田野調查的兩款皮卡丘有背景機會。8/30超級超夢X Unity團體戰保證普通超夢城市背景。閉幕後超級團體戰背景依社群回報另行記錄，包含本輪補齊的四款；其機率與個別官方條件仍待核對，不套用指定地標團戰的保證背景規則。 名單核對：本站收錄 40 款直接遭遇與 3 款進化繼承，共 43 款。保存名錄的 42 個名稱已含 3 款進化，兩款皮卡丘合用一個名稱。舊站 38 款直接遭遇為移除拉帝亞斯、拉帝歐斯前的推算值，原始 38 款清單未取得。閉幕後團戰的個別取得條件依證據標示。",
@@ -14381,11 +14384,11 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-10-28",
+      "checked_on": "2026-11-06",
       "region_en": "United States",
       "region_zh": "美國",
       "verification_scope": "background-and-eligibility",
-      "method_status": "partial",
+      "method_status": "reviewed",
       "start_date": "2026-08-28",
       "end_date": "2026-08-30",
       "reference_ids": [
@@ -17651,11 +17654,6 @@
           "name_zh": "皮卡丘（維羅博士助手）",
           "variant_id": "pikachu-anniversary-2026",
           "acquisition": "encounter"
-        },
-        {
-          "dex": 28,
-          "name_en": "Sandslash ()",
-          "name_zh": "穿山王"
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -17668,7 +17666,8 @@
         "https://pokemongo.com/ja/news/happy-birthday-professor-willow-2026"
       ],
       "notes": [
-        "2026/7/21～7/27 十週年究極解鎖再度提供隊伍背景；博士助手皮卡丘亦可帶隊伍背景。這是既有圖樣再次發放，不新增重複背景。"
+        "2026/7/21～7/27 十週年究極解鎖再度提供隊伍背景；博士助手皮卡丘亦可帶隊伍背景。這是既有圖樣再次發放，不新增重複背景。",
+        "2026-11-06：移除「穿山王 ()」：Serebii形態欄空白，Dittobase未列，eBay及其他平台查無分享實物。依使用者決定刪除。"
       ],
       "related_product_ids": [],
       "method_zh": "Triumph Together 全球挑戰解鎖的隊長主題限時調查首次發放；後續團體戰、GO Pass 及週年活動另有再發放，適用寶可夢與獎勵各異。",
@@ -18418,11 +18417,6 @@
           "name_zh": "潤水鴨",
           "variant_id": "quaxly",
           "acquisition": "encounter"
-        },
-        {
-          "dex": 28,
-          "name_en": "Sandslash ()",
-          "name_zh": "穿山王"
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -18435,7 +18429,8 @@
         "https://pokemongo.com/ja/news/happy-birthday-professor-willow-2026"
       ],
       "notes": [
-        "2026/7/21～7/27 十週年究極解鎖再度提供隊伍背景；博士助手皮卡丘亦可帶隊伍背景。這是既有圖樣再次發放，不新增重複背景。"
+        "2026/7/21～7/27 十週年究極解鎖再度提供隊伍背景；博士助手皮卡丘亦可帶隊伍背景。這是既有圖樣再次發放，不新增重複背景。",
+        "2026-11-06：移除「穿山王 ()」：Serebii形態欄空白，Dittobase未列，eBay及其他平台查無分享實物。依使用者決定刪除。"
       ],
       "related_product_ids": [],
       "method_zh": "Triumph Together 全球挑戰解鎖的隊長主題限時調查首次發放；後續團體戰、GO Pass 及週年活動另有再發放，適用寶可夢與獎勵各異。",
@@ -19192,11 +19187,6 @@
           "name_zh": "潤水鴨",
           "variant_id": "quaxly",
           "acquisition": "encounter"
-        },
-        {
-          "dex": 28,
-          "name_en": "Sandslash ()",
-          "name_zh": "穿山王"
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -19209,7 +19199,8 @@
         "https://pokemongo.com/ja/news/happy-birthday-professor-willow-2026"
       ],
       "notes": [
-        "2026/7/21～7/27 十週年究極解鎖再度提供隊伍背景；博士助手皮卡丘亦可帶隊伍背景。這是既有圖樣再次發放，不新增重複背景。"
+        "2026/7/21～7/27 十週年究極解鎖再度提供隊伍背景；博士助手皮卡丘亦可帶隊伍背景。這是既有圖樣再次發放，不新增重複背景。",
+        "2026-11-06：移除「穿山王 ()」：Serebii形態欄空白，Dittobase未列，eBay及其他平台查無分享實物。依使用者決定刪除。"
       ],
       "related_product_ids": [],
       "method_zh": "Triumph Together 全球挑戰解鎖的隊長主題限時調查首次發放；後續團體戰、GO Pass 及週年活動另有再發放，適用寶可夢與獎勵各異。",
@@ -23551,7 +23542,7 @@
           "name_zh": "克雷色利亞",
           "variant_id": "cresselia-shadow",
           "acquisition": "encounter",
-          "method_zh": "2025/11/15 暗影傳說團體戰有機會附背景；調查獎勵是否保證背景仍待確認。",
+          "method_zh": "2025/11/15 暗影傳說團體戰有機會附背景；調查遭遇依機率附背景，不保證。",
           "method_en": "Chance from five-star Shadow Raids on November 15, 2025; a guaranteed research background remains unconfirmed.",
           "method_status": "reviewed"
         },
@@ -23561,7 +23552,7 @@
           "name_zh": "達克萊伊",
           "variant_id": "darkrai-shadow",
           "acquisition": "encounter",
-          "method_zh": "2025/11/16 暗影傳說團體戰有機會附背景；調查獎勵是否保證背景仍待確認。",
+          "method_zh": "2025/11/16 暗影傳說團體戰有機會附背景；調查遭遇依機率附背景，不保證。",
           "method_en": "Chance from five-star Shadow Raids on November 16, 2025; a guaranteed research background remains unconfirmed.",
           "method_status": "reviewed"
         },
@@ -23581,7 +23572,7 @@
           "name_zh": "長毛巨魔",
           "variant_id": "grimmsnarl-gigantamax",
           "acquisition": "encounter",
-          "method_zh": "2025/11/15～16 六星極巨對戰有機會附背景；特殊調查遭遇長毛巨魔不等於已證實保證背景。",
+          "method_zh": "2025/11/15～16 六星極巨對戰有機會附背景；調查遭遇依機率附背景，不保證。",
           "method_en": "Chance from six-star Max Battles, November 15–16, 2025; the Special Research encounter is not proof of a guaranteed background.",
           "method_status": "reviewed"
         }
@@ -23594,12 +23585,14 @@
       "official_sources": [
         "https://pokemongo.com/news/into-the-wild-2025"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-06：使用者確認依「機率」標示結案；LeekDuck等來源只寫有機會附特殊背景，無保證說法。"
+      ],
       "related_product_ids": [
         "6e21261b-cc8b-4950-9849-d33632f80e68"
       ],
-      "method_zh": "11/10–14 Into the Wild：指定五星／暗影五星團體戰捕捉暗影洛奇亞、暗影鳳王、四隻卡璞與奈克洛茲瑪時有背景機會。11/15–16全球活動：暗影克雷色利亞、暗影達克萊伊、披風穿著熊及超極巨長毛巨魔由團體戰／極巨對戰機率取得。全球持票特殊調查兩路線皆有第 5 階段穿著熊及第 6 階段超極巨長毛巨魔遭遇；現有調查名錄未標註這兩筆必帶背景。",
-      "method_en": "Nov 10–14 Into the Wild: eligible five-star/Shadow raids offer background Shadow Lugia, Shadow Ho-Oh, the four Tapu and Necrozma. Nov 15–16 Global: raids/Max Battles offer Shadow Cresselia, Shadow Darkrai, caped Bewear and Gigantamax Grimmsnarl. Both ticketed global Special Research branches award Bewear at step 5 and Gigantamax Grimmsnarl at step 6. The research listings do not establish a guaranteed background for either reward.",
+      "method_zh": "11/10–14 Into the Wild：指定五星／暗影五星團體戰捕捉暗影洛奇亞、暗影鳳王、四隻卡璞與奈克洛茲瑪時有背景機會。11/15–16全球活動：暗影克雷色利亞、暗影達克萊伊、披風穿著熊及超極巨長毛巨魔由團體戰／極巨對戰機率取得。全球持票特殊調查兩路線皆有第 5 階段穿著熊及第 6 階段超極巨長毛巨魔遭遇；依現有來源，調查遭遇為機率附背景，不保證背景。",
+      "method_en": "Nov 10–14 Into the Wild: eligible five-star/Shadow raids offer background Shadow Lugia, Shadow Ho-Oh, the four Tapu and Necrozma. Nov 15–16 Global: raids/Max Battles offer Shadow Cresselia, Shadow Darkrai, caped Bewear and Gigantamax Grimmsnarl. Both ticketed global Special Research branches award Bewear at step 5 and Gigantamax Grimmsnarl at step 6. The research listings do not establish a guaranteed background for either reward. Per available sources, research encounters have a background chance only; no guarantee.",
       "series": "GO Wild Area",
       "series_zh": "曠野地帶",
       "year": "2025",
@@ -23626,11 +23619,11 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-10-24",
+      "checked_on": "2026-11-06",
       "region_en": "Multiple regions",
       "region_zh": "多地／全球活動",
       "verification_scope": "background-and-eligibility",
-      "method_status": "partial",
+      "method_status": "reviewed",
       "start_date": "2025-11-10",
       "end_date": "2025-11-16",
       "reference_ids": [
@@ -27683,7 +27676,8 @@
       "method_status": "unconfirmed",
       "checked_on": "2026-10-24",
       "notes": [
-        "來源檔名不是活動地區或發放證據。"
+        "來源檔名不是活動地區或發放證據。",
+        "2026-11-06：依使用者決定永久保留為待確認素材，不列入第05項結案條件。"
       ],
       "notes_en": [
         "A source filename does not establish its event, region or release."
@@ -27692,7 +27686,8 @@
         "brazil_2026"
       ],
       "reference_review": "images-compared-2026-10-24",
-      "evidence_reviewed_on": "2026-10-24"
+      "evidence_reviewed_on": "2026-10-24",
+      "owner_retained": true
     },
     {
       "background_id": "BG-0277",
@@ -27720,7 +27715,8 @@
       "method_status": "unconfirmed",
       "checked_on": "2026-10-24",
       "notes": [
-        "來源檔名不是活動地區或發放證據。"
+        "來源檔名不是活動地區或發放證據。",
+        "2026-11-06：依使用者決定永久保留為待確認素材，不列入第05項結案條件。"
       ],
       "notes_en": [
         "A source filename does not establish its event, region or release."
@@ -27729,7 +27725,8 @@
         "costa_rica_2026"
       ],
       "reference_review": "images-compared-2026-10-24",
-      "evidence_reviewed_on": "2026-10-24"
+      "evidence_reviewed_on": "2026-10-24",
+      "owner_retained": true
     },
     {
       "background_id": "BG-0278",
@@ -28620,7 +28617,8 @@
       ],
       "notes": [
         "圖樣為吹割瀑布（沼田市），取自PokéXperience；Serebii、Dittobase尚未收錄，GameWith一覽表標示調查中。",
-        "確認有人在遊戲內取得後再改為已推出。"
+        "確認有人在遊戲內取得後再改為已推出。",
+        "2026-11-06：使用者已安排後續追蹤遊戲內開放日。"
       ],
       "notes_en": [
         "Artwork (Fukiware Falls, Numata) from PokéXperience; not yet on Serebii or Dittobase. Mark released once obtained in game."
@@ -29115,7 +29113,7 @@
   },
   "review_counts": {
     "date_details_pending": 4,
-    "acquisition_method_pending": 5,
+    "acquisition_method_pending": 3,
     "backgrounds_pending": 3
   },
   "image_review": {
@@ -29172,5 +29170,10 @@
   },
   "redirects": {
     "BG-0270": "BG-0261"
-  }
+  },
+  "owner_retained_pending_ids": [
+    "BG-0072",
+    "BG-0276",
+    "BG-0277"
+  ]
 }

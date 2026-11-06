@@ -33,10 +33,10 @@ test('Patterns of the Wild uses a complete preview while cloud image edits still
  assert.equal(referenceArtwork(merged,refs),image);
  assert.equal(backgroundArtworkGallery(merged,refs)[0].image_url,image);
 });
-test('both Clumber Park catalog depictions are visible within one stable entry',()=>{
+test('Clumber Park opens on the current tree-lined path and keeps the previous meadow artwork below',()=>{
  const row=by('BG-0168'),images=backgroundArtworkGallery(row,refs);
  assert.equal(images.length,2);assert.equal(new Set(images.map(r=>r.image_url)).size,2);
- assert.match(images[1].label_en,/Alternate catalog/);
+ assert.match(images[0].image_url,/serebii\.net\/pokemongo\/locationcard\/th\/nationaltrustclumberpark\.jpg$/);assert.match(images[1].label_en,/Previous version/);
  assert.ok(images.every(i=>safeBackgroundImage(i.image_url)));
  assert.equal(data.records.filter(r=>r.background_id===row.background_id).length,1);
 });

@@ -23,5 +23,5 @@ test('new community-supported city variants are searchable without certifying gu
   const p=row.pokemon.find(p=>p.variant_id===id);assert.equal(p.method_status,'unconfirmed');assert.match(p.method_en,/player.reported/);assert.match(p.method_en,/remain unconfirmed/);assert.ok(p.method_sources.some(u=>u.includes('pokemongotrading.com')));
  }
  for(const dex of [380,381,212,475,373,386])assert.ok(!row.pokemon.some(p=>p.dex===dex));
- assert.equal(row.method_status,'partial');assert.equal(data.complete,false);
+ assert.equal(row.method_status,'reviewed');assert.equal(row.pokemon.filter(p=>p.method_status==='unconfirmed').length,8);assert.equal(data.complete,false);
 });

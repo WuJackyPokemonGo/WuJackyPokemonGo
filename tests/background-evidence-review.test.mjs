@@ -52,5 +52,5 @@ test('three city costume rewards retain player-report provenance and one-per-acc
   assert.ok(r.pokemon.filter(p=>p.dex!==dex).every(p=>p.reward_per_account===undefined));
   for(const e of r.evolved_pokemon.filter(p=>p.variant_id.includes('spring-2023')))assert.match(e.method_en,/not an additional research reward/);
  }
- assert.equal(data.review_counts.acquisition_method_pending,5);assert.equal(data.complete,false);
+ assert.equal(data.review_counts.acquisition_method_pending,3);assert.equal(data.complete,false);
 });

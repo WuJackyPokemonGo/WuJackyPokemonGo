@@ -15,8 +15,8 @@ test('dates are valid ISO, end is not before start, released records have a star
 test('declared review counts match the records that are still pending',()=>{
  const date=d.records.filter(r=>!r.start_date).map(r=>r.background_id);
  const method=d.records.filter(r=>['unconfirmed','partial'].includes(r.method_status)).map(r=>r.background_id);
- assert.deepEqual(date,['BG-0072','BG-0276','BG-0277','BG-0285']);assert.deepEqual(method,['BG-0072','BG-0190','BG-0238','BG-0276','BG-0277']);
- assert.deepEqual(d.review_counts,{date_details_pending:4,acquisition_method_pending:5,backgrounds_pending:3});
+ assert.deepEqual(date,['BG-0072','BG-0276','BG-0277','BG-0285']);assert.deepEqual(method,['BG-0072','BG-0276','BG-0277']);assert.deepEqual(d.owner_retained_pending_ids,['BG-0072','BG-0276','BG-0277']);
+ assert.deepEqual(d.review_counts,{date_details_pending:4,acquisition_method_pending:3,backgrounds_pending:3});
 });
 test('form variants carry a Chinese form label and no record repeats an identical encounter',()=>{
  for(const r of d.records)for(const p of [...r.pokemon??[],...r.evolved_pokemon??[]])

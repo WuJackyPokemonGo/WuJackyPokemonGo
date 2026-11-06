@@ -171,6 +171,11 @@
    "msg": "missing region_en"
   },
   {
+   "id": "BG-0284",
+   "cat": "pokemon",
+   "msg": "duplicate variant_id "
+  },
+  {
    "id": "BG-0280",
    "cat": "reference",
    "msg": "reference_id not in facts dia-de-muertos-2026-mexico-city"
@@ -252,6 +257,7 @@
      "BG-0074",
      "BG-0075",
      "BG-0076",
+     "BG-0077",
      "BG-0078"
     ]
    ],
@@ -396,7 +402,7 @@
   },
   "review_declared": {
    "date_details_pending": 4,
-   "acquisition_method_pending": 5,
+   "acquisition_method_pending": 3,
    "backgrounds_pending": 3
   },
   "review_actual": {
@@ -407,8 +413,6 @@
    ],
    "method": [
     "BG-0072",
-    "BG-0190",
-    "BG-0238",
     "BG-0276",
     "BG-0277"
    ],
