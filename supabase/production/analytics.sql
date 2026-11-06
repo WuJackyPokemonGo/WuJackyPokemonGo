@@ -9,13 +9,13 @@ revoke all on private.analytics_secret,private.analytics_event_keys,private.anal
 
 create or replace function private.track_store_event(p_event text,p_session uuid,p_event_id uuid,p_product uuid,p_background text)returns boolean language plpgsql security definer set search_path='' as $$
 declare d date:=(now()at time zone'Asia/Taipei')::date;visitor text;ip_hash text;secret text;key_value text;count_value integer;key_limit integer;expiry timestamptz;headers jsonb;begin
- if p_event not in ('page_view','product_view','cart_add','cart_remove','search_results','search_empty','inquiry_copy','background_page_view','background_view')or p_event is null or p_session is null or p_event_id is null then return false;end if;
- if p_event='background_view' then
+ if p_event not in ('page_view','product_view','cart_add','cart_remove','search_results','search_empty','inquiry_copy','line_click','background_referral','bg_cart_add','bg_line_click','background_page_view','background_view','background_product_click')or p_event is null or p_session is null or p_event_id is null then return false;end if;
+ if p_event in ('background_view','background_product_click') then
   if p_background is null or p_background !~ '^BG-[0-9]{4}$' or p_product is not null then return false;end if;
  elsif p_background is not null or (p_event='background_page_view' and p_product is not null) then return false;
  end if;
  if coalesce((select(value->>'analytics_enabled')::boolean from public.app_settings where key='jobs'),true)=false then return false;end if;
- if p_event in ('product_view','cart_add','cart_remove')and p_product is null then return false;end if;
+ if p_event in ('product_view','cart_add','cart_remove','background_referral','bg_cart_add')and p_product is null then return false;end if;
  if p_product is not null and not exists(select 1 from public.products where id=p_product and is_live and publication_status='published')then return false;end if;
  if exists(select 1 from private.analytics_event_keys where id=p_event_id)then return false;end if;
  select value into secret from private.analytics_secret where id=true;
@@ -30,10 +30,10 @@ declare d date:=(now()at time zone'Asia/Taipei')::date;visitor text;ip_hash text
  insert into private.analytics_counts(day,event,product_key,count)values(d,p_event,coalesce(p_background,p_product::text,''),1)on conflict(day,event,product_key)do update set count=private.analytics_counts.count+1;return true;
 end $$;
 create or replace function private.track_store_event(p_event text,p_session uuid,p_event_id uuid,p_product uuid default null)returns boolean language sql security definer set search_path='' as $$
- select case when p_event in ('background_page_view','background_view') then false else private.track_store_event(p_event,p_session,p_event_id,p_product,null) end;
+ select case when p_event in ('background_page_view','background_view','background_product_click') then false else private.track_store_event(p_event,p_session,p_event_id,p_product,null) end;
 $$;
 create or replace function public.track_background_event(p_event text,p_session uuid,p_event_id uuid,p_background text default null)returns boolean language sql security definer set search_path='' as $$
- select case when p_event in ('background_page_view','background_view') then private.track_store_event(p_event,p_session,p_event_id,null,p_background) else false end;
+ select case when p_event in ('background_page_view','background_view','background_product_click') then private.track_store_event(p_event,p_session,p_event_id,null,p_background) else false end;
 $$;
 revoke all on function private.track_store_event(text,uuid,uuid,uuid,text),public.track_background_event(text,uuid,uuid,text) from public,anon,authenticated;
 grant execute on function public.track_background_event(text,uuid,uuid,text) to anon,authenticated;

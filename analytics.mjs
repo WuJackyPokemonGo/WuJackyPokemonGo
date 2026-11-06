@@ -1,6 +1,6 @@
 import {t} from './storefront-locale.mjs';
 import {STAGING_URL,STAGING_PUBLISHABLE_KEY} from './staging-config.mjs';
-const ALLOWED=new Set(['page_view','product_view','cart_add','cart_remove','search_results','search_empty','inquiry_copy']);
+const ALLOWED=new Set(['page_view','product_view','cart_add','cart_remove','search_results','search_empty','inquiry_copy','line_click','background_referral','bg_cart_add','bg_line_click']);
 export function analyticsPayload(event,session,eventId,product=null){if(!ALLOWED.has(event)||typeof session!=='string'||typeof eventId!=='string')throw Error('Unsupported analytics event');return {p_event:event,p_session:session,p_event_id:eventId,p_product:product}}
 export function initAnalytics({background=false}={}){
  const button=document.getElementById('analyticsToggle'),status=document.getElementById('analyticsStatus');let disabled=true,session=null;
