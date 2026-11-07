@@ -1142,8 +1142,8 @@
       ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "持票參與城市狩獵，透過活動特殊調查與「伊布探險隊」限時調查遇見探險帽伊布；八種進化款可由帶背景的探險帽伊布進化繼承。",
+      "method_en": "Ticketed City Safari Special Research and Eevee Explorers Timed Research award explorer-hat Eevee. Its eight Evolutions can inherit the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2024",
@@ -1151,7 +1151,8 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2024-tainan",
-        "https://www.dittobase.com/pokemon-go/backgrounds"
+        "https://www.dittobase.com/pokemon-go/backgrounds",
+        "https://advent.serebii.net/pokemongo/reallifeevents/citysafari-tainan.shtml"
       ],
       "evolved_pokemon": [
         {
@@ -2101,8 +2102,8 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "持票參與城市狩獵，透過活動特殊調查與「伊布探險隊」限時調查遇見探險帽伊布；八種進化款可由帶背景的探險帽伊布進化繼承。",
+      "method_en": "Ticketed City Safari Special Research and Eevee Explorers Timed Research award explorer-hat Eevee. Its eight Evolutions can inherit the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2024",
@@ -2110,7 +2111,8 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2024-hongkong",
-        "https://www.dittobase.com/pokemon-go/backgrounds"
+        "https://www.dittobase.com/pokemon-go/backgrounds",
+        "https://leekduck.com/events/pokemon-go-city-safari-hong-kong-2024/"
       ],
       "evolved_pokemon": [
         {
