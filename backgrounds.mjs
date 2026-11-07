@@ -145,8 +145,8 @@ function openDetail(r){active=r;$('backgroundLinkStatus').textContent='';$('back
 $('copyBackgroundLink').onclick=async()=>{
  const row=active;
  if(!row)return;
- const url=new URL(location.pathname,location.origin);
- url.searchParams.set('background',row.background_id);
+ const url=/^BG-\d{4}$/.test(row.background_id)?new URL('bg/'+row.background_id+'.html',location.href):new URL(location.pathname,location.origin);
+ if(!url.pathname.includes('/bg/'))url.searchParams.set('background',row.background_id);
  url.searchParams.set('lang',getLocale());
  const status=$('backgroundLinkStatus'),input=$('backgroundLinkText');
  try{
