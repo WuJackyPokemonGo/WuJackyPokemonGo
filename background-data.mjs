@@ -1,2 +1,2 @@
 // Single cache-busting URL for the public background catalog; bump this when data/backgrounds.json changes.
-export const BACKGROUNDS_DATA_URL='data/backgrounds.json?v=20261106-link-audit';
+export const BACKGROUNDS_DATA_URL='data/backgrounds.json?v=20261107-city-safari';
