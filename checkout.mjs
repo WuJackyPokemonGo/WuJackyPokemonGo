@@ -8,6 +8,7 @@ let locale=getLocale(),config=null,products=[],cart=[],current=null,code='',capt
 const tr=(zh,en)=>locale==='en'?en:zh,money=v=>'NT$ '+Number(v).toLocaleString(locale==='en'?'en-US':'zh-TW');
 const n=(tag,text)=>Object.assign(document.createElement(tag),{textContent:text});
 let service;
+const CLOSED_ZH='目前程式更新中，暫不接受自助下單。請先透過官方 LINE 洽購，既有訂單仍可用查詢碼查詢。',CLOSED_EN='Self-service checkout is being updated and is not accepting orders right now. Please contact us on official LINE. Existing orders can still be checked with a lookup code.';
 function tell(message){$('message').textContent=message}
 function translate(){document.documentElement.lang=locale==='en'?'en':'zh-Hant';document.querySelectorAll('[data-zh]').forEach(e=>e.textContent=e.dataset[locale]);if(config)$('terms').textContent=locale==='en'?config.terms_en:config.terms_zh;renderCart();if(current)renderOrder(current)}
 async function run(fn){if(busy)return;busy=true;document.querySelectorAll('button').forEach(b=>b.disabled=true);try{await fn()}catch(e){tell(e.message)}finally{busy=false;sync()}}
@@ -29,6 +30,6 @@ $('paymentForm').onsubmit=e=>{e.preventDefault();run(async()=>{const v=Object.fr
 $('cancelOrder').onclick=()=>{if(confirm(tr('確認取消這筆未付款訂單並釋放庫存？','Cancel this unpaid order and release its stock?')))run(async()=>{renderOrder(await service.cancel(code));tell(tr('訂單已取消。','Order cancelled.'))})};
 async function boot(){translate();try{
  if(preview){$('reviewBanner').hidden=false;const {createPreviewService,previewProducts,previewCart}=await import('./checkout-preview.mjs');products=previewProducts;cart=previewCart;service=createPreviewService();config=await service.call('config');captchaToken='preview'}else{service=createCheckoutService({session:sessionStorage,local:localStorage});const loaded=await Promise.all([service.call('config'),loadPublicCatalog()]);config=loaded[0];products=loaded[1];const saved=JSON.parse(localStorage.getItem('wj_live_inquiry_cart_v1')||'[]');cart=Array.isArray(saved)?saved:[];if(config.enabled&&config.turnstile_site_key){const script=document.createElement('script');script.src='https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';script.onload=()=>{widget=window.turnstile.render('#captcha',{sitekey:config.turnstile_site_key,action:'checkout',callback:token=>{captchaToken=token;sync()},'expired-callback':()=>{captchaToken='';sync()},'error-callback':()=>{captchaToken='';tell(tr('驗證載入失敗，請重新整理。','Verification failed to load; please reload.'));sync()}})};script.onerror=()=>tell(tr('驗證載入失敗，請重新整理。','Verification failed to load; please reload.'));document.head.append(script)}}
- $('lookupCode').value=service.lastCode;translate();if(!config.enabled)tell(tr('自助下單尚未開放。既有訂單仍可使用查詢碼查詢。','Checkout is closed. Existing orders can still be checked using a lookup code.'));if(service.pending)tell(tr('有一筆下單結果尚待確認，請重試原訂單。','An order result is pending. Retry the same order.'));sync();
- }catch(e){tell(e.message);$('submit').disabled=true}}
+ $('lookupCode').value=service.lastCode;translate();if(!config.enabled)tell(tr(CLOSED_ZH,CLOSED_EN));if(service.pending)tell(tr('有一筆下單結果尚待確認，請重試原訂單。','An order result is pending. Retry the same order.'));sync();
+ }catch(e){tell(tr(CLOSED_ZH,CLOSED_EN));$('submit').disabled=true}}
 boot();
