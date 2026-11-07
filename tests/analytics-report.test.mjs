@@ -34,5 +34,5 @@ test('source report groups by site and splits atlas and storefront arrivals',asy
 });
 test('database accepts only whitelisted source keys',async()=>{
  const sql=(await import('node:fs')).readFileSync(new URL('../supabase/production/analytics.sql',import.meta.url),'utf8');
- assert.match(sql,/\^\(store\|atlas\):\(threads\|reddit\|discord\|facebook\|instagram\|line\|x\|youtube\|other\)\$/);assert.match(sql,/'sources',/);
+ assert.match(sql,/\^\(store\|atlas\):\(threads\|reddit\|discord\|facebook\|instagram\|line\|x\|youtube\|share\|other\)\$/);assert.match(sql,/'sources',/);
 });

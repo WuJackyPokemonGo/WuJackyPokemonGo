@@ -13,7 +13,7 @@ export function initAnalytics({background=false}={}){
  track.source=source;return track;
 }
 
-const SOURCES=['threads','reddit','discord','facebook','instagram','line','x','youtube'];
+const SOURCES=['threads','reddit','discord','facebook','instagram','line','x','youtube','share'];
 const SOURCE_ALIASES={ig:'instagram',fb:'facebook',twitter:'x',yt:'youtube'};
 const REFERRER_HOSTS=[[/(^|\.)threads\.(net|com)$/,'threads'],[/(^|\.)reddit\.com$|^redd\.it$/,'reddit'],[/(^|\.)discord(app)?\.com$/,'discord'],[/(^|\.)facebook\.com$|^fb\.me$|^l\.facebook\.com$/,'facebook'],[/(^|\.)instagram\.com$/,'instagram'],[/(^|\.)line\.me$|^lin\.ee$/,'line'],[/(^|\.)(x|twitter)\.com$|^t\.co$/,'x'],[/(^|\.)youtube\.com$|^youtu\.be$/,'youtube']];
 // Visitor source from ?src= (preferred) or the referring site; null when unknown or same-site.

@@ -13,7 +13,7 @@ declare d date:=(now()at time zone'Asia/Taipei')::date;visitor text;ip_hash text
  if p_event in ('background_view','background_product_click') then
   if p_background is null or p_background !~ '^BG-[0-9]{4}$' or p_product is not null then return false;end if;
  elsif p_event='source_visit' then
-  if p_background is null or p_background !~ '^(store|atlas):(threads|reddit|discord|facebook|instagram|line|x|youtube|other)$' or p_product is not null then return false;end if;
+  if p_background is null or p_background !~ '^(store|atlas):(threads|reddit|discord|facebook|instagram|line|x|youtube|share|other)$' or p_product is not null then return false;end if;
  elsif p_background is not null or (p_event='background_page_view' and p_product is not null) then return false;
  end if;
  if coalesce((select(value->>'analytics_enabled')::boolean from public.app_settings where key='jobs'),true)=false then return false;end if;

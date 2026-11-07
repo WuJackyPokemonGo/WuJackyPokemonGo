@@ -7,6 +7,6 @@ test('every background has a share page with its own preview and a redirect to t
 });
 test('share pages escape text, keep only known languages and pass the source along',()=>{
  const pages=buildSharePages();const html=pages.get('BG-0254');
- assert.ok(!/<title>[^<]*<[a-z]/i.test(html));assert.match(html,/\(zh\|en\|ja\|ko\|vi\|th\|id\|es\|pt\)/);assert.match(html,/&src='\+encodeURIComponent/);assert.match(html,/threads\\\.\(net\|com\)\$/);
+ assert.ok(!/<title>[^<]*<[a-z]/i.test(html));assert.match(html,/\(zh\|en\|ja\|ko\|vi\|th\|id\|es\|pt\)/);assert.match(html,/&src='\+encodeURIComponent/);assert.match(html,/if\(!src\)src='share'/);assert.match(html,/threads\\\.\(net\|com\)\$/);
  for(const f of readdirSync(new URL('../bg/',import.meta.url)))assert.ok(pages.has(f.replace(/\.html$/,'')),'stale page '+f);
 });
