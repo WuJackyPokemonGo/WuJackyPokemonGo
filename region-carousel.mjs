@@ -15,6 +15,9 @@ if (gallery) {
   let timer;
   let start;
   const count = slides.length;
+  function load(slide) { const img = slide?.querySelector?.('img[data-src]'); if (img?.dataset?.src && !img.src) img.src = img.dataset.src; }
+  function loadAll() { slides.forEach(load); }
+  function loadAllWhenIdle() { const go = () => loadAll(); if (typeof globalThis.requestIdleCallback === 'function') globalThis.requestIdleCallback(go, {timeout: 2500}); else setTimeout(go, 1200); }
   function stop() { clearTimeout(timer); }
   function schedule() {
     stop();
@@ -27,7 +30,7 @@ if (gallery) {
     slides.forEach((slide, i) => {
       slide.classList.toggle('is-active', i === current);
       slide.setAttribute('aria-hidden', String(compact.matches && i !== current));
-      if (i === current || i === (current + 1) % count) slide.querySelector('img').loading = 'eager';
+      if (i === current || i === (current + 1) % count) { slide.querySelector('img').loading = 'eager'; load(slide); }
     });
     dots.forEach((dot, i) => {
       dot.classList.toggle('is-active', i === current);
@@ -81,9 +84,10 @@ if (gallery) {
   });
   stage.addEventListener('pointercancel', () => { start = undefined; touching = false; schedule(); });
   document.addEventListener('visibilitychange', schedule);
-  compact.addEventListener('change', () => { show(current); schedule(); });
+  compact.addEventListener('change', () => { if (!compact.matches) loadAll(); show(current); schedule(); });
   reducedMotion.addEventListener('change', () => { paused = reducedMotion.matches; updateToggle(); schedule(); });
   show(0);
+  if (!compact.matches) loadAllWhenIdle();
   updateToggle();
   schedule();
 }
