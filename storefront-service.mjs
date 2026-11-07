@@ -13,10 +13,11 @@ export function publicStockFields(supply,quantity,threshold=3){
 }
 export function stockLabel(p,locale='zh'){
  if(p.status==='coming_soon')return {text:tr('即將推出','Coming soon',locale),tone:'pending'};
- if(p.status==='inquiry_only')return {text:tr('庫存待確認','Stock to confirm',locale),tone:'pending'};
+ if(p.status==='inquiry_only')return {text:tr('詢問供貨','Ask about availability',locale),tone:'pending'};
  if(p.status==='sold_out'||p.stock_quantity===0)return {text:tr('已售罄','Sold out',locale),tone:'sold'};
  const known=Number.isInteger(p.stock_quantity)&&p.stock_quantity>0&&p.stock_quantity<=2147483647;
- if(!known)return {text:p.status==='low_stock'?tr('庫存偏低','Low stock',locale):tr('庫存待確認','Stock to confirm',locale),tone:p.status==='low_stock'?'low':'pending'};
+ // Available items whose quantity is not public are in stock; only the count is withheld.
+ if(!known)return {text:p.status==='low_stock'?tr('庫存偏低','Low stock',locale):tr('數量請洽詢','Ask for quantity',locale),tone:p.status==='low_stock'?'low':'normal'};
  const low=p.is_low_stock||p.status==='low_stock';
  const count=p.stock_quantity.toLocaleString(locale==='zh'?'zh-TW':locale);
  const template=low?tr('剩餘 {n} 帳','{n} left',locale):tr('庫存：{n} 帳','In stock: {n}',locale);

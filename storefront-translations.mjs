@@ -60,6 +60,8 @@ const rows = {
  '目前篩選：': ['絞り込み：', '현재 필터: ', 'Bộ lọc: ', 'ตัวกรอง: ', 'Filter: ', 'Filtros: ', 'Filtros: '],
  '移除篩選：': ['絞り込みを解除：', '필터 제거: ', 'Bỏ bộ lọc: ', 'ลบตัวกรอง: ', 'Hapus filter: ', 'Quitar filtro: ', 'Remover filtro: '],
  '清除全部': ['すべて解除', '모두 지우기', 'Xóa tất cả', 'ล้างทั้งหมด', 'Hapus semua', 'Borrar todo', 'Limpar tudo'],
+ '數量請洽詢': ['数量はお問い合わせください','수량 문의','Hỏi số lượng','สอบถามจำนวน','Tanyakan jumlah','Consulta la cantidad','Consulte a quantidade'],
+ '詢問供貨': ['在庫を問い合わせる','재고 문의','Hỏi tình trạng hàng','สอบถามสินค้า','Tanyakan ketersediaan','Consultar disponibilidad','Consultar disponibilidade'],
  '詢問補貨': ['再入荷を問い合わせる','재입고 문의','Hỏi khi có hàng lại','สอบถามสินค้าเข้าใหม่','Tanya stok ulang','Consultar reposición','Perguntar reposição'],
  '詢問補貨：': ['再入荷の問い合わせ：','재입고 문의: ','Hỏi khi có hàng lại: ','สอบถามสินค้าเข้าใหม่: ','Tanya stok ulang: ','Consultar reposición: ','Perguntar reposição: '],
  '＋ 加入清單': ['＋ リストに追加','＋ 목록에 추가','＋ Thêm vào danh sách','＋ เพิ่มในรายการ','＋ Tambah ke daftar','＋ Añadir a la lista','＋ Adicionar à lista'],
