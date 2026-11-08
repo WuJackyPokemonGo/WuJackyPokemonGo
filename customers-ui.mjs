@@ -39,6 +39,9 @@ export function initCustomersUI({client,run,notify,loadOrders,showView}){
   const n=await service.deleteBatch(batch);notify(`已刪除批次 ${batch} 共 ${n} 筆。`);$('customerImportDialog').close();await load()});
  $('openCustomerImport').onclick=()=>{$('customerImportText').value='';$('customerImportBatch').value=stamp();$('customerImportPreview').replaceChildren(el('p','第一列欄位：'+IMPORT_HEADERS.join(',')+'。日期可寫 2026-09-07 或 9/7（預設今年），時間不知道就留空。','muted'));$('confirmCustomerImport').disabled=true;$('customerImportDialog').showModal()};
  $('exportCustomers').onclick=()=>run(async()=>{const list=filterRoster(roster,filters());const blob=new Blob([rosterCsv(list)],{type:'text/csv;charset=utf-8'});const a=el('a');a.href=URL.createObjectURL(blob);a.download=`客人名單-${new Date().toISOString().slice(0,10)}.csv`;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);notify(`已匯出 ${list.length} 位客人。`)});
+ $('backupCustomers').onclick=()=>run(async()=>{const doc=await service.backup();const blob=new Blob([JSON.stringify(doc)],{type:'application/json'});const a=el('a');a.href=URL.createObjectURL(blob);a.download=`客人資料備份-${doc.created_at.slice(0,10)}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);notify(`已備份 ${doc.profiles.length} 位客人資料、${doc.history.length} 筆歷史購買。請存到私人雲端，不要上傳到公開地方。`)});
+ $('restoreCustomersFile').onchange=event=>run(async()=>{const file=event.target.files?.[0];event.target.value='';if(!file)return;if(file.size>20_000_000)throw Error('檔案超過 20MB。');let doc;try{doc=JSON.parse(await file.text())}catch{throw Error('檔案不是有效的 JSON。')}
+  const r=await service.restore(doc);notify(`還原完成：補回 ${r.profiles} 位客人資料、${r.history} 筆歷史購買；${r.skipped} 筆已存在，保留現有內容。`);await load()});
  $('addCustomer').onclick=()=>edit(null);
  $('reloadCustomers').onclick=()=>run(load);
  for(const id of ['customerSearch','customerMinCount','customerInactive','customerMarketable'])$(id).addEventListener('input',render);

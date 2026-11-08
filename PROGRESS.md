@@ -4,7 +4,7 @@
 
 歷史購買存在新表 customer_history_purchases，不寫入 orders：不扣庫存、不進營收報表。匯入格式「客人,日期,時間,品項,金額,管道,備註」，預覽檢查後才寫入；import_key 防重複匯入，可依批次名稱整批刪除。來源為使用者錄影聊天紀錄，由 Claude 整理匯入檔，使用者確認後再匯入。客人名單與匯入檔不得提交到公開 repo。
 
-分支 feature/customer-roster-20261108。SQL：supabase/review/customer-roster.sql（兩張表、只限管理員的 RLS、anon 無權限），**尚未套用正式資料庫**，未合併、未部署。測試 309/309、build 通過；新增 customers-service（解析、統計、篩選、CSV、批次匯入）與 PGlite 資料庫權限測試。待辦：①使用者同意後套用 SQL；②backup-v2／restore-v2 尚未納入這兩張表，正式使用前要補，否則每日備份不含客人資料；③登入後手機實際操作驗收。
+分支 feature/customer-roster-20261108。SQL：supabase/review/customer-roster.sql（兩張表、只限管理員的 RLS、anon 無權限），**尚未套用正式資料庫**，未合併、未部署。測試 310/310、build 通過；新增 customers-service（含備份還原）（解析、統計、篩選、CSV、批次匯入）與 PGlite 資料庫權限測試。待辦：①使用者同意後套用 SQL；②每日系統備份（backup-v2／restore-v2）未納入這兩張表；改在客人名單頁提供「備份客人資料」（JSON 下載）與「還原備份」（只補回缺少的資料，以 id／import_key 判斷，不覆寫現有內容），由使用者定期下載保存。若要併入每日備份，需改 normalize_backup、app_backup_data、app_restore_plan 與還原套用函式，並相容舊備份，待使用者決定；③登入後手機實際操作驗收。
 
 ## 常設授權（2026-11-06）
 

@@ -53,3 +53,17 @@ test('service imports in chunks with duplicate-safe upsert and deletes by batch'
  assert.deepEqual(calls.filter(c=>c[0]==='upsert').map(c=>c[2]),[200,200,50]);assert.deepEqual(calls.find(c=>c[0]==='upsert')[3],{onConflict:'import_key',ignoreDuplicates:true});
  assert.equal(await svc.deleteBatch('b1'),2);await assert.rejects(svc.deleteBatch(''),/批次/);
 });
+
+test('customer backup validates format and restore never overwrites existing rows',async()=>{
+ const {validateCustomerBackup}=await import('../customers-service.mjs');
+ assert.throws(()=>validateCustomerBackup({format:'x'}),/不是客人資料備份/);
+ const profile={id:'p1',alias:'許大哥',other_aliases:[],contact_private:'',do_not_market:false,note_private:'',created_at:'t',updated_at:'t',extra:'drop'};
+ const hist={id:'h1',customer_alias:'許大哥',purchased_on:'2026-07-26',purchased_time:'',item_text:'x',amount_twd:1,channel:'',note_private:'',import_key:'h0000000000000001',import_batch:'b',created_at:'t'};
+ assert.throws(()=>validateCustomerBackup({format:'wu-jacky-customers',version:1,profiles:[{id:'p'}],history:[]}),/客人資料第 1 筆/);
+ const v=validateCustomerBackup({format:'wu-jacky-customers',version:1,profiles:[profile],history:[hist]});assert.equal('extra' in v.profiles[0],false);
+ const calls=[];const result=rows=>{const q={select:()=>q,then:(r,j)=>Promise.resolve({data:rows}).then(r,j)};return q};
+ const client={from:t=>({upsert:(rows,opts)=>{calls.push([t,opts]);return result(t==='customer_profiles'?[]:rows)}})};
+ const r=await createCustomersService(client).restore({format:'wu-jacky-customers',version:1,profiles:[profile],history:[hist]});
+ assert.deepEqual(r,{profiles:0,history:1,skipped:1});
+ assert.deepEqual(calls,[['customer_profiles',{onConflict:'id',ignoreDuplicates:true}],['customer_history_purchases',{onConflict:'import_key',ignoreDuplicates:true}]]);
+});

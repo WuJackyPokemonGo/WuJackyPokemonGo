@@ -85,6 +85,13 @@ export function profilePayload(v){const alias=String(v.alias??'').normalize('NFK
  const contact=String(v.contact_private??'').trim(),note=String(v.note_private??'').trim();if(contact.length>500)throw Error('聯絡資料超過 500 字。');if(note.length>2000)throw Error('備註超過 2000 字。');
  return {alias,other_aliases:others,contact_private:contact,do_not_market:v.do_not_market===true||v.do_not_market==='on'||v.do_not_market==='true',note_private:note}}
 
+const PROFILE_KEYS=['id','alias','other_aliases','contact_private','do_not_market','note_private','created_at','updated_at'];
+const HISTORY_KEYS=['id','customer_alias','purchased_on','purchased_time','item_text','amount_twd','channel','note_private','import_key','import_batch','created_at'];
+export function validateCustomerBackup(doc){
+ if(!doc||doc.format!=='wu-jacky-customers'||doc.version!==1||!Array.isArray(doc.profiles)||!Array.isArray(doc.history))throw Error('這不是客人資料備份檔。');
+ if(doc.profiles.length+doc.history.length>50000)throw Error('備份筆數超過上限。');
+ const pick=(rows,keys,label)=>rows.map((r,i)=>{if(!r||typeof r!=='object'||Array.isArray(r)||keys.some(k=>!(k in r)))throw Error(`${label}第 ${i+1} 筆欄位不完整。`);return Object.fromEntries(keys.map(k=>[k,r[k]]))});
+ return {profiles:pick(doc.profiles,PROFILE_KEYS,'客人資料'),history:pick(doc.history,HISTORY_KEYS,'歷史購買')}}
 export function createCustomersService(client){
  async function all(table,selection,order){const rows=[];for(let offset=0;;offset+=500){const batch=checked(await client.from(table).select(selection).order(order).order('id').range(offset,offset+499));rows.push(...batch);if(batch.length<500)return rows;if(rows.length>=50000)throw Error('資料超過本次可載入上限。')}}
  return {
@@ -92,5 +99,11 @@ export function createCustomersService(client){
   history:()=>all('customer_history_purchases','id,customer_alias,purchased_on,purchased_time,item_text,amount_twd,channel,note_private,import_batch','purchased_on'),
   async saveProfile(id,payload){if(id)return checked(await client.from('customer_profiles').update(payload).eq('id',id).select('id').single());return checked(await client.from('customer_profiles').insert(payload).select('id').single())},
   async importHistory(rows,batch){let inserted=0;for(let i=0;i<rows.length;i+=200){const chunk=rows.slice(i,i+200).map(r=>({...r,import_batch:batch}));const data=checked(await client.from('customer_history_purchases').upsert(chunk,{onConflict:'import_key',ignoreDuplicates:true}).select('id'));inserted+=data.length}return {inserted,skipped:rows.length-inserted}},
+  // 客人資料備份：只補回缺少的資料，不覆寫現有內容。
+  async backup(){const [profiles,history]=await Promise.all([all('customer_profiles','id,alias,other_aliases,contact_private,do_not_market,note_private,created_at,updated_at','alias'),all('customer_history_purchases','id,customer_alias,purchased_on,purchased_time,item_text,amount_twd,channel,note_private,import_key,import_batch,created_at','purchased_on')]);return {format:'wu-jacky-customers',version:1,created_at:new Date().toISOString(),profiles,history}},
+  async restore(doc){const {profiles,history}=validateCustomerBackup(doc);let p=0,h=0;
+   for(let i=0;i<profiles.length;i+=200)p+=checked(await client.from('customer_profiles').upsert(profiles.slice(i,i+200),{onConflict:'id',ignoreDuplicates:true}).select('id')).length;
+   for(let i=0;i<history.length;i+=200)h+=checked(await client.from('customer_history_purchases').upsert(history.slice(i,i+200),{onConflict:'import_key',ignoreDuplicates:true}).select('id')).length;
+   return {profiles:p,history:h,skipped:profiles.length+history.length-p-h}},
   async deleteBatch(batch){if(!batch)throw Error('請指定匯入批次。');return checked(await client.from('customer_history_purchases').delete().eq('import_batch',batch).select('id')).length}
  }}
