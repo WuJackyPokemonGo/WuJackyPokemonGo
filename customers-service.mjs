@@ -1,6 +1,7 @@
 // 客人名單：把後台訂單與匯入的歷史購買合併，依客人統計次數、金額、買過什麼。
 // 歷史購買存在 customer_history_purchases，不進 orders，不影響營收報表與庫存。
 export const COUNTED_ORDER_STATES=['paid_awaiting_purchase','ordered_from_supplier','arrived_for_check','completed'];
+export const PLATFORMS=['官方LINE','Messenger','IG','Threads','LINE社群','8591'];
 export const IMPORT_HEADERS=['客人','日期','時間','品項','金額','管道','備註'];
 const HEADER_ALIASES={客人:'customer_alias',客戶:'customer_alias',名稱:'customer_alias',日期:'purchased_on',時間:'purchased_time',品項:'item_text',商品:'item_text',金額:'amount_twd',管道:'channel',備註:'note_private'};
 const checked=({data,error})=>{if(error)throw error;return data};
@@ -56,51 +57,60 @@ function orderItems(o){const items=(o.order_items??[]).map(i=>(i.product_name_sn
 export function buildRoster({orders=[],history=[],profiles=[],today=taipeiDate(Date.now())}={}){
  const byKey=new Map(),customers=new Map();
  const ensure=(alias,profile=null)=>{const main=profile?.alias??alias;const key=normAlias(main);
-  if(!customers.has(key))customers.set(key,{key,alias:main,otherAliases:[...(profile?.other_aliases??[])],profileId:profile?.id??null,contact:profile?.contact_private??'',doNotMarket:!!profile?.do_not_market,note:profile?.note_private??'',updatedAt:profile?.updated_at??null,namesSeen:new Set(),purchases:[]});
+  if(!customers.has(key))customers.set(key,{key,alias:main,otherAliases:[...(profile?.other_aliases??[])],profileId:profile?.id??null,contacts:[...(profile?.contacts??[])],doNotMarket:!!profile?.do_not_market,note:profile?.note_private??'',updatedAt:profile?.updated_at??null,namesSeen:new Set(),purchases:[]});
   return customers.get(key)};
  for(const p of profiles){ensure(p.alias,p);byKey.set(normAlias(p.alias),p);for(const a of p.other_aliases??[])if(!byKey.has(normAlias(a)))byKey.set(normAlias(a),p)}
  const find=alias=>{const p=byKey.get(normAlias(alias));return ensure(p?p.alias:String(alias).trim(),p)};
  for(const o of orders){if(!COUNTED_ORDER_STATES.includes(o.status)||!String(o.customer_alias??'').trim())continue;const c=find(o.customer_alias);c.namesSeen.add(o.customer_alias.trim());
   const at=o.received_at||o.created_at;c.purchases.push({source:'order',id:o.id,ref:o.order_number??'',date:taipeiDate(at),time:new Date(at).toLocaleTimeString('en-GB',{timeZone:'Asia/Taipei',hour:'2-digit',minute:'2-digit'}),item:orderItems(o),amount:orderAmount(o),channel:o.channel??''});
-  if(!c.contact&&o.customer_contact_private)c.contact=o.customer_contact_private}
+  if(!c.contacts.length&&o.customer_contact_private&&!c.contacts.some(x=>x.handle===o.customer_contact_private))c.orderContact=o.customer_contact_private}
  for(const h of history){const c=find(h.customer_alias);c.namesSeen.add(h.customer_alias.trim());c.purchases.push({source:'history',id:h.id,ref:h.import_batch??'',date:h.purchased_on,time:h.purchased_time??'',item:h.item_text,amount:Number(h.amount_twd??0),channel:h.channel??'',note:h.note_private??''})}
  return [...customers.values()].map(c=>{c.purchases.sort((a,b)=>(b.date+b.time).localeCompare(a.date+a.time));const last=c.purchases[0]?.date??'';
-  return {...c,namesSeen:[...c.namesSeen].filter(n=>normAlias(n)!==c.key),count:c.purchases.length,total:c.purchases.reduce((s,p)=>s+p.amount,0),lastDate:last,daysSince:last?daysBetween(last,today):null,
+  const contacts=c.contacts.length?c.contacts:(c.orderContact?[{platform:'訂單填寫',handle:c.orderContact}]:[]);
+  return {...c,contacts,contact:contacts.map(x=>x.platform+'：'+x.handle).join('・'),namesSeen:[...c.namesSeen].filter(n=>normAlias(n)!==c.key&&!c.otherAliases.some(a=>normAlias(a)===normAlias(n))),count:c.purchases.length,total:c.purchases.reduce((s,p)=>s+p.amount,0),lastDate:last,daysSince:last?daysBetween(last,today):null,
    items:[...new Set(c.purchases.map(p=>p.item))]}})
   .sort((a,b)=>b.count-a.count||b.total-a.total||a.alias.localeCompare(b.alias,'zh-Hant'))}
 
-export function filterRoster(list,{search='',minCount=0,inactiveDays=0,marketableOnly=false}={}){
+export function filterRoster(list,{search='',minCount=0,inactiveDays=0,marketableOnly=false,platform=''}={}){
  const q=normAlias(search);
- return list.filter(c=>(!q||[c.alias,...c.otherAliases,...c.namesSeen,...c.items,c.note].some(v=>normAlias(v).includes(q)))
-  &&c.count>=minCount&&(!inactiveDays||(c.daysSince!=null&&c.daysSince>=inactiveDays))&&(!marketableOnly||!c.doNotMarket))}
+ return list.filter(c=>(!q||[c.alias,...c.otherAliases,...c.namesSeen,...c.items,c.note,...c.contacts.map(x=>x.handle)].some(v=>normAlias(v).includes(q)))
+  &&c.count>=minCount&&(!inactiveDays||(c.daysSince!=null&&c.daysSince>=inactiveDays))&&(!marketableOnly||!c.doNotMarket)&&(!platform||c.contacts.some(x=>x.platform===platform)))}
+export function usedPlatforms(list){const used=new Set(PLATFORMS);for(const c of list)for(const x of c.contacts)if(x.platform!=='訂單填寫')used.add(x.platform);return [...used]}
 
 // 匯出 CSV；以 ' 開頭避免試算表把 + - = @ 開頭的內容當公式（會出現 #ERROR!）。
 const cell=v=>{let s=String(v??'');if(/^[=+\-@\t\r]/.test(s))s="'"+s;return /[",\n\r]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s};
-export function rosterCsv(list){const head=['客人','其他名稱','聯絡資料','購買次數','合計金額','最後購買','距今天數','買過什麼','勿發廣告','備註'];
- return '﻿'+[head,...list.map(c=>[c.alias,[...c.otherAliases,...c.namesSeen].join('、'),c.contact,c.count,c.total,c.lastDate,c.daysSince??'',c.items.join('；'),c.doNotMarket?'是':'',c.note])].map(r=>r.map(cell).join(',')).join('\r\n')}
+export function rosterCsv(list){const platforms=[...usedPlatforms(list),...(list.some(c=>c.contacts.some(x=>x.platform==='訂單填寫'))?['訂單填寫']:[])];
+ const head=['客人','其他名稱',...platforms,'購買次數','合計金額','最後購買','距今天數','買過什麼','勿發廣告','備註'];
+ return '﻿'+[head,...list.map(c=>[c.alias,[...c.otherAliases,...c.namesSeen].join('、'),...platforms.map(p=>c.contacts.filter(x=>x.platform===p).map(x=>x.handle).join('、')),c.count,c.total,c.lastDate,c.daysSince??'',c.items.join('；'),c.doNotMarket?'是':'',c.note])].map(r=>r.map(cell).join(',')).join('\r\n')}
 
 export function profilePayload(v){const alias=String(v.alias??'').normalize('NFKC').trim().replace(/\s+/g,' ');if(!alias||alias.length>120)throw Error('客人名稱未填或超過 120 字。');
  const others=[...new Set(String(v.other_aliases??'').split(/[,，、\n]/).map(s=>s.normalize('NFKC').trim().replace(/\s+/g,' ')).filter(s=>s&&normAlias(s)!==normAlias(alias)))];
  if(others.length>20||others.some(s=>s.length>120))throw Error('其他名稱最多 20 個，每個 120 字內。');
- const contact=String(v.contact_private??'').trim(),note=String(v.note_private??'').trim();if(contact.length>500)throw Error('聯絡資料超過 500 字。');if(note.length>2000)throw Error('備註超過 2000 字。');
- return {alias,other_aliases:others,contact_private:contact,do_not_market:v.do_not_market===true||v.do_not_market==='on'||v.do_not_market==='true',note_private:note}}
+ const note=String(v.note_private??'').trim();if(note.length>2000)throw Error('備註超過 2000 字。');
+ return {alias,other_aliases:others,contacts:contactsPayload(v.contacts),contact_private:'',do_not_market:v.do_not_market===true||v.do_not_market==='on'||v.do_not_market==='true',note_private:note}}
 
-const PROFILE_KEYS=['id','alias','other_aliases','contact_private','do_not_market','note_private','created_at','updated_at'];
+export function contactsPayload(rows=[]){const out=[],seen=new Set();
+ for(const r of rows??[]){const platform=String(r?.platform??'').normalize('NFKC').trim().replace(/\s+/g,' '),handle=String(r?.handle??'').normalize('NFKC').trim();
+  if(!platform&&!handle)continue;if(!platform)throw Error(`「${handle}」沒有選平台。`);if(!handle)throw Error(`${platform} 的帳號沒有填。`);
+  if(platform.length>30)throw Error('平台名稱最多 30 字。');if(handle.length>200)throw Error('帳號或連結最多 200 字。');
+  const k=normAlias(platform)+'|'+normAlias(handle);if(seen.has(k))continue;seen.add(k);out.push({platform,handle})}
+ if(out.length>20)throw Error('聯絡方式最多 20 個。');return out}
+const PROFILE_KEYS=['id','alias','other_aliases','contacts','contact_private','do_not_market','note_private','created_at','updated_at'];
 const HISTORY_KEYS=['id','customer_alias','purchased_on','purchased_time','item_text','amount_twd','channel','note_private','import_key','import_batch','created_at'];
 export function validateCustomerBackup(doc){
  if(!doc||doc.format!=='wu-jacky-customers'||doc.version!==1||!Array.isArray(doc.profiles)||!Array.isArray(doc.history))throw Error('這不是客人資料備份檔。');
  if(doc.profiles.length+doc.history.length>50000)throw Error('備份筆數超過上限。');
- const pick=(rows,keys,label)=>rows.map((r,i)=>{if(!r||typeof r!=='object'||Array.isArray(r)||keys.some(k=>!(k in r)))throw Error(`${label}第 ${i+1} 筆欄位不完整。`);return Object.fromEntries(keys.map(k=>[k,r[k]]))});
+ const pick=(rows,keys,label)=>rows.map((r,i)=>{if(r&&typeof r==='object'&&keys.includes('contacts')&&!('contacts' in r))r={...r,contacts:r.contact_private?[{platform:'其他',handle:r.contact_private}]:[]};if(!r||typeof r!=='object'||Array.isArray(r)||keys.some(k=>!(k in r)))throw Error(`${label}第 ${i+1} 筆欄位不完整。`);return Object.fromEntries(keys.map(k=>[k,r[k]]))});
  return {profiles:pick(doc.profiles,PROFILE_KEYS,'客人資料'),history:pick(doc.history,HISTORY_KEYS,'歷史購買')}}
 export function createCustomersService(client){
  async function all(table,selection,order){const rows=[];for(let offset=0;;offset+=500){const batch=checked(await client.from(table).select(selection).order(order).order('id').range(offset,offset+499));rows.push(...batch);if(batch.length<500)return rows;if(rows.length>=50000)throw Error('資料超過本次可載入上限。')}}
  return {
-  profiles:()=>all('customer_profiles','id,alias,other_aliases,contact_private,do_not_market,note_private,updated_at','alias'),
+  profiles:()=>all('customer_profiles','id,alias,other_aliases,contacts,do_not_market,note_private,updated_at','alias'),
   history:()=>all('customer_history_purchases','id,customer_alias,purchased_on,purchased_time,item_text,amount_twd,channel,note_private,import_batch','purchased_on'),
   async saveProfile(id,payload){if(id)return checked(await client.from('customer_profiles').update(payload).eq('id',id).select('id').single());return checked(await client.from('customer_profiles').insert(payload).select('id').single())},
   async importHistory(rows,batch){let inserted=0;for(let i=0;i<rows.length;i+=200){const chunk=rows.slice(i,i+200).map(r=>({...r,import_batch:batch}));const data=checked(await client.from('customer_history_purchases').upsert(chunk,{onConflict:'import_key',ignoreDuplicates:true}).select('id'));inserted+=data.length}return {inserted,skipped:rows.length-inserted}},
   // 客人資料備份：只補回缺少的資料，不覆寫現有內容。
-  async backup(){const [profiles,history]=await Promise.all([all('customer_profiles','id,alias,other_aliases,contact_private,do_not_market,note_private,created_at,updated_at','alias'),all('customer_history_purchases','id,customer_alias,purchased_on,purchased_time,item_text,amount_twd,channel,note_private,import_key,import_batch,created_at','purchased_on')]);return {format:'wu-jacky-customers',version:1,created_at:new Date().toISOString(),profiles,history}},
+  async backup(){const [profiles,history]=await Promise.all([all('customer_profiles','id,alias,other_aliases,contacts,contact_private,do_not_market,note_private,created_at,updated_at','alias'),all('customer_history_purchases','id,customer_alias,purchased_on,purchased_time,item_text,amount_twd,channel,note_private,import_key,import_batch,created_at','purchased_on')]);return {format:'wu-jacky-customers',version:1,created_at:new Date().toISOString(),profiles,history}},
   async restore(doc){const {profiles,history}=validateCustomerBackup(doc);let p=0,h=0;
    for(let i=0;i<profiles.length;i+=200)p+=checked(await client.from('customer_profiles').upsert(profiles.slice(i,i+200),{onConflict:'id',ignoreDuplicates:true}).select('id')).length;
    for(let i=0;i<history.length;i+=200)h+=checked(await client.from('customer_history_purchases').upsert(history.slice(i,i+200),{onConflict:'import_key',ignoreDuplicates:true}).select('id')).length;
