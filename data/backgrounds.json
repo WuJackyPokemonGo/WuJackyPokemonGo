@@ -1342,11 +1342,13 @@
       "background_id": "BG-0013",
       "name_zh": "GO Fest 仙台",
       "release_state": "released",
-      "official_sources": [],
+      "official_sources": [
+        "https://pokemongo.com/news/dusk-mane-dawn-wings-necrozma-fusion"
+      ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "究極異獸由活動團體戰機率取得地標背景；索爾迦雷歐／露奈雅拉由持票者特殊調查取得。",
-      "method_en": "Ultra Beasts: chance from event raids. Solgaleo/Lunala: ticketed Special Research.",
+      "method_zh": "指定究極異獸與奈克洛茲瑪由活動團體戰捕捉，有機會取得地點背景；索爾迦雷歐／露奈雅拉為持票活動調查遭遇，地點背景資格依各城市活動名錄。日食／月食奈克洛茲瑪由合體取得，繼承奈克洛茲瑪本身的地點背景。",
+      "method_en": "Eligible Ultra Beasts and Necrozma may receive a Location Background from event raid catches. Solgaleo and Lunala are ticketed research encounters listed by the respective city catalogs. Dusk Mane and Dawn Wings Necrozma inherit the Location Card of the Necrozma used in fusion.",
       "series": "GO Fest",
       "series_zh": "GO Fest",
       "year": "2024",
@@ -1354,7 +1356,8 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2024-sendai",
-        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
+        "https://www.serebii.net/pokemongo/reallifeevents/pokemongofest2024sendai.shtml"
       ],
       "evolved_pokemon": [
         {
@@ -1457,11 +1460,13 @@
       "background_id": "BG-0014",
       "name_zh": "GO Fest 馬德里",
       "release_state": "released",
-      "official_sources": [],
+      "official_sources": [
+        "https://pokemongo.com/news/dusk-mane-dawn-wings-necrozma-fusion"
+      ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "究極異獸由活動團體戰機率取得地標背景；索爾迦雷歐／露奈雅拉由持票者特殊調查取得。",
-      "method_en": "Ultra Beasts: chance from event raids. Solgaleo/Lunala: ticketed Special Research.",
+      "method_zh": "指定究極異獸與奈克洛茲瑪由活動團體戰捕捉，有機會取得地點背景；索爾迦雷歐／露奈雅拉為持票活動調查遭遇，地點背景資格依各城市活動名錄。日食／月食奈克洛茲瑪由合體取得，繼承奈克洛茲瑪本身的地點背景。",
+      "method_en": "Eligible Ultra Beasts and Necrozma may receive a Location Background from event raid catches. Solgaleo and Lunala are ticketed research encounters listed by the respective city catalogs. Dusk Mane and Dawn Wings Necrozma inherit the Location Card of the Necrozma used in fusion.",
       "series": "GO Fest",
       "series_zh": "GO Fest",
       "year": "2024",
@@ -1469,7 +1474,8 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2024-madrid",
-        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
+        "https://www.serebii.net/pokemongo/reallifeevents/pokemongofest2024madrid.shtml"
       ],
       "evolved_pokemon": [
         {
@@ -1567,11 +1573,13 @@
       "background_id": "BG-0015",
       "name_zh": "GO Fest 紐約 2024",
       "release_state": "released",
-      "official_sources": [],
+      "official_sources": [
+        "https://pokemongo.com/news/dusk-mane-dawn-wings-necrozma-fusion"
+      ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "究極異獸由活動團體戰機率取得地標背景；索爾迦雷歐／露奈雅拉由持票者特殊調查取得。",
-      "method_en": "Ultra Beasts: chance from event raids. Solgaleo/Lunala: ticketed Special Research.",
+      "method_zh": "指定究極異獸與奈克洛茲瑪由活動團體戰捕捉，有機會取得地點背景；索爾迦雷歐／露奈雅拉為持票活動調查遭遇，地點背景資格依各城市活動名錄。日食／月食奈克洛茲瑪由合體取得，繼承奈克洛茲瑪本身的地點背景。",
+      "method_en": "Eligible Ultra Beasts and Necrozma may receive a Location Background from event raid catches. Solgaleo and Lunala are ticketed research encounters listed by the respective city catalogs. Dusk Mane and Dawn Wings Necrozma inherit the Location Card of the Necrozma used in fusion.",
       "series": "GO Fest",
       "series_zh": "GO Fest",
       "year": "2024",
@@ -1579,7 +1587,8 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2024-new-york",
-        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
+        "https://www.serebii.net/pokemongo/reallifeevents/pokemongofest2024newyorkcity.shtml"
       ],
       "evolved_pokemon": [
         {
