@@ -1,5 +1,18 @@
 // Columns: Japanese, Korean, Vietnamese, Thai, Indonesian, Spanish, Portuguese.
 export const backgroundLabels = {
+ '遠古復甦':["古の復活","고대의 귀환","Ancients Recovered","Ancients Recovered","Ancients Recovered","Ancients Recovered","Ancients Recovered"],
+ '搜尋寶可夢、活動、地點或圖鑑編號…':['ポケモン・イベント・場所・図鑑番号で検索…','포켓몬·이벤트·장소·도감 번호 검색…','Tìm Pokémon, sự kiện, địa điểm hoặc số Pokédex…','ค้นหาโปเกมอน กิจกรรม สถานที่ หรือหมายเลขโปเกเด็กซ์…','Cari Pokémon, acara, tempat, atau nomor Pokédex…','Busca Pokémon, eventos, lugares o números de Pokédex…','Busque Pokémon, eventos, lugares ou números da Pokédex…'],
+ '搜尋結果':['検索結果','검색 결과','Kết quả tìm kiếm','ผลการค้นหา','Hasil pencarian','Resultados de búsqueda','Resultados da busca'],
+ '{n} 樣商品在售中':['販売中の商品 {n} 件','판매 중인 상품 {n}개','{n} sản phẩm đang bán','มีสินค้า {n} รายการ','{n} produk dijual','{n} productos a la venta','{n} produtos à venda'],
+ '{n} 樣供貨待確認':['在庫確認が必要な商品 {n} 件','재고 확인이 필요한 상품 {n}개','{n} sản phẩm cần xác nhận','ต้องสอบถามสินค้า {n} รายการ','{n} produk perlu dikonfirmasi','{n} productos por confirmar','{n} produtos a confirmar'],
+ '{n} 樣即將推出':['近日登場の商品 {n} 件','출시 예정 상품 {n}개','{n} sản phẩm sắp ra mắt','สินค้าเร็ว ๆ นี้ {n} รายการ','{n} produk segera hadir','{n} productos próximamente','{n} produtos em breve'],
+ '商品狀態暫時無法確認':["在庫状況を確認できません","재고 상태를 확인할 수 없습니다","Chưa thể kiểm tra tình trạng hàng","ตรวจสอบสถานะสินค้าไม่ได้","Stok belum dapat diperiksa","No se puede verificar el stock","Não foi possível verificar o estoque"],
+ '正在確認商品狀態…':["在庫状況を確認中…","재고 확인 중…","Đang kiểm tra tình trạng hàng…","กำลังตรวจสอบสถานะสินค้า…","Memeriksa stok…","Comprobando stock…","Verificando estoque…"],
+ '暫無在售商品':["販売中の商品はありません","판매 중인 상품이 없습니다","Chưa có sản phẩm đang bán","ไม่มีสินค้าขายอยู่","Tidak ada produk yang dijual","No hay productos a la venta","Sem produtos à venda"],
+ '共 6 款特殊背景':["スペシャル背景 6 種","스페셜 배경 6종","6 phông nền đặc biệt","พื้นหลังพิเศษ 6 แบบ","6 latar belakang spesial","6 fondos especiales","6 fundos especiais"],
+ '活動日期：2025-06-23':["開催日 2025-06-23","개최일 2025-06-23","Ngày sự kiện 2025-06-23","วันที่จัดงาน 2025-06-23","Tanggal acara 2025-06-23","Fecha del evento 2025-06-23","Data do evento 2025-06-23"],
+ '目前篩選顯示 {n} 款':["検索条件に一致する背景 {n} 種","필터에 맞는 배경 {n}종","{n} phông nền khớp bộ lọc","ตรงกับตัวกรอง {n} แบบ","{n} latar cocok dengan filter","{n} fondos coinciden con el filtro","{n} fundos correspondem ao filtro"],
+
  '狀態截至：':['状況更新：','상태 기준: ','Cập nhật lúc: ','สถานะ ณ: ','Status per: ','Estado al: ','Status em: '],
  '進行中 {a}・即將推出 {b}':['開催中 {a}・開催予定 {b}','진행 중 {a} · 예정 {b}','Đang diễn ra {a} · Sắp tới {b}','กำลังจัด {a} · เร็ว ๆ นี้ {b}','{a} berlangsung · {b} mendatang','{a} en curso · {b} próximos','{a} em andamento · {b} próximos'],
  '其他活動':['その他','기타','Khác','อื่น ๆ','Lainnya','Otros','Outros'],

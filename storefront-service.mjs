@@ -1,3 +1,5 @@
+import {matchesSearchText,normalizeSearchText} from './search-text.mjs';
+import {REGION_NAMES} from './region-names.mjs';
 import {catalogAssetPath} from './catalog-assets.mjs';
 import {allLocalPokemonNames} from './pokemon-names.mjs';
 import {OPTIMIZED_THUMBNAILS} from './thumbnail-manifest.mjs';
@@ -37,13 +39,17 @@ export function tagsFor(p,now=new Date()){
  return tags;
 }
 export function searchMatch(p,keyword){
- const normalize=v=>String(v??'').normalize('NFKC').toLowerCase().replace(/\s+/g,'');
- const term=normalize(keyword),aliases=p.aliases??[];
+ const term=normalizeSearchText(keyword),aliases=p.aliases??[];
  if(!term)return true;
- if(/^#?\d+$/.test(term)){const number=Number(term.replace('#',''));return [p.dex,...(p.dex_numbers??[]),...aliases.filter(a=>/^#?\d+$/.test(String(a))).map(a=>String(a).replace('#',''))].some(n=>n!=null&&Number(n)===number)||normalize(p.sku)===term}
+ if(/^#?\d+$/.test(term)){const number=Number(term.replace('#',''));return [p.dex,...(p.dex_numbers??[]),...aliases.filter(a=>/^#?\d+$/.test(String(a))).map(a=>String(a).replace('#',''))].some(n=>n!=null&&Number(n)===number)||normalizeSearchText(p.sku)===term}
  const tags=tagsFor(p).flatMap(tag=>supportedLocales.map(locale=>t(tag,locale)));
  const localNames=[...new Set([p.dex,...(p.dex_numbers??[])].filter(Boolean))].flatMap(allLocalPokemonNames);
- return normalize([p.name,p.name_en,p.sku,...aliases,...tags,...localNames].join(' ')).includes(term);
+ const names=[p.name,p.name_en,...aliases];
+ const englishWords=normalizeSearchText(names.join(' ')).split(/[^a-z]+/u).join(' ');
+ const regions=Object.entries(REGION_NAMES).flatMap(([region,labels])=>(' '+englishWords+' ').includes(' '+region.toLowerCase()+' ')?labels:[]);
+ const indiaCostumes=names.some(name=>/\bsaree\b|\bkurta\b|紗麗|庫爾塔/i.test(name??''))?['サリー','クルタ','사리','쿠르타']:[];
+ const colors=names.some(name=>/festival of colors|色彩節|灑紅節/i.test(name??''))?['ホーリー祭','色の祭典','홀리 축제']:[];
+ return matchesSearchText([...names,p.sku,...tags,...localNames,...regions,...indiaCostumes,...colors],term);
 }
 export function inquiryText(products,cart,note='',locale='zh'){
  const lines=[tr('Wu Jacky Pokémon GO 詢價清單','Wu Jacky Pokémon GO — '+t('詢價清單',locale),locale),tr('（此內容為詢價，不代表訂單成立）','(This is an inquiry, not a confirmed order.)',locale),''];let total=0,unknown=false;

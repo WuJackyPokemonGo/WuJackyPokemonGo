@@ -9,7 +9,7 @@ import {getLocale,localeTag,setLocale,tr,productName,initLanguageHint,bindStatic
 import {loadPublicCatalog,stockLabel} from './storefront-service.mjs';
 import {backgroundState,filterBackgrounds,relatedProducts,safeBackgroundImage,safeSource,sortBackgrounds,referenceArtwork,backgroundArtworkGallery,groupBackgroundCards,filterBackgroundAnnouncements,backgroundProductSummary} from './backgrounds-service.mjs';
 const $=id=>document.getElementById(id),PAGE_SIZE=48;
-let data=null,products=[],stockState='loading',page=1,active=null,referenceData=null,catalogRequest=null,lastStockUpdate=null;
+let data=null,products=[],stockState='loading',page=1,active=null,referenceData=null,catalogRequest=null,lastStockUpdate=null,referenceRequest=null;
 const track=initAnalytics({background:true});
 const title=r=>getLocale()!=='zh'?r.name_en:r.name_zh||r.name_en;
 const regionLabel=r=>getLocale()==='zh'?r.region_zh:(localRegionName(r.region_en,getLocale())||r.region_en);
@@ -27,9 +27,9 @@ function translate(){
 }
 function options(id,entries,all){const select=$(id),value=select.value;select.replaceChildren();for(const[v,label]of [['',all],...entries]){const o=node('option',label);o.value=v;select.append(o)}if(entries.some(([v])=>v===value))select.value=value}
 function buildOptions(){const series=[...new Map([...data.records,...(data.additional_announced_events??[])].map(r=>[r.series,getLocale()==='zh'?r.series_zh:(r.series==='Other'?tr('其他活動','Other'):r.series)])).entries()];options('series',series,tr('全部系列','All series'));const years=[...new Set([...data.records,...(data.additional_announced_events??[])].map(r=>r.year).filter(Boolean))].sort().reverse();options('year',years.map(y=>[y,y]),tr('全部年份','All years'));const regions=[...new Map([...data.records,...(data.additional_announced_events??[])].map(r=>[r.region_en,regionLabel(r)])).entries()].filter(([v])=>v).sort((a,b)=>a[1].localeCompare(b[1]));options('region',regions,tr('全部地區','All regions'))}
-function backgroundImage(row){return referenceArtwork(row,referenceData)}
-function picture(row){
- const box=node('span',null,'picture'),url=backgroundImage(row);
+function backgroundImage(row){return referenceArtwork(row)}
+function picture(row,url=backgroundImage(row)){
+ const box=node('span',null,'picture');
  const fallback=()=>{box.classList.add('reference-cover',row.type==='special'?'cover-special':'cover-location');box.replaceChildren(node('span','WJ','cover-mark'),node('span',getLocale()!=='zh'?row.series:row.series_zh||row.series,'cover-series'),node('span',regionLabel(row),'cover-region'),node('span',tr('查看收藏詳情 ↗','Explore this entry ↗'),'cover-hint'))};
  if(!url){fallback();return box}const img=node('img');img.src=url;img.alt=title(row);img.loading='lazy';img.referrerPolicy='no-referrer';img.onerror=fallback;box.append(img);return box;
 }
@@ -42,7 +42,7 @@ function renderReferences(r){
  images.forEach((entry,i)=>{const a=node('a'),label=tr(entry.label_zh||`背景圖片 ${i+1}`,entry.label_en||`Background image ${i+1}`);if(images.length>1){const img=node('img');img.src=entry.image_url;img.alt=label;img.loading='lazy';img.referrerPolicy='no-referrer';img.onerror=()=>img.remove();a.append(img)}a.append(node('span',label+' ↗'));a.href=entry.image_url;a.target='_blank';a.rel='noopener noreferrer';links.append(a)});host.append(links);
 }
 
-function filters(){return{query:$('bgSearch').value,type:$('type').value,series:$('series').value,region:$('region').value,year:$('year').value,state:$('state').value,stockOnly:$('stockOnly').checked&&stockState==='ready',products}}
+function filters(){return{query:$('bgSearch').value,type:$('type').value,series:$('series').value,region:$('region').value,year:$('year').value,state:$('state').value,includeExactUpcoming:true,stockOnly:$('stockOnly').checked&&stockState==='ready',products}}
 function renderStats(){$('stats').replaceChildren();for(const[value,label,state]of [[data.records.length,tr('全部紀錄','All entries'),'all'],[data.records.filter(r=>backgroundState(r)==='verified').length,tr('已推出','Released'),'verified'],[data.records.filter(r=>backgroundState(r)==='upcoming').length,tr('即將推出','Upcoming'),'upcoming'],[data.records.filter(r=>backgroundState(r)==='pending').length,tr('待核對','Pending'),'pending']]){const box=btn('',()=>{$('state').value=state;page=1;render()});box.className='stat';box.setAttribute('aria-pressed',String($('state').value===state));box.append(node('strong',String(value)),node('span',label));$('stats').append(box)}}
 
 function renderStockStatus(){
@@ -56,9 +56,9 @@ function appendProductSummary(host,row,{detail=false}={}){
   return;
  }
  const counts=backgroundProductSummary(row,products),tag=detail?'p':'span';
- if(counts.onSale)host.append(node(tag,tr(`${counts.onSale} 樣商品在售中`,`${counts.onSale} ${counts.onSale===1?'product':'products'} on sale`),'stockhint'));
- if(counts.inquiry)host.append(node(tag,tr(`${counts.inquiry} 樣供貨待確認`,`${counts.inquiry} ${counts.inquiry===1?'product':'products'} to confirm`),'stockhint pending'));
- if(counts.comingSoon)host.append(node(tag,tr(`${counts.comingSoon} 樣即將推出`,`${counts.comingSoon} ${counts.comingSoon===1?'product':'products'} coming soon`),'stockhint pending'));
+ if(counts.onSale)host.append(node(tag,tr('{n} 樣商品在售中',counts.onSale===1?'{n} product on sale':'{n} products on sale').replace('{n}',counts.onSale),'stockhint'));
+ if(counts.inquiry)host.append(node(tag,tr('{n} 樣供貨待確認',counts.inquiry===1?'{n} product to confirm':'{n} products to confirm').replace('{n}',counts.inquiry),'stockhint pending'));
+ if(counts.comingSoon)host.append(node(tag,tr('{n} 樣即將推出',counts.comingSoon===1?'{n} product coming soon':'{n} products coming soon').replace('{n}',counts.comingSoon),'stockhint pending'));
  if(!counts.onSale&&!counts.inquiry&&!counts.comingSoon&&(detail||counts.soldOut))host.append(node(tag,tr('暫無在售商品','No products on sale'),'subtle'));
 }
 
@@ -69,17 +69,27 @@ function backgroundCard(r,{variant=false,matched=false}={}){
   const visual=node('span',null,'cardvisual'),type=node('span',r.type==='location'?tr('地標背景','LOCATION'):tr('特殊背景','SPECIAL'),'typeflag '+r.type);
   visual.append(picture(r),type);
   if(state!=='verified')visual.append(node('span',state==='upcoming'?tr('即將推出','UPCOMING'):tr('待核對','PENDING'),'releaseflag '+state));
-  const date=node('span',r.start_date||tr(`${r.year||''} 日期待核對`,`${r.year||''} · date to verify`),'dateflag');date.title=tr('活動開始日期；缺少精確日期時保留待核對。','Event start; dates without exact evidence remain unverified.');visual.append(date);
-  const body=node('span',null,'cardbody'),species=variant?r.pokemon?.[0]:null;body.append(node('strong',species?(getLocale()!=='zh'?species.name_en:species.name_zh):title(r),'cardname'),node('span',species?(getLocale()!=='zh'?species.name_zh:species.name_en):(getLocale()!=='zh'?(r.name_zh||''):r.name_en),'english'));if(species)body.append(node('span','#'+String(species.dex).padStart(4,'0'),'variantcount'));if(variant)card.classList.add('activity-variant');if(matched)card.classList.add('search-match');
-  const original=r.pokemon?.length||0,evolved=r.evolved_pokemon?.length||0,count=node('span',tr(`${original} 款原始${evolved?` · ${evolved} 款進化／合體`:''}`,`${original} encounter${original===1?'':'s'}${evolved?` · ${evolved} evolved/fused`:''}`),'variantcount');body.append(count);
-  const bottom=node('span',null,'cardmeta');bottom.append(node('span',badgeText(state,r),'evidence '+state));if(r.artwork_status==='pending')bottom.append(node('span',tr('圖樣待確認','Artwork unconfirmed'),'evidence pending'));
-  appendProductSummary(bottom,r);body.append(bottom,node('span',tr('詳情 ↗','Details ↗'),'carddetail'));open.append(visual,body);card.append(open);return card;
+  const body=node('span',null,'cardbody'),species=variant?r.pokemon?.[0]:null;
+  const speciesName=species&&(getLocale()==='zh'?species.name_zh:localPokemonName(species.dex,getLocale())||species.name_en);
+  body.append(node('strong',speciesName||title(r),'cardname'));
+  if(species){
+    body.append(node('span','#'+String(species.dex).padStart(4,'0'),'dex'));
+    if(matched)card.classList.add('matched-variant');
+  }
+  const date=r.start_date||tr(`${r.year||''} 日期待核對`,`${r.year||''} · date to verify`);
+  body.append(node('span',date,'carddate'));
+  const bottom=node('span',null,'cardmeta');
+  if(r.artwork_status==='pending')bottom.append(node('span',tr('圖樣待確認','Artwork unconfirmed'),'evidence pending'));
+  appendProductSummary(bottom,r);
+  if(bottom.childNodes.length)body.append(bottom);
+  body.append(node('span',tr('詳情 ↗','Details ↗'),'carddetail'));
+  open.append(visual,body);card.append(open);return card;
 }
 function activityCard(group){
  const card=node('article',null,'card activity-group'),details=node('details'),summary=node('summary',null,'cardbutton activity-summary');
  const visual=node('span',null,'cardvisual activity-mosaic');for(const r of group.members)visual.append(picture(r));
- const body=node('span',null,'cardbody');body.append(node('strong','遠古復甦｜Ancients Recovered','cardname'),node('span',tr('活動日期：2025-06-23','Event date: 2025-06-23'),'english'),node('span',tr('共 6 款特殊背景','6 Special Backgrounds'),'variantcount'));
- if(group.members.length<6)body.append(node('span',tr(`目前篩選顯示 ${group.members.length} 款`,`Current filters show ${group.members.length} variants`),'subtle'));
+ const body=node('span',null,'cardbody');body.append(node('strong',tr('遠古復甦','Ancients Recovered'),'cardname'),node('span',tr('活動日期：2025-06-23','Event date: 2025-06-23'),'english'),node('span',tr('共 6 款特殊背景','6 Special Backgrounds'),'variantcount'));
+ if(group.members.length<6)body.append(node('span',tr('目前篩選顯示 {n} 款','Current filters show {n} variants').replace('{n}',group.members.length),'subtle'));
  const combined={related_product_ids:[...new Set(group.members.flatMap(r=>r.related_product_ids??[]))]},saleSummary=node('span',null,'cardmeta');appendProductSummary(saleSummary,combined);body.append(saleSummary);
  const cue=node('span',null,'carddetail');body.append(cue);summary.append(visual,body);
  const variants=node('div',null,'activity-variants');for(const r of group.members)variants.append(backgroundCard(r,{variant:true,matched:!!filters().query.trim()&&group.matchedIds.includes(r.background_id)}));
@@ -88,7 +98,11 @@ function activityCard(group){
  details.open=opened;sync();details.ontoggle=()=>{activityExpansion.set(key,details.open);sync()};details.append(summary,variants);card.append(details);return card;
 }
 
-function renderAnnouncementPreviews(){renderActivityFeed($('announcedBackgrounds'),data,{onBackground:id=>{const row=data.records.find(r=>r.background_id===id);if(row)openDetail(row)}})}
+function renderAnnouncementPreviews(){
+ const feed=$('announcedBackgrounds');
+ renderActivityFeed(feed,data,{onBackground:id=>{const row=data.records.find(r=>r.background_id===id);if(row)openDetail(row)}});
+ $('activityShortcut').hidden=feed.hidden;
+}
 
 function render(){
  if(!data)return;renderStats();renderStockStatus();renderAnnouncementPreviews();
@@ -140,8 +154,22 @@ function renderDetailPokemon(r){
   const items=node('div',null,'pokemon');for(const p of section.pokemon)items.append(pokemonItem(p));box.append(items);host.append(box);
  }
 }
-function renderDetail(r){renderReferences(r);$('detailTitle').textContent=title(r);$('detailEnglish').textContent=getLocale()!=='zh'?(r.name_zh||''):r.name_en;$('detailImage').replaceChildren(picture(r));$('detailInfo').replaceChildren();addInfo(badgeText(backgroundState(r),r));addInfo(regionLabel(r));if(r.start_date)addInfo(tr('活動日期：','Event dates: ')+r.start_date+(r.end_date?' – '+r.end_date:''));else addInfo(tr('來源原始日期（尚待核對）：','Source dates (unverified): ')+(r.dates_source||tr('待確認','To be confirmed')));addInfo(getLocale()!=='zh'?r.date_note_en:r.date_note_zh);addInfo(getLocale()!=='zh'?r.artwork_note_en:r.artwork_note_zh,'subtle');addInfo(getLocale()!=='zh'?r.method_en:r.method_zh);addInfo(getLocale()!=='zh'?r.return_note_en:r.return_note_zh,'notice');if(!r.method_zh&&!r.method_en)addInfo(tr('取得方式仍在核對中，請以原活動公告為準。','The acquisition method is still being checked. Refer to the original event announcement.'));if(backgroundState(r)==='pending')addInfo(tr('此項資料尚未完成核對，不作為已發放或目前可取得的證明。','This entry awaits verification and is not proof of release or current availability.'),'notice');if(backgroundState(r)==='upcoming')addInfo(tr('活動尚未開始，請以官方最新公告為準。','This event is upcoming. Check the latest official announcement.'),'notice');$('detailPokemon').replaceChildren();$('detailEvolutions').replaceChildren();renderDetailPokemon(r);renderAdditionalPokemon(r);const pendingMethods=[r.pokemon,r.evolved_pokemon,r.upcoming_pokemon,r.unconfirmed_pokemon].some(rows=>rows?.some(p=>p.method_status==='unconfirmed'));const notice=$('pokemonMethodNotice');notice.hidden=!pendingMethods;notice.textContent=tr('部分款式的取得條件仍待核對，可點選名稱查看個別說明。','Some acquisition conditions are still being checked. Select a Pokémon to see its details.');for(const p of detailPokemonRows(r,{evolved:true}))$('detailEvolutions').append(pokemonItem(p));$('evolutionSection').hidden=!r.evolved_pokemon?.length;$('pokemonCount').textContent=tr('{a} 款原始遭遇 · {b} 款進化／合體','{a} encounter/source variants; {b} evolution or fusion variants.').replace('{a}',r.pokemon?.length||0).replace('{b}',r.evolved_pokemon?.length||0);if(!r.pokemon?.length)$('detailPokemon').append(node('p',tr('適用寶可夢待確認。','Eligible Pokémon to be confirmed.'),'subtle'));$('detailProducts').replaceChildren();appendProductSummary($('detailProducts'),r,{detail:true});const related=stockState==='ready'?relatedProducts(r,products):[];for(const p of related){const a=node('a',null,'related');a.href='index.html?product='+encodeURIComponent(p.id)+'&lang='+getLocale()+'&from=bg';a.addEventListener('click',()=>track('background_product_click',r.background_id));a.append(node('strong',productName(p)),node('span',(p.price==null?tr('私訊詢價','Ask for price'):'NT$ '+p.price.toLocaleString('zh-TW'))+' · '+stockLabel(p,getLocale()).text));$('detailProducts').append(a)}if(!related.length&&stockState==='ready')$('detailProducts').append(node('p',stockState==='ready'?tr('目前商品目錄尚無對應商品，可返回目錄查看其他收藏。','There are no linked products in the current catalog. Browse the collection for other items.'):tr('相關商品資料暫時無法確認。','Related product information is currently unavailable.'),'subtle'));$('detailSources').replaceChildren();for(const url of [...new Set([...(r.official_sources??[]),...(r.catalog_sources??[]),r.artwork_preview_source,...(r.artwork_variants??[]).map(v=>v.source_url),r.source,(referenceData?.entries??[]).some(x=>x.background_id===r.background_id)?referenceData.source:null].filter(Boolean))]){const href=safeSource(url);if(!href)continue;const a=node('a',url.includes('pokemongo.com')?tr('Pokémon GO 官方公告 ↗','Official Pokémon GO announcement ↗'):url.includes('serebii.net')?'Serebii ↗':new URL(url).hostname+' ↗');a.href=href;a.target='_blank';a.rel='noopener noreferrer';$('detailSources').append(a)}}
-function openDetail(r){active=r;$('backgroundLinkStatus').textContent='';$('backgroundLinkText').hidden=true;renderDetail(r);$('backgroundDialog').showModal();track('background_view',r.background_id);const url=new URL(location.href);url.searchParams.set('background',r.background_id);history.replaceState(null,'',url)}
+function renderDetail(r){renderReferences(r);$('detailTitle').textContent=title(r);$('detailEnglish').textContent=getLocale()!=='zh'?(r.name_zh||''):r.name_en;$('detailImage').replaceChildren(picture(r,referenceArtwork(r,referenceData)));$('detailInfo').replaceChildren();addInfo(badgeText(backgroundState(r),r));addInfo(regionLabel(r));if(r.start_date)addInfo(tr('活動日期：','Event dates: ')+r.start_date+(r.end_date?' – '+r.end_date:''));else addInfo(tr('來源原始日期（尚待核對）：','Source dates (unverified): ')+(r.dates_source||tr('待確認','To be confirmed')));addInfo(getLocale()!=='zh'?r.date_note_en:r.date_note_zh);addInfo(getLocale()!=='zh'?r.artwork_note_en:r.artwork_note_zh,'subtle');addInfo(getLocale()!=='zh'?r.method_en:r.method_zh);addInfo(getLocale()!=='zh'?r.return_note_en:r.return_note_zh,'notice');if(!r.method_zh&&!r.method_en)addInfo(tr('取得方式仍在核對中，請以原活動公告為準。','The acquisition method is still being checked. Refer to the original event announcement.'));if(backgroundState(r)==='pending')addInfo(tr('此項資料尚未完成核對，不作為已發放或目前可取得的證明。','This entry awaits verification and is not proof of release or current availability.'),'notice');if(backgroundState(r)==='upcoming')addInfo(tr('活動尚未開始，請以官方最新公告為準。','This event is upcoming. Check the latest official announcement.'),'notice');$('detailPokemon').replaceChildren();$('detailEvolutions').replaceChildren();renderDetailPokemon(r);renderAdditionalPokemon(r);const pendingMethods=[r.pokemon,r.evolved_pokemon,r.upcoming_pokemon,r.unconfirmed_pokemon].some(rows=>rows?.some(p=>p.method_status==='unconfirmed'));const notice=$('pokemonMethodNotice');notice.hidden=!pendingMethods;notice.textContent=tr('部分款式的取得條件仍待核對，可點選名稱查看個別說明。','Some acquisition conditions are still being checked. Select a Pokémon to see its details.');for(const p of detailPokemonRows(r,{evolved:true}))$('detailEvolutions').append(pokemonItem(p));$('evolutionSection').hidden=!r.evolved_pokemon?.length;$('pokemonCount').textContent=tr('{a} 款原始遭遇 · {b} 款進化／合體','{a} encounter/source variants; {b} evolution or fusion variants.').replace('{a}',r.pokemon?.length||0).replace('{b}',r.evolved_pokemon?.length||0);if(!r.pokemon?.length)$('detailPokemon').append(node('p',tr('適用寶可夢待確認。','Eligible Pokémon to be confirmed.'),'subtle'));$('detailProducts').replaceChildren();appendProductSummary($('detailProducts'),r,{detail:true});const related=stockState==='ready'?relatedProducts(r,products):[];for(const p of related){const a=node('a',null,'related');a.href='index.html?product='+encodeURIComponent(p.id)+'&lang='+getLocale()+'&from=bg';a.addEventListener('click',()=>track('background_product_click',r.background_id));a.append(node('strong',productName(p)),node('span',(p.price==null?tr('私訊詢價','Ask for price'):'NT$ '+p.price.toLocaleString('zh-TW'))+' · '+stockLabel(p,getLocale()).text));$('detailProducts').append(a)}if(!related.length&&stockState==='ready')$('detailProducts').append(node('p',stockState==='ready'?tr('目前商品目錄尚無對應商品，可返回目錄查看其他收藏。','There are no linked products in the current catalog. Browse the collection for other items.'):tr('相關商品資料暫時無法確認。','Related product information is currently unavailable.'),'subtle'));renderDetailSources(r)}
+function renderDetailSources(r){$('detailSources').replaceChildren();for(const url of [...new Set([...(r.official_sources??[]),...(r.catalog_sources??[]),r.artwork_preview_source,...(r.artwork_variants??[]).map(v=>v.source_url),r.source,(referenceData?.entries??[]).some(x=>x.background_id===r.background_id)?referenceData.source:null].filter(Boolean))]){const href=safeSource(url);if(!href)continue;const a=node('a',url.includes('pokemongo.com')?tr('Pokémon GO 官方公告 ↗','Official Pokémon GO announcement ↗'):url.includes('serebii.net')?'Serebii ↗':new URL(url).hostname+' ↗');a.href=href;a.target='_blank';a.rel='noopener noreferrer';$('detailSources').append(a)}}
+function loadReferenceDetails(){
+ if(!referenceRequest)referenceRequest=fetch('data/background-reference-facts.json?v=20261106-form-labels',{signal:AbortSignal.timeout(10000)})
+  .then(response=>{if(!response.ok)throw Error('reference unavailable');return response.json()})
+  .then(value=>{
+   referenceData=value;
+   if(active&&$('backgroundDialog').open){
+    const image=$('detailImage').querySelector('img')?.src;
+    const updated=referenceArtwork(active,referenceData);
+    if(updated&&updated!==image)$('detailImage').replaceChildren(picture(active,updated));
+    renderReferences(active);renderDetailSources(active);
+   }
+  }).catch(()=>{referenceRequest=null});
+}
+function openDetail(r){active=r;$('backgroundLinkStatus').textContent='';$('backgroundLinkText').hidden=true;renderDetail(r);$('backgroundDialog').showModal();loadReferenceDetails();track('background_view',r.background_id);const url=new URL(location.href);url.searchParams.set('background',r.background_id);history.replaceState(null,'',url)}
 $('copyBackgroundLink').onclick=async()=>{
  const row=active;
  if(!row)return;
@@ -165,7 +193,20 @@ $('copyBackgroundLink').onclick=async()=>{
  }
 };
 const updateLanguageHint=initLanguageHint();$('closeDetail').onclick=()=>$('backgroundDialog').close();$('reset').onclick=reset;$('language').value=getLocale();$('language').onchange=()=>{setLocale($('language').value);updateLanguageHint();translate();window.dispatchEvent(new Event('wj-language-change'));if(data){buildOptions();render();if(active)renderDetail(active)}};for(const id of ['state','type','series','region','year','stockOnly','sortOrder'])$(id).onchange=()=>{page=1;render()};document.querySelectorAll('.type-tabs button').forEach(b=>b.onclick=()=>{$('type').value=b.dataset.type;page=1;render()});$('bgSearch').oninput=()=>{page=1;render()};translate();
-async function load(){try{const response=await fetch(BACKGROUNDS_DATA_URL,{signal:AbortSignal.timeout(15000)});if(!response.ok)throw Error('catalog unavailable');const nextData=await response.json();if(!Array.isArray(nextData.records))throw Error('invalid catalog');const overrides=await loadBackgroundOverrides();nextData.records=mergeBackgroundOverrides(nextData.records,overrides);data=nextData;try{const res=await fetch('data/background-reference-facts.json?v=20261106-form-labels',{signal:AbortSignal.timeout(10000)});if(!res.ok)throw Error('reference unavailable');referenceData=await res.json()}catch{referenceData=null}buildOptions();render();$('loadStatus').hidden=true;const id=new URL(location.href).searchParams.get('background');const target=data.records.find(r=>r.background_id===(data.redirects?.[id]||id));track('background_page_view');track.source('atlas');if(target)openDetail(target)}catch{$('loadStatus').replaceChildren(node('p',tr('圖鑑暫時無法載入，請稍後重試。','The background collection could not be loaded. Please try again.')),btn(tr('重新載入','Retry'),load))}}
+async function load(){
+ try{
+  const catalog=fetch(BACKGROUNDS_DATA_URL,{signal:AbortSignal.timeout(15000)}).then(response=>{if(!response.ok)throw Error('catalog unavailable');return response.json()});
+  const [nextData,overrides]=await Promise.all([catalog,loadBackgroundOverrides()]);
+  if(!Array.isArray(nextData.records))throw Error('invalid catalog');
+  nextData.records=mergeBackgroundOverrides(nextData.records,overrides);data=nextData;
+  buildOptions();render();$('loadStatus').hidden=true;
+  const id=new URL(location.href).searchParams.get('background');
+  const target=data.records.find(r=>r.background_id===(data.redirects?.[id]||id));
+  track('background_page_view');track.source('atlas');if(target)openDetail(target);
+ }catch{
+  $('loadStatus').replaceChildren(node('p',tr('圖鑑暫時無法載入，請稍後重試。','The background collection could not be loaded. Please try again.')),btn(tr('重新載入','Retry'),load));
+ }
+}
 async function refreshProducts(){
  if(catalogRequest)return catalogRequest;
  catalogRequest=(async()=>{

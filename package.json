@@ -5,7 +5,8 @@
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "build:admin": "esbuild cloud-admin.mjs --bundle --minify --format=esm --target=es2022 --outfile=assets/cloud-admin.bundle.js",
-    "build": "node scripts/build-share-pages.mjs && npm run build:admin && esbuild storefront.mjs --bundle --minify --format=esm --target=es2022 --outfile=assets/storefront.bundle.js && esbuild backgrounds.mjs --bundle --minify --format=esm --target=es2022 --outfile=assets/backgrounds.bundle.js"
+    "build": "node scripts/build-share-pages.mjs && node scripts/build-product-shares.mjs && npm run build:admin && esbuild storefront.mjs --bundle --minify --format=esm --target=es2022 --outfile=assets/storefront.bundle.js && esbuild backgrounds.mjs --bundle --minify --format=esm --target=es2022 --outfile=assets/backgrounds.bundle.js",
+    "sync:product-shares": "node scripts/sync-product-shares.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "2.118.0"
