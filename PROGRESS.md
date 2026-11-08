@@ -1,8 +1,8 @@
-## 客人多平台聯絡方式：待審分支（2026-11-08）
+## 客人多平台聯絡方式：已上線（2026-11-08）
 
 依使用者需求，客人資料的單一「聯絡方式」改為多列「平台＋帳號」，可一直新增。預設平台依使用者指定：官方LINE、Messenger、IG、Threads、LINE社群、8591；也可直接輸入其他平台名稱，用過的名稱會出現在建議清單。客人名單可篩「有某平台」的客人，搜尋也比對帳號；匯出CSV改為每個平台一欄。沒有建立客人資料但訂單有填聯絡資料時，顯示為「訂單填寫」。修正其他名稱在名單與CSV重複出現。
 
-SQL：supabase/production/customer-contacts.sql（新增contacts jsonb；舊contact_private內容搬成一列「其他」；觸發器檢查格式：最多20列、平台1–30字、帳號1–200字），**尚未套用正式資料庫**。舊版客人備份（無contacts）還原時自動轉換。分支 feature/customer-contacts-20261108，測試311/311、build通過；手機寬度390px編輯視窗無水平溢出。
+SQL：supabase/production/customer-contacts.sql（新增contacts jsonb；舊contact_private內容搬成一列「其他」；觸發器檢查格式：最多20列、平台1–30字、帳號1–200字），使用者同意「套用並部署」後已套用正式資料庫（migration customer_contacts）；查核：contacts為jsonb、觸發器customer_profiles_check已建立、舊touch函式已移除、RLS仍開啟；格式錯誤的寫入被拒絕、正確寫入成功，驗證資料已刪除（剩0筆）。套用前正式表0筆，無舊資料需搬移。已rebase到main最新（含 #4 商品搜尋改進）後合併部署，測試315/315。舊版客人備份（無contacts）還原時自動轉換。分支 feature/customer-contacts-20261108，build通過；手機寬度390px編輯視窗無水平溢出。
 
 ## 客人名單（熟客統計）：已上線（2026-11-08）
 
