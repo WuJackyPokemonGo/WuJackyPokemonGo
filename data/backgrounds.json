@@ -16663,10 +16663,12 @@
           "name_zh": "怪力（Machamp Modern Jacket）",
           "variant_id": "machamp-modern-jacket",
           "acquisition": "encounter",
-          "method_zh": "穿現代夾克怪力：持票現場三星團體戰捕獲，有機會附地點背景。",
-          "method_en": "Modern-jacket Machamp: ticketed in-person three-star raids, chance of a Location Background.",
+          "method_zh": "穿現代夾克怪力：持票現場三星團體戰捕獲，有機會附地點背景。 社群紀錄另列持票現場集章第7章獎勵為附背景的現代夾克怪力。",
+          "method_en": "Modern-jacket Machamp: ticketed in-person three-star raids, chance of a Location Background. Community records also list ticketed in-person stamp 7 as a background encounter with modern-jacket Machamp.",
           "method_sources": [
-            "https://pokemongo.com/gowildarea/sendai/gameplay"
+            "https://pokemongo.com/gowildarea/sendai/gameplay",
+            "https://pokemongo.gamewith.jp/article/show/568373",
+            "https://pokemongo-raku.com/post162567"
           ]
         },
         {
@@ -16736,10 +16738,198 @@
           "acquisition": "encounter",
           "method_status": "reviewed",
           "method_sources": [
-            "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026"
+            "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026",
+            "https://pokemongo.gamewith.jp/article/show/568373",
+            "https://pokemongo-raku.com/post162567"
           ],
-          "method_zh": "長期集章（所有訓練家，不需票券）：集滿仙台八枚印章，獲得附仙台・東北地點背景的拉普拉斯；自台灣2026/11/3 08:00開放，未定結束日。",
-          "method_en": "Ongoing stamp rally (all Trainers, no ticket): eight Sendai stamps award Lapras with the Sendai • Tohoku Location Background; opened November 3, 08:00 Taiwan time with no end date."
+          "method_zh": "長期集章（所有訓練家，不需票券）：集滿仙台八枚印章，獲得附仙台・東北地點背景的拉普拉斯；自台灣2026/11/3 08:00開放，未定結束日。 社群紀錄另列持票現場集章第6章獎勵為附背景的強大的拉普拉斯。",
+          "method_en": "Ongoing stamp rally (all Trainers, no ticket): eight Sendai stamps award Lapras with the Sendai • Tohoku Location Background; opened November 3, 08:00 Taiwan time with no end date. Community records also list ticketed in-person stamp 6 as a background encounter with mighty Lapras."
+        },
+        {
+          "dex": 705,
+          "name_zh": "黏美兒（洗翠的樣子）",
+          "name_en": "Hisuian Sliggoo",
+          "form_zh": "洗翠的樣子",
+          "variant_id": "sliggoo-hisuian",
+          "acquisition": "encounter",
+          "method_status": "reviewed",
+          "method_zh": "社群紀錄交叉核對：持票主活動日現場集章第5章附仙台地點背景。",
+          "method_en": "Cross-checked community records list ticketed in-person stamp 5 as an encounter with the Sendai Location Background.",
+          "method_sources": [
+            "https://pokemongo.gamewith.jp/article/show/568373",
+            "https://pokemongo-raku.com/post162567",
+            "https://pokexperience.com/backgrounds/"
+          ]
+        },
+        {
+          "dex": 462,
+          "name_zh": "自爆磁怪",
+          "name_en": "Magnezone",
+          "acquisition": "encounter",
+          "method_status": "reviewed",
+          "method_zh": "社群紀錄交叉核對：鋼屬性限時調查，轉動2個不同的指定補給站可遇見附仙台地點背景的個體。",
+          "method_en": "Cross-checked community records: spin 2 distinct themed PokéStops in the Steel Timed Research for an encounter with the Sendai Location Background.",
+          "method_sources": [
+            "https://pokemongo.gamewith.jp/article/show/568373",
+            "https://pokemongo-raku.com/post164610",
+            "https://pokexperience.com/backgrounds/"
+          ]
+        },
+        {
+          "dex": 212,
+          "name_zh": "巨鉗螳螂",
+          "name_en": "Scizor",
+          "acquisition": "encounter",
+          "method_status": "reviewed",
+          "method_zh": "社群紀錄交叉核對：鋼屬性限時調查，轉動4個不同的指定補給站可遇見附仙台地點背景的個體。",
+          "method_en": "Cross-checked community records: spin 4 distinct themed PokéStops in the Steel Timed Research for an encounter with the Sendai Location Background.",
+          "method_sources": [
+            "https://pokemongo.gamewith.jp/article/show/568373",
+            "https://pokemongo-raku.com/post164610",
+            "https://pokexperience.com/backgrounds/"
+          ]
+        },
+        {
+          "dex": 395,
+          "name_zh": "帝王拿波",
+          "name_en": "Empoleon",
+          "acquisition": "encounter",
+          "method_status": "reviewed",
+          "method_zh": "社群紀錄交叉核對：鋼屬性限時調查，轉動6個不同的指定補給站可遇見附仙台地點背景的個體。",
+          "method_en": "Cross-checked community records: spin 6 distinct themed PokéStops in the Steel Timed Research for an encounter with the Sendai Location Background.",
+          "method_sources": [
+            "https://pokemongo.gamewith.jp/article/show/568373",
+            "https://pokemongo-raku.com/post164610",
+            "https://pokexperience.com/backgrounds/"
+          ]
+        },
+        {
+          "dex": 959,
+          "name_zh": "巨鍛匠",
+          "name_en": "Tinkaton",
+          "acquisition": "encounter",
+          "method_status": "reviewed",
+          "method_zh": "社群紀錄交叉核對：鋼屬性限時調查，轉動8個不同的指定補給站可遇見附仙台地點背景的個體。",
+          "method_en": "Cross-checked community records: spin 8 distinct themed PokéStops in the Steel Timed Research for an encounter with the Sendai Location Background.",
+          "method_sources": [
+            "https://pokemongo.gamewith.jp/article/show/568373",
+            "https://pokemongo-raku.com/post164610",
+            "https://pokexperience.com/backgrounds/"
+          ]
+        },
+        {
+          "dex": 376,
+          "name_zh": "巨金怪",
+          "name_en": "Metagross",
+          "acquisition": "encounter",
+          "method_status": "reviewed",
+          "method_zh": "社群紀錄交叉核對：鋼屬性限時調查，轉動10個不同的指定補給站可遇見附仙台地點背景的個體。",
+          "method_en": "Cross-checked community records: spin 10 distinct themed PokéStops in the Steel Timed Research for an encounter with the Sendai Location Background.",
+          "method_sources": [
+            "https://pokemongo.gamewith.jp/article/show/568373",
+            "https://pokemongo-raku.com/post164610",
+            "https://pokexperience.com/backgrounds/"
+          ]
+        },
+        {
+          "dex": 411,
+          "name_zh": "護城龍",
+          "name_en": "Bastiodon",
+          "acquisition": "encounter",
+          "method_status": "reviewed",
+          "method_zh": "社群紀錄交叉核對：鋼屬性限時調查，完成整份調查可遇見附仙台地點背景的個體。",
+          "method_en": "Cross-checked community records: complete the full research in the Steel Timed Research for an encounter with the Sendai Location Background.",
+          "method_sources": [
+            "https://pokemongo.gamewith.jp/article/show/568373",
+            "https://pokemongo-raku.com/post164610",
+            "https://pokexperience.com/backgrounds/"
+          ]
+        },
+        {
+          "dex": 230,
+          "name_zh": "刺龍王",
+          "name_en": "Kingdra",
+          "acquisition": "encounter",
+          "method_status": "reviewed",
+          "method_zh": "社群紀錄交叉核對：龍屬性限時調查，轉動2個不同的指定補給站可遇見附仙台地點背景的個體。",
+          "method_en": "Cross-checked community records: spin 2 distinct themed PokéStops in the Dragon Timed Research for an encounter with the Sendai Location Background.",
+          "method_sources": [
+            "https://pokemongo.gamewith.jp/article/show/568373",
+            "https://pokemongo-raku.com/post164610",
+            "https://pokexperience.com/backgrounds/"
+          ]
+        },
+        {
+          "dex": 103,
+          "name_zh": "椰蛋樹（阿羅拉的樣子）",
+          "name_en": "Alolan Exeggutor",
+          "form_zh": "阿羅拉的樣子",
+          "variant_id": "exeggutor-alola",
+          "acquisition": "encounter",
+          "method_status": "reviewed",
+          "method_zh": "社群紀錄交叉核對：龍屬性限時調查，轉動4個不同的指定補給站可遇見附仙台地點背景的個體。",
+          "method_en": "Cross-checked community records: spin 4 distinct themed PokéStops in the Dragon Timed Research for an encounter with the Sendai Location Background.",
+          "method_sources": [
+            "https://pokemongo.gamewith.jp/article/show/568373",
+            "https://pokemongo-raku.com/post164610",
+            "https://pokexperience.com/backgrounds/"
+          ]
+        },
+        {
+          "dex": 330,
+          "name_zh": "沙漠蜻蜓",
+          "name_en": "Flygon",
+          "acquisition": "encounter",
+          "method_status": "reviewed",
+          "method_zh": "社群紀錄交叉核對：龍屬性限時調查，轉動6個不同的指定補給站可遇見附仙台地點背景的個體。",
+          "method_en": "Cross-checked community records: spin 6 distinct themed PokéStops in the Dragon Timed Research for an encounter with the Sendai Location Background.",
+          "method_sources": [
+            "https://pokemongo.gamewith.jp/article/show/568373",
+            "https://pokemongo-raku.com/post164610",
+            "https://pokexperience.com/backgrounds/"
+          ]
+        },
+        {
+          "dex": 635,
+          "name_zh": "三首惡龍",
+          "name_en": "Hydreigon",
+          "acquisition": "encounter",
+          "method_status": "reviewed",
+          "method_zh": "社群紀錄交叉核對：龍屬性限時調查，轉動8個不同的指定補給站可遇見附仙台地點背景的個體。",
+          "method_en": "Cross-checked community records: spin 8 distinct themed PokéStops in the Dragon Timed Research for an encounter with the Sendai Location Background.",
+          "method_sources": [
+            "https://pokemongo.gamewith.jp/article/show/568373",
+            "https://pokemongo-raku.com/post164610",
+            "https://pokexperience.com/backgrounds/"
+          ]
+        },
+        {
+          "dex": 706,
+          "name_zh": "黏美龍",
+          "name_en": "Goodra",
+          "acquisition": "encounter",
+          "method_status": "reviewed",
+          "method_zh": "社群紀錄交叉核對：龍屬性限時調查，轉動10個不同的指定補給站可遇見附仙台地點背景的個體。",
+          "method_en": "Cross-checked community records: spin 10 distinct themed PokéStops in the Dragon Timed Research for an encounter with the Sendai Location Background.",
+          "method_sources": [
+            "https://pokemongo.gamewith.jp/article/show/568373",
+            "https://pokemongo-raku.com/post164610",
+            "https://pokexperience.com/backgrounds/"
+          ]
+        },
+        {
+          "dex": 784,
+          "name_zh": "杖尾鱗甲龍",
+          "name_en": "Kommo-o",
+          "acquisition": "encounter",
+          "method_status": "reviewed",
+          "method_zh": "社群紀錄交叉核對：龍屬性限時調查，完成整份調查可遇見附仙台地點背景的個體。",
+          "method_en": "Cross-checked community records: complete the full research in the Dragon Timed Research for an encounter with the Sendai Location Background.",
+          "method_sources": [
+            "https://pokemongo.gamewith.jp/article/show/568373",
+            "https://pokemongo-raku.com/post164610",
+            "https://pokexperience.com/backgrounds/"
+          ]
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -16756,7 +16946,8 @@
         "2026-10-29核對官方澄清：GO集章僅限主票券日期當地10:00–20:00；加購額外日不增加集章，但可再取得鋼／龍屬性限時調查。七處集章站可任意順序造訪；公告未承諾集章獎勵帶背景，不把它直接列為背景取得方式。",
         "另有已開放的長期集章活動；依站長補充確認沿用同城背景，不變更本筆持票活動日期。",
         "2026-11-06：原另列為BG-0281，依官方長期集章公告「Sendai • Tohoku Location Background」與本筆為同一張背景，併入本筆並轉向BG-0281。",
-        "2026-11-06：連結賣場已上架的對應商品（依商品名稱與搜尋別名）。"
+        "2026-11-06：連結賣場已上架的對應商品（依商品名稱與搜尋別名）。",
+        "2026-11-08：社群實測整理：持票主活動日現場集章，第5章洗翠黏美兒、第6章強大的拉普拉斯、第7章現代夾克怪力附仙台地點背景。社群紀錄交叉核對：鋼／龍限時調查各有6種附背景獎勵，須現場轉動指定補給站，最晚當地20:00（台灣19:00）領取。"
       ],
       "related_product_ids": [
         "d923a658-fc9c-44c3-8091-dce6fe918954"
@@ -16772,7 +16963,7 @@
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-sendai-2026"
       ],
       "evolved_pokemon": [],
-      "checked_on": "2026-10-29",
+      "checked_on": "2026-11-08",
       "start_date": "2026-11-03",
       "end_date": "2026-11-08",
       "region_en": "Japan",
@@ -16783,7 +16974,8 @@
       "reference_review": "images-compared-2026-10-24",
       "notes_en": [
         "Official clarification checked October 29: the GO Stamp Rally runs only on the main ticketed day, 10:00–20:00 local time. Extra Day add-ons do not add stamp rallies, but do grant repeat Steel-/Dragon-type Timed Research. The seven stamps may be visited in any order. Background rewards from the stamp rally are not promised.",
-        "A separate ongoing stamp rally is open. The site owner confirms same-city artwork reuse; ticketed dates stay unchanged."
+        "A separate ongoing stamp rally is open. The site owner confirms same-city artwork reuse; ticketed dates stay unchanged.",
+        "November 8, 2026: Community reports list the ticketed main-day in-person stamps 5–7 as background encounters with Hisuian Sliggoo, mighty Lapras and modern-jacket Machamp, respectively. Cross-checked community records list six background encounters each from Steel and Dragon Timed Research. Spin the designated PokéStops in person and claim by 20:00 JST (19:00 Taiwan)."
       ],
       "date_note_zh": "此地點背景最早自11/03起由長期集章（拉普拉斯）取得；持票曠野週末為11/6–11/8。 GO集章：僅主票券日期10:00–20:00（當地時間）；額外日加購不增加集章。額外日鋼／龍限時調查為不同內容，不能混為背景保證。",
       "date_note_en": "First obtainable from 2026-11-03 via the ongoing stamp rally (Lapras); the ticketed GO Wild Area weekend is November 6–8. GO Stamp Rally: main ticketed day only, 10:00–20:00 local time. Extra Day add-ons do not add a stamp rally. Repeat Steel-/Dragon-type Timed Research is separate and does not establish background eligibility.",
@@ -16802,8 +16994,10 @@
         },
         "conditions_zh": "持票訓練家在活動期間參與指定現場團體戰與極巨對戰，成功捕獲後有機會獲得仙台地點背景；遠距對戰不提供地點背景。持票特殊調查明列附背景的超極巨鋁鋼龍。各寶可夢條件見下方。 GO集章僅主票券日期10:00–20:00，額外日不新增集章；集章不等於背景保證。",
         "conditions_en": "Ticket-holding Trainers may receive the Sendai Location Background from eligible in-person raids and Max Battles; remote battles do not award Location Backgrounds. Ticketed Special Research explicitly awards Gigantamax Duraludon with the background. See species-specific routes below. GO Stamp Rally: main ticketed day only, 10:00–20:00. Extra Day add-ons do not add a stamp rally; stamp rewards are not a background guarantee.",
-        "eligible_zh": "現代夾克怪力、極巨化帝牙盧卡／帕路奇亞、超極巨化鋁鋼龍；蒼響／藏瑪然特捕獲形態沿用百戰勇者，對戰形態為劍之王／盾之王。",
-        "eligible_en": "Modern-jacket Machamp, Dynamax Dialga/Palkia, Gigantamax Duraludon; Zacian/Zamazenta retain Hero of Many Battles catch entries, distinct from Crowned Sword/Shield battle forms.",
+        "reported_info_zh": "社群實測整理：持票主活動日現場集章，第5章洗翠黏美兒、第6章強大的拉普拉斯、第7章現代夾克怪力附仙台地點背景。社群紀錄交叉核對：鋼／龍限時調查各有6種附背景獎勵，須現場轉動指定補給站，最晚當地20:00（台灣19:00）領取。",
+        "reported_info_en": "Community reports list the ticketed main-day in-person stamps 5–7 as background encounters with Hisuian Sliggoo, mighty Lapras and modern-jacket Machamp, respectively. Cross-checked community records list six background encounters each from Steel and Dragon Timed Research. Spin the designated PokéStops in person and claim by 20:00 JST (19:00 Taiwan).",
+        "eligible_zh": "現代夾克怪力、極巨化帝牙盧卡／帕路奇亞、超極巨化鋁鋼龍；蒼響／藏瑪然特捕獲形態沿用百戰勇者，對戰形態為劍之王／盾之王。 現場集章另有洗翠黏美兒及強大的拉普拉斯。鋼／龍限時調查名單見圖鑑詳情。",
+        "eligible_en": "Modern-jacket Machamp, Dynamax Dialga/Palkia, Gigantamax Duraludon; Zacian/Zamazenta retain Hero of Many Battles catch entries, distinct from Crowned Sword/Shield battle forms. In-person stamps also feature Hisuian Sliggoo and mighty Lapras. See the catalog for the Steel and Dragon Timed Research roster.",
         "remote_participation": {
           "basis": "inferred",
           "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
@@ -16814,11 +17008,15 @@
           "text_zh": "官方明確限定現場團體戰／極巨對戰；遠距參戰沒有本活動地點背景資格。",
           "text_en": "Officially restricted to in-person raids/Max Battles; remote participants cannot receive this event’s Location Background."
         },
-        "checked_on": "2026-11-03",
+        "checked_on": "2026-11-08",
         "sources": [
           "https://pokemongo.com/gowildarea/sendai/gameplay",
           "https://pokemongo.com/news/go-wild-area-stamp-rally-details-2026",
-          "https://pokemongo.com/news/shadow-raid-max-battle-update"
+          "https://pokemongo.com/news/shadow-raid-max-battle-update",
+          "https://pokemongo.gamewith.jp/article/show/568373",
+          "https://pokemongo-raku.com/post162567",
+          "https://pokemongo-raku.com/post164610",
+          "https://pokexperience.com/backgrounds/"
         ],
         "background_type": "location",
         "artwork_status": "catalogued"
