@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';import {PGlite} from '@electric-sql/pglite';
-const fixture=await readFile(new URL('./checkout-fixture.sql',import.meta.url),'utf8'),sql=await readFile(new URL('../supabase/review/customer-roster.sql',import.meta.url),'utf8');
+const fixture=await readFile(new URL('./checkout-fixture.sql',import.meta.url),'utf8'),sql=await readFile(new URL('../supabase/production/customer-roster.sql',import.meta.url),'utf8');
 test('customer roster SQL: admin-only access, constraints and duplicate-safe import key',async()=>{
  const db=new PGlite();await db.exec(fixture);await db.exec(sql);await db.exec(sql);// 可重複套用
  const q=async(s,a=[])=>(await db.query(s,a)).rows;
