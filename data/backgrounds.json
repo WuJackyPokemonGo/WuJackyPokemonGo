@@ -1835,18 +1835,21 @@
       "background_id": "BG-0020",
       "name_zh": "飛翔皮卡丘計畫 雅加達",
       "release_state": "released",
-      "official_sources": [],
+      "official_sources": [
+        "https://pokemongo.com/news/september-jakarta-incheon?hl=en"
+      ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "活動持票訓練家於指定現場團體戰捕獲拉帝亞斯或拉帝歐斯時，有機會獲得當地背景。",
-      "method_en": "Ticket holders have a chance to receive the local background when catching Latias or Latios from eligible in-person event raids.",
+      "method_zh": "活動名錄記載，持有效票券於票券時段參與現場超級團體戰，捕獲拉帝亞斯或拉帝歐斯有機會獲得雅加達地點背景。探險帽伊布則可透過「伊布探險隊」限時調查取得，該調查的探險帽伊布遭遇附雅加達地點背景。",
+      "method_en": "The event archive records a chance of a Jakarta Location Background when ticket holders catch Latias or Latios from an in-person Mega Raid during their ticketed hours. Explorer-hat Eevee with the Jakarta Location Background is available from Eevee Explorers Timed Research.",
       "series": "Air Adventures",
       "series_zh": "飛翔皮卡丘計畫",
       "year": "2024",
       "year_verified": true,
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
-        "https://www.dittobase.com/pokemon-go/backgrounds/lc-air-adv-2024-jakarta"
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-air-adv-2024-jakarta",
+        "https://leekduck.com/events/pokemon-go-city-safari-jakarta-2024/"
       ],
       "evolved_pokemon": [
         {
