@@ -36,3 +36,16 @@ test('database accepts only whitelisted source keys',async()=>{
  const sql=(await import('node:fs')).readFileSync(new URL('../supabase/production/analytics.sql',import.meta.url),'utf8');
  assert.match(sql,/\^\(store\|atlas\):\(threads\|reddit\|discord\|facebook\|instagram\|line\|x\|youtube\|share\|other\)\$/);assert.match(sql,/'sources',/);
 });
+test('empty search terms are normalised and anything personal-looking is dropped',async()=>{
+ const {emptySearchTerm}=await import('../analytics.mjs');
+ assert.equal(emptySearchTerm('  Teddiursa  '),'teddiursa');assert.equal(emptySearchTerm('馬拉松'),'馬拉松');assert.equal(emptySearchTerm('ＡＢＣ  def'),'abc def');
+ for(const bad of ['','   ','me@mail.com','0912345678','https://x.io','www.x.io','a/b','<b>','x'.repeat(41)])assert.equal(emptySearchTerm(bad),null,bad);
+});
+test('empty term report splits storefront and atlas',async()=>{
+ const {emptyTermRows}=await import('../analytics-report.mjs');
+ assert.deepEqual(emptyTermRows({empty_terms:[{term:'store:馬拉松',searches:3},{term:'atlas:a:b',searches:1},{term:'bad',searches:9}]}),[{site:'庫存網站',term:'馬拉松',searches:3},{site:'背景圖鑑',term:'a:b',searches:1}]);
+});
+test('database keeps the same personal-data guard for empty terms',async()=>{
+ const sql=(await import('node:fs')).readFileSync(new URL('../supabase/production/analytics.sql',import.meta.url),'utf8');
+ assert.match(sql,/search_term_empty/);assert.match(sql,/\^\(store\|atlas\):\.\{1,40\}\$/);assert.match(sql,/'empty_terms'/);
+});

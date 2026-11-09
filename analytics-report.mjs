@@ -14,3 +14,5 @@ export function topRows(rows=[],limit=5){return [...rows].sort((a,b)=>Number(b.v
 const SOURCE_NAMES={threads:'Threads',reddit:'Reddit',discord:'Discord',facebook:'Facebook',instagram:'Instagram',line:'LINE',x:'X',youtube:'YouTube',share:'分享連結（平台不明）',other:'其他標記'};
 // Group source visits by site, split into storefront and atlas arrivals.
 export function sourceRows(report={}){const by=new Map();for(const r of report.sources??[]){const [page,src]=String(r.source??'').split(':');if(!SOURCE_NAMES[src]||!['store','atlas'].includes(page))continue;const row=by.get(src)??{source:src,label:SOURCE_NAMES[src],store:0,atlas:0,total:0};row[page]+=Number(r.visits??0);row.total+=Number(r.visits??0);by.set(src,row)}return [...by.values()].sort((a,b)=>b.total-a.total||a.label.localeCompare(b.label))}
+// Top searches that found nothing, split by site.
+export function emptyTermRows(report={}){return (report.empty_terms??[]).map(r=>{const [page,...rest]=String(r.term??'').split(':');return {site:page==='atlas'?'背景圖鑑':page==='store'?'庫存網站':'',term:rest.join(':'),searches:Number(r.searches??0)}}).filter(r=>r.site&&r.term)}

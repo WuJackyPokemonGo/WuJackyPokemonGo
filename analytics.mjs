@@ -10,7 +10,7 @@ export function initAnalytics({background=false}={}){
  setup();window.addEventListener('wj-language-change',()=>render());button.onclick=()=>{try{disabled=!disabled;localStorage.setItem('wj_analytics_optout',String(disabled));if(disabled){sessionStorage.removeItem('wj_analytics_session');session=null;render()}else if(privacy()){disabled=true;render(t('已依瀏覽器隱私設定停用'))}else setup()}catch{disabled=true;render(t('此瀏覽器無法使用匿名統計'))}};
  async function source(page){const src=visitSource(location.href,document.referrer);if(!src||disabled||!session||location.origin!=='https://wujackypokemongo.github.io')return;const key=page+':'+src;try{if(sessionStorage.getItem('wj_src_'+key))return;sessionStorage.setItem('wj_src_'+key,'1')}catch{}try{await fetch(STAGING_URL+'/rest/v1/rpc/track_background_event',{method:'POST',headers:{apikey:STAGING_PUBLISHABLE_KEY,'Content-Type':'application/json'},body:JSON.stringify({p_event:'source_visit',p_session:session,p_event_id:crypto.randomUUID(),p_background:key}),signal:AbortSignal.timeout(5000),keepalive:true})}catch{}}
  const track=async function track(event,product=null){if(disabled||!session||location.origin!=='https://wujackypokemongo.github.io')return;try{const r=await fetch(STAGING_URL+'/rest/v1/rpc/'+(background?'track_background_event':'track_store_event'),{method:'POST',headers:{apikey:STAGING_PUBLISHABLE_KEY,'Content-Type':'application/json'},body:JSON.stringify(background?{p_event:event,p_session:session,p_event_id:crypto.randomUUID(),p_background:product}:analyticsPayload(event,session,crypto.randomUUID(),product)),signal:AbortSignal.timeout(5000),keepalive:true});if(!r.ok)render(t('匿名統計暫時無法送達'))}catch{render(t('匿名統計暫時無法送達'))}};
- track.source=source;return track;
+ track.source=source;track.emptyTerm=async(page,value)=>{const term=emptySearchTerm(value);if(!term||disabled||!session||location.origin!=='https://wujackypokemongo.github.io')return;try{await fetch(STAGING_URL+'/rest/v1/rpc/track_background_event',{method:'POST',headers:{apikey:STAGING_PUBLISHABLE_KEY,'Content-Type':'application/json'},body:JSON.stringify({p_event:'search_term_empty',p_session:session,p_event_id:crypto.randomUUID(),p_background:page+':'+term}),signal:AbortSignal.timeout(5000),keepalive:true})}catch{}};return track;
 }
 
 const SOURCES=['threads','reddit','discord','facebook','instagram','line','x','youtube','share'];
@@ -22,3 +22,6 @@ export function visitSource(href,referrer=''){
  try{if(!referrer)return null;const host=new URL(referrer).hostname.toLowerCase();if(host.endsWith('github.io'))return null;for(const [re,name] of REFERRER_HOSTS)if(re.test(host))return name}catch{}
  return null;
 }
+
+// Normalised search text worth keeping when nothing matched; drops anything that looks personal.
+export function emptySearchTerm(value){const t=String(value??'').normalize('NFKC').trim().toLowerCase().replace(/\s+/g,' ');if(!t||t.length>40)return null;if(/[@\/\\<>]|\d{7,}|https?|www\./.test(t))return null;return t}
