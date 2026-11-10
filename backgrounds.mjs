@@ -192,7 +192,7 @@ $('copyBackgroundLink').onclick=async()=>{
   status.textContent=tr('請長按下方連結並複製。','Press and hold the link below to copy.');
  }
 };
-const updateLanguageHint=initLanguageHint();$('closeDetail').onclick=()=>$('backgroundDialog').close();$('reset').onclick=reset;$('language').value=getLocale();$('language').onchange=()=>{setLocale($('language').value);updateLanguageHint();translate();window.dispatchEvent(new Event('wj-language-change'));if(data){buildOptions();render();if(active)renderDetail(active)}};for(const id of ['state','type','series','region','year','stockOnly','sortOrder'])$(id).onchange=()=>{page=1;render()};document.querySelectorAll('.type-tabs button').forEach(b=>b.onclick=()=>{$('type').value=b.dataset.type;page=1;render()});let bgSearchTimer=null,lastBgSearch='';$('bgSearch').oninput=()=>{page=1;render();clearTimeout(bgSearchTimer);bgSearchTimer=setTimeout(()=>{const term=$('bgSearch').value.trim();if(!term||term===lastBgSearch||!data)return;lastBgSearch=term;if(!filterBackgrounds(data.records,{query:term,state:'all',includeExactUpcoming:true}).length)track.emptyTerm('atlas',term)},900)};translate();
+const updateLanguageHint=initLanguageHint();$('closeDetail').onclick=()=>$('backgroundDialog').close();$('reset').onclick=reset;$('language').value=getLocale();$('language').onchange=()=>{setLocale($('language').value);syncCrossLinks();updateLanguageHint();translate();window.dispatchEvent(new Event('wj-language-change'));if(data){buildOptions();render();if(active)renderDetail(active)}};for(const id of ['state','type','series','region','year','stockOnly','sortOrder'])$(id).onchange=()=>{page=1;render()};document.querySelectorAll('.type-tabs button').forEach(b=>b.onclick=()=>{$('type').value=b.dataset.type;page=1;render()});let bgSearchTimer=null,lastBgSearch='';$('bgSearch').oninput=()=>{page=1;render();clearTimeout(bgSearchTimer);bgSearchTimer=setTimeout(()=>{const term=$('bgSearch').value.trim();if(!term||term===lastBgSearch||!data)return;lastBgSearch=term;if(!filterBackgrounds(data.records,{query:term,state:'all',includeExactUpcoming:true}).length)track.emptyTerm('atlas',term)},900)};translate();
 async function load(){
  try{
   const catalog=fetch(BACKGROUNDS_DATA_URL,{signal:AbortSignal.timeout(15000)}).then(response=>{if(!response.ok)throw Error('catalog unavailable');return response.json()});
@@ -223,3 +223,6 @@ load();refreshProducts();
 
 setInterval(()=>{if(data&&document.visibilityState!=='hidden')renderAnnouncementPreviews()},60000);
 document.addEventListener('visibilitychange',()=>{if(data&&document.visibilityState==='visible')renderAnnouncementPreviews()});
+// Keep the visitor's language when returning to the collection.
+function syncCrossLinks(){document.querySelectorAll('a[href^="index.html"]').forEach(a=>{const u=new URL(a.getAttribute('href'),location.href);u.searchParams.set('lang',getLocale());a.setAttribute('href','index.html'+u.search)})}
+syncCrossLinks();
