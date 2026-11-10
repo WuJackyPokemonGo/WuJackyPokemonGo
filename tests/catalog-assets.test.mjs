@@ -24,3 +24,9 @@ test('uploader keeps shrinking PNG-only thumbnails toward the light target',asyn
  const blob=await createThumbnail({naturalWidth:1800,naturalHeight:1800},{createCanvas:()=>canvas,encode:async c=>{sizes.push(c.width);return {size:c.width*c.width}}});
  assert.ok(blob.size<=THUMBNAIL_TARGET_BYTES);assert.deepEqual(sizes.slice(0,2),[900,720]);
 });
+test('common alternative names find the same products (世博／萬博, 三藩市／舊金山)',async()=>{
+ const {matchesSearchText}=await import('../search-text.mjs');
+ assert.equal(matchesSearchText(['皮卡丘-2025大阪萬博'],'世博'),true);assert.equal(matchesSearchText(['Expo 2025 Osaka'],'萬博'),true);
+ assert.equal(matchesSearchText(['寶可夢世界錦標賽 舊金山'],'三藩市'),true);assert.equal(matchesSearchText(['皮卡丘'],'世博'),false);
+ assert.equal(matchesSearchText(['四季鹿（春季）-汝矣島櫻花節'],'櫻花四季鹿'),true);
+});

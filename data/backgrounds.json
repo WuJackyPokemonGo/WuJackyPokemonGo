@@ -21598,7 +21598,9 @@
       "release_state": "released",
       "official_sources": [],
       "notes": [],
-      "related_product_ids": [],
+      "related_product_ids": [
+        "aa9b4b17-51c6-42f4-b1c3-4bd1098f88b9"
+      ],
       "method_zh": "6–8月 GO Pass 傳說獎勵、季節社群日調查、7月圍巾拉普拉斯團體戰與極巨化之旅限時調查；各款來源不同。",
       "method_en": "June–August GO Pass, seasonal Community Day research, July scarf Lapras raids and Gigantamax Journey research.",
       "series": "Community & Season",
