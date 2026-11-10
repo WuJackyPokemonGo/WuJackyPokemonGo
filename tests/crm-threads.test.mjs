@@ -61,3 +61,24 @@ test('CRM list groups tags and inquiries per customer and filters by Pokémon or
  assert.deepEqual(rows.map(r=>r.display_name),['Bob','Amy']);assert.deepEqual(rows[1].topTerms,['耿鬼','皮卡丘']);
  assert.deepEqual(filterCrm(rows,{query:'耿鬼'}).map(r=>r.display_name),['Amy']);assert.deepEqual(filterCrm(rows,{tag:'paid_suspected'}).map(r=>r.display_name),['Amy']);assert.equal(filterCrm(rows,{query:'bob'}).length,1);
 });
+test('G2 nicknames: longest alias wins, combos and pending words stay unlinked, cues keep event/shiny/ball/size hints',async()=>{
+ const {buildTermIndex,extractCues}=await import('../crm-threads-import.mjs');const {readFileSync}=await import('node:fs');
+ const nick=readFileSync(new URL('../data/crm-nicknames.txt',import.meta.url),'utf8');
+ const prods=[{id:'r1',name:'烈空坐-水墨背景',name_en:'Rayquaza - GO Fest 2026',aliases:['烈空坐','Shiny Rayquaza']},{id:'p1',name:'皮卡丘-2026平昌冬季慶典限定背景',name_en:'Pikachu',aliases:['平昌皮卡丘']},{id:'p2',name:'皮卡丘-寶可夢之夜洛杉磯',name_en:'Pikachu',aliases:['皮卡丘']}];
+ const idx=buildTermIndex(prods,nick);
+ const black=idx.match('黑烈還有嗎');assert.equal(black[0].term,'烈空坐（異色）');assert.deepEqual(black[0].products,['r1']);
+ const snow=idx.match('雪地皮多少');assert.equal(snow[0].term,'皮卡丘（平昌冬季慶典）');assert.deepEqual(snow[0].products,['p1'],'qualifier narrows to the PyeongChang product');
+ const dogs=idx.match('色背雙狗還有嗎');assert.equal(dogs[0].term,'蒼響＋藏瑪然特');assert.equal(dogs[0].combo,true);assert.equal(dogs[0].unverified,true);assert.deepEqual(dogs[0].products,[]);
+ assert.deepEqual(idx.match('背卡藍狗').map(f=>[f.term,!!f.pending]),[['藍狗',true]]);assert.equal(idx.match('黑白龍有嗎')[0].pending,true);
+ assert.equal(idx.match('梗鬼多少')[0].term,'耿鬼');assert.equal(idx.match('潛水皮卡丘')[0].term,'皮卡丘（潛水鏡造型）','longer alias beats 皮卡丘');
+ assert.deepEqual(extractCues('想要大師球XXL色違倫敦背景'),['異色：色違','背景：背景','活動地點：倫敦','球種：大師球','尺寸：XXL']);
+});
+test('re-import refreshes recognition fields without duplicating inquiries',async()=>{
+ const {db,q,admin}=await adminDb();await db.exec(`select set_config('request.jwt.claim.sub','${admin}',false)`);await db.exec('set role authenticated');
+ const batch=(await q("insert into crm_import_batches(source) values('threads') returning id"))[0].id;
+ const row=t=>JSON.stringify([{external_key:'k_1',display_name:'X',first_at:1,last_at:2,inquiries:[{occurred_at:2,category:'price',terms:t,product_ids:[],excerpt:'e',source_key:'threads:k_1:2:0:price',evidence:{}}]}]);
+ assert.equal((await q('select admin_crm_import_threads($1,$2) r',[batch,row([])]))[0].r.inquiries_new,1);
+ const r2=(await q('select admin_crm_import_threads($1,$2) r',[batch,row(['耿鬼'])]))[0].r;assert.equal(r2.inquiries_updated,1);assert.equal(r2.inquiries_new,0);
+ const r3=(await q('select admin_crm_import_threads($1,$2) r',[batch,row(['耿鬼'])]))[0].r;assert.equal(r3.inquiries_skipped,1);
+ assert.deepEqual((await q('select terms from crm_inquiries'))[0].terms,['耿鬼']);assert.equal((await q('select count(*)::int n from crm_inquiries'))[0].n,1);await db.exec('reset role');
+});

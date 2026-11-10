@@ -40,7 +40,8 @@ export function initCrmUI({client,run,notify}){
  file.onchange=()=>run(async()=>{const f=file.files[0];file.value='';if(!f)return;
   report.replaceChildren(el('p','正在讀取匯出檔…','notice'));
   const products=checked(await client.from('products').select('id,name:name_zh,name_en,aliases').is('archived_at',null));
-  const files=await readThreadsZip(f);const {rows:parsed,stats}=parseThreadsExport(files,{products});
+  let nicknames='';try{const res=await fetch('data/crm-nicknames.txt?v='+Date.now(),{cache:'no-store'});if(res.ok)nicknames=await res.text()}catch{}
+  const files=await readThreadsZip(f);const {rows:parsed,stats}=parseThreadsExport(files,{products,nicknames});stats.nicknames=nicknames.split(/\n/).filter(x=>x.trim()).length;
   pending={rows:parsed,stats,sha:await sha256Hex(f),name:f.name};
   report.replaceChildren(statsTable(stats),el('p',`即將匯入 ${parsed.length} 位客人、${stats.inquiries} 筆詢問紀錄、${stats.followups} 筆待追蹤。確認數量無誤後再按「確認匯入」。`,'notice'),
    btn('確認匯入',()=>run(doImport),''),btn('取消',()=>{pending=null;report.replaceChildren()}));
@@ -52,10 +53,10 @@ export function initCrmUI({client,run,notify}){
   checked(await client.from('crm_import_batches').update({result:total,finished_at:new Date().toISOString()}).eq('id',batch));
   report.replaceChildren(resultTable(stats,total));notify('Threads 匯入完成。');await load(true);
  }
- function statsTable(s){const t=el('table');const rowsData=[['JSON 檔',s.json_files],['私訊檔',s.message_files],['對話',s.conversations],['私訊則數',s.messages],['略過：群組',s.groups_skipped],['略過：空白',s.empty_skipped],['讀取失敗',s.failed_files.length],['可匯入客人',s.imported],['詢問紀錄',s.inquiries],['待追蹤',s.followups],['資料期間',day(s.date_from)+' → '+day(s.date_to)]];
+ function statsTable(s){const t=el('table');const rowsData=[['JSON 檔',s.json_files],['私訊檔',s.message_files],['對話',s.conversations],['私訊則數',s.messages],['略過：群組',s.groups_skipped],['略過：空白',s.empty_skipped],['讀取失敗',s.failed_files.length],['可匯入客人',s.imported],['詢問紀錄',s.inquiries],['待追蹤',s.followups],['資料期間',day(s.date_from)+' → '+day(s.date_to)],['暱稱清單',(s.nicknames??0)+' 行']];
   for(const [k,v] of rowsData){const tr=el('tr');tr.append(el('th',k),el('td',String(v)));t.append(tr)}const w=el('div',null,'table-scroll');w.append(t);return w}
  function resultTable(s,r){const w=statsTable(s);const t=w.querySelector('table');
-  for(const [k,v] of [['新建客人',r.customers_created],['已存在（更新）',r.customers_matched],['新增詢問紀錄',r.inquiries_new],['重複略過的詢問',r.inquiries_skipped],['新增待追蹤',r.followups_new]]){const tr=el('tr');tr.append(el('th',k),el('td',String(v??0)));t.append(tr)}
+  for(const [k,v] of [['新建客人',r.customers_created],['已存在（更新）',r.customers_matched],['新增詢問紀錄',r.inquiries_new],['更新品項辨識',r.inquiries_updated],['重複略過的詢問',r.inquiries_skipped],['新增待追蹤',r.followups_new]]){const tr=el('tr');tr.append(el('th',k),el('td',String(v??0)));t.append(tr)}
   const ok=(r.customers_created??0)+(r.customers_matched??0)===s.imported;w.append(el('p',ok?`核對通過：新建＋更新＝${s.imported}，與可匯入客人數一致。`:'核對不一致，請截圖給 Claude。',ok?'notice':'notice error'));return w}
 
  async function load(force=false){if(loaded&&!force)return;
@@ -82,7 +83,8 @@ export function initCrmUI({client,run,notify}){
   if(r.tags.length)c.append(el('p',r.tags.map(t=>(TAG_LABELS[t.tag]??t.tag)+(t.source==='manual'?'（手動）':'')).join('・'),'order-detail-line'));
   if(r.topTerms.length)c.append(el('p','問過：'+r.topTerms.join('、'),'order-detail-line'));
   const more=btn('詢問紀錄',()=>{if(c.querySelector('.crm-detail')){c.querySelector('.crm-detail').remove();return}const d=el('div',null,'crm-detail');
-   for(const i of r.inquiries.slice(0,30))d.append(el('p',`${day(i.occurred_at)}｜${CATEGORY_LABELS[i.category]??i.category}${(i.terms??[]).length?'｜'+i.terms.join('、'):''}｜${i.excerpt}`,'order-detail-line'));
+   for(const i of r.inquiries.slice(0,30)){const ev=i.evidence??{};const marks=[...(ev.pending??[]).map(x=>x+'（待確認）'),...(ev.unverified??[]).map(x=>x+'（目錄無對應，待核對）')];
+    d.append(el('p',`${day(i.occurred_at)}｜${CATEGORY_LABELS[i.category]??i.category}${(i.terms??[]).length?'｜'+i.terms.join('、'):''}｜${i.excerpt}${(ev.cues??[]).length?'｜線索：'+ev.cues.join('、'):''}${marks.length?'｜'+marks.join('、'):''}`,'order-detail-line'))}
    if(r.inquiries.length>30)d.append(el('p',`另有 ${r.inquiries.length-30} 筆較早的紀錄。`,'muted'));d.append(el('small','原始對話位置：'+r.folder,'muted'));c.append(d)});
   const a=el('div',null,'actions');a.append(more);c.append(a);return c}
  async function resolve(f,status){checked(await client.from('crm_followups').update({status,resolved_at:new Date().toISOString()}).eq('id',f.id));followups=followups.filter(x=>x.id!==f.id);render()}

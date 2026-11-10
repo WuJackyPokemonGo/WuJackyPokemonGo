@@ -86,8 +86,8 @@ end$$;
 -- 匯入一批（最多 100 位客人）。管理員才能呼叫；客人以 (threads, external_key) 對應，絕不以暱稱自動合併。
 create or replace function public.admin_crm_import_threads(p_batch uuid,p_rows jsonb)
 returns jsonb language plpgsql security definer set search_path='' as $$
-declare r jsonb;i jsonb;t jsonb;f jsonb;cid uuid;iid uuid;base text;v_alias text;n integer;
- created integer:=0;matched integer:=0;inq_new integer:=0;inq_skip integer:=0;tags_new integer:=0;fu_new integer:=0;
+declare r jsonb;i jsonb;t jsonb;f jsonb;cid uuid;iid uuid;base text;v_alias text;n integer;v_ins boolean;
+ created integer:=0;matched integer:=0;inq_new integer:=0;inq_upd integer:=0;inq_skip integer:=0;tags_new integer:=0;fu_new integer:=0;
 begin
  if auth.uid() is null or not private.is_store_admin() then raise insufficient_privilege;end if;
  if p_batch is null or not exists(select 1 from public.crm_import_batches where id=p_batch) then raise invalid_parameter_value using message='unknown batch';end if;
@@ -114,8 +114,11 @@ begin
     coalesce((select array_agg(left(x,40)) from jsonb_array_elements_text(i->'terms') x),'{}'),
     coalesce((select array_agg(x::uuid) from jsonb_array_elements_text(i->'product_ids') x where x ~ '^[0-9a-f-]{36}$'),'{}'),
     left(coalesce(i->>'excerpt',''),120),coalesce(i->'evidence','{}'),i->>'source_key',p_batch)
-   on conflict(source_key) do nothing;
-   if found then inq_new:=inq_new+1;else inq_skip:=inq_skip+1;end if;
+   on conflict(source_key) do update set terms=excluded.terms,product_ids=excluded.product_ids,evidence=excluded.evidence
+    where (public.crm_inquiries.terms,public.crm_inquiries.product_ids,public.crm_inquiries.evidence) is distinct from (excluded.terms,excluded.product_ids,excluded.evidence)
+   returning (xmax=0) into v_ins;
+   -- 重新匯入時，辨識規則更新（例如暱稱清單）會刷新品項欄位；內容相同則略過
+   if not found then inq_skip:=inq_skip+1;elsif v_ins then inq_new:=inq_new+1;else inq_upd:=inq_upd+1;end if;
   end loop;
   for t in select value from jsonb_array_elements(coalesce(r->'tags','[]')) loop
    insert into public.crm_tags(customer_id,tag,source,evidence) values(cid,t->>'tag','auto',coalesce(t->'evidence','{}'))
@@ -129,7 +132,7 @@ begin
   end loop;
   cid:=null;iid:=null;
  end loop;
- return jsonb_build_object('customers_created',created,'customers_matched',matched,'inquiries_new',inq_new,'inquiries_skipped',inq_skip,'tags_upserted',tags_new,'followups_new',fu_new);
+ return jsonb_build_object('customers_created',created,'customers_matched',matched,'inquiries_new',inq_new,'inquiries_updated',inq_upd,'inquiries_skipped',inq_skip,'tags_upserted',tags_new,'followups_new',fu_new);
 end$$;
 revoke all on function public.admin_crm_import_threads(uuid,jsonb) from public,anon;
 grant execute on function public.admin_crm_import_threads(uuid,jsonb) to authenticated;

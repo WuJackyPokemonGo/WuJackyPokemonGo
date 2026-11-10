@@ -1,0 +1,92 @@
+皮卡丘,Pikachu,皮神,皮卡邱,櫻花皮,櫻花皮卡丘,樱花皮,樱花皮卡丘
+耿鬼,Gengar,梗鬼,庚鬼
+蒼響,Zacian,苍响,劍狗,剑狗
+藏瑪然特,Zamazenta,藏玛然特,藏馬然特,藏馬,藏瑪,藏马,藏玛,盾狗
+烈空坐,Rayquaza,烈空座,列空座,列空坐,列空,烈空
+烈咬陸鯊,Garchomp,烈咬陆鲨,烈咬
+路卡利歐,Lucario,路卡利欧,路卡
+拉普拉斯,Lapras,拉普,乘龍,乘龙
+顫弦蠑螈,Toxtricity,颤弦蝾螈,顫弦,蠑螈,蝾螈
+四季鹿,Deerling,櫻花四季鹿,樱花四季鹿,櫻花鹿
+木守宮,Treecko,木守宫,木守
+超夢,Mewtwo,超梦
+夢幻,Mew,梦幻
+固拉多,Groudon,固拉,古拉多
+蓋歐卡,Kyogre,盖欧卡,蓋歐,盖欧
+洛奇亞,Lugia,洛奇亚
+鳳王,Ho-Oh,Ho Oh,凤王
+露奈雅拉,Lunala,露奈
+索爾迦雷歐,Solgaleo,索尔迦雷欧,索爾迦
+奈克洛茲瑪,Necrozma,奈克洛兹玛,奈克洛
+基格爾德,Zygarde,基格尔德,基格
+無極汰那,Eternatus,无极汰那
+摔角鷹人,Hawlucha,摔角鹰人,摔角鷹,摔角鹰
+夜巡靈,Duskull,夜巡灵,夜巡零,夜巡
+卡拉卡拉,Cubone
+沙奈朵,Gardevoir,沙奈
+快龍,Dragonite,快龙,肥大
+小火龍,Charmander,小火龙
+火恐龍,Charmeleon,火恐龙
+噴火龍,Charizard,喷火龙
+傑尼龜,Squirtle,杰尼龟,傑尼,杰尼
+水箭龜,Blastoise,水箭龟
+妙蛙種子,Bulbasaur,妙蛙种子
+妙蛙花,Venusaur
+黑眼鱷,Sandile,黑眼鳄
+火稚雞,Torchic,火稚鸡
+火焰雞,Blaziken,火焰鸡
+伊布,Eevee
+卡比獸,Snorlax,卡比兽,卡比
+百變怪,Ditto,百变怪
+小火馬,Ponyta,小火马
+電擊怪,Elekid,电击怪
+拉帝亞斯,Latias,拉帝亚斯,紅飛機,红飞机
+拉帝歐斯,Latios,拉帝欧斯,藍飛機,蓝飞机
+帝牙盧卡,Dialga,帝牙卢卡,帝牙
+帕路奇亞,Palkia,帕路奇亚,帕路
+騎拉帝納,Giratina,骑拉帝纳
+達克萊伊,Darkrai,达克莱伊
+捷克羅姆,Zekrom,捷克罗姆
+萊希拉姆,Reshiram,莱希拉姆
+酋雷姆,Kyurem
+科斯莫古,Cosmog,小星雲,小星云
+胡帕,Hoopa
+美洛耶塔,Meloetta
+雷吉洛克,Regirock
+雷吉艾斯,Regice
+雷吉斯奇魯,Registeel,雷吉斯奇鲁
+雷吉奇卡斯,Regigigas
+雷吉艾勒奇,Regieleki,艾勒奇
+雷吉鐸拉戈,Regidrago,雷吉铎拉戈,鐸拉戈,铎拉戈
+電束木,Xurkitree,电束木
+紙御劍,Kartana,纸御剑
+惡食大王,Guzzlord,恶食大王
+爆肌蚊,Buzzwole
+費洛美螂,Pheromosa,费洛美螂
+鐵火輝夜,Celesteela,铁火辉夜
+虛吾伊德,Nihilego,虚吾伊德
+小仙奶,Milcery
+霜奶仙,Alcremie
+烈空坐（異色）,黑烈,黑烈空,黑色烈空坐,色烈空,Shiny Rayquaza
+皮卡丘（平昌冬季慶典）,雪地皮,雪地皮卡丘,平昌皮,平昌皮卡丘,Pyeongchang Pikachu,Pyeongchang Beanie Pikachu
+皮卡丘（櫻花背景）,櫻花背景皮卡丘,櫻花色背皮卡丘,皮卡丘櫻花背景
+四季鹿（櫻花背景）,櫻花背景四季鹿,櫻花色背四季鹿,四季鹿櫻花背景
+皮卡丘（潛水鏡造型）,潛水皮,潛水皮卡丘,潜水皮,潜水皮卡丘,Scuba Pikachu,Snorkel Pikachu
+皮卡丘（夾克造型）,夾克皮,夾克皮卡丘,夹克皮,夹克皮卡丘,Jacket Pikachu
+皮卡丘（爆炸頭造型）,爆炸頭皮,爆炸頭皮卡丘,爆炸头皮卡丘
+皮卡丘（韓服造型）,韓服皮,韓服皮卡丘,韩服皮卡丘,Hanbok Pikachu
+皮卡丘-韓國橘色韓服,橘色韓服皮卡丘,橘韓服皮,Orange Hanbok Pikachu
+皮卡丘（洛杉磯）,洛杉磯皮,洛杉磯皮卡丘,洛杉矶皮卡丘,LA Night Out Pikachu
+皮卡丘（倫敦）,倫敦皮,倫敦皮卡丘,倫敦皮神,伦敦皮卡丘,London Night Out Pikachu
+皮卡丘（摔角造型）,摔角皮,摔角皮卡丘,Pikachu Libre
+卡比獸（睡帽造型）,睡帽卡比,睡帽卡比獸,Nightcap Snorlax
+超夢（裝甲）,裝甲超夢,裝甲超,裝甲超梦,盔甲超夢,盔甲超,Armored Mewtwo
+耿鬼（超極巨化）,超極巨耿鬼,超極巨化耿鬼,Gigantamax Gengar,Gmax Gengar,G-Max Gengar
+顫弦蠑螈（高調的樣子）,高調蠑螈,高調螈,高調顫弦蠑螈,Toxtricity Amped
+顫弦蠑螈（低調的樣子）,低調蠑螈,低調螈,低調顫弦蠑螈,Toxtricity Low Key
+奈克洛茲瑪（黃昏之鬃）,日食奈克,日食奈克洛茲瑪,黃昏奈克,Dusk Mane Necrozma
+奈克洛茲瑪（拂曉之翼）,月食奈克,月食奈克洛茲瑪,拂曉奈克,Dawn Wings Necrozma
+木守宮-活動,英國木守宮27款,英國27款木守宮,英國木守宮27款一套
+蒼響＋藏瑪然特,雙狗,双狗,劍盾狗,剑盾狗,色背劍盾,色背剑盾,背卡劍盾
+拉帝亞斯＋拉帝歐斯,飛機兄妹,飞机兄妹,雙飛機,双飞机
+雷吉洛克＋雷吉艾斯＋雷吉斯奇魯＋雷吉奇卡斯＋雷吉艾勒奇＋雷吉鐸拉戈,六柱神,六柱一套

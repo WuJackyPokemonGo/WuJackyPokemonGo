@@ -32,18 +32,48 @@ export function maskText(s){
 }
 const excerpt=s=>{const t=maskText(s).replace(/\s+/g,' ').trim();return t.length>60?t.slice(0,59)+'…':t};
 
-// 商品辨識：商品名稱與別名中的中文詞、英文名，加上暱稱表（GPT 提供，格式「正式名稱,別名1,別名2」）
+// 商品辨識。來源：① GPT 的暱稱清單（data/crm-nicknames.txt，每行「正式名稱,別名…」；第一欄含「＋」為組合稱呼）
+// ② 現有商品目錄的名稱與別名。一律先比對較長的詞；比到後把該段遮掉，避免「皮卡丘」又被拆成更短的詞。
+// 待確認詞（例如「藍狗」「黑白龍」）保留原詞、不對應商品。原句的活動、背景、異色、球種、尺寸線索另存為 cues。
+export const PENDING_TERMS=['藍狗','黑白龍'];
+const QUALIFIER_STOP=new Set(['造型','背景','樣子','的樣','活動','色背','異色']);
+export const CUE_RX=[
+ ['異色',/色違|異色|异色|閃光|shiny|黑烈|色烈/i],
+ ['背景',/色背|背景|背卡|普背|地點背景|特殊背景|無背|无背/],
+ ['活動地點',/社群日|萬聖節|曠野|集章|寶可夢之夜|night ?out|go ?fest|城市狩獵|世界賽|錦標賽|週年|平昌|櫻花|汝矣島|倫敦|洛杉磯|墨西哥|仙台|長崎|紐約|大阪|東京|首爾|曼谷|印度|巴黎|新加坡|台北|馬尼拉|吉隆坡|萬博/i],
+ ['球種',/大師球|精靈球|超級球|高級球|紀念球|隨機球|球種|master ?ball/i],
+ ['尺寸',/xxl|xxs|超大|超小|大隻|小隻|大的|小的/i],
+ ['等級／IV',/一等|1等|lv\.?1|百趴|100 ?iv|滿iv|0 ?iv|四星/i],
+ ['極巨化',/極巨|超極巨|dynamax|gmax|g-max|gigantamax/i],
+];
+export function extractCues(text){const t=String(text??'');const out=[];for(const [type,rx] of CUE_RX){const m=t.match(rx);if(m)out.push(type+'：'+m[0])}return out}
 export function buildTermIndex(products=[],nicknames=''){
- const terms=new Map();const add=(term,id)=>{const k=term.toLowerCase();if(!terms.has(k))terms.set(k,new Set());if(id)terms.get(k).add(id)};
+ const catalog=new Map();const productText=new Map();
+ const addTerm=(term,id)=>{const k=term.toLowerCase();if(!catalog.has(k))catalog.set(k,new Set());if(id)catalog.get(k).add(id)};
  for(const p of products){
-  for(const s of [p.name,...(p.aliases??[])]){for(const part of String(s??'').split(/[-–（）()、,，\s/・*]+/)){if(/^[一-鿿]{2,8}$/.test(part)&&!GENERIC_TERMS.has(part))add(part,p.id)}}
-  for(const s of [p.name_en,...(p.aliases??[])]){const m=String(s??'').match(/^[A-Za-z][A-Za-z' .-]{3,40}$/);if(m)add(m[0].trim(),p.id)}
+  productText.set(p.id,[p.name,p.name_en,...(p.aliases??[])].join(' ').toLowerCase());
+  for(const s of [p.name,...(p.aliases??[])]){for(const part of String(s??'').split(/[-–（）()、,，\s/・*]+/)){if(/^[\u4e00-\u9fff]{2,8}$/.test(part)&&!GENERIC_TERMS.has(part))addTerm(part,p.id)}}
+  for(const s of [p.name_en,...(p.aliases??[])]){const m=String(s??'').match(/^[A-Za-z][A-Za-z' .-]{3,40}$/);if(m)addTerm(m[0].trim(),p.id)}
  }
- const alias=new Map();
- for(const line of String(nicknames).split(/\r?\n/)){const parts=line.split(/[,，]/).map(x=>x.trim()).filter(Boolean);if(parts.length<2)continue;const canonical=parts[0];for(const a of parts.slice(1))alias.set(a.toLowerCase(),canonical)}
- const ordered=[...new Set([...terms.keys(),...alias.keys()])].sort((a,b)=>b.length-a.length);
- return {match(text){const t=String(text??'').toLowerCase();const found=[];let used=t;
-  for(const k of ordered){if(!used.includes(k))continue;const canonical=alias.get(k);const name=canonical??k;if(!found.some(f=>f.term===name))found.push({term:name,products:[...(terms.get((canonical??k).toLowerCase())??[])]});used=used.split(k).join(' ');if(found.length>=5)break}
+ const productsWith=words=>{const ws=words.map(w=>w.toLowerCase()).filter(Boolean);if(!ws.length)return [];return [...productText.entries()].filter(([,t])=>ws.every(w=>t.includes(w))).map(([id])=>id)};
+ const nick=new Map();// alias → {canonical, english}
+ for(const line of String(nicknames).split(/\r?\n/)){const parts=line.split(/[,，]/).map(x=>x.trim()).filter(Boolean);if(!parts.length)continue;const canonical=parts[0];const english=parts.find(x=>/^[A-Za-z][A-Za-z .'-]+$/.test(x))??'';
+  for(const a of [canonical,...parts.slice(1)])if(!nick.has(a.toLowerCase()))nick.set(a.toLowerCase(),{canonical,english})}
+ const resolved=new Map();
+ function resolve(canonical,english){if(resolved.has(canonical))return resolved.get(canonical);let ids=[],unverified=false;const combo=canonical.includes('＋');
+  if(combo){const members=canonical.split('＋').map(x=>x.trim());ids=productsWith(members);unverified=!ids.length}
+  else{const m=canonical.match(/^(.+?)[（(](.+)[）)]$/);const base=m?m[1].trim():canonical;let pool=[...new Set([...productsWith([base]),...(english?productsWith([english]):[])])];
+   if(m){const q=m[2];const windows=[];for(let i=0;i+2<=q.length;i++){const w=q.slice(i,i+2);if(/^[\u4e00-\u9fff]{2}$/.test(w)&&!QUALIFIER_STOP.has(w))windows.push(w)}
+    if(windows.length)pool=pool.filter(id=>windows.some(w=>productText.get(id).includes(w)));unverified=!pool.length}
+   ids=pool}
+  const r={products:ids.slice(0,10),combo,unverified};resolved.set(canonical,r);return r}
+ const keys=[...new Set([...catalog.keys(),...nick.keys(),...PENDING_TERMS.map(x=>x.toLowerCase())])].sort((a,b)=>b.length-a.length);
+ return {match(text){let t=String(text??'').toLowerCase();const found=[];
+  for(const k of keys){if(!t.includes(k))continue;let item;
+   if(PENDING_TERMS.includes(k))item={term:k,products:[],pending:true};
+   else if(nick.has(k)){const {canonical,english}=nick.get(k);const r=resolve(canonical,english);item={term:canonical,products:r.products,combo:r.combo,unverified:r.unverified};if(k!==canonical.toLowerCase())item.said=k}
+   else item={term:k,products:[...(catalog.get(k)??[])]};
+   if(!found.some(f=>f.term===item.term))found.push(item);t=t.split(k).join(' ');if(found.length>=5)break}
   return found}};
 }
 
@@ -81,7 +111,7 @@ export function parseThreadsExport(files,{products=[],nicknames='',now=Date.now(
    let found=index.match(text),fromContext=false;
    if(!found.length&&cats.some(k=>k==='price'||k==='stock'||k==='buy')){const ctx=c.messages.slice(Math.max(0,i-4),i).map(x=>x.content??'').join(' ');found=index.match(ctx);fromContext=found.length>0}
    cats.forEach(cat=>row.inquiries.push({occurred_at:msg.timestamp_ms,category:cat,terms:found.map(f=>f.term).slice(0,5),product_ids:[...new Set(found.flatMap(f=>f.products))].slice(0,10),
-    excerpt:excerpt(text),source_key:`threads:${external_key}:${msg.timestamp_ms}:${i}:${cat}`,evidence:{folder:row.folder,timestamp_ms:msg.timestamp_ms,context:fromContext}}));
+    excerpt:excerpt(text),source_key:`threads:${external_key}:${msg.timestamp_ms}:${i}:${cat}`,evidence:{folder:row.folder,timestamp_ms:msg.timestamp_ms,context:fromContext,cues:extractCues(text),pending:found.filter(f=>f.pending).map(f=>f.term),unverified:found.filter(f=>f.unverified).map(f=>f.term),said:found.filter(f=>f.said).map(f=>f.said)}}));
    if(cats.includes('price')||cats.includes('stock'))tag('inquired',{folder:row.folder,timestamp_ms:msg.timestamp_ms});
    if(cats.includes('buy'))tag('wants',{folder:row.folder,timestamp_ms:msg.timestamp_ms});
   });
