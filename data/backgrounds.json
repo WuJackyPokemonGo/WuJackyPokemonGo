@@ -28823,21 +28823,21 @@
           "basis": "confirmed",
           "rolling_local": true
         },
-        "conditions_zh": "指定五星團體戰、五星極巨對戰成功捕獲有機會附新特殊背景。GO Pass極巨美錄坦未承諾附背景。",
-        "conditions_en": "Eligible five-star raids and five-star Max Battles may award a new Special Background. GO Pass Dynamax Meltan is not promised this background.",
+        "conditions_zh": "指定五星團體戰及五星極巨對戰捕獲後有機會附特殊背景。當地18:00–19:00為焦點時段：11/9劍之王蒼響、11/10盾之王藏瑪然特；11/11極巨雷吉斯奇魯、11/12極巨雷吉鐸拉戈、11/13極巨拉帝亞斯和拉帝歐斯。GO Pass極巨美錄坦未列入附背名單。",
+        "conditions_en": "Eligible five-star raid and Max Battle catches may have the Special Background. Featured hours are 18:00–19:00 local: Nov 9 Crowned Sword Zacian, Nov 10 Crowned Shield Zamazenta, Nov 11 Dynamax Registeel, Nov 12 Dynamax Regidrago, and Nov 13 Dynamax Latias and Latios. GO Pass Dynamax Meltan is not listed for this background.",
         "eligible_zh": "劍之王蒼響／盾之王藏瑪然特團體戰；極巨化雷吉斯奇魯、雷吉鐸拉戈、拉帝亞斯、拉帝歐斯。",
         "eligible_en": "Crowned Sword Zacian / Crowned Shield Zamazenta raids; Dynamax Registeel, Regidrago, Latias and Latios.",
         "remote_participation": {
-          "basis": "inferred",
-          "text_zh": "依現行一般團體戰／極巨對戰規則可遠距參戰；仍受活動票券、邀請與能量點限制。",
-          "text_en": "Remote participation is possible under current general raid/Max Battle rules, subject to event tickets, invitations and Power Spot restrictions."
+          "basis": "confirmed",
+          "text_zh": "官方公告11/9–11/13每日遠距團體戰上限提高至30次。依官方一般規則，遠距極巨對戰須使用遠距團體戰入場券，並支付所需極巨粒子。",
+          "text_en": "The event raises the daily Remote Raid limit to 30 on Nov 9–13. Under the official general rules, remote Max Battles require a Remote Raid Pass and the usual Max Particles."
         },
         "remote_background": {
           "basis": "inferred",
-          "text_zh": "官方未就本活動單獨說明。GO Fest 2024曾發生遠距團體戰拿不到特殊背景，官方視為錯誤並補發附背景遭遇，推定特殊背景可經遠距團體戰／極巨對戰取得。",
-          "text_en": "Not stated for this event. When remote raids failed to award Special Backgrounds at GO Fest 2024, Niantic treated it as a bug and compensated, so remote catches are inferred to be eligible for Special Backgrounds."
+          "text_zh": "遠距團體戰附背僅依過往特殊背景規則推定，尚無本次官方明文。遠距極巨對戰能否取得本次背景仍待確認。",
+          "text_en": "Special Background eligibility from remote raids is inferred from prior events and is not explicitly confirmed for this event. Eligibility from remote Max Battles remains unconfirmed."
         },
-        "checked_on": "2026-11-06",
+        "checked_on": "2026-11-10",
         "sources": [
           "https://pokemongo.com/news/into-the-wild-2026",
           "https://pokemongo.com/news/shadow-raid-max-battle-update",
