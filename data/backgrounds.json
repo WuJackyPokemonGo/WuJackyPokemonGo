@@ -452,15 +452,17 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "活動持票訓練家於指定現場團體戰捕獲拉帝亞斯或拉帝歐斯時，有機會獲得當地背景。",
-      "method_en": "Ticket holders have a chance to receive the local background when catching Latias or Latios from eligible in-person event raids.",
+      "method_zh": "2023/7/28–30 的濟州島活動持票時段內，親自參加超級團體戰，捕捉拉帝亞斯或拉帝歐斯後有機會獲得濟州島地點背景。",
+      "method_en": "During the ticketed July 28–30, 2023 Jeju Island event, Trainers who caught Latias or Latios after an in-person Mega Raid had a chance to receive the Jeju Island Location Background.",
       "series": "Air Adventures",
       "series_zh": "飛翔皮卡丘計畫",
       "year": "2023",
       "year_verified": true,
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
-        "https://www.dittobase.com/pokemon-go/backgrounds/lc-jeju-air-adv-2023"
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-jeju-air-adv-2023",
+        "https://pokemongohub.net/post/event/pokemon-air-adventures-jeju-island-south-korea/",
+        "https://www.serebii.net/pokemongo/reallifeevents/pokemonairadventures-jejuisland.shtml"
       ],
       "evolved_pokemon": [],
       "start_date": "2023-07-28",
