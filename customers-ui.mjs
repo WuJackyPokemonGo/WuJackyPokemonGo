@@ -1,3 +1,4 @@
+import {initCrmUI} from './crm-ui.mjs';
 import {createCustomersService,buildRoster,filterRoster,rosterCsv,parseHistoryImport,profilePayload,usedPlatforms,IMPORT_HEADERS} from './customers-service.mjs';
 const $=id=>document.getElementById(id);
 const money=n=>'NT$ '+Number(n??0).toLocaleString('zh-TW');
@@ -6,6 +7,7 @@ function btn(label,fn,cls='alt'){const b=el('button',label,cls);b.type='button';
 function stamp(){const d=new Date(),p=n=>String(n).padStart(2,'0');return `import-${d.getFullYear()}${p(d.getMonth()+1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}`}
 
 export function initCustomersUI({client,run,notify,loadOrders,showView}){
+ const crm=initCrmUI({client,run,notify});
  const service=createCustomersService(client);let roster=[],epoch=0,editing=null,parsed=null;
  async function load(){const e=epoch;const [orders,history,profiles]=await Promise.all([loadOrders(),service.history(),service.profiles()]);if(e!==epoch)return;roster=buildRoster({orders,history,profiles});syncPlatforms();render()}
  function syncPlatforms(){const platforms=usedPlatforms(roster),sel=$('customerPlatform'),cur=sel.value;sel.replaceChildren(new Option('全部平台',''),...platforms.map(p=>new Option('有 '+p,p)));sel.value=platforms.includes(cur)?cur:'';$('customerPlatformList').replaceChildren(...platforms.map(p=>new Option(p,p)))}
@@ -50,6 +52,6 @@ export function initCustomersUI({client,run,notify,loadOrders,showView}){
  $('reloadCustomers').onclick=()=>run(load);
  for(const id of ['customerSearch','customerMinCount','customerInactive','customerMarketable','customerPlatform'])$(id).addEventListener('input',render);
  syncPlatforms();
- $('tabCustomers').onclick=()=>run(async()=>{await load();showView('customers')});
+ $('tabCustomers').onclick=()=>run(async()=>{await load();showView('customers');await crm.load()});
  return {clear(){epoch++;roster=[];editing=null;parsed=null;for(const id of ['customerList','customerDetailBody','customerImportPreview','customerContactRows'])$(id).replaceChildren();$('customerImportText').value='';$('customerForm').reset()}};
 }
