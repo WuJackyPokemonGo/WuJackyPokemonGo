@@ -2062,9 +2062,12 @@
       "name_zh": "曠野地帶 福岡",
       "release_state": "released",
       "official_sources": [
-        "https://gotour.pokemongolive.com/gowildarea/gameplay/"
+        "https://gotour.pokemongolive.com/gowildarea/gameplay/",
+        "https://x.com/niantichelpjp/status/1854814307495694769"
       ],
-      "notes": [],
+      "notes": [
+        "2024/11/8 Niantic 日本客服更正：福岡場沒有原始團體戰。蓋歐卡、固拉多的原始團體戰可取得的是 11/23–24 全球場特殊背景（BG-0223）。"
+      ],
       "related_product_ids": [],
       "method_zh": "持票活動期間，現場四星／五星團體戰及顫弦蠑螈極巨對戰捕捉後，有機會附福岡地標背景；一般、極巨化及超極巨化分別列出。",
       "method_en": "During the ticketed event, in-person four-/five-star raids and Toxtricity Max Battles offered a chance of the Fukuoka Location Background. Regular, Dynamax and Gigantamax encounters are listed separately.",
@@ -2075,7 +2078,8 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-gowildarea-2024-fukuoka",
-        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
+        "https://getnews.jp/archives/3572437"
       ],
       "evolved_pokemon": [],
       "start_date": "2024-11-16",
@@ -9685,13 +9689,15 @@
       "background_id": "BG-0137",
       "name_zh": "GO Fest 東京 Koto",
       "release_state": "released",
-      "official_sources": [],
+      "official_sources": [
+        "https://prtimes.jp/main/html/rd/p/000000003.000177618.html"
+      ],
       "notes": [],
       "related_product_ids": [
         "dbaa5a1c-19fb-4d40-86b8-5fbee8a9e937"
       ],
-      "method_zh": "東京港區、江東區、品川區各自 GO 集章，按圖章數獎勵各區地標背景寶可夢，不需 GO Fest 票券。官方營運商新聞稿確認5/25起。",
-      "method_en": "Each Tokyo district rally awards its local background Pokémon; no GO Fest ticket required. Operator release confirms May 25 start.",
+      "method_zh": "2026/5/25 起，親自在東京江東區的指定補給站或道館轉照片轉盤集章，無需 GO Fest 票券。玩家的遊戲內集章進度紀錄顯示，第 2、4 枚章各提供一場帶江東區地點背景的遭遇。",
+      "method_en": "From May 25, 2026, spin the Photo Discs at designated stops or Gyms in Koto, Tokyo, without a GO Fest ticket. Player-documented in-game progress shows a Koto Location Background encounter at stamp milestones 2, 4.",
       "series": "GO Fest",
       "series_zh": "GO Fest",
       "year": "2026",
@@ -9699,7 +9705,8 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-stamp-rally-2026-tokyo-koto",
-        "https://prtimes.jp/main/html/rd/p/000000003.000177618.html"
+        "https://prtimes.jp/main/html/rd/p/000000003.000177618.html",
+        "https://pokemongo-raku.com/post156582"
       ],
       "evolved_pokemon": [
         {
@@ -9770,13 +9777,15 @@
       "background_id": "BG-0138",
       "name_zh": "GO Fest 東京 Minato",
       "release_state": "released",
-      "official_sources": [],
+      "official_sources": [
+        "https://prtimes.jp/main/html/rd/p/000000003.000177618.html"
+      ],
       "notes": [],
       "related_product_ids": [
         "dbaa5a1c-19fb-4d40-86b8-5fbee8a9e937"
       ],
-      "method_zh": "東京港區、江東區、品川區各自 GO 集章，按圖章數獎勵各區地標背景寶可夢，不需 GO Fest 票券。官方營運商新聞稿確認5/25起。",
-      "method_en": "Each Tokyo district rally awards its local background Pokémon; no GO Fest ticket required. Operator release confirms May 25 start.",
+      "method_zh": "2026/5/25 起，親自在東京港區的指定補給站或道館轉照片轉盤集章，無需 GO Fest 票券。玩家的遊戲內集章進度紀錄顯示，第 2、4、5 枚章各提供一場帶港區地點背景的遭遇。",
+      "method_en": "From May 25, 2026, spin the Photo Discs at designated stops or Gyms in Minato, Tokyo, without a GO Fest ticket. Player-documented in-game progress shows a Minato Location Background encounter at stamp milestones 2, 4, 5.",
       "series": "GO Fest",
       "series_zh": "GO Fest",
       "year": "2026",
@@ -9784,7 +9793,8 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-stamp-rally-2026-tokyo-minato",
-        "https://prtimes.jp/main/html/rd/p/000000003.000177618.html"
+        "https://prtimes.jp/main/html/rd/p/000000003.000177618.html",
+        "https://pokemongo-raku.com/post156582"
       ],
       "evolved_pokemon": [
         {
@@ -9848,13 +9858,15 @@
       "background_id": "BG-0139",
       "name_zh": "GO Fest 東京 Shinagawa",
       "release_state": "released",
-      "official_sources": [],
+      "official_sources": [
+        "https://prtimes.jp/main/html/rd/p/000000003.000177618.html"
+      ],
       "notes": [],
       "related_product_ids": [
         "dbaa5a1c-19fb-4d40-86b8-5fbee8a9e937"
       ],
-      "method_zh": "東京港區、江東區、品川區各自 GO 集章，按圖章數獎勵各區地標背景寶可夢，不需 GO Fest 票券。官方營運商新聞稿確認5/25起。",
-      "method_en": "Each Tokyo district rally awards its local background Pokémon; no GO Fest ticket required. Operator release confirms May 25 start.",
+      "method_zh": "2026/5/25 起，親自在東京品川區的指定補給站或道館轉照片轉盤集章，無需 GO Fest 票券。玩家的遊戲內集章進度紀錄顯示，第 2、4 枚章各提供一場帶品川區地點背景的遭遇。",
+      "method_en": "From May 25, 2026, spin the Photo Discs at designated stops or Gyms in Shinagawa, Tokyo, without a GO Fest ticket. Player-documented in-game progress shows a Shinagawa Location Background encounter at stamp milestones 2, 4.",
       "series": "GO Fest",
       "series_zh": "GO Fest",
       "year": "2026",
@@ -9862,7 +9874,8 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-stamp-rally-2026-tokyo-shinagawa",
-        "https://prtimes.jp/main/html/rd/p/000000003.000177618.html"
+        "https://prtimes.jp/main/html/rd/p/000000003.000177618.html",
+        "https://pokemongo-raku.com/post156582"
       ],
       "evolved_pokemon": [
         {
@@ -14770,8 +14783,8 @@
       ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "持票到場參加城市狩獵 GO 集章，每個活動日最多集 8 枚章，每枚可遇見探險帽伊布 1 次。集章取代歷屆的伊布探險隊限時調查。開場特殊調查另有探險帽伊布遭遇，官方未逐次說明該遭遇的背景資格。八種進化款由帶背景的伊布進化取得。",
+      "method_en": "Attend City Safari in person with a ticket and collect up to eight GO Stamp Rally stamps per event day. Each stamp awards one explorer-hat Eevee encounter. The rally replaced the Eevee Explorers Timed Research used at previous events. The opening Special Research separately awards an explorer-hat Eevee encounter, for which the announcement does not specify background eligibility. Evolve an Eevee with the background to obtain any of its eight Evolutions.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2026",
@@ -14869,12 +14882,13 @@
       "name_zh": "城市狩獵 - 慕尼黑",
       "release_state": "released",
       "official_sources": [
-        "https://pokemongo.com/en/news/city-safaris-europe-2026"
+        "https://pokemongo.com/en/news/city-safaris-europe-2026",
+        "https://www.scopely.com/en/news/pokemon-go-announces-city-safari-events-coming-september-2026"
       ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "持票到場參加城市狩獵 GO 集章，每個活動日最多集 8 枚章，每枚可遇見探險帽伊布 1 次。集章取代歷屆的伊布探險隊限時調查。開場特殊調查另有探險帽伊布遭遇，官方未逐次說明該遭遇的背景資格。八種進化款由帶背景的伊布進化取得。",
+      "method_en": "Attend City Safari in person with a ticket and collect up to eight GO Stamp Rally stamps per event day. Each stamp awards one explorer-hat Eevee encounter. The rally replaced the Eevee Explorers Timed Research used at previous events. The opening Special Research separately awards an explorer-hat Eevee encounter, for which the announcement does not specify background eligibility. Evolve an Eevee with the background to obtain any of its eight Evolutions.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2026",
@@ -14972,12 +14986,13 @@
       "name_zh": "城市狩獵 - 馬賽",
       "release_state": "released",
       "official_sources": [
-        "https://pokemongo.com/en/news/city-safaris-europe-2026"
+        "https://pokemongo.com/en/news/city-safaris-europe-2026",
+        "https://www.scopely.com/en/news/pokemon-go-announces-city-safari-events-coming-september-2026"
       ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "持票到場參加城市狩獵 GO 集章，每個活動日最多集 8 枚章，每枚可遇見探險帽伊布 1 次。集章取代歷屆的伊布探險隊限時調查。開場特殊調查另有探險帽伊布遭遇，官方未逐次說明該遭遇的背景資格。八種進化款由帶背景的伊布進化取得。",
+      "method_en": "Attend City Safari in person with a ticket and collect up to eight GO Stamp Rally stamps per event day. Each stamp awards one explorer-hat Eevee encounter. The rally replaced the Eevee Explorers Timed Research used at previous events. The opening Special Research separately awards an explorer-hat Eevee encounter, for which the announcement does not specify background eligibility. Evolve an Eevee with the background to obtain any of its eight Evolutions.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2026",
@@ -15075,12 +15090,13 @@
       "name_zh": "城市狩獵 - 里斯本",
       "release_state": "released",
       "official_sources": [
-        "https://pokemongo.com/en/news/city-safaris-europe-2026"
+        "https://pokemongo.com/en/news/city-safaris-europe-2026",
+        "https://www.scopely.com/en/news/pokemon-go-announces-city-safari-events-coming-september-2026"
       ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "持票到場參加城市狩獵 GO 集章，每個活動日最多集 8 枚章，每枚可遇見探險帽伊布 1 次。集章取代歷屆的伊布探險隊限時調查。開場特殊調查另有探險帽伊布遭遇，官方未逐次說明該遭遇的背景資格。八種進化款由帶背景的伊布進化取得。",
+      "method_en": "Attend City Safari in person with a ticket and collect up to eight GO Stamp Rally stamps per event day. Each stamp awards one explorer-hat Eevee encounter. The rally replaced the Eevee Explorers Timed Research used at previous events. The opening Special Research separately awards an explorer-hat Eevee encounter, for which the announcement does not specify background eligibility. Evolve an Eevee with the background to obtain any of its eight Evolutions.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2026",
@@ -15182,8 +15198,8 @@
       ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "持票到場參加城市狩獵 GO 集章，每個活動日最多集 8 枚章，每枚可遇見探險帽伊布 1 次。集章取代歷屆的伊布探險隊限時調查。開場特殊調查另有探險帽伊布遭遇，官方未逐次說明該遭遇的背景資格。八種進化款由帶背景的伊布進化取得。",
+      "method_en": "Attend City Safari in person with a ticket and collect up to eight GO Stamp Rally stamps per event day. Each stamp awards one explorer-hat Eevee encounter. The rally replaced the Eevee Explorers Timed Research used at previous events. The opening Special Research separately awards an explorer-hat Eevee encounter, for which the announcement does not specify background eligibility. Evolve an Eevee with the background to obtain any of its eight Evolutions.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2026",
