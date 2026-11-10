@@ -65,6 +65,7 @@ const rows = {
  '也可以把關鍵字用空格分開搜尋，例如「櫻花 四季鹿」。': ['キーワードをスペースで区切って検索することもできます（例：「桜 シキジカ」）。','키워드를 띄어서 검색해 보세요(예: “벚꽃 사철록”).','Bạn có thể tách từ khóa bằng dấu cách, ví dụ “cherry Deerling”.','ลองเว้นวรรคคำค้นหา เช่น “cherry Deerling”','Coba pisahkan kata kunci dengan spasi, misalnya “cherry Deerling”.','Prueba a separar las palabras con espacios, por ejemplo “cherry Deerling”.','Tente separar as palavras com espaços, por exemplo “cherry Deerling”.'],
  '更多分類': ['その他のカテゴリ','카테고리 더보기','Thêm danh mục','หมวดหมู่เพิ่มเติม','Kategori lain','Más categorías','Mais categorias'],
  '收合分類': ['カテゴリを閉じる','카테고리 접기','Thu gọn danh mục','ย่อหมวดหมู่','Tutup kategori','Menos categorías','Menos categorias'],
+ '背景示意圖': ['背景イメージ','배경 예시','Ảnh nền minh họa','ภาพตัวอย่างพื้นหลัง','Contoh latar','Fondo de ejemplo','Fundo ilustrativo'],
  '詢問補貨': ['再入荷を問い合わせる','재입고 문의','Hỏi khi có hàng lại','สอบถามสินค้าเข้าใหม่','Tanya stok ulang','Consultar reposición','Perguntar reposição'],
  '詢問補貨：': ['再入荷の問い合わせ：','재입고 문의: ','Hỏi khi có hàng lại: ','สอบถามสินค้าเข้าใหม่: ','Tanya stok ulang: ','Consultar reposición: ','Perguntar reposição: '],
  '＋ 加入清單': ['＋ リストに追加','＋ 목록에 추가','＋ Thêm vào danh sách','＋ เพิ่มในรายการ','＋ Tambah ke daftar','＋ Añadir a la lista','＋ Adicionar à lista'],

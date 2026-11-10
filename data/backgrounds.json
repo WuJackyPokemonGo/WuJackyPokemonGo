@@ -6502,7 +6502,11 @@
         "https://pokemongo.com/news/ko-winter-festival-2026"
       ],
       "notes": [],
-      "related_product_ids": [],
+      "related_product_ids": [
+        "28a5eb28-d465-41ae-9d80-53e27d61d814",
+        "3bc431d6-77f1-4861-bd8e-15afdcbd4823",
+        "c8209417-2f52-49bd-8ff4-351972076a84"
+      ],
       "method_zh": "平昌野外雪花毛帽皮卡丘、一星皮卡丘／冬季四季鹿團體戰有機會附背景；現場免費限時調查獎勵背景款，2/1 前領獎。團體戰不可遠距。",
       "method_en": "Chance from wild beanie Pikachu and local raids. On-site research awards background Pikachu/Deerling, claimable by February 1; raids exclude remote passes.",
       "series": "Other",
