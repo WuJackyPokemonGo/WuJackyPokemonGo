@@ -73,6 +73,6 @@ test('customer backup validates format and restore never overwrites existing row
  const calls=[];const result=rows=>{const q={select:()=>q,then:(r,j)=>Promise.resolve({data:rows}).then(r,j)};return q};
  const client={from:t=>({upsert:(rows,opts)=>{calls.push([t,opts]);return result(t==='customer_profiles'?[]:rows)}})};
  const r=await createCustomersService(client).restore({format:'wu-jacky-customers',version:1,profiles:[profile],history:[hist]});
- assert.deepEqual(r,{profiles:0,history:1,skipped:1});
+ assert.deepEqual(r,{profiles:0,history:1,crm:0,skipped:1});
  assert.deepEqual(calls,[['customer_profiles',{onConflict:'id',ignoreDuplicates:true}],['customer_history_purchases',{onConflict:'import_key',ignoreDuplicates:true}]]);
 });

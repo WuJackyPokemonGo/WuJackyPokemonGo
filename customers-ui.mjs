@@ -46,7 +46,7 @@ export function initCustomersUI({client,run,notify,loadOrders,showView}){
  $('exportCustomers').onclick=()=>run(async()=>{const list=filterRoster(roster,filters());const blob=new Blob([rosterCsv(list)],{type:'text/csv;charset=utf-8'});const a=el('a');a.href=URL.createObjectURL(blob);a.download=`客人名單-${new Date().toISOString().slice(0,10)}.csv`;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);notify(`已匯出 ${list.length} 位客人。`)});
  $('backupCustomers').onclick=()=>run(async()=>{const doc=await service.backup();const blob=new Blob([JSON.stringify(doc)],{type:'application/json'});const a=el('a');a.href=URL.createObjectURL(blob);a.download=`客人資料備份-${doc.created_at.slice(0,10)}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);notify(`已備份 ${doc.profiles.length} 位客人資料、${doc.history.length} 筆歷史購買。請存到私人雲端，不要上傳到公開地方。`)});
  $('restoreCustomersFile').onchange=event=>run(async()=>{const file=event.target.files?.[0];event.target.value='';if(!file)return;if(file.size>20_000_000)throw Error('檔案超過 20MB。');let doc;try{doc=JSON.parse(await file.text())}catch{throw Error('檔案不是有效的 JSON。')}
-  const r=await service.restore(doc);notify(`還原完成：補回 ${r.profiles} 位客人資料、${r.history} 筆歷史購買；${r.skipped} 筆已存在，保留現有內容。`);await load()});
+  const r=await service.restore(doc);notify(`還原完成：補回 ${r.profiles} 位客人資料、${r.history} 筆歷史購買、${r.crm??0} 筆 CRM 紀錄；${r.skipped} 筆已存在，保留現有內容。`);await load()});
  $('addCustomerContact').onclick=()=>contactRow();
  $('addCustomer').onclick=()=>edit(null);
  $('reloadCustomers').onclick=()=>run(load);

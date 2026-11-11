@@ -82,3 +82,20 @@ test('re-import refreshes recognition fields without duplicating inquiries',asyn
  const r3=(await q('select admin_crm_import_threads($1,$2) r',[batch,row(['耿鬼'])]))[0].r;assert.equal(r3.inquiries_skipped,1);
  assert.deepEqual((await q('select terms from crm_inquiries'))[0].terms,['耿鬼']);assert.equal((await q('select count(*)::int n from crm_inquiries'))[0].n,1);await db.exec('reset role');
 });
+test('customer backup carries CRM rows and restore re-adds them without duplicates; old backups still validate',async()=>{
+ const {validateCustomerBackup,createCustomersService,CRM_TABLES}=await import('../customers-service.mjs');
+ const old=validateCustomerBackup({format:'wu-jacky-customers',version:1,profiles:[],history:[]});assert.deepEqual(Object.values(old.crm).flat(),[]);
+ const store=Object.fromEntries(CRM_TABLES.map(([,t])=>[t,[]]));store.customer_profiles=[];store.customer_history_purchases=[];
+ const pk={crm_import_batches:'id',crm_identities:'external_key',crm_inquiries:'source_key',crm_tags:r=>r.customer_id+r.tag,crm_followups:'id',customer_profiles:'id',customer_history_purchases:'import_key'};
+ const key=(t,r)=>typeof pk[t]==='function'?pk[t](r):r[pk[t]];
+ const client={from(t){const api={_rows:null,select(){return api},order(){return api},range(){return Promise.resolve({data:store[t],error:null})},
+  upsert(rows){const fresh=rows.filter(r=>!store[t].some(x=>key(t,x)===key(t,r)));store[t].push(...fresh);return {select:()=>Promise.resolve({data:fresh,error:null})}}};return api}};
+ const svc=createCustomersService(client);
+ store.customer_profiles.push({id:'c1',alias:'Amy',other_aliases:[],contacts:[],contact_private:'',do_not_market:false,note_private:'',created_at:'x',updated_at:'x'});
+ store.crm_identities.push({id:'i1',customer_id:'c1',platform:'threads',external_key:'amy_1',display_name:'Amy',folder:'inbox/amy_1',first_seen_at:null,last_seen_at:null,message_count:3,customer_message_count:2,last_sender:'customer',last_batch:null,created_at:'x',updated_at:'x'});
+ store.crm_inquiries.push({id:'q1',customer_id:'c1',identity_id:'i1',occurred_at:'x',category:'price',terms:['耿鬼'],product_ids:[],excerpt:'耿鬼多少',evidence:{},source_key:'threads:amy_1:1:0:price',batch_id:null,created_at:'x'});
+ const doc=await svc.backup();assert.equal(doc.crm.identities.length,1);assert.equal(doc.crm.inquiries[0].terms[0],'耿鬼');
+ for(const t of Object.keys(store))store[t]=[];
+ const r1=await svc.restore(JSON.parse(JSON.stringify(doc)));assert.equal(r1.crm,2);assert.equal(store.crm_inquiries.length,1);
+ const r2=await svc.restore(JSON.parse(JSON.stringify(doc)));assert.equal(r2.crm,0);assert.equal(store.crm_inquiries.length,1,'restore twice does not duplicate');
+});
