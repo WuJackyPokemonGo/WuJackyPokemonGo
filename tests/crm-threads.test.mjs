@@ -20,7 +20,7 @@ const products=[{id:'11111111-1111-4111-8111-111111111111',name:'耿鬼-寶可�
 test('parser reads every conversation, fixes Meta text, skips groups and never keeps raw secrets',()=>{
  assert.equal(fixMojibake(meta('雪地皮卡丘')),'雪地皮卡丘');assert.equal(fixMojibake('already ok 皮'),'already ok 皮');
  assert.equal(maskText('帳號 1234567890 密碼 abc123 mail a@b.co'),'帳號 [遮蔽]');assert.equal(maskText('mail a@b.co'),'mail [email]');
- assert.equal(maskText('來悲茶 xu3c4amuhb 快龍 DenX5527ig 密碼 Pass.Word123'),'來悲茶 [遮蔽] 快龍 [遮蔽] 密碼 [遮蔽]');assert.equal(maskText('耿鬼 Wu.Jacky12345 好'),'耿鬼 [遮蔽] 好');
+ assert.equal(maskText('來悲茶 xu3c4amuhb 快龍 DenX5527ig 密碼 Pass.Word123'),'來悲茶 [遮蔽] 快龍 [遮蔽] 密碼 [遮蔽]');assert.equal(maskText('耿鬼 Wu.Jacky12345 好'),'耿鬼 [遮蔽] 好');assert.equal(maskText('四季 Tyni@2021 ok'),'四季 [遮蔽] ok');assert.equal(maskText('G/Ab12cd%'),'[遮蔽]');
  assert.equal(maskText('XXL 色違 1:250 GO Fest 100IV'),'XXL 色違 1:250 GO Fest 100IV','ordinary product words stay readable');
  const {rows,stats}=parseThreadsExport(files,{products,nicknames:'平昌皮卡丘,雪地皮卡丘,雪地皮',now:NOW});
  assert.equal(stats.message_files,4);assert.equal(stats.conversations,4);assert.equal(stats.groups_skipped,1);assert.equal(stats.imported,3);assert.equal(stats.owner,OWNER);
