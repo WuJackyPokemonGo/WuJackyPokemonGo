@@ -1,3 +1,4 @@
+import {initReservationsUI} from './reservations-ui.mjs';
 import {storedPokedexNumbers} from './pokedex-numbers.mjs';
 import {initBackgroundAdminUI} from './backgrounds-admin-ui.mjs';
 import {createAuthStorage} from './admin-auth-storage.mjs';
@@ -20,7 +21,8 @@ const client=createClient(STAGING_URL,STAGING_PUBLISHABLE_KEY,{auth:{persistSess
 $('rememberDevice').checked=rememberDevice;
 const journal={getItem:key=>sessionStorage.getItem(key),setItem:(key,value)=>sessionStorage.setItem(key,value),removeItem:key=>sessionStorage.removeItem(key)};
 const service=createAdminService(client,undefined,journal),catalog=createCatalogService(client);
-const operationsUI=initOperationsUI({client,journal,run,notify,getProducts:()=>products,refreshProducts:refresh,extendOrder:(...args)=>financeUI.extendOrder(...args),extendPurchase:(...args)=>financeUI.extendPurchase(...args)});
+const reservationsUI=initReservationsUI({client,run,notify});document.querySelector('#ordersWorkspace .filters')?.before(reservationsUI.panel);document.getElementById('tabOrders')?.addEventListener('click',()=>reservationsUI.refresh());
+const operationsUI=initOperationsUI({client,journal,run,notify,getProducts:()=>products,refreshProducts:refresh,extendOrder:(...args)=>financeUI.extendOrder(...args),extendPurchase:(...args)=>financeUI.extendPurchase(...args),decorateOrder:(...args)=>reservationsUI.decorateOrder(...args)});
 const financeUI=initFinanceUI({client,run,notify,operations:operationsUI,getProducts:()=>products});
 const customersUI=initCustomersUI({client,run,notify,loadOrders:()=>operationsUI.loadOrderRows(),showView:name=>operationsUI.showView(name)});
 const backgroundsUI=initBackgroundAdminUI({client,journal,run,notify,getProducts:()=>products,showView:name=>operationsUI.showView(name)});
