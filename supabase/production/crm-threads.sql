@@ -31,6 +31,10 @@ create table if not exists public.crm_identities(
  unique(platform,external_key)
 );
 create index if not exists crm_identities_customer_idx on public.crm_identities(customer_id);
+-- 摘要：summary 由匯入程式依規則產生（每次匯入更新）；narrative 是人工／AI 讀對話寫的敘述摘要，匯入不會覆蓋。
+alter table public.crm_identities add column if not exists summary text not null default '' check(length(summary)<=200);
+alter table public.crm_identities add column if not exists narrative text not null default '' check(length(narrative)<=600);
+alter table public.crm_identities add column if not exists narrative_updated_at timestamptz;
 create table if not exists public.crm_inquiries(
  id uuid primary key default gen_random_uuid(),
  customer_id uuid not null references public.customer_profiles(id) on delete cascade,
@@ -107,7 +111,7 @@ begin
    first_seen_at=least(coalesce(first_seen_at,to_timestamp((r->>'first_at')::bigint/1000.0)),to_timestamp((r->>'first_at')::bigint/1000.0)),
    last_seen_at=greatest(coalesce(last_seen_at,to_timestamp((r->>'last_at')::bigint/1000.0)),to_timestamp((r->>'last_at')::bigint/1000.0)),
    message_count=greatest(message_count,coalesce((r->>'message_count')::int,0)),customer_message_count=greatest(customer_message_count,coalesce((r->>'customer_message_count')::int,0)),
-   last_sender=coalesce(nullif(r->>'last_sender',''),last_sender),last_batch=p_batch,updated_at=now() where id=iid;
+   last_sender=coalesce(nullif(r->>'last_sender',''),last_sender),summary=left(coalesce(r->>'summary',summary),200),last_batch=p_batch,updated_at=now() where id=iid;
   for i in select value from jsonb_array_elements(coalesce(r->'inquiries','[]')) loop
    insert into public.crm_inquiries(customer_id,identity_id,occurred_at,category,terms,product_ids,excerpt,evidence,source_key,batch_id)
    values(cid,iid,to_timestamp((i->>'occurred_at')::bigint/1000.0),i->>'category',

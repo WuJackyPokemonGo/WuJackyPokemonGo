@@ -99,3 +99,10 @@ test('customer backup carries CRM rows and restore re-adds them without duplicat
  const r1=await svc.restore(JSON.parse(JSON.stringify(doc)));assert.equal(r1.crm,2);assert.equal(store.crm_inquiries.length,1);
  const r2=await svc.restore(JSON.parse(JSON.stringify(doc)));assert.equal(r2.crm,0);assert.equal(store.crm_inquiries.length,1,'restore twice does not duplicate');
 });
+test('every imported customer gets a one-line summary without personal or payment data',async()=>{
+ const {summaryLine}=await import('../crm-threads-import.mjs');
+ const s=summaryLine({first_at:Date.parse('2026-07-09T04:00:00Z'),last_at:Date.parse('2026-11-10T04:00:00Z'),message_count:73,last_sender:'customer',
+  inquiries:[{category:'price',terms:['快龍']},{category:'buy',terms:['快龍','藏瑪然特']}],tags:[{tag:'paid_suspected',evidence:{count:1}}]});
+ assert.equal(s,'26/07/09–26/11/10・私訊 73 則・問過：快龍、藏瑪然特・表示想買／問價・疑似付款 1 次・最後一則是客人');
+ const {rows}=parseThreadsExport(files,{products,now:NOW});assert.ok(rows.every(r=>r.summary&&r.summary.length<=200));assert.doesNotMatch(JSON.stringify(rows.map(r=>r.summary)),/\d{6,}/);
+});

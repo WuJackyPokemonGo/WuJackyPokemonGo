@@ -133,11 +133,19 @@ export function parseThreadsExport(files,{products=[],nicknames='',now=Date.now(
    if(cats.length){const found=index.match(t);row.followups.push({reason:'最後一則為客人'+cats.map(x=>CATEGORY_LABELS[x]).join('／')+(found.length?'：'+found.map(f=>f.term).join('、'):''),source_key:`threads:${external_key}:last:${row.last_at}`,due_on:new Date(now+8*3600000).toISOString().slice(0,10),excerpt:excerpt(t)});tag('followup',{folder:row.folder,timestamp_ms:row.last_at})}
   }
   row.tags=[...tagSet.entries()].map(([name,evidence])=>({tag:name,evidence}));
+  row.summary=summaryLine(row);
   for(const t of row.tags)stats.tags[t.tag]=(stats.tags[t.tag]??0)+1;
   stats.inquiries+=row.inquiries.length;stats.followups+=row.followups.length;stats.imported++;rows.push(row);
  }
  return {rows,stats};
 }
+
+// 一行摘要（全部客人，規則產生，不用 AI）：期間、則數、問過的品項、詢問類型、疑似付款／棄單、最後一則是誰
+export function summaryLine(r){const day=t=>new Date(t).toLocaleDateString('sv-SE',{timeZone:'Asia/Taipei'}).slice(2).replace(/-/g,'/');
+ const terms=new Map();for(const i of r.inquiries)for(const t of i.terms)terms.set(t,(terms.get(t)??0)+1);const top=[...terms.entries()].sort((a,b)=>b[1]-a[1]).slice(0,3).map(x=>x[0]);
+ const cats=['buy','price','stock','payment','delivery'].filter(c=>r.inquiries.some(i=>i.category===c)).map(c=>CATEGORY_LABELS[c]);const tag=t=>r.tags.find(x=>x.tag===t);
+ const s=`${day(r.first_at)}–${day(r.last_at)}・私訊 ${r.message_count} 則${top.length?'・問過：'+top.join('、'):''}${cats.length?'・'+cats.join('／'):''}${tag('paid_suspected')?'・疑似付款 '+(tag('paid_suspected').evidence.count??1)+' 次':''}${tag('abandon_suspected')?'・疑似棄單':''}${r.last_sender==='customer'?'・最後一則是客人':''}`;
+ return s.slice(0,200)}
 
 // 瀏覽器端：讀 ZIP（只取 messages 底下的 JSON；圖片與其他檔案不解壓）
 export async function readThreadsZip(file){

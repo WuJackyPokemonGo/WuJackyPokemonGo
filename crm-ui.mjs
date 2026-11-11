@@ -18,7 +18,7 @@ export function crmRows({identities,tags,inquiries}){
   .sort((a,b)=>String(b.last_seen_at??'').localeCompare(String(a.last_seen_at??'')));
 }
 export function filterCrm(rows,{query='',tag=''}={}){const q=String(query).trim().toLowerCase();
- return rows.filter(r=>(!tag||r.tags.some(t=>t.tag===tag))&&(!q||String(r.display_name).toLowerCase().includes(q)||r.inquiries.some(i=>(i.terms??[]).some(t=>t.toLowerCase().includes(q))||String(i.excerpt).toLowerCase().includes(q))))}
+ return rows.filter(r=>(!tag||r.tags.some(t=>t.tag===tag))&&(!q||String(r.display_name).toLowerCase().includes(q)||String(r.narrative??'').toLowerCase().includes(q)||r.inquiries.some(i=>(i.terms??[]).some(t=>t.toLowerCase().includes(q))||String(i.excerpt).toLowerCase().includes(q))))}
 
 export function initCrmUI({client,run,notify}){
  let rows=[],followups=[],shown=PAGE,pending=null,loaded=false;
@@ -61,7 +61,7 @@ export function initCrmUI({client,run,notify}){
 
  async function load(force=false){if(loaded&&!force)return;
   const [identities,tags,inquiries,fu]=await Promise.all([
-   fetchAll(()=>client.from('crm_identities').select('id,customer_id,display_name,folder,first_seen_at,last_seen_at,message_count,customer_message_count,last_sender').order('last_seen_at',{ascending:false})),
+   fetchAll(()=>client.from('crm_identities').select('id,customer_id,display_name,folder,first_seen_at,last_seen_at,message_count,customer_message_count,last_sender,summary,narrative').order('last_seen_at',{ascending:false})),
    fetchAll(()=>client.from('crm_tags').select('customer_id,tag,source')),
    fetchAll(()=>client.from('crm_inquiries').select('customer_id,occurred_at,category,terms,excerpt,evidence').order('occurred_at',{ascending:false})),
    fetchAll(()=>client.from('crm_followups').select('id,customer_id,reason,excerpt,status,due_on,created_at').eq('status','open').order('created_at',{ascending:false}))]);
@@ -80,6 +80,7 @@ export function initCrmUI({client,run,notify}){
  }
  function card(r){const c=el('article',null,'product');
   c.append(el('strong',r.display_name||'（未命名）'),el('small',`最近 ${day(r.last_seen_at)}・首次 ${day(r.first_seen_at)}・私訊 ${r.message_count} 則・詢問 ${r.inquiries.length} 筆${r.last_sender==='customer'?'・最後一則是客人':''}`));
+  if(r.narrative)c.append(el('p','摘要：'+r.narrative,'order-detail-line'));else if(r.summary)c.append(el('p',r.summary,'muted'));
   if(r.tags.length)c.append(el('p',r.tags.map(t=>(TAG_LABELS[t.tag]??t.tag)+(t.source==='manual'?'（手動）':'')).join('・'),'order-detail-line'));
   if(r.topTerms.length)c.append(el('p','問過：'+r.topTerms.join('、'),'order-detail-line'));
   const more=btn('詢問紀錄',()=>{if(c.querySelector('.crm-detail')){c.querySelector('.crm-detail').remove();return}const d=el('div',null,'crm-detail');
