@@ -1,8 +1,10 @@
 // Threads 匯出檔 → CRM 匯入資料。全部在管理員自己的瀏覽器裡解析，私訊原文不上傳；
 // 只送出整理後的結果：客人身分、詢問紀錄（含遮蔽摘錄與證據位置）、自動標籤與待追蹤事項。
 // 判斷全部屬於「關鍵字判斷」，成交一律只標「疑似」，正式成交要由管理員在後台確認。
+import {buildCases,CASE_STATUS} from './crm-cases.mjs';
 
 export const CATEGORY_LABELS={price:'問價',stock:'問庫存',buy:'表示想買',payment:'交易方式',delivery:'交付問題'};
+export {CASE_STATUS};
 export const TAG_LABELS={inquired:'詢價',wants:'想買',paid_suspected:'疑似付款',repeat_suspected:'熟客候選',abandon_suspected:'疑似棄單',request_box:'訊息請求',followup:'待追蹤'};
 const CATEGORY_RX={
  price:/多少|價格|價錢|價位|幾元|幾塊|怎麼賣|怎賣|報價|售價|開價|\$|how much|price|優惠|折扣|打折|算便宜|便宜點|便宜一點/i,
@@ -84,9 +86,9 @@ export function buildTermIndex(products=[],nicknames=''){
 }
 
 // files: Map(path → JSON text)。回傳 {rows, stats}
-export function parseThreadsExport(files,{products=[],nicknames='',now=Date.now(),recentDays=14}={}){
+export function parseThreadsExport(files,{products=[],nicknames='',now=Date.now(),recentDays=14,suggestScope='A'}={}){
  const index=buildTermIndex(products,nicknames);
- const stats={json_files:0,message_files:0,conversations:0,messages:0,groups_skipped:0,empty_skipped:0,failed_files:[],imported:0,inquiries:0,followups:0,tags:{},owner:'',date_from:null,date_to:null};
+ const stats={json_files:0,message_files:0,conversations:0,messages:0,groups_skipped:0,empty_skipped:0,failed_files:[],imported:0,inquiries:0,followups:0,tags:{},suggest_scope:suggestScope,suggested_customers:0,cases:0,case_status:{},deals:0,deals_with_amount:0,waits:0,owner:'',date_from:null,date_to:null};
  const convs=new Map();
  for(const [path,text] of files){
   if(!/\.json$/i.test(path))continue;stats.json_files++;
@@ -139,6 +141,12 @@ export function parseThreadsExport(files,{products=[],nicknames='',now=Date.now(
    if(cats.length){const found=index.match(t);row.followups.push({reason:'最後一則為客人'+cats.map(x=>CATEGORY_LABELS[x]).join('／')+(found.length?'：'+found.map(f=>f.term).join('、'):''),source_key:`threads:${external_key}:last:${row.last_at}`,due_on:new Date(now+8*3600000).toISOString().slice(0,10),excerpt:excerpt(t)});tag('followup',{folder:row.folder,timestamp_ms:row.last_at})}
   }
   row.tags=[...tagSet.entries()].map(([name,evidence])=>({tag:name,evidence}));
+  // 案件與成交建議：第一輪只做 A 層（疑似付款或熟客候選），其他客人等核准後再開
+  row.cases=[];row.deals=[];row.waits=[];
+  if(suggestScope==='all'||tagSet.has('paid_suspected')||tagSet.has('repeat_suspected')){
+   Object.assign(row,buildCases({messages:c.messages,isOwner,index,maskText,excerpt,externalKey:external_key,folder:row.folder,now}));
+   stats.suggested_customers++;stats.cases+=row.cases.length;stats.deals+=row.deals.length;stats.deals_with_amount+=row.deals.filter(d=>d.amount_twd!=null).length;stats.waits+=row.waits.length;
+   for(const k of row.cases)stats.case_status[k.status]=(stats.case_status[k.status]??0)+1}
   row.summary=summaryLine(row);
   for(const t of row.tags)stats.tags[t.tag]=(stats.tags[t.tag]??0)+1;
   stats.inquiries+=row.inquiries.length;stats.followups+=row.followups.length;stats.imported++;rows.push(row);
