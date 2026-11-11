@@ -1692,18 +1692,21 @@
       "background_id": "BG-0017",
       "name_zh": "飛翔皮卡丘計畫 日惹",
       "release_state": "released",
-      "official_sources": [],
+      "official_sources": [
+        "https://pokemongolive.com/events/indonesia-journey-yogyakarta"
+      ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "活動持票訓練家於指定現場團體戰捕獲拉帝亞斯或拉帝歐斯時，有機會獲得當地背景。",
-      "method_en": "Ticket holders have a chance to receive the local background when catching Latias or Latios from eligible in-person event raids.",
+      "method_zh": "2024/8/24–25 的活動持票時段內，親自參加日惹現場超級團體戰，捕捉拉帝亞斯或拉帝歐斯後有機會附日惹地點背景。官方公告的同期存檔明列有效票券與現場參戰條件。",
+      "method_en": "During the ticketed August 24–25, 2024 Yogyakarta event, catching Latias or Latios after an in-person Mega Raid had a chance to award the Yogyakarta Location Background. A contemporary copy of the official announcement specifies an active event ticket and in-person participation.",
       "series": "Air Adventures",
       "series_zh": "飛翔皮卡丘計畫",
       "year": "2024",
       "year_verified": true,
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
-        "https://www.dittobase.com/pokemon-go/backgrounds/lc-air-adv-2024-yogyakarta"
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-air-adv-2024-yogyakarta",
+        "https://pocketmonsters.net/index.php/news/7573"
       ],
       "evolved_pokemon": [],
       "start_date": "2024-08-24",
@@ -1952,8 +1955,8 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "活動田野與特殊調查遭遇；探險帽皮卡丘及坐騎小羊的背景條件依活動獎勵。",
-      "method_en": "Event Field and Special Research encounters; background conditions follow the Safari Hat Pikachu and Skiddo rewards.",
+      "method_zh": "2024/9/27–29 仁川 Safari Zone 的持票活動時段內，活動田野調查可遇見有機會附仁川背景的探險帽皮卡丘與坐騎小羊。入場票另含特殊調查，獎勵的坐騎小羊有背景機會；城市加購日不另外發放特殊調查。",
+      "method_en": "During ticketed Safari Zone: Incheon gameplay on September 27–29, 2024, event Field Research could award safari-hat Pikachu or Skiddo with a chance of the Incheon Location Background. The General Admission ticket also included Special Research awarding Skiddo with a background chance. Citywide add-on days did not grant additional Special Research.",
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2024",
@@ -1961,7 +1964,8 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2024-incheon",
-        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
+        "https://leekduck.com/events/pokemon-go-safari-zone-icheon-south-korea-2024/"
       ],
       "evolved_pokemon": [
         {
@@ -2225,8 +2229,8 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "2024/12/7–8 持票參加聖保羅城市狩獵，活動特殊調查提供探險帽伊布；「伊布探險隊」限時調查在各指定地點另提供附聖保羅地點背景的探險帽伊布遭遇，最多 8 次。第二天加購可再完成一次限時調查；八種進化款由帶背景的伊布進化取得。",
+      "method_en": "Attend City Safari: São Paulo with a ticket on December 7–8, 2024. Event Special Research awards explorer-hat Eevee, and Eevee Explorers Timed Research provides up to eight additional encounters with explorer-hat Eevee bearing the São Paulo Location Background at designated locations. A second-day add-on allows another completion of the Timed Research. Its eight Evolutions are obtained by evolving an Eevee with the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2024",
@@ -2234,7 +2238,8 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2024-saopaulo",
-        "https://www.dittobase.com/pokemon-go/backgrounds"
+        "https://www.dittobase.com/pokemon-go/backgrounds",
+        "https://pokemongohub.net/post/event/pokemon-go-city-safari-sao-paulo-brazil/"
       ],
       "evolved_pokemon": [
         {
