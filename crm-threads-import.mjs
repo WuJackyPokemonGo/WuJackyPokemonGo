@@ -24,7 +24,10 @@ export function fixMojibake(value){
 }
 function deepFix(o){if(Array.isArray(o))return o.map(deepFix);if(o&&typeof o==='object'){const r={};for(const [k,v] of Object.entries(o))r[k]=deepFix(v);return r}return fixMojibake(o)}
 export function maskText(s){
- return String(s??'')
+ let t=String(s??'');
+ // 交付訊息（含帳號／密碼字樣）裡，換行後的純英文帳號名稱也一律遮蔽
+ if(/帳號|密碼|帳密|password|passwd/i.test(t))t=t.replace(/(?<![\w.@#$%&!*?+=\/-])[A-Za-z][\w.@#$%&!*?+=\/-]{5,}/g,'[遮蔽]');
+ return t
   .replace(/[\w.+-]+@[\w-]+\.[\w.]+/g,'[email]')
   // 「帳號／密碼」後面到句尾全部遮蔽（交付訊息常把多組帳密寫在同一行）
   .replace(/(密碼|帳號|帳密|password|passwd|pw|pass|ID)\s*[:：]?[^\n，。,；;]*/gi,'$1 [遮蔽]')
