@@ -26,7 +26,10 @@ function deepFix(o){if(Array.isArray(o))return o.map(deepFix);if(o&&typeof o==='
 export function maskText(s){
  return String(s??'')
   .replace(/[\w.+-]+@[\w-]+\.[\w.]+/g,'[email]')
-  .replace(/(密碼|帳號|帳密|password|pw|pass)\s*[:：]?\s*\S+/gi,'$1 [遮蔽]')
+  // 「帳號／密碼」後面到句尾全部遮蔽（交付訊息常把多組帳密寫在同一行）
+  .replace(/(密碼|帳號|帳密|password|passwd|pw|pass|ID)\s*[:：]?[^\n，。,；;]*/gi,'$1 [遮蔽]')
+  // 英數混合的 6 字元以上字串（帳號名稱、密碼、驗證碼）一律遮蔽
+  .replace(/(?<![\w.])(?=[\w.-]*\d)(?=[\w.-]*[A-Za-z])[\w.-]{6,}/g,'[遮蔽]')
   .replace(/\d[\d\- ]{4,}\d/g,'[數字遮蔽]')
   .replace(/https?:\/\/\S+/g,'[連結]');
 }
