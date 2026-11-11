@@ -18,3 +18,7 @@
 - BG-0016 檀香山。官方明列賽事 8/16–18，全球遊戲慶祝 8/16–20；兩種時段依舊不能直接替代地點背景發放迄日。重新查看當時社群討論後，8/19 留言雖有拿到背景的描述，沒有足以確認捕獲日期及途徑的畫面。該串 8/18 留言提到活動至 8/20 20:00，也不足以單獨證明背景發放截止。保持現有 8/20，待原始遊戲畫面或地方活動公告。 [官方](https://pokemongo.com/news/world-championships-event-2024) · [當時社群討論](https://www.reddit.com/r/TheSilphRoad/comments/1etyycw) · [Serebii](https://www.serebii.net/pokemongo/reallifeevents/pokemonworldchampionships2024.shtml) · [Dittobase](https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2024-honolulu)
 - BG-0023 香港。既有描述已列特殊調查與伊布探險隊限時調查，日期與 [Serebii](https://www.serebii.net/pokemongo/reallifeevents/citysafari-hongkong.shtml)、[Dittobase](https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2024-hongkong) 一致。部分同期文章誤把背景城市寫成台南，未據此更改本站香港圖樣或名稱。
 - BG-0122／0123 的好啦魷、BG-0079／0081 的雪梨及布宜諾斯艾利斯取得途徑，先前已建議由 Claude 協查。本輪沒有收到新的交付證據，無法認定該兩組已完成。其餘歷年條目的裝扮、形態及後續復刻仍依逐筆對照表續查，第 05 項尚未結案。
+
+## 正式站驗收
+
+正式站公開 `data/backgrounds.json` 的 Git blob 為 `0dc7c86f476016d782a32e5af3c7af95ca485994`，與本輪最後資料提交一致。逐筆比較開始及結束版本，共 282 筆，只有 BG-0017、BG-0021、BG-0024、BG-0215 的中英文取得方式與查核來源變動；ID、日期、寶可夢名單、其他條目及頂層資料均通過一致性檢查。
