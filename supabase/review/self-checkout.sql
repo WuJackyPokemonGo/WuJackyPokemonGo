@@ -124,9 +124,11 @@ begin
   perform pg_advisory_xact_lock(hashtextextended(lower(btrim(p_payload->>'contact')),42));
   select count(*) into pending_count from public.orders o where o.customer_contact_private=(p_payload->>'contact_channel')||': '||btrim(p_payload->>'contact') and o.created_at>now()-interval '15 minutes';
   if pending_count>=3 then raise sqlstate 'PT429' using message='Too many orders';end if;
-  if (select count(*) from jsonb_array_elements(p_payload->'items'))<>(select count(distinct x->>'id') from jsonb_array_elements(p_payload->'items') x) then raise check_violation using message='Duplicate product';end if;
-  -- Lock balances in stable order. All deductions use these same row locks.
-  for item in select x from jsonb_array_elements(p_payload->'items') x order by x->>'id' loop
+  -- Compare product IDs as UUIDs, not raw text: upper/lower case spellings of one UUID are the same product.
+  if exists(select 1 from jsonb_array_elements(p_payload->'items') x where jsonb_typeof(x) is distinct from 'object' or coalesce(x->>'id','')!~*'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$') then raise check_violation using message='Invalid items';end if;
+  if (select count(*) from jsonb_array_elements(p_payload->'items'))<>(select count(distinct (x->>'id')::uuid) from jsonb_array_elements(p_payload->'items') x) then raise check_violation using message='Duplicate product';end if;
+  -- Lock balances in stable UUID order. All deductions and report renewals use these same row locks.
+  for item in select x from jsonb_array_elements(p_payload->'items') x order by (x->>'id')::uuid loop
    pid:=(item->>'id')::uuid;qty:=(item->>'qty')::integer;
    if qty is null or qty not between 1 and 99 or item->>'qty' !~ '^[0-9]+$' then raise check_violation using message='Invalid quantity';end if;
    select * into p from public.products where id=pid for share;
@@ -160,7 +162,18 @@ begin
    if meta->'payment_report' is distinct from p_payload->'report' then raise unique_violation using message='Report already submitted; contact seller for corrections';end if;
    return private.checkout_snapshot(oid);
   end if;
-  if ord.status not in('pending_review','awaiting_payment') or (meta->>'hold_until')::timestamptz<=now() then raise check_violation using message='Order expired or closed; contact seller before payment';end if;
+  if ord.status not in('pending_review','awaiting_payment') or (meta->>'hold_until')::timestamptz<=clock_timestamp() then raise check_violation using message='Order expired or closed; contact seller before payment';end if;
+  -- Renewal must not race a new order that started after this hold expired: take the same
+  -- inventory row locks as create (UUID order), then re-check expiry with the wall clock
+  -- (now() is fixed at transaction start) and re-check that the stock is still free.
+  for pid in select distinct i.product_id from public.order_items i where i.order_id=oid order by 1 loop
+   perform 1 from public.inventory_balances where product_id=pid for update;
+  end loop;
+  if (meta->>'hold_until')::timestamptz<=clock_timestamp() then raise check_violation using message='Order expired or closed; contact seller before payment';end if;
+  for pid,qty in select i.product_id,sum(i.quantity)::integer from public.order_items i where i.order_id=oid group by i.product_id order by 1 loop
+   select quantity_on_hand into stock from public.inventory_balances where product_id=pid;
+   if stock is null or stock-private.checkout_held(pid,oid)<qty then raise check_violation using message='Order expired or closed; contact seller before payment';end if;
+  end loop;
   if jsonb_typeof(p_payload->'report') is distinct from 'object' or coalesce(p_payload->'report'->>'last_five','')!~'^[0-9]{5}$'
    or coalesce(p_payload->'report'->>'amount','')!~'^[1-9][0-9]{0,9}$'
    or (p_payload->'report'->>'amount')::bigint>2147483647
