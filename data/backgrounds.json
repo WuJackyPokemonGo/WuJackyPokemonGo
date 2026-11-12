@@ -6111,7 +6111,8 @@
           "name_en": "Explorer Hat Eevee",
           "name_zh": "伊布（探險帽）",
           "variant_id": "eevee-may-2023",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_status": "unconfirmed"
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -6122,8 +6123,8 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "持票參與雪梨城市狩獵集章，每章可遇見一隻探險帽伊布，每日最多八次。當地背景的實際發放途徑仍待確認，包括集章及開場特殊調查是否附背景。八種進化款由附背景的探險帽伊布進化取得。",
+      "method_en": "Ticket holders could encounter one Explorer Hat Eevee per City Safari stamp in Sydney, up to eight per day. The source of the Location Background remains unverified, including whether it was available from stamp rewards or the opening Special Research. The eight Evolutions inherit it from an Explorer Hat Eevee with the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2025",
@@ -6131,7 +6132,9 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2025-sydney",
-        "https://www.dittobase.com/pokemon-go/backgrounds"
+        "https://www.dittobase.com/pokemon-go/backgrounds",
+        "https://leekduck.com/events/pokemon-go-city-safari-sydney-2025/",
+        "https://www.serebii.net/pokemongo/reallifeevents/citysafari-sydney.shtml"
       ],
       "evolved_pokemon": [
         {
@@ -6191,7 +6194,7 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-10-23",
+      "checked_on": "2026-11-12",
       "start_date": "2025-12-13",
       "end_date": "2025-12-14",
       "region_en": "Australia",
@@ -6315,7 +6318,8 @@
           "name_en": "Explorer Hat Eevee",
           "name_zh": "伊布（探險帽）",
           "variant_id": "eevee-may-2023",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_status": "unconfirmed"
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -6326,8 +6330,8 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "持票參與布宜諾斯艾利斯城市狩獵集章，每章可遇見一隻探險帽伊布，每日最多八次。當地背景的實際發放途徑仍待確認，包括集章及開場特殊調查是否附背景。八種進化款由附背景的探險帽伊布進化取得。",
+      "method_en": "Ticket holders could encounter one Explorer Hat Eevee per City Safari stamp in Buenos Aires, up to eight per day. The source of the Location Background remains unverified, including whether it was available from stamp rewards or the opening Special Research. The eight Evolutions inherit it from an Explorer Hat Eevee with the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2025",
@@ -6335,7 +6339,9 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2025-buenos-aires",
-        "https://www.dittobase.com/pokemon-go/backgrounds"
+        "https://www.dittobase.com/pokemon-go/backgrounds",
+        "https://leekduck.com/events/pokemon-go-city-safari-buenos-aires-2025/",
+        "https://www.infobae.com/tecno/2025/12/02/pokemon-go-city-safari-llega-a-buenos-aires-puntos-de-encuentro-desafios-y-actividades-presenciales/"
       ],
       "evolved_pokemon": [
         {
@@ -6395,7 +6401,7 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-10-23",
+      "checked_on": "2026-11-12",
       "start_date": "2025-12-13",
       "end_date": "2025-12-14",
       "region_en": "Argentina",
@@ -8740,7 +8746,10 @@
         "https://pokemongo.com/gotour/tainan/gameplay",
         "https://pokemongo.com/gotour/tainan/mega-night"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-12：Serebii 列好啦魷，Dittobase 列烏賊王。官方玩法頁將好啦魷列為野外遭遇，地點背景的公告取得途徑為現場團體戰。好啦魷本身的背卡仍缺可核實證據，暫不加入名單。",
+        "2026-11-12: Serebii lists Inkay and Dittobase lists Malamar. The official gameplay page lists Inkay as a wild encounter and describes in-person raids as the way to obtain the Location Background. Inkay remains unverified and is omitted from the eligible list."
+      ],
       "related_product_ids": [],
       "method_zh": "持票當日／城市加購日的現場團體戰（含超級團體戰），成功捕捉後有機會附城市背景；Mega Night 有另行票券與時段。",
       "method_en": "Chance from in-person raids during ticketed or city add-on days. Mega Night has separate admission and hours.",
@@ -8915,7 +8924,10 @@
         "https://pokemongo.com/gotour/losangeles/gameplay",
         "https://pokemongo.com/gotour/losangeles/mega-night"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-12：Serebii 列好啦魷，Dittobase 列烏賊王。官方玩法頁將好啦魷列為野外遭遇，地點背景的公告取得途徑為現場團體戰。好啦魷本身的背卡仍缺可核實證據，暫不加入名單。",
+        "2026-11-12: Serebii lists Inkay and Dittobase lists Malamar. The official gameplay page lists Inkay as a wild encounter and describes in-person raids as the way to obtain the Location Background. Inkay remains unverified and is omitted from the eligible list."
+      ],
       "related_product_ids": [],
       "method_zh": "持票當日／城市加購日的現場團體戰（含超級團體戰），成功捕捉後有機會附城市背景；Mega Night 有另行票券與時段。",
       "method_en": "Chance from in-person raids during ticketed or city add-on days. Mega Night has separate admission and hours.",
