@@ -61,3 +61,12 @@ Nintendo Wire 的同期攻略列出會場團體戰及田野調查皆有機會給
 
 - **BG-0240 淚眼蜥**：站長回報持有極巨化淚眼蜥實物圖。商品格式稽核已記錄同期玩家來源，日本 Yahoo 即時搜尋另索引到極巨化淚眼蜥附背景的玩家文字。官方 7/4 社群日公告確認年度背景，但未列極巨對戰途徑。圖鑑僅按玩家回報補述本款極巨對戰，完整時段、機率與遠距條件仍待核實。X 原帖本輪無法直接開啟。 [商品格式稽核](INVENTORY-FORMAT-CHECKLIST-2026-10-29.md) · [官方公告](https://pokemongo.com/en/news/communityday-july-2026-sobble) · [玩家原帖線索](https://x.com/Zeni_sun/status/2073272541985243599)
 - **BG-0278 亡靈節花冠卡拉卡拉**：Leek Duck 的火箭隊陣容列克里夫首發暗影卡拉卡拉。墨西哥官方亡靈節公告列花冠卡拉卡拉的特殊背景途徑，但沒有列火箭隊。仍缺同一隻個體同時具備花冠、暗影與該活動背卡的原始捕獲證據，該途徑維持待確認。 [火箭隊陣容](https://leekduck.com/rocket-lineups/) · [亡靈節官方公告](https://pokemongo.com/es-MX/news/dia-de-muertos-2026)
+
+### BG-0240 社群日分場取得途徑
+
+| 日期 | 查核結果 |
+| --- | --- |
+| 1/18 敲音猴 | 同期玩家原帖的搜尋索引及日本玩家紀錄均記載極巨對戰可出現附年度背卡的極巨化敲音猴；原 Reddit 頁本輪無法直接開啟，以玩家回報標示。 [Reddit](https://www.reddit.com/r/TheSilphRoad/comments/1qgn9vj/community_day_background_on_dynamax_grookey/) · [同期日本玩家](https://note.com/mocha_matsu/n/ne66776da5362) |
+| 2/1 六尾 | 查閱玩家原圖，畫面同時顯示火屬性、關都六尾外觀、暗影狀態及年度背卡。原圖沒有顯示捕獲日期或對戰過程，活動與火箭隊途徑由同場社群紀錄互核。阿羅拉暗影六尾的背卡仍待實拍。 [玩家原帖](https://www.reddit.com/r/TheSilphRoad/comments/1qu0kek/shadow_mons_are_cd_bg_eligible_good_to_remember/) · [原圖](https://i.redd.it/uxdqwd1m34hg1.png) · [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Background_(GO)) |
+| 3/14 炎兔兒、5/16 單首龍 | Bulbapedia 分別列極巨對戰與火箭隊手下。炎兔兒找到極巨對戰遭遇和其他背卡聲稱，單首龍找到已移除貼文的搜尋摘要。尚未核對同一個體的原始背卡實拍，保留為線索。 [極巨化炎兔兒玩家貼文](https://www.reddit.com/r/pokemongo/comments/1rurg9h/shiny_dynamax_scorbunny/) · [單首龍搜尋線索](https://www.reddit.com/r/TheSilphRoad/comments/1tensni/removed/) |
+| 6/20 涼脊龍、7/4 淚眼蜥、8/16 偷兒狐、9/12 圓陸鯊、10/10 索羅亞 | 五場官方公告逐場確認社群大使活動簽到限時調查有附背景的遭遇。11/21 駒刀小兵也有官方公告，圖鑑本來已列，仍為即將推出。 [6 月](https://pokemongo.com/en/news/communityday-june-2026-frigibax) · [7 月](https://pokemongo.com/en/news/communityday-july-2026-sobble) · [8 月](https://pokemongo.com/en/news/communityday-august-2026-nickit?hl=de) · [9 月](https://pokemongo.com/en/news/communitydayclassic-gible-september-2026?game_client=samsung) · [10 月](https://pokemongo.com/en/news/communityday-october-2026-zorua?hl=japm) · [11 月](https://pokemongo.com/en/news/communityday-november-2026-pawniard) |

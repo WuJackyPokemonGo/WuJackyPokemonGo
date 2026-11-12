@@ -24056,14 +24056,20 @@
           "name_en": "Grookey",
           "name_zh": "敲音猴",
           "variant_id": "grookey",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "1/18 社群日有玩家回報，極巨對戰捕捉的極巨化敲音猴可附年度特殊背景。確切時段、機率及遠距資格仍待核實。",
+          "method_en": "Players reported that Dynamax Grookey caught in Max Battles on January 18 Community Day could have the annual Special Background. Exact hours, odds and remote eligibility remain unverified.",
+          "method_evidence": "community-report"
         },
         {
           "dex": 37,
           "name_en": "Vulpix",
           "name_zh": "六尾",
           "variant_id": "vulpix",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "2/1 六尾社群日有玩家實拍，確認關都暗影六尾可附年度特殊背景，火箭隊途徑依玩家紀錄及社群名錄。機率及阿羅拉暗影形態仍待核實。",
+          "method_en": "A player screenshot from the February 1 Vulpix Community Day shows Shadow Kantonian Vulpix with the annual Special Background. The Team GO Rocket route is documented by player and community sources. Odds and Shadow Alolan Vulpix eligibility remain unverified.",
+          "method_evidence": "community-screenshot"
         },
         {
           "dex": 37,
@@ -24105,7 +24111,10 @@
           "name_en": "Frigibax",
           "name_zh": "涼脊龍",
           "variant_id": "frigibax",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "官方公告明列，6/20 於符合資格的社群大使活動簽到後，可領限時調查並遇見附年度特殊背景的涼脊龍。",
+          "method_en": "The official June 20 event announcement lists Community Ambassador check-in Timed Research encounters with Frigibax that has the annual Special Background.",
+          "method_evidence": "official-event-announcement"
         },
         {
           "dex": 816,
@@ -24113,24 +24122,33 @@
           "name_zh": "淚眼蜥",
           "variant_id": "sobble",
           "acquisition": "encounter",
-          "method_zh": "2026/7/4 淚眼蜥社群日有玩家回報，極巨對戰捕捉的極巨化淚眼蜥可附年度特殊背景。此途徑為玩家回報，適用時段與機率未核實。",
-          "method_en": "Player reports from the July 4, 2026 Sobble Community Day indicate that Dynamax Sobble caught from Max Battles could have the annual Special Background. The exact hours and odds are unverified.",
-          "method_evidence": "owner-and-community-report"
+          "method_zh": "2026/7/4 淚眼蜥社群日有玩家回報，極巨對戰捕捉的極巨化淚眼蜥可附年度特殊背景。此途徑為玩家回報，適用時段與機率未核實。 官方公告明列，7/4 於符合資格的社群大使活動簽到後，可領限時調查並遇見附年度特殊背景的淚眼蜥。",
+          "method_en": "Player reports from the July 4, 2026 Sobble Community Day indicate that Dynamax Sobble caught from Max Battles could have the annual Special Background. The exact hours and odds are unverified. The official July 4 event announcement lists Community Ambassador check-in Timed Research encounters with Sobble that has the annual Special Background.",
+          "method_evidence": "official-and-community-report"
         },
         {
           "dex": 827,
           "name_en": "Nickit",
-          "name_zh": "偷兒狐"
+          "name_zh": "偷兒狐",
+          "method_zh": "官方公告明列，8/16 於符合資格的社群大使活動簽到後，可領限時調查並遇見附年度特殊背景的偷兒狐。",
+          "method_en": "The official August 16 event announcement lists Community Ambassador check-in Timed Research encounters with Nickit that has the annual Special Background.",
+          "method_evidence": "official-event-announcement"
         },
         {
           "dex": 443,
           "name_en": "Gible",
-          "name_zh": "圓陸鯊"
+          "name_zh": "圓陸鯊",
+          "method_zh": "官方公告明列，9/12 於符合資格的社群大使活動簽到後，可領限時調查並遇見附年度特殊背景的圓陸鯊。",
+          "method_en": "The official September 12 event announcement lists Community Ambassador check-in Timed Research encounters with Gible that has the annual Special Background.",
+          "method_evidence": "official-event-announcement"
         },
         {
           "dex": 570,
           "name_en": "Zorua",
-          "name_zh": "索羅亞"
+          "name_zh": "索羅亞",
+          "method_zh": "官方公告明列，10/10 於符合資格的社群大使活動簽到後，可領限時調查並遇見附年度特殊背景的索羅亞。",
+          "method_en": "The official October 10 event announcement lists Community Ambassador check-in Timed Research encounters with Zorua that has the annual Special Background.",
+          "method_evidence": "official-event-announcement"
         },
         {
           "dex": 624,
@@ -24153,7 +24171,11 @@
         "https://pokemongo.com/en/news/communityday-july-2026-sobble",
         "https://pokemongo.com/en/news/communityday-october-2026-zorua",
         "https://pokemongo.com/news/communitydayclassic-piplup-jan-2026",
-        "https://pokemongo.com/news/communityday-november-2026-pawniard"
+        "https://pokemongo.com/news/communityday-november-2026-pawniard",
+        "https://pokemongo.com/news/202601_communityday-february-2026-vulpix",
+        "https://pokemongo.com/news/communityday-june-2026-frigibax",
+        "https://pokemongo.com/en/news/communityday-august-2026-nickit?hl=de",
+        "https://pokemongo.com/news/communitydayclassic-gible-september-2026?game_client=android&hl=en"
       ],
       "notes": [
         "年度背景有不同動畫畫格／素材名稱；目前合併保留為一組，不因素材筆數重複計算。",
@@ -24172,7 +24194,11 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/sb-community-days-2026",
         "https://x.com/Zeni_sun/status/2073272541985243599",
-        "https://x.com/makonga1882/status/2073279347604271530"
+        "https://x.com/makonga1882/status/2073279347604271530",
+        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
+        "https://www.reddit.com/r/TheSilphRoad/comments/1qgn9vj/community_day_background_on_dynamax_grookey/",
+        "https://note.com/mocha_matsu/n/ne66776da5362",
+        "https://www.reddit.com/r/TheSilphRoad/comments/1qu0kek/shadow_mons_are_cd_bg_eligible_good_to_remember/"
       ],
       "evolved_pokemon": [
         {
@@ -24344,7 +24370,7 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-10-29",
+      "checked_on": "2026-11-12",
       "region_en": "Multiple regions",
       "region_zh": "多地／全球活動",
       "verification_scope": "background-and-eligibility",
