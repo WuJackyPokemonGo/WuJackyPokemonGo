@@ -31,3 +31,12 @@ BG-0016。9DB 當屆活動紀錄列出世界賽皮卡丘為會場地點背景團
 | BG-0016 檀香山世界賽 | 官方公告可確認賽事 8/16–18 與全球遊戲慶祝 8/16–20。Dittobase 的檀香山背景頁列活動 8/16–18。未找到可同時辨識地點背景、檀香山捕獲地點與 8/19 或 8/20 捕獲日期的原始畫面。 | [官方公告](https://pokemongo.com/news/world-championships-event-2024) · [Dittobase](https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2024-honolulu) · [9DB 同期背景紀錄](https://9db.jp/pokemongo/data/20088) |
 
 本輪只補寫 BG-0009 已有證據支持的取得資格。圖鑑提交 `d9a20dc3b6595a8567d6afba7f9927f2a4470474`。兩筆捕獲日期仍待驗證。
+
+### 洛杉磯 2/16 當日實拍
+
+上表的「實際發放仍待確認」已由後續找到的兩張遊戲截圖更新。起源形態帕路奇亞（CP 2299）與起源形態帝牙盧卡（CP 2275）均可清楚看到洛杉磯天際線背景。原帖存檔時間換算為洛杉磯當地 2024/2/16 09:53 與 10:24（PST）。這兩張照片顯示寶可夢詳情上半部，證實最晚當天上午已有兩種起源形態附背景的玩家實例。畫面未顯示遊戲內捕獲日期與團體戰過程，無法由此判定各自的道館、票券或參戰方式。城市加購的資格另由上列當年公告引文支持。普通形態仍依原有名錄證據，這兩張只支持起源形態。
+
+- 帕路奇亞 [原帖](https://www.reddit.com/r/TheSilphRoad/comments/1asewso/shiny_palkia_altered_form_live/) · [截圖](https://i.redd.it/m4l98ax1kzic1.jpeg) · [發文時間存檔](https://arctic-shift.photon-reddit.com/api/posts/ids?ids=1asewso)
+- 帝牙盧卡 [原帖](https://www.reddit.com/r/TheSilphRoad/comments/1asfomj/shiny_dialga_origin_form_live/) · [截圖](https://i.redd.it/9g3l94dmpzic1.jpeg) · [發文時間存檔](https://arctic-shift.photon-reddit.com/api/posts/ids?ids=1asfomj)
+
+更新 BG-0009 的日期說明並補列兩個原帖。圖鑑提交 `00fcb0fbc8fdd205c6a81f8d57f4b523ba01cf05`，資料 blob `27d7f1d8f7293464e6f4278600e937d8f38243b8`。檀香山 8/19–20 是否仍發放地點背景仍待查證。
