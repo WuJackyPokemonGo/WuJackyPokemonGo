@@ -22,3 +22,12 @@ BG-0009 神奧巡迴賽洛杉磯的日期差異仍需捕獲畫面。Dittobase �
 ## 檀香山追加查證
 
 BG-0016。9DB 當屆活動紀錄列出世界賽皮卡丘為會場地點背景團體戰的對象，並附遊戲畫面。該畫面沒有顯示捕獲日期。8/20 的留言提及從調查取得，但未同時交代背景與檀香山當地捕獲時間，無法支持 8/19–20 的地點背景發放。另有會場尋寶限時調查的任務紀錄，可確認皮卡丘遭遇；背景資格仍須比對實際獎勵畫面。圖鑑的 8/20 仍保留為既有資料，這輪未更改。 [9DB 當屆活動紀錄](https://9db.jp/pokemongo/data/20088) · [背景畫面](https://cdn08.net/pokemongo/wiki/img66bffb6aae3dd.jpg) · [會場限時調查](https://9db.jp/pokemongo/data/20181)
+
+## 洛杉磯城市加購與檀香山日期複查
+
+| 背景 | 新查證及證據界線 | 原始線索 |
+| --- | --- | --- |
+| BG-0009 洛杉磯神奧巡迴賽 | 2024/1/24 的同期轉引保留當年活動頁的資格文字。玩家於有效票券時段參加起源形態帝牙盧卡或帕路奇亞團體戰，有機會取得洛杉磯地點背景，城市加購也適用。同期活動指南列明可加購週五 2/16 的城市體驗。週五直播的縮圖可辨認起源形態團體戰與遭遇，抽格未能辨認當天捕獲的地點背景，實際發放仍待確認。原活動網址現已改為後續活動頁。 | [同期公告引文](https://www.reddit.com/r/TheSilphRoad/comments/19e92td) · [加購指南](https://pokemongohub.net/post/news/pokemon-go-tour-sinnoh-los-angeles/) · [週五直播](https://www.youtube.com/watch?v=u_fT3CW9y0M) |
+| BG-0016 檀香山世界賽 | 官方公告可確認賽事 8/16–18 與全球遊戲慶祝 8/16–20。Dittobase 的檀香山背景頁列活動 8/16–18。未找到可同時辨識地點背景、檀香山捕獲地點與 8/19 或 8/20 捕獲日期的原始畫面。 | [官方公告](https://pokemongo.com/news/world-championships-event-2024) · [Dittobase](https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2024-honolulu) · [9DB 同期背景紀錄](https://9db.jp/pokemongo/data/20088) |
+
+本輪只補寫 BG-0009 已有證據支持的取得資格。圖鑑提交 `d9a20dc3b6595a8567d6afba7f9927f2a4470474`。兩筆捕獲日期仍待驗證。
