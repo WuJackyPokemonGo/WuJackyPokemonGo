@@ -3393,7 +3393,8 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2025-paris",
         "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
-        "https://www.serebii.net/pokemongo/reallifeevents/megaevolutionparis.shtml"
+        "https://www.serebii.net/pokemongo/reallifeevents/megaevolutionparis.shtml",
+        "https://www.reddit.com/r/TheSilphRoad/comments/1l9pp0q/confirmed_that_paris_bg_is_out_for_inteleon_and/"
       ],
       "evolved_pokemon": [
         {
@@ -3430,8 +3431,8 @@
       "region_zh": "法國",
       "verification_scope": "background-and-eligibility",
       "method_status": "reviewed",
-      "date_note_zh": "6月主活動與9月集章分開記錄；小火龍的首次可得日列在該款下。",
-      "date_note_en": "June event and September rally are separate releases; Charmander has its own availability date.",
+      "date_note_zh": "6/13–15 為公園主活動。同期玩家 6/12 已回報城市加購取得巴黎背景；9/13 起的小火龍集章另記於該款。",
+      "date_note_en": "The park event ran June 13–15. A contemporaneous June 12 player report documents Paris backgrounds during Citywide Gameplay. The September stamp rally is listed separately under Charmander.",
       "start_date": "2025-06-12",
       "end_date": "2025-06-15",
       "reference_ids": [
@@ -27353,13 +27354,13 @@
         "9521886f-7266-4c0c-999a-5de41eb8cbf0",
         "4ff7af91-6ddf-4f9d-9132-7d8482d174db"
       ],
-      "method_zh": "指定亞洲地區活動時段的皮皮遭遇有機會帶特殊背景。",
-      "method_en": "Clefairy encountered during the event’s designated windows in participating Asian regions may have the Special Background.",
+      "method_zh": "活動期間，指定亞洲地區每天的「月光時刻」野外皮皮有機會附特殊背景。兩段限時調查各明列一次附背景的皮皮遭遇。第一段於 9/29 到期，完成後可解鎖第二段，須在領取第二段後三天內完成並領獎。",
+      "method_en": "Wild Clefairy could have the Special Background during Moonlight O’Clock in participating Asian regions. Each of the two Timed Research sets awarded an encounter with a background Clefairy. The first expired September 29 and unlocked the second, whose rewards had to be claimed within three days of receiving it.",
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2026",
       "year_verified": true,
-      "checked_on": "2026-10-24",
+      "checked_on": "2026-11-12",
       "region_en": "Multiple regions",
       "region_zh": "多地／全球活動",
       "start_date": "2026-09-23",
