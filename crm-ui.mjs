@@ -1,5 +1,5 @@
 // 後台「客人名單」裡的 Threads CRM 區塊：匯入匯出檔、待追蹤、依名稱或寶可夢搜尋客人、看詢問紀錄。
-import {crmSummary,unconvertedCustomers} from './crm-insights.mjs';
+import {crmSummary,unconvertedCustomers,purchaseDaysByCustomer,taipeiDay} from './crm-insights.mjs';
 import {parseThreadsExport,readThreadsZip,sha256Hex,chunk,CATEGORY_LABELS,TAG_LABELS} from './crm-threads-import.mjs';
 const $=id=>document.getElementById(id);
 function el(tag,text,cls){const n=document.createElement(tag);if(text!=null)n.textContent=text;if(cls)n.className=cls;return n}
@@ -40,7 +40,7 @@ export function initCrmUI({client,run,notify}){
  const ucDays=el('select');ucDays.id='crmUnconvertedDays';ucDays.append(new Option('近 7 天','7'),new Option('近 30 天','30',true,true),new Option('近 90 天','90'));
  const ucHead=el('div',null,'bar');const ucLabel=el('label','範圍');ucLabel.append(ucDays);ucHead.append(el('h4','問過沒買'),ucLabel);
  const ucBox=el('div');ucBox.id='crmUnconverted';
- periodSel.onchange=()=>render();ucDays.onchange=()=>render();
+ periodSel.onchange=()=>renderInsights();ucDays.onchange=()=>renderInsights();
  const fuBox=el('div');fuBox.id='crmFollowups';const summary=el('p',null,'muted');summary.id='crmSummary';const list=el('div');list.id='crmList';
  host.append(head,intro,report,sumHead,sumBox,ucHead,el('p','問過價格、庫存、想買或付款方式，但之後沒有成交紀錄的客人（後台訂單、匯入的歷史購買、疑似付款都算成交）。昨天以前的詢問才列入。按「建立待追蹤」或「不用追」後就不再出現；之後又來詢問會重新列出。','muted'),ucBox,el('h4','待追蹤'),fuBox,filters,summary,list);
  search.oninput=()=>{shown=PAGE;render()};tagSel.onchange=()=>{shown=PAGE;render()};
@@ -70,39 +70,46 @@ export function initCrmUI({client,run,notify}){
  async function load(force=false){if(loaded&&!force)return;
   const [identities,tags,inquiries,fu]=await Promise.all([
    fetchAll(()=>client.from('crm_identities').select('id,customer_id,display_name,folder,first_seen_at,last_seen_at,message_count,customer_message_count,last_sender,summary,narrative').order('last_seen_at',{ascending:false})),
-   fetchAll(()=>client.from('crm_tags').select('customer_id,tag,source')),
+   fetchAll(()=>client.from('crm_tags').select('customer_id,tag,source,evidence')),
    fetchAll(()=>client.from('crm_inquiries').select('customer_id,occurred_at,category,terms,product_ids,excerpt,evidence').order('occurred_at',{ascending:false})),
    fetchAll(()=>client.from('crm_followups').select('id,customer_id,reason,excerpt,status,due_on,created_at').eq('status','open').order('created_at',{ascending:false}))]);
   const [handled,profiles,orders,history,products]=await Promise.all([
    fetchAll(()=>client.from('crm_followups').select('source_key,status').like('source_key','unconverted:%')),
    fetchAll(()=>client.from('customer_profiles').select('id,alias,other_aliases')),
-   fetchAll(()=>client.from('orders').select('id,status,customer_alias,public_subtotal_twd,private_adjustments_twd,refund_amount_twd,received_at,created_at')),
+   fetchAll(()=>client.from('orders').select('id,status,customer_alias,public_subtotal_twd,private_adjustments_twd,received_amount_twd,refund_amount_twd,received_at,created_at')),
    fetchAll(()=>client.from('customer_history_purchases').select('id,customer_alias,purchased_on,amount_twd')),
    fetchAll(()=>client.from('products').select('id,name:name_zh'))]);
-  extra={identities,inquiries,tags,handled,profiles,orders,history,products};
-  rows=crmRows({identities,tags,inquiries});followups=fu;loaded=true;render();
+  const dayed=inquiries.map(i=>({...i,day:taipeiDay(i.occurred_at)}));
+  extra={identities,inquiries:dayed,tags,handled,profiles,orders,history,products,purchases:purchaseDaysByCustomer({profiles,orders,history,tags})};
+  rows=crmRows({identities,tags,inquiries});followups=fu;loaded=true;renderInsights();render();
  }
  function renderInsights(){
   const s=crmSummary({...extra,followups,period:periodSel.value});sumBox.replaceChildren();
   const money=n=>'NT$ '+Number(n).toLocaleString('zh-TW');
   const t=el('table');for(const [k,v] of [['期間',s.range.from===s.range.to?s.range.from:s.range.from+' → '+s.range.to],['新詢問',`${s.inquiries} 筆（${s.customersAsking} 位客人）`],['詢問類型',Object.entries(s.byCategory).filter(([,n])=>n).map(([k,n])=>(CATEGORY_LABELS[k]??k)+' '+n).join('、')||'—'],['新客人',`${s.newCustomers} 位`],['想買的客人',`${s.intentCustomers} 位（已成交 ${s.convertedCustomers}）`],['成交（後台訂單）',`${s.sales.orders} 筆・${money(s.sales.orderTotal)}`],['成交（匯入的歷史購買）',`${s.sales.history} 筆・${money(s.sales.historyTotal)}`],['待追蹤',`${s.openFollowups} 件${s.overdueFollowups?`（逾期 ${s.overdueFollowups} 件）`:''}`],['最常被問',s.topItems.map(x=>`${x.name}×${x.count}`).join('、')||'—']]){const tr=el('tr');tr.append(el('th',k),el('td',String(v)));t.append(tr)}
   const w=el('div',null,'table-scroll');w.append(t);sumBox.append(w);
+  const amb=extra.purchases?.ambiguousAliases??[];if(amb.length)sumBox.append(el('p',`有 ${amb.length} 個別名同時屬於多位客人，這些別名的成交暫不歸戶，請到客人資料修正：${amb.slice(0,10).join('、')}`,'notice error'));
   const list3=unconvertedCustomers({...extra,followups:extra.handled,days:Number(ucDays.value)});ucBox.replaceChildren();
   if(!list3.length){ucBox.append(el('p','目前沒有問過沒買的客人。','muted'));return}
   for(const u of list3.slice(0,50)){const c=el('article',null,'product');
-   c.append(el('strong',`${u.name}${u.abandonTag?'（疑似棄單）':''}`),el('small',`最後詢問 ${u.lastDay}（${u.daysSince} 天前）・${u.count} 筆・${u.categories.join('／')}${u.bought?'・以前買過':''}`));
+   c.append(el('strong',`${u.name}${u.abandonTag?'（疑似棄單）':''}`),el('small',`最後詢問 ${u.lastDay}（${u.daysSince} 天前）・${u.count} 筆・${u.categories.join('／')}${u.bought?'・以前買過':''}${u.paidUnknown?'・有疑似付款紀錄（時間不明，請確認）':''}`));
    if(u.items.length)c.append(el('p','問過：'+u.items.join('、'),'order-detail-line'));if(u.excerpt)c.append(el('small','「'+u.excerpt+'」','muted'));
    const a=el('div',null,'actions');a.append(btn('建立待追蹤',()=>run(()=>markUnconverted(u,'open'))),btn('不用追',()=>run(()=>markUnconverted(u,'dismissed'))));c.append(a);ucBox.append(c)}
   if(list3.length>50)ucBox.append(el('p',`另有 ${list3.length-50} 位，先處理上面的。`,'muted'));
  }
  async function markUnconverted(u,status){
   const row={customer_id:u.customer_id,reason:'問過沒買：'+(u.items.join('、')||u.categories.join('／')),excerpt:(u.excerpt??'').slice(0,120),status,source_key:u.key,...(status==='dismissed'?{resolved_at:new Date().toISOString()}:{due_on:new Date().toLocaleDateString('sv-SE',{timeZone:'Asia/Taipei'})})};
-  const saved=checked(await client.from('crm_followups').upsert(row,{onConflict:'source_key',ignoreDuplicates:true}).select('id,customer_id,reason,excerpt,status,due_on,created_at'));
-  extra.handled=[...extra.handled,{source_key:u.key,status}];if(status==='open')followups=[...saved.filter(f=>f.status==='open'),...followups];
-  notify(status==='open'?`已把 ${u.name} 加入待追蹤。`:`已標記 ${u.name} 不用追。`);render();
+  const cols='id,customer_id,reason,excerpt,status,due_on,created_at';
+  let saved=checked(await client.from('crm_followups').upsert(row,{onConflict:'source_key',ignoreDuplicates:true}).select(cols));
+  let already=false;
+  if(!saved.length){already=true;saved=checked(await client.from('crm_followups').select(cols).eq('source_key',u.key))}
+  const actual=saved[0]?.status??status;
+  extra.handled=[...extra.handled,{source_key:u.key,status:actual}];
+  if(actual==='open'&&!followups.some(f=>f.id===saved[0]?.id))followups=[...saved.filter(f=>f.status==='open'),...followups];
+  const label={open:'在待追蹤裡',done:'已處理',dismissed:'標為不用追'}[actual]??actual;
+  notify(already?`${u.name} 先前已${label}（可能是在其他分頁操作），已更新畫面。`:(actual==='open'?`已把 ${u.name} 加入待追蹤。`:`已標記 ${u.name} 不用追。`));renderInsights();render();
  }
  function render(){
-  renderInsights();
   const byCustomer=new Map(rows.map(r=>[r.customer_id,r]));
   fuBox.replaceChildren();if(!followups.length)fuBox.append(el('p','目前沒有待追蹤事項。','muted'));
   for(const f of followups){const r=byCustomer.get(f.customer_id);const card=el('article',null,'product');
@@ -123,6 +130,6 @@ export function initCrmUI({client,run,notify}){
     d.append(el('p',`${day(i.occurred_at)}｜${CATEGORY_LABELS[i.category]??i.category}${(i.terms??[]).length?'｜'+i.terms.join('、'):''}｜${i.excerpt}${(ev.cues??[]).length?'｜線索：'+ev.cues.join('、'):''}${marks.length?'｜'+marks.join('、'):''}`,'order-detail-line'))}
    if(r.inquiries.length>30)d.append(el('p',`另有 ${r.inquiries.length-30} 筆較早的紀錄。`,'muted'));d.append(el('small','原始對話位置：'+r.folder,'muted'));c.append(d)});
   const a=el('div',null,'actions');a.append(more);c.append(a);return c}
- async function resolve(f,status){checked(await client.from('crm_followups').update({status,resolved_at:new Date().toISOString()}).eq('id',f.id));followups=followups.filter(x=>x.id!==f.id);render()}
+ async function resolve(f,status){checked(await client.from('crm_followups').update({status,resolved_at:new Date().toISOString()}).eq('id',f.id));followups=followups.filter(x=>x.id!==f.id);renderInsights();render()}
  return {load};
 }
