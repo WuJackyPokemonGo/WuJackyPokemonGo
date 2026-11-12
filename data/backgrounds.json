@@ -1038,11 +1038,13 @@
       "background_id": "BG-0009",
       "name_zh": "GO Tour 洛杉磯",
       "release_state": "released",
-      "official_sources": [],
+      "official_sources": [
+        "https://pokemongo.com/en/news/gotour2024-losangeles-update"
+      ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "於活動限定團體戰捕捉對應寶可夢，有機會附上該城市背景；現場活動票券與加購適用時段依當年規則。",
-      "method_en": "Chance from event raids for the listed species; event-ticket and add-on hours follow that year’s rules.",
+      "method_zh": "於活動限定團體戰捕捉對應寶可夢，有機會附上該城市背景；現場活動票券與加購適用時段依當年規則。 當年的公告引文列明，有效票券時段（含城市加購）參加起源形態帝牙盧卡或帕路奇亞團體戰，有機會取得洛杉磯地點背景。",
+      "method_en": "Chance from event raids for the listed species; event-ticket and add-on hours follow that year’s rules. A contemporaneous quotation of the event announcement includes Citywide Gameplay add-on holders in the chance to receive the Los Angeles Location Background from Origin Forme Dialga or Palkia raids during ticketed hours.",
       "series": "GO Tour",
       "series_zh": "GO Tour",
       "year": "2024",
@@ -1052,10 +1054,14 @@
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-tour-2024-los-angeles",
         "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
         "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_Tour%3A_Sinnoh_-_Los_Angeles",
-        "https://leekduck.com/events/pokemon-go-tour-sinnoh-los-angeles/"
+        "https://leekduck.com/events/pokemon-go-tour-sinnoh-los-angeles/",
+        "https://www.reddit.com/r/TheSilphRoad/comments/19e92td",
+        "https://pokemongohub.net/post/news/pokemon-go-tour-sinnoh-los-angeles/",
+        "https://www.reddit.com/r/TheSilphRoad/comments/1asewso/shiny_palkia_altered_form_live/",
+        "https://www.reddit.com/r/TheSilphRoad/comments/1asfomj/shiny_dialga_origin_form_live/"
       ],
       "evolved_pokemon": [],
-      "checked_on": "2026-10-24",
+      "checked_on": "2026-11-12",
       "region_en": "United States",
       "region_zh": "美國",
       "verification_scope": "background-and-eligibility",
@@ -1065,8 +1071,8 @@
       "reference_review": "images-compared-2026-10-24",
       "start_date": "2024-02-16",
       "end_date": "2024-02-18",
-      "date_note_zh": "2/16為城市加購體驗，公園票券主活動為2/17–18。",
-      "date_note_en": "February 16 is city add-on gameplay; the park event is February 17–18."
+      "date_note_zh": "2/16 為城市加購體驗，公園票券主活動為 2/17–18。2/16 洛杉磯當地上午發布的兩張玩家實拍，分別顯示起源形態帝牙盧卡及起源形態帕路奇亞附洛杉磯地點背景。",
+      "date_note_en": "February 16 was Citywide Gameplay add-on day, and the ticketed park event ran February 17–18. Two player screenshots posted on the morning of February 16, Los Angeles time, show the Location Background on Origin Forme Dialga and Origin Forme Palkia, respectively."
     },
     {
       "name_en": "Air Adventures Bali",
@@ -1094,18 +1100,21 @@
       "background_id": "BG-0010",
       "name_zh": "飛翔皮卡丘計畫 峇里島",
       "release_state": "released",
-      "official_sources": [],
+      "official_sources": [
+        "https://pokemongolive.com/events/indonesia-journey-bali"
+      ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "活動持票訓練家於指定現場團體戰捕獲拉帝亞斯或拉帝歐斯時，有機會獲得當地背景。",
-      "method_en": "Ticket holders have a chance to receive the local background when catching Latias or Latios from eligible in-person event raids.",
+      "method_zh": "持有效活動票券於 2024/3/2–3 的票券時段，親自在峇里島參加超級團體戰，捕獲拉帝亞斯或拉帝歐斯後有機會附峇里島地點背景。",
+      "method_en": "During the March 2–3, 2024 event, Trainers with an active ticket could catch Latias or Latios after an in-person Mega Raid during their ticketed session for a chance at the Bali Location Background.",
       "series": "Air Adventures",
       "series_zh": "飛翔皮卡丘計畫",
       "year": "2024",
       "year_verified": true,
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
-        "https://www.dittobase.com/pokemon-go/backgrounds/lc-air-adv-2024-bali"
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-air-adv-2024-bali",
+        "https://www.pocketmonsters.net/news/7253"
       ],
       "evolved_pokemon": [],
       "start_date": "2024-03-02",
@@ -1253,15 +1262,17 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "活動持票訓練家於指定現場團體戰捕獲拉帝亞斯或拉帝歐斯時，有機會獲得當地背景。",
-      "method_en": "Ticket holders have a chance to receive the local background when catching Latias or Latios from eligible in-person event raids.",
+      "method_zh": "持有效活動票券於 2024/5/11–12 的票券時段，親自在泗水參加超級團體戰，捕獲拉帝亞斯或拉帝歐斯後有機會附泗水地點背景。",
+      "method_en": "During the May 11–12, 2024 event, Trainers with an active ticket could catch Latias or Latios after an in-person Mega Raid during their ticketed session for a chance at the Surabaya Location Background.",
       "series": "Air Adventures",
       "series_zh": "飛翔皮卡丘計畫",
       "year": "2024",
       "year_verified": true,
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
-        "https://www.dittobase.com/pokemon-go/backgrounds/lc-air-adv-2024-surabaya"
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-air-adv-2024-surabaya",
+        "https://pgserviceshop.com/pikachu-indonesia-journey-guide/",
+        "https://pocketmonsters.net/index.php/news/7420"
       ],
       "evolved_pokemon": [],
       "start_date": "2024-05-11",
@@ -1638,13 +1649,15 @@
       "background_id": "BG-0016",
       "name_zh": "2024 寶可夢世界錦標賽",
       "release_state": "released",
-      "official_sources": [],
+      "official_sources": [
+        "https://pokemongo.com/news/world-championships-event-2024"
+      ],
       "notes": [],
       "related_product_ids": [
         "535ad1ce-37a1-4db7-af62-91fc503390af"
       ],
-      "method_zh": "檀香山現場團體戰、田野與限時調查有機會取得世界賽皮卡丘地標背景；無需世界賽票券。",
-      "method_en": "Honolulu raids, Field Research and Timed Research could award the Worlds Pikachu background; no Worlds ticket required.",
+      "method_zh": "同期活動攻略與玩家紀錄顯示，檀香山會場的團體戰及指定田野調查有機會取得附地點背景的世界賽皮卡丘。限時調查、遠距團體戰的背景資格及是否需世界賽票券仍待確認。",
+      "method_en": "Contemporaneous guides and player reports indicate that raids and select Field Research at the Honolulu venue could award Worlds Pikachu with the Location Background. Background eligibility from Timed Research and Remote Raids, and Worlds ticket requirements, remain unverified.",
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2024",
@@ -1652,12 +1665,18 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2024-honolulu",
-        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
+        "https://9db.jp/pokemongo/data/20088",
+        "https://9db.jp/pokemongo/data/20181",
+        "https://nintendowire.com/guides/pokemon-go/season-of-shared-skies/2024-pokemon-world-championships-event/",
+        "https://www.reddit.com/r/TheSilphRoad/comments/1etyycw"
       ],
       "evolved_pokemon": [],
       "start_date": "2024-08-16",
       "end_date": "2024-08-20",
-      "checked_on": "2026-10-24",
+      "date_note_zh": "檀香山世界錦標賽為 8/16–18，全球遊戲慶祝活動為 8/16–20。8/19–20 是否仍可取得檀香山地點背景待確認。",
+      "date_note_en": "The Honolulu World Championships ran August 16–18. The global in-game celebration ran August 16–20. Availability of the Honolulu Location Background on August 19–20 is still pending verification.",
+      "checked_on": "2026-11-12",
       "region_en": "United States",
       "region_zh": "美國",
       "reference_ids": [
@@ -2482,8 +2501,8 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "2025/3/29–30 持票參加新加坡城市狩獵。活動特殊調查提供探險帽伊布，伊布探險隊限時調查透過轉指定補給站，最多可獲得 8 次附新加坡地點背景的探險帽伊布遭遇。八種進化款由帶背景的伊布進化取得。",
+      "method_en": "Attend City Safari: Singapore on March 29–30, 2025, with a ticket. Event Special Research awards explorer-hat Eevee. Spin designated PokéStops for Eevee Explorers Timed Research, which awards up to eight encounters with explorer-hat Eevee bearing the Singapore Location Background. Its eight Evolutions are obtained by evolving an Eevee with the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2025",
@@ -2491,7 +2510,9 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2025-singapore",
-        "https://www.dittobase.com/pokemon-go/backgrounds"
+        "https://www.dittobase.com/pokemon-go/backgrounds",
+        "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_City_Safari:_Singapore",
+        "https://pokemongohub.net/post/news/pokemon-go-city-safari-2025-singapore/"
       ],
       "evolved_pokemon": [
         {
@@ -2585,8 +2606,8 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "2025/3/29–30 持票參加孟買城市狩獵。活動特殊調查提供探險帽伊布，伊布探險隊限時調查透過轉指定補給站，最多可獲得 8 次附孟買地點背景的探險帽伊布遭遇。八種進化款由帶背景的伊布進化取得。",
+      "method_en": "Attend City Safari: Mumbai on March 29–30, 2025, with a ticket. Event Special Research awards explorer-hat Eevee. Spin designated PokéStops for Eevee Explorers Timed Research, which awards up to eight encounters with explorer-hat Eevee bearing the Mumbai Location Background. Its eight Evolutions are obtained by evolving an Eevee with the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2025",
@@ -2594,7 +2615,9 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2025-mumbai",
-        "https://www.dittobase.com/pokemon-go/backgrounds"
+        "https://www.dittobase.com/pokemon-go/backgrounds",
+        "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_City_Safari:_Mumbai",
+        "https://www.newsvoir.com/release/pokemon-go-to-host-india-apos-s-first-city-safari-in-mumbai-30572.html"
       ],
       "evolved_pokemon": [
         {
@@ -2688,8 +2711,8 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "2025/3/29–30 持票參加米蘭城市狩獵。活動特殊調查提供探險帽伊布，伊布探險隊限時調查透過轉指定補給站，最多可獲得 8 次附米蘭地點背景的探險帽伊布遭遇。八種進化款由帶背景的伊布進化取得。",
+      "method_en": "Attend City Safari: Milan on March 29–30, 2025, with a ticket. Event Special Research awards explorer-hat Eevee. Spin designated PokéStops for Eevee Explorers Timed Research, which awards up to eight encounters with explorer-hat Eevee bearing the Milan Location Background. Its eight Evolutions are obtained by evolving an Eevee with the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2025",
@@ -2697,7 +2720,9 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2025-milan",
-        "https://www.dittobase.com/pokemon-go/backgrounds"
+        "https://www.dittobase.com/pokemon-go/backgrounds",
+        "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_City_Safari:_Milan",
+        "https://pokemongohub.net/post/event/pokemon-go-city-safari-2025-milan-italy/"
       ],
       "evolved_pokemon": [
         {
@@ -2791,8 +2816,8 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "2025/3/29–30 持票參加聖地牙哥城市狩獵。活動特殊調查提供探險帽伊布，伊布探險隊限時調查透過轉指定補給站，最多可獲得 8 次附聖地牙哥地點背景的探險帽伊布遭遇。八種進化款由帶背景的伊布進化取得。",
+      "method_en": "Attend City Safari: Santiago on March 29–30, 2025, with a ticket. Event Special Research awards explorer-hat Eevee. Spin designated PokéStops for Eevee Explorers Timed Research, which awards up to eight encounters with explorer-hat Eevee bearing the Santiago Location Background. Its eight Evolutions are obtained by evolving an Eevee with the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2025",
@@ -2800,7 +2825,9 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2025-santiago",
-        "https://www.dittobase.com/pokemon-go/backgrounds"
+        "https://www.dittobase.com/pokemon-go/backgrounds",
+        "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_City_Safari:_Santiago",
+        "https://www.supergeek.cl/noticias/site/artic/20241218/pags-amp/20241218155348.html"
       ],
       "evolved_pokemon": [
         {
@@ -6084,7 +6111,8 @@
           "name_en": "Explorer Hat Eevee",
           "name_zh": "伊布（探險帽）",
           "variant_id": "eevee-may-2023",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_status": "unconfirmed"
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -6093,10 +6121,13 @@
       "name_zh": "城市狩獵 雪梨",
       "release_state": "released",
       "official_sources": [],
-      "notes": [],
+      "notes": [
+        "2026-11-12：官方同屆（同週末）邁阿密行前須知寫明「集章取代往屆城市狩獵的限時調查，獎勵相同」（https://pokemongo.com/en/news/city-safari-miami-know-before-you-go）；LeekDuck 活動前寫限時調查伊布附雪梨背景，但自註依往屆推測。Serebii、Dittobase 列探險帽伊布附背景，哪個管道必帶背景、開場特殊調查伊布是否附背景仍無官方或玩家實證。",
+        "2026-11-12: The same-weekend official Miami notice states the stamp rally replaced the Timed Research of earlier City Safaris with the same rewards; LeekDuck's pre-event note that Timed Research Eevee carry the Sydney background is marked as based on earlier events. Serebii and Dittobase list explorer-hat Eevee with the background; which route guarantees it, and whether the opening Special Research Eevee has it, remain unverified."
+      ],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "持票參與雪梨城市狩獵集章，每章可遇見一隻探險帽伊布，每日最多八次。當地背景的實際發放途徑仍待確認，包括集章及開場特殊調查是否附背景。八種進化款由附背景的探險帽伊布進化取得。",
+      "method_en": "Ticket holders could encounter one Explorer Hat Eevee per City Safari stamp in Sydney, up to eight per day. The source of the Location Background remains unverified, including whether it was available from stamp rewards or the opening Special Research. The eight Evolutions inherit it from an Explorer Hat Eevee with the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2025",
@@ -6104,7 +6135,9 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2025-sydney",
-        "https://www.dittobase.com/pokemon-go/backgrounds"
+        "https://www.dittobase.com/pokemon-go/backgrounds",
+        "https://leekduck.com/events/pokemon-go-city-safari-sydney-2025/",
+        "https://www.serebii.net/pokemongo/reallifeevents/citysafari-sydney.shtml"
       ],
       "evolved_pokemon": [
         {
@@ -6164,7 +6197,7 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-10-23",
+      "checked_on": "2026-11-12",
       "start_date": "2025-12-13",
       "end_date": "2025-12-14",
       "region_en": "Australia",
@@ -6288,7 +6321,8 @@
           "name_en": "Explorer Hat Eevee",
           "name_zh": "伊布（探險帽）",
           "variant_id": "eevee-may-2023",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_status": "unconfirmed"
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -6297,10 +6331,13 @@
       "name_zh": "城市狩獵 布宜諾斯艾利斯",
       "release_state": "released",
       "official_sources": [],
-      "notes": [],
+      "notes": [
+        "2026-11-12：官方同屆（同週末）邁阿密行前須知寫明「集章取代往屆城市狩獵的限時調查，獎勵相同」（https://pokemongo.com/en/news/city-safari-miami-know-before-you-go）；LeekDuck 活動前寫限時調查伊布附布宜諾斯艾利斯背景，但自註依往屆推測。Serebii、Dittobase 列探險帽伊布附背景，哪個管道必帶背景、開場特殊調查伊布是否附背景仍無官方或玩家實證。",
+        "2026-11-12: The same-weekend official Miami notice states the stamp rally replaced the Timed Research of earlier City Safaris with the same rewards; LeekDuck's pre-event note that Timed Research Eevee carry the Buenos Aires background is marked as based on earlier events. Serebii and Dittobase list explorer-hat Eevee with the background; which route guarantees it, and whether the opening Special Research Eevee has it, remain unverified."
+      ],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "持票參與布宜諾斯艾利斯城市狩獵集章，每章可遇見一隻探險帽伊布，每日最多八次。當地背景的實際發放途徑仍待確認，包括集章及開場特殊調查是否附背景。八種進化款由附背景的探險帽伊布進化取得。",
+      "method_en": "Ticket holders could encounter one Explorer Hat Eevee per City Safari stamp in Buenos Aires, up to eight per day. The source of the Location Background remains unverified, including whether it was available from stamp rewards or the opening Special Research. The eight Evolutions inherit it from an Explorer Hat Eevee with the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2025",
@@ -6308,7 +6345,9 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2025-buenos-aires",
-        "https://www.dittobase.com/pokemon-go/backgrounds"
+        "https://www.dittobase.com/pokemon-go/backgrounds",
+        "https://leekduck.com/events/pokemon-go-city-safari-buenos-aires-2025/",
+        "https://www.infobae.com/tecno/2025/12/02/pokemon-go-city-safari-llega-a-buenos-aires-puntos-de-encuentro-desafios-y-actividades-presenciales/"
       ],
       "evolved_pokemon": [
         {
@@ -6368,7 +6407,7 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-10-23",
+      "checked_on": "2026-11-12",
       "start_date": "2025-12-13",
       "end_date": "2025-12-14",
       "region_en": "Argentina",
@@ -8713,7 +8752,10 @@
         "https://pokemongo.com/gotour/tainan/gameplay",
         "https://pokemongo.com/gotour/tainan/mega-night"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-12：Serebii 列好啦魷，Dittobase 列烏賊王。官方玩法頁將好啦魷列為野外遭遇，地點背景的公告取得途徑為現場團體戰。好啦魷本身的背卡仍缺可核實證據，暫不加入名單。",
+        "2026-11-12: Serebii lists Inkay and Dittobase lists Malamar. The official gameplay page lists Inkay as a wild encounter and describes in-person raids as the way to obtain the Location Background. Inkay remains unverified and is omitted from the eligible list."
+      ],
       "related_product_ids": [],
       "method_zh": "持票當日／城市加購日的現場團體戰（含超級團體戰），成功捕捉後有機會附城市背景；Mega Night 有另行票券與時段。",
       "method_en": "Chance from in-person raids during ticketed or city add-on days. Mega Night has separate admission and hours.",
@@ -8888,7 +8930,10 @@
         "https://pokemongo.com/gotour/losangeles/gameplay",
         "https://pokemongo.com/gotour/losangeles/mega-night"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-12：Serebii 列好啦魷，Dittobase 列烏賊王。官方玩法頁將好啦魷列為野外遭遇，地點背景的公告取得途徑為現場團體戰。好啦魷本身的背卡仍缺可核實證據，暫不加入名單。",
+        "2026-11-12: Serebii lists Inkay and Dittobase lists Malamar. The official gameplay page lists Inkay as a wild encounter and describes in-person raids as the way to obtain the Location Background. Inkay remains unverified and is omitted from the eligible list."
+      ],
       "related_product_ids": [],
       "method_zh": "持票當日／城市加購日的現場團體戰（含超級團體戰），成功捕捉後有機會附城市背景；Mega Night 有另行票券與時段。",
       "method_en": "Chance from in-person raids during ticketed or city add-on days. Mega Night has separate admission and hours.",
@@ -17259,13 +17304,17 @@
           "name_zh": "顫弦蠑螈（高調的樣子）",
           "variant_id": "toxtricity-amped",
           "acquisition": "encounter",
-          "method_status": "unconfirmed",
+          "method_status": "reviewed",
+          "method_evidence": "catalogs-and-owner-inventory",
           "method_sources": [
             "https://pokemongo.com/news/pokemon-night-out-irl-details2026",
-            "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokemon-night-out-london-2026"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonnightout.shtml",
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokemon-night-out-london-2026",
+            "https://pokexperience.com/backgrounds/"
           ],
-          "method_zh": "倫敦場館限時調查可遇高調／低調顫弦蠑螈（二選一）；官方未明列此調查必帶背景，依活動名錄列入。",
-          "method_en": "Venue Timed Research offers Amped or Low Key Toxtricity (choose one); the official post does not state a guaranteed background, listed per catalog."
+          "method_zh": "倫敦場館限時調查的高調路線獎勵（11/10 已舉行）。查證結果：Serebii、Dittobase、PokéXperience 三份名錄活動後均列高調顫弦蠑螈附倫敦地點背景，站長另已持有實物；官方公告只明寫團體戰附背景。限時調查需在場館開啟遊戲才會取得，無法遠距。",
+          "method_en": "London venue Timed Research, Amped branch (held 10 Nov). Verification: Serebii, Dittobase and PokéXperience all list Amped Form Toxtricity with the London Location Background after the event, and the owner holds one in-game; the official post only states raids award it. The research is only issued at the venue."
         },
         {
           "dex": 849,
@@ -17273,20 +17322,24 @@
           "name_zh": "顫弦蠑螈（低調的樣子）",
           "variant_id": "toxtricity-low-key",
           "acquisition": "encounter",
-          "method_status": "unconfirmed",
+          "method_status": "reviewed",
+          "method_evidence": "catalogs-and-owner-inventory",
           "method_sources": [
             "https://pokemongo.com/news/pokemon-night-out-irl-details2026",
-            "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokemon-night-out-london-2026"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonnightout.shtml",
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokemon-night-out-london-2026",
+            "https://pokexperience.com/backgrounds/"
           ],
-          "method_zh": "倫敦場館限時調查可遇高調／低調顫弦蠑螈（二選一）；官方未明列此調查必帶背景，依活動名錄列入。",
-          "method_en": "Venue Timed Research offers Amped or Low Key Toxtricity (choose one); the official post does not state a guaranteed background, listed per catalog."
+          "method_zh": "倫敦場館限時調查的低調路線獎勵（11/10 已舉行）。查證結果：Serebii、Dittobase、PokéXperience 三份名錄活動後均列低調顫弦蠑螈附倫敦地點背景，站長另已持有實物；官方公告只明寫團體戰附背景。限時調查需在場館開啟遊戲才會取得，無法遠距。",
+          "method_en": "London venue Timed Research, Low Key branch (held 10 Nov). Verification: Serebii, Dittobase and PokéXperience all list Low Key Form Toxtricity with the London Location Background after the event, and the owner holds one in-game; the official post only states raids award it. The research is only issued at the venue."
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
       "verification": "official-event-confirmed",
       "background_id": "BG-0214",
       "name_zh": "寶可夢之夜 - 倫敦",
-      "release_state": "upcoming",
+      "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/news/pokemon-night-out-irl-details2026"
       ],
@@ -17294,7 +17347,9 @@
         "一星皮卡丘、三星耿鬼的現場團體戰捕獲可有該城市地標背景；不自行填入未公告遊戲時間。",
         "2026-11-06：依Dittobase背景頁補列進化繼承款。",
         "2026-11-06：官方公告確認倫敦場館限時調查有高調／低調顫弦蠑螈，Dittobase列入倫敦背景，比照洛杉磯BG-0211補列；背景保證仍待活動實際確認。",
-        "2026-11-06：倫敦場11/10舉行；顫弦蠑螈背景資格待活動後依實物確認，比照洛杉磯。"
+        "2026-11-06：倫敦場11/10舉行；顫弦蠑螈背景資格待活動後依實物確認，比照洛杉磯。",
+        "2026-11-12：活動已於11/10舉行，改為已推出。高調、低調顫弦蠑螈：Serebii（活動頁與背景頁）、Dittobase（標示11/10推出）、PokéXperience 三份名錄均列入倫敦背景，依名錄改為reviewed（method_evidence: catalogs）。遊戲內實物：Reddit、X 與網路搜尋未找到玩家截圖，僅見一則第三方eBay賣場標題（未能開啟核對，不採為證據），實物佐證待補。官方公告與LeekDuck仍只明寫團體戰附背景。",
+        "2026-11-12：站長確認手上已有倫敦背景高調、低調顫弦蠑螈實物，兩種形態證據比照洛杉磯BG-0211改為名錄＋站長實物（catalogs-and-owner-inventory），結案。"
       ],
       "start_date": "2026-11-10",
       "related_product_ids": [],
@@ -28691,8 +28746,10 @@
             "basis": "confirmed"
           }
         },
-        "conditions_zh": "指定團體戰、極巨對戰捕獲有機會附特殊背景；持票特殊調查明列附背景超極巨鋁鋼龍。每日10:00–18:00。",
-        "conditions_en": "Eligible raids and Max Battles offer a Special Background chance; ticketed Special Research explicitly awards Gigantamax Duraludon with the background. Daily 10:00–18:00.",
+        "conditions_zh": "指定團體戰、極巨對戰捕獲有機會附特殊背景；持票特殊調查明列附背景超極巨鋁鋼龍。每日10:00–18:00。官方提醒，11/14–15 日本大阪難波周邊部分遊戲功能可能暫時調整。",
+        "conditions_en": "Eligible raids and Max Battles offer a Special Background chance; ticketed Special Research explicitly awards Gigantamax Duraludon with the background. Daily 10:00–18:00. Pokémon GO advises that some gameplay features around Namba, Osaka, may be temporarily adjusted on November 14–15.",
+        "uncertainty_zh": "大阪難波公告未列出會調整的功能，也未說明是否影響背景取得。",
+        "uncertainty_en": "The Osaka advisory does not specify which features may change or whether background acquisition is affected.",
         "eligible_zh": "現代夾克怪力、極巨帝牙盧卡／帕路奇亞、萊希拉姆、捷克羅姆、酋雷姆、超極巨鋁鋼龍。",
         "eligible_en": "Modern-jacket Machamp, Dynamax Dialga/Palkia, Reshiram, Zekrom, Kyurem and Gigantamax Duraludon.",
         "remote_participation": {
@@ -28705,9 +28762,10 @@
           "text_zh": "官方未就本活動單獨說明。GO Fest 2024曾發生遠距團體戰拿不到特殊背景，官方視為錯誤並補發附背景遭遇，推定特殊背景可經遠距團體戰／極巨對戰取得。",
           "text_en": "Not stated for this event. When remote raids failed to award Special Backgrounds at GO Fest 2024, Niantic treated it as a bug and compensated, so remote catches are inferred to be eligible for Special Backgrounds."
         },
-        "checked_on": "2026-11-06",
+        "checked_on": "2026-11-12",
         "sources": [
           "https://pokemongo.com/en/gowildarea/global",
+          "https://pokemongo.com/news/gowildarea-global-2026-osaka-gameplay-update",
           "https://pokemongo.com/news/shadow-raid-max-battle-update"
         ],
         "background_type": "special",
@@ -29435,9 +29493,9 @@
   },
   "counts": {
     "catalog-crosschecked": 55,
-    "official-event-confirmed": 220,
+    "official-event-confirmed": 221,
     "catalogued-needs-event-check": 3,
-    "upcoming": 4
+    "upcoming": 3
   },
   "review_counts": {
     "date_details_pending": 4,

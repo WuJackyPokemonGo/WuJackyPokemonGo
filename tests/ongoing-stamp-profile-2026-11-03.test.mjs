@@ -15,6 +15,6 @@ test('profile rollout is a feature event with no new capture entitlement or cata
  const e=get('trainer-profile-background-rollout-2026');assert.equal(e.activity.kind,'feature');assert.equal(e.activity.background_type,'display');assert.deepEqual(e.background_ids,[]);assert.ok(!data.records.some(r=>r.activity?.kind==='feature'));
  assert.equal(activityState(e,Date.parse('2026-11-06T01:59:59Z')).status,'upcoming');assert.equal(activityState(e,Date.parse('2026-11-06T02:00Z')).status,'in_progress');assert.match(activityTimeLines(e,'en').local,/Each region/);assert.match(e.activity.conditions_zh,/11\/9/);assert.match(e.activity.uncertainty_en,/does not release rewards early/);
  assert.throws(()=>activityState({activity:{schedule:{start:'2026-11-03T10:00',zone:'Asia/Taipei'}}}));
- assert.equal(data.records.length,282);assert.equal(filterBackgrounds(data.records).length,275);assert.equal(Object.values(data.counts).reduce((a,b)=>a+b,0),282);
+ assert.equal(data.records.length,282);assert.equal(filterBackgrounds(data.records).length,276);assert.equal(Object.values(data.counts).reduce((a,b)=>a+b,0),282);
  const states=events.map(e=>activityState(e,Date.parse('2026-11-03T09:00Z')).status);assert.equal(states.filter(s=>s==='in_progress').length,5);assert.equal(states.filter(s=>s==='upcoming').length,15);assert.equal(states.filter(s=>s==='ended').length,1);
 });
