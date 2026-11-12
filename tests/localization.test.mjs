@@ -13,20 +13,27 @@ test('first visit follows the preferred browser language; only Chinese or Englis
 test('explicit visitor language preference overrides browser language',()=>{assert.equal(resolveLocale('zh',['en-US']),'zh');assert.equal(resolveLocale('en',['zh-TW']),'en');assert.equal(resolveLocale('invalid',['en-US']),'en')});
 test('share-link language takes priority; unsupported values retain normal fallback',()=>{assert.equal(resolveLocale('zh',['zh-TW'],'zh-Hant','en'),'en');assert.equal(resolveLocale('en',['en-US'],'en-US','zh'),'zh');for(const value of [null,'','fr','EN'])assert.equal(resolveLocale('zh',['en-US'],'en-US',value),'zh')});
 test('share links initialize and remember language while preserving background selection, even with storage blocked',async()=>{
- const previousLocation=Object.getOwnPropertyDescriptor(globalThis,'location'),previousStorage=Object.getOwnPropertyDescriptor(globalThis,'localStorage');
+ const previousLocation=Object.getOwnPropertyDescriptor(globalThis,'location'),previousStorage=Object.getOwnPropertyDescriptor(globalThis,'localStorage'),previousHistory=Object.getOwnPropertyDescriptor(globalThis,'history');
  try{
   for(const blocked of [false,true]){
    let saved='zh';
-   Object.defineProperty(globalThis,'location',{configurable:true,value:{href:'https://example.com/backgrounds.html?background=BG-0001&lang=en'}});
+   const pageLocation={href:'https://example.com/backgrounds.html?background=BG-0001&lang=en&from=store#detail'};
+   const historyState={fromCatalog:true};
+   Object.defineProperty(globalThis,'location',{configurable:true,value:pageLocation});
+   Object.defineProperty(globalThis,'history',{configurable:true,value:{state:historyState,replaceState(state,title,url){assert.equal(state,historyState);pageLocation.href=String(url)}}});
    Object.defineProperty(globalThis,'localStorage',{configurable:true,value:{getItem(){if(blocked)throw Error('blocked');return saved},setItem(key,value){if(blocked)throw Error('blocked');saved=value}}});
    const module=await import('../storefront-locale.mjs?share-link-test='+blocked);
    assert.equal(module.getLocale(),'en');if(!blocked)assert.equal(saved,'en');
    assert.equal(new URL(location.href).searchParams.get('background'),'BG-0001');
    module.setLocale('zh');assert.equal(module.getLocale(),'zh');
+   assert.equal(location.href,'https://example.com/backgrounds.html?background=BG-0001&lang=zh&from=store#detail');
+   const reloaded=await import('../storefront-locale.mjs?share-link-reloaded='+blocked);
+   assert.equal(reloaded.getLocale(),'zh');
   }
  }finally{
   if(previousLocation)Object.defineProperty(globalThis,'location',previousLocation);else delete globalThis.location;
   if(previousStorage)Object.defineProperty(globalThis,'localStorage',previousStorage);else delete globalThis.localStorage;
+  if(previousHistory)Object.defineProperty(globalThis,'history',previousHistory);else delete globalThis.history;
  }
 });
 

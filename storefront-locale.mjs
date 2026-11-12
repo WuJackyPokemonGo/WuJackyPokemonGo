@@ -18,7 +18,18 @@ const browserLanguages=typeof navigator==='undefined'?[]:Array.from(navigator.la
 let locale=pageLocale(resolveLocale(savedLocale,browserLanguages,typeof navigator==='undefined'?'zh-Hant':navigator.language||'zh-Hant',requestedLocale));
 if(supportedLocales.includes(requestedLocale)&&pageLocale(requestedLocale)===requestedLocale){try{localStorage.setItem('wj_store_locale',locale)}catch{}}
 export const getLocale=()=>locale;
-export function setLocale(value){locale=pageLocale(supportedLocales.includes(value)?value:'zh');try{localStorage.setItem('wj_store_locale',locale)}catch{};return locale}
+export function setLocale(value){
+ locale=pageLocale(supportedLocales.includes(value)?value:'zh');
+ try{localStorage.setItem('wj_store_locale',locale)}catch{}
+ if(typeof location!=='undefined'&&typeof history!=='undefined'){
+  const url=new URL(location.href);
+  if(url.searchParams.get('lang')!==locale){
+   url.searchParams.set('lang',locale);
+   history.replaceState(history.state,'',url);
+  }
+ }
+ return locale;
+}
 export const labels={
 '複製商品連結':'Copy product link','商品連結':'Product link',
 "商品內容：ESA 太空裝皮卡丘，六國背景。\n單隻價格：NT$ 80\n六國各一套組價格：NT$ 450":"Contents: Astronaut Pikachu with six ESA Location Backgrounds.\nSingle Pokémon: NT$ 80\nSet of six, one from each country: NT$ 450",
