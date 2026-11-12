@@ -1043,8 +1043,8 @@
       ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "於活動限定團體戰捕捉對應寶可夢，有機會附上該城市背景；現場活動票券與加購適用時段依當年規則。",
-      "method_en": "Chance from event raids for the listed species; event-ticket and add-on hours follow that year’s rules.",
+      "method_zh": "於活動限定團體戰捕捉對應寶可夢，有機會附上該城市背景；現場活動票券與加購適用時段依當年規則。 當年的公告引文列明，有效票券時段（含城市加購）參加起源形態帝牙盧卡或帕路奇亞團體戰，有機會取得洛杉磯地點背景。",
+      "method_en": "Chance from event raids for the listed species; event-ticket and add-on hours follow that year’s rules. A contemporaneous quotation of the event announcement includes Citywide Gameplay add-on holders in the chance to receive the Los Angeles Location Background from Origin Forme Dialga or Palkia raids during ticketed hours.",
       "series": "GO Tour",
       "series_zh": "GO Tour",
       "year": "2024",
@@ -1054,7 +1054,9 @@
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-tour-2024-los-angeles",
         "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
         "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_Tour%3A_Sinnoh_-_Los_Angeles",
-        "https://leekduck.com/events/pokemon-go-tour-sinnoh-los-angeles/"
+        "https://leekduck.com/events/pokemon-go-tour-sinnoh-los-angeles/",
+        "https://www.reddit.com/r/TheSilphRoad/comments/19e92td",
+        "https://pokemongohub.net/post/news/pokemon-go-tour-sinnoh-los-angeles/"
       ],
       "evolved_pokemon": [],
       "checked_on": "2026-11-12",
