@@ -1094,18 +1094,21 @@
       "background_id": "BG-0010",
       "name_zh": "飛翔皮卡丘計畫 峇里島",
       "release_state": "released",
-      "official_sources": [],
+      "official_sources": [
+        "https://pokemongolive.com/events/indonesia-journey-bali"
+      ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "活動持票訓練家於指定現場團體戰捕獲拉帝亞斯或拉帝歐斯時，有機會獲得當地背景。",
-      "method_en": "Ticket holders have a chance to receive the local background when catching Latias or Latios from eligible in-person event raids.",
+      "method_zh": "持有效活動票券於 2024/3/2–3 的票券時段，親自在峇里島參加超級團體戰，捕獲拉帝亞斯或拉帝歐斯後有機會附峇里島地點背景。",
+      "method_en": "During the March 2–3, 2024 event, Trainers with an active ticket could catch Latias or Latios after an in-person Mega Raid during their ticketed session for a chance at the Bali Location Background.",
       "series": "Air Adventures",
       "series_zh": "飛翔皮卡丘計畫",
       "year": "2024",
       "year_verified": true,
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
-        "https://www.dittobase.com/pokemon-go/backgrounds/lc-air-adv-2024-bali"
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-air-adv-2024-bali",
+        "https://www.pocketmonsters.net/news/7253"
       ],
       "evolved_pokemon": [],
       "start_date": "2024-03-02",
@@ -1253,15 +1256,17 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "活動持票訓練家於指定現場團體戰捕獲拉帝亞斯或拉帝歐斯時，有機會獲得當地背景。",
-      "method_en": "Ticket holders have a chance to receive the local background when catching Latias or Latios from eligible in-person event raids.",
+      "method_zh": "持有效活動票券於 2024/5/11–12 的票券時段，親自在泗水參加超級團體戰，捕獲拉帝亞斯或拉帝歐斯後有機會附泗水地點背景。",
+      "method_en": "During the May 11–12, 2024 event, Trainers with an active ticket could catch Latias or Latios after an in-person Mega Raid during their ticketed session for a chance at the Surabaya Location Background.",
       "series": "Air Adventures",
       "series_zh": "飛翔皮卡丘計畫",
       "year": "2024",
       "year_verified": true,
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
-        "https://www.dittobase.com/pokemon-go/backgrounds/lc-air-adv-2024-surabaya"
+        "https://www.dittobase.com/pokemon-go/backgrounds/lc-air-adv-2024-surabaya",
+        "https://pgserviceshop.com/pikachu-indonesia-journey-guide/",
+        "https://pocketmonsters.net/index.php/news/7420"
       ],
       "evolved_pokemon": [],
       "start_date": "2024-05-11",
@@ -2482,8 +2487,8 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "2025/3/29–30 持票參加新加坡城市狩獵。活動特殊調查提供探險帽伊布，伊布探險隊限時調查透過轉指定補給站，最多可獲得 8 次附新加坡地點背景的探險帽伊布遭遇。八種進化款由帶背景的伊布進化取得。",
+      "method_en": "Attend City Safari: Singapore on March 29–30, 2025, with a ticket. Event Special Research awards explorer-hat Eevee. Spin designated PokéStops for Eevee Explorers Timed Research, which awards up to eight encounters with explorer-hat Eevee bearing the Singapore Location Background. Its eight Evolutions are obtained by evolving an Eevee with the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2025",
@@ -2491,7 +2496,9 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2025-singapore",
-        "https://www.dittobase.com/pokemon-go/backgrounds"
+        "https://www.dittobase.com/pokemon-go/backgrounds",
+        "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_City_Safari:_Singapore",
+        "https://pokemongohub.net/post/news/pokemon-go-city-safari-2025-singapore/"
       ],
       "evolved_pokemon": [
         {
@@ -2585,8 +2592,8 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "2025/3/29–30 持票參加孟買城市狩獵。活動特殊調查提供探險帽伊布，伊布探險隊限時調查透過轉指定補給站，最多可獲得 8 次附孟買地點背景的探險帽伊布遭遇。八種進化款由帶背景的伊布進化取得。",
+      "method_en": "Attend City Safari: Mumbai on March 29–30, 2025, with a ticket. Event Special Research awards explorer-hat Eevee. Spin designated PokéStops for Eevee Explorers Timed Research, which awards up to eight encounters with explorer-hat Eevee bearing the Mumbai Location Background. Its eight Evolutions are obtained by evolving an Eevee with the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2025",
@@ -2594,7 +2601,9 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2025-mumbai",
-        "https://www.dittobase.com/pokemon-go/backgrounds"
+        "https://www.dittobase.com/pokemon-go/backgrounds",
+        "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_City_Safari:_Mumbai",
+        "https://www.newsvoir.com/release/pokemon-go-to-host-india-apos-s-first-city-safari-in-mumbai-30572.html"
       ],
       "evolved_pokemon": [
         {
@@ -2688,8 +2697,8 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "2025/3/29–30 持票參加米蘭城市狩獵。活動特殊調查提供探險帽伊布，伊布探險隊限時調查透過轉指定補給站，最多可獲得 8 次附米蘭地點背景的探險帽伊布遭遇。八種進化款由帶背景的伊布進化取得。",
+      "method_en": "Attend City Safari: Milan on March 29–30, 2025, with a ticket. Event Special Research awards explorer-hat Eevee. Spin designated PokéStops for Eevee Explorers Timed Research, which awards up to eight encounters with explorer-hat Eevee bearing the Milan Location Background. Its eight Evolutions are obtained by evolving an Eevee with the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2025",
@@ -2697,7 +2706,9 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2025-milan",
-        "https://www.dittobase.com/pokemon-go/backgrounds"
+        "https://www.dittobase.com/pokemon-go/backgrounds",
+        "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_City_Safari:_Milan",
+        "https://pokemongohub.net/post/event/pokemon-go-city-safari-2025-milan-italy/"
       ],
       "evolved_pokemon": [
         {
@@ -2791,8 +2802,8 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與當地城市狩獵，透過伊布探險隊調查或當屆集章活動遇見探險帽伊布；八種進化款由該伊布進化取得。",
-      "method_en": "Ticketed City Safari research or the event’s stamp rally awards explorer-hat Eevee. Its eight Evolutions are obtained by evolving that Eevee.",
+      "method_zh": "2025/3/29–30 持票參加聖地牙哥城市狩獵。活動特殊調查提供探險帽伊布，伊布探險隊限時調查透過轉指定補給站，最多可獲得 8 次附聖地牙哥地點背景的探險帽伊布遭遇。八種進化款由帶背景的伊布進化取得。",
+      "method_en": "Attend City Safari: Santiago on March 29–30, 2025, with a ticket. Event Special Research awards explorer-hat Eevee. Spin designated PokéStops for Eevee Explorers Timed Research, which awards up to eight encounters with explorer-hat Eevee bearing the Santiago Location Background. Its eight Evolutions are obtained by evolving an Eevee with the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2025",
@@ -2800,7 +2811,9 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2025-santiago",
-        "https://www.dittobase.com/pokemon-go/backgrounds"
+        "https://www.dittobase.com/pokemon-go/backgrounds",
+        "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_City_Safari:_Santiago",
+        "https://www.supergeek.cl/noticias/site/artic/20241218/pags-amp/20241218155348.html"
       ],
       "evolved_pokemon": [
         {
