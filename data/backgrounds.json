@@ -1656,8 +1656,8 @@
       "related_product_ids": [
         "535ad1ce-37a1-4db7-af62-91fc503390af"
       ],
-      "method_zh": "同期玩家紀錄顯示，檀香山會場的團體戰有機會取得附地點背景的世界賽皮卡丘。田野調查、限時調查的背景資格及是否需世界賽票券仍待確認。",
-      "method_en": "Contemporaneous player reports show that raids at the Honolulu venue could award Worlds Pikachu with the Location Background. Background eligibility from Field Research or Timed Research and Worlds ticket requirements are still pending verification.",
+      "method_zh": "同期活動攻略與玩家紀錄顯示，檀香山會場的團體戰及指定田野調查有機會取得附地點背景的世界賽皮卡丘。限時調查、遠距團體戰的背景資格及是否需世界賽票券仍待確認。",
+      "method_en": "Contemporaneous guides and player reports indicate that raids and select Field Research at the Honolulu venue could award Worlds Pikachu with the Location Background. Background eligibility from Timed Research and Remote Raids, and Worlds ticket requirements, remain unverified.",
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2024",
@@ -1667,7 +1667,9 @@
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2024-honolulu",
         "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
         "https://9db.jp/pokemongo/data/20088",
-        "https://9db.jp/pokemongo/data/20181"
+        "https://9db.jp/pokemongo/data/20181",
+        "https://nintendowire.com/guides/pokemon-go/season-of-shared-skies/2024-pokemon-world-championships-event/",
+        "https://www.reddit.com/r/TheSilphRoad/comments/1etyycw"
       ],
       "evolved_pokemon": [],
       "start_date": "2024-08-16",

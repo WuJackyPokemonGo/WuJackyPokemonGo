@@ -42,3 +42,7 @@ BG-0016。9DB 當屆活動紀錄列出世界賽皮卡丘為會場地點背景團
 更新 BG-0009 的日期說明並補列兩個原帖。圖鑑提交 `00fcb0fbc8fdd205c6a81f8d57f4b523ba01cf05`，資料 blob `27d7f1d8f7293464e6f4278600e937d8f38243b8`。檀香山 8/19–20 是否仍發放地點背景仍待查證。
 
 正式站公開資料已驗收，blob 與本輪圖鑑提交一致。檀香山另有一串同期留言稱會場玩法於週日結束，也有留言轉述朋友遠距於 19 日捕獲，隨後同一人表示活動已結束。留言未附可驗證的截圖，也沒有可換算為夏威夷當地捕獲日期的時間，僅作追查線索。 [同期留言](https://www.reddit.com/r/PokemonGoSpoofing/comments/1evv4s1)
+
+### 檀香山田野調查取得途徑
+
+Nintendo Wire 的同期攻略列出會場團體戰及田野調查皆有機會給附地點背景的世界賽皮卡丘。The Silph Road 同期討論有玩家回報於會展中心附近轉四個不同補給站的田野調查取得背景，與 9DB 記錄的會場任務互核。據此補列指定田野調查。限時調查、遠距團體戰、世界賽票券條件及 8/19–20 的背景發放仍待確認。 [Nintendo Wire](https://nintendowire.com/guides/pokemon-go/season-of-shared-skies/2024-pokemon-world-championships-event/) · [同期玩家討論](https://www.reddit.com/r/TheSilphRoad/comments/1etyycw) · [9DB 會場任務](https://9db.jp/pokemongo/data/20088)
