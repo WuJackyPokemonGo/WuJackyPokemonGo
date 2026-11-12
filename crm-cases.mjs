@@ -16,6 +16,12 @@ const PAID=/已匯|匯好|匯了|已轉|轉好|轉了|付款了|已付|付好|�
 const ASK={price:/多少|價格|價錢|價位|怎麼賣|報價|售價|how much|price/i,stock:/還有(嗎|貨|沒|嘛)|有貨|現貨|有嗎|有沒有|還在嗎|有賣/i,buy:/我要|想買|要買|購買|想要|收一|收兩|我收|^收$|幫我留|保留|預約/i};
 const WAIT=/有貨(再)?(通知|跟您說|跟你說)|有多的(再|我)?(跟您說|跟你說|通知)|幫您登記|有幫您登記|已登記|出貨會告知|到貨通知|有貨通知/;
 const AGREE=/可以|ok|好的?|沒問題|行|收到/i;
+const CUST_ACCEPT=/^(收|我收|要|好|可以|ok|okay|成交|買)|收一|要一|我要|那我收|我收了/i;
+// 教學與售後：客人問換綁方法／換綁失敗／付款後催交付
+export const TASK_KINDS={rebind_tutorial:'需要換綁教學',rebind_failed:'換綁失敗',delivery_chase:'催交付',other:'其他'};
+const REBIND_ASK=/怎麼(換綁|綁定|解綁|改綁)|如何(換綁|綁定|解綁|改綁)|換綁|改綁|解綁|解不了|綁定/;
+const REBIND_FAIL=/綁不了|綁不上|換綁失敗|解不了|登不進|登入不了|無法登入|被登出|登不上/;
+const CHASE=/有收到嗎|什麼時候|還沒|在嗎|多久|幾點|請問.{0,6}(帳號|帳密)|收到了嗎|給帳號|給帳密/;
 
 // 從一段文字找價格候選。排除日期、時間、天數、銀行代碼與帳號。
 export function priceCandidates(text){
@@ -53,6 +59,8 @@ export function buildCases({messages,isOwner,index,maskText,excerpt,externalKey,
    const target=eps.find(e=>e.paidAt&&!e.deliveries.length&&e!==cur)??(partial?prev:null)??cur??open(m);
    target.deliveries.push({ts,raw:text});target.last=Math.max(target.last,ts);target.msgs.push(m);
    if(target===cur){const next=messages[i+1];if(!next||!(isOwner(next)&&DELIVERY.test(next.content??'')))cur=null}continue}
+  // 交付後 7 天內問換綁／登入問題 → 屬於剛交付那筆的售後，不另開案件
+  if(!owner&&!cur&&(REBIND_ASK.test(text)||REBIND_FAIL.test(text))){const prev=[...eps].reverse().find(e=>e.deliveries.length);if(prev&&ts-prev.deliveries.at(-1).ts<=7*DAY){prev.msgs.push(m);prev.last=Math.max(prev.last,ts);continue}}
   if(!cur){if(!owner&&!text&&!m.photos?.length)continue;open(m)}
   else if(!owner){const gap=ts-cur.last;const lastOwner=cur.msgs.length&&isOwner(cur.msgs.at(-1));
    const terms=index.match(text).map(f=>f.term);
@@ -63,7 +71,7 @@ export function buildCases({messages,isOwner,index,maskText,excerpt,externalKey,
    if(cur.payInfoAt&&!cur.paidAt&&ts-cur.payInfoAt<=3*DAY&&(PAID.test(text)||m.photos?.length)){cur.paidAt=ts;cur.paidMsg=m}
    else if(!cur.paidAt&&PAID.test(text)){cur.paidAt=ts;cur.paidMsg=m}}
  }
- const cases=[],deals=[],waits=[];
+ const cases=[],deals=[],waits=[],allTasks=[];
  for(const ep of eps){
   const ownerMsgs=ep.msgs.filter(isOwner),custMsgs=ep.msgs.filter(m=>!isOwner(m));
   if(!custMsgs.length&&!ep.deliveries.length)continue;// 只有店主單方面發話，不算案件
@@ -85,8 +93,20 @@ export function buildCases({messages,isOwner,index,maskText,excerpt,externalKey,
   const items=[...ep.terms.keys()].slice(0,8),productIds=[...new Set([...ep.terms.values()].flat())].slice(0,10);
   const keyMsg=(status==='owner_to_reply'?custMsgs.at(-1):ep.paidMsg??custMsgs[0])??ep.msgs[0];
   const sk=`threads:${externalKey}:case:${ep.start}`;
+  // 高預算意向：客人明確出價，或接受店主報價（報價後兩則內客人回「收／要／好」）。門檻在後台套用。
+  let budget=null;
+  for(let k=0;k<ep.msgs.length;k++){const m=ep.msgs[k],tx=m.content??'';
+   if(!isOwner(m)){const o=customerOffer(tx);if(o&&(!budget||o>=budget.amount))budget={amount:o,ts:m.timestamp_ms,kind:'offer',excerpt:excerpt(tx)}}
+   else if(!PAY_INFO.test(tx)&&!DELIVERY.test(tx)){const c=priceCandidates(tx);if(!c.length)continue;const v=Math.max(...c.map(x=>x.value));
+    const reply=ep.msgs.slice(k+1,k+3).find(x=>!isOwner(x));if(reply&&CUST_ACCEPT.test(String(reply.content??'').trim())&&(!budget||v>=budget.amount))budget={amount:v,ts:reply.timestamp_ms,kind:'accepted_quote',excerpt:excerpt(tx)}}}
+  // 教學與售後待辦（每段案件每種最多一筆；已交付的歷史案件預設為已處理，只留紀錄）
+  const tasks=[];const addTask=(kind,m,status)=>{if(tasks.some(t=>t.kind===kind))return;tasks.push({source_key:`threads:${externalKey}:task:${kind}:${ep.start}`,case_source_key:sk,kind,title:TASK_KINDS[kind]+(items.length?'：'+items.slice(0,2).join('、'):''),status,excerpt:excerpt(m.content??''),evidence:{folder,timestamp_ms:m.timestamp_ms}})};
+  const histDone=status==='done'&&age>7*DAY?'done':'open';
+  for(const m of custMsgs){const tx=m.content??'';if(REBIND_FAIL.test(tx))addTask('rebind_failed',m,histDone);else if(REBIND_ASK.test(tx))addTask('rebind_tutorial',m,histDone)}
+  if(ep.paidAt){const firstDel=ep.deliveries[0]?.ts??Infinity;const chase=custMsgs.find(m=>m.timestamp_ms>ep.paidAt&&m.timestamp_ms<firstDel&&CHASE.test(m.content??''));if(chase)addTask('delivery_chase',chase,ep.deliveries.length?'done':'open')}
+  allTasks.push(...tasks);
   cases.push({source_key:sk,opened_at:ep.start,last_at:ep.last,status,items,product_ids:productIds,excerpt:excerpt(keyMsg.content??''),
-   evidence:{folder,start_ms:ep.start,last_ms:ep.last,pay_info_ms:ep.payInfoAt,paid_ms:ep.paidAt,delivered_ms:ep.deliveries.map(d=>d.ts),last_sender:isOwner(last)?'owner':'customer'}});
+   evidence:{folder,start_ms:ep.start,last_ms:ep.last,pay_info_ms:ep.payInfoAt,paid_ms:ep.paidAt,delivered_ms:ep.deliveries.map(d=>d.ts),last_sender:isOwner(last)?'owner':'customer',...(budget?{budget:{...budget,items}}:{})}});
   if(status==='waiting_stock')waits.push({source_key:`threads:${externalKey}:wait:${ep.start}`,item_text:items.join('、').slice(0,80)||excerpt(custMsgs.at(-1)?.content??''),product_ids:productIds,channel:'Threads',
    excerpt:excerpt(ownerMsgs.at(-1).content??''),evidence:{folder,timestamp_ms:ownerMsgs.at(-1).timestamp_ms}});
   if(ep.deliveries.length){
@@ -105,5 +125,5 @@ export function buildCases({messages,isOwner,index,maskText,excerpt,externalKey,
     evidence:{folder,paid_ms:ep.paidAt,delivered_ms:ep.deliveries.map(d=>d.ts),amount_basis:basis||'找不到報價，請手動填',amount_excerpt:basisMsg?excerpt(basisMsg.content??''):''}});
   }
  }
- return {cases,deals,waits};
+ return {cases,deals,waits,tasks:allTasks};
 }

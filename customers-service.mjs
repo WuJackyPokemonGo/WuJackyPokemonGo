@@ -107,7 +107,9 @@ export const CRM_TABLES=[
  ['cases','crm_cases',['id','customer_id','identity_id','opened_at','last_at','status','status_source','suggested_status','items','product_ids','excerpt','evidence','note','source_key','batch_id','created_at','updated_at'],'source_key'],
  ['deals','crm_deals',['id','customer_id','identity_id','case_source_key','occurred_at','items','product_ids','qty','amount_twd','refund_twd','status','source','evidence','note','source_key','decided_at','decided_by','batch_id','created_at','updated_at'],'source_key'],
  ['waits','crm_stock_waits',['id','customer_id','item_text','product_ids','channel','follow_on','status','source','excerpt','evidence','note','source_key','created_at','updated_at'],'id'],
- ['settings','crm_settings',['key','value','updated_at'],'key']];
+ ['settings','crm_settings',['key','value','updated_at'],'key'],
+ ['metas','crm_customer_meta',['customer_id','first_channel','current_channel','referral_source','contact_types','language','region','payment_preferred','payment_last','note','updated_at'],'customer_id'],
+ ['tasks','crm_tasks',['id','customer_id','case_source_key','kind','title','status','source','excerpt','evidence','source_key','created_at','resolved_at'],'id']];
 export function validateCustomerBackup(doc){
  if(!doc||doc.format!=='wu-jacky-customers'||doc.version!==1||!Array.isArray(doc.profiles)||!Array.isArray(doc.history))throw Error('這不是客人資料備份檔。');
  const crmRows=CRM_TABLES.reduce((n,[k])=>n+(Array.isArray(doc.crm?.[k])?doc.crm[k].length:0),0);
@@ -126,13 +128,13 @@ export function createCustomersService(client){
   async importHistory(rows,batch){let inserted=0;for(let i=0;i<rows.length;i+=200){const chunk=rows.slice(i,i+200).map(r=>({...r,import_batch:batch}));const data=checked(await client.from('customer_history_purchases').upsert(chunk,{onConflict:'import_key',ignoreDuplicates:true}).select('id'));inserted+=data.length}return {inserted,skipped:rows.length-inserted}},
   // 客人資料備份：只補回缺少的資料，不覆寫現有內容。
   async backup(){const [profiles,history]=await Promise.all([all('customer_profiles','id,alias,other_aliases,contacts,contact_private,do_not_market,note_private,created_at,updated_at','alias'),all('customer_history_purchases','id,customer_alias,purchased_on,purchased_time,item_text,amount_twd,channel,note_private,import_key,import_batch,created_at','purchased_on')]);
-   const crm={};for(const [k,table,keys] of CRM_TABLES){try{crm[k]=await all(table,keys.join(','),k==='tags'?'customer_id':k==='settings'?'key':'id',k==='tags'?'tag':null)}catch(e){if(/does not exist|relation|schema cache/i.test(e?.message??''))crm[k]=[];else throw e}}
+   const crm={};for(const [k,table,keys] of CRM_TABLES){try{crm[k]=await all(table,keys.join(','),k==='tags'?'customer_id':k==='settings'?'key':k==='metas'?'customer_id':'id',k==='tags'?'tag':null)}catch(e){if(/does not exist|relation|schema cache/i.test(e?.message??''))crm[k]=[];else throw e}}
    return {format:'wu-jacky-customers',version:1,created_at:new Date().toISOString(),profiles,history,crm}},
   async restore(doc){const {profiles,history}=validateCustomerBackup(doc);let p=0,h=0;
    for(let i=0;i<profiles.length;i+=200)p+=checked(await client.from('customer_profiles').upsert(profiles.slice(i,i+200),{onConflict:'id',ignoreDuplicates:true}).select('id')).length;
    for(let i=0;i<history.length;i+=200)h+=checked(await client.from('customer_history_purchases').upsert(history.slice(i,i+200),{onConflict:'import_key',ignoreDuplicates:true}).select('id')).length;
    const {crm}=validateCustomerBackup(doc);let c=0,total=0;
-   for(const [k,table,,conflict] of CRM_TABLES){const rows=crm[k];total+=rows.length;for(let i=0;i<rows.length;i+=200)c+=checked(await client.from(table).upsert(rows.slice(i,i+200),{onConflict:conflict,ignoreDuplicates:true}).select(k==='tags'?'tag':k==='settings'?'key':'id')).length}
+   for(const [k,table,,conflict] of CRM_TABLES){const rows=crm[k];total+=rows.length;for(let i=0;i<rows.length;i+=200)c+=checked(await client.from(table).upsert(rows.slice(i,i+200),{onConflict:conflict,ignoreDuplicates:true}).select(k==='tags'?'tag':k==='settings'?'key':k==='metas'?'customer_id':'id')).length}
    return {profiles:p,history:h,crm:c,skipped:profiles.length+history.length+total-p-h-c}},
   async deleteBatch(batch){if(!batch)throw Error('請指定匯入批次。');return checked(await client.from('customer_history_purchases').delete().eq('import_batch',batch).select('id')).length}
  }}

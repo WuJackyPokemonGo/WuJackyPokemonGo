@@ -146,3 +146,70 @@ begin
 end$$;
 revoke all on function public.admin_crm_import_suggestions(uuid,jsonb) from public,anon;
 grant execute on function public.admin_crm_import_suggestions(uuid,jsonb) to authenticated;
+
+-- ── 第一段補齊：客人資料（聯絡管道、介紹來源、聯絡人類型、語言地區、付款方式）與教學／售後待辦 ──
+-- 只記客人明確提供或老闆確認的資料；跨平台（例如轉 LINE）以 crm_identities 新增一筆 platform='line' 指向同一位客人，確認後才關聯。
+create table if not exists public.crm_customer_meta(
+ customer_id uuid primary key references public.customer_profiles(id) on delete cascade,
+ first_channel text not null default '' check(length(first_channel)<=40),
+ current_channel text not null default '' check(length(current_channel)<=40),
+ referral_source text not null default '' check(length(referral_source)<=120),
+ contact_types text[] not null default '{customer}' check(contact_types <@ array['customer','friend','supplier','lottery']::text[]),
+ language text not null default '' check(length(language)<=40),
+ region text not null default '' check(length(region)<=60),
+ payment_preferred text not null default '' check(length(payment_preferred)<=40),
+ payment_last text not null default '' check(length(payment_last)<=40),
+ note text not null default '' check(length(note)<=1000),
+ updated_at timestamptz not null default now()
+);
+-- 教學與售後：掛在案件或成交上的具體待辦，處理完關閉但保留紀錄
+create table if not exists public.crm_tasks(
+ id uuid primary key default gen_random_uuid(),
+ customer_id uuid not null references public.customer_profiles(id) on delete cascade,
+ case_source_key text not null default '' check(length(case_source_key)<=300),
+ kind text not null check(kind in ('rebind_tutorial','rebind_failed','delivery_chase','other')),
+ title text not null default '' check(length(title)<=200),
+ status text not null default 'open' check(status in ('open','done','dismissed')),
+ source text not null default 'auto' check(source in ('auto','manual')),
+ excerpt text not null default '' check(length(excerpt)<=120),
+ evidence jsonb not null default '{}'::jsonb,
+ source_key text unique check(source_key is null or length(source_key) between 8 and 300),
+ created_at timestamptz not null default now(),
+ resolved_at timestamptz
+);
+create index if not exists crm_tasks_open_idx on public.crm_tasks(status,customer_id);
+alter table public.crm_customer_meta enable row level security;
+alter table public.crm_tasks enable row level security;
+revoke all on public.crm_customer_meta,public.crm_tasks from anon,public;
+grant select,insert,update,delete on public.crm_customer_meta,public.crm_tasks to authenticated;
+do $$declare t text;begin
+ foreach t in array array['crm_customer_meta','crm_tasks'] loop
+  execute format('drop policy if exists "admins manage %1$s" on public.%1$I',t);
+  execute format('create policy "admins manage %1$s" on public.%1$I for all to authenticated using((select private.is_store_admin())) with check((select private.is_store_admin()))',t);
+ end loop;
+end$$;
+insert into public.crm_settings(key,value) values('display','{"top":["regular","high_value","waiting"],"hidden":[]}') on conflict(key) do nothing;
+
+-- 待辦匯入：只新增不覆蓋（已處理／略過的不會被打開）
+create or replace function public.admin_crm_import_tasks(p_rows jsonb)
+returns jsonb language plpgsql security definer set search_path='' as $$
+declare r jsonb;x jsonb;cid uuid;n integer:=0;
+begin
+ if auth.uid() is null or not private.is_store_admin() then raise insufficient_privilege;end if;
+ if jsonb_typeof(p_rows) is distinct from 'array' or jsonb_array_length(p_rows)>100 then raise invalid_parameter_value using message='rows must be an array of at most 100';end if;
+ for r in select value from jsonb_array_elements(p_rows) loop
+  select customer_id into cid from public.crm_identities where platform='threads' and external_key=r->>'external_key';
+  if cid is null then continue;end if;
+  for x in select value from jsonb_array_elements(coalesce(r->'tasks','[]')) loop
+   insert into public.crm_tasks(customer_id,case_source_key,kind,title,status,excerpt,evidence,source_key,resolved_at)
+   values(cid,left(coalesce(x->>'case_source_key',''),300),x->>'kind',left(coalesce(x->>'title',''),200),coalesce(x->>'status','open'),left(coalesce(x->>'excerpt',''),120),coalesce(x->'evidence','{}'),x->>'source_key',
+    case when x->>'status' in ('done','dismissed') then now() end)
+   on conflict(source_key) do nothing;
+   if found then n:=n+1;end if;
+  end loop;
+  cid:=null;
+ end loop;
+ return jsonb_build_object('tasks_new',n);
+end$$;
+revoke all on function public.admin_crm_import_tasks(jsonb) from public,anon;
+grant execute on function public.admin_crm_import_tasks(jsonb) to authenticated;

@@ -88,7 +88,7 @@ export function buildTermIndex(products=[],nicknames=''){
 // files: Map(path → JSON text)。回傳 {rows, stats}
 export function parseThreadsExport(files,{products=[],nicknames='',now=Date.now(),recentDays=14,suggestScope='A'}={}){
  const index=buildTermIndex(products,nicknames);
- const stats={json_files:0,message_files:0,conversations:0,messages:0,groups_skipped:0,empty_skipped:0,failed_files:[],imported:0,inquiries:0,followups:0,tags:{},suggest_scope:suggestScope,suggested_customers:0,cases:0,case_status:{},deals:0,deals_with_amount:0,waits:0,owner:'',date_from:null,date_to:null};
+ const stats={json_files:0,message_files:0,conversations:0,messages:0,groups_skipped:0,empty_skipped:0,failed_files:[],imported:0,inquiries:0,followups:0,tags:{},suggest_scope:suggestScope,suggested_customers:0,cases:0,case_status:{},deals:0,deals_with_amount:0,waits:0,tasks:0,owner:'',date_from:null,date_to:null};
  const convs=new Map();
  for(const [path,text] of files){
   if(!/\.json$/i.test(path))continue;stats.json_files++;
@@ -142,10 +142,10 @@ export function parseThreadsExport(files,{products=[],nicknames='',now=Date.now(
   }
   row.tags=[...tagSet.entries()].map(([name,evidence])=>({tag:name,evidence}));
   // 案件與成交建議：第一輪只做 A 層（疑似付款或熟客候選），其他客人等核准後再開
-  row.cases=[];row.deals=[];row.waits=[];
+  row.cases=[];row.deals=[];row.waits=[];row.tasks=[];
   if(suggestScope==='all'||tagSet.has('paid_suspected')||tagSet.has('repeat_suspected')){
    Object.assign(row,buildCases({messages:c.messages,isOwner,index,maskText,excerpt,externalKey:external_key,folder:row.folder,now}));
-   stats.suggested_customers++;stats.cases+=row.cases.length;stats.deals+=row.deals.length;stats.deals_with_amount+=row.deals.filter(d=>d.amount_twd!=null).length;stats.waits+=row.waits.length;
+   stats.suggested_customers++;stats.cases+=row.cases.length;stats.deals+=row.deals.length;stats.deals_with_amount+=row.deals.filter(d=>d.amount_twd!=null).length;stats.waits+=row.waits.length;stats.tasks+=row.tasks.length;
    for(const k of row.cases)stats.case_status[k.status]=(stats.case_status[k.status]??0)+1}
   row.summary=summaryLine(row);
   for(const t of row.tags)stats.tags[t.tag]=(stats.tags[t.tag]??0)+1;

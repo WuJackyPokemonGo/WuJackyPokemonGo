@@ -108,3 +108,56 @@ test('CRM list: quick filters, status filter, product search across cases/deals/
  assert.deepEqual(names(filterCrm(rows,{query:'超夢'})),['Cat']);assert.deepEqual(names(filterCrm(rows,{query:'快龍'})),['Amy']);assert.deepEqual(names(filterCrm(rows,{query:'烈空坐'})),['Amy']);
  assert.deepEqual(names(filterCrm(rows,{sort:'total'})),['Bob','Amy','Cat']);assert.equal(rows.find(r=>r.display_name==='Cat').features.dealCount,1,'website order matched by customer name');
 });
+
+test('round-two features: budget intent, rebind and delivery-chase tasks come from chat as suggestions',()=>{
+ const f2=new Map([...files,conv('big_1','Big',[['c',30,'超夢XXL 3000收'],['o',29.9,'可以 '+PAYINFO],['c',29.8,'已匯',{photos:[{uri:'x'}]}],['c',29,'請問什麼時候給帳號'],['o',28,'超夢 帳號 qwerty12 密碼 asdfgh34'],['c',27.9,'請問怎麼換綁']])]);
+ const {rows}=parseThreadsExport(f2,{products,now:NOW,suggestScope:'all'});const r=rows.find(x=>x.external_key==='big_1');
+ assert.equal(r.cases[0].evidence.budget.amount,3000);assert.equal(r.cases[0].evidence.budget.kind,'offer');
+ assert.deepEqual(r.tasks.map(t=>[t.kind,t.status]).sort(),[['delivery_chase','done'],['rebind_tutorial','done']],'delivered history is recorded as already handled');
+ const f=customerFeatures({cases:r.cases},{high_value_twd:1000});assert.equal(f.budget.amount,3000);assert.ok(matchesFilter(f,'high_budget'));
+ assert.equal(customerFeatures({cases:r.cases},{high_value_twd:5000}).budget,null,'budget threshold follows the adjustable setting');
+});
+
+test('frequent items count distinct cases, categories split bought vs asked, waiting product reverse lookup, LINE link shows Threads → LINE',async()=>{
+ const {frequentItems,channelLabel,displayLayout,FEATURES}=await import('../crm-features.mjs');const {crmRows,filterCrm}=await import('../crm-ui.mjs');
+ const inq=[{occurred_at:'2026-08-01T01:00:00Z',terms:['烈空坐（異色）'],evidence:{}},{occurred_at:'2026-08-01T02:00:00Z',terms:['烈空坐（異色）'],evidence:{}},{occurred_at:'2026-09-01T01:00:00Z',terms:['烈空坐（異色）','藍狗'],evidence:{pending:['藍狗']}},{occurred_at:'2026-09-02T01:00:00Z',terms:['藍狗'],evidence:{pending:['藍狗']}}];
+ const cases=[{id:'k1',opened_at:'2026-08-01T00:00:00Z',last_at:'2026-08-01T05:00:00Z'},{id:'k2',opened_at:'2026-09-01T00:00:00Z',last_at:'2026-09-03T00:00:00Z'}];
+ assert.deepEqual(frequentItems(inq,cases).map(x=>[x.term,x.count]),[['烈空坐（異色）',2]],'same thread asked twice counts once; 藍狗 only in one case');
+ assert.deepEqual(frequentItems(inq,[]).map(x=>[x.term,x.count,x.pending]),[['烈空坐（異色）',2,false],['藍狗',2,true]],'without cases, distinct days; pending terms flagged');
+ assert.equal(channelLabel([{platform:'threads'}],null),'Threads');assert.equal(channelLabel([{platform:'threads'},{platform:'line'}],null),'Threads → LINE');
+ const rows=crmRows({identities:[{customer_id:'a',platform:'threads',display_name:'Amy',last_seen_at:'2026-11-09'},{customer_id:'a',platform:'line',display_name:'amy_line'},{customer_id:'b',platform:'threads',display_name:'Bob',last_seen_at:'2026-11-08'}],tags:[],
+  inquiries:[{customer_id:'b',occurred_at:'2026-11-01',terms:['皮卡丘'],excerpt:'色違背景皮卡丘多少',evidence:{cues:['背景：背景']}}],
+  deals:[{customer_id:'a',status:'accepted',amount_twd:500,occurred_at:'2026-08-01',items:[{text:'極巨化色背淚眼蜥'}]}],
+  waits:[{customer_id:'b',status:'waiting',item_text:'超夢 XXL',product_ids:['p1']}],tasks:[{customer_id:'a',status:'open',kind:'rebind_tutorial'}]});
+ assert.equal(rows.length,2,'LINE identity does not create a second customer');assert.equal(rows.find(r=>r.display_name==='Amy').features.channel,'Threads → LINE');
+ const names=x=>x.map(r=>r.display_name);
+ assert.deepEqual(names(filterCrm(rows,{filters:['linked']})),['Amy']);assert.deepEqual(names(filterCrm(rows,{filters:['open_tasks']})),['Amy']);
+ assert.deepEqual(names(filterCrm(rows,{category:'dynamax',categoryMode:'bought'})),['Amy']);assert.deepEqual(names(filterCrm(rows,{category:'background',categoryMode:'asked'})),['Bob']);
+ assert.deepEqual(names(filterCrm(rows,{category:'background',categoryMode:'bought'})),['Amy'],'色背 counts as background for bought items');
+ assert.deepEqual(names(filterCrm(rows,{waitingProduct:'p1',productNames:new Map([['p1','超夢']])})),['Bob']);
+ // 顯示設定：隱藏後重新顯示、排序；資料不受影響
+ let lay=displayLayout({top:['regular','high_value','waiting'],hidden:[]});assert.deepEqual(lay.top.map(x=>x[0]),['regular','high_value','waiting']);assert.equal(lay.more.length,FEATURES.length-3);
+ lay=displayLayout({top:['waiting','regular'],hidden:['high_value']});assert.deepEqual(lay.top.map(x=>x[0]),['waiting','regular']);assert.ok(!lay.more.some(x=>x[0]==='high_value'));assert.deepEqual(lay.hidden.map(x=>x[0]),['high_value']);
+ lay=displayLayout({top:['waiting','regular'],hidden:[]});assert.ok(lay.more.some(x=>x[0]==='high_value'),'re-shown feature comes back');
+ assert.equal(filterCrm(rows,{filters:['regular']}).length,0,'hiding never changes the underlying data');
+});
+
+test('tasks and customer meta: admin-only, task import is idempotent and never reopens handled tasks, contact types are validated',async()=>{
+ const {d,q,admin}=await db();
+ await d.exec('set role anon');await assert.rejects(q('select * from crm_tasks'),/permission denied/);await assert.rejects(q('select * from crm_customer_meta'),/permission denied/);await d.exec('reset role');
+ await asAdmin(d,admin);
+ const batch=(await q("insert into crm_import_batches(source) values('threads') returning id"))[0].id;
+ const row={external_key:'t_1',display_name:'T',folder:'inbox/t_1',first_at:NOW,last_at:NOW,message_count:2,customer_message_count:1,last_sender:'customer',inquiries:[],tags:[],followups:[]};
+ await q('select admin_crm_import_threads($1,$2)',[batch,JSON.stringify([row])]);
+ const tasks=[{source_key:'threads:t_1:task:rebind_tutorial:1',kind:'rebind_tutorial',title:'需要換綁教學',status:'open',excerpt:'怎麼換綁'}];
+ assert.equal((await q('select admin_crm_import_tasks($1) r',[JSON.stringify([{external_key:'t_1',tasks}])]))[0].r.tasks_new,1);
+ await q("update crm_tasks set status='done',resolved_at=now()");
+ assert.equal((await q('select admin_crm_import_tasks($1) r',[JSON.stringify([{external_key:'t_1',tasks}])]))[0].r.tasks_new,0);
+ assert.equal((await q('select status from crm_tasks'))[0].status,'done','re-import never reopens a handled task');
+ const cid=(await q("select customer_id from crm_identities where external_key='t_1'"))[0].customer_id;
+ await q("insert into crm_customer_meta(customer_id,first_channel,current_channel,contact_types) values($1,'Threads','LINE','{customer,friend}')",[cid]);
+ await assert.rejects(q("update crm_customer_meta set contact_types='{boss}'"),/check/);
+ await q("insert into crm_identities(customer_id,platform,external_key,display_name) values($1,'line','t_line','T')",[cid]);
+ assert.equal((await q('select count(distinct customer_id)::int n from crm_identities'))[0].n,1,'LINE identity links to the same customer');
+ await d.exec('reset role');
+});
