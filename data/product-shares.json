@@ -12,6 +12,12 @@
     "image": ""
   },
   {
+    "id": "03047c66-cd89-4610-a901-9502c8bc52bb",
+    "name": "顫弦蠑螈（低調）-寶可夢之夜倫敦",
+    "name_en": "Toxtricity (Low Key Form) - Pokémon Night Out London 2026",
+    "image": "assets/products/night-out-london-background.webp"
+  },
+  {
     "id": "10f638a9-3211-4e17-806a-152e1a8afb45",
     "name": "皮卡丘-2026 寶可夢中心限定背景（18款）",
     "name_en": "Pikachu - Pokémon Center 2026 Location Background (18 Designs)",
@@ -48,6 +54,12 @@
     "image": "assets/products/opt/2276855e-1e6d-4704-94d6-cd38e55faafc-960c67a2-e449-4b81-9083-9644e20da788.webp"
   },
   {
+    "id": "28a5eb28-d465-41ae-9d80-53e27d61d814",
+    "name": "皮卡丘、四季鹿-2026平昌冬季慶典限定背景（2隻套組）",
+    "name_en": "Shiny Snowflake Beanie Pikachu & Winter Deerling - Pyeongchang Winter Festival 2026 (2-Pokémon Set)",
+    "image": ""
+  },
+  {
     "id": "29157011-fdeb-4717-90d4-af001c970835",
     "name": "四季鹿（春季）-2025汝矣島櫻花節限定背景",
     "name_en": "Spring Deerling - Yeouido Cherry Blossom Festival 2025 Background",
@@ -61,7 +73,7 @@
   },
   {
     "id": "2a8a262f-c19d-4631-ba21-e6a5b5ecafde",
-    "name": "耿鬼-墨西哥亡靈節",
+    "name": "耿鬼（超極巨化）-墨西哥亡靈節",
     "name_en": "Shiny Gigantamax Gengar - Mexico City Día de Muertos 2026",
     "image": "assets/products/opt/2a8a262f-c19d-4631-ba21-e6a5b5ecafde-a4b0d52b-f802-4670-ad8c-b08ef3adec21.webp"
   },
@@ -106,6 +118,12 @@
     "name": "索財靈-2026 十週年紀念限定背景",
     "name_en": "Gimmighoul - Pokémon GO 10th Anniversary Special Background",
     "image": "assets/products/opt/3aaf23ee-7f75-4baa-a8c8-128b117b01df-31273432-8f2a-44bb-9d0d-4241a24e2132.webp"
+  },
+  {
+    "id": "3bc431d6-77f1-4861-bd8e-15afdcbd4823",
+    "name": "皮卡丘-2026平昌冬季慶典限定背景",
+    "name_en": "Shiny Snowflake Beanie Pikachu - Pyeongchang Winter Festival 2026",
+    "image": ""
   },
   {
     "id": "47578a86-4418-4b11-9053-7998bf899bf0",
@@ -216,6 +234,12 @@
     "image": "assets/products/opt/674a0800-5224-4f4e-865d-95a85be6665c-c6e3b2c1-9d00-4882-affc-dcd8db57938f.webp"
   },
   {
+    "id": "6bf39212-399a-4475-8032-c26c70281e7a",
+    "name": "耿鬼-寶可夢之夜倫敦",
+    "name_en": "Shiny Gengar - Pokémon Night Out London 2026",
+    "image": "assets/products/night-out-london-gengar.webp"
+  },
+  {
     "id": "6d1b3ae7-3e05-4491-866d-686a63c4438b",
     "name": "火狐狸-Mega背景",
     "name_en": "Fennekin - Mega Background",
@@ -256,6 +280,12 @@
     "name": "皮皮-月光",
     "name_en": "Clefairy - Moonlight",
     "image": "assets/products/opt/73b2ec0a-1ab6-4d26-b0b2-850a1f754ed9-c815a384-444a-41e5-a8e8-4609a401bd4e.webp"
+  },
+  {
+    "id": "768b982d-272e-4b88-ad5f-aa2d0b4c4a21",
+    "name": "顫弦蠑螈（高調）-寶可夢之夜倫敦",
+    "name_en": "Toxtricity (Amped Form) - Pokémon Night Out London 2026",
+    "image": "assets/products/night-out-london-background.webp"
   },
   {
     "id": "77652651-9a2e-497e-8aa4-313ca0e2d559",
@@ -402,6 +432,12 @@
     "image": "assets/products/opt/c2f8374e-4319-47f9-8b09-7079c93f1c64-61ab5d27-caac-460b-abba-c1a06ba516c5.webp"
   },
   {
+    "id": "c8209417-2f52-49bd-8ff4-351972076a84",
+    "name": "四季鹿（冬季）-2026平昌冬季慶典限定背景",
+    "name_en": "Shiny Winter Deerling - Pyeongchang Winter Festival 2026",
+    "image": ""
+  },
+  {
     "id": "cac40f65-8bba-441b-b0d6-b039207c83ad",
     "name": "拉魯拉絲-極巨化",
     "name_en": "Ralts - Dynamax",
@@ -424,6 +460,12 @@
     "name": "皮卡丘、小火龍、傑尼龜、妙蛙種子-2025大阪萬博（4隻套組）",
     "name_en": "Pikachu / Charmander / Squirtle / Bulbasaur - EXPO 2025 Osaka",
     "image": "assets/products/opt/d131d983-5a56-4590-89b0-167335cde607-df85fa22-66d4-457b-9aff-82d238c89a66.webp"
+  },
+  {
+    "id": "d1d319c1-e2c0-4c82-840c-ea0f23076011",
+    "name": "皮卡丘-寶可夢之夜倫敦",
+    "name_en": "Shiny Pikachu - Pokémon Night Out London 2026",
+    "image": "assets/products/night-out-london-pikachu.webp"
   },
   {
     "id": "d3e0a495-377f-4150-b379-5254a4f74f70",
