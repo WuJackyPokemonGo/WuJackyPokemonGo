@@ -28691,8 +28691,10 @@
             "basis": "confirmed"
           }
         },
-        "conditions_zh": "指定團體戰、極巨對戰捕獲有機會附特殊背景；持票特殊調查明列附背景超極巨鋁鋼龍。每日10:00–18:00。",
-        "conditions_en": "Eligible raids and Max Battles offer a Special Background chance; ticketed Special Research explicitly awards Gigantamax Duraludon with the background. Daily 10:00–18:00.",
+        "conditions_zh": "指定團體戰、極巨對戰捕獲有機會附特殊背景；持票特殊調查明列附背景超極巨鋁鋼龍。每日10:00–18:00。官方提醒，11/14–15 日本大阪難波周邊部分遊戲功能可能暫時調整。",
+        "conditions_en": "Eligible raids and Max Battles offer a Special Background chance; ticketed Special Research explicitly awards Gigantamax Duraludon with the background. Daily 10:00–18:00. Pokémon GO advises that some gameplay features around Namba, Osaka, may be temporarily adjusted on November 14–15.",
+        "uncertainty_zh": "大阪難波公告未列出會調整的功能，也未說明是否影響背景取得。",
+        "uncertainty_en": "The Osaka advisory does not specify which features may change or whether background acquisition is affected.",
         "eligible_zh": "現代夾克怪力、極巨帝牙盧卡／帕路奇亞、萊希拉姆、捷克羅姆、酋雷姆、超極巨鋁鋼龍。",
         "eligible_en": "Modern-jacket Machamp, Dynamax Dialga/Palkia, Reshiram, Zekrom, Kyurem and Gigantamax Duraludon.",
         "remote_participation": {
@@ -28705,9 +28707,10 @@
           "text_zh": "官方未就本活動單獨說明。GO Fest 2024曾發生遠距團體戰拿不到特殊背景，官方視為錯誤並補發附背景遭遇，推定特殊背景可經遠距團體戰／極巨對戰取得。",
           "text_en": "Not stated for this event. When remote raids failed to award Special Backgrounds at GO Fest 2024, Niantic treated it as a bug and compensated, so remote catches are inferred to be eligible for Special Backgrounds."
         },
-        "checked_on": "2026-11-06",
+        "checked_on": "2026-11-12",
         "sources": [
           "https://pokemongo.com/en/gowildarea/global",
+          "https://pokemongo.com/news/gowildarea-global-2026-osaka-gameplay-update",
           "https://pokemongo.com/news/shadow-raid-max-battle-update"
         ],
         "background_type": "special",
