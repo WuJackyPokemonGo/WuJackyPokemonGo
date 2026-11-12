@@ -72,7 +72,7 @@ export function initCrmUI({client,run,notify}){
    fetchAll(()=>client.from('crm_identities').select('id,customer_id,display_name,folder,first_seen_at,last_seen_at,message_count,customer_message_count,last_sender,summary,narrative').order('last_seen_at',{ascending:false})),
    fetchAll(()=>client.from('crm_tags').select('customer_id,tag,source,evidence')),
    fetchAll(()=>client.from('crm_inquiries').select('customer_id,occurred_at,category,terms,product_ids,excerpt,evidence').order('occurred_at',{ascending:false})),
-   fetchAll(()=>client.from('crm_followups').select('id,customer_id,reason,excerpt,status,due_on,created_at').eq('status','open').order('created_at',{ascending:false}))]);
+   fetchAll(()=>client.from('crm_followups').select('id,customer_id,reason,excerpt,status,due_on,created_at,source_key').eq('status','open').order('created_at',{ascending:false}))]);
   const [handled,profiles,orders,history,products]=await Promise.all([
    fetchAll(()=>client.from('crm_followups').select('source_key,status').like('source_key','unconverted:%')),
    fetchAll(()=>client.from('customer_profiles').select('id,alias,other_aliases')),
@@ -83,7 +83,9 @@ export function initCrmUI({client,run,notify}){
   extra={identities,inquiries:dayed,tags,handled,profiles,orders,history,products,purchases:purchaseDaysByCustomer({profiles,orders,history,tags})};
   rows=crmRows({identities,tags,inquiries});followups=fu;loaded=true;renderInsights();render();
  }
+ let insightsDay='';
  function renderInsights(){
+  insightsDay=taipeiDay(Date.now());
   const s=crmSummary({...extra,followups,period:periodSel.value});sumBox.replaceChildren();
   const money=n=>'NT$ '+Number(n).toLocaleString('zh-TW');
   const t=el('table');for(const [k,v] of [['期間',s.range.from===s.range.to?s.range.from:s.range.from+' → '+s.range.to],['新詢問',`${s.inquiries} 筆（${s.customersAsking} 位客人）`],['詢問類型',Object.entries(s.byCategory).filter(([,n])=>n).map(([k,n])=>(CATEGORY_LABELS[k]??k)+' '+n).join('、')||'—'],['新客人',`${s.newCustomers} 位`],['想買的客人',`${s.intentCustomers} 位（已成交 ${s.convertedCustomers}）`],['成交（後台訂單）',`${s.sales.orders} 筆・${money(s.sales.orderTotal)}`],['成交（匯入的歷史購買）',`${s.sales.history} 筆・${money(s.sales.historyTotal)}`],['待追蹤',`${s.openFollowups} 件${s.overdueFollowups?`（逾期 ${s.overdueFollowups} 件）`:''}`],['最常被問',s.topItems.map(x=>`${x.name}×${x.count}`).join('、')||'—']]){const tr=el('tr');tr.append(el('th',k),el('td',String(v)));t.append(tr)}
@@ -99,17 +101,20 @@ export function initCrmUI({client,run,notify}){
  }
  async function markUnconverted(u,status){
   const row={customer_id:u.customer_id,reason:'問過沒買：'+(u.items.join('、')||u.categories.join('／')),excerpt:(u.excerpt??'').slice(0,120),status,source_key:u.key,...(status==='dismissed'?{resolved_at:new Date().toISOString()}:{due_on:new Date().toLocaleDateString('sv-SE',{timeZone:'Asia/Taipei'})})};
-  const cols='id,customer_id,reason,excerpt,status,due_on,created_at';
+  const cols='id,customer_id,reason,excerpt,status,due_on,created_at,source_key';
   let saved=checked(await client.from('crm_followups').upsert(row,{onConflict:'source_key',ignoreDuplicates:true}).select(cols));
   let already=false;
   if(!saved.length){already=true;saved=checked(await client.from('crm_followups').select(cols).eq('source_key',u.key))}
-  const actual=saved[0]?.status??status;
+  if(!saved.length)throw Error(`${u.name} 的追蹤沒有寫入成功，請按重新載入後再試。`);
+  const actual=saved[0].status;
+  followups=followups.filter(f=>f.source_key!==u.key||actual==='open');
   extra.handled=[...extra.handled,{source_key:u.key,status:actual}];
   if(actual==='open'&&!followups.some(f=>f.id===saved[0]?.id))followups=[...saved.filter(f=>f.status==='open'),...followups];
   const label={open:'在待追蹤裡',done:'已處理',dismissed:'標為不用追'}[actual]??actual;
   notify(already?`${u.name} 先前已${label}（可能是在其他分頁操作），已更新畫面。`:(actual==='open'?`已把 ${u.name} 加入待追蹤。`:`已標記 ${u.name} 不用追。`));renderInsights();render();
  }
  function render(){
+  if(insightsDay&&insightsDay!==taipeiDay(Date.now()))renderInsights();
   const byCustomer=new Map(rows.map(r=>[r.customer_id,r]));
   fuBox.replaceChildren();if(!followups.length)fuBox.append(el('p','目前沒有待追蹤事項。','muted'));
   for(const f of followups){const r=byCustomer.get(f.customer_id);const card=el('article',null,'product');

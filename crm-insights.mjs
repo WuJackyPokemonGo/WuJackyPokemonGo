@@ -29,10 +29,12 @@ export function orderSale(o){
 
 // 客人名稱對應：主名稱優先；別名只有在不跟別人的主名稱或別名重複時才使用，重複的列為待核對。
 export function nameIndex(profiles=[]){
- const main=new Map(),aliasOwners=new Map();
- for(const p of profiles){const k=norm(p.alias);if(k&&!main.has(k))main.set(k,p.id)}
- for(const p of profiles)for(const a of new Set((p.other_aliases??[]).map(norm)))if(a&&!main.has(a)){if(!aliasOwners.has(a))aliasOwners.set(a,new Set());aliasOwners.get(a).add(p.id)}
- const byName=new Map(main),ambiguous=[];
+ const main=new Map(),aliasOwners=new Map(),mainOwners=new Map();
+ // 主名稱：正規化後（全形半形、大小寫、空白）相同的多位客人也算歧義，不歸戶
+ for(const p of profiles){const k=norm(p.alias);if(!k)continue;if(!mainOwners.has(k))mainOwners.set(k,new Set());mainOwners.get(k).add(p.id)}
+ const ambiguousMain=[];for(const [k,owners] of mainOwners){if(owners.size===1)main.set(k,[...owners][0]);else ambiguousMain.push(k)}
+ for(const p of profiles)for(const a of new Set((p.other_aliases??[]).map(norm)))if(a&&!mainOwners.has(a)){if(!aliasOwners.has(a))aliasOwners.set(a,new Set());aliasOwners.get(a).add(p.id)}
+ const byName=new Map(main),ambiguous=[...ambiguousMain];
  for(const [a,owners] of aliasOwners){if(owners.size===1)byName.set(a,[...owners][0]);else ambiguous.push(a)}
  return {byName,ambiguous:ambiguous.sort()};
 }
@@ -85,7 +87,7 @@ export function unconvertedCustomers({identities=[],inquiries=[],tags=[],followu
  for(const i of inquiries){if(!INTENT_CATEGORIES.includes(i.category))continue;const d=i.day??taipeiDay(i.occurred_at);if(d<from)continue;if(!group.has(i.customer_id))group.set(i.customer_id,[]);group.get(i.customer_id).push({...i,day:d})}
  const out=[];
  for(const [id,list] of group){list.sort((a,b)=>b.day.localeCompare(a.day));const last=list[0].day;if(last>latest)continue;
-  if((purchases.get(id)??[]).some(p=>p.day>=last))continue;
+  if((purchases.get(id)??[]).some(p=>p.day>=last&&p.day<=today))continue;
   const key=unconvertedKey(id,last);if(handled.has(key))continue;
   const items=[...new Set(list.flatMap(i=>(i.product_ids??[]).length?(i.product_ids??[]).map(p=>productName.get(p)??'（商品已下架）'):(i.terms??[])))].slice(0,5);
   out.push({customer_id:id,name:names.get(id)||'（未命名）',lastDay:last,daysSince:dayDiff(last,today),count:list.length,items,

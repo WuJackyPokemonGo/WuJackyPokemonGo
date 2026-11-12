@@ -115,3 +115,14 @@ test('review fixes: paid tag time, buy-before-ask, refunds, alias collisions, re
  assert.deepEqual(periodRange('week',Date.parse('2027-01-01T02:00:00Z')),{from:'2026-12-28',to:'2027-01-01'});
  assert.deepEqual(periodRange('month',Date.parse('2026-12-31T17:00:00Z')),{from:'2027-01-01',to:'2027-01-01'});
 });
+
+test('second review: normalized main-name collisions and future-dated purchases',()=>{
+ const prof=[{id:C.a,alias:'ＡＢＣ',other_aliases:[]},{id:C.b,alias:'ABC',other_aliases:[]}];
+ for(const order of [prof,[...prof].reverse()]){const idx=nameIndex(order);assert.equal(idx.byName.has('abc'),false);assert.deepEqual(idx.ambiguous,['abc'])}
+ const m=purchaseDaysByCustomer({profiles:prof,orders:[{status:'completed',customer_alias:'abc',public_subtotal_twd:100,created_at:'2026-11-10T02:00:00Z'}],history:[],tags:[]});
+ assert.equal(m.size,0);
+ // 日期在未來的成交不算「最後詢問之後已成交」，與摘要一致
+ const inq=[{customer_id:C.b,occurred_at:'2026-11-05T02:00:00Z',category:'price',product_ids:[],terms:[]}];
+ const future=[{customer_alias:'奶茶',purchased_on:'2026-12-01',amount_twd:100}];
+ assert.equal(unconvertedCustomers({identities,inquiries:inq,tags:[],followups:[],orders:[],history:future,profiles,products,now:NOW,days:30}).length,1);
+});
