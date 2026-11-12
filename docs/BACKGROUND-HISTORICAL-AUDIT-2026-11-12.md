@@ -40,3 +40,5 @@ BG-0016。9DB 當屆活動紀錄列出世界賽皮卡丘為會場地點背景團
 - 帝牙盧卡 [原帖](https://www.reddit.com/r/TheSilphRoad/comments/1asfomj/shiny_dialga_origin_form_live/) · [截圖](https://i.redd.it/9g3l94dmpzic1.jpeg) · [發文時間存檔](https://arctic-shift.photon-reddit.com/api/posts/ids?ids=1asfomj)
 
 更新 BG-0009 的日期說明並補列兩個原帖。圖鑑提交 `00fcb0fbc8fdd205c6a81f8d57f4b523ba01cf05`，資料 blob `27d7f1d8f7293464e6f4278600e937d8f38243b8`。檀香山 8/19–20 是否仍發放地點背景仍待查證。
+
+正式站公開資料已驗收，blob 與本輪圖鑑提交一致。檀香山另有一串同期留言稱會場玩法於週日結束，也有留言轉述朋友遠距於 19 日捕獲，隨後同一人表示活動已結束。留言未附可驗證的截圖，也沒有可換算為夏威夷當地捕獲日期的時間，僅作追查線索。 [同期留言](https://www.reddit.com/r/PokemonGoSpoofing/comments/1evv4s1)
