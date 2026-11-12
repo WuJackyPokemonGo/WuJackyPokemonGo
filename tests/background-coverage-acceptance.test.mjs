@@ -19,11 +19,12 @@ test('every source row resolves to a real entry and every released entry is visi
  const released=data.records.filter(r=>r.release_state==='released');
  const visible=new Set(filterBackgrounds(data.records).map(r=>r.background_id));
  // October 24 snapshot predates the Los Angeles event and the November 6 Festival of Lights (BG-0283); the two ongoing stamp records were merged into BG-0212/BG-0213 (-2) and BG-0213 became released via the Hawlucha rally (+1); retain its historical receipt.
- assert.equal(released.length,latest.released_records+owner.new_released_background_ids.length+stamps.new_released_background_ids.length+1);
+ assert.equal(released.length,latest.released_records+owner.new_released_background_ids.length+stamps.new_released_background_ids.length+2);// +1 Night Out London BG-0214 released 2026-11-10
+ assert.equal(by('BG-0214').release_state,'released');
  assert.equal(by('BG-0211').release_state,'released');
  for(const r of released){assert.ok(ids.has(r.background_id),r.background_id);assert.ok(visible.has(r.background_id),r.background_id);if(r.artwork_status==='pending'){assert.equal(referenceArtwork(r,refs),'');assert.equal(r.verification,'official-event-confirmed');assert.ok(r.official_sources.length)}else assert.ok(safeBackgroundImage(referenceArtwork(r,refs)),r.background_id)}
  assert.deepEqual(audit.unmapped_source_assets,[]);assert.deepEqual(audit.missing_released_backgrounds,[]);
- for(const x of audit.excluded_records)if(!['BG-0211','BG-0212','BG-0213'].includes(x.background_id))assert.ok(!visible.has(x.background_id));
+ for(const x of audit.excluded_records)if(!['BG-0211','BG-0212','BG-0213','BG-0214'].includes(x.background_id))assert.ok(!visible.has(x.background_id));
 });
 test('Patterns of the Wild uses a complete preview while cloud image edits still take precedence',()=>{
  const row=by('BG-0264');assert.match(referenceArtwork(row,refs),/sb-patternwild\.png$/);

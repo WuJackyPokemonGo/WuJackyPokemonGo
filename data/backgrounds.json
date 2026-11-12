@@ -17272,13 +17272,17 @@
           "name_zh": "顫弦蠑螈（高調的樣子）",
           "variant_id": "toxtricity-amped",
           "acquisition": "encounter",
-          "method_status": "unconfirmed",
+          "method_status": "reviewed",
+          "method_evidence": "catalogs",
           "method_sources": [
             "https://pokemongo.com/news/pokemon-night-out-irl-details2026",
-            "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokemon-night-out-london-2026"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonnightout.shtml",
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokemon-night-out-london-2026",
+            "https://pokexperience.com/backgrounds/"
           ],
-          "method_zh": "倫敦場館限時調查可遇高調／低調顫弦蠑螈（二選一）；官方未明列此調查必帶背景，依活動名錄列入。",
-          "method_en": "Venue Timed Research offers Amped or Low Key Toxtricity (choose one); the official post does not state a guaranteed background, listed per catalog."
+          "method_zh": "倫敦場館限時調查的高調路線獎勵（11/10 已舉行）。查證結果：Serebii、Dittobase、PokéXperience 三份名錄活動後均列高調顫弦蠑螈附倫敦地點背景；官方公告只明寫團體戰附背景，尚無遊戲內實物截圖。限時調查需在場館開啟遊戲才會取得，無法遠距。",
+          "method_en": "London venue Timed Research, Amped branch (held 10 Nov). Verification: Serebii, Dittobase and PokéXperience all list Amped Form Toxtricity with the London Location Background after the event; the official post only states raids award it, and no in-game screenshot has been found yet. The research is only issued at the venue."
         },
         {
           "dex": 849,
@@ -17286,20 +17290,24 @@
           "name_zh": "顫弦蠑螈（低調的樣子）",
           "variant_id": "toxtricity-low-key",
           "acquisition": "encounter",
-          "method_status": "unconfirmed",
+          "method_status": "reviewed",
+          "method_evidence": "catalogs",
           "method_sources": [
             "https://pokemongo.com/news/pokemon-night-out-irl-details2026",
-            "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokemon-night-out-london-2026"
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemonnightout.shtml",
+            "https://www.serebii.net/pokemongo/backgrounds.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-pokemon-night-out-london-2026",
+            "https://pokexperience.com/backgrounds/"
           ],
-          "method_zh": "倫敦場館限時調查可遇高調／低調顫弦蠑螈（二選一）；官方未明列此調查必帶背景，依活動名錄列入。",
-          "method_en": "Venue Timed Research offers Amped or Low Key Toxtricity (choose one); the official post does not state a guaranteed background, listed per catalog."
+          "method_zh": "倫敦場館限時調查的低調路線獎勵（11/10 已舉行）。查證結果：Serebii、Dittobase、PokéXperience 三份名錄活動後均列低調顫弦蠑螈附倫敦地點背景；官方公告只明寫團體戰附背景，尚無遊戲內實物截圖。限時調查需在場館開啟遊戲才會取得，無法遠距。",
+          "method_en": "London venue Timed Research, Low Key branch (held 10 Nov). Verification: Serebii, Dittobase and PokéXperience all list Low Key Form Toxtricity with the London Location Background after the event; the official post only states raids award it, and no in-game screenshot has been found yet. The research is only issued at the venue."
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
       "verification": "official-event-confirmed",
       "background_id": "BG-0214",
       "name_zh": "寶可夢之夜 - 倫敦",
-      "release_state": "upcoming",
+      "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/news/pokemon-night-out-irl-details2026"
       ],
@@ -17307,7 +17315,8 @@
         "一星皮卡丘、三星耿鬼的現場團體戰捕獲可有該城市地標背景；不自行填入未公告遊戲時間。",
         "2026-11-06：依Dittobase背景頁補列進化繼承款。",
         "2026-11-06：官方公告確認倫敦場館限時調查有高調／低調顫弦蠑螈，Dittobase列入倫敦背景，比照洛杉磯BG-0211補列；背景保證仍待活動實際確認。",
-        "2026-11-06：倫敦場11/10舉行；顫弦蠑螈背景資格待活動後依實物確認，比照洛杉磯。"
+        "2026-11-06：倫敦場11/10舉行；顫弦蠑螈背景資格待活動後依實物確認，比照洛杉磯。",
+        "2026-11-12：活動已於11/10舉行，改為已推出。高調、低調顫弦蠑螈：Serebii（活動頁與背景頁）、Dittobase（標示11/10推出）、PokéXperience 三份名錄均列入倫敦背景，依名錄改為reviewed（method_evidence: catalogs）。遊戲內實物：Reddit、X 與網路搜尋未找到玩家截圖，僅見一則第三方eBay賣場標題（未能開啟核對，不採為證據），實物佐證待補。官方公告與LeekDuck仍只明寫團體戰附背景。"
       ],
       "start_date": "2026-11-10",
       "related_product_ids": [],
@@ -29451,9 +29460,9 @@
   },
   "counts": {
     "catalog-crosschecked": 55,
-    "official-event-confirmed": 220,
+    "official-event-confirmed": 221,
     "catalogued-needs-event-check": 3,
-    "upcoming": 4
+    "upcoming": 3
   },
   "review_counts": {
     "date_details_pending": 4,
