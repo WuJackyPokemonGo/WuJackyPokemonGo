@@ -24112,7 +24112,10 @@
           "name_en": "Sobble",
           "name_zh": "淚眼蜥",
           "variant_id": "sobble",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "2026/7/4 淚眼蜥社群日有玩家回報，極巨對戰捕捉的極巨化淚眼蜥可附年度特殊背景。此途徑為玩家回報，適用時段與機率未核實。",
+          "method_en": "Player reports from the July 4, 2026 Sobble Community Day indicate that Dynamax Sobble caught from Max Battles could have the annual Special Background. The exact hours and odds are unverified.",
+          "method_evidence": "owner-and-community-report"
         },
         {
           "dex": 827,
@@ -24147,6 +24150,7 @@
       "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/news/communityday-january-2026-grookey",
+        "https://pokemongo.com/en/news/communityday-july-2026-sobble",
         "https://pokemongo.com/en/news/communityday-october-2026-zorua",
         "https://pokemongo.com/news/communitydayclassic-piplup-jan-2026",
         "https://pokemongo.com/news/communityday-november-2026-pawniard"
@@ -24166,7 +24170,9 @@
       "year_verified": false,
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
-        "https://www.dittobase.com/pokemon-go/backgrounds/sb-community-days-2026"
+        "https://www.dittobase.com/pokemon-go/backgrounds/sb-community-days-2026",
+        "https://x.com/Zeni_sun/status/2073272541985243599",
+        "https://x.com/makonga1882/status/2073279347604271530"
       ],
       "evolved_pokemon": [
         {
