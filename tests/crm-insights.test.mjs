@@ -124,5 +124,6 @@ test('second review: normalized main-name collisions and future-dated purchases'
  // 日期在未來的成交不算「最後詢問之後已成交」，與摘要一致
  const inq=[{customer_id:C.b,occurred_at:'2026-11-05T02:00:00Z',category:'price',product_ids:[],terms:[]}];
  const future=[{customer_alias:'奶茶',purchased_on:'2026-12-01',amount_twd:100}];
- assert.equal(unconvertedCustomers({identities,inquiries:inq,tags:[],followups:[],orders:[],history:future,profiles,products,now:NOW,days:30}).length,1);
+ const fl=unconvertedCustomers({identities,inquiries:inq,tags:[],followups:[],orders:[],history:future,profiles,products,now:NOW,days:30});
+ assert.equal(fl.length,1);assert.equal(fl[0].bought,false,'future-only purchase is not "bought before"');
 });

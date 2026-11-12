@@ -92,6 +92,6 @@ export function unconvertedCustomers({identities=[],inquiries=[],tags=[],followu
   const items=[...new Set(list.flatMap(i=>(i.product_ids??[]).length?(i.product_ids??[]).map(p=>productName.get(p)??'（商品已下架）'):(i.terms??[])))].slice(0,5);
   out.push({customer_id:id,name:names.get(id)||'（未命名）',lastDay:last,daysSince:dayDiff(last,today),count:list.length,items,
    categories:[...new Set(list.map(i=>CATEGORY_LABELS[i.category]??i.category))],abandonTag:tagSet.get(id)?.has('abandon_suspected')??false,
-   bought:(purchases.get(id)??[]).length>0,paidUnknown:purchases.paidUnknown?.has(id)??false,key,excerpt:list[0].excerpt??''})}
+   bought:(purchases.get(id)??[]).some(p=>p.day<=today),paidUnknown:purchases.paidUnknown?.has(id)??false,key,excerpt:list[0].excerpt??''})}
  return out.sort((a,b)=>Number(b.abandonTag)-Number(a.abandonTag)||b.lastDay.localeCompare(a.lastDay)||a.name.localeCompare(b.name,'zh-Hant'));
 }
