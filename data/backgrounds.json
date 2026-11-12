@@ -1038,7 +1038,9 @@
       "background_id": "BG-0009",
       "name_zh": "GO Tour 洛杉磯",
       "release_state": "released",
-      "official_sources": [],
+      "official_sources": [
+        "https://pokemongo.com/en/news/gotour2024-losangeles-update"
+      ],
       "notes": [],
       "related_product_ids": [],
       "method_zh": "於活動限定團體戰捕捉對應寶可夢，有機會附上該城市背景；現場活動票券與加購適用時段依當年規則。",
@@ -1055,7 +1057,7 @@
         "https://leekduck.com/events/pokemon-go-tour-sinnoh-los-angeles/"
       ],
       "evolved_pokemon": [],
-      "checked_on": "2026-10-24",
+      "checked_on": "2026-11-12",
       "region_en": "United States",
       "region_zh": "美國",
       "verification_scope": "background-and-eligibility",
@@ -1065,8 +1067,8 @@
       "reference_review": "images-compared-2026-10-24",
       "start_date": "2024-02-16",
       "end_date": "2024-02-18",
-      "date_note_zh": "2/16為城市加購體驗，公園票券主活動為2/17–18。",
-      "date_note_en": "February 16 is city add-on gameplay; the park event is February 17–18."
+      "date_note_zh": "2/16 為城市加購體驗，公園票券主活動為 2/17–18。Dittobase 將地點背景的起始日列為 2/16，當日附背景的捕獲紀錄仍待確認。",
+      "date_note_en": "Citywide add-on gameplay began February 16. The ticketed park event ran February 17–18. Dittobase lists February 16 as the background release date. A capture record showing the background on that date is still pending."
     },
     {
       "name_en": "Air Adventures Bali",
@@ -1643,13 +1645,15 @@
       "background_id": "BG-0016",
       "name_zh": "2024 寶可夢世界錦標賽",
       "release_state": "released",
-      "official_sources": [],
+      "official_sources": [
+        "https://pokemongo.com/news/world-championships-event-2024"
+      ],
       "notes": [],
       "related_product_ids": [
         "535ad1ce-37a1-4db7-af62-91fc503390af"
       ],
-      "method_zh": "檀香山現場團體戰、田野與限時調查有機會取得世界賽皮卡丘地標背景；無需世界賽票券。",
-      "method_en": "Honolulu raids, Field Research and Timed Research could award the Worlds Pikachu background; no Worlds ticket required.",
+      "method_zh": "同期玩家紀錄顯示，檀香山會場的團體戰有機會取得附地點背景的世界賽皮卡丘。田野調查、限時調查的背景資格及是否需世界賽票券仍待確認。",
+      "method_en": "Contemporaneous player reports show that raids at the Honolulu venue could award Worlds Pikachu with the Location Background. Background eligibility from Field Research or Timed Research and Worlds ticket requirements are still pending verification.",
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2024",
@@ -1657,12 +1661,16 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-wcs-2024-honolulu",
-        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)"
+        "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
+        "https://9db.jp/pokemongo/data/20088",
+        "https://9db.jp/pokemongo/data/20181"
       ],
       "evolved_pokemon": [],
       "start_date": "2024-08-16",
       "end_date": "2024-08-20",
-      "checked_on": "2026-10-24",
+      "date_note_zh": "檀香山世界錦標賽為 8/16–18，全球遊戲慶祝活動為 8/16–20。8/19–20 是否仍可取得檀香山地點背景待確認。",
+      "date_note_en": "The Honolulu World Championships ran August 16–18. The global in-game celebration ran August 16–20. Availability of the Honolulu Location Background on August 19–20 is still pending verification.",
+      "checked_on": "2026-11-12",
       "region_en": "United States",
       "region_zh": "美國",
       "reference_ids": [
