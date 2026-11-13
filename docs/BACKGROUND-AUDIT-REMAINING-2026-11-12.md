@@ -63,4 +63,4 @@
 
 檀香山複核後仍未取得 8/19–20 夏威夷當地捕獲且可辨認背景的原始紀錄。同期攻略把可附背景的會場團體戰和田野調查列在一起，另列會場尋寶限時調查的皮卡丘遭遇，後者的背景資格仍缺實證。 [同期攻略](https://nintendowire.com/guides/pokemon-go/season-of-shared-skies/2024-pokemon-world-championships-event/) · [官方公告](https://pokemongo.com/news/world-championships-event-2024)
 
-圖鑑提交 `75236fcded4b76e7110edba2529a70a3ca1cd8a7`，資料 blob `9a16cedc716e71dd836c265a1bff442145675f7b`。
+圖鑑提交 `75236fcded4b76e7110edba2529a70a3ca1cd8a7`，資料 blob `9a16cedc716e71dd836c265a1bff442145675f7b`。 正式站公開 JSON 已驗收，與提交的資料 blob 一致。2026 極巨之路官方公告列明 11/16–23 的極巨對戰捕獲有機會取得特殊背景，公告正文未辨明是否沿用暗黑蒼穹圖樣，保留待實際發放證據。 [2026 官方公告](https://pokemongo.com/en/news/dynamax-trails-eternamax-eternatus-2026)
