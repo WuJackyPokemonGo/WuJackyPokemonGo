@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { createHmac } from 'node:crypto';
 import test from 'node:test';
-import { createLineHandler, createReply } from '../supabase/functions/line-ai-replies/worker.mjs';
+import { claudeClassifier, createLineHandler, createReply } from '../supabase/functions/line-ai-replies/worker.mjs';
 
 const product = { id: 'example', name: '皮卡丘-倫敦', aliases: ['倫敦色背皮卡'], status: 'available', stock_quantity: 2, price: 100 };
 const classify = async () => ({ intent: 'lookup', query: '倫敦色背皮卡' });
@@ -45,4 +45,20 @@ test('LINE endpoint verifies signatures and replies only to pilot accounts', asy
   assert.equal(sent.length, 1);
   assert.equal(sent[0].replyToken, 'pilot-reply');
   assert.match(sent[0].messages[0].text, /NT\$100/);
+});
+
+test('Claude uses the Messages API with a constrained classification response', async () => {
+  const classify = claudeClassifier({ key: 'test-key', model: 'test-model',
+    fetcher: async (url, options) => {
+      assert.equal(url, 'https://api.anthropic.com/v1/messages');
+      assert.equal(options.headers['x-api-key'], 'test-key');
+      const body = JSON.parse(options.body);
+      assert.equal(body.messages[0].content, '倫敦色背皮卡多少');
+      assert.equal(body.output_config.format.type, 'json_schema');
+      return Response.json({ stop_reason: 'end_turn', content: [
+        { type: 'text', text: JSON.stringify({ intent: 'lookup', query: '倫敦色背皮卡' }) },
+      ] });
+    },
+  });
+  assert.deepEqual(await classify('倫敦色背皮卡多少'), { intent: 'lookup', query: '倫敦色背皮卡' });
 });
