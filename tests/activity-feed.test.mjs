@@ -24,9 +24,9 @@ test('date-only events never invent midnight and worldwide local-time events ide
  const r=get('night-out-los-angeles-2026');assert.equal(activityState(r,Date.parse('2026-10-25T08:00Z')).status,'ended');assert.equal(activityState(r,Date.parse('2026-10-24T20:00Z')).status,'time_unknown');assert.equal(activityState(r,Date.parse('2026-10-25T08:00Z')).basis,'inferred');assert.match(activityTimeLines(r).taiwan,/待當地時刻確認/);assert.doesNotMatch(activityTimeLines(r).local,/00:00/);
  const global=get('wild-area-global-2026');assert.match(activityTimeLines(global,'en').taiwan,/not at one shared Taiwan instant/);assert.equal(activityState(global,Date.parse('2026-11-14T02:00Z')).status,'in_progress');assert.equal(activityWindows(global).length,0);
 });
-test('feed contains 21 unique events with complete evidence fields without mutating catalog release states',()=>{
- const before=JSON.stringify(data);assert.equal(events.length,21);assert.equal(new Set(events.map(r=>r.event_id )).size,21);
- const statuses=events.map(r=>activityState(r,Date.parse('2026-10-31T00:00Z')).status);assert.equal(statuses.filter(s=>s==='in_progress').length,1);assert.equal(statuses.filter(s=>s==='upcoming').length,19);assert.equal(statuses.filter(s=>s==='ended').length,1);
+test('feed contains 32 unique events with complete evidence fields without mutating catalog release states',()=>{
+ const before=JSON.stringify(data);assert.equal(events.length,32);assert.equal(new Set(events.map(r=>r.event_id )).size,32);
+ const statuses=events.map(r=>activityState(r,Date.parse('2026-10-31T00:00Z')).status);assert.equal(statuses.filter(s=>s==='in_progress').length,1);assert.equal(statuses.filter(s=>s==='upcoming').length,30);assert.equal(statuses.filter(s=>s==='ended').length,1);
  for(const r of events.filter(r=>r.activity.kind!=='event')){for(const f of ['conditions_zh','conditions_en','eligible_zh','eligible_en','checked_on','background_type','artwork_status'])assert.ok(r.activity[f],r.event_id+' '+f);assert.ok(r.activity.sources.length);for(const f of ['remote_participation','remote_background'])assert.ok(['confirmed','inferred','pending'].includes(r.activity[f].basis));}
  const sorted=sortActivityEvents(events,Date.parse('2026-10-31T00:00Z'));assert.equal(sorted[0].event_id,'dia-de-muertos-cubone-2026');assert.equal(sorted.at(-1).event_id,'night-out-los-angeles-2026');assert.equal(JSON.stringify(data),before);
  assert.equal(data.records.length,282);assert.equal(data.records.filter(r=>r.release_state==='needs-verification').length,3);
@@ -53,4 +53,17 @@ test('November calendar includes four missing events without asserting backgroun
  assert.equal(get('super-mega-raid-day-2026-11').activity.schedule.end,'2026-11-28T17:00');
  assert.equal(get('minior-leonids-2026').activity.schedule.start,'2026-11-14T17:00');
  assert.equal(get('twilight-wishes-2026').activity.schedule.end,'2026-11-30T20:00');
+});
+
+
+test('date-only season announcements and early GO Pass retain their separate timing',()=>{
+ const calendar=get('season-25-2026-12-12');
+ assert.equal(calendar.activity.kind,'event');
+ assert.equal(activityState(calendar,Date.parse('2026-12-12T00:00Z')).status,'time_unknown');
+ assert.doesNotMatch(activityTimeLines(calendar).local,/00:00/);
+ const trails=get('dynamax-trails-2026');
+ assert.equal(activityEarlyAccess(trails,Date.parse('2026-11-14T01:59Z')).open,false);
+ assert.equal(activityEarlyAccess(trails,Date.parse('2026-11-14T02:00Z')).kind,'go-pass');
+ assert.equal(activityEarlyAccess(trails,Date.parse('2026-11-14T02:00Z')).open,true);
+ assert.equal(activityState(trails,Date.parse('2026-11-14T02:00Z')).status,'upcoming');
 });
