@@ -64,3 +64,13 @@
 檀香山複核後仍未取得 8/19–20 夏威夷當地捕獲且可辨認背景的原始紀錄。同期攻略把可附背景的會場團體戰和田野調查列在一起，另列會場尋寶限時調查的皮卡丘遭遇，後者的背景資格仍缺實證。 [同期攻略](https://nintendowire.com/guides/pokemon-go/season-of-shared-skies/2024-pokemon-world-championships-event/) · [官方公告](https://pokemongo.com/news/world-championships-event-2024)
 
 圖鑑提交 `75236fcded4b76e7110edba2529a70a3ca1cd8a7`，資料 blob `9a16cedc716e71dd836c265a1bff442145675f7b`。 正式站公開 JSON 已驗收，與提交的資料 blob 一致。2026 極巨之路官方公告列明 11/16–23 的極巨對戰捕獲有機會取得特殊背景，公告正文未辨明是否沿用暗黑蒼穹圖樣，保留待實際發放證據。 [2026 官方公告](https://pokemongo.com/en/news/dynamax-trails-eternamax-eternatus-2026)
+
+## 2026-11-14 仙台與墨西哥城名錄差異複查
+
+| 條目 | 判定 | 依據 |
+| --- | --- | --- |
+| BG-0212 仙台東北／BG-0213 墨西哥城 | Serebii 的仙台欄列摔角鷹人，墨西哥城欄列拉普拉斯。官方長期集章及 Dittobase 各自的集章段落均列相反配對，即仙台拉普拉斯、墨西哥城摔角鷹人。此差異無法證明兩者還能在另一城市附該地背景。 | [Serebii 欄位](https://www.serebii.net/pokemongo/backgrounds.shtml) · [官方長期集章](https://pokemongo.com/en/news/forever-stamp-rally-go-wild-area-2026) · [仙台 Dittobase](https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-sendai-2026) · [墨西哥城 Dittobase](https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-mexico-city-2026) |
+| BG-0213 墨西哥城 | Dittobase 主活動段列阿羅拉椰蛋樹（#103）、巨鉗螳螂（#212）、刺龍王（#230）、沙漠蜻蜓（#330）、巨金怪（#376）、帝王拿波（#395）、護城龍（#411）、自爆磁怪（#462）、三首惡龍（#635）、洗翠黏美兒（#705）、黏美龍（#706）、杖尾鱗甲龍（#784）、巨鍛匠（#959）等站內未列候選。其中多數亦在官方野外名單出現。官方確認另有鋼／龍屬性限時調查及額外日重做資格，各適用日期當地 20:00 前須完成並領獎。尚缺能連結個別獎勵與墨西哥城背景的實證。 | [官方 FAQ](https://pokemongo.com/gowildarea/mexico-city/faq) · [官方玩法](https://pokemongo.com/gowildarea/mexico-city/gameplay) · [Dittobase 主活動名錄](https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-mexico-city-2026) |
+| BG-0213 墨西哥城活動日期 | Dittobase 將主活動末日列為 11/9，官方當地時段是 11/6–8，持票玩法每日 10:00–18:00。集章與限時調查各適用日可至 20:00。保留官方當地日期。 | [官方 FAQ](https://pokemongo.com/gowildarea/mexico-city/faq) |
+
+圖鑑補錄 BG-0213 官方限時調查領獎期限及來源。提交 `cc6e086081e977b387c4dabe415cf713e4b3a481`，資料 blob `9f20811ebd7aad926c732a9683ffdc914dcca123`。
