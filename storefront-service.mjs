@@ -38,6 +38,10 @@ export function tagsFor(p,now=new Date()){
  if(age>=0&&age<14)tags.push(RECENT_STOCK_TAG);
  return tags;
 }
+export function sortByFirstPublication(products){
+ const publishedAt=product=>Date.parse(product.first_published_at)||-Infinity;
+ return products.sort((a,b)=>publishedAt(b)-publishedAt(a));
+}
 export function searchMatch(p,keyword){
  const term=normalizeSearchText(keyword),aliases=p.aliases??[];
  if(!term)return true;

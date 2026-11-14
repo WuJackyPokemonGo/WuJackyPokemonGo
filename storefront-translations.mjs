@@ -20,6 +20,7 @@ const rows = {
  '搜尋商品': ['商品を検索','상품 검색','Tìm sản phẩm','ค้นหาสินค้า','Cari produk','Buscar productos','Pesquisar produtos'],
  '清除': ['クリア','초기화','Xóa','ล้าง','Hapus','Borrar','Limpar'],
  '商品排序': ['並べ替え','상품 정렬','Sắp xếp sản phẩm','จัดเรียงสินค้า','Urutkan produk','Ordenar productos','Ordenar produtos'],
+ '最新上架': ['新着順','최신 등록순','Mới đăng','ลงล่าสุด','Terbaru','Novedades','Mais recentes'],
  '推薦排序': ['おすすめ順','추천순','Đề xuất','แนะนำ','Rekomendasi','Recomendados','Recomendados'],
  '價格由低至高': ['価格の安い順','가격 낮은 순','Giá thấp đến cao','ราคาต่ำไปสูง','Harga terendah','Precio: menor a mayor','Preço: menor para maior'],
  '價格由高至低': ['価格の高い順','가격 높은 순','Giá cao đến thấp','ราคาสูงไปต่ำ','Harga tertinggi','Precio: mayor a menor','Preço: maior para menor'],

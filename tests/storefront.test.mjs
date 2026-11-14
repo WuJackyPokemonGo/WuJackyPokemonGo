@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {loadPublicCatalog,searchMatch,imageURL,inquiryText,tagsFor,publicStockFields,stockLabel} from '../storefront-service.mjs';
+import {loadPublicCatalog,searchMatch,imageURL,inquiryText,tagsFor,publicStockFields,stockLabel,sortByFirstPublication} from '../storefront-service.mjs';
 const p={id:'p',sku:'WJ-001',name:'木守宮',name_en:'Treecko',aliases:['色違'],dex:252,tags:['背景'],images:[],price:100,status:'available'};
 test('public catalog fetch uses only the read endpoint and parses pagination',async()=>{const calls=[];const rows=await loadPublicCatalog(async(url,options)=>{const body=JSON.parse(options.body);calls.push({url,body});return{ok:true,json:async()=>Array.from({length:body.p_offset===0?100:1},()=>p)}});assert.equal(rows.length,101);assert.equal(calls[1].body.p_offset,100);assert.ok(calls.every(x=>x.url.endsWith('/rpc/storefront_catalog')))});
 test('public loader reports unavailable or malformed data instead of fabricating inventory',async()=>{await assert.rejects(loadPublicCatalog(async()=>({ok:false})));await assert.rejects(loadPublicCatalog(async()=>({ok:true,json:async()=>[{id:1}]})))});
@@ -29,4 +29,14 @@ test('recent stock follows the entered stock date instead of publication or a st
  assert.deepEqual(tagsFor({tags:[],first_stocked_at:'2026-11-05T00:00:00+08:00',first_published_at:'2026-10-01'},now),['最近新庫存']);
  assert.deepEqual(tagsFor({tags:['最近新庫存'],first_stocked_at:'2026-10-23T00:00:00+08:00'},now),['最近新庫存']);
  assert.deepEqual(tagsFor({tags:['最近新庫存'],first_stocked_at:'2026-10-22T00:00:00+08:00'},now),[]);
+});
+
+test('newest listings sort by first publication even without an image or stock date',()=>{
+ const rows=[
+  {...p,id:'featured',hot_rank:1,first_published_at:'2026-11-12T00:00:00Z'},
+  {...p,id:'legacy',first_published_at:null,first_stocked_at:'2026-11-15'},
+  {...p,id:'newest',status:'coming_soon',first_published_at:'2026-11-14T02:00:00Z'},
+  {...p,id:'today',first_published_at:'2026-11-14T00:00:00Z'}
+ ];
+ assert.deepEqual(sortByFirstPublication(rows).map(row=>row.id),['newest','today','featured','legacy']);
 });

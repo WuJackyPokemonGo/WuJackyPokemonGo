@@ -47,7 +47,7 @@ export const labels={
 '瀏覽商品、整理想詢問的清單，再透過 LINE 與我確認供貨和交付方式。':'Browse the collection, make an inquiry list, then contact me on LINE to confirm availability and delivery.',
 '商品供應、最終價格與交付時間，以私訊確認為準。':'Availability, final prices and delivery times are confirmed by private message.',
 '搜尋寶可夢、英文名稱、圖鑑編號或分類':'Search Chinese or English names, Pokédex numbers or categories',
-'搜尋商品':'Search products','清除':'Clear','商品排序':'Sort products','推薦排序':'Recommended','價格由低至高':'Price: low to high','價格由高至低':'Price: high to low','名稱排序':'Name','商品分類':'Categories','商品目錄':'Collection','正在載入商品…':'Loading products…',
+'搜尋商品':'Search products','清除':'Clear','商品排序':'Sort products','最新上架':'Newest listings','推薦排序':'Recommended','價格由低至高':'Price: low to high','價格由高至低':'Price: high to low','名稱排序':'Name','商品分類':'Categories','商品目錄':'Collection','正在載入商品…':'Loading products…',
 '詢價清單不成立訂單、不保留庫存。請確認供貨後再付款。':'An inquiry list does not place an order or reserve stock. Confirm availability before paying.',
 '聯絡 Wu Jacky':'Contact Wu Jacky','管理登入':'Admin login','匿名統計':'Anonymous analytics','停用匿名統計':'Disable anonymous analytics','啟用匿名統計':'Enable anonymous analytics','匿名統計已停用':'Anonymous analytics disabled','匿名統計已啟用':'Anonymous analytics enabled','已依瀏覽器隱私設定停用':'Disabled by your browser privacy settings','此瀏覽器無法使用匿名統計':'Analytics unavailable in this browser','匿名統計暫時無法送達':'Analytics temporarily unavailable',
 '匿名統計只累計瀏覽與清單操作，保留 30 天；不記錄姓名、聯絡資料、完整 IP 或搜尋文字，並遵守瀏覽器隱私設定。':'Anonymous analytics count views and list actions for 30 days. Names, contact details, full IP addresses and search text are not recorded. Browser privacy settings are respected.',
