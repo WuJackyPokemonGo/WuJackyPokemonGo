@@ -10,7 +10,7 @@
 | --- | --- | --- |
 | BG-0072 | 依既有決議保留 | 釜山是使用者指定保留的待確認素材。另兩筆同樣的素材為 BG-0276／0277。見[原決議](BACKGROUND-FULL-AUDIT-2026-11-06.md#結案同日依使用者決定)。 |
 | BG-0285 | 既有專項追蹤 | 群馬的開放日由使用者另行安排，待確認狀態見[原決議](BACKGROUND-FULL-AUDIT-2026-11-06.md#結案同日依使用者決定)。 |
-| BG-0077、BG-0119、BG-0190、BG-0220、BG-0221、BG-0222 | 依既有決議保留 | 長崎人孔蓋電龍改列曠野場、PokéPark 皮卡丘已依使用者確認移除、舊金山飛機兄妹未納入、隊伍背景穿山王已刪除。隊伍背景更早的精確首次實際發放日仍待原始證據。見[原決議](BACKGROUND-FULL-AUDIT-2026-11-06.md#結案同日依使用者決定)及 [PROGRESS.md](../PROGRESS.md)。 |
+| BG-0077、BG-0119、BG-0190、BG-0220、BG-0221、BG-0222 | 依既有決議保留 | 長崎人孔蓋電龍改列曠野場、PokéPark 皮卡丘已依使用者確認移除、舊金山飛機兄妹未納入、隊伍背景穿山王已刪除。隊伍背景的首發日期與免費調查的解鎖時間已另行複查，見下方。見[原決議](BACKGROUND-FULL-AUDIT-2026-11-06.md#結案同日依使用者決定)及 [PROGRESS.md](../PROGRESS.md)。 |
 | BG-0009、BG-0011、BG-0019、BG-0034、BG-0064、BG-0065、BG-0066、BG-0067、BG-0068、BG-0070、BG-0080、BG-0082、BG-0143、BG-0189、BG-0201、BG-0227、BG-0228、BG-0229、BG-0238、BG-0244、BG-0245、BG-0246、BG-0247、BG-0248、BG-0249、BG-0250、BG-0253、BG-0256、BG-0257、BG-0258、BG-0259、BG-0264 | 日期或名單差異已有依據 | 採本地活動／分段獎勵日期及既有審核判定。詳見[逐筆表上方原始公告覆核](BACKGROUND-AUDIT-CROSSWALK-2026-11-10.md)、[城市狩獵查核](BACKGROUND-AUDIT-BATCH-2026-11-10.md)、[後續覆核](BACKGROUND-AUDIT-FOLLOWUP-2026-11-10.md)、[洛杉磯 2/16 實拍](BACKGROUND-HISTORICAL-AUDIT-2026-11-12.md#洛杉磯-216-當日實拍)及下方本輪來源。 |
 | BG-0085–BG-0118（34 筆） | 共同公告已覆核 | 首批全國人孔蓋的啟用與領獎規則由[日本官方公告](https://pokemongo.com/ja/news/pokelid_full)支持。外部名錄無可解析日期，依[既有覆核](BACKGROUND-AUDIT-CROSSWALK-2026-11-10.md)保留分批紀錄。 |
 | BG-0125、BG-0126、BG-0127、BG-0128、BG-0129、BG-0130、BG-0131、BG-0132、BG-0133、BG-0134、BG-0135、BG-0142 | 共同公告已覆核 | Serebii 使用季節名稱，採[官方職棒球場活動逐場時程](https://pokemongo.com/news/nippon_pro_baseball)及 Dittobase 的逐場日期。 |
@@ -31,7 +31,7 @@
 | BG-0225、BG-0230、BG-0231 | 首發與後續領獎日已區分 | 重重命運從 1/5 新葉喵至 2/16 蓋蓋蟲／小嘴蝸領獎截止；力量與大師從 3/8 呆火鱷至 5/31 腕力領獎截止；繽紛日子從 6/3 GO Pass 急凍鳥至 9/6 稚山雀領獎截止。各款窗口個別依當期活動。 [重重命運](https://bulbapedia.bulbagarden.net/wiki/Background_(GO)) · [呆火鱷](https://pokemongo.com/news/communityday-march-2025-fuecoco) · [腕力](https://pokemongo.com/news/communitydayclassic-may-2025-machop) · [六月 GO Pass](https://pokemongo.com/news/go-pass-june-2025?hl=fi) · [稚山雀](https://pokemongo.com/news/communityday-august-2025-rookidee?hl=enRising) |
 | BG-0226 | 兩段調查日期已有依據 | Dittobase 列 2/21 首發，Bulbapedia 的 Enigma 欄分列 2/21–23 及 2/27–3/2，維持站內說明。 [Dittobase](https://www.dittobase.com/pokemon-go/backgrounds/sb-go-tour-2025-enigma) · [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Background_(GO)) |
 
-同一條目若仍有獨立的未決細節，保留原有待確認。例如 BG-0220～0222 的穿山王名單已定案，精確首次發放日仍待原始證據。這份表記的是差異處理進度，不能把條目內其他欄位視作已證實。
+同一條目若仍有獨立的未決細節，保留原有待確認。例如 BG-0220～0222 的穿山王名單已定案，免費調查解鎖與附背景的玩家紀錄見下方。這份表記的是差異處理進度，不能把條目內其他欄位視作已證實。
 
 ## 本輪新增可追溯證據
 
@@ -48,5 +48,19 @@
 原表 156 筆均已對應判定、既有決議或待確認依據，尚未分派判定的候選為 0 筆。此結果只涵蓋 11/10 對照表的訊號，獨立的未知事項保留追蹤。
 
 - 檀香山 8/19–20 發放、限時調查、遠距與票券；台南／洛杉磯好啦魷；雪梨／布宜諾斯艾利斯伊布背卡及加購條件。
-- 三隊伍背景更早首發日；2026 暗黑蒼穹復刻圖樣與毒電嬰；仙台、墨西哥城曠野的名錄額外物種；亡靈節耿鬼精確時段與遠距資格。
+- 2026 暗黑蒼穹復刻圖樣與毒電嬰；仙台、墨西哥城曠野的名錄額外物種；亡靈節耿鬼精確時段與遠距資格。
 - 群馬開放日依既有專項追蹤，另有三個使用者指定保留的待確認素材。
+
+## 2026-11-13 三隊伍背景首發複查
+
+| 條目 | 免費限時調查解鎖（PDT） | 同日附背景的玩家紀錄 |
+| --- | --- | --- |
+| BG-0220 武勇，小火馬（坎德拉配件） | 2024/8/26 11:23 | [當日背景回報](https://www.reddit.com/r/TheSilphRoad/comments/1f1vq47) |
+| BG-0221 直覺，電擊怪（史帕克配件） | 2024/8/28 02:33 | [當日原帖](https://www.reddit.com/r/pokemongobrag/comments/1f3i0h8) |
+| BG-0222 智慧，拉普拉斯（布蘭雪配件） | 2024/8/29 15:03 | [當日原帖](https://www.reddit.com/r/TheSilphRoad/comments/1f4f2f0/lapras_with_mystic_background_is_live/) |
+
+官方活動公告確認三項全球挑戰分別解鎖對應遭遇，另列付費調查也會遭遇裝扮寶可夢。表中分鐘為同期攻略記錄的免費調查解鎖時間，遊戲內首隻捕獲的分鐘未知。玩家有回報付費獎勵未附背景，圖鑑以有同日證據的免費調查記錄首發。原有三個起始日均獲支持，已補中英文時間與來源。 [官方公告](https://pokemongo.com/news/triumph-together-2024?hl=en) · [同期解鎖時刻](https://nintendowire.com/guides/pokemon-go/season-of-shared-skies/triumph-together/) · [同期付費調查比較](https://www.reddit.com/r/pokemongobrag/comments/1f28mo8)
+
+檀香山複核後仍未取得 8/19–20 夏威夷當地捕獲且可辨認背景的原始紀錄。同期攻略把可附背景的會場團體戰和田野調查列在一起，另列會場尋寶限時調查的皮卡丘遭遇，後者的背景資格仍缺實證。 [同期攻略](https://nintendowire.com/guides/pokemon-go/season-of-shared-skies/2024-pokemon-world-championships-event/) · [官方公告](https://pokemongo.com/news/world-championships-event-2024)
+
+圖鑑提交 `75236fcded4b76e7110edba2529a70a3ca1cd8a7`，資料 blob `9a16cedc716e71dd836c265a1bff442145675f7b`。 正式站公開 JSON 已驗收，與提交的資料 blob 一致。2026 極巨之路官方公告列明 11/16–23 的極巨對戰捕獲有機會取得特殊背景，公告正文未辨明是否沿用暗黑蒼穹圖樣，保留待實際發放證據。 [2026 官方公告](https://pokemongo.com/en/news/dynamax-trails-eternamax-eternatus-2026)
