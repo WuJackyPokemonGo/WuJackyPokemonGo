@@ -28581,13 +28581,13 @@
       "related_product_ids": [],
       "year": "2026",
       "year_verified": true,
-      "checked_on": "2026-11-06",
-      "evidence_reviewed_on": "2026-11-06",
+      "checked_on": "2026-11-13",
+      "evidence_reviewed_on": "2026-11-13",
       "background_id": "BG-0284",
       "name_zh": "曠野地帶 2026 全球",
       "name_en": "GO Wild Area 2026 Global",
       "type": "special",
-      "release_state": "upcoming",
+      "release_state": "released",
       "verification": "official-event-confirmed",
       "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/gwa26-global.webp?v=20261106",
       "reference_ids": [
@@ -28607,8 +28607,8 @@
       "region_zh": "多地／全球活動",
       "start_date": "2026-11-09",
       "end_date": "2026-11-15",
-      "date_note_zh": "曠野週 11/9～11/13；全球週末 11/14～11/15，每日 10:00～18:00（當地時間）。",
-      "date_note_en": "Into the Wild: November 9–13. Global weekend: November 14–15, 10:00–18:00 daily (local time).",
+      "date_note_zh": "同款背景自 11/9 曠野週已發放。全球週末為 11/14～11/15，每日當地 10:00～18:00，依該場公告開放各款。",
+      "date_note_en": "This background has been available since Into the Wild began on November 9. The Global weekend runs November 14–15, 10:00–18:00 daily local time, with its own featured encounters.",
       "method_zh": "曠野週的指定五星團體戰、五星極巨對戰，以及全球週末的指定團體戰、極巨對戰，成功捕獲均有機會附同款背景。持票的全球特殊調查保證遇到附背景的超極巨鋁鋼龍。",
       "method_en": "Eligible five-star raid and Max Battle catches during Into the Wild and eligible raid and Max Battle catches during the global weekend can have the same Special Background. The ticketed Global Special Research guarantees a Gigantamax Duraludon encounter with the background.",
       "pokemon": [
@@ -28617,17 +28617,21 @@
           "name_en": "Machamp Modern Jacket",
           "name_zh": "怪力（現代夾克）",
           "variant_id": "machamp-modern-jacket",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "start_date": "2026-11-14",
+          "method_zh": "依 11/14～15 全球週末的分日對戰名單；捕獲後有機會附背。",
+          "method_en": "Follows the November 14–15 Global weekend battle lineup. A successful catch may have the background."
         },
         {
           "dex": 379,
           "name_zh": "雷吉斯奇魯（極巨化）",
           "name_en": "Dynamax Registeel",
           "acquisition": "encounter",
-          "method_zh": "11/9～11/13 曠野週指定對戰捕獲有機會附背景。",
-          "method_en": "Chance after an eligible battle catch during Into the Wild (November 9–13).",
+          "method_zh": "11/9～11/13 曠野週指定對戰捕獲有機會附背景。 另有玩家回報遠距極巨對戰取得附背景個體。",
+          "method_en": "Chance after an eligible battle catch during Into the Wild (November 9–13). A player also reported a catch with the background from a remote Max Battle.",
           "method_sources": [
-            "https://pokemongo.com/news/into-the-wild-2026"
+            "https://pokemongo.com/news/into-the-wild-2026",
+            "https://www.reddit.com/r/pokemongo/comments/1xu32u4/registeel_shiny_w_special_background/"
           ]
         },
         {
@@ -28657,42 +28661,60 @@
           "name_en": "Dynamax Dialga",
           "name_zh": "帝牙盧卡（極巨化）",
           "variant_id": "dialga-dynamax",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "start_date": "2026-11-14",
+          "method_zh": "依 11/14～15 全球週末的分日對戰名單；捕獲後有機會附背。",
+          "method_en": "Follows the November 14–15 Global weekend battle lineup. A successful catch may have the background."
         },
         {
           "dex": 484,
           "name_en": "Dynamax Palkia",
           "name_zh": "帕路奇亞（極巨化）",
           "variant_id": "palkia-dynamax",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "start_date": "2026-11-15",
+          "method_zh": "依 11/14～15 全球週末的分日對戰名單；捕獲後有機會附背。",
+          "method_en": "Follows the November 14–15 Global weekend battle lineup. A successful catch may have the background."
         },
         {
           "dex": 643,
           "name_en": "Reshiram",
           "name_zh": "萊希拉姆",
           "variant_id": "reshiram",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "start_date": "2026-11-15",
+          "method_zh": "依 11/14～15 全球週末的分日對戰名單；捕獲後有機會附背。",
+          "method_en": "Follows the November 14–15 Global weekend battle lineup. A successful catch may have the background."
         },
         {
           "dex": 644,
           "name_en": "Zekrom",
           "name_zh": "捷克羅姆",
           "variant_id": "zekrom",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "start_date": "2026-11-14",
+          "method_zh": "依 11/14～15 全球週末的分日對戰名單；捕獲後有機會附背。",
+          "method_en": "Follows the November 14–15 Global weekend battle lineup. A successful catch may have the background."
         },
         {
           "dex": 646,
           "name_en": "Kyurem",
           "name_zh": "酋雷姆",
           "variant_id": "kyurem",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "start_date": "2026-11-14",
+          "method_zh": "11/14 白焰酋雷姆、11/15 闇黑酋雷姆團體戰，捕獲的酋雷姆有機會附背。",
+          "method_en": "White Kyurem raids on November 14 and Black Kyurem raids on November 15 offer a chance of catching Kyurem with the background."
         },
         {
           "dex": 884,
           "name_en": "Gigantamax Duraludon",
           "name_zh": "鋁鋼龍（超極巨化）",
           "variant_id": "duraludon-gigantamax",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "start_date": "2026-11-14",
+          "method_zh": "依 11/14～15 全球週末的分日對戰名單；捕獲後有機會附背。 持票特殊調查另明列附背景遭遇。",
+          "method_en": "Follows the November 14–15 Global weekend battle lineup. A successful catch may have the background. Ticketed Special Research also explicitly awards a background encounter."
         },
         {
           "dex": 888,
@@ -28730,10 +28752,10 @@
       ],
       "notes": [
         "官方明列現代夾克怪力、極巨帝牙盧卡、極巨帕路奇亞、萊希拉姆、捷克羅姆、酋雷姆、超極巨鋁鋼龍有機會帶特殊背景；持票特殊調查超極巨鋁鋼龍明列附背景。",
-        "2026-11-06：PokéXperience已收錄圖樣（gwa26-global），與仙台、墨西哥城地點背景及2025全球背景不同；活動未開始，不計入已發放款數。PokéXperience標6隻、官方列7隻，以官方為準。"
+        "2026-11-06：PokéXperience 已收錄圖樣（gwa26-global），與仙台、墨西哥城地點背景及 2025 全球背景不同。全球週末名單依官方公告。"
       ],
       "notes_en": [
-        "Artwork from PokéXperience (gwa26-global); upcoming, not counted as released. Official list of seven Pokémon is used."
+        "Artwork from PokéXperience (gwa26-global). The Global weekend lineup follows the official announcement."
       ],
       "search_aliases": [
         "GO Wild Area 2026",
@@ -28862,7 +28884,7 @@
       "name_en": "Into the Wild 2026 new Special Background",
       "start_date": "2026-11-09",
       "end_date": "2026-11-13",
-      "release_state": "upcoming",
+      "release_state": "released",
       "verification": "official-event-confirmed",
       "image_source": null,
       "official_sources": [
@@ -28933,20 +28955,23 @@
         },
         "remote_background": {
           "basis": "inferred",
-          "text_zh": "遠距團體戰附背僅依過往特殊背景規則推定，尚無本次官方明文。遠距極巨對戰能否取得本次背景仍待確認。",
-          "text_en": "Special Background eligibility from remote raids is inferred from prior events and is not explicitly confirmed for this event. Eligibility from remote Max Battles remains unconfirmed."
+          "text_zh": "遠距團體戰附背依過往規則推定。已有一筆極巨化雷吉斯奇魯遠距附背的玩家回報，其他極巨化款仍待確認。",
+          "text_en": "Remote raid eligibility is inferred from prior events. One player reported a Special Background on a remotely caught Dynamax Registeel. Other Dynamax species remain unverified."
         },
-        "checked_on": "2026-11-10",
+        "checked_on": "2026-11-13",
         "sources": [
           "https://pokemongo.com/news/into-the-wild-2026",
           "https://pokemongo.com/news/shadow-raid-max-battle-update",
-          "https://leekduck.com/pokemon-go-wild-area/special-backgrounds/"
+          "https://leekduck.com/pokemon-go-wild-area/special-backgrounds/",
+          "https://www.reddit.com/r/pokemongo/comments/1xu32u4/registeel_shiny_w_special_background/"
         ],
         "background_type": "special",
         "artwork_status": "catalogued",
         "background_ids": [
           "BG-0284"
-        ]
+        ],
+        "reported_info_zh": "11/12 有玩家貼出異色極巨化雷吉斯奇魯的特殊背景，並回報由遠距對戰取得。回報僅涵蓋這一隻，其他極巨化款與遠距機率仍待確認。",
+        "reported_info_en": "On November 12, a player shared a Shiny Dynamax Registeel with the Special Background and reported catching it after a remote battle. This report covers one catch. Other species and remote rates remain unverified."
       }
     },
     {
@@ -28964,7 +28989,7 @@
       "release_state": "upcoming",
       "verification": "official-event-confirmed",
       "image_source": null,
-      "checked_on": "2026-11-03",
+      "checked_on": "2026-11-14",
       "official_sources": [
         "https://pokemongo.com/news/dynamax-trails-eternamax-eternatus-2026"
       ],
@@ -29001,15 +29026,25 @@
           "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
           "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
         },
-        "checked_on": "2026-11-03",
+        "checked_on": "2026-11-14",
+        "reported_info_zh": "Serebii 與 Bulbapedia 的通行證獎勵表均列免費及豪華路線在第 10、20、40、50、60、70、80、90、100 階提供隨機極巨化遭遇。官方確認通行證含附背景的極巨化遭遇，逐款發放與圖樣仍待遊戲畫面核對。通行證獎勵可領至當地 11/25 20:00。",
+        "reported_info_en": "Serebii and Bulbapedia list random Dynamax encounters on both tracks at ranks 10, 20, 40, 50, 60, 70, 80, 90, and 100. The official announcement confirms background encounters in the pass. Individual distributions and artwork still await in-game verification. Pass rewards can be claimed until November 25 at 20:00 local time.",
         "sources": [
           "https://pokemongo.com/news/dynamax-trails-eternamax-eternatus-2026",
-          "https://pokemongo.com/news/shadow-raid-max-battle-update"
+          "https://pokemongo.com/news/shadow-raid-max-battle-update",
+          "https://www.serebii.net/pokemongo/pass/gopass:dynamaxtrails.shtml",
+          "https://bulbapedia.bulbagarden.net/wiki/GO_Pass:_Dynamax_Trails"
         ],
         "background_type": "special",
         "artwork_status": "pending",
         "uncertainty_zh": "背景圖樣及逐隻名單待確認，不能把本公告直接視為舊暗黑蒼穹／紫黑復刻證據。",
-        "uncertainty_en": "Artwork and individual species await confirmation. This announcement alone does not establish reuse of the old Dark Skies artwork."
+        "uncertainty_en": "Artwork and individual species await confirmation. This announcement alone does not establish reuse of the old Dark Skies artwork.",
+        "early_access": {
+          "start": "2026-11-14T10:00",
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "kind": "go-pass"
+        }
       }
     },
     {
@@ -29492,6 +29527,446 @@
       "event_id": "mexico-hawlucha-ongoing-stamp-rally-2026",
       "background_id": "BG-0213",
       "former_background_id": "BG-0282"
+    },
+    {
+      "event_id": "season-25-2026-12-05",
+      "name_zh": "極巨對戰日（2026/12/05）",
+      "name_en": "Max Battle Day (2026-12-05)",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "地區待公布",
+      "region_en": "Regions unannounced",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-05",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-13",
+      "official_sources": [
+        "https://pokemongo.com/news/save-the-date-s25"
+      ],
+      "activity": {
+        "id": "season-25-2026-12-05",
+        "kind": "event",
+        "schedule": {
+          "date_only": true,
+          "rolling_local": true,
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "start_date": "2026-12-05",
+          "end_date": "2026-12-05"
+        },
+        "conditions_zh": "官方先行公布活動日期。起訖時刻與玩法待正式公告。",
+        "conditions_en": "The official preview lists the date. Event hours and gameplay details await announcement.",
+        "eligible_zh": "寶可夢、服裝、形態及背景獎勵待公布。",
+        "eligible_en": "Pokémon, costumes, forms and background rewards await announcement.",
+        "checked_on": "2026-11-13",
+        "sources": [
+          "https://pokemongo.com/news/save-the-date-s25"
+        ]
+      }
+    },
+    {
+      "event_id": "season-25-2026-12-12",
+      "name_zh": "12月社群日（2026/12/12）",
+      "name_en": "December Community Day (2026-12-12)",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "地區待公布",
+      "region_en": "Regions unannounced",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-13",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-13",
+      "official_sources": [
+        "https://pokemongo.com/news/save-the-date-s25"
+      ],
+      "activity": {
+        "id": "season-25-2026-12-12",
+        "kind": "event",
+        "schedule": {
+          "date_only": true,
+          "rolling_local": true,
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "start_date": "2026-12-12",
+          "end_date": "2026-12-13"
+        },
+        "conditions_zh": "官方先行公布活動日期。起訖時刻與玩法待正式公告。",
+        "conditions_en": "The official preview lists the date. Event hours and gameplay details await announcement.",
+        "eligible_zh": "寶可夢、服裝、形態及背景獎勵待公布。",
+        "eligible_en": "Pokémon, costumes, forms and background rewards await announcement.",
+        "checked_on": "2026-11-13",
+        "sources": [
+          "https://pokemongo.com/news/save-the-date-s25"
+        ]
+      }
+    },
+    {
+      "event_id": "season-25-2026-12-19",
+      "name_zh": "團體戰日（2026/12/19）",
+      "name_en": "Raid Day (2026-12-19)",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "地區待公布",
+      "region_en": "Regions unannounced",
+      "start_date": "2026-12-19",
+      "end_date": "2026-12-19",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-13",
+      "official_sources": [
+        "https://pokemongo.com/news/save-the-date-s25"
+      ],
+      "activity": {
+        "id": "season-25-2026-12-19",
+        "kind": "event",
+        "schedule": {
+          "date_only": true,
+          "rolling_local": true,
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "start_date": "2026-12-19",
+          "end_date": "2026-12-19"
+        },
+        "conditions_zh": "官方先行公布活動日期。起訖時刻與玩法待正式公告。",
+        "conditions_en": "The official preview lists the date. Event hours and gameplay details await announcement.",
+        "eligible_zh": "寶可夢、服裝、形態及背景獎勵待公布。",
+        "eligible_en": "Pokémon, costumes, forms and background rewards await announcement.",
+        "checked_on": "2026-11-13",
+        "sources": [
+          "https://pokemongo.com/news/save-the-date-s25"
+        ]
+      }
+    },
+    {
+      "event_id": "season-25-2026-12-26",
+      "name_zh": "孵化日（2026/12/26）",
+      "name_en": "Hatch Day (2026-12-26)",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "地區待公布",
+      "region_en": "Regions unannounced",
+      "start_date": "2026-12-26",
+      "end_date": "2026-12-26",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-13",
+      "official_sources": [
+        "https://pokemongo.com/news/save-the-date-s25"
+      ],
+      "activity": {
+        "id": "season-25-2026-12-26",
+        "kind": "event",
+        "schedule": {
+          "date_only": true,
+          "rolling_local": true,
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "start_date": "2026-12-26",
+          "end_date": "2026-12-26"
+        },
+        "conditions_zh": "官方先行公布活動日期。起訖時刻與玩法待正式公告。",
+        "conditions_en": "The official preview lists the date. Event hours and gameplay details await announcement.",
+        "eligible_zh": "寶可夢、服裝、形態及背景獎勵待公布。",
+        "eligible_en": "Pokémon, costumes, forms and background rewards await announcement.",
+        "checked_on": "2026-11-13",
+        "sources": [
+          "https://pokemongo.com/news/save-the-date-s25"
+        ]
+      }
+    },
+    {
+      "event_id": "season-25-2027-01-02",
+      "name_zh": "1月經典社群日（2027/01/02）",
+      "name_en": "January Community Day Classic (2027-01-02)",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2027",
+      "region_zh": "地區待公布",
+      "region_en": "Regions unannounced",
+      "start_date": "2027-01-02",
+      "end_date": "2027-01-02",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-13",
+      "official_sources": [
+        "https://pokemongo.com/news/save-the-date-s25"
+      ],
+      "activity": {
+        "id": "season-25-2027-01-02",
+        "kind": "event",
+        "schedule": {
+          "date_only": true,
+          "rolling_local": true,
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "start_date": "2027-01-02",
+          "end_date": "2027-01-02"
+        },
+        "conditions_zh": "官方先行公布活動日期。起訖時刻與玩法待正式公告。",
+        "conditions_en": "The official preview lists the date. Event hours and gameplay details await announcement.",
+        "eligible_zh": "寶可夢、服裝、形態及背景獎勵待公布。",
+        "eligible_en": "Pokémon, costumes, forms and background rewards await announcement.",
+        "checked_on": "2026-11-13",
+        "sources": [
+          "https://pokemongo.com/news/save-the-date-s25"
+        ]
+      }
+    },
+    {
+      "event_id": "season-25-2027-01-09",
+      "name_zh": "極致超級團體戰日（2027/01/09）",
+      "name_en": "Super Mega Raid Day (2027-01-09)",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2027",
+      "region_zh": "地區待公布",
+      "region_en": "Regions unannounced",
+      "start_date": "2027-01-09",
+      "end_date": "2027-01-09",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-13",
+      "official_sources": [
+        "https://pokemongo.com/news/save-the-date-s25"
+      ],
+      "activity": {
+        "id": "season-25-2027-01-09",
+        "kind": "event",
+        "schedule": {
+          "date_only": true,
+          "rolling_local": true,
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "start_date": "2027-01-09",
+          "end_date": "2027-01-09"
+        },
+        "conditions_zh": "官方先行公布活動日期。起訖時刻與玩法待正式公告。",
+        "conditions_en": "The official preview lists the date. Event hours and gameplay details await announcement.",
+        "eligible_zh": "寶可夢、服裝、形態及背景獎勵待公布。",
+        "eligible_en": "Pokémon, costumes, forms and background rewards await announcement.",
+        "checked_on": "2026-11-13",
+        "sources": [
+          "https://pokemongo.com/news/save-the-date-s25"
+        ]
+      }
+    },
+    {
+      "event_id": "season-25-2027-01-16",
+      "name_zh": "1月社群日（2027/01/16）",
+      "name_en": "January Community Day (2027-01-16)",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2027",
+      "region_zh": "地區待公布",
+      "region_en": "Regions unannounced",
+      "start_date": "2027-01-16",
+      "end_date": "2027-01-16",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-13",
+      "official_sources": [
+        "https://pokemongo.com/news/save-the-date-s25"
+      ],
+      "activity": {
+        "id": "season-25-2027-01-16",
+        "kind": "event",
+        "schedule": {
+          "date_only": true,
+          "rolling_local": true,
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "start_date": "2027-01-16",
+          "end_date": "2027-01-16"
+        },
+        "conditions_zh": "官方先行公布活動日期。起訖時刻與玩法待正式公告。",
+        "conditions_en": "The official preview lists the date. Event hours and gameplay details await announcement.",
+        "eligible_zh": "寶可夢、服裝、形態及背景獎勵待公布。",
+        "eligible_en": "Pokémon, costumes, forms and background rewards await announcement.",
+        "checked_on": "2026-11-13",
+        "sources": [
+          "https://pokemongo.com/news/save-the-date-s25"
+        ]
+      }
+    },
+    {
+      "event_id": "season-25-2027-01-23",
+      "name_zh": "極巨對戰日（2027/01/23）",
+      "name_en": "Max Battle Day (2027-01-23)",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2027",
+      "region_zh": "地區待公布",
+      "region_en": "Regions unannounced",
+      "start_date": "2027-01-23",
+      "end_date": "2027-01-23",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-13",
+      "official_sources": [
+        "https://pokemongo.com/news/save-the-date-s25"
+      ],
+      "activity": {
+        "id": "season-25-2027-01-23",
+        "kind": "event",
+        "schedule": {
+          "date_only": true,
+          "rolling_local": true,
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "start_date": "2027-01-23",
+          "end_date": "2027-01-23"
+        },
+        "conditions_zh": "官方先行公布活動日期。起訖時刻與玩法待正式公告。",
+        "conditions_en": "The official preview lists the date. Event hours and gameplay details await announcement.",
+        "eligible_zh": "寶可夢、服裝、形態及背景獎勵待公布。",
+        "eligible_en": "Pokémon, costumes, forms and background rewards await announcement.",
+        "checked_on": "2026-11-13",
+        "sources": [
+          "https://pokemongo.com/news/save-the-date-s25"
+        ]
+      }
+    },
+    {
+      "event_id": "season-25-2027-01-30",
+      "name_zh": "極致超級團體戰日（2027/01/30）",
+      "name_en": "Super Mega Raid Day (2027-01-30)",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2027",
+      "region_zh": "地區待公布",
+      "region_en": "Regions unannounced",
+      "start_date": "2027-01-30",
+      "end_date": "2027-01-30",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-13",
+      "official_sources": [
+        "https://pokemongo.com/news/save-the-date-s25"
+      ],
+      "activity": {
+        "id": "season-25-2027-01-30",
+        "kind": "event",
+        "schedule": {
+          "date_only": true,
+          "rolling_local": true,
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "start_date": "2027-01-30",
+          "end_date": "2027-01-30"
+        },
+        "conditions_zh": "官方先行公布活動日期。起訖時刻與玩法待正式公告。",
+        "conditions_en": "The official preview lists the date. Event hours and gameplay details await announcement.",
+        "eligible_zh": "寶可夢、服裝、形態及背景獎勵待公布。",
+        "eligible_en": "Pokémon, costumes, forms and background rewards await announcement.",
+        "checked_on": "2026-11-13",
+        "sources": [
+          "https://pokemongo.com/news/save-the-date-s25"
+        ]
+      }
+    },
+    {
+      "event_id": "season-25-2027-02-06",
+      "name_zh": "2月社群日（2027/02/06）",
+      "name_en": "February Community Day (2027-02-06)",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2027",
+      "region_zh": "地區待公布",
+      "region_en": "Regions unannounced",
+      "start_date": "2027-02-06",
+      "end_date": "2027-02-06",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-13",
+      "official_sources": [
+        "https://pokemongo.com/news/save-the-date-s25"
+      ],
+      "activity": {
+        "id": "season-25-2027-02-06",
+        "kind": "event",
+        "schedule": {
+          "date_only": true,
+          "rolling_local": true,
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "start_date": "2027-02-06",
+          "end_date": "2027-02-06"
+        },
+        "conditions_zh": "官方先行公布活動日期。起訖時刻與玩法待正式公告。",
+        "conditions_en": "The official preview lists the date. Event hours and gameplay details await announcement.",
+        "eligible_zh": "寶可夢、服裝、形態及背景獎勵待公布。",
+        "eligible_en": "Pokémon, costumes, forms and background rewards await announcement.",
+        "checked_on": "2026-11-13",
+        "sources": [
+          "https://pokemongo.com/news/save-the-date-s25"
+        ]
+      }
+    },
+    {
+      "event_id": "season-25-2027-02-13",
+      "name_zh": "團體戰日（2027/02/13）",
+      "name_en": "Raid Day (2027-02-13)",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2027",
+      "region_zh": "地區待公布",
+      "region_en": "Regions unannounced",
+      "start_date": "2027-02-13",
+      "end_date": "2027-02-13",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-13",
+      "official_sources": [
+        "https://pokemongo.com/news/save-the-date-s25"
+      ],
+      "activity": {
+        "id": "season-25-2027-02-13",
+        "kind": "event",
+        "schedule": {
+          "date_only": true,
+          "rolling_local": true,
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "start_date": "2027-02-13",
+          "end_date": "2027-02-13"
+        },
+        "conditions_zh": "官方先行公布活動日期。起訖時刻與玩法待正式公告。",
+        "conditions_en": "The official preview lists the date. Event hours and gameplay details await announcement.",
+        "eligible_zh": "寶可夢、服裝、形態及背景獎勵待公布。",
+        "eligible_en": "Pokémon, costumes, forms and background rewards await announcement.",
+        "checked_on": "2026-11-13",
+        "sources": [
+          "https://pokemongo.com/news/save-the-date-s25"
+        ]
+      }
     }
   ],
   "coverage_note_zh": "收錄數是活動／圖樣工作紀錄，不是獨立已發放款數。日期採來源當地時間；多次發放與個別款開始日分開說明。尚有來源衝突及個別取得條件待核實。",
@@ -29503,9 +29978,9 @@
   },
   "counts": {
     "catalog-crosschecked": 55,
-    "official-event-confirmed": 221,
+    "official-event-confirmed": 222,
     "catalogued-needs-event-check": 3,
-    "upcoming": 3
+    "upcoming": 2
   },
   "review_counts": {
     "date_details_pending": 4,

@@ -9,7 +9,7 @@ test('announced previews respect state, stock, dex, year, region and language se
  for(const query of ['Dynamax Trails','特殊背景預告'])assert.equal(filterBackgroundAnnouncements(rows,{query}).filter(x=>x.event_id==='dynamax-trails-2026').length,1);
  assert.ok(filterBackgroundAnnouncements(rows,{query:'#0624',year:'2026',region:'Global'}).some(x=>x.event_id==='pawniard-community-day-2026'));
  assert.equal(filterBackgroundAnnouncements(rows,{query:'Dynamax Trails',region:'India'}).length,0);
- assert.equal(filterBackgrounds(data.records).length,count);assert.equal(count,276);
+ assert.equal(filterBackgrounds(data.records).length,count);assert.equal(count,277);
 });
 test('Dynamax Trails is upcoming, no substituted artwork or asserted Eternatus encounter and no duplicate event',()=>{
  const found=rows.filter(x=>x.event_id==='dynamax-trails-2026');assert.equal(found.length,1);const r=found[0];
