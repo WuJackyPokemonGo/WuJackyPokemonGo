@@ -17208,13 +17208,15 @@
       "official_sources": [
         "https://pokemongo.com/gowildarea/mexico-city/gameplay",
         "https://pokemongo.com/news/go-wild-area-stamp-rally-details-2026",
-        "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026"
+        "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026",
+        "https://pokemongo.com/gowildarea/mexico-city/faq"
       ],
       "notes": [
         "2026-10-29核對官方澄清：GO集章僅限主票券日期當地10:00–20:00；加購額外日不增加集章，但可再取得鋼／龍屬性限時調查。七處集章站可任意順序造訪；公告未承諾集章獎勵帶背景，不把它直接列為背景取得方式。",
         "另有已開放的長期集章活動；依站長補充確認沿用同城背景，不變更本筆持票活動日期。",
         "2026-11-06：原另列為BG-0282，依官方長期集章公告「Mexico City Location Background」與本筆為同一張背景，併入本筆並轉向BG-0282。",
-        "2026-11-06：連結賣場已上架的對應商品（依商品名稱與搜尋別名）。"
+        "2026-11-06：連結賣場已上架的對應商品（依商品名稱與搜尋別名）。",
+        "官方 FAQ 確認鋼／龍屬性限時調查須在各適用日期當地 20:00 前完成並領獎。外部名錄另列阿羅拉椰蛋樹等候選，個別附背景的取得方式仍待實證。"
       ],
       "related_product_ids": [
         "b89de60c-c1b3-475f-beba-124fffb4586a"
@@ -17241,7 +17243,8 @@
       "reference_review": "images-compared-2026-10-24",
       "notes_en": [
         "Official clarification checked October 29: the GO Stamp Rally runs only on the main ticketed day, 10:00–20:00 local time. Extra Day add-ons do not add stamp rallies, but do grant repeat Steel-/Dragon-type Timed Research. The seven stamps may be visited in any order. Background rewards from the stamp rally are not promised.",
-        "A separate ongoing stamp rally is open. The site owner confirms same-city artwork reuse; ticketed dates stay unchanged."
+        "A separate ongoing stamp rally is open. The site owner confirms same-city artwork reuse; ticketed dates stay unchanged.",
+        "The official FAQ confirms that Steel- and Dragon-type Timed Research rewards must be claimed by 20:00 local time on each eligible day. External catalogs list additional candidates such as Alolan Exeggutor, but their individual background routes still lack direct evidence."
       ],
       "date_note_zh": "此地點背景最早自11/02起由長期集章（摔角鷹人）取得；持票曠野週末為11/6–11/8。 GO集章：僅主票券日期10:00–20:00（當地時間）；額外日加購不增加集章。額外日鋼／龍限時調查為不同內容，不能混為背景保證。",
       "date_note_en": "First obtainable from 2026-11-02 via the ongoing stamp rally (Hawlucha); the ticketed GO Wild Area weekend is November 6–8. GO Stamp Rally: main ticketed day only, 10:00–20:00 local time. Extra Day add-ons do not add a stamp rally. Repeat Steel-/Dragon-type Timed Research is separate and does not establish background eligibility.",
@@ -17277,7 +17280,8 @@
           "https://pokemongo.com/gowildarea/mexico-city/gameplay",
           "https://pokemongo.com/news/go-wild-area-stamp-rally-details-2026",
           "https://pokemongo.com/news/shadow-raid-max-battle-update",
-          "https://pokemongo.com/news/gowildarea-mexicocity-friday-update"
+          "https://pokemongo.com/news/gowildarea-mexicocity-friday-update",
+          "https://pokemongo.com/gowildarea/mexico-city/faq"
         ],
         "background_type": "location",
         "artwork_status": "catalogued"
