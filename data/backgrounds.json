@@ -6127,8 +6127,8 @@
         "2026-11-12: The same-weekend official Miami notice states the stamp rally replaced the Timed Research of earlier City Safaris with the same rewards; LeekDuck's pre-event note that Timed Research Eevee carry the Sydney background is marked as based on earlier events. Serebii and Dittobase list explorer-hat Eevee with the background; which route guarantees it, and whether the opening Special Research Eevee has it, remain unverified."
       ],
       "related_product_ids": [],
-      "method_zh": "持票參與雪梨城市狩獵集章，每章可遇見一隻探險帽伊布，每日最多八次。當地背景的實際發放途徑仍待確認，包括集章及開場特殊調查是否附背景。八種進化款由附背景的探險帽伊布進化取得。",
-      "method_en": "Ticket holders could encounter one Explorer Hat Eevee per City Safari stamp in Sydney, up to eight per day. The source of the Location Background remains unverified, including whether it was available from stamp rewards or the opening Special Research. The eight Evolutions inherit it from an Explorer Hat Eevee with the background.",
+      "method_zh": "持票參與雪梨城市狩獵集章，每章可遇見一隻探險帽伊布，每日最多八次。社群活動紀錄將前八章列為附地點背景的遭遇。開場特殊調查及額外日的背景發放仍待可辨認取得途徑的遊戲實證。八種進化款由附背景的探險帽伊布進化取得。",
+      "method_en": "Ticket holders could encounter one Explorer Hat Eevee per City Safari stamp in Sydney, up to eight per day. Community event records list the first eight rewards as encounters with the Location Background. Background rewards from the opening Special Research and the Extra Day still lack direct in-game evidence of the acquisition route. The eight Evolutions inherit it from an Explorer Hat Eevee with the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2025",
@@ -6138,7 +6138,10 @@
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2025-sydney",
         "https://www.dittobase.com/pokemon-go/backgrounds",
         "https://leekduck.com/events/pokemon-go-city-safari-sydney-2025/",
-        "https://www.serebii.net/pokemongo/reallifeevents/citysafari-sydney.shtml"
+        "https://www.serebii.net/pokemongo/reallifeevents/citysafari-sydney.shtml",
+        "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_City_Safari%3A_Sydney",
+        "https://www.reddit.com/r/pokemongo/comments/1plk4ii/shiny_event_eevee/",
+        "https://www.reddit.com/r/PokemonGoTrade/comments/1pmccdf/lf_nothing_ft_explorer_eevee_sydney_bg/"
       ],
       "evolved_pokemon": [
         {
@@ -6198,7 +6201,7 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-11-12",
+      "checked_on": "2026-11-15",
       "start_date": "2025-12-13",
       "end_date": "2025-12-14",
       "region_en": "Australia",
@@ -6337,8 +6340,8 @@
         "2026-11-12: The same-weekend official Miami notice states the stamp rally replaced the Timed Research of earlier City Safaris with the same rewards; LeekDuck's pre-event note that Timed Research Eevee carry the Buenos Aires background is marked as based on earlier events. Serebii and Dittobase list explorer-hat Eevee with the background; which route guarantees it, and whether the opening Special Research Eevee has it, remain unverified."
       ],
       "related_product_ids": [],
-      "method_zh": "持票參與布宜諾斯艾利斯城市狩獵集章，每章可遇見一隻探險帽伊布，每日最多八次。當地背景的實際發放途徑仍待確認，包括集章及開場特殊調查是否附背景。八種進化款由附背景的探險帽伊布進化取得。",
-      "method_en": "Ticket holders could encounter one Explorer Hat Eevee per City Safari stamp in Buenos Aires, up to eight per day. The source of the Location Background remains unverified, including whether it was available from stamp rewards or the opening Special Research. The eight Evolutions inherit it from an Explorer Hat Eevee with the background.",
+      "method_zh": "持票參與布宜諾斯艾利斯城市狩獵集章，每章可遇見一隻探險帽伊布，每日最多八次。社群活動紀錄將前八章列為附地點背景的遭遇。開場特殊調查及額外日的背景發放仍待可辨認取得途徑的遊戲實證。八種進化款由附背景的探險帽伊布進化取得。",
+      "method_en": "Ticket holders could encounter one Explorer Hat Eevee per City Safari stamp in Buenos Aires, up to eight per day. Community event records list the first eight rewards as encounters with the Location Background. Background rewards from the opening Special Research and the Extra Day still lack direct in-game evidence of the acquisition route. The eight Evolutions inherit it from an Explorer Hat Eevee with the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2025",
@@ -6348,7 +6351,9 @@
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2025-buenos-aires",
         "https://www.dittobase.com/pokemon-go/backgrounds",
         "https://leekduck.com/events/pokemon-go-city-safari-buenos-aires-2025/",
-        "https://www.infobae.com/tecno/2025/12/02/pokemon-go-city-safari-llega-a-buenos-aires-puntos-de-encuentro-desafios-y-actividades-presenciales/"
+        "https://www.infobae.com/tecno/2025/12/02/pokemon-go-city-safari-llega-a-buenos-aires-puntos-de-encuentro-desafios-y-actividades-presenciales/",
+        "https://www.wikidex.net/wiki/Safari_de_ciudad_(2025)_en_Buenos_Aires",
+        "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_City_Safari%3A_Buenos_Aires"
       ],
       "evolved_pokemon": [
         {
@@ -6408,7 +6413,7 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-11-12",
+      "checked_on": "2026-11-15",
       "start_date": "2025-12-13",
       "end_date": "2025-12-14",
       "region_en": "Argentina",
