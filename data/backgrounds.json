@@ -17208,13 +17208,15 @@
       "official_sources": [
         "https://pokemongo.com/gowildarea/mexico-city/gameplay",
         "https://pokemongo.com/news/go-wild-area-stamp-rally-details-2026",
-        "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026"
+        "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026",
+        "https://pokemongo.com/gowildarea/mexico-city/faq"
       ],
       "notes": [
         "2026-10-29核對官方澄清：GO集章僅限主票券日期當地10:00–20:00；加購額外日不增加集章，但可再取得鋼／龍屬性限時調查。七處集章站可任意順序造訪；公告未承諾集章獎勵帶背景，不把它直接列為背景取得方式。",
         "另有已開放的長期集章活動；依站長補充確認沿用同城背景，不變更本筆持票活動日期。",
         "2026-11-06：原另列為BG-0282，依官方長期集章公告「Mexico City Location Background」與本筆為同一張背景，併入本筆並轉向BG-0282。",
-        "2026-11-06：連結賣場已上架的對應商品（依商品名稱與搜尋別名）。"
+        "2026-11-06：連結賣場已上架的對應商品（依商品名稱與搜尋別名）。",
+        "官方 FAQ 確認鋼／龍屬性限時調查須在各適用日期當地 20:00 前完成並領獎。外部名錄另列阿羅拉椰蛋樹等候選，個別附背景的取得方式仍待實證。"
       ],
       "related_product_ids": [
         "b89de60c-c1b3-475f-beba-124fffb4586a"
@@ -17241,7 +17243,8 @@
       "reference_review": "images-compared-2026-10-24",
       "notes_en": [
         "Official clarification checked October 29: the GO Stamp Rally runs only on the main ticketed day, 10:00–20:00 local time. Extra Day add-ons do not add stamp rallies, but do grant repeat Steel-/Dragon-type Timed Research. The seven stamps may be visited in any order. Background rewards from the stamp rally are not promised.",
-        "A separate ongoing stamp rally is open. The site owner confirms same-city artwork reuse; ticketed dates stay unchanged."
+        "A separate ongoing stamp rally is open. The site owner confirms same-city artwork reuse; ticketed dates stay unchanged.",
+        "The official FAQ confirms that Steel- and Dragon-type Timed Research rewards must be claimed by 20:00 local time on each eligible day. External catalogs list additional candidates such as Alolan Exeggutor, but their individual background routes still lack direct evidence."
       ],
       "date_note_zh": "此地點背景最早自11/02起由長期集章（摔角鷹人）取得；持票曠野週末為11/6–11/8。 GO集章：僅主票券日期10:00–20:00（當地時間）；額外日加購不增加集章。額外日鋼／龍限時調查為不同內容，不能混為背景保證。",
       "date_note_en": "First obtainable from 2026-11-02 via the ongoing stamp rally (Hawlucha); the ticketed GO Wild Area weekend is November 6–8. GO Stamp Rally: main ticketed day only, 10:00–20:00 local time. Extra Day add-ons do not add a stamp rally. Repeat Steel-/Dragon-type Timed Research is separate and does not establish background eligibility.",
@@ -17277,7 +17280,8 @@
           "https://pokemongo.com/gowildarea/mexico-city/gameplay",
           "https://pokemongo.com/news/go-wild-area-stamp-rally-details-2026",
           "https://pokemongo.com/news/shadow-raid-max-battle-update",
-          "https://pokemongo.com/news/gowildarea-mexicocity-friday-update"
+          "https://pokemongo.com/news/gowildarea-mexicocity-friday-update",
+          "https://pokemongo.com/gowildarea/mexico-city/faq"
         ],
         "background_type": "location",
         "artwork_status": "catalogued"
@@ -28794,11 +28798,14 @@
           "text_zh": "官方未就本活動單獨說明。GO Fest 2024曾發生遠距團體戰拿不到特殊背景，官方視為錯誤並補發附背景遭遇，推定特殊背景可經遠距團體戰／極巨對戰取得。",
           "text_en": "Not stated for this event. When remote raids failed to award Special Backgrounds at GO Fest 2024, Niantic treated it as a bug and compensated, so remote catches are inferred to be eligible for Special Backgrounds."
         },
-        "checked_on": "2026-11-12",
+        "checked_on": "2026-11-15",
+        "reported_info_zh": "一位美國持全球票玩家回報，遠距加入紐西蘭場極巨對戰後捕獲附特殊背景的超極巨鋁鋼龍，包含異色個體。無票資格、其他寶可夢與掉落機率待確認。",
+        "reported_info_en": "A US-based Global ticket holder reported catching Gigantamax Duraludon with the Special Background, including a Shiny, after joining Remote Max Battles in New Zealand. Ticketless eligibility, other Pokémon and drop rates remain unverified.",
         "sources": [
           "https://pokemongo.com/en/gowildarea/global",
           "https://pokemongo.com/news/gowildarea-global-2026-osaka-gameplay-update",
-          "https://pokemongo.com/news/shadow-raid-max-battle-update"
+          "https://pokemongo.com/news/shadow-raid-max-battle-update",
+          "https://www.reddit.com/r/TheSilphRoad/comments/1xr913c/comment/19slbprvobhz8/"
         ],
         "background_type": "special",
         "artwork_status": "catalogued",
@@ -28989,7 +28996,7 @@
       "release_state": "upcoming",
       "verification": "official-event-confirmed",
       "image_source": null,
-      "checked_on": "2026-11-14",
+      "checked_on": "2026-11-15",
       "official_sources": [
         "https://pokemongo.com/news/dynamax-trails-eternamax-eternatus-2026"
       ],
@@ -29026,14 +29033,15 @@
           "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
           "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
         },
-        "checked_on": "2026-11-14",
-        "reported_info_zh": "Serebii 與 Bulbapedia 的通行證獎勵表均列免費及豪華路線在第 10、20、40、50、60、70、80、90、100 階提供隨機極巨化遭遇。官方確認通行證含附背景的極巨化遭遇，逐款發放與圖樣仍待遊戲畫面核對。通行證獎勵可領至當地 11/25 20:00。",
-        "reported_info_en": "Serebii and Bulbapedia list random Dynamax encounters on both tracks at ranks 10, 20, 40, 50, 60, 70, 80, 90, and 100. The official announcement confirms background encounters in the pass. Individual distributions and artwork still await in-game verification. Pass rewards can be claimed until November 25 at 20:00 local time.",
+        "checked_on": "2026-11-15",
+        "reported_info_zh": "Serebii 與 Bulbapedia 的通行證獎勵表均列免費及豪華路線在第 10、20、40、50、60、70、80、90、100 階提供隨機極巨化遭遇。官方確認通行證含附背景的極巨化遭遇，11/14 有玩家回報先行通行證獎勵已附背景，但對圖樣的描述有出入（暗黑蒼穹／曠野）；逐款發放與圖樣仍待遊戲畫面核對。通行證獎勵可領至當地 11/25 20:00。",
+        "reported_info_en": "Serebii and Bulbapedia list random Dynamax encounters on both tracks at ranks 10, 20, 40, 50, 60, 70, 80, 90, and 100. The official announcement confirms background encounters in the pass. November 14 player reports describe background catches from early pass rewards, but disagree on the artwork (Dark Skies or Wild Area). Individual distributions and artwork still await in-game verification. Pass rewards can be claimed until November 25 at 20:00 local time.",
         "sources": [
           "https://pokemongo.com/news/dynamax-trails-eternamax-eternatus-2026",
           "https://pokemongo.com/news/shadow-raid-max-battle-update",
           "https://www.serebii.net/pokemongo/pass/gopass:dynamaxtrails.shtml",
-          "https://bulbapedia.bulbagarden.net/wiki/GO_Pass:_Dynamax_Trails"
+          "https://bulbapedia.bulbagarden.net/wiki/GO_Pass:_Dynamax_Trails",
+          "https://www.reddit.com/r/TheSilphRoad/comments/1xvzet7/can_dmax_encounters_from_into_the_wild_november/"
         ],
         "background_type": "special",
         "artwork_status": "pending",
@@ -29527,6 +29535,99 @@
       "event_id": "mexico-hawlucha-ongoing-stamp-rally-2026",
       "background_id": "BG-0213",
       "former_background_id": "BG-0282"
+    },
+    {
+      "event_id": "mcdonalds-hong-kong-2026",
+      "name_zh": "香港麥當勞限時聯乘",
+      "name_en": "McDonald’s Hong Kong Collaboration",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "香港",
+      "region_en": "Hong Kong",
+      "start_date": "2026-11-12",
+      "end_date": "2026-12-20",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-15",
+      "official_sources": [
+        "https://pokemongo.com/zh-Hant/news/202611mcdhk"
+      ],
+      "notes": [
+        "旋轉香港麥當勞補給站取得田野調查。30 間指定店可現場掃碼領取限時調查代碼。五波依序自 11/12、11/23、11/30、12/7、12/14 開始。官方未公告背景或遠距取得方式。"
+      ],
+      "notes_en": [
+        "Spin McDonald’s PokéStops in Hong Kong for Field Research. Thirty designated stores offer on-site Timed Research codes. The five waves start November 12, 23, 30 and December 7, 14. Background rewards and remote acquisition are unannounced."
+      ],
+      "activity": {
+        "id": "mcdonalds-hong-kong-2026",
+        "kind": "event",
+        "schedule": {
+          "zone": "Asia/Hong_Kong",
+          "basis": "confirmed",
+          "start": "2026-11-12T09:00",
+          "end": "2026-12-20T23:59"
+        },
+        "conditions_zh": "旋轉香港麥當勞補給站取得田野調查。30 間指定店可現場掃碼領取限時調查代碼。五波依序自 11/12、11/23、11/30、12/7、12/14 開始。官方未公告背景或遠距取得方式。",
+        "conditions_en": "Spin McDonald’s PokéStops in Hong Kong for Field Research. Thirty designated stores offer on-site Timed Research codes. The five waves start November 12, 23, 30 and December 7, 14. Background rewards and remote acquisition are unannounced.",
+        "eligible_zh": "五波田野調查依序為紫色派對帽皮卡丘、派對帽妙蛙種子、小火龍、傑尼龜、伊布。",
+        "eligible_en": "The five Field Research waves feature purple-party-hat Pikachu followed by party-hat Bulbasaur, Charmander, Squirtle and Eevee.",
+        "checked_on": "2026-11-15",
+        "sources": [
+          "https://pokemongo.com/zh-Hant/news/202611mcdhk"
+        ]
+      }
+    },
+    {
+      "event_id": "apple-store-japan-2026",
+      "name_zh": "日本 Apple Store 寶可補給站活動",
+      "name_en": "Apple Store Japan PokéStop Event",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "日本",
+      "region_en": "Japan",
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-30",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-15",
+      "official_sources": [
+        "https://pokemongo.com/ja/news/apple_store_japan"
+      ],
+      "notes": [
+        "日本 11 間 Apple Store 每天 10:00–21:00 在店點補給站啟用藥草誘餌模組，點選附近蘋果有機會遇到啃果蟲。台灣時間每日 09:00–20:00。官方未公告背景或遠距取得方式。"
+      ],
+      "notes_en": [
+        "Mossy Lure Modules run at all 11 Japanese Apple Stores daily from 10:00–21:00 JST (09:00–20:00 Taiwan). Tap nearby apples for a chance to encounter Applin. Background rewards and remote acquisition are unannounced."
+      ],
+      "activity": {
+        "id": "apple-store-japan-2026",
+        "kind": "event",
+        "schedule": {
+          "zone": "Asia/Tokyo",
+          "basis": "confirmed",
+          "start": "2026-11-16T10:00",
+          "end": "2026-11-30T21:00",
+          "daily": {
+            "start": "10:00",
+            "end": "21:00",
+            "basis": "confirmed"
+          }
+        },
+        "conditions_zh": "日本 11 間 Apple Store 每天 10:00–21:00 在店點補給站啟用藥草誘餌模組，點選附近蘋果有機會遇到啃果蟲。台灣時間每日 09:00–20:00。官方未公告背景或遠距取得方式。",
+        "conditions_en": "Mossy Lure Modules run at all 11 Japanese Apple Stores daily from 10:00–21:00 JST (09:00–20:00 Taiwan). Tap nearby apples for a chance to encounter Applin. Background rewards and remote acquisition are unannounced.",
+        "eligible_zh": "啃果蟲。",
+        "eligible_en": "Applin.",
+        "checked_on": "2026-11-15",
+        "sources": [
+          "https://pokemongo.com/ja/news/apple_store_japan"
+        ]
+      }
     },
     {
       "event_id": "season-25-2026-12-05",
