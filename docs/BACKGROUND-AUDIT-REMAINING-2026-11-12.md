@@ -74,3 +74,12 @@
 | BG-0213 墨西哥城活動日期 | Dittobase 將主活動末日列為 11/9，官方當地時段是 11/6–8，持票玩法每日 10:00–18:00。集章與限時調查各適用日可至 20:00。保留官方當地日期。 | [官方 FAQ](https://pokemongo.com/gowildarea/mexico-city/faq) |
 
 圖鑑補錄 BG-0213 官方限時調查領獎期限及來源。提交 `cc6e086081e977b387c4dabe415cf713e4b3a481`，資料 blob `9f20811ebd7aad926c732a9683ffdc914dcca123`。
+
+## 2026-11-15 雪梨與布宜諾斯艾利斯伊布集章
+
+| 條目 | 新證據 | 判定 |
+| --- | --- | --- |
+| BG-0079 雪梨 | Pokémon GO Wiki 逐章列第 1–8 章為附背景的探險帽伊布。12/13 的玩家自述最後一章取得異色伊布，截圖的鑑定頁可讀到 13/12/2025 與 Sydney, NSW，當時畫面未顯示地點背景。另一位玩家 12/14 的截圖可見歌劇院與港灣大橋背景，該圖沒有捕獲途徑和日期。 | 補錄集章附背景的社群紀錄。兩張玩家截圖各支持日期與途徑、或背景圖樣，並非同一個體的完整證據。 [逐章紀錄](https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_City_Safari%3A_Sydney) · [12/13 捕獲截圖與自述](https://www.reddit.com/r/pokemongo/comments/1plk4ii/shiny_event_eevee/) · [12/14 背景截圖](https://www.reddit.com/r/PokemonGoTrade/comments/1pmccdf/lf_nothing_ft_explorer_eevee_sydney_bg/) |
+| BG-0081 布宜諾斯艾利斯 | WikiDex 明列 1–8 章皆帶背景，與 Pokémon GO Wiki 的逐章紀錄相符，並補強 Infobae 的同期集章報導。 | 補錄集章附背景的社群紀錄，保留來源層級。 [WikiDex 集章](https://www.wikidex.net/wiki/Safari_de_ciudad_(2025)_en_Buenos_Aires) · [Pokémon GO Wiki](https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_City_Safari%3A_Buenos_Aires) |
+
+兩城開場特殊調查，以及額外日是否能重領附背景遭遇，仍缺可辨認個別領取途徑的遊戲實證。Leek Duck 的舊式限時調查段落仍明標未確認。更新僅補列兩城的社群集章證據，不提升為官方保證。圖鑑提交 `40690b33ff212d1398f65b376f7cc69de42f7011`，資料 blob `20351b0bc8fe52b8b27d80946613c2e11d8e813b`。
