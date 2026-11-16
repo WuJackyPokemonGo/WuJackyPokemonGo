@@ -22547,7 +22547,8 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-fest-2025-dark-skies",
-        "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+        "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+        "https://www.reddit.com/r/pokemongo/comments/1xx2lay/just_caught_this_from_the_go_pass_into_the_wild/"
       ],
       "evolved_pokemon": [
         {
@@ -22803,7 +22804,7 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-10-29",
+      "checked_on": "2026-11-16",
       "region_en": "Multiple regions",
       "region_zh": "多地／全球活動",
       "verification_scope": "background-and-eligibility",
@@ -23469,8 +23470,8 @@
           "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
         }
       ],
-      "return_note_zh": "2026/11/16 10:00～11/23 20:00：Dynamax Trails。官方確認極巨對戰及 GO Pass 有特殊背景，並排除傳說與幻之寶可夢；名錄目前將背景列為暗黑蒼穹（紫黑），是否沿用同圖及逐款發放仍待活動確認。下方預告不計入歷史取得款數；野外出現不等於可取得背景。",
-      "return_note_en": "Dynamax Trails: Nov 16, 2026, 10:00–Nov 23, 20:00 local time. Officially announced Special Backgrounds from Max Battles and GO Pass; Legendary and Mythical Pokémon are excluded from the returning Dynamax pool. Catalogs currently identify Dark Skies; artwork reuse and individual releases await event confirmation. Preview entries are excluded from historical counts. Wild spawns do not establish background eligibility.",
+      "return_note_zh": "巨大足跡（Dynamax Trails）：當地 2026/11/16 10:00～11/23 20:00；符合條件者可自 11/14 10:00 提前使用通行證。11/15 玩家畫面可見附暗黑蒼穹（紫黑）的極巨化破破袋，捕獲資訊標示 GO Pass，與當期名錄相符。官方另列活動極巨對戰捕獲有機會帶特殊背景，該途徑的逐款發放仍待核對。下方名單與 2025 年歷史遭遇分開。",
+      "return_note_en": "Dynamax Trails: November 16, 2026, 10:00 to November 23, 20:00 local time. Eligible Trainers received early pass access from November 14 at 10:00. A November 15 player record shows Dynamax Trubbish with Dark Skies and a GO Pass catch label, matching the event catalog. The official announcement also lists a chance of a Special Background from event Max Battles. Individual Max Battle releases remain under review. The return roster is separate from 2025 encounters.",
       "audit_2026_10_29": {
         "historical_encounters": 52,
         "historical_evolutions": 36,
