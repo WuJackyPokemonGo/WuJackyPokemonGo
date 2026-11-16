@@ -1,4 +1,6 @@
--- Run only AFTER sku-auto-number.sql. This test always rolls back its data changes.
+-- Run only AFTER sku-auto-number.sql. This test rolls back its DATA changes.
+-- WARNING: PostgreSQL sequences are non-transactional: this QA consumes two SKU numbers
+-- even after ROLLBACK. Do not re-run on production unless you accept gaps.
 BEGIN;
 DO $sku_qa$
 DECLARE
