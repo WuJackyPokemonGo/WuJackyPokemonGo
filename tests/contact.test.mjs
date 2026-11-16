@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {LINE_CONTACT_URL,validLineURL,applyContactLink}from'../contact.mjs';
+import {LINE_CONTACT_URL,validLineURL,applyContactLink,lineInquiryURL}from'../contact.mjs';
 import {readFileSync}from'node:fs';
 test('only the owner-confirmed LINE destination is configured',()=>assert.equal(LINE_CONTACT_URL,'https://lin.ee/pdZpa4z'));
 test('contact URLs require HTTPS and a specific LINE destination',()=>{for(const s of ['','https://line.me/','https://evil.example/','javascript:alert(1)','https://line.me.evil.example/x','https://user:secret@lin.ee/x'])assert.equal(validLineURL(s),null);assert.equal(validLineURL('https://lin.ee/example'),'https://lin.ee/example')});
@@ -7,3 +7,18 @@ test('pending contact controls remove stale destinations and cannot navigate',()
 test('public source contains no old LINE destination and all static contact controls use central config',()=>{const html=readFileSync(new URL('../index.html',import.meta.url),'utf8'),js=readFileSync(new URL('../storefront.mjs',import.meta.url),'utf8');assert.ok(!html.includes('tPmyO9o')&&!js.includes('tPmyO9o'));assert.equal((html.match(/<a\b[^>]*\bdata-contact-line\b/g)||[]).length,3);assert.ok(!/href="https:\/\/(?:lin\.ee|line\.me)/.test(html));assert.ok(js.includes('applyContactLink'))});
 
 test('confirmed contact controls replace stale destinations and restore enabled labels',()=>{const attrs=new Map([['aria-disabled','true'],['tabindex','-1']]);const link={dataset:{contactLabel:'聯絡 Wu Jacky'},href:'https://example.invalid/old',setAttribute(k,v){attrs.set(k,v)},removeAttribute(k){attrs.delete(k)}};applyContactLink(link);assert.equal(link.href,'https://lin.ee/pdZpa4z');assert.equal(link.target,'_blank');assert.equal(link.rel,'noopener noreferrer');assert.equal(link.textContent,'聯絡 Wu Jacky');assert.equal(attrs.has('aria-disabled'),false);assert.equal(attrs.has('tabindex'),false)});
+
+test('LINE inquiries open the confirmed account with the exact inquiry text', () => {
+ const message = '倫敦耿鬼 × 2\n備註：A & B + % #?';
+ const url = new URL(lineInquiryURL(message));
+ assert.equal(url.origin, 'https://line.me');
+ assert.equal(url.pathname, '/R/oaMessage/%40128wpoft/');
+ assert.equal(decodeURIComponent(url.search.slice(1)), message);
+ assert.equal(url.hash, '');
+});
+
+test('empty, oversized and unencodable LINE inquiries use manual copy', () => {
+ for (const message of ['', '   ', '測試'.repeat(300), '\ud800']) {
+  assert.equal(lineInquiryURL(message), null);
+ }
+});
