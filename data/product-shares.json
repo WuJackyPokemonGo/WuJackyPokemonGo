@@ -24,6 +24,12 @@
     "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/09e5c935-0652-4b33-9f85-74a5913b406e/9244019b-c086-4beb-8eb1-fb42d8e020a2-thumb.png"
   },
   {
+    "id": "0d97e986-7dc8-416f-9137-27d0a16615f0",
+    "name": "怪力（夾克）-曠野地帶2026全球（白球）",
+    "name_en": "Machamp (Modern Jacket) - GO Wild Area 2026 Global (Premier Ball)",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/0d97e986-7dc8-416f-9137-27d0a16615f0/8358b213-9815-49d9-997a-14b7c9339012-thumb.png"
+  },
+  {
     "id": "10f638a9-3211-4e17-806a-152e1a8afb45",
     "name": "皮卡丘-2026 寶可夢中心限定背景（18款）",
     "name_en": "Pikachu - Pokémon Center 2026 Location Background (18 Designs)",
@@ -42,20 +48,20 @@
     "image": ""
   },
   {
-    "id": "15eddfcb-c04a-43c3-b911-8114e80fbd46",
-    "name": "捷克羅姆-曠野地帶2026全球",
-    "name_en": "Zekrom - GO Wild Area 2026 Global",
-    "image": ""
-  },
-  {
     "id": "19b2e1ff-934f-4260-b4c9-4d977513fca9",
     "name": "妙蛙種子-ANA飛機色背",
     "name_en": "Bulbasaur - ANA Pokémon Jet Background",
     "image": "assets/products/opt/19b2e1ff-934f-4260-b4c9-4d977513fca9-ec809be7-8aba-4f3a-ac45-513f7d973561.webp"
   },
   {
+    "id": "1f481f64-ce58-409b-bbeb-6b8779df96fb",
+    "name": "捷克羅姆-曠野地帶2026全球（大師球）",
+    "name_en": "Zekrom - GO Wild Area 2026 Global (Master Ball)",
+    "image": ""
+  },
+  {
     "id": "20df8d2e-5ca5-44c1-a476-c120e1d72c46",
-    "name": "紫黑背景-預購（超極巨化）",
+    "name": "紫黑背景-超極巨化",
     "name_en": "Dark Skies Background - Preorder (Gigantamax)",
     "image": "assets/products/opt/dark-skies-reference.webp"
   },
@@ -72,16 +78,16 @@
     "image": "assets/products/opt/2276855e-1e6d-4704-94d6-cd38e55faafc-960c67a2-e449-4b81-9083-9644e20da788.webp"
   },
   {
-    "id": "249eb03e-0340-4797-99c3-5d2b6139472a",
-    "name": "怪力（夾克）-曠野地帶2026全球",
-    "name_en": "Machamp (Modern Jacket) - GO Wild Area 2026 Global",
-    "image": ""
-  },
-  {
     "id": "24d44ee0-2a44-4f05-b5b6-ef5f7d800714",
     "name": "嗡蝠-萬聖節髮箍",
     "name_en": "Shiny Noibat - Halloween Headband",
     "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/24d44ee0-2a44-4f05-b5b6-ef5f7d800714/b3fdf356-003c-44da-bc4b-4c15dfb87924-thumb.png"
+  },
+  {
+    "id": "274f38b5-68ac-4a84-90c2-c4769375215f",
+    "name": "萊希拉姆-曠野地帶2026全球（大師球）",
+    "name_en": "Reshiram - GO Wild Area 2026 Global (Master Ball)",
+    "image": ""
   },
   {
     "id": "28a5eb28-d465-41ae-9d80-53e27d61d814",
@@ -118,6 +124,12 @@
     "name": "耿鬼-寶可夢之夜洛杉磯",
     "name_en": "Gengar - Pokémon Night Out Los Angeles 2026",
     "image": "assets/products/opt/2c3f2865-51d4-4595-95a8-e8d8491460c3-143c834a-0d9c-446a-b926-555bde6cd964.webp"
+  },
+  {
+    "id": "2cfa33fe-1644-4b64-a653-5c0c240c6316",
+    "name": "帕路奇亞（極巨化）-曠野地帶2026全球（白球）",
+    "name_en": "Dynamax Palkia - GO Wild Area 2026 Global (Premier Ball)",
+    "image": ""
   },
   {
     "id": "2dd6df07-8d10-4f9c-9ce2-00efac132168",
@@ -270,10 +282,34 @@
     "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/59b97884-6ce4-4af0-a020-21901acaecc8/67eed319-63df-4be7-9a4c-c9a18faa2f28-thumb.png"
   },
   {
+    "id": "5afaf1da-4879-49c0-bf85-476088585e03",
+    "name": "捷克羅姆、萊希拉姆-曠野地帶2026全球（大師球2隻套組）",
+    "name_en": "Zekrom & Reshiram - GO Wild Area 2026 Global (2 Master Ball Set)",
+    "image": ""
+  },
+  {
+    "id": "5d8fe434-34de-4c2b-b459-1a8fd0c8cc1c",
+    "name": "酋雷姆-曠野地帶2026全球（大師球）",
+    "name_en": "Kyurem - GO Wild Area 2026 Global (Master Ball)",
+    "image": ""
+  },
+  {
     "id": "5f23466f-dfa4-44c4-afca-31b4bb4f2b2a",
     "name": "索財靈-2025九週年紀念限定背景",
     "name_en": "Gimmighoul - Pokémon GO 9th Anniversary Background",
     "image": "assets/products/opt/5f23466f-dfa4-44c4-afca-31b4bb4f2b2a-0d261c38-28b8-4d5a-980f-4834f1d66d22.webp"
+  },
+  {
+    "id": "602b45a7-97ed-4214-9109-c5c5f0595464",
+    "name": "怪力（夾克）-曠野地帶2026全球（大師球）",
+    "name_en": "Machamp (Modern Jacket) - GO Wild Area 2026 Global (Master Ball)",
+    "image": ""
+  },
+  {
+    "id": "6151e136-9d7d-4fd5-ac17-0526d635a2a1",
+    "name": "帕路奇亞（極巨化）-曠野地帶2026全球（大師球）",
+    "name_en": "Dynamax Palkia - GO Wild Area 2026 Global (Master Ball)",
+    "image": ""
   },
   {
     "id": "629cb69f-8558-49d6-8fe2-2cc7a84eb088",
@@ -300,6 +336,12 @@
     "image": ""
   },
   {
+    "id": "651a5056-6f60-40c4-8296-5c6e21ce8d05",
+    "name": "鋁鋼龍（超極巨化）-曠野地帶2026全球（大師球）",
+    "name_en": "Gigantamax Duraludon - GO Wild Area 2026 Global (Master Ball)",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/651a5056-6f60-40c4-8296-5c6e21ce8d05/6c9a24c9-a3d9-4131-8089-2fee1056737a-thumb.webp"
+  },
+  {
     "id": "65585ac0-3ff4-4b40-9e4b-57e062352b51",
     "name": "皮卡丘-2025汝矣島櫻花節限定背景",
     "name_en": "Pikachu - Yeouido Cherry Blossom Festival 2025 Background",
@@ -312,6 +354,18 @@
     "image": "assets/products/opt/674a0800-5224-4f4e-865d-95a85be6665c-c6e3b2c1-9d00-4882-affc-dcd8db57938f.webp"
   },
   {
+    "id": "67abc041-119a-4b46-ac70-55a1a82b5b34",
+    "name": "酋雷姆、萊希拉姆-曠野地帶2026全球（大師球2隻套組）",
+    "name_en": "Kyurem & Reshiram - GO Wild Area 2026 Global (2 Master Ball Set)",
+    "image": ""
+  },
+  {
+    "id": "6875f7e0-c43f-4fbd-8040-1d5438146624",
+    "name": "萊希拉姆-曠野地帶2026全球（白球）",
+    "name_en": "Reshiram - GO Wild Area 2026 Global (Premier Ball)",
+    "image": ""
+  },
+  {
     "id": "6bf39212-399a-4475-8032-c26c70281e7a",
     "name": "耿鬼-寶可夢之夜倫敦",
     "name_en": "Shiny Gengar - Pokémon Night Out London 2026",
@@ -322,6 +376,12 @@
     "name": "火狐狸-Mega背景",
     "name_en": "Fennekin - Mega Background",
     "image": "assets/products/opt/6d1b3ae7-3e05-4491-866d-686a63c4438b-327f3062-143d-4535-88b7-8e9a85e8cfde.webp"
+  },
+  {
+    "id": "6dcddb12-292c-4bbc-a471-c19c1b698d6c",
+    "name": "帝牙盧卡（極巨化）-曠野地帶2026全球（大師球）",
+    "name_en": "Dynamax Dialga - GO Wild Area 2026 Global (Master Ball)",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/6dcddb12-292c-4bbc-a471-c19c1b698d6c/8f1ce171-9557-4278-a4e3-023345dd1fae-thumb.webp"
   },
   {
     "id": "6e21261b-cc8b-4950-9849-d33632f80e68",
@@ -390,6 +450,12 @@
     "image": ""
   },
   {
+    "id": "86cafd21-4a99-495e-9658-03c7619ebe20",
+    "name": "酋雷姆、捷克羅姆、萊希拉姆-曠野地帶2026全球（大師球3隻套組）",
+    "name_en": "Kyurem, Zekrom & Reshiram - GO Wild Area 2026 Global (3 Master Ball Set)",
+    "image": ""
+  },
+  {
     "id": "8d40fdd1-1627-4b3a-a87f-85cc0a4b9c00",
     "name": "皮卡丘-2026 LEGO 樂高聯名",
     "name_en": "Pikachu - LEGO Pokémon 2026 Collaboration",
@@ -408,6 +474,12 @@
     "image": "assets/products/opt/8ddfc3e4-9621-4a42-bf3e-a4370262400a-096c545e-2250-454a-baa7-b1107debbbcd.webp"
   },
   {
+    "id": "930c5dc0-2592-4b69-b1bb-f2009ff5808f",
+    "name": "酋雷姆、捷克羅姆-曠野地帶2026全球（大師球2隻套組）",
+    "name_en": "Kyurem & Zekrom - GO Wild Area 2026 Global (2 Master Ball Set)",
+    "image": ""
+  },
+  {
     "id": "9521886f-7266-4c0c-999a-5de41eb8cbf0",
     "name": "皮皮-月光（XXL）",
     "name_en": "Clefairy - Moonlight (XXL)",
@@ -418,6 +490,18 @@
     "name": "呱呱泡蛙-Mega背景",
     "name_en": "Froakie - Mega Background",
     "image": "assets/products/opt/95cd141f-3c7e-4aad-b07c-416d8e70ca6a-4390409c-1e97-402d-8e5f-be481d0f7e16.webp"
+  },
+  {
+    "id": "963bcd58-ea19-45b7-88b1-aff6e065174c",
+    "name": "鋁鋼龍（超極巨化）-曠野地帶2026全球（白球）",
+    "name_en": "Gigantamax Duraludon - GO Wild Area 2026 Global (Premier Ball)",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/963bcd58-ea19-45b7-88b1-aff6e065174c/817556c0-824c-4a7f-aac3-cf9cddd9eb75-thumb.webp"
+  },
+  {
+    "id": "97b15755-dfbb-48b6-a648-eedcea6bfebf",
+    "name": "酋雷姆、萊希拉姆-曠野地帶2026全球（白球2隻套組）",
+    "name_en": "Kyurem & Reshiram - GO Wild Area 2026 Global (2 Premier Ball Set)",
+    "image": ""
   },
   {
     "id": "9968c818-d367-4767-9353-64ab79043ae1",
@@ -438,6 +522,12 @@
     "image": "assets/products/opt/9b1dd25a-cb08-484e-86da-6727905cd7fa-866fa44f-9213-4312-afcb-7e6b424c71f9.webp"
   },
   {
+    "id": "9b8ed383-b4a7-4e2e-9920-d0f51eb9ebdb",
+    "name": "捷克羅姆、萊希拉姆-曠野地帶2026全球（白球2隻套組）",
+    "name_en": "Zekrom & Reshiram - GO Wild Area 2026 Global (2 Premier Ball Set)",
+    "image": ""
+  },
+  {
     "id": "a13bb166-e653-41f7-a074-0eaa4d8cfa1f",
     "name": "超夢-十週年紀念全球調查（大師球種）",
     "name_en": "Mewtwo - 10th Anniversary Global Research (Master Ball)",
@@ -448,6 +538,12 @@
     "name": "骨紋巨聲鱷-地平線背景",
     "name_en": "Skeledirge - Pokémon Horizons Background",
     "image": "assets/products/opt/a1923add-16a3-4eae-850e-2aa84bd943e2-3b12b771-7391-4a92-858b-78c5a3355daf.webp"
+  },
+  {
+    "id": "a2604731-da49-43df-899c-c98bc1795c7e",
+    "name": "酋雷姆、捷克羅姆、萊希拉姆-曠野地帶2026全球（白球3隻套組）",
+    "name_en": "Kyurem, Zekrom & Reshiram - GO Wild Area 2026 Global (3 Premier Ball Set)",
+    "image": ""
   },
   {
     "id": "a2897287-4cb1-4c11-8bce-3d2f6d7dba1d",
@@ -498,6 +594,12 @@
     "image": "assets/products/opt/af6b226d-a462-4ddb-ab66-0b46f0d72a24-ed5f4a69-95b0-4cdf-a354-4437b492746e.webp"
   },
   {
+    "id": "b41b4a8e-c1ca-4072-9a33-82b439db0e60",
+    "name": "酋雷姆、捷克羅姆-曠野地帶2026全球（白球2隻套組）",
+    "name_en": "Kyurem & Zekrom - GO Wild Area 2026 Global (2 Premier Ball Set)",
+    "image": ""
+  },
+  {
     "id": "b5c4a38f-eb3f-4bf9-bd89-17be690d6f93",
     "name": "隨風球-萬聖節",
     "name_en": "Drifblim - Halloween Mischief Costume",
@@ -522,6 +624,12 @@
     "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/bd0137df-5398-4465-96dc-b50704ba6a19/f15aebcd-590f-4d3c-bedd-6ca0d68e1cfc-thumb.png"
   },
   {
+    "id": "bea70071-bd24-453a-bb5d-7eb464ef96b4",
+    "name": "酋雷姆-曠野地帶2026全球（白球）",
+    "name_en": "Kyurem - GO Wild Area 2026 Global (Premier Ball)",
+    "image": ""
+  },
+  {
     "id": "bf278d4a-2ff4-464c-b5e3-9d069a567d75",
     "name": "木木梟-萬聖節",
     "name_en": "Rowlet - Pokémon Halloween Costume",
@@ -540,12 +648,6 @@
     "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/c51e266d-4f9a-4930-b8a1-d7cd76e0ba84/5d05c4b2-05bc-4ba1-96eb-401163d76681-thumb.png"
   },
   {
-    "id": "c74066fa-c9da-4230-b21d-c92073e73f3c",
-    "name": "皮卡丘-群馬人孔蓋",
-    "name_en": "Pikachu - Gunma Poké Lid",
-    "image": ""
-  },
-  {
     "id": "c8209417-2f52-49bd-8ff4-351972076a84",
     "name": "四季鹿（冬季）-2026平昌冬季慶典限定背景",
     "name_en": "Shiny Winter Deerling - Pyeongchang Winter Festival 2026",
@@ -556,6 +658,12 @@
     "name": "拉魯拉絲-極巨化",
     "name_en": "Ralts - Dynamax",
     "image": "assets/products/opt/cac40f65-8bba-441b-b0d6-b039207c83ad-f22e3841-321c-4b2a-8928-d81f5a87cb49.webp"
+  },
+  {
+    "id": "cc479ca2-19e3-4e2d-8cbb-8050b16c2c3f",
+    "name": "帝牙盧卡（極巨化）-曠野地帶2026全球（白球）",
+    "name_en": "Dynamax Dialga - GO Wild Area 2026 Global (Premier Ball)",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/cc479ca2-19e3-4e2d-8cbb-8050b16c2c3f/3d9f9a1f-d0e6-457b-80c0-82b7d90a8344-thumb.webp"
   },
   {
     "id": "ce75fffc-7371-42b4-b0e4-7c47268a06ed",
@@ -600,10 +708,10 @@
     "image": "assets/products/opt/d7a081ef-d6fd-41f2-81f0-40e2511cdce6-84a11ab2-bb6d-4a14-94cf-8c1390ae7bca.webp"
   },
   {
-    "id": "d8490bed-ac47-4180-9e44-4771e4548697",
-    "name": "鋁鋼龍（超極巨化）-曠野地帶2026全球",
-    "name_en": "Gigantamax Duraludon - GO Wild Area 2026 Global",
-    "image": ""
+    "id": "d7ad769f-939a-429f-92b3-7eb19b5e8a42",
+    "name": "捷克羅姆-曠野地帶2026全球（白球）",
+    "name_en": "Zekrom - GO Wild Area 2026 Global (Premier Ball)",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/d7ad769f-939a-429f-92b3-7eb19b5e8a42/a5ace620-e7fc-440c-9913-a4355de6be79-thumb.webp"
   },
   {
     "id": "d8a33ff6-6312-4dea-a4b1-cf4c45dfc132",
@@ -658,12 +766,6 @@
     "name": "拉帝歐斯（極巨化）-曠野週2026",
     "name_en": "Shiny Dynamax Latios - Into the Wild 2026",
     "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/ea8a37e5-ec7a-4e5a-a9de-757571e0fb87/f4e99086-0ec1-44cc-8843-90764dbcefa1-thumb.png"
-  },
-  {
-    "id": "ec9f5e8c-7494-42dc-ae22-2097ba00c223",
-    "name": "帝牙盧卡（極巨化）-曠野地帶2026全球",
-    "name_en": "Dynamax Dialga - GO Wild Area 2026 Global",
-    "image": ""
   },
   {
     "id": "eddc93c8-6e62-4204-97c1-7df602e30251",
