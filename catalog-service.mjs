@@ -61,6 +61,11 @@ export function sortCatalogProducts(products, order='default') {
  const rows=[...products];
  const byName=(a,b)=>String(a.name_zh??'').localeCompare(String(b.name_zh??''),'zh-Hant')||String(a.id).localeCompare(String(b.id));
  if(order==='name')return rows.sort(byName);
+ if(order==='sku_asc'||order==='sku_desc'){
+  const skuNumber=p=>{const match=/^WJ-(\d+)$/i.exec(String(p.sku??''));return match?Number(match[1]):null};
+  const direction=order==='sku_asc'?1:-1;
+  return rows.sort((a,b)=>{const x=skuNumber(a),y=skuNumber(b);if(x===null&&y===null)return byName(a,b);if(x===null)return 1;if(y===null)return -1;return direction*(x-y)||byName(a,b)});
+ }
  if(order==='newest'){
   const stocked=p=>Date.parse(p.first_stocked_at)||0;
   return rows.sort((a,b)=>stocked(b)-stocked(a)||(Date.parse(b.created_at)||0)-(Date.parse(a.created_at)||0)||byName(a,b));
