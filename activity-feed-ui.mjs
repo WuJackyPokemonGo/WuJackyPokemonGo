@@ -12,9 +12,16 @@ function card(r,now,onBackground){
  const meta=r.activity,s=activityState(r,now),early=activityEarlyAccess(r,now),times=activityTimeLines(r,getLocale()==='zh'?'zh':'en'),box=el('article',null,'activity-news-card '+s.status),head=el('div',null,'activity-news-top'),details=el('details'),summary=el('summary',tr('活動條件與時間詳情','Conditions and time details'));
  box.dataset.eventId=r.event_id;head.append(el('span',statusName(s.status),'activity-state '+s.status));if(meta.schedule.basis==='pending')head.append(el('span',tr('時間有歧異','Time conflict'),'activity-evidence pending'));head.append(el('span',(getLocale()!=='zh'?r.region_en:r.region_zh)||tr('地區待確認','Region to confirm'),'activity-region'));box.append(head,el('h3',pick(meta,'title')||(getLocale()!=='zh'?r.name_en:r.name_zh)));
  box.append(el('p',times.local,'activity-time'),el('p',times.taiwan,'activity-taiwan'));
- if(early){head.append(el('span',early.open?tr('調查已開放','Research available'):tr('調查即將開放','Research coming soon'),'activity-state '+(early.open?'in_progress':'upcoming')));box.append(el('p',tr('限時調查開放：','Timed Research opens: ')+early.local,'activity-time'),el('p',tr('台灣：','Taiwan: ')+early.taiwan+tr('；調查截止時刻待確認。','; research expiry time unconfirmed.'),'activity-taiwan'))}
+ if(early){
+  const pass=early.kind==='go-pass';
+  const label=pass?(early.open?tr('符合資格者可提前領通行證','Early pass access for qualified Trainers'):tr('通行證即將提前開放','Early pass access coming soon')):(early.open?tr('調查已開放','Research available'):tr('調查即將開放','Research coming soon'));
+  const timeLabel=pass?tr('通行證提前開放：','Early GO Pass access: '):tr('限時調查開放：','Timed Research opens: ');
+  const note=pass?tr('；附背卡遭遇的提前取得資格待確認。','; early access to background encounters is unconfirmed.'):tr('；調查截止時刻待確認。','; research expiry time unconfirmed.');
+  head.append(el('span',label,'activity-state '+(early.open?'in_progress':'upcoming')));
+  box.append(el('p',timeLabel+early.local,'activity-time'),el('p',tr('台灣：','Taiwan: ')+early.taiwan+note,'activity-taiwan'));
+ }
  if(meta.schedule.daily)box.append(el('p',tr('每日時段：','Daily hours: ')+meta.schedule.daily.start+'–'+meta.schedule.daily.end+(s.session_open===false&&s.status==='in_progress'?tr('（目前非開放時段）',' (outside daily hours now)'):''),'activity-daily'));
- if(meta.schedule.rolling_local)box.append(el('p',tr('狀態依台灣場判定；海外進度依各地時區。','Status follows the Taiwan schedule; overseas progress depends on local time.'),'activity-basis'));
+ if(meta.schedule.rolling_local&&!meta.schedule.date_only)box.append(el('p',tr('狀態依台灣場判定；海外進度依各地時區。','Status follows the Taiwan schedule; overseas progress depends on local time.'),'activity-basis'));
  if(meta.schedule.reference_local)box.append(el('p',tr('狀態及台灣換算以墨西哥城為示例；墨西哥其他時區依當地時間。','Status and Taiwan conversion use Mexico City as an example; other Mexican time zones follow local time.'),'activity-basis'));
  if(meta.schedule.date_only)box.append(el('p',s.status==='ended'?tr('已結束依活動日期推定；精確時刻未公布。','Ended status is inferred from the event date; exact hours were not announced.'):tr('官方只列日期，未把午夜當成開始時間。','Only dates are announced; midnight is not assumed as the start.'),'activity-basis'));
  if(pick(meta,'battle_window_label'))box.append(el('p',pick(meta,'battle_window_label'),'activity-daily'));
