@@ -2,7 +2,7 @@
 
 使用者決定先為現有全部商品補號，未上架商品之後上架再自動配號；單隻與套組各自有永久唯一 SKU，僅後台顯示，未來訂單明細才顯示，前台商品頁／詢價／分享不顯示。
 
-本分支 feature/sku-auto-number-20261116 已新增 SQL 交易式補號與自動編號觸發器、後台 SKU 唯讀、CSV 防改號及驗收測試。2026-11-16 staging（127 件、SKU 全空）以 BEGIN/ROLLBACK 模擬套用與 SQL 驗收通過，未留下資料變更。正式 Supabase 目前 INACTIVE 無法連線，正式件數、舊 SKU 與正式回填都**尚未驗證及執行**。此分支禁止視為已部署；正式環境需備份、盤點、核准後再依 docs/SKU-ROLLOUT-2026-11-16.md 執行。舊備份還原與 SKU 序列連動仍待驗收。不得因本分支完成就勾選「正式上線」。
+本分支 feature/sku-auto-number-20261116 已新增 SQL 交易式補號與自動編號觸發器、後台 SKU 唯讀、CSV 防改號及驗收測試。2026-11-16 確認 main 的正式賣場與後台實際連到名稱帶 staging 的 Supabase `wlrwlqchlxehlvkyesnj`，該**現行正式站資料庫**唯讀盤點 127 件、SKU 全空；另一個 `WuJackyPokemonGo` 專案 INACTIVE，並非 main 指向的資料來源。已在現行連線專案以 BEGIN/ROLLBACK 模擬套用與 SQL 驗收通過，未留下任何資料變更。GitHub Actions 338/338 測試及 build 全通過；**尚未正式補號、合併或部署**。此分支禁止視為已部署；正式環境需備份、盤點、核准後再依 docs/SKU-ROLLOUT-2026-11-16.md 執行。舊備份還原與 SKU 序列連動仍待驗收。不得因本分支完成就勾選「正式上線」。
 
 ## 客人多平台聯絡方式：已上線（2026-11-08）
 
