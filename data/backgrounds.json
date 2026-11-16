@@ -6127,8 +6127,8 @@
         "2026-11-12: The same-weekend official Miami notice states the stamp rally replaced the Timed Research of earlier City Safaris with the same rewards; LeekDuck's pre-event note that Timed Research Eevee carry the Sydney background is marked as based on earlier events. Serebii and Dittobase list explorer-hat Eevee with the background; which route guarantees it, and whether the opening Special Research Eevee has it, remain unverified."
       ],
       "related_product_ids": [],
-      "method_zh": "持票參與雪梨城市狩獵集章，每章可遇見一隻探險帽伊布，每日最多八次。當地背景的實際發放途徑仍待確認，包括集章及開場特殊調查是否附背景。八種進化款由附背景的探險帽伊布進化取得。",
-      "method_en": "Ticket holders could encounter one Explorer Hat Eevee per City Safari stamp in Sydney, up to eight per day. The source of the Location Background remains unverified, including whether it was available from stamp rewards or the opening Special Research. The eight Evolutions inherit it from an Explorer Hat Eevee with the background.",
+      "method_zh": "持票參與雪梨城市狩獵集章，每章可遇見一隻探險帽伊布，每日最多八次。社群活動紀錄將前八章列為附地點背景的遭遇。開場特殊調查及額外日的背景發放仍待可辨認取得途徑的遊戲實證。八種進化款由附背景的探險帽伊布進化取得。",
+      "method_en": "Ticket holders could encounter one Explorer Hat Eevee per City Safari stamp in Sydney, up to eight per day. Community event records list the first eight rewards as encounters with the Location Background. Background rewards from the opening Special Research and the Extra Day still lack direct in-game evidence of the acquisition route. The eight Evolutions inherit it from an Explorer Hat Eevee with the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2025",
@@ -6138,7 +6138,10 @@
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2025-sydney",
         "https://www.dittobase.com/pokemon-go/backgrounds",
         "https://leekduck.com/events/pokemon-go-city-safari-sydney-2025/",
-        "https://www.serebii.net/pokemongo/reallifeevents/citysafari-sydney.shtml"
+        "https://www.serebii.net/pokemongo/reallifeevents/citysafari-sydney.shtml",
+        "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_City_Safari%3A_Sydney",
+        "https://www.reddit.com/r/pokemongo/comments/1plk4ii/shiny_event_eevee/",
+        "https://www.reddit.com/r/PokemonGoTrade/comments/1pmccdf/lf_nothing_ft_explorer_eevee_sydney_bg/"
       ],
       "evolved_pokemon": [
         {
@@ -6198,7 +6201,7 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-11-12",
+      "checked_on": "2026-11-15",
       "start_date": "2025-12-13",
       "end_date": "2025-12-14",
       "region_en": "Australia",
@@ -6337,8 +6340,8 @@
         "2026-11-12: The same-weekend official Miami notice states the stamp rally replaced the Timed Research of earlier City Safaris with the same rewards; LeekDuck's pre-event note that Timed Research Eevee carry the Buenos Aires background is marked as based on earlier events. Serebii and Dittobase list explorer-hat Eevee with the background; which route guarantees it, and whether the opening Special Research Eevee has it, remain unverified."
       ],
       "related_product_ids": [],
-      "method_zh": "持票參與布宜諾斯艾利斯城市狩獵集章，每章可遇見一隻探險帽伊布，每日最多八次。當地背景的實際發放途徑仍待確認，包括集章及開場特殊調查是否附背景。八種進化款由附背景的探險帽伊布進化取得。",
-      "method_en": "Ticket holders could encounter one Explorer Hat Eevee per City Safari stamp in Buenos Aires, up to eight per day. The source of the Location Background remains unverified, including whether it was available from stamp rewards or the opening Special Research. The eight Evolutions inherit it from an Explorer Hat Eevee with the background.",
+      "method_zh": "持票參與布宜諾斯艾利斯城市狩獵集章，每章可遇見一隻探險帽伊布，每日最多八次。社群活動紀錄將前八章列為附地點背景的遭遇。開場特殊調查及額外日的背景發放仍待可辨認取得途徑的遊戲實證。八種進化款由附背景的探險帽伊布進化取得。",
+      "method_en": "Ticket holders could encounter one Explorer Hat Eevee per City Safari stamp in Buenos Aires, up to eight per day. Community event records list the first eight rewards as encounters with the Location Background. Background rewards from the opening Special Research and the Extra Day still lack direct in-game evidence of the acquisition route. The eight Evolutions inherit it from an Explorer Hat Eevee with the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2025",
@@ -6348,7 +6351,9 @@
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2025-buenos-aires",
         "https://www.dittobase.com/pokemon-go/backgrounds",
         "https://leekduck.com/events/pokemon-go-city-safari-buenos-aires-2025/",
-        "https://www.infobae.com/tecno/2025/12/02/pokemon-go-city-safari-llega-a-buenos-aires-puntos-de-encuentro-desafios-y-actividades-presenciales/"
+        "https://www.infobae.com/tecno/2025/12/02/pokemon-go-city-safari-llega-a-buenos-aires-puntos-de-encuentro-desafios-y-actividades-presenciales/",
+        "https://www.wikidex.net/wiki/Safari_de_ciudad_(2025)_en_Buenos_Aires",
+        "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_City_Safari%3A_Buenos_Aires"
       ],
       "evolved_pokemon": [
         {
@@ -6408,7 +6413,7 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-11-12",
+      "checked_on": "2026-11-15",
       "start_date": "2025-12-13",
       "end_date": "2025-12-14",
       "region_en": "Argentina",
@@ -28996,18 +29001,18 @@
       "release_state": "upcoming",
       "verification": "official-event-confirmed",
       "image_source": null,
-      "checked_on": "2026-11-15",
+      "checked_on": "2026-11-16",
       "official_sources": [
         "https://pokemongo.com/news/dynamax-trails-eternamax-eternatus-2026"
       ],
       "notes": [
         "活動時間為當地11/16 10:00–11/23 20:00；已登場的非傳說、非幻之極巨化寶可夢可能出現在極巨對戰，捕獲有機會帶特殊背景。",
-        "GO Pass免費及豪華路線明列帶特殊背景的活動極巨化寶可夢遭遇；符合深入荒野第一階段條件者可於11/14 10:00提前取得通行證。逐隻名單與背景圖樣未公布，不能視為舊暗黑蒼穹復刻。",
+        "GO Pass免費及豪華路線明列帶特殊背景的活動極巨化寶可夢遭遇；符合深入荒野第一階段條件者可於11/14 10:00提前取得通行證。官方未公布逐隻名單及圖樣。Serebii 所列圖樣與既有暗黑蒼穹（BG-0235）相符，遊戲內逐途徑發放仍待核。",
         "無極汰那是通行證的另一項獎勵，官方未承諾其帶特殊背景；無極巨化無極汰那對戰後不可捕獲，不列為背景遭遇。"
       ],
       "notes_en": [
         "Local event hours: November 16 at 10:00–November 23 at 20:00. Previously released non-Legendary, non-Mythical Dynamax Pokémon may appear in Max Battles, with a chance of a Special Background after catching.",
-        "Both GO Pass tracks list event-themed Dynamax Pokémon with Special Backgrounds. Trainers who claimed Into the Wild Tier 1 receive early pass access on November 14 at 10:00. Individual species and artwork are unannounced; this is not evidence of a Dark Skies rerun.",
+        "Both GO Pass tracks list event-themed Dynamax Pokémon with Special Backgrounds. Trainers who claimed Into the Wild Tier 1 receive early pass access on November 14 at 10:00. The official announcement does not name individual species or show the artwork. Serebii lists artwork matching Dark Skies (BG-0235), with in-game distribution still to verify by route.",
         "Eternatus is listed as a separate pass reward without a promised background. Eternamax Eternatus cannot be caught after its battle and is not a background encounter."
       ],
       "activity": {
@@ -29033,20 +29038,22 @@
           "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
           "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
         },
-        "checked_on": "2026-11-15",
-        "reported_info_zh": "Serebii 與 Bulbapedia 的通行證獎勵表均列免費及豪華路線在第 10、20、40、50、60、70、80、90、100 階提供隨機極巨化遭遇。官方確認通行證含附背景的極巨化遭遇，11/14 有玩家回報先行通行證獎勵已附背景，但對圖樣的描述有出入（暗黑蒼穹／曠野）；逐款發放與圖樣仍待遊戲畫面核對。通行證獎勵可領至當地 11/25 20:00。",
-        "reported_info_en": "Serebii and Bulbapedia list random Dynamax encounters on both tracks at ranks 10, 20, 40, 50, 60, 70, 80, 90, and 100. The official announcement confirms background encounters in the pass. November 14 player reports describe background catches from early pass rewards, but disagree on the artwork (Dark Skies or Wild Area). Individual distributions and artwork still await in-game verification. Pass rewards can be claimed until November 25 at 20:00 local time.",
+        "checked_on": "2026-11-16",
+        "reported_info_zh": "Serebii 與 Bulbapedia 的通行證獎勵表均列免費及豪華路線在第 10、20、40、50、60、70、80、90、100 階提供隨機極巨化遭遇。官方確認通行證含附背景的極巨化遭遇，11/14 有玩家回報先行通行證獎勵已附背景，但對圖樣的描述有出入（暗黑蒼穹／曠野）；Serebii 活動頁所列圖樣與既有暗黑蒼穹（BG-0235）相符；逐款發放及遠距掉落仍待實證。通行證獎勵可領至當地 11/25 20:00。",
+        "reported_info_en": "Serebii and Bulbapedia list random Dynamax encounters on both tracks at ranks 10, 20, 40, 50, 60, 70, 80, 90, and 100. The official announcement confirms background encounters in the pass. November 14 player reports describe background catches from early pass rewards, but disagree on the artwork (Dark Skies or Wild Area). Serebii’s event artwork matches the existing Dark Skies entry (BG-0235). The individual distributions and remote drops still need in-game evidence. Pass rewards can be claimed until November 25 at 20:00 local time.",
         "sources": [
           "https://pokemongo.com/news/dynamax-trails-eternamax-eternatus-2026",
           "https://pokemongo.com/news/shadow-raid-max-battle-update",
           "https://www.serebii.net/pokemongo/pass/gopass:dynamaxtrails.shtml",
+          "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "https://pokexperience.com/backgrounds/",
           "https://bulbapedia.bulbagarden.net/wiki/GO_Pass:_Dynamax_Trails",
           "https://www.reddit.com/r/TheSilphRoad/comments/1xvzet7/can_dmax_encounters_from_into_the_wild_november/"
         ],
         "background_type": "special",
         "artwork_status": "pending",
-        "uncertainty_zh": "背景圖樣及逐隻名單待確認，不能把本公告直接視為舊暗黑蒼穹／紫黑復刻證據。",
-        "uncertainty_en": "Artwork and individual species await confirmation. This announcement alone does not establish reuse of the old Dark Skies artwork.",
+        "uncertainty_zh": "名錄圖樣相符。GO Pass 與極巨對戰兩種來源仍須分別核對遊戲內畫面及逐款名單。",
+        "uncertainty_en": "The catalog artwork matches. The GO Pass and Max Battle routes each still need in-game verification of artwork and individual species.",
         "early_access": {
           "start": "2026-11-14T10:00",
           "zone": "Asia/Taipei",
@@ -29535,6 +29542,62 @@
       "event_id": "mexico-hawlucha-ongoing-stamp-rally-2026",
       "background_id": "BG-0213",
       "former_background_id": "BG-0282"
+    },
+    {
+      "event_id": "festival-walk-hong-kong-2026",
+      "name_zh": "香港又一城限時調查",
+      "name_en": "Hong Kong Festival Walk Timed Research",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "香港",
+      "region_en": "Hong Kong",
+      "start_date": "2026-11-09",
+      "end_date": "2027-01-03",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-16",
+      "official_sources": [
+        "https://pokemongo.com/zh-Hant/news/2026hk-fw"
+      ],
+      "notes": [
+        "到香港九龍塘又一城領取遊戲內限時調查，每人限領一次，領取後 10 天到期。"
+      ],
+      "notes_en": [
+        "Visit Festival Walk in Kowloon Tong to claim the in-game Timed Research once per Trainer. It expires 10 days after claiming."
+      ],
+      "activity": {
+        "id": "festival-walk-hong-kong-2026",
+        "kind": "event",
+        "schedule": {
+          "zone": "Asia/Hong_Kong",
+          "basis": "confirmed",
+          "start": "2026-11-09T10:00",
+          "end": "2027-01-03T23:59"
+        },
+        "conditions_zh": "到香港九龍塘又一城領取遊戲內限時調查，每人限領一次，領取後 10 天到期。",
+        "conditions_en": "Visit Festival Walk in Kowloon Tong to claim the in-game Timed Research once per Trainer. It expires 10 days after claiming.",
+        "eligible_zh": "官方未列出調查寶可夢名單或背景獎勵。",
+        "eligible_en": "The official announcement does not list the research encounters or any background rewards.",
+        "remote_participation": {
+          "basis": "confirmed",
+          "text_zh": "官方列出到場領取。",
+          "text_en": "The announcement requires an on-site visit to claim the research."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "未公布背景獎勵與遠距資格。",
+          "text_en": "Background rewards and remote eligibility have not been announced."
+        },
+        "uncertainty_zh": "11/14–15 曠野週末攤位及贈品已結束。此卡日期是仍在開放的限時調查領取期間。",
+        "uncertainty_en": "The November 14–15 Wild Area booth and giveaways have ended. The dates on this card refer to the ongoing Timed Research claim period.",
+        "checked_on": "2026-11-16",
+        "sources": [
+          "https://pokemongo.com/zh-Hant/news/2026hk-fw"
+        ]
+      }
     },
     {
       "event_id": "mcdonalds-hong-kong-2026",

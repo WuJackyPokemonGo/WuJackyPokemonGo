@@ -14,7 +14,7 @@ test('announced previews respect state, stock, dex, year, region and language se
 test('Dynamax Trails is upcoming, no substituted artwork or asserted Eternatus encounter and no duplicate event',()=>{
  const found=rows.filter(x=>x.event_id==='dynamax-trails-2026');assert.equal(found.length,1);const r=found[0];
  assert.equal(r.release_state,'upcoming');assert.equal(r.image_source,null);assert.equal(r.start_date,'2026-11-16');assert.equal(r.end_date,'2026-11-23');
- assert.match(r.notes_en.join(' '),/non-Legendary, non-Mythical/);assert.match(r.notes_en.join(' '),/not evidence of a Dark Skies rerun/);assert.match(r.notes_en.join(' '),/without a promised background/);
+ assert.match(r.notes_en.join(' '),/non-Legendary, non-Mythical/);assert.match(r.notes_en.join(' '),/artwork matching Dark Skies.*still to verify by route/);assert.match(r.notes_en.join(' '),/without a promised background/);
  assert.ok(!data.records.some(x=>x.name_en.includes('Dynamax Trails')));
 });
 test('Pawniard reuses the annual background but its future date and acquisition conditions stay explicit',()=>{
