@@ -9,7 +9,7 @@
 - 300 個 Excel 預排號碼**不是**已預先占用的商品編號，不可據此認定網站已有 300 件商品。
 
 ## 上正式環境前必須檢查
-正式 Supabase 專案在 2026-11-16 本次作業中回報 `INACTIVE`，SQL 無法連線，所以**尚未完成正式產品資料盤點、補號或部署**。請先確認資料庫恢復、檢查現有 SKU，保存資料備份，再單獨核准執行。不得拿 staging 的 127 件當成正式件數。
+**專案命名與實際接線不同：**2026-11-16 已核對 main 的 `staging-config.mjs`、`cloud-admin.mjs`、`storefront-service.mjs`：正式 GitHub Pages 賣場與後台目前都連到 `wlrwlqchlxehlvkyesnj`（雖名稱為 `wu-jacky-pokemon-staging`）。該**正式網站實際連線的資料庫**唯讀盤點有 127 件商品，127 件 SKU 皆空白。另一個名為 `WuJackyPokemonGo` 的 `uhwhhdtwtzmuodvltijw` 專案目前 INACTIVE，並非 main 程式所用的資料來源。**正式資料庫已盤點，但尚未執行補號或部署**。套用前仍須備份和明確核准，避免寫錯專案。
 
 正式執行前唯讀盤點 SQL：
 ```sql
@@ -37,4 +37,4 @@ select sku,id,name_zh from public.products where sku is not null order by sku;
 - 刪除商品不回收號碼；日後不允許直接調降序列。
 - 舊版備份還原會設定 `wj.restoring` 旗標而略過一般 SKU 強制規則，目的是保留歷史還原相容性。**正式啟用前必須追加「還原舊備份／新增 SKU」完整驗收**；不能僅以本次基礎測試認定所有還原情境均安全。若舊備份有空 SKU，還原後須再核對與補號。
 - 此分支沒有設定任何帳密、沒有修改價格、庫存、商品 UUID 或正式資料。
-- 本次 SQL 在 **staging** 以單次 `BEGIN ... ROLLBACK` 模擬套用與驗收成功，驗收後 staging 原有 127 筆全部仍未配 SKU，觸發器不存在；**沒有正式套用**。
+- 本次 SQL 在**正式站目前實際使用的資料庫**（專案名稱雖為 staging）以單次 `BEGIN ... ROLLBACK` 模擬套用與驗收成功，驗收後 127 筆商品仍全部無 SKU，觸發器不存在；**沒有正式套用**。GitHub Actions #43789148172：338/338 測試及 build、管理頁一致性、bundle diff 全部通過。
