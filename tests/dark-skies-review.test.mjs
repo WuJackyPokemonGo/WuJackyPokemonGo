@@ -25,3 +25,12 @@ test('announced 2026 candidates never count as historical releases or establish 
  assert.ok(!row.pokemon.some(p=>p.dex===25));
  assert.equal(row.start_date,'2025-08-18');assert.equal(row.end_date,'2025-08-24');
 });
+test('2026 GO Pass roster matches the owner list and keeps Espurr pending',()=>{
+ const dex=[1,4,7,10,25,58,63,66,92,98,106,107,111,113,125,126,129,133,138,140,163,213,215,237,280,302,320,328,349,363,374,415,519,524,527,529,530,546,554,568,615,633,686,761,766,780,810,813,816,819,821,831,849,849,850,856,870,884];
+ assert.deepEqual(row.go_pass_pokemon.map(p=>p.dex),dex);
+ assert.equal(new Set(row.go_pass_pokemon.map(p=>p.variant_id)).size,58);
+ assert.deepEqual(row.go_pass_pokemon.filter(p=>p.dex===849).map(p=>p.variant_id),['toxtricity-amped','toxtricity-low-key']);
+ assert.ok(row.go_pass_pokemon.every(p=>p.acquisition==='go-pass'&&!('shiny' in p)));
+ assert.deepEqual(row.unconfirmed_pokemon.map(p=>[p.dex,p.method_status]),[[677,'unconfirmed']]);
+ for(const q of ['#0677','妙喵','#0530','龍頭地鼠','迷布莉姆'])assert.ok(backgroundMatch(row,q),q);
+});

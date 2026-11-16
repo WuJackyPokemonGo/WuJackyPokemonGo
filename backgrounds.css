@@ -92,3 +92,5 @@ dialog{background:#fffdf5;color:#493b1d;border:1px solid #decd9f;border-radius:1
 #activityShortcut{display:inline-block;margin-top:8px;min-height:30px;align-content:center;color:#4f380a;font-size:13px;text-underline-offset:3px}
 #announcedBackgrounds{margin:24px 0 18px}
 @media(max-width:700px){.atlas-sidebar{position:static}}
+
+#backgroundLinkText{width:100%;box-sizing:border-box;margin:0 0 12px;padding:8px;resize:vertical;font:inherit}

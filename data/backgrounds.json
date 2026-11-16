@@ -23482,8 +23482,8 @@
           "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
         }
       ],
-      "return_note_zh": "巨大足跡（Dynamax Trails）：當地 2026/11/16 10:00～11/23 20:00；符合條件者可自 11/14 10:00 提前使用通行證。11/15 玩家畫面可見附暗黑蒼穹（紫黑）的極巨化破破袋，捕獲資訊標示 GO Pass，與當期名錄相符。官方另列活動極巨對戰捕獲有機會帶特殊背景，該途徑的逐款發放仍待核對。下方名單與 2025 年歷史遭遇分開。 Leek Duck 的 GO Pass 隨機遭遇池列 59 款（顫弦蠑螈高、低調分計），比站長提供的 58 款多列妙喵。鯉魚王、醜醜魚、海豹球、龍頭地鼠、木棉球、迷布莉姆和妙喵均見於該通行證名錄；Serebii 的活動背景表另列提布莉姆（#857）。毒電嬰不收錄。",
-      "return_note_en": "Dynamax Trails: November 16, 2026, 10:00 to November 23, 20:00 local time. Eligible Trainers received early pass access from November 14 at 10:00. A November 15 player record shows Dynamax Trubbish with Dark Skies and a GO Pass catch label, matching the event catalog. The official announcement also lists a chance of a Special Background from event Max Battles. Individual Max Battle releases remain under review. The return roster is separate from 2025 encounters. Leek Duck lists 59 random GO Pass encounters including both Toxtricity forms. That pool includes Magikarp, Feebas, Spheal, Excadrill, Cottonee, Hatenna and Espurr. Serebii's event background table separately lists Hattrem (#857). Toxel is excluded.",
+      "return_note_zh": "巨大足跡（Dynamax Trails）：當地 2026/11/16 10:00～11/23 20:00。符合條件者可自 11/14 10:00 提前使用通行證。GO Pass 核對名單為 58 款，顫弦蠑螈高調、低調分計。妙喵列為待確認，暫不計入。官方另列活動極巨對戰捕獲有機會附特殊背景，逐款分列於下方。",
+      "return_note_en": "Dynamax Trails: November 16 at 10:00 to November 23, 2026 at 20:00 local time. Eligible players can access the GO Pass early from November 14 at 10:00. The cross-checked GO Pass roster has 58 variants, counting both Toxtricity forms separately. Espurr is pending and excluded from that count. Event Max Battles also offer a chance of a Special Background. See the separate roster below.",
       "audit_2026_10_29": {
         "historical_encounters": 52,
         "historical_evolutions": 36,
@@ -23516,7 +23516,488 @@
           884
         ],
         "note_zh": "2025 官方清單逐款比對；超極巨顫弦蠑螈依高低調分列。不將較新極巨寶可夢倒填為 2025 已發放。2026 預告依官方活動與 Serebii 事件名錄，背景同圖尚待確認。"
-      }
+      },
+      "go_pass_pokemon": [
+        {
+          "dex": 1,
+          "name_en": "Bulbasaur",
+          "name_zh": "妙蛙種子",
+          "variant_id": "bulbasaur",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 4,
+          "name_en": "Charmander",
+          "name_zh": "小火龍",
+          "variant_id": "charmander",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 7,
+          "name_en": "Squirtle",
+          "name_zh": "傑尼龜",
+          "variant_id": "squirtle",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 10,
+          "name_en": "Caterpie",
+          "name_zh": "綠毛蟲",
+          "variant_id": "caterpie",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 25,
+          "name_en": "Pikachu",
+          "name_zh": "皮卡丘",
+          "variant_id": "pikachu",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 58,
+          "name_en": "Growlithe",
+          "name_zh": "卡蒂狗",
+          "variant_id": "growlithe",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 63,
+          "name_en": "Abra",
+          "name_zh": "凱西",
+          "variant_id": "abra",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 66,
+          "name_en": "Machop",
+          "name_zh": "腕力",
+          "variant_id": "machop",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 92,
+          "name_en": "Gastly",
+          "name_zh": "鬼斯",
+          "variant_id": "gastly",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 98,
+          "name_en": "Krabby",
+          "name_zh": "大鉗蟹",
+          "variant_id": "krabby",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 106,
+          "name_en": "Hitmonlee",
+          "name_zh": "飛腿郎",
+          "variant_id": "hitmonlee",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 107,
+          "name_en": "Hitmonchan",
+          "name_zh": "快拳郎",
+          "variant_id": "hitmonchan",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 111,
+          "name_en": "Rhyhorn",
+          "name_zh": "獨角犀牛",
+          "variant_id": "rhyhorn",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 113,
+          "name_en": "Chansey",
+          "name_zh": "吉利蛋",
+          "variant_id": "chansey",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 125,
+          "name_en": "Electabuzz",
+          "name_zh": "電擊獸",
+          "variant_id": "electabuzz",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 126,
+          "name_en": "Magmar",
+          "name_zh": "鴨嘴火獸",
+          "variant_id": "magmar",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 129,
+          "name_en": "Magikarp",
+          "name_zh": "鯉魚王",
+          "variant_id": "magikarp",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 133,
+          "name_en": "Eevee",
+          "name_zh": "伊布",
+          "variant_id": "eevee",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 138,
+          "name_en": "Omanyte",
+          "name_zh": "菊石獸",
+          "variant_id": "omanyte",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 140,
+          "name_en": "Kabuto",
+          "name_zh": "化石盔",
+          "variant_id": "kabuto",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 163,
+          "name_en": "Hoothoot",
+          "name_zh": "咕咕",
+          "variant_id": "hoothoot",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 213,
+          "name_en": "Shuckle",
+          "name_zh": "壺壺",
+          "variant_id": "shuckle",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 215,
+          "name_en": "Sneasel",
+          "name_zh": "狃拉",
+          "variant_id": "sneasel",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 237,
+          "name_en": "Hitmontop",
+          "name_zh": "戰舞郎",
+          "variant_id": "hitmontop",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 280,
+          "name_en": "Ralts",
+          "name_zh": "拉魯拉絲",
+          "variant_id": "ralts",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 302,
+          "name_en": "Sableye",
+          "name_zh": "勾魂眼",
+          "variant_id": "sableye",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 320,
+          "name_en": "Wailmer",
+          "name_zh": "吼吼鯨",
+          "variant_id": "wailmer",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 328,
+          "name_en": "Trapinch",
+          "name_zh": "大顎蟻",
+          "variant_id": "trapinch",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 349,
+          "name_en": "Feebas",
+          "name_zh": "醜醜魚",
+          "variant_id": "feebas",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 363,
+          "name_en": "Spheal",
+          "name_zh": "海豹球",
+          "variant_id": "spheal",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 374,
+          "name_en": "Beldum",
+          "name_zh": "鐵啞鈴",
+          "variant_id": "beldum",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 415,
+          "name_en": "Combee",
+          "name_zh": "三蜜蜂",
+          "variant_id": "combee",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 519,
+          "name_en": "Pidove",
+          "name_zh": "豆豆鴿",
+          "variant_id": "pidove",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 524,
+          "name_en": "Roggenrola",
+          "name_zh": "石丸子",
+          "variant_id": "roggenrola",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 527,
+          "name_en": "Woobat",
+          "name_zh": "滾滾蝙蝠",
+          "variant_id": "woobat",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 529,
+          "name_en": "Drilbur",
+          "name_zh": "螺釘地鼠",
+          "variant_id": "drilbur",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 530,
+          "name_en": "Excadrill",
+          "name_zh": "龍頭地鼠",
+          "variant_id": "excadrill",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 546,
+          "name_en": "Cottonee",
+          "name_zh": "木棉球",
+          "variant_id": "cottonee",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 554,
+          "name_en": "Darumaka",
+          "name_zh": "火紅不倒翁",
+          "variant_id": "darumaka",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 568,
+          "name_en": "Trubbish",
+          "name_zh": "破破袋",
+          "variant_id": "trubbish",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/",
+          "method_zh": "11/15 有玩家畫面回報附紫黑背，捕獲資訊標示 GO Pass。",
+          "method_en": "A November 15 player screenshot shows a Dark Skies background and a GO Pass catch label."
+        },
+        {
+          "dex": 615,
+          "name_en": "Cryogonal",
+          "name_zh": "幾何雪花",
+          "variant_id": "cryogonal",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 633,
+          "name_en": "Deino",
+          "name_zh": "單首龍",
+          "variant_id": "deino",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 686,
+          "name_en": "Inkay",
+          "name_zh": "好啦魷",
+          "variant_id": "inkay",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 761,
+          "name_en": "Bounsweet",
+          "name_zh": "甜竹竹",
+          "variant_id": "bounsweet",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 766,
+          "name_en": "Passimian",
+          "name_zh": "投擲猴",
+          "variant_id": "passimian",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 780,
+          "name_en": "Drampa",
+          "name_zh": "老翁龍",
+          "variant_id": "drampa",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 810,
+          "name_en": "Grookey",
+          "name_zh": "敲音猴",
+          "variant_id": "grookey",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 813,
+          "name_en": "Scorbunny",
+          "name_zh": "炎兔兒",
+          "variant_id": "scorbunny",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 816,
+          "name_en": "Sobble",
+          "name_zh": "淚眼蜥",
+          "variant_id": "sobble",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 819,
+          "name_en": "Skwovet",
+          "name_zh": "貪心栗鼠",
+          "variant_id": "skwovet",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 821,
+          "name_en": "Rookidee",
+          "name_zh": "稚山雀",
+          "variant_id": "rookidee",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 831,
+          "name_en": "Wooloo",
+          "name_zh": "毛辮羊",
+          "variant_id": "wooloo",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 849,
+          "name_en": "Toxtricity Amped",
+          "name_zh": "顫弦蠑螈（高調・極巨化）",
+          "variant_id": "toxtricity-amped",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 849,
+          "name_en": "Toxtricity Low Key",
+          "name_zh": "顫弦蠑螈（低調・極巨化）",
+          "variant_id": "toxtricity-low-key",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 850,
+          "name_en": "Sizzlipede",
+          "name_zh": "燒火蚣",
+          "variant_id": "sizzlipede",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 856,
+          "name_en": "Hatenna",
+          "name_zh": "迷布莉姆",
+          "variant_id": "hatenna",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 870,
+          "name_en": "Falinks",
+          "name_zh": "列陣兵",
+          "variant_id": "falinks",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 884,
+          "name_en": "Duraludon",
+          "name_zh": "鋁鋼龍",
+          "variant_id": "duraludon",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        }
+      ],
+      "unconfirmed_pokemon": [
+        {
+          "dex": 677,
+          "name_en": "Espurr",
+          "name_zh": "妙喵",
+          "variant_id": "espurr",
+          "acquisition": "go-pass",
+          "method_status": "unconfirmed",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/",
+          "method_zh": "Leek Duck 的豪華 GO Pass 隨機遭遇池有列，目前尚未收到附紫黑背的捕獲回報。",
+          "method_en": "Listed in the Leek Duck Deluxe GO Pass encounter pool. No Dark Skies catch report has been received."
+        }
+      ]
     },
     {
       "name_en": "Tales of Transformation",

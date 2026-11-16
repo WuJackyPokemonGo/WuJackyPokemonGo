@@ -11,7 +11,7 @@ export function exactBackgroundMatch(row,query){
 export function backgroundMatch(row,query){
  const term=normalizeSearch(query);
  if(!term||exactBackgroundMatch(row,query))return true;
- const pokemon=[...backgroundPokemon(row),...(row.upcoming_pokemon??[]),...(row.unconfirmed_pokemon??[])];
+ const pokemon=[...backgroundPokemon(row),...(row.upcoming_pokemon??[]),...(row.go_pass_pokemon??[]),...(row.unconfirmed_pokemon??[])];
  if(/^#?\d+$/.test(term))return pokemon.some(p=>p.dex===Number(term.replace('#','')));
  return matchesSearchText([row.name_en,row.name_zh,...(row.search_aliases??[]),row.series,row.series_zh,row.year,row.region_zh,row.region_en,...allRegionNames(row.region_en),...pokemon.flatMap(p=>[p.name_en,p.name_zh,...allLocalPokemonNames(p.dex)])],query);
 }
