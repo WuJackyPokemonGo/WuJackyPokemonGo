@@ -18,6 +18,12 @@
     "image": "assets/products/night-out-london-background.webp"
   },
   {
+    "id": "09e5c935-0652-4b33-9f85-74a5913b406e",
+    "name": "雷吉斯奇魯（極巨化）-曠野週2026",
+    "name_en": "Shiny Dynamax Registeel - Into the Wild 2026",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/09e5c935-0652-4b33-9f85-74a5913b406e/9244019b-c086-4beb-8eb1-fb42d8e020a2-thumb.png"
+  },
+  {
     "id": "10f638a9-3211-4e17-806a-152e1a8afb45",
     "name": "皮卡丘-2026 寶可夢中心限定背景（18款）",
     "name_en": "Pikachu - Pokémon Center 2026 Location Background (18 Designs)",
@@ -28,6 +34,18 @@
     "name": "皮卡丘-維羅博士助手（Pokémon GO Lab.背景）",
     "name_en": "Pikachu - Professor Willow's Assistant (Pokémon GO Lab. Background)",
     "image": "assets/products/opt/14a5b430-b37b-4a09-9cfc-880ae29de42a-44cfec1d-4d19-41b5-9f18-67e47ab171a3.webp"
+  },
+  {
+    "id": "159817b4-5c97-4781-9c44-2bd2e3a4b026",
+    "name": "皮卡丘（花帽）-2026台北花伴野餐",
+    "name_en": "Shiny Pikachu (Flower Hat) - 2026 Taipei Floral Picnic",
+    "image": ""
+  },
+  {
+    "id": "15eddfcb-c04a-43c3-b911-8114e80fbd46",
+    "name": "捷克羅姆-曠野地帶2026全球",
+    "name_en": "Zekrom - GO Wild Area 2026 Global",
+    "image": ""
   },
   {
     "id": "19b2e1ff-934f-4260-b4c9-4d977513fca9",
@@ -52,6 +70,18 @@
     "name": "小火龍-ANA飛機色背",
     "name_en": "Charmander - ANA Pokémon Jet Background",
     "image": "assets/products/opt/2276855e-1e6d-4704-94d6-cd38e55faafc-960c67a2-e449-4b81-9083-9644e20da788.webp"
+  },
+  {
+    "id": "249eb03e-0340-4797-99c3-5d2b6139472a",
+    "name": "怪力（夾克）-曠野地帶2026全球",
+    "name_en": "Machamp (Modern Jacket) - GO Wild Area 2026 Global",
+    "image": ""
+  },
+  {
+    "id": "24d44ee0-2a44-4f05-b5b6-ef5f7d800714",
+    "name": "嗡蝠-萬聖節髮箍",
+    "name_en": "Shiny Noibat - Halloween Headband",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/24d44ee0-2a44-4f05-b5b6-ef5f7d800714/b3fdf356-003c-44da-bc4b-4c15dfb87924-thumb.png"
   },
   {
     "id": "28a5eb28-d465-41ae-9d80-53e27d61d814",
@@ -81,7 +111,7 @@
     "id": "2b90b82f-de6b-45e5-baab-4737e86d94cb",
     "name": "呱呱泡蛙-萬聖節",
     "name_en": "Froakie - Pokémon Halloween Costume",
-    "image": ""
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/2b90b82f-de6b-45e5-baab-4737e86d94cb/1aca49cc-3002-4449-8512-1c3e29466c86-thumb.png"
   },
   {
     "id": "2c3f2865-51d4-4595-95a8-e8d8491460c3",
@@ -114,6 +144,12 @@
     "image": "assets/products/opt/363df33c-f836-4bf9-8cfe-f7ddb527ad31-0b2c756a-127c-4cd6-95aa-fe0d726e3814.webp"
   },
   {
+    "id": "364ac0fb-4274-44cd-8731-7346b71e404c",
+    "name": "怪力（超極巨化）",
+    "name_en": "Gigantamax Machamp",
+    "image": ""
+  },
+  {
     "id": "3aaf23ee-7f75-4baa-a8c8-128b117b01df",
     "name": "索財靈-2026 十週年紀念限定背景",
     "name_en": "Gimmighoul - Pokémon GO 10th Anniversary Special Background",
@@ -124,6 +160,12 @@
     "name": "皮卡丘-2026平昌冬季慶典限定背景",
     "name_en": "Shiny Snowflake Beanie Pikachu - Pyeongchang Winter Festival 2026",
     "image": ""
+  },
+  {
+    "id": "3e8b8855-536c-44d1-b105-af0ec83b7cfb",
+    "name": "藏瑪然特-曠野週2026（大師球）",
+    "name_en": "Zamazenta - Into the Wild 2026 (Master Ball)",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/3e8b8855-536c-44d1-b105-af0ec83b7cfb/818fa92a-a916-4d03-907b-6066e8bc7534-thumb.png"
   },
   {
     "id": "47578a86-4418-4b11-9053-7998bf899bf0",
@@ -148,6 +190,12 @@
     "name": "皮卡丘-ESA世界太空週（太空裝・六國背景）",
     "name_en": "Pikachu - ESA Astronaut 6 Location Backgrounds",
     "image": "assets/products/opt/4bc4658d-3532-482a-a11b-20eebe4c2e55-7a0f223a-48af-4bcc-b18a-eed8441a79b1.webp"
+  },
+  {
+    "id": "4d0420a5-3f10-49df-ab65-efc61b1a46a3",
+    "name": "酋雷姆-曠野地帶2026全球",
+    "name_en": "Kyurem - GO Wild Area 2026 Global",
+    "image": ""
   },
   {
     "id": "4d95d470-6669-4c77-a85d-1190cae442e5",
@@ -177,7 +225,7 @@
     "id": "53526afb-2266-44c2-9b48-75c6c51ce710",
     "name": "波加曼-萬聖節",
     "name_en": "Piplup - Halloween Mischief Costume",
-    "image": ""
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/53526afb-2266-44c2-9b48-75c6c51ce710/29d33a45-83c4-4362-aee1-35bae0a12153-thumb.png"
   },
   {
     "id": "535ad1ce-37a1-4db7-af62-91fc503390af",
@@ -204,10 +252,22 @@
     "image": "assets/products/opt/58d2177b-dd90-45d8-b94b-350db3c435b4-86096e54-cb6a-4f15-a743-f75d029b7d96.webp"
   },
   {
+    "id": "5940fdac-ac9c-4eb5-bdef-15652fc86e5d",
+    "name": "蒼響-曠野週2026（紀念球）",
+    "name_en": "Zacian - Into the Wild 2026 (Premier Ball)",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5940fdac-ac9c-4eb5-bdef-15652fc86e5d/b5a24ab0-e87d-475f-87c5-8cb7c7376750-thumb.png"
+  },
+  {
     "id": "5976ec0f-a1fc-40c8-a8f2-dc7a94f6c5ed",
     "name": "可達鴨-禮賓部色背",
     "name_en": "Psyduck - Pokémon Concierge",
     "image": "assets/products/opt/5976ec0f-a1fc-40c8-a8f2-dc7a94f6c5ed-3f152957-b188-4cf4-a21e-01bfe1f31894.webp"
+  },
+  {
+    "id": "59b97884-6ce4-4af0-a020-21901acaecc8",
+    "name": "蒼響-曠野週2026（大師球）",
+    "name_en": "Zacian - Into the Wild 2026 (Master Ball)",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/59b97884-6ce4-4af0-a020-21901acaecc8/67eed319-63df-4be7-9a4c-c9a18faa2f28-thumb.png"
   },
   {
     "id": "5f23466f-dfa4-44c4-afca-31b4bb4f2b2a",
@@ -216,10 +276,28 @@
     "image": "assets/products/opt/5f23466f-dfa4-44c4-afca-31b4bb4f2b2a-0d261c38-28b8-4d5a-980f-4834f1d66d22.webp"
   },
   {
+    "id": "629cb69f-8558-49d6-8fe2-2cc7a84eb088",
+    "name": "藏瑪然特-曠野週2026（紀念球）",
+    "name_en": "Zamazenta - Into the Wild 2026 (Premier Ball)",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/629cb69f-8558-49d6-8fe2-2cc7a84eb088/a3cbcfba-efb7-4818-b230-45e55606c118-thumb.png"
+  },
+  {
     "id": "63217c3b-7430-4101-85d1-d9a7aebbac9b",
     "name": "皮卡丘-動畫地平線",
     "name_en": "Pikachu - Pokémon Horizons",
     "image": "assets/products/opt/63217c3b-7430-4101-85d1-d9a7aebbac9b-a2de6baf-5e32-4329-a6ce-f5c75ed5f1fb.webp"
+  },
+  {
+    "id": "63c004b2-337c-4c64-b975-d5384cfd3ce2",
+    "name": "蒼響、藏瑪然特-曠野週2026（紀念球2隻套組）",
+    "name_en": "Zacian & Zamazenta - Into the Wild 2026 (Premier Ball Set)",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/63c004b2-337c-4c64-b975-d5384cfd3ce2/9988ae65-317b-4b67-80e2-41934c144181-thumb.png"
+  },
+  {
+    "id": "642dc1c0-62e6-43f0-a19b-1337055a9d28",
+    "name": "皮卡丘-印度光之慶典兩隻套組（紗麗&庫爾塔）🔥動態煙火",
+    "name_en": "Pikachu - Festival of Lights 2026 Set (Saree & Kurta)",
+    "image": ""
   },
   {
     "id": "65585ac0-3ff4-4b40-9e4b-57e062352b51",
@@ -306,6 +384,12 @@
     "image": "assets/products/opt/7ab1f0f5-2518-48c9-b397-f1445f0b2de8-a35a715d-f822-4841-9f9d-45b0d7dd4d7e.webp"
   },
   {
+    "id": "7ff020b2-3d11-4f3f-bb76-d5311fe13495",
+    "name": "帕路奇亞（極巨化）-曠野地帶2026全球",
+    "name_en": "Dynamax Palkia - GO Wild Area 2026 Global",
+    "image": ""
+  },
+  {
     "id": "8d40fdd1-1627-4b3a-a87f-85cc0a4b9c00",
     "name": "皮卡丘-2026 LEGO 樂高聯名",
     "name_en": "Pikachu - LEGO Pokémon 2026 Collaboration",
@@ -345,7 +429,7 @@
     "id": "99f671c2-9989-4b50-b92d-b27fc8033d0a",
     "name": "超音蝠-萬聖節禮帽",
     "name_en": "Zubat -  Halloween Top Hat",
-    "image": ""
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/99f671c2-9989-4b50-b92d-b27fc8033d0a/91ff1d19-57b1-4aa7-94ef-599dfdb9db74-thumb.png"
   },
   {
     "id": "9b1dd25a-cb08-484e-86da-6727905cd7fa",
@@ -373,7 +457,7 @@
   },
   {
     "id": "a354bfe9-d512-4a8f-ad04-3182567a1659",
-    "name": "木守宮-活動",
+    "name": "木守宮－英國國民信託 27 款一套",
     "name_en": "Treecko - National Trust 27 Backgrounds",
     "image": "assets/products/opt/a354bfe9-d512-4a8f-ad04-3182567a1659-76806a0c-f81b-4481-8dc0-c2c845e20148.webp"
   },
@@ -388,6 +472,18 @@
     "name": "伊布-歡樂時光（8種進化型態）2025-7月",
     "name_en": "Eevee - Delightful Days (8 Evolutions)",
     "image": "assets/products/opt/aa9b4b17-51c6-42f4-b1c3-4bd1098f88b9-68d01227-76ac-4b5d-990b-95597df64a87.webp"
+  },
+  {
+    "id": "acde8a79-ba7e-471c-a66b-515450152fb4",
+    "name": "萊希拉姆-曠野地帶2026全球",
+    "name_en": "Reshiram - GO Wild Area 2026 Global",
+    "image": ""
+  },
+  {
+    "id": "aec9139e-7d87-4fe3-97e4-2c4ddcc5490f",
+    "name": "皮卡丘（紗麗）-印度光之祭典2026🔥動態煙火",
+    "name_en": "Pikachu (Saree) - India Festival of Lights 2026",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/aec9139e-7d87-4fe3-97e4-2c4ddcc5490f/9422aff9-43d9-42a8-9dbd-028e8764cdb3-thumb.png"
   },
   {
     "id": "af183da2-c258-4644-bceb-5d2cd6b48ac4",
@@ -405,7 +501,7 @@
     "id": "b5c4a38f-eb3f-4bf9-bd89-17be690d6f93",
     "name": "隨風球-萬聖節",
     "name_en": "Drifblim - Halloween Mischief Costume",
-    "image": ""
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/b5c4a38f-eb3f-4bf9-bd89-17be690d6f93/73df9291-21d3-47df-ae68-50ab276a2513-thumb.png"
   },
   {
     "id": "b89de60c-c1b3-475f-beba-124fffb4586a",
@@ -420,16 +516,34 @@
     "image": "assets/products/opt/b9cb15de-4a53-42ff-b88c-37fc68c0d157-a3ff9819-bcba-4fa7-9dc3-ca01e8f2dbdd.webp"
   },
   {
+    "id": "bd0137df-5398-4465-96dc-b50704ba6a19",
+    "name": "雷吉鐸拉戈（極巨化）-曠野週2026",
+    "name_en": "Shiny Dynamax Regidrago - Into the Wild 2026",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/bd0137df-5398-4465-96dc-b50704ba6a19/f15aebcd-590f-4d3c-bedd-6ca0d68e1cfc-thumb.png"
+  },
+  {
     "id": "bf278d4a-2ff4-464c-b5e3-9d069a567d75",
     "name": "木木梟-萬聖節",
     "name_en": "Rowlet - Pokémon Halloween Costume",
-    "image": ""
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/bf278d4a-2ff4-464c-b5e3-9d069a567d75/39337834-6b57-4ff2-9b88-7870c9301320-thumb.png"
   },
   {
     "id": "c2f8374e-4319-47f9-8b09-7079c93f1c64",
     "name": "2024社群日限定背景（12隻套組）",
     "name_en": "Community Day 2024 Background (12 Pokémon Set)",
     "image": "assets/products/opt/c2f8374e-4319-47f9-8b09-7079c93f1c64-61ab5d27-caac-460b-abba-c1a06ba516c5.webp"
+  },
+  {
+    "id": "c51e266d-4f9a-4930-b8a1-d7cd76e0ba84",
+    "name": "皮卡丘（庫爾塔）-印度光之祭典2026🔥動態煙火",
+    "name_en": "Pikachu (Kurta) - India Festival of Lights 2026",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/c51e266d-4f9a-4930-b8a1-d7cd76e0ba84/5d05c4b2-05bc-4ba1-96eb-401163d76681-thumb.png"
+  },
+  {
+    "id": "c74066fa-c9da-4230-b21d-c92073e73f3c",
+    "name": "皮卡丘-群馬人孔蓋",
+    "name_en": "Pikachu - Gunma Poké Lid",
+    "image": ""
   },
   {
     "id": "c8209417-2f52-49bd-8ff4-351972076a84",
@@ -447,6 +561,12 @@
     "id": "ce75fffc-7371-42b4-b0e4-7c47268a06ed",
     "name": "顫弦蠑螈（低調）-寶可夢之夜洛杉磯",
     "name_en": "Toxtricity (Low Key Form) - Pokémon Night Out Los Angeles 2026",
+    "image": ""
+  },
+  {
+    "id": "cea9723c-4a05-48ec-a065-cd2bbf4d8221",
+    "name": "四季鹿（春天的樣子）-2026台北花伴野餐",
+    "name_en": "Shiny Deerling (Spring Form) - 2026 Taipei Floral Picnic",
     "image": ""
   },
   {
@@ -480,6 +600,12 @@
     "image": "assets/products/opt/d7a081ef-d6fd-41f2-81f0-40e2511cdce6-84a11ab2-bb6d-4a14-94cf-8c1390ae7bca.webp"
   },
   {
+    "id": "d8490bed-ac47-4180-9e44-4771e4548697",
+    "name": "鋁鋼龍（超極巨化）-曠野地帶2026全球",
+    "name_en": "Gigantamax Duraludon - GO Wild Area 2026 Global",
+    "image": ""
+  },
+  {
     "id": "d8a33ff6-6312-4dea-a4b1-cf4c45dfc132",
     "name": "顫弦蠑螈（高調）-寶可夢之夜洛杉磯",
     "name_en": "Toxtricity (Amped Form) - Pokémon Night Out Los Angeles 2026",
@@ -510,6 +636,12 @@
     "image": "assets/products/opt/dfc5c08b-a665-45e4-bcb4-932ff59807e7-da07bec2-7f9d-4cce-a33c-780e3e3775e9.webp"
   },
   {
+    "id": "dfd84f94-d272-4b1e-a545-cc0592fff8de",
+    "name": "拉帝亞斯（極巨化）-曠野週2026",
+    "name_en": "Shiny Dynamax Latias - Into the Wild 2026",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/dfd84f94-d272-4b1e-a545-cc0592fff8de/baac170a-7917-4bf9-935e-efdc85a56834-thumb.png"
+  },
+  {
     "id": "e30da33e-cae3-4dfc-ae60-d460d370aad0",
     "name": "噴火龍-地平線（弗里德護目鏡）",
     "name_en": "Charizard - Pokémon Horizons (Friede's Goggles)",
@@ -522,9 +654,27 @@
     "image": "assets/products/opt/e5a86d6d-5477-44d7-bc37-47e1a2188f21-2503da06-7338-45c3-a928-a5b9d1a7287b.webp"
   },
   {
+    "id": "ea8a37e5-ec7a-4e5a-a9de-757571e0fb87",
+    "name": "拉帝歐斯（極巨化）-曠野週2026",
+    "name_en": "Shiny Dynamax Latios - Into the Wild 2026",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/ea8a37e5-ec7a-4e5a-a9de-757571e0fb87/f4e99086-0ec1-44cc-8843-90764dbcefa1-thumb.png"
+  },
+  {
+    "id": "ec9f5e8c-7494-42dc-ae22-2097ba00c223",
+    "name": "帝牙盧卡（極巨化）-曠野地帶2026全球",
+    "name_en": "Dynamax Dialga - GO Wild Area 2026 Global",
+    "image": ""
+  },
+  {
     "id": "eddc93c8-6e62-4204-97c1-7df602e30251",
     "name": "耿鬼-萬聖節",
     "name_en": "Gengar - Spooky Festival Costume",
+    "image": ""
+  },
+  {
+    "id": "ff1444e1-147c-436e-83ae-d7b1dc4ac5b5",
+    "name": "美錄坦（極巨化）",
+    "name_en": "Dynamax Meltan",
     "image": ""
   }
 ]
