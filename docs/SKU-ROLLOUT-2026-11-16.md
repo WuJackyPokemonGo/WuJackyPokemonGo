@@ -9,7 +9,7 @@
 - 300 個 Excel 預排號碼**不是**已預先占用的商品編號，不可據此認定網站已有 300 件商品。
 
 ## 上正式環境前必須檢查
-**專案命名與實際接線不同：**2026-11-16 已核對 main 的 `staging-config.mjs`、`cloud-admin.mjs`、`storefront-service.mjs`：正式 GitHub Pages 賣場與後台目前都連到 `wlrwlqchlxehlvkyesnj`（雖名稱為 `wu-jacky-pokemon-staging`）。該**正式網站實際連線的資料庫**唯讀盤點有 127 件商品，127 件 SKU 皆空白。另一個名為 `WuJackyPokemonGo` 的 `uhwhhdtwtzmuodvltijw` 專案目前 INACTIVE，並非 main 程式所用的資料來源。**正式資料庫已盤點且完成補號，網站程式尚待合併部署**。2026-11-16 在資料庫內的 private.app_saved_backups 建立完整備份後，正式執行 migration `sku_permanent_wj_auto_number_20261116`，127 件成功分配 WJ-0001～WJ-0127，0 漏編、0 重複。
+**專案命名與實際接線不同：**2026-11-16 已核對 main 的 `staging-config.mjs`、`cloud-admin.mjs`、`storefront-service.mjs`：正式 GitHub Pages 賣場與後台目前都連到 `wlrwlqchlxehlvkyesnj`（雖名稱為 `wu-jacky-pokemon-staging`）。該**正式網站實際連線的資料庫**唯讀盤點有 127 件商品，127 件 SKU 皆空白。另一個名為 `WuJackyPokemonGo` 的 `uhwhhdtwtzmuodvltijw` 專案目前 INACTIVE，並非 main 程式所用的資料來源。**正式資料庫已盤點且完成補號，網站程式亦已合併部署**。2026-11-16 在資料庫內的 private.app_saved_backups 建立完整備份後，正式執行 migration `sku_permanent_wj_auto_number_20261116`，127 件成功分配 WJ-0001～WJ-0127，0 漏編、0 重複。
 
 正式執行前唯讀盤點 SQL：
 ```sql
@@ -38,4 +38,4 @@ select sku,id,name_zh from public.products where sku is not null order by sku;
 - 刪除商品不回收號碼；日後不允許直接調降序列。
 - 舊版備份還原會設定 `wj.restoring` 旗標而略過一般 SKU 強制規則，目的是保留歷史還原相容性。已新增還原後補號與序列前進處理，交易回滾的 SQL 模擬通過；完整 UI 還原端到端流程尚待驗收。
 - 此分支沒有設定任何帳密、沒有修改價格、庫存、商品 UUID 或正式資料。
-- 正式套用前在現行正式資料庫以 `BEGIN ... ROLLBACK` 模擬驗收通過；備份後已正式執行 migration，127 筆商品均有唯一 SKU。正式 SQL 驗收通過且測試資料回滾。GitHub Actions 程式測試及 build 通過；待 GitHub PR 合併部署。
+- 正式套用前在現行正式資料庫以 `BEGIN ... ROLLBACK` 模擬驗收通過；備份後已正式執行 migration，127 筆商品均有唯一 SKU。正式 SQL 驗收通過且測試資料回滾。GitHub PR #12 已合併 main（04cc5eb3）；Store checks #43790684236 及 Pages #43790683642 成功。尚待實際瀏覽器操作與完整備份還原 UI 端到端驗收。
