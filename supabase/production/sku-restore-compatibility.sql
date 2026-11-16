@@ -1,6 +1,7 @@
--- SKU compatibility. Apply after sku-auto-number.sql.
--- Allow multiple new blank-SKU CSV rows and restore older missing-only backups
--- without leaving products unnumbered or reusing restored historic numbers.
+-- Based on the *live* private.admin_io function as of 2026-11-16, not an older repo snapshot.
+-- Apply after sku-auto-number.sql. Live already supports multiple new CSV rows and
+-- duplicate expected product IDs; preserve those fixes. Restore missing older rows
+-- with auto-assigned SKUs, advancing past historic restored numbers.
 CREATE OR REPLACE FUNCTION private.admin_io(p_action text, p_payload jsonb DEFAULT '{}'::jsonb, p_request_id uuid DEFAULT NULL::uuid)
  RETURNS jsonb
  LANGUAGE plpgsql
@@ -30,18 +31,19 @@ begin
  end if;
  if p_action='import_products' then
   if jsonb_typeof(p_payload->'rows') is distinct from 'array' or jsonb_array_length(p_payload->'rows') not between 1 and 1000 or octet_length(p_payload::text)>2097152 then raise invalid_parameter_value using message='Import requires 1 to 1000 rows, maximum 2 MB'; end if;
-  if exists(select 1 from jsonb_array_elements(p_payload->'rows') r where nullif(btrim(r->'values'->>'sku'),'') is not null group by r->'values'->>'sku' having count(*)>1) then raise unique_violation using message='Duplicate import SKU'; end if;
+  if exists(select 1 from jsonb_array_elements(p_payload->'rows') r where nullif(btrim(r->'values'->>'sku'),'') is not null group by btrim(r->'values'->>'sku') having count(*)>1) then raise unique_violation using message='Duplicate import SKU'; end if;
+  if exists(select 1 from jsonb_array_elements(p_payload->'rows') r where nullif(r->'expected'->>'id','') is not null group by r->'expected'->>'id' having count(*)>1) then raise unique_violation using message='Duplicate import product ID'; end if;
   -- Lock stable SKU order and verify the exact versions approved in the preview.
-  for row_value in select * from jsonb_array_elements(p_payload->'rows') r order by r->'values'->>'sku' loop
-   select * into existing from public.products where sku=row_value->'values'->>'sku' for update;
+  for row_value in select * from jsonb_array_elements(p_payload->'rows') r order by coalesce(r->'expected'->>'id',r->'values'->>'sku','') loop
+   select p.* into existing from public.products p where case when nullif(row_value->'expected'->>'id','') is not null then p.id=(row_value->'expected'->>'id')::uuid else p.sku=nullif(btrim(row_value->'values'->>'sku'),'') end for update;
    if found then
     if existing.id is distinct from (row_value->'expected'->>'id')::uuid or existing.updated_at is distinct from (row_value->'expected'->>'updated_at')::timestamptz then raise sqlstate 'PT409' using message='Import preview is outdated; reload and preview again'; end if;
    elsif row_value->'expected'->>'id' is not null then raise sqlstate 'PT409' using message='Import product no longer exists'; end if;
   end loop;
   document:=private.app_backup_document();
   insert into private.app_saved_backups(actor_user_id,label,document) values(actor,'批次匯入前自動備份',document) returning id into backup_id;
-  for row_value in select * from jsonb_array_elements(p_payload->'rows') r order by r->'values'->>'sku' loop
-   values_json:=row_value->'values';select * into existing from public.products where sku=values_json->>'sku' for update;
+  for row_value in select * from jsonb_array_elements(p_payload->'rows') r order by coalesce(r->'expected'->>'id',r->'values'->>'sku','') loop
+   values_json:=row_value->'values';select p.* into existing from public.products p where case when nullif(row_value->'expected'->>'id','') is not null then p.id=(row_value->'expected'->>'id')::uuid else p.sku=nullif(btrim(values_json->>'sku'),'') end for update;
    pid:=case when found then existing.id else null end;
    if existing.is_live and not coalesce((p_payload->>'allow_live_updates')::boolean,false) then raise check_violation using message='Published product changes require explicit confirmation'; end if;
    if jsonb_typeof(row_value->'categories') is distinct from 'array' or jsonb_array_length(row_value->'categories')>30 then raise check_violation using message='Invalid import categories'; end if;
@@ -70,7 +72,7 @@ begin
   perform set_config('wj.restoring','false',true);
   plan:=private.app_restore_plan(document,true);
   if not (plan->>'can_restore')::boolean or (plan->>'missing')::integer<>0 then raise sqlstate 'PT409' using message='Restore changed concurrently or contains duplicate conflicting keys'; end if;
-  -- Validate the original snapshot before assigning fresh SKUs.
+  -- Validate backup rows before enrichment; old snapshots can have null SKUs.
   if exists(select 1 from public.products where sku is not null and sku !~ '^WJ-[0-9]{4,15}
   if exists(select 1 from public.inventory_balances b left join lateral(select coalesce(sum(m.quantity_delta),0) qty from public.inventory_movements m where m.product_id=b.product_id) l on true where b.quantity_on_hand<>l.qty) then raise check_violation using message='Inventory ledger reconciliation failed; restore rolled back'; end if;
   if exists(select 1 from public.orders o where o.refund_amount_twd>o.received_amount_twd) then raise check_violation using message='Refund reconciliation failed'; end if;
@@ -87,10 +89,11 @@ begin
  insert into public.audit_logs(actor_user_id,entity_type,entity_id,action,reason,after_data) values(actor,'data_io',p_request_id::text,p_action,'管理員確認資料預覽後執行',result);
  insert into private.app_io_requests(id,actor_user_id,kind,payload_hash,result) values(p_request_id,actor,p_action,hash,result);
  return result;
-end; $function$;) then
+end; $function$
+) then
     raise check_violation using message='Restore contains unsupported legacy product SKU';
   end if;
-  -- Restored historic SKUs may be greater than the current sequence.
+  -- Advance before filling old null SKUs so restored historic numbers are not reused.
   select coalesce(max(substring(sku from 4)::bigint),0) into maximum
     from public.products where sku ~ '^WJ-[0-9]{4,15}
   if exists(select 1 from public.inventory_balances b left join lateral(select coalesce(sum(m.quantity_delta),0) qty from public.inventory_movements m where m.product_id=b.product_id) l on true where b.quantity_on_hand<>l.qty) then raise check_violation using message='Inventory ledger reconciliation failed; restore rolled back'; end if;
@@ -108,12 +111,12 @@ end; $function$;) then
  insert into public.audit_logs(actor_user_id,entity_type,entity_id,action,reason,after_data) values(actor,'data_io',p_request_id::text,p_action,'管理員確認資料預覽後執行',result);
  insert into private.app_io_requests(id,actor_user_id,kind,payload_hash,result) values(p_request_id,actor,p_action,hash,result);
  return result;
-end; $function$;;
+end; $function$
+;
   select last_value into sequence_value from private.product_sku_seq;
   if maximum>=sequence_value then
     perform setval('private.product_sku_seq'::regclass,maximum+1,false);
   end if;
-  -- Older missing-only backups can contain null SKU; assign after reconciliation.
   update public.products set sku=null where sku is null;
   if exists(select 1 from public.products where sku is null) then
     raise check_violation using message='Restored product SKU backfill incomplete';
@@ -133,4 +136,5 @@ end; $function$;;
  insert into public.audit_logs(actor_user_id,entity_type,entity_id,action,reason,after_data) values(actor,'data_io',p_request_id::text,p_action,'管理員確認資料預覽後執行',result);
  insert into private.app_io_requests(id,actor_user_id,kind,payload_hash,result) values(p_request_id,actor,p_action,hash,result);
  return result;
-end; $function$;
+end; $function$
+
