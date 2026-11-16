@@ -1,7 +1,5 @@
--- Based on the *live* private.admin_io function as of 2026-11-16, not an older repo snapshot.
--- Apply after sku-auto-number.sql. Live already supports multiple new CSV rows and
--- duplicate expected product IDs; preserve those fixes. Restore missing older rows
--- with auto-assigned SKUs, advancing past historic restored numbers.
+-- Based on the LIVE admin_io function; preserves live CSV duplicate ID protection.
+-- Apply after sku-auto-number.sql. Old missing-only backup restores gain SKUs.
 CREATE OR REPLACE FUNCTION private.admin_io(p_action text, p_payload jsonb DEFAULT '{}'::jsonb, p_request_id uuid DEFAULT NULL::uuid)
  RETURNS jsonb
  LANGUAGE plpgsql
@@ -72,51 +70,18 @@ begin
   perform set_config('wj.restoring','false',true);
   plan:=private.app_restore_plan(document,true);
   if not (plan->>'can_restore')::boolean or (plan->>'missing')::integer<>0 then raise sqlstate 'PT409' using message='Restore changed concurrently or contains duplicate conflicting keys'; end if;
-  -- Validate backup rows before enrichment; old snapshots can have null SKUs.
-  if exists(select 1 from public.products where sku is not null and sku !~ '^WJ-[0-9]{4,15}
-  if exists(select 1 from public.inventory_balances b left join lateral(select coalesce(sum(m.quantity_delta),0) qty from public.inventory_movements m where m.product_id=b.product_id) l on true where b.quantity_on_hand<>l.qty) then raise check_violation using message='Inventory ledger reconciliation failed; restore rolled back'; end if;
-  if exists(select 1 from public.orders o where o.refund_amount_twd>o.received_amount_twd) then raise check_violation using message='Refund reconciliation failed'; end if;
-  if exists(select 1 from public.orders o where o.received_amount_twd<>(select coalesce(sum(p.amount_twd),0) from public.order_payments p where p.order_id=o.id and p.kind='receipt' and p.voided_at is null) or o.refund_amount_twd<>(select coalesce(sum(p.amount_twd),0) from public.order_payments p where p.order_id=o.id and p.kind='refund' and p.voided_at is null)) then raise check_violation using message='Payment ledger reconciliation failed; restore rolled back';end if;
-  -- Never reuse historical order/audit numbers; advance, never decrease, sequences.
-  foreach name in array array['orders','audit_logs'] loop
-   sequence_name:=pg_get_serial_sequence('public.'||name,case when name='orders' then 'order_number' else 'id' end);
-   execute format('select last_value from %s',sequence_name) into sequence_value;
-   execute format('select coalesce(max(%I),0) from public.%I',case when name='orders' then 'order_number' else 'id' end,name) into maximum;
-   if maximum>sequence_value then perform setval(sequence_name::regclass,maximum,true);end if;
-  end loop;
-  result:=jsonb_build_object('inserted',inserted,'backup_id',backup_id,'mode','missing_only');
- end if;
- insert into public.audit_logs(actor_user_id,entity_type,entity_id,action,reason,after_data) values(actor,'data_io',p_request_id::text,p_action,'管理員確認資料預覽後執行',result);
- insert into private.app_io_requests(id,actor_user_id,kind,payload_hash,result) values(p_request_id,actor,p_action,hash,result);
- return result;
-end; $function$
-) then
+  -- Validate restored snapshot before enrichment. Older backups may have null SKU.
+  if exists(select 1 from public.products where sku is not null and sku !~ '^WJ-[0-9]{4,15}$') then
     raise check_violation using message='Restore contains unsupported legacy product SKU';
   end if;
-  -- Advance before filling old null SKUs so restored historic numbers are not reused.
+  -- A restored historic WJ number may be greater than the sequence.
   select coalesce(max(substring(sku from 4)::bigint),0) into maximum
-    from public.products where sku ~ '^WJ-[0-9]{4,15}
-  if exists(select 1 from public.inventory_balances b left join lateral(select coalesce(sum(m.quantity_delta),0) qty from public.inventory_movements m where m.product_id=b.product_id) l on true where b.quantity_on_hand<>l.qty) then raise check_violation using message='Inventory ledger reconciliation failed; restore rolled back'; end if;
-  if exists(select 1 from public.orders o where o.refund_amount_twd>o.received_amount_twd) then raise check_violation using message='Refund reconciliation failed'; end if;
-  if exists(select 1 from public.orders o where o.received_amount_twd<>(select coalesce(sum(p.amount_twd),0) from public.order_payments p where p.order_id=o.id and p.kind='receipt' and p.voided_at is null) or o.refund_amount_twd<>(select coalesce(sum(p.amount_twd),0) from public.order_payments p where p.order_id=o.id and p.kind='refund' and p.voided_at is null)) then raise check_violation using message='Payment ledger reconciliation failed; restore rolled back';end if;
-  -- Never reuse historical order/audit numbers; advance, never decrease, sequences.
-  foreach name in array array['orders','audit_logs'] loop
-   sequence_name:=pg_get_serial_sequence('public.'||name,case when name='orders' then 'order_number' else 'id' end);
-   execute format('select last_value from %s',sequence_name) into sequence_value;
-   execute format('select coalesce(max(%I),0) from public.%I',case when name='orders' then 'order_number' else 'id' end,name) into maximum;
-   if maximum>sequence_value then perform setval(sequence_name::regclass,maximum,true);end if;
-  end loop;
-  result:=jsonb_build_object('inserted',inserted,'backup_id',backup_id,'mode','missing_only');
- end if;
- insert into public.audit_logs(actor_user_id,entity_type,entity_id,action,reason,after_data) values(actor,'data_io',p_request_id::text,p_action,'管理員確認資料預覽後執行',result);
- insert into private.app_io_requests(id,actor_user_id,kind,payload_hash,result) values(p_request_id,actor,p_action,hash,result);
- return result;
-end; $function$
-;
+    from public.products where sku ~ '^WJ-[0-9]{4,15}$';
   select last_value into sequence_value from private.product_sku_seq;
   if maximum>=sequence_value then
     perform setval('private.product_sku_seq'::regclass,maximum+1,false);
   end if;
+  -- Only after original backup comparison, enrich restored missing products.
   update public.products set sku=null where sku is null;
   if exists(select 1 from public.products where sku is null) then
     raise check_violation using message='Restored product SKU backfill incomplete';
@@ -137,4 +102,3 @@ end; $function$
  insert into private.app_io_requests(id,actor_user_id,kind,payload_hash,result) values(p_request_id,actor,p_action,hash,result);
  return result;
 end; $function$
-
