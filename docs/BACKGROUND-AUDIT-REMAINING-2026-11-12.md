@@ -83,3 +83,10 @@
 | BG-0081 布宜諾斯艾利斯 | WikiDex 明列 1–8 章皆帶背景，與 Pokémon GO Wiki 的逐章紀錄相符，並補強 Infobae 的同期集章報導。 | 補錄集章附背景的社群紀錄，保留來源層級。 [WikiDex 集章](https://www.wikidex.net/wiki/Safari_de_ciudad_(2025)_en_Buenos_Aires) · [Pokémon GO Wiki](https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_City_Safari%3A_Buenos_Aires) |
 
 兩城開場特殊調查，以及額外日是否能重領附背景遭遇，仍缺可辨認個別領取途徑的遊戲實證。Leek Duck 的舊式限時調查段落仍明標未確認。更新僅補列兩城的社群集章證據，不提升為官方保證。圖鑑提交 `40690b33ff212d1398f65b376f7cc69de42f7011`，資料 blob `20351b0bc8fe52b8b27d80946613c2e11d8e813b`。
+
+## 2026-11-16 暗黑蒼穹復刻與檀香山複查
+
+- **BG-0235 暗黑蒼穹**。Serebii 的巨大足跡頁沿用 `darkskies.jpg`，和既有圖鑑紫黑雲層相符。玩家同一組截圖顯示極巨化破破袋（CP 403）與該圖樣，且同一個體資訊顯示於 2026/11/15 在英國北愛爾蘭 Bangor 從 GO Pass 捕獲。原帖起初混淆兩個通行證，後續留言辨認為提前開放的巨大足跡。截圖本身可確認 GO Pass 與捕獲日期，通行證全名由原帖後續、當期名錄與官方先行日期互核。另一玩家的極巨化蜂女王截圖可見同圖樣，但畫面未標出原始領取途徑，僅作圖樣佐證。官方另列本活動極巨對戰有機會帶特殊背景，尚未在本輪逐款核實。同頁沒有毒電嬰列名。 [官方公告](https://pokemongo.com/en/news/dynamax-trails-eternamax-eternatus-2026) · [Serebii 活動名錄](https://serebii.net/pokemongo/events/dynamaxtrails.shtml) · [破破袋遊戲原帖](https://www.reddit.com/r/pokemongo/comments/1xx2lay/) · [蜂女王截圖](https://i.redd.it/xvf58svpwo1i1.jpeg)
+- **BG-0016 檀香山**。一張在 Reddit 顯示為 8/19 的世界賽皮卡丘背景截圖，原帖時間戳 `1724036864` 換算夏威夷當地為 2024/8/18 17:07:44 HST。圖上未顯示捕獲日期，不能證明當地 8/19–20 的發放。 [玩家原帖](https://www.reddit.com/r/pokemongo/comments/1evrmzq/) · [時間戳存檔](https://arctic-shift.photon-reddit.com/api/posts/ids?ids=1evrmzq)
+
+更新 BG-0235 的復刻圖樣與通行證實證，保留 2025 歷史名單與極巨對戰待核條件。提交 `22b250a1c455896aeeba3b89ab573c6ccc343e6e`，資料 blob `50de89523bb011c55da1547565669cfaa4db53f4`。
