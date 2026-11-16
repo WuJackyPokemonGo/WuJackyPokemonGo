@@ -32,12 +32,13 @@ test('published atlas card images do not depend on the deferred reference docume
 
 test('product shares render an escaped static preview and preserve a direct-link fallback',()=>{
  const pages=buildProductShares(),html=pages.get(indiaId);
- assert.ok(html.includes('og:title" content="Pikachu - Festival of Colors'));
+ assert.ok(html.includes('og:title" content="'+JSON.parse(readFileSync(new URL('../data/product-shares.json',import.meta.url),'utf8')).find(r=>r.id===indiaId).name+'"'),'preview title is the Chinese name');
+ assert.ok(html.includes('og:description" content="'+JSON.parse(readFileSync(new URL('../data/product-shares.json',import.meta.url),'utf8')).find(r=>r.id===indiaId).name_en+'・'),'English name moves to the description');
  assert.ok(html.includes('og:image" content="https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/products/opt/'));
  assert.equal(readFileSync(new URL('../p/'+indiaId+'.html',import.meta.url),'utf8'),html);
  const crafted=productSharePage({id:indiaId,name:'<name>',name_en:'"title"',image:'javascript:alert(1)'});
- assert.ok(crafted.includes('content="&lt;name&gt;"'));
- assert.ok(crafted.includes('<title>&quot;title&quot;</title>'));
+ assert.ok(crafted.includes('<title>&lt;name&gt;</title>'));
+ assert.ok(crafted.includes('content="&quot;title&quot;・'));
  assert.ok(crafted.includes('assets/og/store.jpg'));
  const base='https://example.test/shop/index.html?src=threads';
  assert.equal(productShareLink(base,indiaId,'ja'),'https://example.test/shop/p/'+indiaId+'.html?lang=ja');

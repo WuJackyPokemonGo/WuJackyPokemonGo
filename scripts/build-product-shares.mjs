@@ -9,13 +9,14 @@ const escapeHtml=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&
 
 export function productSharePage(row){
  if(!productId.test(row.id))throw Error('Invalid product share ID');
- const title=escapeHtml(row.name_en||row.name),description=escapeHtml(row.name);
+ // 預覽標題用中文名稱（台灣客人為主），英文名稱放在說明行
+ const title=escapeHtml(row.name||row.name_en),description=escapeHtml([row.name_en&&row.name_en!==row.name?row.name_en:'','Wu Jacky Pokémon GO｜加入清單後透過 LINE 詢問供貨'].filter(Boolean).join('・'));
  const defaultImage=new URL('assets/og/store.jpg?v=20261106',SITE);
  const url=new URL(row.image||defaultImage,SITE);
  const image=url.protocol==='https:'&&!url.username&&!url.password?url:defaultImage;
  const detail=new URL('index.html',SITE);detail.searchParams.set('product',row.id);
  const share=new URL('p/'+row.id+'.html',SITE);
- return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><meta name="robots" content="noindex,follow"><link rel="canonical" href="${escapeHtml(detail.href)}"><meta name="description" content="${description}"><meta property="og:type" content="website"><meta property="og:site_name" content="Wu Jacky Pokémon GO"><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:url" content="${share.href}"><meta property="og:image" content="${escapeHtml(image.href)}"><meta property="og:image:alt" content="${title}"><meta name="twitter:card" content="summary_large_image"><script type="module" src="../product-share-redirect.mjs"></script></head><body><a id="product" href="../index.html?product=${row.id}">${title}</a></body></html>\n`;
+ return `<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><meta name="robots" content="noindex,follow"><link rel="canonical" href="${escapeHtml(detail.href)}"><meta name="description" content="${description}"><meta property="og:type" content="website"><meta property="og:site_name" content="Wu Jacky Pokémon GO"><meta property="og:locale" content="zh_TW"><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:url" content="${share.href}"><meta property="og:image" content="${escapeHtml(image.href)}"><meta property="og:image:alt" content="${title}"><meta name="twitter:card" content="summary_large_image"><script type="module" src="../product-share-redirect.mjs"></script></head><body><a id="product" href="../index.html?product=${row.id}">${title}</a></body></html>\n`;
 }
 
 export function buildProductShares(){
