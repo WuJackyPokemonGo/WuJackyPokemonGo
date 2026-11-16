@@ -34,7 +34,7 @@ select sku,id,name_zh from public.products where sku is not null order by sku;
 6. `admin.html` 與 `cloud-admin.html` 必須完全相同；更新產生的 `assets/cloud-admin.bundle.js`，CI 執行 `npm test`、`npm run build`、bundle diff。
 
 ## 注意事項
-- 序列分配不保證無跳號：失敗交易/併發寫入可留下號碼空缺，但**不會再分配同一號**。
+- 序列分配不保證無跳號：失敗交易/併發寫入/SQL 驗收即使回滾，也會消耗流水號，但**不會再分配同一號**。2026-11-16 正式驗收消耗 WJ-0128、WJ-0129；**下一個新商品編號預計 WJ-0130**。不可為補洞而倒退序列。
 - 刪除商品不回收號碼；日後不允許直接調降序列。
 - 舊版備份還原會設定 `wj.restoring` 旗標而略過一般 SKU 強制規則，目的是保留歷史還原相容性。已新增還原後補號與序列前進處理，交易回滾的 SQL 模擬通過；完整 UI 還原端到端流程尚待驗收。
 - 此分支沒有設定任何帳密、沒有修改價格、庫存、商品 UUID 或正式資料。
