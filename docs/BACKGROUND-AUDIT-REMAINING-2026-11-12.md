@@ -90,3 +90,15 @@
 - **BG-0016 檀香山**。一張在 Reddit 顯示為 8/19 的世界賽皮卡丘背景截圖，原帖時間戳 `1724036864` 換算夏威夷當地為 2024/8/18 17:07:44 HST。圖上未顯示捕獲日期，不能證明當地 8/19–20 的發放。 [玩家原帖](https://www.reddit.com/r/pokemongo/comments/1evrmzq/) · [時間戳存檔](https://arctic-shift.photon-reddit.com/api/posts/ids?ids=1evrmzq)
 
 更新 BG-0235 的復刻圖樣與通行證實證，保留 2025 歷史名單與極巨對戰待核條件。提交 `22b250a1c455896aeeba3b89ab573c6ccc343e6e`，資料 blob `50de89523bb011c55da1547565669cfaa4db53f4`。
+
+## 2026-11-16 站長判定與追加核對
+
+| 項目 | 處理結果 | 證據範圍 |
+| --- | --- | --- |
+| BG-0016 檀香山 | 依站長決定，這筆覆核結案。明載的不確定日期和取得條件繼續標示待確認。 | 上方同期公告、畫面及夏威夷時區換算。 |
+| BG-0122／BG-0123 台南、洛杉磯 | 依站長確認，兩城地點背景保留烏賊王並排除好啦魷。 | 官方玩法將好啦魷列野外遭遇。此判定限兩城地點背景。見 [歷年稽核](BACKGROUND-HISTORICAL-AUDIT-2026-11-12.md)。 |
+| BG-0079／BG-0081 雪梨、布宜諾斯艾利斯 | 開場特殊調查與前八章依社群紀錄標為附背景遭遇。額外日仍未確認。 | [雪梨 Wiki](https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_City_Safari%3A_Sydney) · [布宜諾斯艾利斯 Wiki](https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_City_Safari%3A_Buenos_Aires)。 |
+| BG-0212／BG-0213 仙台、墨西哥城 | 仙台已記載的 12 隻限時調查獎勵，與 GO Hub 所列墨西哥城兩組任務的 12 隻及進度相符，墨西哥城背景名錄亦列這 12 隻。已補墨西哥城逐隻途徑對照及證據限制。洗翠黏美兒列於墨西哥城背景名錄和田野調查資料，仍無原始畫面能連結其背景與指定任務。仙台摔角鷹人仍無附仙台背景的證據。 | [墨西哥城任務表](https://pokemongohub.net/post/event/wild-area-2026-mexico-city/) · [墨西哥城名錄](https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-mexico-city-2026) · [官方長期集章](https://pokemongo.com/en/news/forever-stamp-rally-go-wild-area-2026)。 |
+| BG-0235 暗黑蒼穹 | 站長送核的 58 款（顫弦蠑螈高低調分開）全部能對到 Leek Duck 的隨機 GO Pass 名單。該名錄另列妙喵 #677，共 59 款。比對 Serebii 背景表時，站長名單有 52 款重合，差異是鯉魚王 #129、醜醜魚 #349、海豹球 #363、龍頭地鼠 #530、木棉球 #546、迷布莉姆 #856。Serebii 表另列提布莉姆 #857。迷布莉姆和提布莉姆是不同圖鑑編號，大嘴娃亦未出現在兩份此次對照表中，原先圖鑑的活動候選尚不能據此證實。毒電嬰依站長判定不收錄。 | [官方規則](https://pokemongo.com/en/news/dynamax-trails-eternamax-eternatus-2026) · [Leek Duck GO Pass 獎勵池](https://leekduck.com/events/dynamax-trails-2026/) · [Serebii 背景表](https://serebii.net/pokemongo/events/dynamaxtrails.shtml)。GO Pass 名單與極巨對戰的分款實際掉落各自判讀。 |
+
+本輪只改指定條目，提交 `5b6f6640609ed2b35cc3a37c660c0afee7a5b01c`。第 05 項的追加覆核依上表狀態保留，未將額外日、墨西哥城個別背景或極巨對戰逐款發放標示為已證實。
