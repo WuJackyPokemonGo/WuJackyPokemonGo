@@ -28611,7 +28611,7 @@
       "type": "special",
       "release_state": "released",
       "verification": "official-event-confirmed",
-      "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/gwa26-global.webp?v=20261106",
+      "image_source": "https://assets.dittobase.com/go/backgrounds/sb-wild-area-global-2026.jpg",
       "reference_ids": [
         "gwa26-global"
       ],
@@ -28740,8 +28740,8 @@
         },
         {
           "dex": 888,
-          "name_zh": "蒼響（劍之王團體戰）",
-          "name_en": "Zacian (Crowned Sword raids)",
+          "name_zh": "蒼響（百戰勇者；劍之王團體戰捕獲）",
+          "name_en": "Zacian (Hero of Many Battles, caught from Crowned Sword raids)",
           "acquisition": "encounter",
           "method_zh": "11/9～11/13 曠野週指定對戰捕獲有機會附背景。",
           "method_en": "Chance after an eligible battle catch during Into the Wild (November 9–13).",
@@ -28751,8 +28751,8 @@
         },
         {
           "dex": 889,
-          "name_zh": "藏瑪然特（盾之王團體戰）",
-          "name_en": "Zamazenta (Crowned Shield raids)",
+          "name_zh": "藏瑪然特（百戰勇者；盾之王團體戰捕獲）",
+          "name_en": "Zamazenta (Hero of Many Battles, caught from Crowned Shield raids)",
           "acquisition": "encounter",
           "method_zh": "11/9～11/13 曠野週指定對戰捕獲有機會附背景。",
           "method_en": "Chance after an eligible battle catch during Into the Wild (November 9–13).",
@@ -28774,7 +28774,8 @@
       ],
       "notes": [
         "官方明列現代夾克怪力、極巨帝牙盧卡、極巨帕路奇亞、萊希拉姆、捷克羅姆、酋雷姆、超極巨鋁鋼龍有機會帶特殊背景；持票特殊調查超極巨鋁鋼龍明列附背景。",
-        "2026-11-06：PokéXperience 已收錄圖樣（gwa26-global），與仙台、墨西哥城地點背景及 2025 全球背景不同。全球週末名單依官方公告。"
+        "2026-11-06：PokéXperience 已收錄圖樣（gwa26-global），與仙台、墨西哥城地點背景及 2025 全球背景不同。全球週末名單依官方公告。",
+        "2026-11-16 結案查核：活動已結束。圖樣改用 Serebii、Dittobase 一致的遊戲內版本（天際線＋樹葉花草、無湖面）；站長持有的曠野週極巨雷吉斯奇魯實物背景亦同。原收錄的 PokéXperience 活動前版本（有湖面）與遊戲內不同，已替換。13 款名單與 Serebii、Dittobase 一致；蒼響、藏瑪然特為劍之王／盾之王團體戰頭目，捕獲後是百戰勇者形態（Dittobase）。持票特殊調查超極巨鋁鋼龍官方明寫附背景；遠距團體戰／極巨對戰能否取得官方仍未說明，維持推定。"
       ],
       "notes_en": [
         "Artwork from PokéXperience (gwa26-global). The Global weekend lineup follows the official announcement."
