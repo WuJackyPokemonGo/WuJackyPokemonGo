@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-03",
+  "as_of": "2026-11-17",
   "complete": false,
   "sources": [
     "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -365,7 +365,9 @@
     "https://leekduck.com/events/pokemon-night-out-los-angeles-2026/",
     "https://pokemongo.com/es-MX/news/dia-de-muertos-2026",
     "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026",
-    "https://pokemongo.com/en/news/get-ready-for-gowildarea-2026"
+    "https://pokemongo.com/en/news/get-ready-for-gowildarea-2026",
+    "https://pokemongo.com/news/dynamax-trails-eternamax-eternatus-2026",
+    "https://note.com/chic_badger3860/n/n71cd150fae5e"
   ],
   "records": [
     {
@@ -14430,7 +14432,26 @@
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
       "verification": "catalog-crosschecked",
       "background_id": "BG-0190",
-      "search_aliases": ["SF","San Francisco","SF 2026","舊金山","三藩市","加州","California","美國","USA","United States","世界錦標賽","世界賽","WCS","WCS 2026","WCS2026","Worlds","World Championships","Pokémon World Championships"],
+      "search_aliases": [
+        "SF",
+        "San Francisco",
+        "SF 2026",
+        "舊金山",
+        "三藩市",
+        "加州",
+        "California",
+        "美國",
+        "USA",
+        "United States",
+        "世界錦標賽",
+        "世界賽",
+        "WCS",
+        "WCS 2026",
+        "WCS2026",
+        "Worlds",
+        "World Championships",
+        "Pokémon World Championships"
+      ],
       "name_zh": "2026 寶可夢世界錦標賽",
       "release_state": "released",
       "official_sources": [],
@@ -29319,8 +29340,8 @@
       "related_product_ids": [],
       "year": "2026",
       "year_verified": false,
-      "checked_on": "2026-11-06",
-      "evidence_reviewed_on": "2026-11-06",
+      "checked_on": "2026-11-17",
+      "evidence_reviewed_on": "2026-11-17",
       "background_id": "BG-0285",
       "name_zh": "寶可夢人孔蓋－群馬",
       "name_en": "Pokelid Gunma",
@@ -29338,7 +29359,8 @@
         "https://pokexperience.com/backgrounds/",
         "https://www.4gamer.net/games/999/G999905/20261023029/",
         "https://getnews.jp/archives/3750883",
-        "https://pokemongo.gamewith.jp/article/show/541631"
+        "https://pokemongo.gamewith.jp/article/show/541631",
+        "https://note.com/chic_badger3860/n/n71cd150fae5e"
       ],
       "series": "Poké Lids",
       "series_zh": "寶可夢人孔蓋",
@@ -29370,7 +29392,8 @@
         "圖樣為吹割瀑布（沼田市），取自PokéXperience；Serebii、Dittobase尚未收錄，GameWith一覽表標示調查中。",
         "確認有人在遊戲內取得後再改為已推出。",
         "2026-11-06：使用者已安排後續追蹤遊戲內開放日。",
-        "2026-11-16：Serebii、Dittobase 已收錄群馬，Dittobase 標示 11/9 推出；日本攻略站ポケらく仍標「未登場」，查無玩家取得紀錄，依原規則維持即將推出。"
+        "2026-11-16：Serebii、Dittobase 已收錄群馬，Dittobase 標示 11/9 推出；日本攻略站ポケらく仍標「未登場」，查無玩家取得紀錄，依原規則維持即將推出。",
+        "2026-11-17：新線索稱群馬第一批人孔蓋印章於11/13實裝，但未附可核實的背景皮卡丘取得畫面；Dittobase仍標11/9，日期互相衝突。依專項規則維持即將推出、日期留空。"
       ],
       "notes_en": [
         "Artwork (Fukiware Falls, Numata) from PokéXperience; not yet on Serebii or Dittobase. Mark released once obtained in game."
@@ -29484,8 +29507,8 @@
     },
     {
       "event_id": "dynamax-trails-2026",
-      "name_zh": "巨大足跡 2026 特殊背景預告",
-      "name_en": "Dynamax Trails 2026 Special Background preview",
+      "name_zh": "巨大足跡 2026 特殊背景",
+      "name_en": "Dynamax Trails 2026 Special Background",
       "start_date": "2026-11-16",
       "end_date": "2026-11-23",
       "year": "2026",
@@ -29494,22 +29517,24 @@
       "series_zh": "其他活動",
       "region_en": "Global",
       "region_zh": "全球",
-      "release_state": "upcoming",
+      "release_state": "released",
       "verification": "official-event-confirmed",
-      "image_source": null,
-      "checked_on": "2026-11-16",
+      "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/dark_skies.webp?v=20260816",
+      "checked_on": "2026-11-17",
       "official_sources": [
         "https://pokemongo.com/news/dynamax-trails-eternamax-eternatus-2026"
       ],
       "notes": [
         "活動時間為當地11/16 10:00–11/23 20:00；已登場的非傳說、非幻之極巨化寶可夢可能出現在極巨對戰，捕獲有機會帶特殊背景。",
         "GO Pass免費及豪華路線明列帶特殊背景的活動極巨化寶可夢遭遇；符合深入荒野第一階段條件者可於11/14 10:00提前取得通行證。官方未公布逐隻名單及圖樣。Serebii 所列圖樣與既有暗黑蒼穹（BG-0235）相符，11/15 玩家畫面顯示先行 GO Pass 的極巨化破破袋附暗黑蒼穹，極巨對戰途徑仍待核。",
-        "無極汰那是通行證的另一項獎勵，官方未承諾其帶特殊背景；無極巨化無極汰那對戰後不可捕獲，不列為背景遭遇。"
+        "無極汰那是通行證的另一項獎勵，官方未承諾其帶特殊背景；無極巨化無極汰那對戰後不可捕獲，不列為背景遭遇。",
+        "2026-11-17：活動已於各地當地時間11/16 10:00開始；GO Pass實拍已確認沿用暗黑蒼穹（BG-0235），故由預告改為進行中資料並連回既有背景，不另建重複圖樣。極巨對戰途徑與遠距取得背景仍待實證。"
       ],
       "notes_en": [
         "Local event hours: November 16 at 10:00–November 23 at 20:00. Previously released non-Legendary, non-Mythical Dynamax Pokémon may appear in Max Battles, with a chance of a Special Background after catching.",
         "Both GO Pass tracks list event-themed Dynamax Pokémon with Special Backgrounds. Trainers who claimed Into the Wild Tier 1 receive early pass access on November 14 at 10:00. The official announcement does not name individual species or show the artwork. Serebii lists artwork matching Dark Skies (BG-0235), A November 15 gameplay image shows Dark Skies on Dynamax Trubbish with a GO Pass catch label. The Max Battle route still needs verification.",
-        "Eternatus is listed as a separate pass reward without a promised background. Eternamax Eternatus cannot be caught after its battle and is not a background encounter."
+        "Eternatus is listed as a separate pass reward without a promised background. Eternamax Eternatus cannot be caught after its battle and is not a background encounter.",
+        "2026-11-17: The event began at 10:00 local time on November 16. GO Pass gameplay confirms the reused Dark Skies artwork (BG-0235), so this is now linked to the existing background instead of creating a duplicate. Max Battle distribution and remote background eligibility still need evidence."
       ],
       "activity": {
         "id": "dynamax-trails-2026",
@@ -29534,7 +29559,7 @@
           "text_zh": "本活動未明確確認遠距捕獲可得背景，不當作遠距背景保證。",
           "text_en": "The event does not explicitly confirm background eligibility for remote catches; no remote background guarantee is inferred."
         },
-        "checked_on": "2026-11-16",
+        "checked_on": "2026-11-17",
         "reported_info_zh": "Serebii 與 Bulbapedia 的通行證獎勵表均列免費及豪華路線在第 10、20、40、50、60、70、80、90、100 階提供隨機極巨化遭遇。官方確認通行證含附背景的極巨化遭遇，11/15 玩家畫面顯示附暗黑蒼穹（BG-0235）的極巨化破破袋，捕獲資訊標示 GO Pass，與 Serebii 圖樣相符。極巨對戰圖樣、逐款發放及遠距掉落仍待實證。通行證獎勵可領至當地 11/25 20:00。",
         "reported_info_en": "Serebii and Bulbapedia list random Dynamax encounters on both tracks at ranks 10, 20, 40, 50, 60, 70, 80, 90, and 100. The official announcement confirms background encounters in the pass. A November 15 gameplay image shows a Dynamax Trubbish with Dark Skies (BG-0235) and a GO Pass catch label, matching the Serebii artwork. Max Battle artwork, individual distributions and remote drops still need in-game evidence. Pass rewards can be claimed until November 25 at 20:00 local time.",
         "sources": [
@@ -29556,8 +29581,12 @@
           "zone": "Asia/Taipei",
           "basis": "confirmed",
           "kind": "go-pass"
-        }
-      }
+        },
+        "background_ids": [
+          "BG-0235"
+        ]
+      },
+      "artwork_status": "confirmed"
     },
     {
       "event_id": "pawniard-community-day-2026",
