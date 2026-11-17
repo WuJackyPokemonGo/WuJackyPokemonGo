@@ -102,3 +102,9 @@
 | BG-0235 暗黑蒼穹 | 站長送核的 58 款（顫弦蠑螈高低調分開）全部能對到 Leek Duck 的隨機 GO Pass 名單。該名錄另列妙喵 #677，共 59 款。比對 Serebii 背景表時，站長名單有 52 款重合，差異是鯉魚王 #129、醜醜魚 #349、海豹球 #363、龍頭地鼠 #530、木棉球 #546、迷布莉姆 #856。Serebii 表另列提布莉姆 #857。迷布莉姆和提布莉姆是不同圖鑑編號，大嘴娃亦未出現在兩份此次對照表中，原先圖鑑的活動候選尚不能據此證實。毒電嬰依站長判定不收錄。 | [官方規則](https://pokemongo.com/en/news/dynamax-trails-eternamax-eternatus-2026) · [Leek Duck GO Pass 獎勵池](https://leekduck.com/events/dynamax-trails-2026/) · [Serebii 背景表](https://serebii.net/pokemongo/events/dynamaxtrails.shtml)。GO Pass 名單與極巨對戰的分款實際掉落各自判讀。 |
 
 本輪只改指定條目，提交 `5b6f6640609ed2b35cc3a37c660c0afee7a5b01c`。第 05 項的追加覆核依上表狀態保留，未將額外日、墨西哥城個別背景或極巨對戰逐款發放標示為已證實。
+
+## 2026-11-17 暗黑蒼穹極巨對戰實拍
+
+BG-0235。玩家原圖可辨認 CP 299 極巨化拉魯拉絲、暗黑蒼穹背景與捕獲地點奧克蘭、日期 2026/11/16。發圖者在同一討論串回覆稱於當地約 11:00 從一般能量點的極巨對戰取得。畫面支持寶可夢、背景及捕獲日期，取得途徑採玩家原話記錄。官方公告確認極巨對戰背景為機率獎勵。已補這一款的證據，其他候選逐款保留待確認。現行圖鑑按站長後續要求保留 GO Pass 58 款，妙喵只列待確認。 [玩家原帖](https://www.reddit.com/r/TheSilphRoad/comments/1xx71il/dynamax_trails_event_megathread/19sp3eyqspv38/) · [取得途徑回覆](https://www.reddit.com/r/TheSilphRoad/comments/1xx71il/dynamax_trails_event_megathread/19sp4e8yi5wgx/) · [原圖](https://i.redd.it/8x0d5ctp7v1i1.jpeg) · [官方公告](https://pokemongo.com/en/news/dynamax-trails-eternamax-eternatus-2026)
+
+圖鑑提交 `8558c0d8264e61ad5609760811d0cc920c94e112`。
