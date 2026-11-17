@@ -22581,7 +22581,8 @@
         "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-fest-2025-dark-skies",
         "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
         "https://www.reddit.com/r/pokemongo/comments/1xx2lay/just_caught_this_from_the_go_pass_into_the_wild/",
-        "https://leekduck.com/events/dynamax-trails-2026/"
+        "https://leekduck.com/events/dynamax-trails-2026/",
+        "https://www.reddit.com/r/TheSilphRoad/comments/1xx71il/dynamax_trails_event_megathread/19sp3eyqspv38/"
       ],
       "evolved_pokemon": [
         {
@@ -22837,7 +22838,7 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-11-16",
+      "checked_on": "2026-11-17",
       "region_en": "Multiple regions",
       "region_zh": "多地／全球活動",
       "verification_scope": "background-and-eligibility",
@@ -23138,9 +23139,15 @@
           "start_date": "2026-11-16",
           "end_date": "2026-11-23",
           "release_state": "upcoming",
-          "method_status": "unconfirmed",
+          "method_status": "reviewed",
           "acquisition": "max-battle",
-          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
+          "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml",
+          "method_zh": "玩家實拍顯示 2026/11/16 奧克蘭捕獲的極巨化拉魯拉絲附暗黑蒼穹。發圖者回報由一般能量點極巨對戰取得。",
+          "method_en": "A player screenshot shows Dynamax Ralts with Dark Skies caught in Auckland on November 16, 2026. The player reported catching it after a Max Battle at a regular Power Spot.",
+          "method_sources": [
+            "https://www.reddit.com/r/TheSilphRoad/comments/1xx71il/dynamax_trails_event_megathread/19sp3eyqspv38/",
+            "https://i.redd.it/8x0d5ctp7v1i1.jpeg"
+          ]
         },
         {
           "dex": 302,
@@ -23503,8 +23510,8 @@
           "source": "https://www.serebii.net/pokemongo/events/dynamaxtrails.shtml"
         }
       ],
-      "return_note_zh": "巨大足跡（Dynamax Trails）：當地 2026/11/16 10:00～11/23 20:00。符合條件者可自 11/14 10:00 提前使用通行證。GO Pass 核對名單為 58 款，顫弦蠑螈高調、低調分計。妙喵列為待確認，暫不計入。官方另列活動極巨對戰捕獲有機會附特殊背景，逐款分列於下方。",
-      "return_note_en": "Dynamax Trails: November 16 at 10:00 to November 23, 2026 at 20:00 local time. Eligible players can access the GO Pass early from November 14 at 10:00. The cross-checked GO Pass roster has 58 variants, counting both Toxtricity forms separately. Espurr is pending and excluded from that count. Event Max Battles also offer a chance of a Special Background. See the separate roster below.",
+      "return_note_zh": "巨大足跡（Dynamax Trails）：當地 2026/11/16 10:00～11/23 20:00。符合條件者可自 11/14 10:00 提前使用通行證。GO Pass 核對名單為 58 款，顫弦蠑螈高調、低調分計。妙喵列為待確認，暫不計入。官方另列活動極巨對戰捕獲有機會附特殊背景，逐款分列於下方。 11/16 奧克蘭已有玩家實拍附暗黑蒼穹的極巨化拉魯拉絲，並回報由一般能量點極巨對戰取得。",
+      "return_note_en": "Dynamax Trails: November 16 at 10:00 to November 23, 2026 at 20:00 local time. Eligible players can access the GO Pass early from November 14 at 10:00. The cross-checked GO Pass roster has 58 variants, counting both Toxtricity forms separately. Espurr is pending and excluded from that count. Event Max Battles also offer a chance of a Special Background. See the separate roster below. A November 16 player screenshot shows Dynamax Ralts with Dark Skies caught in Auckland, reportedly from a Max Battle at a regular Power Spot.",
       "audit_2026_10_29": {
         "historical_encounters": 52,
         "historical_evolutions": 36,
