@@ -6,15 +6,15 @@ test('announced previews respect state, stock, dex, year, region and language se
  assert.equal(filterBackgroundAnnouncements(rows,{state:'pending'}).length,0);
  assert.equal(filterBackgroundAnnouncements(rows,{state:'official'}).length,0);
  assert.equal(filterBackgroundAnnouncements(rows,{state:'all',stockOnly:true}).length,0);
- for(const query of ['Dynamax Trails','特殊背景預告'])assert.equal(filterBackgroundAnnouncements(rows,{query}).filter(x=>x.event_id==='dynamax-trails-2026').length,1);
+ for(const query of ['Dynamax Trails','巨大足跡 2026 特殊背景'])assert.equal(filterBackgroundAnnouncements(rows,{query}).filter(x=>x.event_id==='dynamax-trails-2026').length,1);
  assert.ok(filterBackgroundAnnouncements(rows,{query:'#0624',year:'2026',region:'Global'}).some(x=>x.event_id==='pawniard-community-day-2026'));
  assert.equal(filterBackgroundAnnouncements(rows,{query:'Dynamax Trails',region:'India'}).length,0);
  assert.equal(filterBackgrounds(data.records).length,count);assert.equal(count,277);
 });
-test('Dynamax Trails is upcoming, no substituted artwork or asserted Eternatus encounter and no duplicate event',()=>{
+test('Dynamax Trails is live, reuses Dark Skies without asserting Eternatus or unverified Max Battle routes',()=>{
  const found=rows.filter(x=>x.event_id==='dynamax-trails-2026');assert.equal(found.length,1);const r=found[0];
- assert.equal(r.release_state,'upcoming');assert.equal(r.image_source,null);assert.equal(r.start_date,'2026-11-16');assert.equal(r.end_date,'2026-11-23');
- assert.match(r.notes_en.join(' '),/non-Legendary, non-Mythical/);assert.match(r.notes_en.join(' '),/artwork matching Dark Skies.*Max Battle route still needs verification/);assert.match(r.notes_en.join(' '),/without a promised background/);
+ assert.equal(r.release_state,'released');assert.equal(r.image_source,data.records.find(x=>x.background_id==='BG-0235').image_source);assert.deepEqual(r.activity.background_ids,['BG-0235']);assert.equal(r.start_date,'2026-11-16');assert.equal(r.end_date,'2026-11-23');
+ assert.match(r.notes_en.join(' '),/non-Legendary, non-Mythical/);assert.match(r.notes_en.join(' '),/Dark Skies.*Max Battle distribution and remote background eligibility still need evidence/);assert.match(r.notes_en.join(' '),/without a promised background/);
  assert.ok(!data.records.some(x=>x.name_en.includes('Dynamax Trails')));
 });
 test('Pawniard reuses the annual background but its future date and acquisition conditions stay explicit',()=>{
