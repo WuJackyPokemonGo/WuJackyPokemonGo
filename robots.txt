@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /WuJackyPokemonGo/admin.html
+Disallow: /WuJackyPokemonGo/cloud-admin.html
+
+Sitemap: https://wujackypokemongo.github.io/WuJackyPokemonGo/sitemap.xml
