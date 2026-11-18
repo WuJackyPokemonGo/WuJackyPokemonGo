@@ -27,10 +27,10 @@ function translate(){
 function options(id,entries,all){const select=$(id),value=select.value;select.replaceChildren();for(const[v,label]of [['',all],...entries]){const o=node('option',label);o.value=v;select.append(o)}if(entries.some(([v])=>v===value))select.value=value}
 function buildOptions(){const series=[...new Map([...data.records,...(data.additional_announced_events??[])].map(r=>[r.series,getLocale()==='zh'?r.series_zh:(r.series==='Other'?tr('其他活動','Other'):r.series)])).entries()];options('series',series,tr('全部系列','All series'));const years=[...new Set([...data.records,...(data.additional_announced_events??[])].map(r=>r.year).filter(Boolean))].sort().reverse();options('year',years.map(y=>[y,y]),tr('全部年份','All years'));const regions=[...new Map([...data.records,...(data.additional_announced_events??[])].map(r=>[r.region_en,regionLabel(r)])).entries()].filter(([v])=>v).sort((a,b)=>a[1].localeCompare(b[1]));options('region',regions,tr('全部地區','All regions'))}
 function backgroundImage(row){return referenceArtwork(row)}
-function picture(row,url=backgroundImage(row)){
+function picture(row,url=backgroundImage(row),{eager=false}={}){
  const box=node('span',null,'picture');
  const fallback=()=>{box.classList.add('reference-cover',row.type==='special'?'cover-special':'cover-location');box.replaceChildren(node('span','WJ','cover-mark'),node('span',getLocale()!=='zh'?row.series:row.series_zh||row.series,'cover-series'),node('span',regionLabel(row),'cover-region'),node('span',tr('查看收藏詳情 ↗','Explore this entry ↗'),'cover-hint'))};
- if(!url){fallback();return box}const img=node('img');img.src=url;img.alt=title(row);img.loading='lazy';img.referrerPolicy='no-referrer';img.onerror=fallback;box.append(img);return box;
+ if(!url){fallback();return box}const img=node('img');img.src=url;img.alt=title(row);img.width=400;img.height=400;img.loading=eager?'eager':'lazy';if(eager)img.fetchPriority='high';img.decoding='async';img.referrerPolicy='no-referrer';img.onerror=fallback;box.append(img);return box;
 }
 function renderReferences(r){
  const host=$('detailReferences');host.replaceChildren();
@@ -63,10 +63,10 @@ function appendProductSummary(host,row,{detail=false}={}){
 
 function reset(){activityExpansion.clear();$('bgSearch').value='';$('state').value='verified';$('type').value='';$('series').value='';$('year').value='';$('region').value='';$('stockOnly').checked=false;$('sortOrder').value='newest';page=1;render()}
 const activityExpansion=new Map();
-function backgroundCard(r,{variant=false,matched=false}={}){
+function backgroundCard(r,{variant=false,matched=false,eager=false}={}){
   const card=node('article',null,'card'),state=backgroundState(r),open=btn('',()=>openDetail(r));open.className='cardbutton';open.setAttribute('aria-label',tr(`查看 ${title(r)} 背景與寶可夢`,`View ${title(r)} background and Pokémon`));
   const visual=node('span',null,'cardvisual'),type=node('span',r.type==='location'?tr('地標背景','LOCATION'):tr('特殊背景','SPECIAL'),'typeflag '+r.type);
-  visual.append(picture(r),type);
+  visual.append(picture(r,undefined,{eager}),type);
   if(state!=='verified')visual.append(node('span',state==='upcoming'?tr('即將推出','UPCOMING'):tr('待核對','PENDING'),'releaseflag '+state));
   const body=node('span',null,'cardbody'),species=variant?r.pokemon?.[0]:null;
   const speciesName=species&&(getLocale()==='zh'?species.name_zh:localPokemonName(species.dex,getLocale())||species.name_en);
@@ -84,9 +84,9 @@ function backgroundCard(r,{variant=false,matched=false}={}){
   body.append(node('span',tr('詳情 ↗','Details ↗'),'carddetail'));
   open.append(visual,body);card.append(open);return card;
 }
-function activityCard(group){
+function activityCard(group,{eager=false}={}){
  const card=node('article',null,'card activity-group'),details=node('details'),summary=node('summary',null,'cardbutton activity-summary');
- const visual=node('span',null,'cardvisual activity-mosaic');for(const r of group.members)visual.append(picture(r));
+ const visual=node('span',null,'cardvisual activity-mosaic');group.members.forEach((r,i)=>visual.append(picture(r,undefined,{eager:eager&&i<2})));
  const body=node('span',null,'cardbody');body.append(node('strong',tr('遠古復甦','Ancients Recovered'),'cardname'),node('span',tr('活動日期：2025-06-23','Event date: 2025-06-23'),'english'),node('span',tr('共 6 款特殊背景','6 Special Backgrounds'),'variantcount'));
  if(group.members.length<6)body.append(node('span',tr('目前篩選顯示 {n} 款','Current filters show {n} variants').replace('{n}',group.members.length),'subtle'));
  const combined={related_product_ids:[...new Set(group.members.flatMap(r=>r.related_product_ids??[]))]},saleSummary=node('span',null,'cardmeta');appendProductSummary(saleSummary,combined);body.append(saleSummary);
@@ -111,7 +111,7 @@ function render(){
  const pages=Math.max(1,Math.ceil(cards.length/PAGE_SIZE));page=Math.max(1,Math.min(page,pages));
  $('resultCount').textContent=(getLocale()==='zh'?'{cards} 張主卡 · 符合 {matches} / {total} 筆紀錄':tr('主卡與符合紀錄數','{cards} cards · {matches} / {total} matching entries')).replace('{cards}',cards.length).replace('{matches}',list.length).replace('{total}',data.records.length);
  const grid=$('backgrounds');grid.replaceChildren();
- for(const r of cards.slice((page-1)*PAGE_SIZE,page*PAGE_SIZE))grid.append(r.activity_id?activityCard(r):backgroundCard(r));
+ cards.slice((page-1)*PAGE_SIZE,page*PAGE_SIZE).forEach((r,i)=>grid.append(r.activity_id?activityCard(r,{eager:i<4}):backgroundCard(r,{eager:i<4})));
  if(!list.length){const empty=node('div',null,'empty');empty.append(node('p',filterBackgroundAnnouncements(data.additional_announced_events??[],filters()).length?tr('尚無符合的已核對圖樣紀錄；可在活動快訊查看公告。','No matching catalog artwork yet; see Event updates for announcements.'):tr('沒有符合的背景，試試其他搜尋或分類。','No matching backgrounds. Try another search or filter.')));if($('state').value!=='all')empty.append(btn(tr('改看全部收錄','Search all entries'),()=>{$('state').value='all';page=1;render()}));empty.append(btn(tr('重設篩選','Reset filters'),reset));grid.append(empty)}
  const prev=btn(tr('上一頁','Previous'),()=>{page--;render();$('resultCount').scrollIntoView({block:'start'})}),next=btn(tr('下一頁','Next'),()=>{page++;render();$('resultCount').scrollIntoView({block:'start'})});prev.disabled=page<=1;next.disabled=page>=pages;$('pagination').replaceChildren(prev,node('span',`${page} / ${pages}`,'subtle'),next);$('pagination').hidden=cards.length<=PAGE_SIZE;
 }
