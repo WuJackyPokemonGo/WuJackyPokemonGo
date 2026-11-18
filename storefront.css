@@ -112,3 +112,4 @@ html:not([lang="zh-Hant"]) .region-slide figcaption span[lang="zh-Hant"]{display
 .bar-price{display:none}
 @media(max-width:700px){#detailDialog .actions .bar-price{display:block;flex:1 1 100%;margin:-2px 0 2px;font-size:20px;font-weight:800;color:#18283e}.header .language-hint{font-size:11px;padding:5px 10px;margin-top:8px;line-height:1.5;align-items:center}.header .language-hint button{min-height:24px;min-width:24px}}
 .language-hint{transition:opacity .4s ease}.language-hint.fading{opacity:0}
+html[lang="en"] .language-control>span>small{display:none}
