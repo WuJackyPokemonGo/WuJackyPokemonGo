@@ -32,6 +32,8 @@ export const backgroundLabels = {
  '最早在前':['古い順','오래된순','Cũ nhất trước','เก่าสุดก่อน','Terlama dulu','Más antiguos primero','Mais antigos primeiro'],
  '依名稱排序':['名前順','이름순','Theo tên','ตามชื่อ','Nama','Por nombre','Por nome'],
  '更多篩選':['絞り込みを追加','필터 더 보기','Thêm bộ lọc','ตัวกรองเพิ่มเติม','Filter lainnya','Más filtros','Mais filtros'],
+ '篩選':['絞り込み','필터','Bộ lọc','ตัวกรอง','Filter','Filtros','Filtros'],
+ '進階篩選':['詳細な絞り込み','고급 필터','Bộ lọc nâng cao','ตัวกรองขั้นสูง','Filter lanjutan','Filtros avanzados','Filtros avançados'],
  '收錄狀態':['掲載状況','등록 상태','Trạng thái mục','สถานะรายการ','Status entri','Estado del registro','Status do registro'],
  '已推出紀錄':['公開済みの記録','공개된 기록','Mục đã ra mắt','รายการที่เปิดตัวแล้ว','Entri yang sudah rilis','Registros publicados','Registros lançados'],
  '官方活動已核對':['公式イベント確認済み','공식 이벤트 확인 완료','Đã đối chiếu sự kiện chính thức','ตรวจสอบอีเวนต์ทางการแล้ว','Acara resmi terverifikasi','Evento oficial verificado','Evento oficial verificado'],
