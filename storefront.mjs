@@ -1,12 +1,15 @@
 import {initCheckoutEntry} from './checkout-entry.mjs';
 import {backgroundsForProduct,loadBackgroundRecords} from './product-backgrounds.mjs';
 import {productShareLink} from './product-link.mjs';
-import {tr,t,getLocale,localeTag,setLocale,productName,productDescription,bindStaticTranslations,initLanguageHint} from './storefront-locale.mjs';
+import {tr,t,getLocale,localeTag,setLocale,productName,productDescription,bindStaticTranslations,initLanguageHint,applyShareMeta} from './storefront-locale.mjs';
 import {applyContactLink,initContactLinks} from './contact.mjs';
 import {initAnalytics} from './analytics.mjs';
 import {loadPublicCatalog,imageURL,tagsFor,RECENT_STOCK_TAG,searchMatch,inquiryText,stockLabel} from './storefront-service.mjs';
 const $=id=>document.getElementById(id),money=v=>v==null?t('私訊詢價'):'NT$ '+v.toLocaleString('zh-TW');
-const translateStatic=bindStaticTranslations();translateStatic();initContactLinks();const track=initAnalytics();let searchTimer=null,lastSearch='',messageTimer=null;
+const translateStatic=bindStaticTranslations();
+const storeDescription='Wu Jacky Pokémon GO 商品目錄，瀏覽異色、特殊背景與收藏商品，整理清單後透過 LINE 詢問供貨。';
+function publishStoreMeta(){translateStatic();applyShareMeta({title:document.title,description:t(storeDescription)})}
+publishStoreMeta();initContactLinks();const track=initAnalytics();let searchTimer=null,lastSearch='',messageTimer=null;
 const statusLabels={available:'可供貨',low_stock:'庫存偏低',sold_out:'已售罄',inquiry_only:'供貨待確認',coming_soon:'即將推出'};
 let products=[],selected=new Set(),active=null,quantity=1,cart=[];
 function el(tag,text,cls){const n=document.createElement(tag);if(text!=null)n.textContent=text;if(cls)n.className=cls;return n}
@@ -70,7 +73,7 @@ $('copyProductLink').onclick=async()=>{
 $('copy').onclick=async()=>{if(!cart.length)return;const text=inquiryText(products,cart,$('orderNote').value,getLocale());try{await navigator.clipboard.writeText(text);track('inquiry_copy');$('copyStatus').textContent=t('已複製，可以貼到官方 LINE。')}catch{$('manualCopy').hidden=false;$('inquiryText').value=text;selectText();$('copyStatus').textContent=t('請在文字框長按全選後複製。')}};
 async function load(){const statusBox=$('loadStatus');$('headerCart').disabled=true;statusBox.hidden=false;statusBox.textContent=t('正在載入商品…');try{products=await loadPublicCatalog();track('page_view');loadPreviewCovers();track.source('store');try{const saved=JSON.parse(localStorage.getItem('wj_live_inquiry_cart_v1')||'[]');cart=Array.isArray(saved)?saved.filter(i=>i&&typeof i.id==='string'):[]}catch{cart=[]}renderFilters();renderProducts();renderCart();$('headerCart').disabled=false;statusBox.hidden=true;const linkedProduct=new URL(location.href).searchParams.get('product');const target=products.find(p=>p.id===linkedProduct);if(target&&new URL(location.href).searchParams.get('from')==='bg'){try{sessionStorage.setItem('wj_from_bg','1')}catch{}track('background_referral',target.id)}if(target)openDetail(target);else if(linkedProduct){statusBox.hidden=false;statusBox.textContent=tr('這項商品目前未公開或已下架，請瀏覽其他商品或聯絡我。','This product is unavailable. Browse other products or contact me.')}}catch{statusBox.replaceChildren(el('p',t('商品資料暫時無法載入，請稍後重試。')),button(t('重新載入'),load,'btn alt'));$('count').textContent='';$('products').replaceChildren()}}
 const updateLanguageHint=initLanguageHint();$('language').value=getLocale();
-$('language').onchange=()=>{setLocale($('language').value);syncCrossLinks();$('catalogMessage').hidden=true;updateLanguageHint();translateStatic();initContactLinks();renderFilters();renderProducts();renderCart();if(active)renderDetail(active);window.dispatchEvent(new Event('wj-language-change'))};
+$('language').onchange=()=>{setLocale($('language').value);syncCrossLinks();$('catalogMessage').hidden=true;updateLanguageHint();publishStoreMeta();initContactLinks();renderFilters();renderProducts();renderCart();if(active)renderDetail(active);window.dispatchEvent(new Event('wj-language-change'))};
 load();
 document.addEventListener('click',e=>{if(e.target.closest?.('a[data-contact-line]')){track('line_click');if(fromBackground())track('bg_line_click')}});
 

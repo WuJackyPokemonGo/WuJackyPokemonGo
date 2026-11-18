@@ -5,7 +5,7 @@ import {localRegionName} from './region-names.mjs';
 import {renderActivityFeed} from './activity-feed-ui.mjs';
 import {detailPokemonRows,detailPokemonSections,pokemonFormLabel} from './backgrounds-detail-service.mjs';
 import {loadBackgroundOverrides,mergeBackgroundOverrides} from './backgrounds-admin-service.mjs';
-import {getLocale,localeTag,setLocale,tr,t,productName,initLanguageHint,bindStaticTranslations} from './storefront-locale.mjs';
+import {getLocale,setLocale,tr,t,productName,initLanguageHint,bindStaticTranslations,applyShareMeta} from './storefront-locale.mjs';
 import {loadPublicCatalog,stockLabel} from './storefront-service.mjs';
 import {backgroundState,filterBackgrounds,relatedProducts,safeBackgroundImage,safeSource,sortBackgrounds,referenceArtwork,backgroundArtworkGallery,groupBackgroundCards,filterBackgroundAnnouncements,backgroundProductSummary} from './backgrounds-service.mjs';
 const $=id=>document.getElementById(id),PAGE_SIZE=48;
@@ -19,9 +19,8 @@ function btn(text,fn){const n=node('button',text);n.type='button';n.onclick=fn;r
 const translateStatic=bindStaticTranslations();
 function translate(){
  translateStatic();
- document.documentElement.lang=localeTag();
  const label=tr('背景收藏圖鑑','Background collection');
- document.title=getLocale()==='zh'?'Wu Jacky Pokémon GO｜'+label:'Wu Jacky Pokémon GO | '+label;
+ applyShareMeta({title:getLocale()==='zh'?'Wu Jacky Pokémon GO｜'+label:'Wu Jacky Pokémon GO | '+label,description:t('Wu Jacky Pokémon GO 背景收藏圖鑑：以中英文名稱、圖鑑編號、年份和活動分類尋找地標背景與特殊背景。')});
  document.querySelectorAll('[data-zh]').forEach(node=>node.textContent=tr(node.dataset.zh,node.dataset.en));
  document.querySelectorAll('[data-zh-placeholder]').forEach(node=>node.placeholder=tr(node.dataset.zhPlaceholder,node.dataset.enPlaceholder));
 }
