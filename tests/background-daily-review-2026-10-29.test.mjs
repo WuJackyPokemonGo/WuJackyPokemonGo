@@ -27,3 +27,10 @@ test('Wild Area clarification does not turn stamp rewards or remote battles into
  for(const id of ['BG-0212','BG-0213']){const r=data.records.find(x=>x.background_id===id);assert.equal(r.release_state,'released');assert.equal(r.pokemon.length,id==='BG-0212'?20:7);assert.ok(r.pokemon.some(x=>x.dex===(id==='BG-0212'?131:701)&&x.method_status==='reviewed'));assert.equal(data.redirects[id==='BG-0212'?'BG-0281':'BG-0282'],id);assert.match(r.date_note_en,/main ticketed day only, 10:00–20:00/);assert.match(r.date_note_en,/Extra Day/);assert.match(r.method_en,/remote battles do not award/);assert.match(r.notes_en[0],/stamp rally are not promised/);if(id==='BG-0212'){assert.match(r.pokemon.find(p=>p.dex===705).method_en,/stamp 5/);assert.equal(r.pokemon.filter(p=>p.method_en.includes('Timed Research')).length,12);}assert.match(r.pokemon.find(x=>x.dex===884).method_en,/Special Research explicitly/)}
  assert.deepEqual(groupBackgroundCards(data.records).filter(x=>x.activity_id).map(x=>x.activity_id),['ancients-recovered']);
 });
+test('Duolingo stays upcoming until its seven-day research can be claimed and separates direct encounters from evolutions',()=>{
+ const r=data.records.find(x=>x.background_id==='BG-0286');assert.ok(r);
+ assert.equal(r.release_state,'upcoming');assert.equal(r.image_source,'https://pokexperience.com/pokemon-variants/backgrounds/duolingo.webp?v=20260816');
+ assert.deepEqual(r.pokemon.map(x=>x.dex),[25,52,441,448]);assert.deepEqual(r.evolved_pokemon.map(x=>x.dex),[26,53]);assert.ok(r.evolved_pokemon.every(x=>x.acquisition==='evolution'));
+ assert.equal(r.activity.id,'duolingo-2026');assert.equal(r.activity.schedule.start,'2026-11-17T09:00');assert.equal(r.activity.schedule.end,'2026-12-31T23:59');
+ assert.match(r.date_note_en,/seven different days/i);assert.match(r.notes_en.join(' '),/remains upcoming/i);
+});

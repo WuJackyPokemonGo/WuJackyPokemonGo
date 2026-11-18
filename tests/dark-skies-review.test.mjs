@@ -18,7 +18,9 @@ test('historical Max encounters preserve 38 Dynamax and 14 separately tracked Gi
 });
 test('announced 2026 candidates never count as historical releases or establish shiny availability',()=>{
  assert.equal(row.upcoming_pokemon.length,54);
- assert.ok(row.upcoming_pokemon.every(p=>p.release_state==='upcoming'&&p.start_date==='2026-11-16'&&p.method_status==='unconfirmed'&&!('shiny' in p)));
+ assert.ok(row.upcoming_pokemon.every(p=>p.release_state==='upcoming'&&p.start_date==='2026-11-16'&&!('shiny' in p)));
+ assert.deepEqual(row.upcoming_pokemon.filter(p=>p.method_status==='reviewed').map(p=>p.dex),[280]);
+ assert.ok(row.upcoming_pokemon.filter(p=>p.dex!==280).every(p=>p.method_status==='unconfirmed'));
  assert.ok(!row.upcoming_pokemon.some(p=>[144,145,146,243,244,245,380,381,848,890].includes(p.dex)));
  for(const dex of [25,58,63,106,107,111,125,126,133,163,215,237,280,303,328,415,524,527,633,686,761,780,850,857,884])assert.ok(row.upcoming_pokemon.some(p=>p.dex===dex),dex);
  assert.equal(new Set(row.upcoming_pokemon.map(p=>p.variant_id)).size,54);
