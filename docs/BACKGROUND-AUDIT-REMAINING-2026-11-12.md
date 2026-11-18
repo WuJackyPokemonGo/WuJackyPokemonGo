@@ -108,3 +108,9 @@
 BG-0235。玩家原圖可辨認 CP 299 極巨化拉魯拉絲、暗黑蒼穹背景與捕獲地點奧克蘭、日期 2026/11/16。發圖者在同一討論串回覆稱於當地約 11:00 從一般能量點的極巨對戰取得。畫面支持寶可夢、背景及捕獲日期，取得途徑採玩家原話記錄。官方公告確認極巨對戰背景為機率獎勵。已補這一款的證據，其他候選逐款保留待確認。現行圖鑑按站長後續要求保留 GO Pass 58 款，妙喵只列待確認。 [玩家原帖](https://www.reddit.com/r/TheSilphRoad/comments/1xx71il/dynamax_trails_event_megathread/19sp3eyqspv38/) · [取得途徑回覆](https://www.reddit.com/r/TheSilphRoad/comments/1xx71il/dynamax_trails_event_megathread/19sp4e8yi5wgx/) · [原圖](https://i.redd.it/8x0d5ctp7v1i1.jpeg) · [官方公告](https://pokemongo.com/en/news/dynamax-trails-eternamax-eternatus-2026)
 
 圖鑑提交 `8558c0d8264e61ad5609760811d0cc920c94e112`。
+
+## 2026-11-18 公開圖鑑資料修復
+
+開工讀取正式站與 GitHub 時，兩者均指向 blob `ab4392488f2433ca4e696bc76de7dd9506d1f6e1`。檔案在位元組 393216 起含無效 UTF-8，無法解析 JSON。查得最新新增 Duolingo 預告的提交將約 123 萬位元組的完整資料截損為 786444 位元組。
+
+已以該提交前的完整資料補回中段，接回可復原的最新尾段，並核對既有 282 筆逐筆完全相同。保留最新 Duolingo BG-0286，合計 283 筆，及該次更新的 as_of、來源與統計。修復提交 `f8b6ee24b5ce0c525ff6a114b1ffd57a5bee856a`。本輪外部來源複查未補足墨西哥城個別背景與雪梨額外日的實證。
