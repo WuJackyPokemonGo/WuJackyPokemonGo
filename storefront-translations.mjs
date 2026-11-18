@@ -5,6 +5,8 @@ export const additionalLocales = ['ja', 'ko', 'vi', 'th', 'id', 'es', 'pt'];
 
 const rows = {
  '商品目錄': ['商品一覧','상품 목록','Danh mục sản phẩm','รายการสินค้า','Katalog produk','Catálogo','Catálogo de produtos'],
+ 'Wu Jacky Pokémon GO 商品目錄，瀏覽異色、特殊背景與收藏商品，整理清單後透過 LINE 詢問供貨。': ['Wu Jacky Pokémon GO の商品一覧。色違い、背景付き、コレクションを見て、LINEで在庫を確認できます。','Wu Jacky Pokémon GO 상품 목록. 색이 다른 포켓몬, 배경, 컬렉션을 보고 LINE으로 재고를 확인하세요.','Danh mục Wu Jacky Pokémon GO. Xem Pokémon shiny, phông nền và bộ sưu tập, rồi hỏi hàng qua LINE.','รายการสินค้า Wu Jacky Pokémon GO เลือกโปเกมอนสีแตกต่าง พื้นหลัง และของสะสม แล้วสอบถามสต็อกทาง LINE','Katalog Wu Jacky Pokémon GO. Lihat Pokémon shiny, latar, dan koleksi, lalu tanyakan stok lewat LINE.','Catálogo de Wu Jacky Pokémon GO. Mira Pokémon variocolor, fondos y coleccionables, y confirma disponibilidad por LINE.','Catálogo Wu Jacky Pokémon GO. Veja Pokémon brilhantes, fundos e colecionáveis e confirme a disponibilidade pelo LINE.'],
+ 'Wu Jacky Pokémon GO 背景收藏圖鑑：以中英文名稱、圖鑑編號、年份和活動分類尋找地標背景與特殊背景。': ['Wu Jacky Pokémon GO 背景図鑑。ポケモン名、図鑑番号、年、イベントでロケーション背景とスペシャル背景を探せます。','Wu Jacky Pokémon GO 배경 도감. 포켓몬 이름, 도감 번호, 연도, 이벤트로 로케이션 배경과 스페셜 배경을 찾으세요.','Bộ sưu tập phông nền Wu Jacky Pokémon GO. Tìm phông nền địa điểm và đặc biệt theo tên, số Pokédex, năm hoặc sự kiện.','สารานุกรมพื้นหลัง Wu Jacky Pokémon GO ค้นหาพื้นหลังสถานที่และพื้นหลังพิเศษด้วยชื่อ หมายเลขโปเกเด็กซ์ ปี หรืออีเวนต์','Koleksi latar Wu Jacky Pokémon GO. Cari latar lokasi dan khusus menurut nama, nomor Pokédex, tahun, atau acara.','Colección de fondos de Wu Jacky Pokémon GO. Busca fondos de ubicación y especiales por nombre, número de Pokédex, año o evento.','Coleção de fundos Wu Jacky Pokémon GO. Procure fundos de localização e especiais por nome, número da Pokédex, ano ou evento.'],
  '🌐 選擇您的語言': ['🌐 言語を選択','🌐 언어 선택','🌐 Chọn ngôn ngữ','🌐 เลือกภาษา','🌐 Pilih bahasa','🌐 Elige tu idioma','🌐 Escolha o idioma'],
  'Language / 語言': ['言語','언어','Ngôn ngữ','ภาษา','Bahasa','Idioma','Idioma'],
  '聯絡方式 / Contact': ['お問い合わせ','문의','Liên hệ','ติดต่อ','Kontak','Contacto','Contato'],
@@ -110,8 +112,8 @@ const rows = {
  '備註：': ['備考：','비고: ','Ghi chú: ','หมายเหตุ: ','Catatan: ','Notas: ','Observações: '],
  '請協助確認供貨、最終價格及交付方式。': ['在庫、最終価格、受け渡し方法をご確認ください。','재고, 최종 가격, 전달 방법을 확인해 주세요.','Vui lòng xác nhận tình trạng hàng, giá cuối cùng và cách bàn giao.','โปรดยืนยันสต็อก ราคาสุดท้าย และวิธีส่งมอบ','Mohon konfirmasi stok, harga akhir, dan cara serah terima.','Por favor confirma disponibilidad, precio final y forma de entrega.','Por favor confirme disponibilidade, preço final e forma de entrega.'],
  '{n} 件商品': ['商品 {n} 件','상품 {n}개','{n} sản phẩm','สินค้า {n} รายการ','{n} produk','{n} productos','{n} produtos'],
- '剩餘 {n} 帳': ['残り {n} アカウント','계정 {n}개 남음','Còn {n} tài khoản','เหลือ {n} บัญชี','Sisa {n} akun','Quedan {n} cuentas','Restam {n} contas'],
- '庫存：{n} 帳': ['在庫：{n} アカウント','재고: 계정 {n}개','Tồn kho: {n} tài khoản','ในสต็อก: {n} บัญชี','Stok: {n} akun','En stock: {n} cuentas','Em estoque: {n} contas'],
+ '剩餘 {n} 帳': ['残り {n} 件','{n}개 남음','Còn {n}','เหลือ {n} ตัว','Sisa {n}','Quedan {n}','Restam {n}'],
+ '庫存：{n} 帳': ['在庫：{n} 件','재고: {n}개','Tồn kho: {n}','ในสต็อก: {n} ตัว','Stok: {n}','En stock: {n}','Em estoque: {n}'],
  '匿名統計': ['匿名アクセス統計','익명 통계','Thống kê ẩn danh','สถิติแบบไม่ระบุตัวตน','Statistik anonim','Estadísticas anónimas','Estatísticas anônimas'],
  '停用匿名統計': ['匿名統計を無効にする','익명 통계 끄기','Tắt thống kê ẩn danh','ปิดสถิติแบบไม่ระบุตัวตน','Matikan statistik anonim','Desactivar estadísticas anónimas','Desativar estatísticas anônimas'],
  '啟用匿名統計': ['匿名統計を有効にする','익명 통계 켜기','Bật thống kê ẩn danh','เปิดสถิติแบบไม่ระบุตัวตน','Aktifkan statistik anonim','Activar estadísticas anónimas','Ativar estatísticas anônimas'],
