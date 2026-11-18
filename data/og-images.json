@@ -1409,6 +1409,11 @@
   "source": "https://pokexperience.com/pokemon-variants/backgrounds/lc_pokelid_gunma.webp?v=20261106",
   "file": "assets/og/bg/BG-0285.jpg"
  },
+ "bg/BG-0286": {
+  "sig": "de951227a162b012",
+  "source": "https://pokexperience.com/pokemon-variants/backgrounds/duolingo.webp?v=20260816",
+  "file": "assets/og/bg/BG-0286.jpg"
+ },
  "p/00287ad9-85f5-4647-832b-2ddaecfff3c5": {
   "sig": "d7dcb703d0cad5d2",
   "source": "assets/products/opt/00287ad9-85f5-4647-832b-2ddaecfff3c5-837a4b15-8242-4776-9583-c7a356888650.webp",
@@ -1713,6 +1718,11 @@
   "sig": "40967e269ef584dc",
   "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/963bcd58-ea19-45b7-88b1-aff6e065174c/817556c0-824c-4a7f-aac3-cf9cddd9eb75-thumb.webp",
   "file": "assets/og/p/963bcd58-ea19-45b7-88b1-aff6e065174c.jpg"
+ },
+ "p/98dd2922-cdc6-4067-8a29-6e9c4574c9da": {
+  "sig": "0feda99dc64d27c1",
+  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/98dd2922-cdc6-4067-8a29-6e9c4574c9da/7bb77633-252e-4c33-bc63-62499c744e2e-thumb.png",
+  "file": "assets/og/p/98dd2922-cdc6-4067-8a29-6e9c4574c9da.jpg"
  },
  "p/9968c818-d367-4767-9353-64ab79043ae1": {
   "sig": "c58db021f85dee14",
