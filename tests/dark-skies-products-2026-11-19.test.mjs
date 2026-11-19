@@ -21,3 +21,8 @@ test('鋁鋼龍紫黑款與曠野地帶款分開、舊獨角犀牛未連',()=>{
   assert.ok(!ids.has('98dd2922-cdc6-4067-8a29-6e9c4574c9da'),'WJ-0152 等性別確認');
   assert.equal(r.go_pass_pokemon.length,58);
 });
+
+test('商品頁背景清單重畫時先清空，不會出現兩次',()=>{
+  const src=readFileSync(new URL('../storefront.mjs',import.meta.url),'utf8');
+  assert.match(src,/backgroundsForProduct\(records,p\.id\);host\.replaceChildren\(\);/);
+});
