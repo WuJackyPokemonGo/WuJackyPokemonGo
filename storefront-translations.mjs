@@ -32,6 +32,8 @@ const rows = {
  '背景': ['背景','배경','Phông nền','พื้นหลัง','Latar belakang','Fondo','Fundo'],
  'XXL/XXS 特殊尺寸': ['XXL/XXSサイズ','XXL/XXS 크기','Kích thước XXL/XXS','ขนาด XXL/XXS','Ukuran XXL/XXS','Tamaño XXL/XXS','Tamanho XXL/XXS'],
  '傳說': ['伝説','전설','Huyền thoại','ในตำนาน','Legendaris','Legendario','Lendário'],
+ '神獸/傳說/究極異獸': ['伝説・幻・ウルトラビースト','전설・환상・울트라비스트','Huyền thoại / Ảo / Quái thú Ultra','ในตำนาน / มายา / อุลตร้าบีสต์','Legendaris / Mitos / Ultra Beast','Legendarios / Singulares / Ultraentes','Lendários / Míticos / Ultracriaturas'],
+ '大師球': ['マスターボール','마스터볼','Master Ball','มาสเตอร์บอล','Master Ball','Master Ball','Bola Mestra'],
  '裝扮': ['衣装','의상','Trang phục','ชุดพิเศษ','Kostum','Disfraz','Fantasia'],
  '超極巨化/極巨化': ['キョダイマックス／ダイマックス','거다이맥스 / 다이맥스','Gigantamax / Dynamax','กิกะแมกซ์ / ไดแมกซ์','Gigantamax / Dynamax','Gigamax / Dinamax','Gigantamax / Dinamax'],
  '皮卡丘': ['ピカチュウ','피카츄','Pikachu','พิคาชู','Pikachu','Pikachu','Pikachu'],
