@@ -63,6 +63,8 @@ SQL：supabase/production/customer-contacts.sql（新增contacts jsonb；舊cont
 
 **倫敦Night Out顫弦蠑螈（2026-11-12補查）：**11/11排程已查證但推送被拒（repo不在排程授權來源），11/12補做並上線。活動11/10已舉行，BG-0214改為已推出（276筆已推出、即將推出3筆）。高調、低調顫弦蠑螈：Serebii、Dittobase、PokéXperience三份名錄均列倫敦背景，改為reviewed（method_evidence: catalogs）；官方與LeekDuck只明寫團體戰附背景；遊戲內實物截圖未找到；同日站長確認持有倫敦高調、低調實物，兩種形態改為名錄＋站長實物，結案。
 
+**標籤整理與入庫日期（2026-11-19）：**補80筆商品標籤（球種變體沿用本體、套組沿用成員、大師球、神獸／傳說／究極異獸、極巨化、皮卡丘），「傳說」併入「神獸/傳說/究極異獸」後刪除（原名單備份於app_settings鍵category_legend_backup_20261119），「大師球」「神獸/傳說/究極異獸」補齊9語翻譯。入庫日期補33筆：有庫存異動者用第一筆異動日、無紀錄者用官方活動日（萬聖節2026 Part I 10/27、超極巨化怪力限時調查11/6、曠野地帶分日名單、台北花伴野餐3/28），查不到活動者用上架當天；曼谷皮卡丘未到貨不填。新增觸發器：之後商品第一次上架且沒有入庫日時，預設為上架當天（supabase/production/default-first-stocked.sql，migration default_first_stocked_at_on_publish）。
+
 **圖鑑後台改為只存改過的欄位（2026-11-16，使用者同意「改」）：**後台存檔時另記「改過的欄位」清單（fields），網站只套用這些欄位，其餘照repo最新資料，避免舊快照蓋掉repo更新。資料庫函式已更新（migration background_override_changed_fields）；既有6筆依存檔當時的repo比對補上清單：BG-0124／0214／0283／0284／0285為關聯商品，BG-0235為中文名稱；關聯商品全數保留。原資料備份於app_settings鍵background_catalog_overrides_backup_20261116（僅管理員可讀）。
 
 **曠野地帶2026全球結案（2026-11-16，本對話排程）：**BG-0284已為已推出（另一視窗先改，筆數已同步）。圖樣原收錄PokéXperience活動前版本（有湖面），與Serebii、Dittobase及站長曠野週極巨雷吉斯奇魯實物背景（天際線＋樹葉、無湖面）不同，改用Dittobase遊戲內圖；13款名單與兩份名錄一致；蒼響、藏瑪然特註明捕獲為百戰勇者形態；持票特殊調查超極巨鋁鋼龍官方明寫附背景；遠距取得官方未說明，維持推定；「曠野週2026新特殊背景」預告已為已推出。
