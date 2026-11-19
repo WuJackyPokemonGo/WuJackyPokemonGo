@@ -271,3 +271,9 @@ PokéPark關都皮卡丘依使用者確認移除，保留三神鳥；取得條�
 ## 2026-10-24 Ancients Recovered presentation grouping
 
 Six original Regi records remain unchanged; one expandable activity card, two-column mobile children, contain artwork, original modal/deep links. 187 tests passed. Production browser: 18 CN/EN/dex searches, six modal IDs, 320/390/430px, collapse and year/type filtering passed. Other activities: 44 review options only, no grouping applied. Full report: docs/background-grouping-review.html. Raw data still 276 / released 269.
+
+## 2026-11-19 紫黑商品串接
+- BG-0235 暗黑蒼穹連到 68 款紫黑商品（58 種、65 個基本款＋XXS 腕力、XXS 毛辮羊、大師球鐵啞鈴），原有兩款泛用背景商品保留。鋁鋼龍只連 WJ-0240；曠野地帶款留在 BG-0284。
+- 新增 WJ-0241 拉魯拉絲（極巨化）*公-紫黑，私訊詢價、供貨待確認。WJ-0160 補「超極巨化/極巨化」標籤。
+- 妙蛙種子、綠毛蟲、凱西、醜醜魚、豆豆鴿商品說明加「如需指定性別，請先詢問。」
+- 待辦：使用者上傳的紫黑實拍圖沒有傳到這個對話，圖片尚未接上；WJ-0152 舊獨角犀牛（3 隻）等性別確認後分配到 WJ-0196／WJ-0197。
