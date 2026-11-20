@@ -275,3 +275,7 @@ PokéPark關都皮卡丘依使用者確認移除，保留三神鳥；取得條�
 ## 2026-10-24 Ancients Recovered presentation grouping
 
 Six original Regi records remain unchanged; one expandable activity card, two-column mobile children, contain artwork, original modal/deep links. 187 tests passed. Production browser: 18 CN/EN/dex searches, six modal IDs, 320/390/430px, collapse and year/type filtering passed. Other activities: 44 review options only, no grouping applied. Full report: docs/background-grouping-review.html. Raw data still 276 / released 269.
+
+## 2026-11-20 補回紫黑商品串接
+- 11/20 早上群馬查核的提交，曾把 data/backgrounds.json 寫壞，之後「修復」時套回舊版，BG-0235 的 70 個商品關聯和註記被蓋掉（只剩 2 個）。已從 3071683 的版本補回，群馬的新資料保留。
+- 提醒：改 data/backgrounds.json 時請先 pull 最新版，改完跑 `npm test`（tests/dark-skies-products-2026-11-19.test.mjs 會擋這種遺失）。
