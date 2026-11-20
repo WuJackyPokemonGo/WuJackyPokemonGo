@@ -86,6 +86,11 @@ html:not([lang="zh-Hant"]) .region-slide figcaption span[lang="zh-Hant"]{display
  .region-stage{height:min(60svh,460px)}
  .region-carousel-controls button{min-width:26px}
 }
+@media(max-width:360px){
+ .region-carousel-controls{gap:1px;padding:6px 4px}
+ .region-carousel-controls .region-dot{min-width:24px}
+ .region-toggle{margin-left:2px}
+}
 @media(prefers-reduced-motion:reduce){.region-slide,.region-dot span{transition:none}}
 
 /* Mobile artwork viewport: crop wallpaper margins using a dedicated image frame. */
