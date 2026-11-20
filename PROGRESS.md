@@ -1,3 +1,9 @@
+## 背景圖鑑每日查核（2026-11-20）
+
+官方新聞列表未發現 11/17「Pokémon GO × Duolingo」之後的新背景公告或既有公告修訂；PokéXperience 仍為 356 項，最新仍是 Duolingo，未新增圖樣。活動快訊沒有新的開始、結束或時間修訂，Duolingo 與巨大足跡維持進行中，11/21 駒刀小兵社群日維持即將推出。
+
+BG-0285 群馬補入 Pokéらく更新頁：該頁記載 11/13 加入群馬集章並展示背景圖樣，但沒有可追溯的玩家原始領取截圖或影片；同時 PokéXperience 標 10/23、Dittobase 標 11/9，日期仍互相衝突。依專項規則只補來源與查核紀錄，維持即將推出、日期留空，不另發群馬通知。商品、庫存及售價未更動。
+
 ## 背景圖鑑每日查核（2026-11-18）
 
 官方 11/17 公告「Pokémon GO × Duolingo」特殊背景，新增 BG-0286。官方直接遭遇為皮卡丘、喵喵、聒噪鳥、路卡利歐；PokéXperience 顯示 6 款，另 2 款依進化繼承規則分列雷丘、貓老大，未把進化款誤寫成直接遭遇。Duolingo 任務已開始，但兌換碼要求在七個不同日期完成課程，11/18 尚未到最早可領取背景遭遇的日期，因此圖鑑標示「即將推出」，活動快訊則依官方時程顯示進行中，待可核實的實際入手紀錄後再改為已推出。
@@ -62,8 +68,6 @@ SQL：supabase/production/customer-contacts.sql（新增contacts jsonb；舊cont
 **第08項 近期活動背景資訊：**曼谷：pokemongo.com仍寫地點與日期待公布，寶可夢公司新聞稿確認2027/2/13起centralwOrld一帶開放，本地或跨國到場皆可集章，確切補給站待公告。四色頭髮：Serebii、Dittobase無顏色名稱；新加坡背景圖鑑寫深藍色、商品寫藍色，已加搜尋別名兩種都找得到。墨西哥亡靈節：官方未公布耿鬼固定場次，社群回報19:00–20:00無官方佐證；社群回報遠距不附背景，官方未說明。未公布圖樣：巨大足跡2026仍無圖樣。
 
 **倫敦Night Out顫弦蠑螈（2026-11-12補查）：**11/11排程已查證但推送被拒（repo不在排程授權來源），11/12補做並上線。活動11/10已舉行，BG-0214改為已推出（276筆已推出、即將推出3筆）。高調、低調顫弦蠑螈：Serebii、Dittobase、PokéXperience三份名錄均列倫敦背景，改為reviewed（method_evidence: catalogs）；官方與LeekDuck只明寫團體戰附背景；遊戲內實物截圖未找到；同日站長確認持有倫敦高調、低調實物，兩種形態改為名錄＋站長實物，結案。
-
-**標籤整理與入庫日期（2026-11-19）：**補80筆商品標籤（球種變體沿用本體、套組沿用成員、大師球、神獸／傳說／究極異獸、極巨化、皮卡丘），「傳說」併入「神獸/傳說/究極異獸」後刪除（原名單備份於app_settings鍵category_legend_backup_20261119），「大師球」「神獸/傳說/究極異獸」補齊9語翻譯。入庫日期補33筆：有庫存異動者用第一筆異動日、無紀錄者用官方活動日（萬聖節2026 Part I 10/27、超極巨化怪力限時調查11/6、曠野地帶分日名單、台北花伴野餐3/28），查不到活動者用上架當天；曼谷皮卡丘未到貨不填。新增觸發器：之後商品第一次上架且沒有入庫日時，預設為上架當天（supabase/production/default-first-stocked.sql，migration default_first_stocked_at_on_publish）。
 
 **圖鑑後台改為只存改過的欄位（2026-11-16，使用者同意「改」）：**後台存檔時另記「改過的欄位」清單（fields），網站只套用這些欄位，其餘照repo最新資料，避免舊快照蓋掉repo更新。資料庫函式已更新（migration background_override_changed_fields）；既有6筆依存檔當時的repo比對補上清單：BG-0124／0214／0283／0284／0285為關聯商品，BG-0235為中文名稱；關聯商品全數保留。原資料備份於app_settings鍵background_catalog_overrides_backup_20261116（僅管理員可讀）。
 
@@ -271,9 +275,3 @@ PokéPark關都皮卡丘依使用者確認移除，保留三神鳥；取得條�
 ## 2026-10-24 Ancients Recovered presentation grouping
 
 Six original Regi records remain unchanged; one expandable activity card, two-column mobile children, contain artwork, original modal/deep links. 187 tests passed. Production browser: 18 CN/EN/dex searches, six modal IDs, 320/390/430px, collapse and year/type filtering passed. Other activities: 44 review options only, no grouping applied. Full report: docs/background-grouping-review.html. Raw data still 276 / released 269.
-
-## 2026-11-19 紫黑商品串接
-- BG-0235 暗黑蒼穹連到 68 款紫黑商品（58 種、65 個基本款＋XXS 腕力、XXS 毛辮羊、大師球鐵啞鈴），原有兩款泛用背景商品保留。鋁鋼龍只連 WJ-0240；曠野地帶款留在 BG-0284。
-- 新增 WJ-0241 拉魯拉絲（極巨化）*公-紫黑，私訊詢價、供貨待確認。WJ-0160 補「超極巨化/極巨化」標籤。
-- 妙蛙種子、綠毛蟲、凱西、醜醜魚、豆豆鴿商品說明加「如需指定性別，請先詢問。」
-- 待辦：使用者上傳的紫黑實拍圖沒有傳到這個對話，圖片尚未接上；WJ-0152 舊獨角犀牛（3 隻）等性別確認後分配到 WJ-0196／WJ-0197。
