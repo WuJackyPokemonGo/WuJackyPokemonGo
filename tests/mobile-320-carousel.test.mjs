@@ -9,5 +9,5 @@ test('320px 手機上輪播控制列不會撐出畫面',()=>{
   assert.match(block[1],/\.region-carousel-controls\{gap:1px;padding:6px 4px\}/);
   assert.match(block[1],/\.region-carousel-controls \.region-dot\{min-width:24px\}/,'點擊範圍至少 24px');
   const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
-  assert.match(html,/storefront\.css\?v=20261120-carousel-320/,'樣式版本更新，手機不會沿用舊樣式');
+  assert.match(html,/storefront\.css\?v=20261121-line-inquiry/,'樣式版本更新，手機不會沿用舊樣式');
 });
