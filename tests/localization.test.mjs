@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
 import {searchMatch,inquiryText,stockLabel,loadPublicCatalog} from '../storefront-service.mjs';
 import {setLocale,t,productName,productDescription,resolveLocale} from '../storefront-locale.mjs';
 const expo={id:'expo',sku:'02',name:'皮卡丘、小火龍、傑尼龜、妙蛙種子-大阪萬博',name_en:'Pikachu / Charmander / Squirtle / Bulbasaur – EXPO 2025 Osaka',dex:1,aliases:['0001','0004','0007','0025'],tags:['背景'],images:[],status:'available',price:500};
@@ -7,6 +8,22 @@ test('bundle search matches every name and dex in either locale; numbers do not 
 test('language switches both ways without changing original product names, prices or category values',()=>{setLocale('en');assert.equal(t('背景'),'Background');assert.equal(productName(expo),expo.name_en);assert.equal(searchMatch(expo,'background'),true);setLocale('zh');assert.equal(t('背景'),'背景');assert.equal(productName(expo),expo.name);assert.equal(expo.price,500);assert.deepEqual(expo.tags,['背景'])});
 test('English inquiry hides SKU and preserves product name, quantity, price and buyer notes',()=>{const text=inquiryText([expo],[{id:'expo',qty:2}],'Please confirm','en');assert.match(text,/Pikachu/);assert.ok(!text.includes('02｜'));assert.match(text,/× 2/);assert.match(text,/NT\$ 1,000/);assert.match(text,/not a confirmed order/);assert.match(text,/Please confirm/)});
 test('English low-stock labels retain accurate quantity and tone',()=>assert.deepEqual(stockLabel({status:'low_stock',stock_quantity:5},'en'),{text:'5 left',tone:'low'}));
+test('English language picker label is translated and other locales keep their own wording',()=>{
+ assert.equal(t('🌐 選擇您的語言','en'),'🌐 Choose your language');
+ assert.equal(t('🌐 選擇您的語言','zh'),'🌐 選擇您的語言');
+ assert.equal(t('🌐 選擇您的語言','ja'),'🌐 言語を選択');
+ assert.equal(t('🌐 選擇您的語言','ko'),'🌐 언어 선택');
+ assert.equal(t('🌐 選擇您的語言','vi'),'🌐 Chọn ngôn ngữ');
+ assert.equal(t('🌐 選擇您的語言','th'),'🌐 เลือกภาษา');
+ assert.equal(t('🌐 選擇您的語言','id'),'🌐 Pilih bahasa');
+ assert.equal(t('🌐 選擇您的語言','es'),'🌐 Elige tu idioma');
+ assert.equal(t('🌐 選擇您的語言','pt'),'🌐 Escolha o idioma');
+ for(const file of ['index.html','backgrounds.html']){
+  const html=readFileSync(new URL('../'+file,import.meta.url),'utf8');
+  assert.match(html,/data-zh="🌐 選擇您的語言"/);
+  assert.match(html,/data-en="🌐 Choose your language"/);
+ }
+});
 test('Osaka individual-price notes translate both saved newline representations without changing amounts',()=>{for(const sep of ['\n','\\n']){const description=['小火龍1/200','皮卡丘、傑尼龜、妙蛙種子1/150','四隻各一套500'].join(sep);const translated=productDescription({description},'en');assert.match(translated,/Charmander: NT\$200/);assert.match(translated,/NT\$150/);assert.match(translated,/NT\$500/);assert.equal(productDescription({description},'zh'),description)}});
 
 test('first visit follows the preferred browser language; only Chinese or English are selected automatically',()=>{assert.equal(resolveLocale(null,['en-US']),'en');assert.equal(resolveLocale(null,['vi-VN','zh-TW']),'en');assert.equal(resolveLocale(null,['zh-TW','en-US']),'zh');assert.equal(resolveLocale(null,['zh-CN']),'zh');assert.equal(resolveLocale(null,[],'en-GB'),'en')});

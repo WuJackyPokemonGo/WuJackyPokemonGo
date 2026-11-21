@@ -47,7 +47,9 @@ export const labels={
 '瀏覽商品、整理想詢問的清單，再透過 LINE 與我確認供貨和交付方式。':'Browse the collection, make an inquiry list, then contact me on LINE to confirm availability and delivery.',
 '商品供應、最終價格與交付時間，以私訊確認為準。':'Availability, final prices and delivery times are confirmed by private message.',
 '搜尋寶可夢、英文名稱、圖鑑編號或分類':'Search Chinese or English names, Pokédex numbers or categories',
-'搜尋商品':'Search products','清除':'Clear','商品排序':'Sort products','推薦排序':'Recommended','價格由低至高':'Price: low to high','價格由高至低':'Price: high to low','名稱排序':'Name','商品分類':'Categories','商品目錄':'Collection','正在載入商品…':'Loading products…',
+'搜尋商品':'Search products','清除':'Clear','商品排序':'Sort products','推薦排序':'Recommended','價格由低至高':'Price: low to high','價格由高至低':'Price: high to low','名稱排序':'Name','商品分類':'Categories','商品目錄':'Collection','🌐 選擇您的語言':'🌐 Choose your language','篩選':'Filters','進階篩選':'Advanced filters','正在載入商品…':'Loading products…',
+'Wu Jacky Pokémon GO 商品目錄，瀏覽異色、特殊背景與收藏商品，整理清單後透過 LINE 詢問供貨。':'Browse shiny, special-background and collectible Pokémon GO items, then ask about availability on LINE.',
+'Wu Jacky Pokémon GO 背景收藏圖鑑：以中英文名稱、圖鑑編號、年份和活動分類尋找地標背景與特殊背景。':'Find location and special Pokémon GO backgrounds by name, Pokédex number, year or event.',
 '詢價清單不成立訂單、不保留庫存。請確認供貨後再付款。':'An inquiry list does not place an order or reserve stock. Confirm availability before paying.',
 '聯絡 Wu Jacky':'Contact Wu Jacky','管理登入':'Admin login','匿名統計':'Anonymous analytics','停用匿名統計':'Disable anonymous analytics','啟用匿名統計':'Enable anonymous analytics','匿名統計已停用':'Anonymous analytics disabled','匿名統計已啟用':'Anonymous analytics enabled','已依瀏覽器隱私設定停用':'Disabled by your browser privacy settings','此瀏覽器無法使用匿名統計':'Analytics unavailable in this browser','匿名統計暫時無法送達':'Analytics temporarily unavailable',
 '匿名統計只累計瀏覽與清單操作，保留 30 天；不記錄姓名、聯絡資料、完整 IP 或搜尋文字，並遵守瀏覽器隱私設定。':'Anonymous analytics count views and list actions for 30 days. Names, contact details, full IP addresses and search text are not recorded. Browser privacy settings are respected.',
@@ -96,4 +98,27 @@ export function initLanguageHint(){
  // Shown once per browser: mark it seen right away and fold it away after a short read.
  try{localStorage.setItem('wj_language_hint_seen_v1','1')}catch{}
  close.onclick=()=>hint.remove();setTimeout(()=>{hint.classList.add('fading');setTimeout(()=>hint.remove(),400)},10000);render();return render;
+}
+
+const ogLocales={zh:'zh_TW',en:'en_US',ja:'ja_JP',ko:'ko_KR',vi:'vi_VN',th:'th_TH',id:'id_ID',es:'es_ES',pt:'pt_BR'};
+export function applyShareMeta({title,description}={}){
+ if(typeof document==='undefined'||!document.head)return;
+ document.documentElement.lang=localeTag();
+ if(title)document.title=title;
+ const set=(selector,value)=>{const node=document.head.querySelector(selector);if(node&&value!=null)node.setAttribute('content',value)};
+ if(description)set('meta[name="description"]',description);
+ if(title){set('meta[property="og:title"]',title);set('meta[name="twitter:title"]',title);set('meta[property="og:image:alt"]',title)}
+ if(description){set('meta[property="og:description"]',description);set('meta[name="twitter:description"]',description)}
+ const active=ogLocales[getLocale()]||'en_US';
+ set('meta[property="og:locale"]',active);
+ const others=Object.values(ogLocales).filter(code=>code!==active);
+ document.head.querySelectorAll('meta[property="og:locale:alternate"]').forEach((node,index)=>{if(others[index])node.setAttribute('content',others[index])});
+ const canonical=document.querySelector('link[rel="canonical"]');
+ if(!canonical)return;
+ const url=new URL(canonical.getAttribute('href'),'https://wujackypokemongo.github.io/WuJackyPokemonGo/');
+ url.searchParams.set('lang',getLocale());
+ let background=null;try{background=new URL(location.href).searchParams.get('background')}catch{}
+ if(background)url.searchParams.set('background',background);
+ canonical.setAttribute('href',url.href);
+ set('meta[property="og:url"]',url.href);
 }
