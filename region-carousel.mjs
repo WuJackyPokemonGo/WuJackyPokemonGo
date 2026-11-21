@@ -6,9 +6,8 @@ if (gallery) {
   const toggle = gallery.querySelector('.region-toggle');
   const announcement = gallery.querySelector('.region-announcement');
   const compact = matchMedia('(max-width: 900px)');
-  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   let current = 0;
-  let paused = reducedMotion.matches;
+  let paused = false;
   let hovering = false;
   let focused = false;
   let touching = false;
@@ -85,7 +84,6 @@ if (gallery) {
   stage.addEventListener('pointercancel', () => { start = undefined; touching = false; schedule(); });
   document.addEventListener('visibilitychange', schedule);
   compact.addEventListener('change', () => { if (!compact.matches) loadAll(); show(current); schedule(); });
-  reducedMotion.addEventListener('change', () => { paused = reducedMotion.matches; updateToggle(); schedule(); });
   show(0);
   if (!compact.matches) loadAllWhenIdle();
   updateToggle();

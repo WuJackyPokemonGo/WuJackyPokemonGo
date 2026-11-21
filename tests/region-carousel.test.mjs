@@ -54,7 +54,7 @@ test('manual buttons, dots, keyboard and swipe select the expected image', () =>
   assert.equal(ui.announcement.textContent, 'region 6');
   assert.equal(ui.dots[6].attributes['aria-pressed'], 'true');
 });
-test('pause, hidden tab, focus and reduced-motion stop automatic playback', () => {
+test('pause, hidden tab and keyboard focus stop automatic playback', () => {
   const ui = setup();
   ui.toggle.fire('click'); assert.equal(ui.ticking(), false);
   ui.toggle.fire('click'); assert.equal(ui.ticking(), true);
@@ -62,8 +62,22 @@ test('pause, hidden tab, focus and reduced-motion stop automatic playback', () =
   ui.document.hidden = false; ui.document.fire('visibilitychange'); assert.equal(ui.ticking(), true);
   ui.gallery.fire('focusin', {target: {matches: () => true}}); assert.equal(ui.ticking(), false);
   ui.gallery.fire('focusout', {relatedTarget: null}); assert.equal(ui.ticking(), true);
-  const reduced = setup({reduced: true}); assert.equal(reduced.ticking(), false);
-  reduced.next.fire('click'); assert.equal(reduced.active(), 1);
+});
+test('new visits autoplay with reduced motion and preserve manual pause when it changes', () => {
+  const ui = setup({reduced: true});
+  assert.equal(ui.ticking(), true);
+  assert.equal(ui.toggle.attributes['aria-pressed'], 'false');
+  assert.equal(ui.toggle.attributes['aria-label'], '暫停輪播 / Pause slideshow');
+  ui.tick();
+  assert.equal(ui.active(), 1);
+  ui.toggle.fire('click');
+  assert.equal(ui.ticking(), false);
+  ui.motion.matches = false;
+  ui.motion.fire('change');
+  assert.equal(ui.ticking(), false);
+  assert.equal(ui.toggle.attributes['aria-pressed'], 'true');
+  ui.toggle.fire('click');
+  assert.equal(ui.ticking(), true);
 });
 test('desktop exposes all nine panels and does not auto-advance', () => {
   const ui = setup({compact: false});
