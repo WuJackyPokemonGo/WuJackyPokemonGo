@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-20",
+  "as_of": "2026-11-21",
   "complete": false,
   "sources": [
     "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -24760,11 +24760,13 @@
         "https://pokemongo.com/news/communityday-january-2026-grookey",
         "https://pokemongo.com/en/news/communityday-october-2026-zorua",
         "https://pokemongo.com/news/communitydayclassic-piplup-jan-2026",
-        "https://pokemongo.com/news/communityday-november-2026-pawniard"
+        "https://pokemongo.com/news/communityday-november-2026-pawniard",
+        "https://pokemongo.com/news/community-day-december-2026"
       ],
       "notes": [
         "年度背景有不同動畫畫格／素材名稱；目前合併保留為一組，不因素材筆數重複計算。",
-        "2026-11-06：依Dittobase背景頁補列進化繼承款。"
+        "2026-11-06：依Dittobase背景頁補列進化繼承款。",
+        "2026-11-21：官方公布12/12–13年終社群日；14:00–17:00野外指定寶可夢可能附年度背景，付費特殊調查、田野調查及社群大使報到限時調查亦提供指定背景遭遇。沿用本年度背景，不新增圖樣。"
       ],
       "related_product_ids": [
         "af6b226d-a462-4ddb-ab66-0b46f0d72a24"
@@ -24774,7 +24776,7 @@
       "series": "Community & Season",
       "series_zh": "社群日與季節",
       "year": "2026",
-      "year_verified": false,
+      "year_verified": true,
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/sb-community-days-2026"
@@ -24949,12 +24951,13 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-10-29",
+      "checked_on": "2026-11-21",
       "region_en": "Multiple regions",
       "region_zh": "多地／全球活動",
       "verification_scope": "background-and-eligibility",
       "notes_en": [
-        "Different animation frames or asset names are kept under one annual-background entry rather than counted as separate releases."
+        "Different animation frames or asset names are kept under one annual-background entry rather than counted as separate releases.",
+        "2026-11-21: The official December 12–13 recap confirms yearly-background opportunities from featured wild encounters, paid Special Research, Field Research and Community Ambassador check-in Timed Research. It reuses this yearly design."
       ],
       "start_date": "2026-01-04",
       "date_note_zh": "首款由1/4波加曼復刻社群日推出；各後續社群日分別開放，非全年連續取得。",
@@ -29632,6 +29635,95 @@
           "BG-0286"
         ]
       }
+    },
+    {
+      "source": "https://pokemongo.com/news/2026_ana_blue",
+      "related_product_ids": [],
+      "year": "2026",
+      "year_verified": true,
+      "checked_on": "2026-11-21",
+      "evidence_reviewed_on": "2026-11-21",
+      "background_id": "BG-0287",
+      "name_zh": "ANA藍色寶可夢飛機",
+      "name_en": "Pokemon Jet Blue",
+      "type": "location",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "verification_scope": "acquisition-confirmed-artwork-unconfirmed",
+      "image_source": null,
+      "artwork_status": "pending",
+      "official_sources": [
+        "https://pokemongo.com/news/2026_ana_blue"
+      ],
+      "catalog_sources": [],
+      "series": "ANA",
+      "series_zh": "ANA飛機",
+      "region_en": "Japan",
+      "region_zh": "日本",
+      "start_date": "2026-12-11",
+      "end_date": "2027-08-31",
+      "date_note_zh": "日本時間2026/12/11 13:00至2027/8/31 20:00；台灣時間為2026/12/11 12:00至2027/8/31 19:00。開始日後依一般團體戰時段出現。",
+      "date_note_en": "December 11, 2026, 13:00 to August 31, 2027, 20:00 JST (December 11, 12:00 to August 31, 19:00 in Taiwan). Regular raid hours apply after launch.",
+      "method_zh": "在中部國際、能登、廣島、岡山、大阪國際、關西及神戶機場的指定道館參加傑尼龜團體戰；官方明列捕獲的傑尼龜帶藍色寶可夢飛機地點背景，每座道館每日可參加一次。限時調查只稱活動主題寶可夢，未確認附背景，故不列為背景來源。",
+      "method_en": "Battle Squirtle at designated Gyms in Chubu Centrair, Noto, Hiroshima, Okayama, Osaka International, Kansai and Kobe airports. The official announcement explicitly gives raid-caught Squirtle the Blue Pokémon Jet Location Background, with one raid per Gym per day. Timed Research only says event-themed encounters and is not listed as a background route.",
+      "method_status": "reviewed",
+      "pokemon": [
+        {
+          "dex": 7,
+          "name_en": "Squirtle",
+          "name_zh": "傑尼龜",
+          "variant_id": "squirtle",
+          "acquisition": "raid"
+        }
+      ],
+      "notes": [
+        "2026-11-21：官方已確認活動、傑尼龜團體戰與藍色飛機地點背景；尚未公布可辨識的遊戲內背景圖樣，因此不使用飛機宣傳圖代替。",
+        "遠距參加及遠距捕獲是否能取得地點背景，官方公告未說明，維持待確認。"
+      ],
+      "notes_en": [
+        "2026-11-21: The official announcement confirms the event, Squirtle raids and the Blue Jet Location Background. No identifiable in-game background pattern has been published, so promotional aircraft art is not substituted.",
+        "Remote participation and remote background eligibility are not stated and remain unconfirmed."
+      ],
+      "search_aliases": [
+        "ANA藍色寶可夢飛機",
+        "Blue Pokémon Jet",
+        "Pokemon Jet Blue",
+        "藍色飛機",
+        "傑尼龜",
+        "Squirtle"
+      ],
+      "activity": {
+        "id": "ana-blue-pokemon-jet-2026",
+        "schedule": {
+          "start": "2026-12-11T13:00",
+          "end": "2027-08-31T20:00",
+          "zone": "Asia/Tokyo",
+          "basis": "confirmed"
+        },
+        "conditions_zh": "於日本七座指定機場道館參加傑尼龜團體戰；每座道館每日一次。限時調查未確認為背景來源。",
+        "conditions_en": "Join Squirtle raids at designated Gyms in seven Japanese airports, once per Gym per day. Timed Research is not confirmed as a background route.",
+        "eligible_zh": "傑尼龜；官方未公布服裝或其他形態。",
+        "eligible_en": "Squirtle; no costume or alternate form announced.",
+        "remote_participation": {
+          "basis": "pending",
+          "text_zh": "官方未說明是否允許遠距參加指定機場團體戰。",
+          "text_en": "The official announcement does not state whether remote participation is allowed."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "官方未說明遠距捕獲是否能取得藍色飛機地點背景。",
+          "text_en": "The official announcement does not state whether a remote catch can receive the Blue Jet Location Background."
+        },
+        "checked_on": "2026-11-21",
+        "sources": [
+          "https://pokemongo.com/news/2026_ana_blue"
+        ],
+        "background_type": "location",
+        "artwork_status": "pending",
+        "background_ids": [
+          "BG-0287"
+        ]
+      }
     }
   ],
   "additional_announced_events": [
@@ -30485,42 +30577,85 @@
     },
     {
       "event_id": "season-25-2026-12-12",
-      "name_zh": "12月社群日（2026/12/12）",
-      "name_en": "December Community Day (2026-12-12)",
-      "type": "event",
-      "series": "Other",
-      "series_zh": "其他活動",
+      "background_id": "BG-0240",
+      "name_zh": "2026年終社群日（年度背景）",
+      "name_en": "December Community Day 2026 (yearly background)",
+      "type": "special",
+      "series": "Community Day",
+      "series_zh": "社群日",
       "year": "2026",
-      "region_zh": "地區待公布",
-      "region_en": "Regions unannounced",
+      "region_zh": "全球",
+      "region_en": "Global",
       "start_date": "2026-12-12",
       "end_date": "2026-12-13",
       "release_state": "upcoming",
       "verification": "official-event-confirmed",
       "image_source": null,
-      "checked_on": "2026-11-13",
+      "checked_on": "2026-11-21",
       "official_sources": [
-        "https://pokemongo.com/news/save-the-date-s25"
+        "https://pokemongo.com/news/community-day-december-2026"
+      ],
+      "pokemon": [
+        {"dex": 37, "name_zh": "六尾", "name_en": "Vulpix"},
+        {"dex": 37, "name_zh": "六尾（阿羅拉）", "name_en": "Alolan Vulpix"},
+        {"dex": 393, "name_zh": "波加曼", "name_en": "Piplup"},
+        {"dex": 443, "name_zh": "圓陸鯊", "name_en": "Gible"},
+        {"dex": 570, "name_zh": "索羅亞", "name_en": "Zorua"},
+        {"dex": 624, "name_zh": "駒刀小兵", "name_en": "Pawniard"},
+        {"dex": 633, "name_zh": "單首龍", "name_en": "Deino"},
+        {"dex": 810, "name_zh": "敲音猴", "name_en": "Grookey"},
+        {"dex": 813, "name_zh": "炎兔兒", "name_en": "Scorbunny"},
+        {"dex": 816, "name_zh": "淚眼蜥", "name_en": "Sobble"},
+        {"dex": 827, "name_zh": "偷兒狐", "name_en": "Nickit"},
+        {"dex": 915, "name_zh": "愛吃豚", "name_en": "Lechonk"},
+        {"dex": 957, "name_zh": "小鍛匠", "name_en": "Tinkatink"},
+        {"dex": 996, "name_zh": "涼脊龍", "name_en": "Frigibax"}
+      ],
+      "notes": [
+        "12/12與12/13當地14:00–17:00分日出現指定寶可夢，野外有機會附2026年度特殊背景；09:00–21:00仍可能遇到兩日指定寶可夢，但官方只在主時段段落明列背景機會。",
+        "付費特殊調查、田野調查及社群大使報到限時調查均明列2026社群日／經典社群日寶可夢的背景遭遇。沿用BG-0240年度背景，不新增獨立圖樣。"
+      ],
+      "notes_en": [
+        "Featured Pokémon appear by day from 14:00–17:00 local time on December 12–13 and may have the 2026 yearly Special Background. The wider 09:00–21:00 encounters are announced separately, so background eligibility is only asserted for the explicitly worded routes.",
+        "Paid Special Research, Field Research and Community Ambassador check-in Timed Research explicitly offer background encounters from 2026 Community Days and Classics. Reuses BG-0240."
       ],
       "activity": {
         "id": "season-25-2026-12-12",
-        "kind": "event",
         "schedule": {
-          "date_only": true,
+          "start": "2026-12-12T14:00",
+          "end": "2026-12-13T17:00",
           "rolling_local": true,
           "zone": "Asia/Taipei",
           "basis": "confirmed",
-          "start_date": "2026-12-12",
-          "end_date": "2026-12-13"
+          "daily": {
+            "start": "14:00",
+            "end": "17:00",
+            "start_date": "2026-12-12",
+            "end_date": "2026-12-13",
+            "basis": "confirmed"
+          }
         },
-        "conditions_zh": "官方先行公布活動日期。起訖時刻與玩法待正式公告。",
-        "conditions_en": "The official preview lists the date. Event hours and gameplay details await announcement.",
-        "eligible_zh": "寶可夢、服裝、形態及背景獎勵待公布。",
-        "eligible_en": "Pokémon, costumes, forms and background rewards await announcement.",
-        "checked_on": "2026-11-13",
+        "conditions_zh": "12/12–13當地14:00–17:00野外指定寶可夢有機會附年度背景；付費特殊調查、田野調查及社群大使報到限時調查亦提供附背景遭遇。",
+        "conditions_en": "Featured wild encounters may have the yearly background from 14:00–17:00 local time on December 12–13. Paid Special Research, Field Research and Community Ambassador check-in Timed Research also provide background encounters.",
+        "eligible_zh": "六尾、阿羅拉六尾、波加曼、圓陸鯊、索羅亞、駒刀小兵、單首龍、敲音猴、炎兔兒、淚眼蜥、偷兒狐、愛吃豚、小鍛匠、涼脊龍；進化繼承另列於BG-0240。",
+        "eligible_en": "Vulpix, Alolan Vulpix, Piplup, Gible, Zorua, Pawniard, Deino, Grookey, Scorbunny, Sobble, Nickit, Lechonk, Tinkatink and Frigibax; evolutions are listed separately under BG-0240.",
+        "remote_participation": {
+          "basis": "confirmed",
+          "text_zh": "野外與調查遭遇，不是遠距團體戰活動。",
+          "text_en": "Wild and research encounters; not a remote raid event."
+        },
+        "remote_background": {
+          "basis": "confirmed",
+          "text_zh": "不適用遠距團體戰取得；背景來自當地野外或調查遭遇。",
+          "text_en": "Remote raid acquisition does not apply; backgrounds come from local wild or research encounters."
+        },
+        "checked_on": "2026-11-21",
         "sources": [
-          "https://pokemongo.com/news/save-the-date-s25"
-        ]
+          "https://pokemongo.com/news/community-day-december-2026"
+        ],
+        "background_type": "special",
+        "artwork_status": "existing-yearly-background",
+        "background_ids": ["BG-0240"]
       }
     },
     {
@@ -30895,7 +31030,7 @@
     "catalog-crosschecked": 55,
     "official-event-confirmed": 222,
     "catalogued-needs-event-check": 3,
-    "upcoming": 3
+    "upcoming": 4
   },
   "review_counts": {
     "date_details_pending": 4,
