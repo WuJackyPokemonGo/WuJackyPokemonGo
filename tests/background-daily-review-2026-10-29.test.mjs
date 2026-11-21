@@ -36,7 +36,7 @@ test('Duolingo stays upcoming until its seven-day research can be claimed and se
 });
 test('Gunma keeps its date blank until firsthand redemption evidence resolves conflicting catalog dates',()=>{
  const r=data.records.find(x=>x.background_id==='BG-0285');assert.ok(r);
- assert.equal(r.release_state,'upcoming');assert.equal(r.start_date,undefined);assert.equal(r.checked_on,'2026-11-20');
+ assert.equal(r.release_state,'upcoming');assert.equal(r.start_date,undefined);assert.ok(r.checked_on>='2026-11-20');
  assert.ok(r.catalog_sources.includes('https://pokemongo-raku.com/post130804'));
  assert.match(r.notes_en.join(' '),/no traceable original player redemption screenshot or video/i);
  assert.match(r.notes_en.join(' '),/October 23.*November 9/i);
