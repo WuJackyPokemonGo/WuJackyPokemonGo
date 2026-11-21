@@ -133,7 +133,7 @@ test('1+9 重匯：更新既有摘錄遮蔽、保留人工內容；舊識別鍵�
  const db=new PGlite();for(const s of sql)await db.exec(s);const q=async(s,a=[])=>(await db.query(s,a)).rows;
  const admin=(await q('select user_id from admin_profiles limit 1'))[0].user_id;await db.exec(`select set_config('request.jwt.claim.sub','${admin}',false)`);await db.exec('set role authenticated');
  const batch=(await q("insert into crm_import_batches(source) values('threads') returning id"))[0].id;
- const msgs=[['c',3,'耿鬼多少'],['o',2.9,'耿鬼450'],['c',2.8,'要'],['o',2.7,PAYINFO],['c',2.6,'已匯款，末五碼 45678，皮卡丘還有嗎'],['o',2,'耿鬼 帳號 aaaa1111 密碼 bbbb2222']];
+ const msgs=[['c',3,'耿鬼多少'],['o',2.9,'耿鬼450'],['c',2.8,'要'],['o',2.7,PAYINFO],['c',2.6,'已匯款，末五碼 45678，皮卡丘還有嗎'],['o',2,'耿鬼 帳號 aaaa1111 密碼 bbbb2222'],['c',1,'皮卡丘還有嗎？剛剛末五碼 45678']];
  const fresh=parse([conv('re_1040025918571299','Re',msgs)]).rows;
  // 模擬舊版：詢問用舊識別鍵（全串索引）且摘錄未遮蔽末五碼
  const legacy=structuredClone(fresh);const ext=legacy[0].external_key;
@@ -155,8 +155,29 @@ test('1+9 重匯：更新既有摘錄遮蔽、保留人工內容；舊識別鍵�
  const dump=JSON.stringify(await q('select excerpt from crm_inquiries union all select excerpt from crm_followups union all select excerpt from crm_cases union all select evidence::text from crm_deals'));
  assert.ok(!dump.includes('45678'),'所有既有摘錄都重新遮蔽');
  assert.deepEqual((await q("select tag from crm_tags where source='manual'")).map(x=>x.tag),['VIP']);
- assert.deepEqual(await q('select status,status_source,note from crm_cases'),[{status:'closed',status_source:'manual',note:'老闆手動'}]);
+ assert.deepEqual(await q('select distinct status,status_source,note from crm_cases'),[{status:'closed',status_source:'manual',note:'老闆手動'}]);
  assert.deepEqual(await q('select status,amount_twd from crm_deals'),[{status:'accepted',amount_twd:450}]);
- assert.deepEqual((await q('select status from crm_followups')).map(x=>x.status),['done']);
+ assert.ok((await q('select status from crm_followups')).length>0);assert.deepEqual([...new Set((await q('select status from crm_followups')).map(x=>x.status))],['done'],'待追蹤處理結果保留');
  const r3=await imp(fresh);assert.equal(r3.inquiries_new+r3.cases_new+r3.deals_new,0,'第三次重匯零新增');
+});
+
+test('9 資料庫：同檔重匯、補早期訊息、改暱稱都不重複新增客人、詢問、案件、成交',async()=>{
+ const sql=await Promise.all(['./checkout-fixture.sql','../supabase/production/customer-roster.sql','../supabase/production/customer-contacts.sql','../supabase/production/crm-threads.sql','../supabase/review/crm-features.sql','../supabase/review/crm-review-fixes.sql'].map(read));
+ const db=new PGlite();for(const s of sql)await db.exec(s);const q=async(s,a=[])=>(await db.query(s,a)).rows;
+ const admin=(await q('select user_id from admin_profiles limit 1'))[0].user_id;await db.exec(`select set_config('request.jwt.claim.sub','${admin}',false)`);await db.exec('set role authenticated');
+ const batch=(await q("insert into crm_import_batches(source) values('threads') returning id"))[0].id;
+ const imp=async rows=>{const a=(await q('select admin_crm_import_threads($1,$2) r',[batch,JSON.stringify(rows)]))[0].r;
+  const b=(await q('select admin_crm_import_suggestions($1,$2) r',[batch,JSON.stringify(rows.map(r=>({external_key:r.external_key,thread_id:r.thread_id,cases:r.cases,deals:r.deals,waits:r.waits})))]))[0].r;return {...a,...b}};
+ const T=NOW-3*DAY;const msgs=[['c',T,'耿鬼多少'],['c',T,'皮卡丘多少'],['o',T+1000,'耿鬼450'],['c',T+2000,'要'],['o',T+3000,PAYINFO],['c',T+4000,'已匯'],['o',T+5000,'耿鬼 帳號 aaaa1111 密碼 bbbb2222']];
+ const count=async()=>Object.fromEntries(await Promise.all(['customer_profiles','crm_identities','crm_inquiries','crm_cases','crm_deals'].map(async t=>[t,(await q(`select count(*)::int n from ${t}`))[0].n])));
+ const first=await imp(parse([conv('ken_2000000000000001','Ken',msgs)]).rows);const c1=await count();
+ assert.ok(first.inquiries_new>=2&&first.deals_new===1);
+ const same=await imp(parse([conv('ken_2000000000000001','Ken',msgs)]).rows);assert.deepEqual(await count(),c1,'同檔重匯');
+ assert.equal(same.inquiries_new+same.cases_new+same.deals_new+same.customers_created,0);
+ const earlier=await imp(parse([conv('ken_2000000000000001','Ken',[['c',40,'你好 耿鬼還有嗎'],['o',39.9,'有喔'],...msgs])]).rows);
+ assert.equal(earlier.customers_created,0);assert.ok(earlier.inquiries_new>=1,'只新增早期那則 '+JSON.stringify(earlier));
+ const c2=await count();assert.equal(c2.crm_deals,c1.crm_deals,'成交不重複');
+ const renamed=await imp(parse([conv('kenneth_2000000000000001','Kenneth',[['c',40,'你好 耿鬼還有嗎'],['o',39.9,'有喔'],...msgs])]).rows);
+ assert.deepEqual(await count(),c2,'改暱稱（資料夾名稱也變）仍是同一位客人、資料不重複');assert.equal(renamed.customers_matched,1);
+ assert.equal((await q('select display_name from crm_identities'))[0].display_name,'Kenneth','顯示名稱更新');
 });

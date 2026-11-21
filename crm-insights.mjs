@@ -7,6 +7,7 @@ export const PAID_ORDER_STATES=['paid_awaiting_purchase','ordered_from_supplier'
 export const REFUND_STATES=['refund_pending','refunded'];
 export const INTENT_CATEGORIES=['price','stock','buy','payment'];
 export const taipeiDay=v=>{const d=new Date(v);return Number.isFinite(d.getTime())?d.toLocaleDateString('sv-SE',{timeZone:'Asia/Taipei'}):''};
+import {resolveOrderOwners,nameCandidates,resolveNameOwner,normName} from './crm-order-links.mjs';
 const norm=v=>String(v??'').normalize('NFKC').trim().replace(/\s+/g,' ').toLowerCase();
 const addDays=(day,n)=>{const d=new Date(day+'T00:00:00Z');d.setUTCDate(d.getUTCDate()+n);return d.toISOString().slice(0,10)};
 const dayDiff=(a,b)=>Math.round((Date.parse(b+'T00:00:00Z')-Date.parse(a+'T00:00:00Z'))/86400000);
@@ -40,11 +41,15 @@ export function nameIndex(profiles=[]){
 }
 
 // 每位客人的成交日期（台灣日期，已排序）。paidUnknown：有疑似付款標籤但沒有時間點的客人。
-export function purchaseDaysByCustomer({profiles=[],orders=[],history=[],tags=[]}){
- const {byName,ambiguous}=nameIndex(profiles);
+// 訂單歸戶：老闆確認過的關聯優先；名稱只對到一位客人（含 Threads 同名顯示名稱）才自動歸戶，否則列為待確認。
+export function purchaseDaysByCustomer({profiles=[],orders=[],history=[],tags=[],identities=[],links=[]}){
+ const {ambiguous}=nameIndex(profiles);const index=nameCandidates({profiles,identities});
+ const resolved=resolveOrderOwners({orders,profiles,identities,links});
  const days=new Map(),paidUnknown=new Set();const add=(id,day,source,amount)=>{if(!id||!day)return;if(!days.has(id))days.set(id,[]);days.get(id).push({day,source,amount})};
- for(const o of orders){const amt=orderSale(o);if(amt!=null)add(byName.get(norm(o.customer_alias)),taipeiDay(o.received_at||o.created_at),'order',amt)}
- for(const h of history)add(byName.get(norm(h.customer_alias)),h.purchased_on,'history',Number(h.amount_twd??0));
+ for(const o of orders){const amt=orderSale(o);if(amt!=null)add(resolved.owner.get(o.id??o),taipeiDay(o.received_at||o.created_at),'order',amt)}
+ const histAmb=new Set();
+ for(const h of history){const id=resolveNameOwner(h.customer_alias,index);if(!id&&(index.get(normName(h.customer_alias))?.size??0)>1)histAmb.add(normName(h.customer_alias));add(id,h.purchased_on,'history',Number(h.amount_twd??0))}
+ for(const k of [...resolved.ambiguousNames,...histAmb])if(!ambiguous.includes(k))ambiguous.push(k);ambiguous.sort();
  for(const t of tags)if(t.tag==='paid_suspected'){const ts=t.evidence?.timestamp_ms;if(ts)add(t.customer_id,taipeiDay(ts),'paid_suspected',0);else paidUnknown.add(t.customer_id)}
  for(const v of days.values())v.sort((a,b)=>a.day.localeCompare(b.day));
  days.paidUnknown=paidUnknown;days.ambiguousAliases=ambiguous;

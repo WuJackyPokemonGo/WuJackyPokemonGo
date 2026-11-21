@@ -29,7 +29,7 @@ test('parser reads every conversation, fixes Meta text, skips groups and never k
  assert.ok(amy.inquiries.some(i=>i.category==='stock'&&i.terms.includes('耿鬼')&&i.product_ids[0]===products[0].id));
  assert.ok(amy.inquiries.some(i=>i.category==='price'&&i.terms.includes('平昌皮卡丘')),'nickname maps to canonical term');
  assert.deepEqual(amy.tags.map(t=>t.tag).sort(),['followup','inquired','paid_suspected']);
- const amy2=rows.find(r=>r.external_key==='amy_1002');assert.ok(amy2.tags.some(t=>t.tag==='abandon_suspected'),'payment info sent, no payment within 3 days');
+ const amy2=rows.find(r=>r.external_key==='amy_1002');assert.ok(amy2.tags.some(t=>t.tag==='payment_overdue')&&!amy2.tags.some(t=>t.tag==='abandon_suspected'),'payment info sent, no payment within 3 days: overdue only, not abandoned without a cancellation (GPT review 2026-11-21 item 8)');
  const bob=rows.find(r=>r.external_key==='bob_2001');assert.ok(bob.tags.some(t=>t.tag==='request_box'));assert.equal(bob.followups.length,1);
  const all=JSON.stringify(rows);assert.doesNotMatch(all,/1234567890|9876543210/);assert.ok(rows.flatMap(r=>r.inquiries).every(i=>i.excerpt.length<=60));
  assert.equal(chunk([1,2,3,4,5],2).length,3);

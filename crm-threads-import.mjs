@@ -5,7 +5,7 @@ import {buildCases,CASE_STATUS} from './crm-cases.mjs';
 
 export const CATEGORY_LABELS={price:'問價',stock:'問庫存',buy:'表示想買',payment:'交易方式',delivery:'交付問題'};
 export {CASE_STATUS};
-export const TAG_LABELS={inquired:'詢價',wants:'想買',paid_suspected:'疑似付款',repeat_suspected:'熟客候選',abandon_suspected:'疑似棄單',request_box:'訊息請求',followup:'待追蹤'};
+export const TAG_LABELS={inquired:'詢價',wants:'想買',paid_suspected:'疑似付款',repeat_suspected:'熟客候選',abandon_suspected:'疑似棄單',payment_evidence_pending:'付款證據待確認',payment_overdue:'給匯款資訊後未付款',request_box:'訊息請求',followup:'待追蹤'};
 const CATEGORY_RX={
  price:/多少|價格|價錢|價位|幾元|幾塊|怎麼賣|怎賣|報價|售價|開價|\$|how much|price|優惠|折扣|打折|算便宜|便宜點|便宜一點/i,
  stock:/還有(嗎|貨|沒|嘛)|有貨|現貨|庫存|有嗎|有沒有|還在嗎|剩幾|剩下|補貨|缺貨|賣完|售完|in stock|available|still have/i,
@@ -15,7 +15,15 @@ const CATEGORY_RX={
 };
 // 店主傳匯款資訊、客人回報已付款的樣式（用來標「疑似付款／疑似棄單」）
 const OWNER_PAYMENT_INFO=/行號|帳號.{0,6}\d|\d{3}-|中信|國泰|郵局|提供轉帳截圖|匯款至|轉帳至|戶名/;
-const CUSTOMER_PAID=/已匯|匯好|匯了|已轉|轉好|轉了|付款了|已付|付好|匯款完成|轉帳完成|已完成匯款/;
+const CUSTOMER_PAID=/已匯|匯好|匯了|已轉|轉好|轉了|付款了|已付|付好|匯款完成|轉帳完成|已完成匯款|款項匯出|\bpaid\b|transferred/i;
+// 圖片旁有這些字才算付款證據；只有圖片 → 付款證據待確認（不算付款、不進 A 層）
+const PAYMENT_WORDS=/截圖|收據|明細|轉帳|匯款|付款|已匯|已轉|末[一二三四五六七八九十0-9]碼|receipt|transfer/i;
+// 明確取消（棄單必須有這類訊息，或由老闆在後台判定；只是時間過了不算）
+const CANCEL_RX=/不要了|不用了|取消|算了|先不買|不買了|先不用|先不要|改天再|下次再買|沒辦法買|放棄|不考慮了|cancel/i;
+// 穩定識別：Threads 資料夾名稱是「暱稱_數字」，暱稱會變、數字不變
+export const threadIdOf=slug=>String(slug??'').match(/(\d{6,})$/)?.[1]??String(slug??'');
+// 訊息內容雜湊（FNV-1a 32 位元），讓識別鍵不受整串訊息位置影響
+export function messageHash(msg,role=''){const s=`${role}\u0001${msg.content??''}\u0001${(msg.photos??[]).length}`;let h=0x811c9dc5;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,0x01000193)>>>0}return h.toString(16).padStart(8,'0')}
 const DAY=86400000;
 const GENERIC_TERMS=new Set(['背景','色背','限定背景','即將推出','預購','地點背景','色違','異色','套組','活動','裝扮','限定','特殊背景','背景卡','皮卡','日本','台灣','韓國','東京']);
 
@@ -25,18 +33,27 @@ export function fixMojibake(value){
  try{return new TextDecoder('utf-8',{fatal:true}).decode(Uint8Array.from(value,c=>c.charCodeAt(0)))}catch{return value}
 }
 function deepFix(o){if(Array.isArray(o))return o.map(deepFix);if(o&&typeof o==='object'){const r={};for(const [k,v] of Object.entries(o))r[k]=deepFix(v);return r}return fixMojibake(o)}
+// 遮蔽：帳號／密碼／帳密、轉帳末碼、完整銀行帳號、驗證碼、付款連結、email，以及看起來像帳號或密碼的英數字串。
+// 多行訊息逐行一起處理（「帳號」「密碼」換行後寫在下一行也會遮蔽）。商品名稱與問句保留。
 export function maskText(s){
  let t=String(s??'');
  // 交付訊息（含帳號／密碼字樣）裡，換行後的純英文帳號名稱也一律遮蔽
- if(/帳號|密碼|帳密|password|passwd/i.test(t))t=t.replace(/(?<![\w.@#$%&!*?+=\/-])[A-Za-z][\w.@#$%&!*?+=\/-]{5,}/g,'[遮蔽]');
+ if(/帳號|密碼|帳密|password|passwd/i.test(t))t=t.replace(/(?<![\w.@#$%&!*?+=\/-])[A-Za-z][\w.@#$%&!*?+=\/-]{3,}/g,m=>/^(ID|OK|LINE|PTC|https?)$/i.test(m)?m:'[遮蔽]');
  return t
   .replace(/[\w.+-]+@[\w-]+\.[\w.]+/g,'[email]')
+  // 付款或任何連結：有 https:// 或沒有（pay.line.me/…、p.ecpay.com.tw/…）
+  .replace(/https?:\/\/\S+/gi,'[連結]')
+  .replace(/(?<![\w@])(?:[a-z0-9-]+\.)+(?:com|tw|me|net|io|cc|co|jp|hk|app|link|ly|gl)(?:\.[a-z]{2})?\/\S*/gi,'[連結]')
+  // 轉帳末碼／後幾碼：「末五碼 45678」「後5碼：12345」「末四碼是 9876」，數字可在下一行
+  .replace(/((?:末|後|尾)\s*[一二三四五六七八九十0-9]{1,2}\s*碼|末碼|尾碼|後碼)[\s:：是為]*([0-9]{2,8})/g,'$1 [數字遮蔽]')
+  // 驗證碼、OTP、認證碼
+  .replace(/(驗證碼|認證碼|簡訊碼|otp|code|驗證)\s*[:：是為]?\s*[A-Za-z0-9]{3,10}/gi,'$1 [遮蔽]')
   // 「帳號／密碼」後面到句尾全部遮蔽（交付訊息常把多組帳密寫在同一行）
   .replace(/(密碼|帳號|帳密|password|passwd|pw|pass|ID)\s*[:：]?[^\n，。,；;]*/gi,'$1 [遮蔽]')
   // 英數混合的 6 字元以上字串（帳號名稱、密碼、驗證碼）一律遮蔽
   .replace(/(?<![\w.@#$%&!*?+=\/-])(?=[\w.@#$%&!*?+=\/-]*\d)(?=[\w.@#$%&!*?+=\/-]*[A-Za-z])[\w.@#$%&!*?+=\/-]{6,}/g,'[遮蔽]')
-  .replace(/\d[\d\- ]{4,}\d/g,'[數字遮蔽]')
-  .replace(/https?:\/\/\S+/g,'[連結]');
+  // 銀行帳號：6 位以上數字（可含 - 或空白分段）
+  .replace(/\d[\d\- ]{4,}\d/g,'[數字遮蔽]');
 }
 const excerpt=s=>{const t=maskText(s).replace(/\s+/g,' ').trim();return t.length>60?t.slice(0,59)+'…':t};
 
@@ -108,8 +125,11 @@ export function parseThreadsExport(files,{products=[],nicknames='',now=Date.now(
   if(!c.messages.length){stats.empty_skipped++;continue}
   const other=c.participants.map(p=>p.name).find(n=>n&&n!==owner)??c.title??'';
   const external_key=c.slug;const isOwner=msg=>msg.sender_name===owner;
+  const thread_id=threadIdOf(c.slug);const keyBase=`threads:t${thread_id}`;
+  // 同一時間、同一內容的訊息用出現次序區分（只跟同時間同內容的訊息比，不受補入早期訊息影響）
+  const seenKey=new Map();const msgKey=c.messages.map(msg=>{const k=`${msg.timestamp_ms}:${messageHash(msg,isOwner(msg)?'o':'c')}`;const n=seenKey.get(k)??0;seenKey.set(k,n+1);return `${keyBase}:m:${k}:${n}`});
   const cust=c.messages.filter(x=>!isOwner(x));
-  const row={external_key,folder:c.box+'/'+c.slug,box:c.box,display_name:String(other||'').slice(0,120),first_at:c.messages[0].timestamp_ms,last_at:c.messages.at(-1).timestamp_ms,
+  const row={external_key,thread_id,folder:c.box+'/'+c.slug,box:c.box,display_name:String(other||'').slice(0,120),first_at:c.messages[0].timestamp_ms,last_at:c.messages.at(-1).timestamp_ms,
    message_count:c.messages.length,customer_message_count:cust.length,last_sender:isOwner(c.messages.at(-1))?'owner':'customer',inquiries:[],tags:[],followups:[]};
   const tagSet=new Map();const tag=(name,evidence)=>{if(!tagSet.has(name))tagSet.set(name,evidence)};
   if(c.box==='message_requests')tag('request_box',{folder:row.folder});
@@ -119,32 +139,41 @@ export function parseThreadsExport(files,{products=[],nicknames='',now=Date.now(
    let found=index.match(text),fromContext=false;
    if(!found.length&&cats.some(k=>k==='price'||k==='stock'||k==='buy')){const ctx=c.messages.slice(Math.max(0,i-4),i).map(x=>x.content??'').join(' ');found=index.match(ctx);fromContext=found.length>0}
    cats.forEach(cat=>row.inquiries.push({occurred_at:msg.timestamp_ms,category:cat,terms:found.map(f=>f.term).slice(0,5),product_ids:[...new Set(found.flatMap(f=>f.products))].slice(0,10),
-    excerpt:excerpt(text),source_key:`threads:${external_key}:${msg.timestamp_ms}:${i}:${cat}`,evidence:{folder:row.folder,timestamp_ms:msg.timestamp_ms,context:fromContext,cues:extractCues(text),pending:found.filter(f=>f.pending).map(f=>f.term),unverified:found.filter(f=>f.unverified).map(f=>f.term),said:found.filter(f=>f.said).map(f=>f.said)}}));
+    excerpt:excerpt(text),source_key:`${msgKey[i]}:${cat}`,legacy_source_key:`threads:${external_key}:${msg.timestamp_ms}:${i}:${cat}`,evidence:{folder:row.folder,timestamp_ms:msg.timestamp_ms,context:fromContext,cues:extractCues(text),pending:found.filter(f=>f.pending).map(f=>f.term),unverified:found.filter(f=>f.unverified).map(f=>f.term),said:found.filter(f=>f.said).map(f=>f.said)}}));
    if(cats.includes('price')||cats.includes('stock'))tag('inquired',{folder:row.folder,timestamp_ms:msg.timestamp_ms});
    if(cats.includes('buy'))tag('wants',{folder:row.folder,timestamp_ms:msg.timestamp_ms});
   });
-  // 疑似付款／疑似棄單：店主傳了匯款資訊後，客人 3 天內回報已付款或傳圖片
+  // 疑似付款：店主傳了匯款資訊後，客人 3 天內明確說已付款（或圖片旁寫了付款字樣）。只有圖片 → 付款證據待確認。
+  // 疑似棄單：給匯款資訊後客人明確取消；只是時間過了 → 給匯款資訊後未付款（待追蹤依據，不算棄單）。
   const episodes=[];
   c.messages.forEach((msg,i)=>{if(!isOwner(msg)||!OWNER_PAYMENT_INFO.test(msg.content??''))return;
-   const until=msg.timestamp_ms+3*DAY;const reply=c.messages.slice(i+1).find(x=>!isOwner(x)&&x.timestamp_ms<=until&&(CUSTOMER_PAID.test(x.content??'')||x.photos?.length));
-   episodes.push({sent:msg.timestamp_ms,paid:reply?.timestamp_ms??null,expired:!reply&&until<now})});
+   const until=msg.timestamp_ms+3*DAY;const after=c.messages.slice(i+1).filter(x=>!isOwner(x)&&x.timestamp_ms<=until);
+   const reply=after.find(x=>CUSTOMER_PAID.test(x.content??'')||(x.photos?.length&&PAYMENT_WORDS.test(x.content??'')));
+   const photo=!reply&&after.find(x=>x.photos?.length&&!String(x.content??'').trim());
+   const nextInfo=c.messages.slice(i+1).find(x=>isOwner(x)&&OWNER_PAYMENT_INFO.test(x.content??''))?.timestamp_ms??Infinity;
+   const cancel=!reply&&c.messages.slice(i+1).find(x=>!isOwner(x)&&x.timestamp_ms<nextInfo&&CANCEL_RX.test(x.content??''));
+   episodes.push({sent:msg.timestamp_ms,paid:reply?.timestamp_ms??null,photo:photo?.timestamp_ms??null,cancel:cancel?.timestamp_ms??null,expired:!reply&&until<now})});
   const paid=episodes.filter(e=>e.paid);
   if(paid.length)tag('paid_suspected',{folder:row.folder,timestamp_ms:paid.at(-1).paid,count:paid.length});
   const months=new Set(paid.map(e=>new Date(e.paid).toISOString().slice(0,7)));
   if(months.size>=2)tag('repeat_suspected',{folder:row.folder,months:[...months]});
+  const photoOnly=episodes.filter(e=>e.photo&&!e.paid);
+  if(photoOnly.length)tag('payment_evidence_pending',{folder:row.folder,timestamp_ms:photoOnly.at(-1).photo,count:photoOnly.length});
   const lastEp=episodes.at(-1);
-  if(lastEp&&lastEp.expired&&!lastEp.paid&&!c.messages.some(x=>!isOwner(x)&&x.timestamp_ms>lastEp.sent&&CUSTOMER_PAID.test(x.content??'')))tag('abandon_suspected',{folder:row.folder,timestamp_ms:lastEp.sent});
+  if(lastEp&&!lastEp.paid&&!c.messages.some(x=>!isOwner(x)&&x.timestamp_ms>lastEp.sent&&CUSTOMER_PAID.test(x.content??''))){
+   if(lastEp.cancel)tag('abandon_suspected',{folder:row.folder,timestamp_ms:lastEp.cancel,pay_info_ms:lastEp.sent});
+   else if(lastEp.expired)tag('payment_overdue',{folder:row.folder,timestamp_ms:lastEp.sent,days:Math.floor((now-lastEp.sent)/DAY)})}
   // 待追蹤：最近 N 天內，最後一段由客人發出且是問價／問庫存／想買
   if(row.last_sender==='customer'&&now-row.last_at<=recentDays*DAY){
    let k=c.messages.length-1;const turn=[];while(k>=0&&!isOwner(c.messages[k])){turn.unshift(c.messages[k]);k--}
    const t=turn.map(x=>x.content??'').join(' ');const cats=['price','stock','buy'].filter(x=>CATEGORY_RX[x].test(t));
-   if(cats.length){const found=index.match(t);row.followups.push({reason:'最後一則為客人'+cats.map(x=>CATEGORY_LABELS[x]).join('／')+(found.length?'：'+found.map(f=>f.term).join('、'):''),source_key:`threads:${external_key}:last:${row.last_at}`,due_on:new Date(now+8*3600000).toISOString().slice(0,10),excerpt:excerpt(t)});tag('followup',{folder:row.folder,timestamp_ms:row.last_at})}
+   if(cats.length){const found=index.match(t);row.followups.push({reason:'最後一則為客人'+cats.map(x=>CATEGORY_LABELS[x]).join('／')+(found.length?'：'+found.map(f=>f.term).join('、'):''),source_key:`${keyBase}:last:${row.last_at}`,legacy_source_key:`threads:${external_key}:last:${row.last_at}`,due_on:new Date(now+8*3600000).toISOString().slice(0,10),excerpt:excerpt(t)});tag('followup',{folder:row.folder,timestamp_ms:row.last_at})}
   }
   row.tags=[...tagSet.entries()].map(([name,evidence])=>({tag:name,evidence}));
   // 案件與成交建議：第一輪只做 A 層（疑似付款或熟客候選），其他客人等核准後再開
   row.cases=[];row.deals=[];row.waits=[];row.tasks=[];
   if(suggestScope==='all'||tagSet.has('paid_suspected')||tagSet.has('repeat_suspected')){
-   Object.assign(row,buildCases({messages:c.messages,isOwner,index,maskText,excerpt,externalKey:external_key,folder:row.folder,now}));
+   Object.assign(row,buildCases({messages:c.messages,isOwner,index,maskText,excerpt,externalKey:external_key,keyBase,folder:row.folder,now}));
    stats.suggested_customers++;stats.cases+=row.cases.length;stats.deals+=row.deals.length;stats.deals_with_amount+=row.deals.filter(d=>d.amount_twd!=null).length;stats.waits+=row.waits.length;stats.tasks+=row.tasks.length;
    for(const k of row.cases)stats.case_status[k.status]=(stats.case_status[k.status]??0)+1}
   row.summary=summaryLine(row);
