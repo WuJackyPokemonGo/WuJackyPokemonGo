@@ -29450,7 +29450,7 @@
       "related_product_ids": [],
       "year": "2026",
       "year_verified": false,
-      "checked_on": "2026-11-20",
+      "checked_on": "2026-11-21",
       "evidence_reviewed_on": "2026-11-20",
       "background_id": "BG-0285",
       "name_zh": "寶可夢人孔蓋－群馬",
@@ -29505,11 +29505,13 @@
         "2026-11-06：使用者已安排後續追蹤遊戲內開放日。",
         "2026-11-16：Serebii、Dittobase 已收錄群馬，Dittobase 標示 11/9 推出；日本攻略站ポケらく仍標「未登場」，查無玩家取得紀錄，依原規則維持即將推出。",
         "2026-11-17：新線索稱群馬第一批人孔蓋印章於11/13實裝，但未附可核實的背景皮卡丘取得畫面；Dittobase仍標11/9，日期互相衝突。依專項規則維持即將推出、日期留空。",
-        "2026-11-20：Pokéらく更新頁記載群馬集章自11/13加入，並展示群馬背景圖樣；但未提供可追溯的原始玩家領取截圖或影片。PokéXperience仍標10/23、Dittobase標11/9，日期衝突未解，故只補來源，不改已推出或填日期。"
+        "2026-11-20：Pokéらく更新頁記載群馬集章自11/13加入，並展示群馬背景圖樣；但未提供可追溯的原始玩家領取截圖或影片。PokéXperience仍標10/23、Dittobase標11/9，日期衝突未解，故只補來源，不改已推出或填日期。",
+        "2026-11-21：再查日文攻略站與新聞，仍只有設置與集章說明，查無玩家實際領到群馬背景皮卡丘的截圖或影片，維持即將推出、日期留空。"
       ],
       "notes_en": [
         "Artwork (Fukiware Falls, Numata) from PokéXperience; not yet on Serebii or Dittobase. Mark released once obtained in game.",
-        "2026-11-20: Pokéらく reports Gunma stamp-rally availability from November 13 and displays the artwork, but provides no traceable original player redemption screenshot or video. PokéXperience still dates it October 23 and Dittobase November 9, so the release date remains unresolved and the entry stays upcoming."
+        "2026-11-20: Pokéらく reports Gunma stamp-rally availability from November 13 and displays the artwork, but provides no traceable original player redemption screenshot or video. PokéXperience still dates it October 23 and Dittobase November 9, so the release date remains unresolved and the entry stays upcoming.",
+        "2026-11-21: Japanese guide sites and news still only describe the manholes and stamp rally; no player screenshot or video of receiving the Gunma background Pikachu was found, so it stays upcoming with no date."
       ],
       "search_aliases": [
         "群馬",
@@ -29526,7 +29528,7 @@
       "related_product_ids": [],
       "year": "2026",
       "year_verified": true,
-      "checked_on": "2026-11-18",
+      "checked_on": "2026-11-21",
       "evidence_reviewed_on": "2026-11-18",
       "background_id": "BG-0286",
       "name_zh": "Pokémon GO × Duolingo",
@@ -29608,11 +29610,13 @@
       ],
       "notes": [
         "2026-11-18：官方確認背景、直接遭遇名單與取得流程；PokéXperience已收錄可辨識圖樣並以進化款合計6隻，Serebii直接遭遇名單與官方一致。",
-        "活動已開始，但兌換碼須完成七個不同日期的Duolingo課程後才能取得。查核日尚未到最早可完成日，故背景先列即將推出；取得首筆可核實實拍後再改為已推出。"
+        "活動已開始，但兌換碼須完成七個不同日期的Duolingo課程後才能取得。查核日尚未到最早可完成日，故背景先列即將推出；取得首筆可核實實拍後再改為已推出。",
+        "2026-11-21：活動 11/17 開始，需七個不同日期完成 Duolingo 課程，最早 11/23 才可能拿到兌換碼；目前查無玩家領取紀錄，維持即將推出。各站報名期限寫法不一（12/21、12/29），研究與獎勵於 12/31 到期。"
       ],
       "notes_en": [
         "The official announcement confirms the background, four direct encounters and the acquisition route. PokéXperience catalogs recognizable artwork and counts six Pokémon including evolutions; Serebii matches the four official direct encounters.",
-        "The quest is live, but the code requires lessons on seven different days. At the review date, the earliest possible completion date had not arrived, so the background remains upcoming until a verifiable obtained encounter is available."
+        "The quest is live, but the code requires lessons on seven different days. At the review date, the earliest possible completion date had not arrived, so the background remains upcoming until a verifiable obtained encounter is available.",
+        "2026-11-21: The event began on November 17 and needs Duolingo lessons on seven different days, so the earliest code is November 23. No player redemption has been found yet; it stays upcoming. Sites differ on the sign-up deadline (December 21 or 29); the research and rewards expire on December 31."
       ],
       "search_aliases": [
         "Duolingo",
