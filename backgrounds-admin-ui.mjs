@@ -1,5 +1,5 @@
 import {BACKGROUNDS_DATA_URL} from './background-data.mjs';
-import {createBackgroundAdminService,mergeBackgroundOverrides,backgroundEditPayload,backgroundPokemonText} from './backgrounds-admin-service.mjs';
+import {createBackgroundAdminService,mergeBackgroundOverrides,backgroundEditPayload,backgroundPokemonText,changedBackgroundFields} from './backgrounds-admin-service.mjs';
 import {backgroundMatch,safeBackgroundImage} from './backgrounds-service.mjs';
 const $=id=>document.getElementById(id);
 function node(tag,text,cls){const n=document.createElement(tag);if(text!=null)n.textContent=text;if(cls)n.className=cls;return n}
@@ -54,7 +54,9 @@ export function initBackgroundAdminUI({client,journal,run,notify,getProducts,sho
  $('backgroundEditForm').onsubmit=event=>{event.preventDefault();run(async()=>{
   const form=$('backgroundEditForm'),values=Object.fromEntries(new FormData(form));values.related_product_ids=[...$('backgroundRelatedProducts').selectedOptions].map(o=>o.value);
   const record=backgroundEditPayload(values,editing),visible=form.elements.is_visible.checked;
-  try{await service.save(editing,record,visible)}finally{sync()}
+  // 只記下跟 repo 原始資料不同的欄位，其餘欄位之後會跟著 repo 更新
+  const fields=changedBackgroundFields(record,base.find(b=>b.background_id===editing.background_id));
+  try{await service.save(editing,record,visible,fields)}finally{sync()}
   $('backgroundEditDialog').close();
   try{await load();notify(visible?'背景已儲存並更新正式圖鑑。':'背景已儲存，正式圖鑑中已隱藏。')}catch{notify('背景已儲存，但清單重新載入失敗。請重新載入確認，不要重做同一筆修改。',true)}
  })};

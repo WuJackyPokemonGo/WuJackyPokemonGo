@@ -3,8 +3,8 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const d=JSON.parse(readFileSync(new URL('../data/backgrounds.json',import.meta.url),'utf8'));
 const iso=s=>/^\d{4}-\d{2}-\d{2}$/.test(s)&&!Number.isNaN(Date.parse(s));
-test('282 records, unique ids, every id gap is a redirect to a live record',()=>{
- const ids=d.records.map(r=>r.background_id);assert.equal(ids.length,282);assert.equal(new Set(ids).size,282);
+test('284 records, unique ids, every id gap is a redirect to a live record',()=>{
+ const ids=d.records.map(r=>r.background_id);assert.equal(ids.length,284);assert.equal(new Set(ids).size,284);
  const nums=new Set(ids.map(x=>+x.slice(3)));const gaps=[];for(let n=1;n<=Math.max(...nums);n++)if(!nums.has(n))gaps.push(n);
  assert.deepEqual(gaps,[270,281,282]);assert.equal(d.redirects['BG-0270'],'BG-0261');assert.equal(d.redirects['BG-0281'],'BG-0212');assert.equal(d.redirects['BG-0282'],'BG-0213');for(const to of Object.values(d.redirects))assert.ok(ids.includes(to),to);
 });

@@ -31,3 +31,25 @@ test('customer inquiry contains product names and prices without SKU or null pla
   assert.ok(!/WJ-001|null|undefined/.test(text));assert.equal(searchMatch(p,'皮卡丘'),true);
  }
 });
+
+
+test('automatic SKU assignment: CSV new rows cannot submit a manual SKU',()=>{
+ const result=planImport('schema_version,sku,name_zh\n1,WJ-0099,皮卡丘',[],[]);
+ assert.equal(result.inserted,0);
+ assert.match(result.errors[0].message,/系統自動配發/);
+});
+test('permanent SKU: CSV edits preserve existing SKU, even if the imported cell is empty',()=>{
+ const original={...values,id:'11111111-1111-4111-8111-111111111111',sku:'WJ-0001',aliases:[],updated_at:'2026-11-16T00:00:00Z'};
+ for(const csv of [
+  'schema_version,product_id,name_zh\n1,'+original.id+',皮卡丘-更新',
+  'schema_version,product_id,sku,name_zh\n1,'+original.id+',,皮卡丘-更新'
+ ]){
+  const plan=planImport(csv,[original],[]);
+  assert.deepEqual(plan.errors,[]);
+  assert.equal(plan.updated,1);
+  assert.equal(plan.payload.rows[0].values.sku,'WJ-0001');
+ }
+ const invalid=planImport('schema_version,product_id,sku,name_zh\n1,'+original.id+',WJ-0002,皮卡丘-更新',[original],[]);
+ assert.equal(invalid.updated,0);
+ assert.match(invalid.errors[0].message,/不可修改/);
+});

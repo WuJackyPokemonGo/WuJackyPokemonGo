@@ -28,7 +28,7 @@ export function activityEarlyAccess(event,now=Date.now()){
  const p=event.activity.early_access,s=event.activity.schedule;if(!p||s.date_only)return null;
  const zone=p.zone??s.zone,start=zonedInstant(p.start,zone),mainStart=zonedInstant(s.start,s.zone);
  if(now>=mainStart)return null;
- return {open:now>=start,local:formatZoned(start,zone)+' · '+zone+' ('+zoneOffset(start,zone)+')',taiwan:formatZoned(start,'Asia/Taipei')+' · UTC+08:00'};
+ return {kind:p.kind??'research',open:now>=start,local:formatZoned(start,zone)+' · '+zone+' ('+zoneOffset(start,zone)+')',taiwan:formatZoned(start,'Asia/Taipei')+' · UTC+08:00'};
 }
 export function sortActivityEvents(events,now=Date.now()){
  const rank={in_progress:0,time_unknown:1,upcoming:2,ended:3},time=e=>{const s=e.activity.schedule;return zonedInstant(s.date_only?s.start_date+'T00:00':s.start,s.zone||'Asia/Taipei')};
@@ -36,7 +36,7 @@ export function sortActivityEvents(events,now=Date.now()){
 }
 export function activityTimeLines(event,locale='zh'){
  const s=event.activity.schedule,zone=s.zone||'Asia/Taipei',zh=locale!=='en';
- if(s.date_only)return {local:`${s.start_date} – ${s.end_date} · ${zone} · ${zh?'起訖時刻待公布':'start/end hours unannounced'}`,taiwan:zh?'台灣起訖時間：待當地時刻確認後換算':'Taiwan start/end: awaiting confirmed local hours'};
+ if(s.date_only)return {local:`${s.start_date} – ${s.end_date} · ${s.rolling_local?(zh?'日期待各地公告確認':'Regional dates await confirmation'):zone} · ${zh?'起訖時刻待公布':'start/end hours unannounced'}`,taiwan:zh?'台灣起訖時間：待當地時刻確認後換算':'Taiwan start/end: awaiting confirmed local hours'};
  if(s.open_ended&&!s.end){const start=zonedInstant(s.start,zone),tail=zh?'未定結束日':'no end date announced';return s.rolling_local?{local:(zh?'各地當地時間：':'Each region’s local time: ')+s.start.replace('T',' ')+' → '+tail,taiwan:(zh?'台灣：':'Taiwan: ')+formatZoned(start,'Asia/Taipei')+' → '+tail+' · UTC+08:00'}:{local:formatZoned(start,zone)+' → '+tail+` · ${zone} (${zoneOffset(start,zone)})`,taiwan:(zh?'台灣：':'Taiwan: ')+formatZoned(start,'Asia/Taipei')+' → '+tail+' · UTC+08:00'}}
  const start=zonedInstant(s.start,zone),end=zonedInstant(s.end,zone),candidates=[start,...(s.alternative_starts??[]).map(x=>zonedInstant(x.local,zone))];
  const local=candidates.map(x=>formatZoned(x,zone)).join(zh?' 或 ':' or ')+' → '+formatZoned(end,zone)+` · ${zone} (${zoneOffset(start,zone)})`;

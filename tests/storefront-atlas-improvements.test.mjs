@@ -17,13 +17,12 @@ test('local Pokémon, region, costume and reordered words find the correct India
  assert.ok(!records.find(r=>r.background_id==='BG-0283').related_product_ids.includes(indiaId));
 });
 
-test('the atlas surfaces exact upcoming ID and title matches in the released view',()=>{
- for(const query of ['BG-0284','GO Wild Area 2026 Global','曠野地帶 2026 全球']){
-  assert.deepEqual(filterBackgrounds(records,{query,includeExactUpcoming:true}).map(r=>r.background_id),['BG-0284']);
- }
- for(const query of ['','Wild Area'])assert.ok(!filterBackgrounds(records,{query,includeExactUpcoming:true}).some(r=>r.background_id==='BG-0284'));
- assert.equal(filterBackgrounds(records,{query:'BG-0284',includeExactUpcoming:true,type:'location'}).length,0);
- assert.equal(filterBackgrounds(records,{query:'BG-0284',includeExactUpcoming:true,state:'pending'}).length,0);
+test('the atlas shows Wild Area Global after its shared artwork became available during Into the Wild',()=>{
+ const wild=records.find(r=>r.background_id==='BG-0284');
+ assert.equal(wild.release_state,'released');
+ assert.ok(filterBackgrounds(records).includes(wild));
+ assert.ok(filterBackgrounds(records,{query:'Wild Area'}).includes(wild));
+ assert.ok(!filterBackgrounds(records,{state:'upcoming'}).includes(wild));
 });
 
 test('published atlas card images do not depend on the deferred reference document',()=>{
@@ -33,12 +32,13 @@ test('published atlas card images do not depend on the deferred reference docume
 
 test('product shares render an escaped static preview and preserve a direct-link fallback',()=>{
  const pages=buildProductShares(),html=pages.get(indiaId);
- assert.ok(html.includes('og:title" content="Pikachu - Festival of Colors'));
- assert.ok(html.includes('og:image" content="https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/products/opt/'));
+ assert.ok(html.includes('og:title" content="'+JSON.parse(readFileSync(new URL('../data/product-shares.json',import.meta.url),'utf8')).find(r=>r.id===indiaId).name+'"'),'preview title is the Chinese name');
+ assert.ok(html.includes('og:description" content="'+JSON.parse(readFileSync(new URL('../data/product-shares.json',import.meta.url),'utf8')).find(r=>r.id===indiaId).name_en+'・'),'English name moves to the description');
+ assert.ok(html.includes('og:image" content="https://wujackypokemongo.github.io/WuJackyPokemonGo/assets/og/p/'+indiaId+'.jpg?v='),'landscape preview image made for share cards');assert.ok(html.includes('og:image:width" content="1200"'));
  assert.equal(readFileSync(new URL('../p/'+indiaId+'.html',import.meta.url),'utf8'),html);
- const crafted=productSharePage({id:indiaId,name:'<name>',name_en:'"title"',image:'javascript:alert(1)'});
- assert.ok(crafted.includes('content="&lt;name&gt;"'));
- assert.ok(crafted.includes('<title>&quot;title&quot;</title>'));
+ const crafted=productSharePage({id:'00000000-0000-4000-8000-000000000001',name:'<name>',name_en:'"title"',image:'javascript:alert(1)'});
+ assert.ok(crafted.includes('<title>&lt;name&gt;</title>'));
+ assert.ok(crafted.includes('content="&quot;title&quot;・'));
  assert.ok(crafted.includes('assets/og/store.jpg'));
  const base='https://example.test/shop/index.html?src=threads';
  assert.equal(productShareLink(base,indiaId,'ja'),'https://example.test/shop/p/'+indiaId+'.html?lang=ja');

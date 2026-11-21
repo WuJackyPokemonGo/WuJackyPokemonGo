@@ -1,0 +1,47 @@
+name: Daily product share sync
+# 每天台灣時間 18:00 同步商品清單，替新上架的商品產生分享頁與橫式預覽圖（貼到 Messenger／LINE／Threads 會顯示商品圖、不切到寶可夢）。
+# 背景圖鑑的預覽圖也一併更新（只重做圖片有變的）。
+# 沒有變化就不提交。推送後請 GitHub Pages 重新部署（GITHUB_TOKEN 推送不會自動觸發部署）。
+on:
+  schedule:
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: product-shares-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: npm run sync:product-shares
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --quiet pillow
+      - run: python3 scripts/build-og-images.py
+      - run: npm run build
+      - run: npm test
+      - name: Commit and push when product shares changed
+        id: commit
+        run: |
+          if git diff --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; echo "No product share changes."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Daily sync of product share pages"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Request a GitHub Pages build
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" || echo "::warning::Pages build request failed; the site updates on the next push to main."

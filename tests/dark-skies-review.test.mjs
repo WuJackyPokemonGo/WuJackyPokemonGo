@@ -18,10 +18,21 @@ test('historical Max encounters preserve 38 Dynamax and 14 separately tracked Gi
 });
 test('announced 2026 candidates never count as historical releases or establish shiny availability',()=>{
  assert.equal(row.upcoming_pokemon.length,54);
- assert.ok(row.upcoming_pokemon.every(p=>p.release_state==='upcoming'&&p.start_date==='2026-11-16'&&p.method_status==='unconfirmed'&&!('shiny' in p)));
+ assert.ok(row.upcoming_pokemon.every(p=>p.release_state==='upcoming'&&p.start_date==='2026-11-16'&&!('shiny' in p)));
+ assert.deepEqual(row.upcoming_pokemon.filter(p=>p.method_status==='reviewed').map(p=>p.dex),[280]);
+ assert.ok(row.upcoming_pokemon.filter(p=>p.dex!==280).every(p=>p.method_status==='unconfirmed'));
  assert.ok(!row.upcoming_pokemon.some(p=>[144,145,146,243,244,245,380,381,848,890].includes(p.dex)));
  for(const dex of [25,58,63,106,107,111,125,126,133,163,215,237,280,303,328,415,524,527,633,686,761,780,850,857,884])assert.ok(row.upcoming_pokemon.some(p=>p.dex===dex),dex);
  assert.equal(new Set(row.upcoming_pokemon.map(p=>p.variant_id)).size,54);
  assert.ok(!row.pokemon.some(p=>p.dex===25));
  assert.equal(row.start_date,'2025-08-18');assert.equal(row.end_date,'2025-08-24');
+});
+test('2026 GO Pass roster matches the owner list and keeps Espurr pending',()=>{
+ const dex=[1,4,7,10,25,58,63,66,92,98,106,107,111,113,125,126,129,133,138,140,163,213,215,237,280,302,320,328,349,363,374,415,519,524,527,529,530,546,554,568,615,633,686,761,766,780,810,813,816,819,821,831,849,849,850,856,870,884];
+ assert.deepEqual(row.go_pass_pokemon.map(p=>p.dex),dex);
+ assert.equal(new Set(row.go_pass_pokemon.map(p=>p.variant_id)).size,58);
+ assert.deepEqual(row.go_pass_pokemon.filter(p=>p.dex===849).map(p=>p.variant_id),['toxtricity-amped','toxtricity-low-key']);
+ assert.ok(row.go_pass_pokemon.every(p=>p.acquisition==='go-pass'&&!('shiny' in p)));
+ assert.deepEqual(row.unconfirmed_pokemon.map(p=>[p.dex,p.method_status]),[[677,'unconfirmed']]);
+ for(const q of ['#0677','妙喵','#0530','龍頭地鼠','迷布莉姆'])assert.ok(backgroundMatch(row,q),q);
 });

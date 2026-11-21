@@ -5,7 +5,7 @@ import {localRegionName} from './region-names.mjs';
 import {renderActivityFeed} from './activity-feed-ui.mjs';
 import {detailPokemonRows,detailPokemonSections,pokemonFormLabel} from './backgrounds-detail-service.mjs';
 import {loadBackgroundOverrides,mergeBackgroundOverrides} from './backgrounds-admin-service.mjs';
-import {getLocale,localeTag,setLocale,tr,productName,initLanguageHint,bindStaticTranslations} from './storefront-locale.mjs';
+import {getLocale,localeTag,setLocale,tr,t,productName,initLanguageHint,bindStaticTranslations} from './storefront-locale.mjs';
 import {loadPublicCatalog,stockLabel} from './storefront-service.mjs';
 import {backgroundState,filterBackgrounds,relatedProducts,safeBackgroundImage,safeSource,sortBackgrounds,referenceArtwork,backgroundArtworkGallery,groupBackgroundCards,filterBackgroundAnnouncements,backgroundProductSummary} from './backgrounds-service.mjs';
 const $=id=>document.getElementById(id),PAGE_SIZE=48;
@@ -140,7 +140,8 @@ function pokemonItem(p){
 }
 function renderAdditionalPokemon(r){
  for(const [key,zh,en,nzh,nen] of [
-  ['upcoming_pokemon','2026/11/16～23 復刻預告｜逐款背景待確認','Nov 16–23, 2026 return preview · backgrounds pending','此區為活動名錄預告，尚未發放，不計入上方歷史款數；不表示異色已開放。','Catalog preview only, not yet released; excluded from historical counts. This is not evidence of Shiny availability.'],
+  ['go_pass_pokemon',`2026 巨大足跡｜GO Pass（${r.go_pass_pokemon?.length ?? 0} 款）`,`2026 Dynamax Trails · GO Pass (${r.go_pass_pokemon?.length ?? 0} variants)`,'依站長名單及 Leek Duck 通行證遭遇池核對；各款實際捕獲回報另行標示。','Cross-checked against the owner’s list and the Leek Duck GO Pass pool. Individual catch reports are marked where available.'],
+  ['upcoming_pokemon','2026 巨大足跡｜極巨對戰','2026 Dynamax Trails · Max Battles','依活動名錄列出，逐款背景發放與異色資格仍待確認。','Based on the event catalog. Individual background and Shiny availability are still under review.'],
   ['unconfirmed_pokemon','名錄待核對｜尚無確認取得途徑','Unresolved catalog entries · no verified route','保留來源線索，不視為已發放。','Retained as catalog leads, not confirmed releases.']
  ]){if(!r[key]?.length)continue;const section=node('section',null,'pokemon-route');section.dataset.route=key;section.append(node('h4',tr(zh,en)),node('p',tr(nzh,nen),'subtle'));const items=node('div',null,'pokemon');for(const p of detailPokemonRows({pokemon:r[key]}))items.append(pokemonItem(p));section.append(items);$('detailPokemon').append(section)}
 }
@@ -173,26 +174,29 @@ function openDetail(r){active=r;$('backgroundLinkStatus').textContent='';$('back
 $('copyBackgroundLink').onclick=async()=>{
  const row=active;
  if(!row)return;
+ const locale=getLocale();
  const url=/^BG-\d{4}$/.test(row.background_id)?new URL('bg/'+row.background_id+'.html',location.href):new URL(location.pathname,location.origin);
  if(!url.pathname.includes('/bg/'))url.searchParams.set('background',row.background_id);
- url.searchParams.set('lang',getLocale());
+ url.searchParams.set('lang',locale);
+ const text=title(row)+'\n'+url.href;
  const status=$('backgroundLinkStatus'),input=$('backgroundLinkText');
+ const isCurrent=()=>active===row&&getLocale()===locale&&$('backgroundDialog').open;
  try{
-  await navigator.clipboard.writeText(url.href);
-  if(active!==row||!$('backgroundDialog').open)return;
+  await navigator.clipboard.writeText(text);
+  if(!isCurrent())return;
   input.hidden=true;
   status.textContent=tr('背景連結已複製，可直接分享。','Background link copied. Ready to share.');
  }catch{
-  if(active!==row||!$('backgroundDialog').open)return;
-  input.value=url.href;
+  if(!isCurrent())return;
+  input.value=text;
   input.hidden=false;
   input.focus();
   input.select();
   input.setSelectionRange(0,input.value.length);
-  status.textContent=tr('請長按下方連結並複製。','Press and hold the link below to copy.');
+  status.textContent=t('請在文字框長按全選後複製。');
  }
 };
-const updateLanguageHint=initLanguageHint();$('closeDetail').onclick=()=>$('backgroundDialog').close();$('reset').onclick=reset;$('language').value=getLocale();$('language').onchange=()=>{setLocale($('language').value);syncCrossLinks();updateLanguageHint();translate();window.dispatchEvent(new Event('wj-language-change'));if(data){buildOptions();render();if(active)renderDetail(active)}};for(const id of ['state','type','series','region','year','stockOnly','sortOrder'])$(id).onchange=()=>{page=1;render()};document.querySelectorAll('.type-tabs button').forEach(b=>b.onclick=()=>{$('type').value=b.dataset.type;page=1;render()});let bgSearchTimer=null,lastBgSearch='';$('bgSearch').oninput=()=>{page=1;render();clearTimeout(bgSearchTimer);bgSearchTimer=setTimeout(()=>{const term=$('bgSearch').value.trim();if(!term||term===lastBgSearch||!data)return;lastBgSearch=term;if(!filterBackgrounds(data.records,{query:term,state:'all',includeExactUpcoming:true}).length)track.emptyTerm('atlas',term)},900)};translate();
+const updateLanguageHint=initLanguageHint();$('closeDetail').onclick=()=>$('backgroundDialog').close();$('reset').onclick=reset;$('language').value=getLocale();$('language').onchange=()=>{setLocale($('language').value);syncCrossLinks();updateLanguageHint();translate();window.dispatchEvent(new Event('wj-language-change'));if(data){buildOptions();render();if(active){$('backgroundLinkStatus').textContent='';$('backgroundLinkText').hidden=true;renderDetail(active)}}};for(const id of ['state','type','series','region','year','stockOnly','sortOrder'])$(id).onchange=()=>{page=1;render()};document.querySelectorAll('.type-tabs button').forEach(b=>b.onclick=()=>{$('type').value=b.dataset.type;page=1;render()});let bgSearchTimer=null,lastBgSearch='';$('bgSearch').oninput=()=>{page=1;render();clearTimeout(bgSearchTimer);bgSearchTimer=setTimeout(()=>{const term=$('bgSearch').value.trim();if(!term||term===lastBgSearch||!data)return;lastBgSearch=term;if(!filterBackgrounds(data.records,{query:term,state:'all',includeExactUpcoming:true}).length)track.emptyTerm('atlas',term)},900)};translate();
 async function load(){
  try{
   const catalog=fetch(BACKGROUNDS_DATA_URL,{signal:AbortSignal.timeout(15000)}).then(response=>{if(!response.ok)throw Error('catalog unavailable');return response.json()});

@@ -33,7 +33,9 @@ export function planImport(text,products,categories){
   if(productID&&!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(productID))throw Error('既有商品識別格式無效，請使用匯出檔案中的 product_id。');
   const old=productID?byID.get(productID):(inputSKU?bySKU.get(inputSKU):undefined);
   if(productID&&!old)throw Error('找不到既有商品，請重新匯出後再更新。');
-  const sku='sku' in v?inputSKU:(old?.sku??'');
+  if(old&&inputSKU&&inputSKU!==(old.sku??''))throw Error('已配發的商品編號不可修改，請使用原 SKU。');
+  if(!old&&inputSKU)throw Error('新增商品請將 sku 欄留空，由系統自動配發流水號。');
+  const sku=old?.sku??'';
   if(sku&&seen.has(sku))throw Error('同一份 CSV 商品編號重複：'+sku);if(sku)seen.add(sku);
   if(old&&seenIDs.has(old.id))throw Error('同一份 CSV 重複更新同一件商品。');if(old)seenIDs.add(old.id);
   if(productID&&sku&&bySKU.has(sku)&&bySKU.get(sku).id!==productID)throw Error('商品編號已屬於另一件商品。');

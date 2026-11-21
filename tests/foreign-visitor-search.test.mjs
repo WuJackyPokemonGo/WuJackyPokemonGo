@@ -25,7 +25,7 @@ test('storefront search matches local names through Pokédex numbers',()=>{
  assert.ok(!searchMatch(p,'ピカチュウ'));
 });
 test('XXL/XXS tag is translated in every supported language',()=>{
- for(const locale of supportedLocales.filter(l=>l!=='zh'))assert.notEqual(t('XXL/XXS 特殊尺寸',locale),'XXL/XXS 特殊尺寸',locale);
+ for(const tag of ['XXL/XXS 特殊尺寸','大師球','神獸/傳說/究極異獸'])for(const locale of supportedLocales.filter(l=>l!=='zh'))assert.notEqual(t(tag,locale),tag,tag+' '+locale);
 });
 test('inquiries in other languages keep the Chinese product name for the owner',()=>{
  const p={id:'x',name:'皮卡丘-測試',name_en:'Pikachu - Test',dex:25,aliases:[],tags:[],images:[],status:'available',price:150};

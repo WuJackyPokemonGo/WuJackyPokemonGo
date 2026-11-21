@@ -11,7 +11,9 @@ export function mergeBackgroundOverrides(records,overrides,{includeHidden=false}
   const base=byId.get(id);
   if(entry.is_visible||includeHidden){
    if(!object(entry.record))throw Error('雲端圖鑑內容不完整。');
-   byId.set(id,{...base,...entry.record,background_id:id,is_visible:entry.is_visible,cloud_version:entry.version??0,cloud_override:true,cloud_updated_at:entry.updated_at??null});
+   // 有 fields（後台實際改過的欄位）時只套用這些欄位，其餘照 repo 最新資料；舊資料或後台新增的背景沒有 fields，套用整筆
+   const patch=Array.isArray(entry.fields)&&base?Object.fromEntries(entry.fields.filter(k=>typeof k==='string'&&k in entry.record).map(k=>[k,entry.record[k]])):entry.record;
+   byId.set(id,{...base,...patch,background_id:id,is_visible:entry.is_visible,cloud_version:entry.version??0,cloud_override:true,cloud_fields:Array.isArray(entry.fields)&&base?[...entry.fields]:null,cloud_updated_at:entry.updated_at??null});
   }else byId.delete(id);
  }
  return [...byId.values()];
@@ -26,6 +28,13 @@ export async function loadBackgroundOverrides(fetcher=fetch){
 }
 function text(value,label,max=5000,required=false){const v=String(value??'').trim();if((required&&!v)||v.length>max)throw Error(label+'未填寫或超過長度限制。');return v}
 function date(value,label){const v=String(value??'').trim();if(!v)return null;if(!/^\d{4}-\d{2}-\d{2}$/.test(v)||!Number.isFinite(Date.parse(v))||new Date(v).toISOString().slice(0,10)!==v)throw Error(label+'請填有效日期。');return v}
+// 後台存檔時找出「跟 repo 原始資料不同」的欄位；只有這些欄位會蓋過 repo，之後 repo 的更新照常顯示。
+// checked_on 每次存檔都會更新，不算你的修改。沒有 repo 原始資料（後台新增的背景）回傳 null＝整筆。
+const EDIT_FIELDS=['name_zh','name_en','type','series','series_zh','region_en','region_zh','year','start_date','end_date','image_source','source','official_sources','catalog_sources','method_zh','method_en','notes','notes_en','pokemon','evolved_pokemon','related_product_ids','release_state','verification','date_status','date_conflict','verification_note_zh','verification_note_en'];
+const LIST_FIELDS=new Set(['official_sources','catalog_sources','notes','notes_en','pokemon','evolved_pokemon','related_product_ids']);
+const POKEMON_KEYS=['dex','name_zh','name_en','variant_id','start_date','method_zh','method_en'];
+function comparable(k,v){if(v===undefined||v===null||v==='')v=LIST_FIELDS.has(k)?[]:null;if((k==='pokemon'||k==='evolved_pokemon')&&Array.isArray(v))v=v.map(p=>Object.fromEntries(POKEMON_KEYS.filter(f=>p?.[f]!==undefined&&p?.[f]!==null&&p?.[f]!=='').map(f=>[f,p[f]])));return JSON.stringify(v)}
+export function changedBackgroundFields(record,baseRow){if(!baseRow)return null;return EDIT_FIELDS.filter(k=>k in record&&comparable(k,record[k])!==comparable(k,baseRow[k]))}
 export function parseBackgroundPokemon(value){
  const rows=String(value??'').split(/\r?\n/).map(s=>s.trim()).filter(Boolean);if(rows.length>500)throw Error('寶可夢名單最多 500 筆。');
  return rows.map((line,i)=>{const parts=line.split(/[|｜\t]/).map(s=>s.trim());const dex=Number(parts[0]?.replace(/^#/,''));if(parts.length!==3||!/^#?\d+$/.test(parts[0])||!Number.isInteger(dex)||dex<1||dex>9999||!parts[1]||!parts[2]||parts[1].length>200||parts[2].length>200)throw Error(`寶可夢第 ${i+1} 行請用「編號｜中文名稱｜英文名稱」。`);return{dex,name_zh:parts[1],name_en:parts[2]}});
@@ -65,7 +74,7 @@ export function createBackgroundAdminService(client,journal,randomUUID=()=>crypt
   get pending(){return pending?structuredClone(pending):null},
   attach(id){actor=id;pending=null;if(!id)return;try{const p=JSON.parse(journal.getItem(key())||'null');if(p&&(!p.payload||typeof p.request_id!=='string'||typeof p.uncertain!=='boolean'))throw Error();pending=p}catch{throw Error('無法讀取上次圖鑑修改，請先確認瀏覽器儲存設定。')}},
   async list(){const entries=checked(await client.rpc('admin_background_catalog',{p_action:'list',p_payload:{},p_request_id:null}));if(!object(entries))throw Error('圖鑑修改資料格式不正確。');return entries},
-  async save(row,record,isVisible){if(!actor)throw Error('請先登入。');if(pending)throw Error('上一筆修改結果尚未確認，請先重試原修改。');pending={request_id:randomUUID(),uncertain:false,payload:{background_id:row.background_id,expected_version:row.cloud_version??0,is_visible:Boolean(isVisible),record:structuredClone(record)}};return send()},
+  async save(row,record,isVisible,fields=null){if(!actor)throw Error('請先登入。');if(pending)throw Error('上一筆修改結果尚未確認，請先重試原修改。');pending={request_id:randomUUID(),uncertain:false,payload:{background_id:row.background_id,expected_version:row.cloud_version??0,is_visible:Boolean(isVisible),record:structuredClone(record),...(Array.isArray(fields)?{fields:[...fields]}:{})}};return send()},
   retry:send
  };
 }

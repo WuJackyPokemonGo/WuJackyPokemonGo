@@ -44,9 +44,12 @@ begin
  return p_record;
 end $$;
 
+-- fields：後台實際改過的欄位清單。有這個清單時，網站只套用這些欄位，其餘照 repo 最新資料；
+-- 沒有清單（舊資料或後台新增的背景）時套用整筆。
 create or replace function private.background_catalog_public()
 returns jsonb language sql stable security definer set search_path='' as $$
- select coalesce(jsonb_agg(jsonb_build_object('background_id',e.key,'is_visible',coalesce((e.value->>'is_visible')::boolean,false),'record',case when e.value->>'is_visible'='true' then e.value->'record' else null end) order by e.key),'[]'::jsonb)
+ select coalesce(jsonb_agg(jsonb_build_object('background_id',e.key,'is_visible',coalesce((e.value->>'is_visible')::boolean,false),'record',case when e.value->>'is_visible'='true' then e.value->'record' else null end)
+  ||case when e.value->>'is_visible'='true' and jsonb_typeof(e.value->'fields')='array' then jsonb_build_object('fields',e.value->'fields') else '{}'::jsonb end order by e.key),'[]'::jsonb)
  from public.app_settings s cross join lateral jsonb_each(s.value->'entries') e
  where s.key='background_catalog_overrides';
 $$;
@@ -69,6 +72,10 @@ begin
  if bid is null or bid !~ '^BG-([0-9]{4}|U-[0-9a-f-]{36})$' or jsonb_typeof(p_payload->'expected_version') is distinct from 'number' or (p_payload->>'expected_version') !~ '^[0-9]+$' or jsonb_typeof(p_payload->'is_visible') is distinct from 'boolean' then raise invalid_parameter_value using message='Invalid background save request';end if;
  expected:=(p_payload->>'expected_version')::bigint;
  perform private.validate_background_record(bid,p_payload->'record');
+ if p_payload ? 'fields' and (jsonb_typeof(p_payload->'fields') is distinct from 'array' or jsonb_array_length(p_payload->'fields')>40
+   or exists(select 1 from jsonb_array_elements(p_payload->'fields') f where jsonb_typeof(f) is distinct from 'string' or not (p_payload->'record' ? (f#>>'{}')))) then
+  raise invalid_parameter_value using message='Invalid background changed-field list';
+ end if;
  fingerprint:=md5(p_payload::text);
  insert into public.app_settings(key,value,updated_by) values('background_catalog_overrides','{"entries":{},"receipts":{}}'::jsonb,actor) on conflict(key) do nothing;
  select value into document from public.app_settings where key='background_catalog_overrides' for update;
@@ -83,7 +90,8 @@ begin
   select count(*) into entry_count from jsonb_object_keys(entries);
   if entry_count>=2000 then raise check_violation using message='Background override limit reached';end if;
  end if;
- new_entry:=jsonb_build_object('background_id',bid,'record',p_payload->'record','is_visible',p_payload->'is_visible','version',current_version+1,'updated_at',clock_timestamp());
+ new_entry:=jsonb_build_object('background_id',bid,'record',p_payload->'record','is_visible',p_payload->'is_visible','version',current_version+1,'updated_at',clock_timestamp())
+  ||case when p_payload ? 'fields' then jsonb_build_object('fields',p_payload->'fields') else '{}'::jsonb end;
  entries:=jsonb_set(entries,array[bid],new_entry,true);
  receipts:=jsonb_set(receipts,array[p_request_id::text],jsonb_build_object('actor',actor,'fingerprint',fingerprint,'result',new_entry,'at',clock_timestamp()),true);
  select coalesce(jsonb_object_agg(key,value),'{}') into receipts from (select key,value from jsonb_each(receipts) order by value->>'at' desc,key limit 100) recent;
