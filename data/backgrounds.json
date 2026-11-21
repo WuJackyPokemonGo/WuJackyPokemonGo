@@ -24677,7 +24677,10 @@
           "name_en": "Vulpix",
           "name_zh": "六尾",
           "variant_id": "vulpix",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "2/1 六尾社群日有玩家實拍，確認關都暗影六尾可附年度特殊背景，火箭隊途徑依玩家紀錄及社群名錄。機率及阿羅拉暗影形態仍待核實。",
+          "method_en": "A player screenshot from the February 1 Vulpix Community Day shows Shadow Kantonian Vulpix with the annual Special Background. The Team GO Rocket route is documented by player and community sources. Odds and Shadow Alolan Vulpix eligibility remain unverified.",
+          "method_evidence": "community-screenshot"
         },
         {
           "dex": 37,
