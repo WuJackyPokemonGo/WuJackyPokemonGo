@@ -287,3 +287,8 @@ Six original Regi records remain unchanged; one expandable activity card, two-co
 ## 2026-11-20 補回紫黑商品串接
 - 11/20 早上群馬查核的提交，曾把 data/backgrounds.json 寫壞，之後「修復」時套回舊版，BG-0235 的 70 個商品關聯和註記被蓋掉（只剩 2 個）。已從 3071683 的版本補回，群馬的新資料保留。
 - 提醒：改 data/backgrounds.json 時請先 pull 最新版，改完跑 `npm test`（tests/dark-skies-products-2026-11-19.test.mjs 會擋這種遺失）。
+
+## 2026-11-21 商品頁卡在「正在載入商品…」
+- 08:16 的提交（7118d03）放出被截斷的 assets/storefront.bundle.js，語法錯誤導致商品無法載入；08:19 修復提交補回內容，但版本號（依內容計算）跟壞檔相同，手機與快取繼續用壞檔。
+- 已加 scripts/storefront-cache-epoch.mjs（需要強制換版本時加 1），並新增 tests/bundles-parse.test.mjs 檢查三個打包檔語法完整。
+- 提醒：上傳打包檔後請跑 `npm test`；若線上曾放過壞檔而內容雜湊不變，請把快取版本數字加 1。
