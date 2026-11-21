@@ -1,7 +1,7 @@
 // Threads 匯出檔 → CRM 匯入資料。全部在管理員自己的瀏覽器裡解析，私訊原文不上傳；
 // 只送出整理後的結果：客人身分、詢問紀錄（含遮蔽摘錄與證據位置）、自動標籤與待追蹤事項。
 // 判斷全部屬於「關鍵字判斷」，成交一律只標「疑似」，正式成交要由管理員在後台確認。
-import {buildCases,CASE_STATUS} from './crm-cases.mjs';
+import {buildCases,CASE_STATUS,CRED} from './crm-cases.mjs';
 
 export const CATEGORY_LABELS={price:'問價',stock:'問庫存',buy:'表示想買',payment:'交易方式',delivery:'交付問題'};
 export {CASE_STATUS};
@@ -146,15 +146,20 @@ export function parseThreadsExport(files,{products=[],nicknames='',now=Date.now(
   // 疑似付款：店主傳了匯款資訊後，客人 3 天內明確說已付款（或圖片旁寫了付款字樣）。只有圖片 → 付款證據待確認。
   // 疑似棄單：給匯款資訊後客人明確取消；只是時間過了 → 給匯款資訊後未付款（待追蹤依據，不算棄單）。
   const episodes=[];
-  c.messages.forEach((msg,i)=>{if(!isOwner(msg)||!OWNER_PAYMENT_INFO.test(msg.content??''))return;
+  // 交付帳密的訊息也含「帳號＋數字」，不算匯款資訊
+  const isPayInfo=x=>isOwner(x)&&OWNER_PAYMENT_INFO.test(x.content??'')&&!CRED.test(x.content??'');
+  c.messages.forEach((msg,i)=>{if(!isPayInfo(msg))return;
    const until=msg.timestamp_ms+3*DAY;const after=c.messages.slice(i+1).filter(x=>!isOwner(x)&&x.timestamp_ms<=until);
    const reply=after.find(x=>CUSTOMER_PAID.test(x.content??'')||(x.photos?.length&&PAYMENT_WORDS.test(x.content??'')));
-   const photo=!reply&&after.find(x=>x.photos?.length&&!String(x.content??'').trim());
-   const nextInfo=c.messages.slice(i+1).find(x=>isOwner(x)&&OWNER_PAYMENT_INFO.test(x.content??''))?.timestamp_ms??Infinity;
-   const cancel=!reply&&c.messages.slice(i+1).find(x=>!isOwner(x)&&x.timestamp_ms<nextInfo&&CANCEL_RX.test(x.content??''));
-   episodes.push({sent:msg.timestamp_ms,paid:reply?.timestamp_ms??null,photo:photo?.timestamp_ms??null,cancel:cancel?.timestamp_ms??null,expired:!reply&&until<now})});
+   let photo=!reply&&after.find(x=>x.photos?.length&&!String(x.content??'').trim());
+   // 只有圖片，但之後（下一次給匯款資訊前、14 天內）店主確實交付帳密 → 圖片＋交付，算付款
+   const nextInfoTs=c.messages.slice(i+1).find(isPayInfo)?.timestamp_ms??Infinity;
+   const delivered=photo&&c.messages.find(x=>isOwner(x)&&x.timestamp_ms>photo.timestamp_ms&&x.timestamp_ms<nextInfoTs&&x.timestamp_ms<=photo.timestamp_ms+14*DAY&&CRED.test(x.content??''));
+   const paidTs=reply?.timestamp_ms??(delivered?photo.timestamp_ms:null);if(delivered)photo=null;
+   const cancel=!paidTs&&c.messages.slice(i+1).find(x=>!isOwner(x)&&x.timestamp_ms<nextInfoTs&&CANCEL_RX.test(x.content??''));
+   episodes.push({sent:msg.timestamp_ms,paid:paidTs,paidBy:reply?'text':delivered?'photo_then_delivered':null,photo:photo?.timestamp_ms??null,cancel:cancel?.timestamp_ms??null,expired:!paidTs&&until<now})});
   const paid=episodes.filter(e=>e.paid);
-  if(paid.length)tag('paid_suspected',{folder:row.folder,timestamp_ms:paid.at(-1).paid,count:paid.length});
+  if(paid.length)tag('paid_suspected',{folder:row.folder,timestamp_ms:paid.at(-1).paid,count:paid.length,by_text:paid.filter(e=>e.paidBy==='text').length,by_photo_then_delivery:paid.filter(e=>e.paidBy==='photo_then_delivered').length});
   const months=new Set(paid.map(e=>new Date(e.paid).toISOString().slice(0,7)));
   if(months.size>=2)tag('repeat_suspected',{folder:row.folder,months:[...months]});
   const photoOnly=episodes.filter(e=>e.photo&&!e.paid);

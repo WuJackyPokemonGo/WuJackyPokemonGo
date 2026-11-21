@@ -37,6 +37,9 @@ test('2 交付：改密碼教學、登入問題與售後回覆不算交付；無
   conv('help_2','Help2',[['c',5,'之前買的帳號登不進去'],['o',4.9,'改密碼後再試']]),
   conv('help_3','Help3',[['c',5,'耿鬼多少'],['o',4.9,'耿鬼450'],['c',4.8,'我要'],['o',4.7,PAYINFO],['c',4.6,'已匯'],['o',4.5,'好的 密碼晚點給您']])]);
  assert.equal(row(res,'help_1').deals.length,1,'售後「改密碼後再試」不會再產生一筆成交');
+ // 店主實際常用的交付格式（多組帳號、密碼統一寫在最後一行）仍算交付
+ const fmt=parse([conv('fmt_1','Fmt',[['c',5,'耿鬼多少'],['o',4.9,'耿鬼450'],['c',4.8,'要'],['o',4.7,PAYINFO],['c',4.6,'已匯'],['o',4,'耿鬼 帳號 aaaa1111\n皮卡丘 帳號 cccc3333\n密碼皆為：\nab.cde']])]);
+ assert.equal(row(fmt,'fmt_1').deals.length,1,'「密碼皆為：」換行寫密碼也是交付');
  assert.equal(row(res,'help_2').deals.length,0);assert.ok(!row(res,'help_2').cases.some(c=>c.status==='done'),'單純登入問題不是已成交');
  const h3=row(res,'help_3');assert.equal(h3.deals.length,0);assert.equal(h3.cases[0].status,'payment_to_verify');assert.equal(h3.cases[0].evidence.delivery_unclear,true,'提到密碼但看不出交付 → 待確認');
 });
@@ -56,6 +59,9 @@ test('4 跨商品報價：成交金額對應實際交付的商品；無法確定
   conv('two_q','TwoQ',[['c',6,'耿鬼多少'],['o',5.9,'耿鬼450'],['c',5.8,'皮卡丘呢'],['o',5.7,'皮卡丘1200'],['c',5.6,'我要耿鬼'],['o',5.5,PAYINFO],['c',5.4,'已匯'],['o',5,'耿鬼 帳號 aaaa1111 密碼 bbbb2222']]),
   conv('vague_q','VagueQ',[['c',6,'耿鬼跟皮卡丘多少'],['o',5.9,'450'],['o',5.85,'1200'],['c',5.8,'我要一隻'],['o',5.5,PAYINFO],['c',5.4,'已匯'],['o',5,'帳號 aaaa1111 密碼 bbbb2222']])]);
  const d=row(res,'two_q').deals[0];assert.equal(d.amount_twd,450);assert.deepEqual(d.product_ids,[G]);
+ // 真實資料常見：客人自己算總價、店主直接給匯款資訊（等於同意）→ 用這個總價
+ const tot=parse([conv('tot_1','Tot',[['c',6,'耿鬼跟皮卡丘多少'],['o',5.9,'一隻100'],['c',5.8,'這樣是200嗎'],['o',5.7,PAYINFO],['c',5.6,'已匯'],['o',5,'耿鬼 帳號 aaaa1111\n皮卡丘 帳號 cccc3333\n密碼皆為：\nab.cde']])]);
+ assert.equal(row(tot,'tot_1').deals[0].amount_twd,200);assert.match(row(tot,'tot_1').deals[0].evidence.amount_basis,/客人/);
  const v=row(res,'vague_q').deals[0];assert.equal(v.amount_twd,null);assert.match(v.evidence.amount_basis,/待確認/);
 });
 
@@ -87,6 +93,11 @@ test('7 附圖：提供匯款資料後傳款式圖片不算付款、不進 A 層
  const all=parse([conv('pic_2','Pic2',[['c',3,'耿鬼多少'],['o',2.9,'耿鬼450'],['o',2.8,PAYINFO],['c',2.7,null,PHOTO]])]);
  const c=row(all,'pic_2').cases[0];assert.equal(c.status,'awaiting_payment');assert.equal(c.evidence.payment_evidence_pending,true,'只有圖片 → 付款證據待確認');
  assert.ok(row(res,'pic_3').tags.some(t=>t.tag==='paid_suspected'));assert.equal(row(res,'pic_3').cases[0].status,'payment_to_verify');
+ // 真實資料常見：給匯款資訊後只傳轉帳截圖，之後店主交付帳密 → 圖片＋交付才算付款，進 A 層
+ const pd=parseThreadsExport(new Map([conv('pic_4','Pic4',[['c',5,'耿鬼多少'],['o',4.9,'耿鬼450'],['c',4.8,'要'],['o',4.7,PAYINFO],['c',4.6,null,PHOTO],['o',4,'耿鬼 帳號 aaaa1111 密碼 bbbb2222']]),FILLER]),{products,now:NOW});
+ const p4=row(pd,'pic_4');const t4=p4.tags.find(t=>t.tag==='paid_suspected');
+ assert.ok(t4&&t4.evidence.by_photo_then_delivery===1,'圖片＋之後交付 → 疑似付款');assert.ok(!p4.tags.some(t=>t.tag==='payment_evidence_pending'));
+ assert.equal(p4.cases[0].status,'done');assert.equal(p4.cases[0].evidence.paid_by,'photo_then_delivered');
 });
 
 test('8 棄單：只憑時間經過不算棄單，需要明確取消',()=>{

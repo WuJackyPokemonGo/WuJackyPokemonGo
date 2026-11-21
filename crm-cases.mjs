@@ -21,7 +21,7 @@ export const OPEN_STATUSES=new Set(['owner_to_reply','payment_to_verify','to_del
 
 const DAY=86400000;
 // 交付：密碼／帳密後面接著英數字帳密，或「帳號 xxx … 密碼」成對出現
-const CRED=/(?:密碼|帳密|password|pw)\s*[:：]?\s*[\x21-\x7e]{4,}|(?:帳號|account)\s*[:：]?\s*[\x21-\x7e]{4,}[\s\S]{0,80}?(?:密碼|password)/i;
+export const CRED=/(?:密碼|帳密|password|pw)\s*(?:皆為|皆是|都是|都為|一樣是|統一為?|是|為)?\s*[:：;；]?\s*[\x21-\x7e]{4,}|(?:帳號|account)\s*[:：]?\s*[\x21-\x7e]{4,}[\s\S]{0,80}?(?:密碼|password)/i;
 // 售後重設（已交付過的案件裡重給新密碼）不算新的一次交付
 const RESEND=/新密碼|改成|改為|重設|重置|重新給|再給一次|更新密碼/;
 const MENTIONS_CRED=/密碼|帳密|帳號/;
@@ -58,6 +58,9 @@ export function priceCandidates(text){
   out.push({value:v,total:!!m[1],each:/一隻|一個|各|每隻|單隻|一隻是/.test(t.slice(Math.max(0,m.index-6),m.index+m[0].length)),currency:cur,index:m.index})}
  return out}
 const customerOffer=text=>{const m=String(text??'').match(/(?<![\d,])([1-9]\d{1,4})\s*(收|可以嗎|嗎|行嗎|可嗎)/);return m?{value:Number(m[1]),currency:currencyNear(String(text),m.index,m.index+m[0].length)}:null};
+// 客人寫的整筆金額：「總共1200」「那總共1000對吧」「100對嗎」
+const customerTotal=text=>{const s=String(text??'');const m=s.match(/(?:總共|一共|總計|合計|共)\s*(?:NT\$?|\$)?\s*([1-9]\d{1,4}(?:,\d{3})?)/)??s.match(/(?<![\d,])([1-9]\d{1,4}(?:,\d{3})?)\s*(?:元|塊)?\s*(?:對吧|對嗎|對不對|沒錯吧)/)??s.match(/(?:這樣是?|就是|總共是?|全部)\s*([1-9]\d{1,4}(?:,\d{3})?)\s*(?:元|塊)?\s*(?:嗎|對吧|吧)/);
+ if(!m)return null;const v=Number(m[1].replace(/,/g,''));return v>=30?{value:v,currency:currencyNear(s,m.index,m.index+m[0].length)}:null};
 const paidAmount=text=>{const s=String(text??'');const m=s.match(/(?:轉帳|匯款?|轉了?|匯了?)\s*(?:NT\$?|\$)?\s*([1-9]\d{1,4}(?:,\d{3})?)\s*(?:元|塊)|\$\s*([1-9]\d{1,2}(?:,\d{3})?|[1-9]\d{1,4})(?![\d,])/);return m?{value:Number((m[1]??m[2]).replace(/,/g,'')),currency:currencyNear(s,m.index,m.index+m[0].length)}:null};
 
 // 交付訊息的品項文字與數量（「蜥蜴王 帳號… 密碼…」→ 蜥蜴王）
@@ -88,7 +91,7 @@ function quotesFrom(text,ts,index,contextTerms,productsOf){
 // c.messages 已依時間排序。keyBase＝穩定的對話識別（threads:t<thread id>），回傳 {cases, deals, waits, tasks}
 export function buildCases({messages,isOwner,index,maskText,excerpt,externalKey,keyBase=`threads:${externalKey}`,folder,now}){
  const eps=[];let cur=null;
- const open=(m)=>{cur={start:m.timestamp_ms,last:m.timestamp_ms,msgs:[],terms:new Map(),quotes:[],offers:[],payInfoAt:null,paidAt:null,paidMsg:null,payPhotoAt:null,cancelAt:null,deliveries:[],delivered:new Set(),unclear:false,asked:false,lastCustTerms:[]};eps.push(cur);return cur};
+ const open=(m)=>{cur={start:m.timestamp_ms,last:m.timestamp_ms,msgs:[],terms:new Map(),quotes:[],offers:[],totals:[],payInfoAt:null,paidAt:null,paidMsg:null,payPhotoAt:null,cancelAt:null,deliveries:[],delivered:new Set(),unclear:false,asked:false,lastCustTerms:[]};eps.push(cur);return cur};
  const addTerms=(ep,found)=>{for(const f of found)if(!ep.terms.has(f.term))ep.terms.set(f.term,f.products)};
  const productsOf=t=>index.match(t).find(f=>f.term===t)?.products??[];
  // 還沒交付的品項（同一商品的不同叫法算同一個）
@@ -99,7 +102,9 @@ export function buildCases({messages,isOwner,index,maskText,excerpt,externalKey,
    // 售後重給新密碼：最近交付過、而且這次沒有新的付款 → 不算新的交付
    const recent=[...eps].reverse().find(e=>e.deliveries.length&&ts-e.deliveries.at(-1).ts<=14*DAY);
    if(RESEND.test(text)&&recent&&!(cur&&cur!==recent&&(cur.paidAt||cur.payInfoAt))){recent.msgs.push(m);recent.last=Math.max(recent.last,ts);continue}
-   const waiting=eps.filter(e=>(e.paidAt||e.payInfoAt||e.asked)&&(!e.deliveries.length||undelivered(e).length));
+   // 可接這次交付的案件：目前這段；或 14 天內有付款／匯款資訊、還沒交付完的案件。已交付過的，3 天內才算分批交付
+   const waiting=eps.filter(e=>(!e.deliveries.length||undelivered(e).length)&&(e===cur||((e.paidAt||e.payInfoAt)&&ts-(e.paidAt??e.payInfoAt)<=14*DAY))
+    &&(!e.deliveries.length||ts-e.deliveries.at(-1).ts<=3*DAY||e===cur));
    let target=null,how='context';
    if(dterms.length){const hit=waiting.filter(e=>dterms.some(t=>undelivered(e).some(u=>sameItem(u,t,productsOf))));
     target=hit.find(e=>e.paidAt)??hit[0]??null;if(target)how='items'}
@@ -113,7 +118,8 @@ export function buildCases({messages,isOwner,index,maskText,excerpt,externalKey,
     if(!dterms.length&&paidOpen.length>1)how='uncertain'}
    target.deliveries.push({ts,raw:text,terms:dterms,how});for(const t of dterms){target.delivered.add(t);if(!target.terms.has(t))target.terms.set(t,index.match(t)[0]?.products??[])}
    target.last=Math.max(target.last,ts);target.msgs.push(m);
-   if(target===cur&&!undelivered(cur).length){const next=messages[i+1];if(!next||!(isOwner(next)&&CRED.test(next.content??'')))cur=null}continue}
+   // 交付後這段結束（下一則仍是交付除外）；同一單的其餘品項之後再交付，會依品項在 3 天內配回這一段
+   if(target===cur){const next=messages[i+1];if(!next||!(isOwner(next)&&CRED.test(next.content??'')))cur=null}continue}
   // 交付後 7 天內問換綁／登入問題 → 屬於剛交付那筆的售後，不另開案件
   if(!owner&&!cur&&(REBIND_ASK.test(text)||REBIND_FAIL.test(text))){const prev=[...eps].reverse().find(e=>e.deliveries.length);if(prev&&ts-prev.deliveries.at(-1).ts<=7*DAY){prev.msgs.push(m);prev.last=Math.max(prev.last,ts);continue}}
   if(!cur){if(!owner&&!text&&!m.photos?.length)continue;open(m)}
@@ -128,6 +134,7 @@ export function buildCases({messages,isOwner,index,maskText,excerpt,externalKey,
    if(/已取消|取消訂單|幫您取消|先幫您釋出|那就不保留/.test(text))cur.cancelAt=ts}
   else{const found=index.match(text);addTerms(cur,found);if(found.length)cur.lastCustTerms=found.map(f=>f.term);
    if(Object.values(ASK).some(r=>r.test(text)))cur.asked=true;
+   const tot=customerTotal(text);if(tot)cur.totals.push({...tot,ts,k:cur.msgs.length-1});
    const o=customerOffer(text);if(o)cur.offers.push({...o,ts,items:found.length?found.map(f=>f.term):[...cur.lastCustTerms],k:cur.msgs.length-1});
    const photo=m.photos?.length>0;
    if(!cur.paidAt&&(PAID.test(text)||(photo&&PAY_WORDS.test(text)))){cur.paidAt=ts;cur.paidMsg=m}
@@ -137,6 +144,8 @@ export function buildCases({messages,isOwner,index,maskText,excerpt,externalKey,
  const cases=[],deals=[],waits=[],allTasks=[];
  for(const ep of eps){
   const ownerMsgs=ep.msgs.filter(isOwner),custMsgs=ep.msgs.filter(m=>!isOwner(m));
+  // 只傳圖片、之後店主確實交付帳密 → 圖片＋交付才算付款證據；沒有交付就維持「付款證據待確認」
+  if(!ep.paidAt&&ep.payPhotoAt&&ep.deliveries.some(d=>d.ts>ep.payPhotoAt)){ep.paidAt=ep.payPhotoAt;ep.paidBy='photo_then_delivered';ep.payPhotoAt=null}
   if(!custMsgs.length&&!ep.deliveries.length)continue;// 只有店主單方面發話，不算案件
   if(!ep.asked&&!ep.payInfoAt&&!ep.paidAt&&!ep.deliveries.length&&!ep.quotes.length)continue;// 純聊天
   for(const d of ep.deliveries)if(!d.terms.length)for(const f of index.match(deliveryItems(d.raw,maskText).text))if(!ep.terms.has(f.term))ep.terms.set(f.term,f.products);
@@ -174,7 +183,7 @@ export function buildCases({messages,isOwner,index,maskText,excerpt,externalKey,
   if(ep.paidAt){const firstDel=ep.deliveries[0]?.ts??Infinity;const chase=custMsgs.find(m=>m.timestamp_ms>ep.paidAt&&m.timestamp_ms<firstDel&&CHASE.test(m.content??''));if(chase)addTask('delivery_chase',chase,ep.deliveries.length?'done':'open')}
   allTasks.push(...tasks);
   cases.push({source_key:sk,opened_at:ep.start,last_at:ep.last,status,items,product_ids:productIds,excerpt:excerpt(keyMsg.content??''),
-   evidence:{folder,start_ms:ep.start,last_ms:ep.last,pay_info_ms:ep.payInfoAt,paid_ms:ep.paidAt,delivered_ms:ep.deliveries.map(d=>d.ts),last_sender:isOwner(last)?'owner':'customer',
+   evidence:{folder,start_ms:ep.start,last_ms:ep.last,pay_info_ms:ep.payInfoAt,paid_ms:ep.paidAt,...(ep.paidBy?{paid_by:ep.paidBy}:{}),delivered_ms:ep.deliveries.map(d=>d.ts),last_sender:isOwner(last)?'owner':'customer',
     ...(ep.unclear&&!ep.deliveries.length?{delivery_unclear:true}:{}),...(ep.payPhotoAt&&!ep.paidAt?{payment_evidence_pending:true,payment_photo_ms:ep.payPhotoAt}:{}),
     ...(overdue&&!ep.cancelAt&&status==='awaiting_payment'?{payment_overdue_days:overdue}:{}),...(ep.cancelAt?{cancel_ms:ep.cancelAt}:{}),
     ...(ep.deliveries.some(d=>d.how==='uncertain')?{delivery_match:'uncertain'}:{}),...(budget?{budget:{...budget,items}}:{})}});
@@ -205,9 +214,19 @@ function dealFor(ep,{sk,keyBase,folder,index,maskText,excerpt,productsOf}){
   const quotes=ep.quotes.filter(q=>q.ts<=cutoff);
   // 客人出價、店主同意
   const agreed=ep.offers.filter(o=>o.ts<=cutoff&&ep.msgs.slice(o.k+1,o.k+3).some(x=>x.timestamp_ms<=cutoff&&!x.content?.match(/不/)&&AGREE.test(x.content??'')&&x!==ep.msgs[o.k]&&x.sender_name!==ep.msgs[o.k].sender_name));
+  // 整筆金額（跟這次付款綁在一起）：客人付款前寫的總額（店主同意，或之後直接付款），其次是店主最後報的總價
+  const before=ep.msgs.filter(m=>m.timestamp_ms<=cutoff);const lastQuoteTs=Math.max(0,...quotes.map(q=>q.ts));
+  // 店主同意：回「對／是／好／可以」，或下一則店主訊息直接給匯款資訊
+  const ownerNext=t=>ep.msgs.slice(t.k+1).find(x=>x.sender_name!==ep.msgs[t.k].sender_name);
+  const custTotal=[...ep.totals].reverse().find(t=>t.ts<=cutoff&&t.ts>=lastQuoteTs&&(ep.msgs.slice(t.k+1,t.k+3).some(x=>x.sender_name!==ep.msgs[t.k].sender_name&&/^(對|是|沒錯|ok|好|可以)/i.test(String(x.content??'').trim()))
+   ||(ownerNext(t)&&PAY_INFO.test(ownerNext(t).content??'')&&!CRED.test(ownerNext(t).content??''))
+   ||(ep.paidMsg&&before.filter(m=>m.timestamp_ms>t.ts&&m.timestamp_ms<=ep.paidAt).length<=4)));
+  const ownerTotal=[...quotes].reverse().find(q=>q.total);const laterItem=ownerTotal&&quotes.some(q=>!q.total&&q.ts>ownerTotal.ts);
   const sameSet=(a,b)=>{const ga=groups(a,productsOf),gb=groups(b,productsOf);return ga.length===gb.length&&ga.every(g=>gb.some(h=>g.some(x=>h.some(y=>same(x,y)))))};
-  const total=[...quotes].reverse().find(q=>q.total&&dealTerms.length>1&&sameSet(q.items,dealTerms));
-  if(total)pick(total.value,total.currency,'店主報總價',total.ts);
+  const total=[...quotes].reverse().find(q=>q.total&&dealTerms.length>0&&q.items.length>0&&sameSet(q.items,dealTerms));
+  if(custTotal)pick(custTotal.value,custTotal.currency,'客人付款前寫的整筆金額',custTotal.ts);
+  else if(total)pick(total.value,total.currency,'店主報總價',total.ts);
+  else if(ownerTotal&&!laterItem&&dealTerms.length!==1)pick(ownerTotal.value,ownerTotal.currency,'店主最後報的整筆總價',ownerTotal.ts);
   else if(dealTerms.length){
    const per=dealTerms.map(t=>{const o=[...agreed].reverse().find(x=>groups(x.items,productsOf).length===1&&same(x.items[0],t));if(o)return {...o,why:'客人出價、店主同意'};
     const q=[...quotes].reverse().find(x=>!x.total&&!x.ambiguous&&x.items.some(y=>same(y,t)));return q?{...q,why:q.each&&qtyOf(t)>1?`店主報單價×${qtyOf(t)}`:'店主報價',value:q.each&&qtyOf(t)>1?q.value*qtyOf(t):q.value}:null});
@@ -217,7 +236,7 @@ function dealFor(ep,{sk,keyBase,folder,index,maskText,excerpt,productsOf}){
   else{
    // 交付品項不明：整段只有一個明確的報價金額時才採用，否則待確認
    const values=new Set(quotes.map(q=>q.currency+q.value));
-   if(values.size===1&&quotes.length){const q=quotes.at(-1);pick(q.value,q.currency,'店主報價（交付品項不明，只有這一個報價）',q.ts)}
+   if(values.size===1&&quotes.length){const q=quotes.at(-1);const mult=q.each&&!q.total&&qty>1;pick(mult?q.value*qty:q.value,q.currency,mult?`店主報單價×${qty}（交付品項不明，只有這一個報價）`:'店主報價（交付品項不明，只有這一個報價）',q.ts)}
    else basis=quotes.length?'交付品項不明、有多個報價，待確認':''}
  }
  const basisMsg=basisTs?ep.msgs.find(m=>m.timestamp_ms===basisTs):null;
