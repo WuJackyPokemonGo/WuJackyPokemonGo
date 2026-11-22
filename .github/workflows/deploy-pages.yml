@@ -1,0 +1,47 @@
+name: Check and deploy site
+# 推到 main 後先檢查，全部通過才部署到 GitHub Pages；任何一項失敗就不部署，正式站維持上一個正常版本。
+# 需要在 GitHub → Settings → Pages → Build and deployment → Source 選「GitHub Actions」才會生效
+# （選「Deploy from a branch」時，GitHub 會不經檢查直接發布 main）。
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Site integrity (JSON, bundles, versions, admin pages, background count)
+        run: node scripts/check-site.mjs
+      - run: npm test
+      - name: Generated files are up to date
+        run: |
+          npm run build
+          git diff --exit-code -- assets/cloud-admin.bundle.js assets/storefront.bundle.js assets/backgrounds.bundle.js index.html
+  deploy:
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      # 發布內容與原本「從 main 分支發布」相同：整個 repo（不含 .git、.github）
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
