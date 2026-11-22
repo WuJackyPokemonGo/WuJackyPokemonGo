@@ -11698,7 +11698,7 @@
       "reference_review": "images-compared-2026-10-24"
     },
     {
-      "name_en": "National Trust Belton House",
+      "name_en": "National Trust Belton Estate",
       "type": "location",
       "dates_source": "July 18th - September 6th 2026",
       "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/nationaltrustbeltonhouse.jpg?v=20260816",
@@ -11721,7 +11721,7 @@
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
       "verification": "official-event-confirmed",
       "background_id": "BG-0164",
-      "name_zh": "英國國民信託－Belton House",
+      "name_zh": "英國國民信託－Belton Estate",
       "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/news/nationaltrust-2026"
@@ -11781,7 +11781,12 @@
         "national_trust_belton_house",
         "nationaltrustbeltonhouse"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "search_aliases": [
+        "National Trust Belton House",
+        "英國國民信託－Belton House",
+        "Belton House"
+      ]
     },
     {
       "name_en": "National Trust Calke Abbey",
@@ -11870,7 +11875,7 @@
       "reference_review": "images-compared-2026-10-24"
     },
     {
-      "name_en": "National Trust Chirk",
+      "name_en": "National Trust Chirk Castle and Garden",
       "type": "location",
       "dates_source": "July 18th - September 6th 2026",
       "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/nationaltrustchirk.jpg?v=20260816",
@@ -11893,7 +11898,7 @@
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
       "verification": "official-event-confirmed",
       "background_id": "BG-0166",
-      "name_zh": "英國國民信託－Chirk",
+      "name_zh": "英國國民信託－Chirk Castle and Garden",
       "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/news/nationaltrust-2026"
@@ -11953,7 +11958,12 @@
         "national_trust_chirk",
         "nationaltrustchirk"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "search_aliases": [
+        "National Trust Chirk",
+        "英國國民信託－Chirk",
+        "Chirk"
+      ]
     },
     {
       "name_en": "National Trust Cliveden",
@@ -12219,7 +12229,7 @@
       "reference_review": "images-compared-2026-10-24"
     },
     {
-      "name_en": "National Trust Fountains Abbey Estate",
+      "name_en": "National Trust Fountains Abbey",
       "type": "location",
       "dates_source": "July 18th - September 6th 2026",
       "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/nationaltrustfountainsabbeyestate.jpg?v=20260816",
@@ -12242,7 +12252,7 @@
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
       "verification": "official-event-confirmed",
       "background_id": "BG-0170",
-      "name_zh": "英國國民信託－Fountains Abbey Estate",
+      "name_zh": "英國國民信託－Fountains Abbey",
       "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/news/nationaltrust-2026"
@@ -12295,7 +12305,12 @@
         "national_trust_fountains_abbey_estate",
         "nationaltrustfountainsabbeyestate"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "search_aliases": [
+        "National Trust Fountains Abbey Estate",
+        "英國國民信託－Fountains Abbey Estate",
+        "Fountains Abbey Estate"
+      ]
     },
     {
       "name_en": "National Trust Gibside",
@@ -12372,12 +12387,13 @@
       "region_zh": "英國",
       "reference_ids": [
         "national_trust_gibslide",
-        "nationaltrustgibside"
+        "nationaltrustgibside",
+        "national_trust_gibside"
       ],
       "reference_review": "images-compared-2026-10-24"
     },
     {
-      "name_en": "National Trust Hanbury",
+      "name_en": "National Trust Hanbury Hall",
       "type": "location",
       "dates_source": "July 18th - September 6th 2026",
       "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/nationaltrusthanbury.jpg?v=20260816",
@@ -12400,7 +12416,7 @@
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
       "verification": "official-event-confirmed",
       "background_id": "BG-0172",
-      "name_zh": "英國國民信託－Hanbury",
+      "name_zh": "英國國民信託－Hanbury Hall",
       "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/news/nationaltrust-2026"
@@ -12460,7 +12476,12 @@
         "national_trust_hanbury",
         "nationaltrusthanbury"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "search_aliases": [
+        "National Trust Hanbury",
+        "英國國民信託－Hanbury",
+        "Hanbury"
+      ]
     },
     {
       "name_en": "National Trust Hardwick",
@@ -12807,7 +12828,7 @@
       "reference_review": "images-compared-2026-10-24"
     },
     {
-      "name_en": "National Trust Lyme Park",
+      "name_en": "National Trust Lyme",
       "type": "location",
       "dates_source": "July 18th - September 6th 2026",
       "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/nationaltrustlymepark.jpg?v=20260816",
@@ -12830,7 +12851,7 @@
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
       "verification": "official-event-confirmed",
       "background_id": "BG-0177",
-      "name_zh": "英國國民信託－Lyme Park",
+      "name_zh": "英國國民信託－Lyme",
       "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/news/nationaltrust-2026"
@@ -12883,7 +12904,12 @@
         "national_trust_lyme_park",
         "nationaltrustlymepark"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "search_aliases": [
+        "National Trust Lyme Park",
+        "英國國民信託－Lyme Park",
+        "Lyme Park"
+      ]
     },
     {
       "name_en": "National Trust Mottisfont",
@@ -13137,7 +13163,7 @@
       "reference_review": "images-compared-2026-10-24"
     },
     {
-      "name_en": "National Trust Polesden",
+      "name_en": "National Trust Polesden Lacey",
       "type": "location",
       "dates_source": "July 18th - September 6th 2026",
       "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/nationaltrustpolesden.jpg?v=20260816",
@@ -13160,7 +13186,7 @@
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
       "verification": "official-event-confirmed",
       "background_id": "BG-0181",
-      "name_zh": "英國國民信託－Polesden",
+      "name_zh": "英國國民信託－Polesden Lacey",
       "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/news/nationaltrust-2026"
@@ -13220,7 +13246,12 @@
         "national_trust_polesden",
         "nationaltrustpolesden"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "search_aliases": [
+        "National Trust Polesden",
+        "英國國民信託－Polesden",
+        "Polesden"
+      ]
     },
     {
       "name_en": "National Trust Scotney Castle",
@@ -13395,7 +13426,7 @@
       "reference_review": "images-compared-2026-10-24"
     },
     {
-      "name_en": "National Trust Stowe Garden Park",
+      "name_en": "National Trust Stowe Gardens",
       "type": "location",
       "dates_source": "July 18th - September 6th 2026",
       "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/nationaltruststowegardenpark.jpg?v=20260816",
@@ -13418,7 +13449,7 @@
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
       "verification": "official-event-confirmed",
       "background_id": "BG-0184",
-      "name_zh": "英國國民信託－Stowe Garden Park",
+      "name_zh": "英國國民信託－Stowe Gardens",
       "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/news/nationaltrust-2026"
@@ -13478,7 +13509,12 @@
         "national_trust_stowe_garden_park",
         "nationaltruststowegardenpark"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "search_aliases": [
+        "National Trust Stowe Garden Park",
+        "英國國民信託－Stowe Garden Park",
+        "Stowe Garden Park"
+      ]
     },
     {
       "name_en": "National Trust Tredegar House",
@@ -13739,7 +13775,7 @@
       "reference_review": "images-compared-2026-10-24"
     },
     {
-      "name_en": "National Trust Wimpole",
+      "name_en": "National Trust Wimpole Estate",
       "type": "location",
       "dates_source": "July 18th - September 6th 2026",
       "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/nationaltrustwhimpole.jpg?v=20260816",
@@ -13762,7 +13798,7 @@
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
       "verification": "official-event-confirmed",
       "background_id": "BG-0188",
-      "name_zh": "英國國民信託－Wimpole",
+      "name_zh": "英國國民信託－Wimpole Estate",
       "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/news/nationaltrust-2026"
@@ -13820,9 +13856,16 @@
       "region_zh": "英國",
       "reference_ids": [
         "national_trust_whimpole",
-        "nationaltrustwhimpole"
+        "nationaltrustwhimpole",
+        "national_trust_wimpole",
+        "nationaltrustwimpole"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "search_aliases": [
+        "National Trust Wimpole",
+        "英國國民信託－Wimpole",
+        "Wimpole"
+      ]
     },
     {
       "name_en": "Pokemon Jet Red",
