@@ -17250,7 +17250,8 @@
         "2026-11-06：原另列為BG-0282，依官方長期集章公告「Mexico City Location Background」與本筆為同一張背景，併入本筆並轉向BG-0282。",
         "2026-11-06：連結賣場已上架的對應商品（依商品名稱與搜尋別名）。",
         "官方 FAQ 確認鋼／龍屬性限時調查須在各適用日期當地 20:00 前完成並領獎。外部名錄另列阿羅拉椰蛋樹等候選，個別附背景的取得方式仍待實證。",
-        "鋼屬性限時調查的補給站任務依序為 2 個自爆磁怪、4 個巨鉗螳螂、6 個帝王拿波、8 個巨鍛匠、10 個巨金怪，完成獎勵為護城龍。龍屬性依序為 2 個刺龍王、4 個阿羅拉椰蛋樹、6 個沙漠蜻蜓、8 個三首惡龍、10 個黏美龍，完成獎勵為杖尾鱗甲龍。以上 12 隻同見於墨西哥城背景名錄，仍缺可同時辨認本人領獎與背景的遊戲實證。名錄也列洗翠黏美兒，附背景的途徑尚未確認。"
+        "鋼屬性限時調查的補給站任務依序為 2 個自爆磁怪、4 個巨鉗螳螂、6 個帝王拿波、8 個巨鍛匠、10 個巨金怪，完成獎勵為護城龍。龍屬性依序為 2 個刺龍王、4 個阿羅拉椰蛋樹、6 個沙漠蜻蜓、8 個三首惡龍、10 個黏美龍，完成獎勵為杖尾鱗甲龍。以上 12 隻同見於墨西哥城背景名錄，仍缺可同時辨認本人領獎與背景的遊戲實證。名錄也列洗翠黏美兒，附背景的途徑尚未確認。",
+        "2026-11-22覆核：Pokéxperto 的墨西哥城鋼／龍限時調查頁逐隻明列上述12隻獎勵附地點背景，任務進度與GO Hub吻合，補強社群取得途徑紀錄。該站記載18:00截止，與官方FAQ的20:00不同，期限採官方。尚未取得可辨認個別領獎與背景的原始遊戲畫面，不提升為官方保證，亦未據此擴充已確認遭遇名單。"
       ],
       "related_product_ids": [
         "b89de60c-c1b3-475f-beba-124fffb4586a"
@@ -17264,10 +17265,12 @@
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-wild-area-mexico-city-2026",
-        "https://pokemongohub.net/post/event/wild-area-2026-mexico-city/"
+        "https://pokemongohub.net/post/event/wild-area-2026-mexico-city/",
+        "https://www.pokexperto.net/index2.php?seccion=pokemongo/guia_investigacion_especial&v=t541",
+        "https://www.pokexperto.net/index2.php?seccion=pokemongo/guia_investigacion_especial&v=t542"
       ],
       "evolved_pokemon": [],
-      "checked_on": "2026-11-16",
+      "checked_on": "2026-11-22",
       "start_date": "2026-11-02",
       "end_date": "2026-11-08",
       "region_en": "Mexico",
@@ -17280,7 +17283,8 @@
         "Official clarification checked October 29: the GO Stamp Rally runs only on the main ticketed day, 10:00–20:00 local time. Extra Day add-ons do not add stamp rallies, but do grant repeat Steel-/Dragon-type Timed Research. The seven stamps may be visited in any order. Background rewards from the stamp rally are not promised.",
         "A separate ongoing stamp rally is open. The site owner confirms same-city artwork reuse; ticketed dates stay unchanged.",
         "The official FAQ confirms that Steel- and Dragon-type Timed Research rewards must be claimed by 20:00 local time on each eligible day. External catalogs list additional candidates such as Alolan Exeggutor, but their individual background routes still lack direct evidence.",
-        "GO Hub lists six encounters per Timed Research: Steel—Magnezone, Scizor, Empoleon, Tinkaton and Metagross at 2/4/6/8/10 stops, then Bastiodon on completion. Dragon—Kingdra, Alolan Exeggutor, Flygon, Hydreigon and Goodra at the same thresholds, then Kommo-o on completion. All twelve appear in the Mexico City background catalog. Direct footage linking individual claims to the background is still missing. Hisuian Sliggoo is also catalogued and its background route is unverified."
+        "GO Hub lists six encounters per Timed Research: Steel—Magnezone, Scizor, Empoleon, Tinkaton and Metagross at 2/4/6/8/10 stops, then Bastiodon on completion. Dragon—Kingdra, Alolan Exeggutor, Flygon, Hydreigon and Goodra at the same thresholds, then Kommo-o on completion. All twelve appear in the Mexico City background catalog. Direct footage linking individual claims to the background is still missing. Hisuian Sliggoo is also catalogued and its background route is unverified.",
+        "Checked November 22: PokeXperto explicitly labels the twelve Mexico City Steel/Dragon Timed Research encounters as background rewards; task thresholds agree with GO Hub. Its 18:00 deadline conflicts with the official FAQ, so retain the official 20:00 deadline. This corroborates community route records, not an official guarantee or individual in-game proof; the confirmed encounter roster is unchanged."
       ],
       "date_note_zh": "此地點背景最早自11/02起由長期集章（摔角鷹人）取得；持票曠野週末為11/6–11/8。 GO集章：僅主票券日期10:00–20:00（當地時間）；額外日加購不增加集章。額外日鋼／龍限時調查為不同內容，不能混為背景保證。",
       "date_note_en": "First obtainable from 2026-11-02 via the ongoing stamp rally (Hawlucha); the ticketed GO Wild Area weekend is November 6–8. GO Stamp Rally: main ticketed day only, 10:00–20:00 local time. Extra Day add-ons do not add a stamp rally. Repeat Steel-/Dragon-type Timed Research is separate and does not establish background eligibility.",
