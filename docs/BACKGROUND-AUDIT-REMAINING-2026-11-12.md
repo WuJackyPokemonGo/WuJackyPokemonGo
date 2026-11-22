@@ -116,3 +116,13 @@ BG-0235。玩家原圖可辨認 CP 299 極巨化拉魯拉絲、暗黑蒼穹背�
 已以該提交前的完整資料補回中段，接回可復原的最新尾段，並核對既有 282 筆逐筆完全相同。保留最新 Duolingo BG-0286，合計 283 筆，及該次更新的 as_of、來源與統計。修復提交 `f8b6ee24b5ce0c525ff6a114b1ffd57a5bee856a`。本輪外部來源複查未補足墨西哥城個別背景與雪梨額外日的實證。
 
 修復後 npm ci、345 項測試及 npm run build 全部通過。正式站已取得可解析 JSON，blob `f810dce84e1e7a7ea554e489d4453ce1c864d1c7` 與修復提交一致。
+
+## 2026-11-22 墨西哥城限時調查新增交叉來源
+
+本輪先讀最新圖鑑 blob `2109cfdfc074c78bd808b3498439922fe221362b`、本收尾紀錄、歷年覆核紀錄與正式站；圖鑑有效且共284筆。
+
+Pokéxperto 的 [鋼屬性任務](https://www.pokexperto.net/index2.php?seccion=pokemongo/guia_investigacion_especial&v=t541) 與 [龍屬性任務](https://www.pokexperto.net/index2.php?seccion=pokemongo/guia_investigacion_especial&v=t542) 逐隻明列獎勵附墨西哥城地點背景。鋼：自爆磁怪、巨鉗螳螂、帝王拿波、巨鍛匠、巨金怪、護城龍；龍：刺龍王、阿羅拉椰蛋樹、沙漠蜻蜓、三首惡龍、黏美龍、杖尾鱗甲龍。前五隻各對應2／4／6／8／10個指定補給站，末隻為完成獎勵，與 [GO Hub逐項任務表](https://pokemongohub.net/post/event/wild-area-2026-mexico-city/) 一致。
+
+證據界線：這是新增的社群來源交叉佐證，並非原始領獎與背景畫面的實證。Pokéxperto將期限寫為18:00，與 [官方FAQ](https://pokemongo.com/gowildarea/mexico-city/faq) 的20:00相衝突，期限維持官方20:00。此次只補BG-0213來源及雙語說明，原7款遭遇與所有其他條目不變；不將12款候選提升為官方保證。洗翠黏美兒背景途徑、城市狩獵額外日，以及暗黑蒼穹極巨對戰分款的原始證據仍未補齊，第05項未結案。
+
+圖鑑提交 `efd6d51dc13603a9c2dcff5302b30d5e35413ea5`，目標資料blob `745f6a8be807fbc93d4ca28a17d77c5ae8a41dcf`。發布驗收另記下方。
