@@ -55,8 +55,8 @@
   },
   {
     "id": "0f115387-5f73-4e7b-8667-1d9b8a2114d5",
-    "name": "醜醜魚（極巨化）-紫黑",
-    "name_en": "Dynamax Feebas - Dark Skies",
+    "name": "醜醜魚（極巨化）*公-紫黑",
+    "name_en": "Dynamax Feebas (Male) - Dark Skies",
     "image": ""
   },
   {
@@ -81,7 +81,7 @@
     "id": "16400d8f-bc1a-4783-97d0-77db224c8b28",
     "name": "獨角犀牛（極巨化）*母-紫黑",
     "name_en": "Dynamax Rhyhorn (Female) - Dark Skies",
-    "image": ""
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/16400d8f-bc1a-4783-97d0-77db224c8b28/e78d4fb2-ac36-4005-b737-6dfa4c79f592-thumb.png"
   },
   {
     "id": "178bb660-32d7-4703-8bde-4bd588b773d2",
@@ -175,8 +175,8 @@
   },
   {
     "id": "2a3b4823-8d9c-47e0-a36a-dc273534375d",
-    "name": "毛辮羊（極巨化）*XXS-紫黑",
-    "name_en": "Dynamax Wooloo (XXS) - Dark Skies",
+    "name": "毛辮羊（極巨化）*公-紫黑（XXS）",
+    "name_en": "Dynamax Wooloo (Male, XXS) - Dark Skies",
     "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/2a3b4823-8d9c-47e0-a36a-dc273534375d/2217427e-c5d7-4842-8579-1e02be1c8147-thumb.png"
   },
   {
@@ -234,6 +234,12 @@
     "image": ""
   },
   {
+    "id": "31f833ef-0838-49f5-9c98-050096e4839b",
+    "name": "組合包3",
+    "name_en": "組合包3",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/31f833ef-0838-49f5-9c98-050096e4839b/a2e7dd48-10c3-4030-85cd-1c8a61500e69-thumb.webp"
+  },
+  {
     "id": "3438a3e4-0250-435c-9679-d4575fa98ab2",
     "name": "來悲茶-蝴蝶結*真品",
     "name_en": "Sinistea - Bow (Antique Form)",
@@ -284,7 +290,7 @@
   {
     "id": "3e5b5bb9-a68a-457c-a8e6-ae030a59193b",
     "name": "毛辮羊（極巨化）-紫黑",
-    "name_en": "Dynamax Wooloo - Dark Skies",
+    "name_en": "Dynamax Wooloo  - Dark Skies",
     "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/3e5b5bb9-a68a-457c-a8e6-ae030a59193b/8437db8c-8e0a-4af8-a8a1-e90a0c5166ac-thumb.png"
   },
   {
@@ -399,7 +405,7 @@
     "id": "55c7569a-5551-491e-bdf2-08ee5fd07a0f",
     "name": "勾魂眼（極巨化）-紫黑",
     "name_en": "Dynamax Sableye - Dark Skies",
-    "image": ""
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/55c7569a-5551-491e-bdf2-08ee5fd07a0f/1ca22546-5fdc-42a1-a1c9-cceeeb36a7df-thumb.png"
   },
   {
     "id": "57252709-7f20-4728-8601-27e9ab3f474c",
@@ -687,7 +693,7 @@
     "id": "792f0696-ab02-40fb-8e00-9856dc3d1ebc",
     "name": "好啦魷（極巨化）-紫黑",
     "name_en": "Dynamax Inkay - Dark Skies",
-    "image": ""
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/792f0696-ab02-40fb-8e00-9856dc3d1ebc/79d36e22-ec88-4f63-b939-2451eedc7996-thumb.png"
   },
   {
     "id": "7a2408b1-90c3-49d2-8187-8639cc6ff10e",
@@ -703,9 +709,9 @@
   },
   {
     "id": "7ded568d-2ee5-4168-96da-f273c8e7f0c5",
-    "name": "吉利蛋（極巨化）-紫黑",
-    "name_en": "Dynamax Chansey - Dark Skies",
-    "image": ""
+    "name": "吉利蛋（極巨化）*母-紫黑",
+    "name_en": "Dynamax Chansey (Female) - Dark Skies",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/7ded568d-2ee5-4168-96da-f273c8e7f0c5/d8f8bc0e-d362-40b1-9774-c48ff3cb6077-thumb.png"
   },
   {
     "id": "7e2b426d-c468-4ec4-b233-d558cfdaca9d",
@@ -718,6 +724,12 @@
     "name": "帕路奇亞（極巨化）-曠野地帶2026全球",
     "name_en": "Dynamax Palkia - GO Wild Area 2026 Global",
     "image": ""
+  },
+  {
+    "id": "80f07cc1-301b-466c-aad4-1ca85d248a5a",
+    "name": "組合包4",
+    "name_en": "組合包4",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/80f07cc1-301b-466c-aad4-1ca85d248a5a/3eba8270-e429-4ce9-bde2-5c43d362f41b-thumb.webp"
   },
   {
     "id": "821a1e15-8b04-4cc0-abb1-4c7115155e78",
@@ -765,7 +777,7 @@
     "id": "90d68c23-ead1-4708-a43e-96b504e2cfa5",
     "name": "鋁鋼龍（極巨化）-紫黑",
     "name_en": "Dynamax Duraludon - Dark Skies",
-    "image": ""
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/90d68c23-ead1-4708-a43e-96b504e2cfa5/a17d5510-760b-40de-83d7-126fcf291cee-thumb.png"
   },
   {
     "id": "930c5dc0-2592-4b69-b1bb-f2009ff5808f",
@@ -1056,6 +1068,12 @@
     "image": "assets/products/opt/cac40f65-8bba-441b-b0d6-b039207c83ad-f22e3841-321c-4b2a-8928-d81f5a87cb49.webp"
   },
   {
+    "id": "cbe5e7d7-98b8-4ba9-aa47-814ef548f538",
+    "name": "醜醜魚（極巨化）*母-紫黑",
+    "name_en": "Dynamax Feebas (Female) - Dark Skies",
+    "image": ""
+  },
+  {
     "id": "cc479ca2-19e3-4e2d-8cbb-8050b16c2c3f",
     "name": "帝牙盧卡（極巨化）-曠野地帶2026全球（白球）",
     "name_en": "Dynamax Dialga - GO Wild Area 2026 Global (Premier Ball)",
@@ -1083,7 +1101,7 @@
     "id": "d061fdfa-61c6-46fa-be7c-2df46d6eda03",
     "name": "獨角犀牛（極巨化）*公-紫黑",
     "name_en": "Dynamax Rhyhorn (Male) - Dark Skies",
-    "image": ""
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/d061fdfa-61c6-46fa-be7c-2df46d6eda03/17727cbb-01b5-4d70-be15-4c06a3bfc4ac-thumb.png"
   },
   {
     "id": "d131d983-5a56-4590-89b0-167335cde607",
@@ -1113,7 +1131,7 @@
     "id": "d747c2f1-1cc4-4663-b068-2fe00f35bf3c",
     "name": "鯉魚王（極巨化）*公-紫黑",
     "name_en": "Dynamax Magikarp (Male) - Dark Skies",
-    "image": ""
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/d747c2f1-1cc4-4663-b068-2fe00f35bf3c/7cd5c3e3-a26f-460d-a1b3-c53daea8c47b-thumb.png"
   },
   {
     "id": "d7a081ef-d6fd-41f2-81f0-40e2511cdce6",
@@ -1234,6 +1252,12 @@
     "name": "老翁龍（極巨化）-紫黑",
     "name_en": "Dynamax Drampa - Dark Skies",
     "image": ""
+  },
+  {
+    "id": "ed3c4bf2-fcb4-4701-8033-f26b98fb74b6",
+    "name": "組合包2",
+    "name_en": "組合包2",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/ed3c4bf2-fcb4-4701-8033-f26b98fb74b6/02005b97-022a-4476-9a20-37840fd5b307-thumb.webp"
   },
   {
     "id": "ed6dcd5b-f3db-46df-bb82-1f1b5a4e6acd",
