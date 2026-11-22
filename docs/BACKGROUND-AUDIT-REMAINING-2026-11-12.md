@@ -126,3 +126,5 @@ Pokéxperto 的 [鋼屬性任務](https://www.pokexperto.net/index2.php?seccion=
 證據界線：這是新增的社群來源交叉佐證，並非原始領獎與背景畫面的實證。Pokéxperto將期限寫為18:00，與 [官方FAQ](https://pokemongo.com/gowildarea/mexico-city/faq) 的20:00相衝突，期限維持官方20:00。此次只補BG-0213來源及雙語說明，原7款遭遇與所有其他條目不變；不將12款候選提升為官方保證。洗翠黏美兒背景途徑、城市狩獵額外日，以及暗黑蒼穹極巨對戰分款的原始證據仍未補齊，第05項未結案。
 
 圖鑑提交 `efd6d51dc13603a9c2dcff5302b30d5e35413ea5`，目標資料blob `745f6a8be807fbc93d4ca28a17d77c5ae8a41dcf`。發布驗收另記下方。
+
+正式站公開JSON已取得blob `745f6a8be807fbc93d4ca28a17d77c5ae8a41dcf`，與本輪提交一致；UTF-8及JSON解析通過，284筆ID均唯一。與開工版本逐筆比較僅BG-0213變動，遭遇仍為7款。此次屬來源及文字補錄，未更動程式碼。
