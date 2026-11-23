@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-21",
+  "as_of": "2026-11-23",
   "complete": false,
   "sources": [
     "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -29503,7 +29503,7 @@
       "related_product_ids": [],
       "year": "2026",
       "year_verified": true,
-      "checked_on": "2026-11-21",
+      "checked_on": "2026-11-23",
       "evidence_reviewed_on": "2026-11-18",
       "background_id": "BG-0286",
       "name_zh": "Pokémon GO × Duolingo",
@@ -29586,12 +29586,14 @@
       "notes": [
         "2026-11-18：官方確認背景、直接遭遇名單與取得流程；PokéXperience已收錄可辨識圖樣並以進化款合計6隻，Serebii直接遭遇名單與官方一致。",
         "活動已開始，但兌換碼須完成七個不同日期的Duolingo課程後才能取得。查核日尚未到最早可完成日，故背景先列即將推出；取得首筆可核實實拍後再改為已推出。",
-        "2026-11-21：活動 11/17 開始，需七個不同日期完成 Duolingo 課程，最早 11/23 才可能拿到兌換碼；目前查無玩家領取紀錄，維持即將推出。各站報名期限寫法不一（12/21、12/29），研究與獎勵於 12/31 到期。"
+        "2026-11-21：活動 11/17 開始，需七個不同日期完成 Duolingo 課程，最早 11/23 才可能拿到兌換碼；目前查無玩家領取紀錄，維持即將推出。各站報名期限寫法不一（12/21、12/29），研究與獎勵於 12/31 到期。",
+        "2026-11-23：官方公告確認三個期限：12/21 前加入 Duolingo 任務、12/29 前在不同日期完成 7 堂課取得兌換碼、12/31 前完成限時調查並領取獎勵（先前「各站寫法不一」是不同期限，不是互相衝突）。今天為最早可取得兌換碼的日子，仍查無玩家領取紀錄，維持即將推出。"
       ],
       "notes_en": [
         "The official announcement confirms the background, four direct encounters and the acquisition route. PokéXperience catalogs recognizable artwork and counts six Pokémon including evolutions; Serebii matches the four official direct encounters.",
         "The quest is live, but the code requires lessons on seven different days. At the review date, the earliest possible completion date had not arrived, so the background remains upcoming until a verifiable obtained encounter is available.",
-        "2026-11-21: The event began on November 17 and needs Duolingo lessons on seven different days, so the earliest code is November 23. No player redemption has been found yet; it stays upcoming. Sites differ on the sign-up deadline (December 21 or 29); the research and rewards expire on December 31."
+        "2026-11-21: The event began on November 17 and needs Duolingo lessons on seven different days, so the earliest code is November 23. No player redemption has been found yet; it stays upcoming. Sites differ on the sign-up deadline (December 21 or 29); the research and rewards expire on December 31.",
+        "2026-11-23: The official announcement gives three deadlines: join the Duolingo quest by December 21, finish seven lessons on different days by December 29 to get the code, and complete the Timed Research and claim rewards by December 31 (the earlier 'sites differ' note was these separate deadlines, not a conflict). Today is the earliest possible code date; no player redemption has been found yet, so it stays upcoming."
       ],
       "search_aliases": [
         "Duolingo",
@@ -30119,6 +30121,51 @@
         "eligible_zh": "活動日程資訊，背景取得資格依各活動公告。",
         "eligible_en": "Event schedule. Background eligibility follows each event announcement.",
         "checked_on": "2026-11-05",
+        "sources": [
+          "https://pokemongo.com/zh-Hant/news/minior-meteor-showers-2026"
+        ]
+      }
+    },
+    {
+      "event_id": "minior-geminids-2026",
+      "name_zh": "小隕星雨：雙子座流星雨",
+      "name_en": "Minior Showers: Geminids",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "全球",
+      "region_en": "Global",
+      "start_date": "2026-12-11",
+      "end_date": "2026-12-16",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-23",
+      "official_sources": [
+        "https://pokemongo.com/zh-Hant/news/minior-meteor-showers-2026"
+      ],
+      "notes": [
+        "流星雨期間有機會在地圖遇見小隕星，捕捉可獲得更多星星沙子。"
+      ],
+      "notes_en": [
+        "Minior may appear in the wild during the meteor shower, with extra Stardust for catches."
+      ],
+      "activity": {
+        "id": "minior-geminids-2026",
+        "kind": "event",
+        "schedule": {
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "rolling_local": true,
+          "start": "2026-12-11T17:00",
+          "end": "2026-12-16T23:59"
+        },
+        "conditions_zh": "流星雨期間有機會在地圖遇見小隕星，捕捉可獲得更多星星沙子。",
+        "conditions_en": "Minior may appear in the wild during the meteor shower, with extra Stardust for catches.",
+        "eligible_zh": "活動日程資訊，背景取得資格依各活動公告。",
+        "eligible_en": "Event schedule. Background eligibility follows each event announcement.",
+        "checked_on": "2026-11-23",
         "sources": [
           "https://pokemongo.com/zh-Hant/news/minior-meteor-showers-2026"
         ]

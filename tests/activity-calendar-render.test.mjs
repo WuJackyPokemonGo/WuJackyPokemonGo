@@ -21,7 +21,7 @@ test('calendar events render alongside background events without remote eligibil
   const visit=node=>{nodes.push(node);for(const child of node.children??[])visit(child)};
   visit(host);
   const eventIds=nodes.map(node=>node.dataset?.eventId).filter(Boolean);
-  assert.equal(eventIds.length,37);
+  assert.equal(eventIds.length,38);
   assert.ok(eventIds.includes('halloween-part-two-2026'));
   assert.ok(eventIds.includes('super-mega-raid-day-2026-11'));
  }finally{globalThis.document=previous}
