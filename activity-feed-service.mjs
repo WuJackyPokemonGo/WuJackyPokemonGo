@@ -49,3 +49,71 @@ export function activityWindows(event){
  for(let day=Date.parse(begin+'T00:00Z'),end=Date.parse(finish+'T00:00Z');day<=end&&out.length<100;day+=86400000){const date=new Date(day).toISOString().slice(0,10);for(const c of startCases){const start=Math.max(zonedInstant(date+'T'+w.start,zone),zonedInstant(c.local,zone)),stop=Math.min(zonedInstant(date+'T'+w.end,zone),zonedInstant(s.end,zone));if(start>=stop)continue;const key=start+':'+stop;if(seen.has(key))continue;seen.add(key);out.push({start,end:stop,local:formatZoned(start,zone)+' → '+formatZoned(stop,zone),taiwan:formatZoned(start,'Asia/Taipei')+' → '+formatZoned(stop,'Asia/Taipei'),basis:w.basis??'confirmed',scenario_zh:c.label_zh,scenario_en:c.label_en})}}
  return out.sort((a,b)=>a.start-b.start||a.end-b.end);
 }
+
+// ---- 2026-11 refresh: one activity model for the home page and the atlas ----
+const safeHttps=url=>{try{const u=new URL(url);return u.protocol==='https:'&&!u.username&&!u.password?u.href:''}catch{return ''}};
+const safeArtwork=url=>{const href=safeHttps(url);try{return href&&/\.(jpe?g|png|webp)$/i.test(new URL(href).pathname)&&!new URL(href).hash?href:''}catch{return ''}};
+const slimPokemon=list=>(list??[]).filter(p=>p&&Number.isInteger(p.dex)).map(p=>({dex:p.dex,name_zh:p.name_zh||p.name_en||'',name_en:p.name_en||p.name_zh||''}));
+// Build a compact, render-ready model. The source of truth stays data/backgrounds.json;
+// data/activity-feed.json is generated from this function at build time.
+export function buildActivityFeed(data){
+ const records=data.records??[],byId=new Map(records.map(r=>[r.background_id,r])),events=collectActivityEvents(data),backgrounds={};
+ const bgFor=e=>[...new Set([...(e.activity.background_ids??[]),...(e.background_id&&!(e.activity.background_ids)?[e.background_id]:[])])];
+ const out=events.map(e=>{
+  const ids=bgFor(e).filter(id=>byId.has(id));
+  for(const id of ids){const r=byId.get(id);backgrounds[id]={background_id:id,name_zh:r.name_zh||r.name_en,name_en:r.name_en||r.name_zh,type:r.type,image:safeArtwork(r.artwork_preview_url)||safeArtwork(r.image_source),release_state:r.release_state,verification:r.verification,start_date:r.start_date??null,end_date:r.end_date??null,region_zh:r.region_zh??'',region_en:r.region_en??'',year:r.year??null,pokemon:slimPokemon(r.pokemon),related_product_ids:[...(r.related_product_ids??[])]}}
+  const linked=ids.map(id=>byId.get(id));
+  const products=[...new Set([...(e.related_product_ids??[]),...linked.flatMap(r=>r.related_product_ids??[])])];
+  return {event_id:e.event_id,name_zh:e.name_zh,name_en:e.name_en,region_zh:e.region_zh??'',region_en:e.region_en??'',series:e.series??'',series_zh:e.series_zh??'',year:e.year??null,activity:e.activity,background_ids:ids,related_product_ids:products,official_sources:[...(e.official_sources??[])],image:linked.map(r=>safeArtwork(r.artwork_preview_url)||safeArtwork(r.image_source)).find(Boolean)||'',pokemon:slimPokemon(e.pokemon),notes_zh:Array.isArray(e.notes)?e.notes.filter(n=>typeof n==='string'):[],notes_en:Array.isArray(e.notes_en)?e.notes_en.filter(n=>typeof n==='string'):[]};
+ });
+ return {as_of:data.as_of??null,events:out,backgrounds};
+}
+// Pokémon shown for an event: event list first, else linked backgrounds (deduplicated).
+export function eventPokemon(event,feed){
+ const seen=new Set(),rows=[];
+ for(const p of [...(event.pokemon??[]),...(event.pokemon?.length?[]:(event.background_ids??[]).flatMap(id=>feed?.backgrounds?.[id]?.pokemon??[]))]){const key=p.dex+'|'+p.name_en;if(seen.has(key))continue;seen.add(key);rows.push(p)}
+ return rows;
+}
+// Background availability is separate from the event schedule.
+export function eventBackgroundState(event,feed){
+ const rows=(event.background_ids??[]).map(id=>feed?.backgrounds?.[id]).filter(Boolean);
+ if(!rows.length)return event.activity?.kind==='event'||event.activity?.kind==='feature'?'none':'unlinked';
+ if(rows.some(r=>r.release_state==='released'&&['official-event-confirmed','catalog-crosschecked','owner-confirmed'].includes(r.verification)))return 'released';
+ if(rows.some(r=>r.release_state==='upcoming'))return 'upcoming';
+ return 'pending';
+}
+export const visitorZone=()=>{try{return Intl.DateTimeFormat().resolvedOptions().timeZone||'Asia/Taipei'}catch{return 'Asia/Taipei'}};
+// "rolling": each region starts at the same local wall-clock time.
+// "fixed": one shared instant, written in the event zone. "date": dates only, hours unannounced.
+export function eventTimeKind(event){const s=event.activity.schedule;return s.date_only?'date':s.rolling_local?'rolling':'fixed'}
+// The visitor's own clock, keeping the original schedule as the primary line.
+export function visitorTimeLine(event,zone=visitorZone(),locale='zh'){
+ const s=event.activity.schedule,zh=locale==='zh',kind=eventTimeKind(event);
+ if(kind==='date'||!s.start)return null;
+ if(kind==='rolling')return zh?`你所在地（${zone}）：同樣依當地時間 ${s.start.slice(11)} 開始`:`Your area (${zone}): also starts at ${s.start.slice(11)} local time`;
+ const eventZone=s.zone||'Asia/Taipei';if(zone===eventZone||zone==='Asia/Taipei')return null;
+ const start=zonedInstant(s.start,eventZone),end=s.end?zonedInstant(s.end,eventZone):null;
+ return (zh?`你的時間（${zone}）：`:`Your time (${zone}): `)+formatZoned(start,zone)+(end?' → '+formatZoned(end,zone):'')+' · '+zoneOffset(start,zone);
+}
+// Countdown target is explicit: which moment, and in which clock.
+export function eventCountdown(event,now=Date.now(),zone=visitorZone()){
+ const s=event.activity.schedule,kind=eventTimeKind(event);if(kind==='date'||!s.start)return null;
+ const clock=kind==='rolling'?zone:(s.zone||'Asia/Taipei');
+ let start,end;try{start=zonedInstant(s.start,clock);end=s.end?zonedInstant(s.end,clock):null}catch{return null}
+ if(now<start)return {target:'start',ms:start-now,clock,kind};
+ if(end!=null&&now<end)return {target:'end',ms:end-now,clock,kind};
+ return null;
+}
+export function formatDuration(ms,locale='zh'){
+ const m=Math.max(0,Math.floor(ms/60000)),d=Math.floor(m/1440),h=Math.floor(m%1440/60),min=m%60,zh=locale==='zh';
+ if(d>0)return zh?`${d} 天 ${h} 小時`:`${d}d ${h}h`;if(h>0)return zh?`${h} 小時 ${min} 分`:`${h}h ${min}m`;return zh?`${min} 分鐘`:`${min} min`;
+}
+// Tabs: in-progress (incl. unresolved start), upcoming, history.
+export function eventGroup(event,now=Date.now()){const s=activityState(event,now).status;return s==='ended'?'ended':s==='upcoming'?'upcoming':'live'}
+// Short date for collapsed rows. Never invents an hour for date-only events.
+export function eventDateLabel(event,locale='zh'){
+ const s=event.activity.schedule,zh=locale==='zh',fmt=v=>v.slice(0,10).replace(/-/g,'/');
+ if(s.date_only)return fmt(s.start_date)+(s.end_date&&s.end_date!==s.start_date?' – '+fmt(s.end_date).slice(5):'')+(zh?'（時間待公布）':' (hours TBA)');
+ const start=fmt(s.start)+' '+s.start.slice(11),end=s.end?(s.end.slice(0,10)===s.start.slice(0,10)?s.end.slice(11):fmt(s.end).slice(5)+' '+s.end.slice(11)):(zh?'未定結束':'no end date');
+ return start+' → '+end;
+}
