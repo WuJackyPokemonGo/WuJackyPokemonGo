@@ -61,7 +61,7 @@
   },
   {
     "id": "10f638a9-3211-4e17-806a-152e1a8afb45",
-    "name": "皮卡丘-2026 寶可夢中心限定背景（18款）",
+    "name": "皮卡丘-2026 寶可夢中心限定背景（18款套組）",
     "name_en": "Pikachu - Pokémon Center 2026 Location Background (18 Designs)",
     "image": "assets/products/opt/10f638a9-3211-4e17-806a-152e1a8afb45-9d287611-e243-4885-8da8-222bb8da5f22.webp"
   },
@@ -156,12 +156,6 @@
     "image": ""
   },
   {
-    "id": "28a5eb28-d465-41ae-9d80-53e27d61d814",
-    "name": "皮卡丘、四季鹿-2026平昌冬季慶典限定背景（2隻套組）",
-    "name_en": "Shiny Snowflake Beanie Pikachu & Winter Deerling - Pyeongchang Winter Festival 2026 (2-Pokémon Set)",
-    "image": ""
-  },
-  {
     "id": "29157011-fdeb-4717-90d4-af001c970835",
     "name": "四季鹿（春季）-2025汝矣島櫻花節限定背景",
     "name_en": "Spring Deerling - Yeouido Cherry Blossom Festival 2025 Background",
@@ -169,7 +163,7 @@
   },
   {
     "id": "295ebfb5-bf6c-4be3-b126-a2e256b3a777",
-    "name": "皮卡丘-PokéXciting! 爆炸頭四色背景",
+    "name": "皮卡丘-PokéXciting! (爆炸頭四色套組）",
     "name_en": "Pikachu - PokéXciting! 4 Afro Colors with Location Backgrounds",
     "image": "assets/products/opt/295ebfb5-bf6c-4be3-b126-a2e256b3a777-cd19ed73-2836-4871-bb0d-749ce5f7a7f2.webp"
   },
@@ -202,6 +196,12 @@
     "name": "帕路奇亞（極巨化）-曠野地帶2026全球（白球）",
     "name_en": "Dynamax Palkia - GO Wild Area 2026 Global (Premier Ball)",
     "image": ""
+  },
+  {
+    "id": "2d515785-961a-45cb-b5d6-d939e938920f",
+    "name": "皮卡丘-動畫地平線（XS・母・大師球）",
+    "name_en": "Pikachu - Pokémon Horizons (XS, Female, Master Ball)",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/2d515785-961a-45cb-b5d6-d939e938920f/bf42a7ce-08a3-4784-b9cc-4d07085f8f0c-thumb.png"
   },
   {
     "id": "2dd6df07-8d10-4f9c-9ce2-00efac132168",
@@ -372,6 +372,12 @@
     "image": ""
   },
   {
+    "id": "500e3e31-5d82-4a96-8b1b-343729e98661",
+    "name": "皮卡丘（國王）-2026世界錦標賽舊金山背景",
+    "name_en": "Pikachu-2026 World Championships San Francisco Background",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/500e3e31-5d82-4a96-8b1b-343729e98661/365aa506-2257-41cf-ba9b-38fdbf1f89f9-thumb.png"
+  },
+  {
     "id": "50c46624-f8ef-4f28-9b79-897121f27e2c",
     "name": "泡沫栗鼠-時裝週",
     "name_en": "Minccino - Fashion Week",
@@ -456,12 +462,6 @@
     "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/59b97884-6ce4-4af0-a020-21901acaecc8/67eed319-63df-4be7-9a4c-c9a18faa2f28-thumb.png"
   },
   {
-    "id": "5afaf1da-4879-49c0-bf85-476088585e03",
-    "name": "捷克羅姆、萊希拉姆-曠野地帶2026全球（大師球2隻套組）",
-    "name_en": "Zekrom & Reshiram - GO Wild Area 2026 Global (2 Master Ball Set)",
-    "image": ""
-  },
-  {
     "id": "5aff3ff7-62d9-4cd2-b813-b03348d79fef",
     "name": "皮卡丘-公路之旅（7款一套）",
     "name_en": "Pikachu (Summer Style) - Road Trip 2025 (7-City Set)",
@@ -501,7 +501,13 @@
     "id": "5f23466f-dfa4-44c4-afca-31b4bb4f2b2a",
     "name": "索財靈-2025九週年紀念限定背景",
     "name_en": "Gimmighoul - Pokémon GO 9th Anniversary Background",
-    "image": "assets/products/opt/5f23466f-dfa4-44c4-afca-31b4bb4f2b2a-0d261c38-28b8-4d5a-980f-4834f1d66d22.webp"
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5f23466f-dfa4-44c4-afca-31b4bb4f2b2a/adf10043-94c1-49ef-bc18-2f8d3502bb81-thumb.png"
+  },
+  {
+    "id": "5fb9c4f8-eec8-416c-ba77-20c425f6849f",
+    "name": "大針蜂-2026世界錦標賽舊金山背景",
+    "name_en": "Beedrill-2026 World Championships San Francisco Background",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5fb9c4f8-eec8-416c-ba77-20c425f6849f/694c0a7c-e66f-446e-96ef-80ecc399a58e-thumb.png"
   },
   {
     "id": "602b45a7-97ed-4214-9109-c5c5f0595464",
@@ -513,7 +519,7 @@
     "id": "6151e136-9d7d-4fd5-ac17-0526d635a2a1",
     "name": "帕路奇亞（極巨化）-曠野地帶2026全球（大師球）",
     "name_en": "Dynamax Palkia - GO Wild Area 2026 Global (Master Ball)",
-    "image": ""
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/6151e136-9d7d-4fd5-ac17-0526d635a2a1/8257f7ae-77bc-42a0-9805-3ccab3de0d81-thumb.webp"
   },
   {
     "id": "61592b60-61c4-4634-929d-23228e8dcdb9",
@@ -538,12 +544,6 @@
     "name": "蒼響、藏瑪然特-曠野週2026（紀念球2隻套組）",
     "name_en": "Zacian & Zamazenta - Into the Wild 2026 (Premier Ball Set)",
     "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/63c004b2-337c-4c64-b975-d5384cfd3ce2/9988ae65-317b-4b67-80e2-41934c144181-thumb.png"
-  },
-  {
-    "id": "642dc1c0-62e6-43f0-a19b-1337055a9d28",
-    "name": "皮卡丘-印度光之慶典兩隻套組（紗麗&庫爾塔）🔥動態煙火",
-    "name_en": "Pikachu - Festival of Lights 2026 Set (Saree & Kurta)",
-    "image": ""
   },
   {
     "id": "64dee5b5-7609-489d-a9bf-71c7aa6c4fb6",
@@ -585,12 +585,6 @@
     "id": "67a71ebf-98fc-47ef-9d29-7137fb0ff495",
     "name": "甜竹竹（極巨化）-紫黑",
     "name_en": "Dynamax Bounsweet - Dark Skies",
-    "image": ""
-  },
-  {
-    "id": "67abc041-119a-4b46-ac70-55a1a82b5b34",
-    "name": "酋雷姆、萊希拉姆-曠野地帶2026全球（大師球2隻套組）",
-    "name_en": "Kyurem & Reshiram - GO Wild Area 2026 Global (2 Master Ball Set)",
     "image": ""
   },
   {
@@ -661,8 +655,8 @@
   },
   {
     "id": "72d40e23-fa06-44c7-8d6a-caa662364e1a",
-    "name": "紫黑背景-（極巨化）",
-    "name_en": "Dark Skies Background - (Dynamax)",
+    "name": "紫黑背景-極巨化",
+    "name_en": "Dark Skies Background - Dynamax",
     "image": "assets/products/opt/72d40e23-fa06-44c7-8d6a-caa662364e1a-a3d0856f-bea7-406b-ba48-c850d39dd23d.webp"
   },
   {
@@ -780,12 +774,6 @@
     "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/90d68c23-ead1-4708-a43e-96b504e2cfa5/a17d5510-760b-40de-83d7-126fcf291cee-thumb.png"
   },
   {
-    "id": "930c5dc0-2592-4b69-b1bb-f2009ff5808f",
-    "name": "酋雷姆、捷克羅姆-曠野地帶2026全球（大師球2隻套組）",
-    "name_en": "Kyurem & Zekrom - GO Wild Area 2026 Global (2 Master Ball Set)",
-    "image": ""
-  },
-  {
     "id": "941e95f0-ee0a-4b2a-b41a-6895c0faaa74",
     "name": "化石盔（極巨化）-紫黑",
     "name_en": "Dynamax Kabuto - Dark Skies",
@@ -814,12 +802,6 @@
     "name": "皮卡丘-公路之旅倫敦",
     "name_en": "Pikachu (Summer Style) - Road Trip 2025 London",
     "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/967ba0dd-1dbc-495f-ab89-1fd71857ae93/8cdc175e-d525-4c13-85f1-d9fbae08d2ba-thumb.png"
-  },
-  {
-    "id": "97b15755-dfbb-48b6-a648-eedcea6bfebf",
-    "name": "酋雷姆、萊希拉姆-曠野地帶2026全球（白球2隻套組）",
-    "name_en": "Kyurem & Reshiram - GO Wild Area 2026 Global (2 Premier Ball Set)",
-    "image": ""
   },
   {
     "id": "9968c818-d367-4767-9353-64ab79043ae1",
@@ -852,12 +834,6 @@
     "image": "assets/products/opt/9b1dd25a-cb08-484e-86da-6727905cd7fa-866fa44f-9213-4312-afcb-7e6b424c71f9.webp"
   },
   {
-    "id": "9b8ed383-b4a7-4e2e-9920-d0f51eb9ebdb",
-    "name": "捷克羅姆、萊希拉姆-曠野地帶2026全球（白球2隻套組）",
-    "name_en": "Zekrom & Reshiram - GO Wild Area 2026 Global (2 Premier Ball Set)",
-    "image": ""
-  },
-  {
     "id": "a13bb166-e653-41f7-a074-0eaa4d8cfa1f",
     "name": "超夢-十週年紀念全球調查（大師球種）",
     "name_en": "Mewtwo - 10th Anniversary Global Research (Master Ball)",
@@ -883,7 +859,7 @@
   },
   {
     "id": "a354bfe9-d512-4a8f-ad04-3182567a1659",
-    "name": "木守宮－英國國民信託 27 款一套",
+    "name": "木守宮－英國國民信託（ 27 款套組）",
     "name_en": "Treecko - National Trust 27 Backgrounds",
     "image": "assets/products/opt/a354bfe9-d512-4a8f-ad04-3182567a1659-76806a0c-f81b-4481-8dc0-c2c845e20148.webp"
   },
@@ -960,12 +936,6 @@
     "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/b1361e07-528d-4f5e-b302-d0e63190c7cc/f4fc35b7-2c79-4fa9-a2cf-83acdb13a414-thumb.png"
   },
   {
-    "id": "b41b4a8e-c1ca-4072-9a33-82b439db0e60",
-    "name": "酋雷姆、捷克羅姆-曠野地帶2026全球（白球2隻套組）",
-    "name_en": "Kyurem & Zekrom - GO Wild Area 2026 Global (2 Premier Ball Set)",
-    "image": ""
-  },
-  {
     "id": "b5c4a38f-eb3f-4bf9-bd89-17be690d6f93",
     "name": "隨風球-萬聖節",
     "name_en": "Drifblim - Halloween Mischief Costume",
@@ -1032,12 +1002,6 @@
     "image": "assets/products/opt/c2f8374e-4319-47f9-8b09-7079c93f1c64-61ab5d27-caac-460b-abba-c1a06ba516c5.webp"
   },
   {
-    "id": "c4457bb0-4ae9-4a5d-a6ab-9606de968ad7",
-    "name": "龍頭地鼠（極巨化）-紫黑",
-    "name_en": "Dynamax Excadrill - Dark Skies",
-    "image": ""
-  },
-  {
     "id": "c4a4ff38-5ced-4aea-aee4-a12193ca1b89",
     "name": "伊布（極巨化）*母-紫黑",
     "name_en": "Dynamax Eevee (Female) - Dark Skies",
@@ -1093,8 +1057,8 @@
   },
   {
     "id": "d0427fc1-7e13-4082-abcb-bb9e9263e23f",
-    "name": "皮卡丘-韓國橘色韓服色違",
-    "name_en": "Pikachu - Orange Hanbok Korea Shiny",
+    "name": "皮卡丘-韓國橘色韓服",
+    "name_en": "Pikachu - Orange Hanbok Korea",
     "image": "assets/products/opt/d0427fc1-7e13-4082-abcb-bb9e9263e23f-7e694b67-d9a7-4475-998c-bbb88d7fcdf0.webp"
   },
   {
