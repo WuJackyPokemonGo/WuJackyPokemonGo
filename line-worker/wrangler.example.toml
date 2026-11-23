@@ -1,0 +1,19 @@
+# 範例設定：複製成 wrangler.toml 後再部署。Secret 用 `wrangler secret put` 設定，不要寫在檔案裡。
+name = "wu-jacky-line"
+main = "src/worker.mjs"
+compatibility_date = "2026-11-01"
+
+[vars]
+MODE = "shadow"   # 試跑：只記錄本來會回什麼；比對無誤再改成 "live"
+
+[[durable_objects.bindings]]
+name = "CUSTOMER"
+class_name = "Customer"
+
+[[durable_objects.bindings]]
+name = "CONTROL"
+class_name = "Control"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Customer", "Control"]
