@@ -128,3 +128,32 @@ Pokéxperto 的 [鋼屬性任務](https://www.pokexperto.net/index2.php?seccion=
 圖鑑提交 `efd6d51dc13603a9c2dcff5302b30d5e35413ea5`，目標資料blob `745f6a8be807fbc93d4ca28a17d77c5ae8a41dcf`。發布驗收另記下方。
 
 正式站公開JSON已取得blob `745f6a8be807fbc93d4ca28a17d77c5ae8a41dcf`，與本輪提交一致；UTF-8及JSON解析通過，284筆ID均唯一。與開工版本逐筆比較僅BG-0213變動，遭遇仍為7款。此次屬來源及文字補錄，未更動程式碼。
+
+## 2026-11-23 逐年覆核：2023 年八筆與墨西哥城新線索
+
+本輪先讀 GitHub 最新資料、本收尾紀錄、歷年紀錄及逐筆對照表，再讀正式站。GitHub 與正式站背景資料均為 blob `745f6a8be807fbc93d4ca28a17d77c5ae8a41dcf`，UTF-8／JSON 解析正常，共284筆；正式背景頁回傳HTTP 200。本輪沒有新證據足以改寫圖鑑事實欄位，故背景JSON維持原值，避免重複例行更新。
+
+### 2023 年來源與證據範圍逐筆複核
+
+下表重新閱讀同期來源並對照現行圖鑑，不把「名錄一致」當作「原始公告全部驗證」。八筆背景及直接遭遇物種與Serebii現行背景表一致；日期及具體途徑仍依下列各自來源分層。
+
+| ID | 核對內容 | 來源與判定界線 |
+| --- | --- | --- |
+| BG-0001 拉斯維加斯 | 2023/2/18–19；蓋歐卡、固拉多。 | [官方背景功能公告](https://pokemongo.com/news/location-card-new-feature)直接支持指定地點現場團體戰、捕獲後機率附背景，但該公告未逐隻列名。兩物種及日期由[外部背景表](https://www.serebii.net/pokemongo/backgrounds.shtml)支持，不擴大官方公告的證明範圍。 |
+| BG-0002 濟州島 | 2023/7/28–30；拉帝亞斯、拉帝歐斯；持票時段內現場超級團體戰、機率背景。 | [7/20同期攻略](https://pokemongohub.net/post/event/pokemon-air-adventures-jeju-island-south-korea/)明列以上資格，與[活動名錄](https://www.serebii.net/pokemongo/reallifeevents/pokemonairadventures-jejuisland.shtml)及站內一致。舊官方活動網址本輪404；不把同期攻略升為原始公告。 |
+| BG-0003 大阪 | 2023/8/4–6；烈空坐、克雷色利亞、哲爾尼亞斯、伊裴爾塔爾；持票活動日團體戰捕獲後機率附背景。 | [同期活動頁](https://leekduck.com/events/pokemon-go-fest-2023-osaka-japan/)逐隻明列Location Card條件，與站內一致；本輪未恢復完整的舊官方活動玩法頁。 |
+| BG-0004 倫敦 | 2023/8/4–6；同上四隻，背景為倫敦。 | [同期活動頁](https://leekduck.com/events/pokemon-go-fest-2023-london-england/)明列持票日及機率背景條件。該頁其他段落有沿用大阪字樣，僅採倫敦頁的明確日期及Location Cards段，不延伸未記載的遠距資格。 |
+| BG-0005 紐約 | 2023/8/18–20；同上四隻，背景為紐約。 | [同期活動頁](https://leekduck.com/events/pokemon-go-fest-2023-new-york-city-usa/)日期及Location Cards四隻名單與站內一致；未將團戰超級形態另算一款捕獲物種。 |
+| BG-0006 首爾 | 2023/10/7–8；探險帽伊布；開場特殊調查與最多八次伊布探險隊限時調查。 | [同期任務頁](https://leekduck.com/events/citysafari-seoul-2023/)支持日期、任務及第二天加購可再做八次遭遇。該頁未直接寫background，不能單用它證明每次獎勵的背景保證；背景物種另由[背景名錄](https://www.serebii.net/pokemongo/backgrounds.shtml)支持。 |
+| BG-0007 巴塞隆納 | 2023/10/13–14；探險帽伊布；同類特殊／限時調查。 | [同期任務頁](https://leekduck.com/events/citysafari-barcelona-2023/)支持日期及任務；[官方回顧](https://pokemongo.com/pl/news/city-safari-barcelona-recap)直接支持當屆特殊調查及探險帽伊布，但未承諾各獎勵背景。背景名單沿用名錄。 |
+| BG-0008 墨西哥城 | 2023/11/4–5；探險帽伊布；開場特殊調查與最多八次限時調查。 | [同期任務頁](https://leekduck.com/events/citysafari-mexico-city-2023/)支持日期、任務及第二天加購再做八次遭遇。2026亡靈節同圖樣的耿鬼／夜巡靈另列BG-0280，未倒填為2023物種。2023第二日的任務規則不能直接套到2025改用集章的兩城。 |
+
+結果：本輪八筆未找到需要更改的日期或物種；完成的是來源及證據範圍複核，不是八筆所有形態、遠距資格和原始遊戲畫面的全面驗證。其餘年度仍接續原逐筆表，不因原表126筆沒有差異訊號就宣稱已完整驗證。
+
+### 墨西哥城2026新增線索及限制
+
+- [Pokéxperto地點背景頁](https://www.pokexperto.net/index2.php?seccion=pokemongo/fondos_ubicacion)在「Ciudad de México 02」將現代夾克怪力、摔角鷹人及洗翠黏美兒列為集章途徑，並列鋼／龍調查十二隻。洗翠黏美兒首次有明確的社群集章途徑線索，但未列印章階段，也沒有本人的領獎原圖，不能據此確認實際發放。
+- [同期參加者討論](https://www.reddit.com/r/TheSilphRoad/comments/1xrx0lj/i_really_enjoyed_wild_area_mexico_but/)提及鋼／龍指定補給站任務及額外日可重做，留言將其連到異色背景機會。這是玩家文字回報，沒有逐隻捕獲證據。主帖所連兩張Facebook任務圖片本輪均403，未能檢視，不能稱已驗證截圖。
+- 十二隻調查獎勵的交叉名錄依11/22判定保留；尚未取得新原始畫面，未擴充BG-0213的七款遭遇名單。本輪未重做第07～09項專項，亦未重新開啟站長已結案的檀香山與好啦魷事項。
+
+第05項仍未達到全部核對及發布驗收的結案條件。本輪僅更新此審核紀錄，未修改圖鑑、活動資料、商品或庫存。
