@@ -71,3 +71,10 @@ test('cross-day: a Mexico City event that ends 11/08 18:00 local is still live a
  assert.equal(eventTimeKind(mx),'fixed');assert.match(visitorTimeLine(mx,'Asia/Taipei','zh')??'',/^$/);
  assert.match(visitorTimeLine(mx,'Europe/London','zh'),/2026\/11\/06 16:00 → 2026\/11\/09 00:00/);
 });
+test('Duolingo: fixed global start, deadline in each visitor\'s local time (official: "11:59 p.m. local time")',()=>{
+ const duo=ev('duolingo-2026');assert.equal(duo.activity.schedule.end_local,true);
+ const ny=eventCountdown(duo,Date.parse('2026-12-31T12:00Z'),'America/New_York');assert.equal(ny.target,'end');assert.equal(ny.clock,'America/New_York');
+ assert.equal(ny.ms,Date.parse('2027-01-01T04:59Z')-Date.parse('2026-12-31T12:00Z'),'counts to 12/31 23:59 New York time');
+ assert.match(visitorTimeLine(duo,'America/New_York','zh'),/2026\/11\/16 20:00.*截止同樣依當地時間 2026\/12\/31 23:59/);
+ assert.equal(eventCountdown(duo,Date.parse('2026-11-16T00:00Z'),'America/New_York').clock,'Asia/Taipei','start stays one global moment');
+});

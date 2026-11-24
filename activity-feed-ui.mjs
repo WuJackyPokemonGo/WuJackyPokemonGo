@@ -40,6 +40,7 @@ function timeKindLabel(event){
  const k=eventTimeKind(event),s=event.activity.schedule;
  if(k==='rolling')return tr('各地當地時間','Local time in each region');
  if(k==='date')return tr('只公布日期，時間待公布','Dates only · hours TBA');
+ if(s.end_local)return tr('開始：全球固定時刻','Start: one global moment')+' · '+s.zone+tr('；截止：各地當地時間','; deadline: each region’s local time');
  return event.region_en==='Global'?tr('全球固定時刻','One global moment')+' · '+s.zone:tr('活動所在地時間','Event local time')+' · '+s.zone;
 }
 

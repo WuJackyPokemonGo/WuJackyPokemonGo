@@ -93,15 +93,18 @@ export function visitorTimeLine(event,zone=visitorZone(),locale='zh'){
  if(kind==='rolling')return zh?`你所在地（${zone}）：同樣依當地時間 ${s.start.slice(11)} 開始`:`Your area (${zone}): also starts at ${s.start.slice(11)} local time`;
  const eventZone=s.zone||'Asia/Taipei';if(zone===eventZone||zone==='Asia/Taipei')return null;
  const start=zonedInstant(s.start,eventZone),end=s.end?zonedInstant(s.end,eventZone):null;
+ // Fixed global start, deadline in each region's local time (e.g. Duolingo 2026).
+ if(s.end_local&&s.end)return (zh?`你的時間（${zone}）：`:`Your time (${zone}): `)+formatZoned(start,zone)+' · '+zoneOffset(start,zone)+(zh?` → 截止同樣依當地時間 ${s.end.replace('T',' ').replace(/-/g,'/')}`:` → deadline is also ${s.end.replace('T',' ').replace(/-/g,'/')} your local time`);
  return (zh?`你的時間（${zone}）：`:`Your time (${zone}): `)+formatZoned(start,zone)+(end?' → '+formatZoned(end,zone):'')+' · '+zoneOffset(start,zone);
 }
 // Countdown target is explicit: which moment, and in which clock.
 export function eventCountdown(event,now=Date.now(),zone=visitorZone()){
  const s=event.activity.schedule,kind=eventTimeKind(event);if(kind==='date'||!s.start)return null;
  const clock=kind==='rolling'?zone:(s.zone||'Asia/Taipei');
- let start,end;try{start=zonedInstant(s.start,clock);end=s.end?zonedInstant(s.end,clock):null}catch{return null}
+ const endClock=s.end_local?zone:clock;
+ let start,end;try{start=zonedInstant(s.start,clock);end=s.end?zonedInstant(s.end,endClock):null}catch{return null}
  if(now<start)return {target:'start',ms:start-now,clock,kind};
- if(end!=null&&now<end)return {target:'end',ms:end-now,clock,kind};
+ if(end!=null&&now<end)return {target:'end',ms:end-now,clock:endClock,kind:s.end_local?'rolling':kind};
  return null;
 }
 export function formatDuration(ms,locale='zh'){
