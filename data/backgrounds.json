@@ -1468,7 +1468,16 @@
         {
           "dex": 805,
           "name_en": "Stakataka",
-          "name_zh": "壘磊石"
+          "name_zh": "壘磊石",
+          "method_status": "unconfirmed",
+          "method_zh": "馬德里地點背景資格未確認：Serebii背景表列壘磊石，但Dittobase與PokeRadar的八款直接遭遇名單未列；同期活動團戰名單亦未列。保留來源衝突，不把本款視為已證實發放。",
+          "method_en": "Madrid Location Background eligibility is unconfirmed: Serebii lists Stakataka, but Dittobase and PokeRadar omit it from their eight direct encounters, as does the contemporary raid roster. Retained as a catalog conflict, not a verified release.",
+          "method_sources": [
+            "https://www.serebii.net/pokemongo/reallifeevents/pokemongofest2024madrid.shtml",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2024-madrid",
+            "https://pokeradar.app/dex/location-backgrounds",
+            "https://leekduck.com/events/pokemon-go-fest-2024-madrid-spain/"
+          ]
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -1479,7 +1488,9 @@
       "official_sources": [
         "https://pokemongo.com/news/dusk-mane-dawn-wings-necrozma-fusion"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-24覆核：壘磊石僅見於Serebii馬德里背景名單，該名單反而漏列同期團戰的費洛美螂；Dittobase與PokeRadar各列八款直接遭遇，均有費洛美螂、無壘磊石。壘磊石逐款標示未確認，不宣稱曾發放；其餘八款及2024/6/14–16日期不變。"
+      ],
       "related_product_ids": [],
       "method_zh": "指定究極異獸與奈克洛茲瑪由活動團體戰捕捉，有機會取得地點背景；索爾迦雷歐／露奈雅拉為持票活動調查遭遇，地點背景資格依各城市活動名錄。日食／月食奈克洛茲瑪由合體取得，繼承奈克洛茲瑪本身的地點背景。",
       "method_en": "Eligible Ultra Beasts and Necrozma may receive a Location Background from event raid catches. Solgaleo and Lunala are ticketed research encounters listed by the respective city catalogs. Dusk Mane and Dawn Wings Necrozma inherit the Location Card of the Necrozma used in fusion.",
@@ -1491,7 +1502,9 @@
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
         "https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2024-madrid",
         "https://bulbapedia.bulbagarden.net/wiki/Background_(GO)",
-        "https://www.serebii.net/pokemongo/reallifeevents/pokemongofest2024madrid.shtml"
+        "https://www.serebii.net/pokemongo/reallifeevents/pokemongofest2024madrid.shtml",
+        "https://pokeradar.app/dex/location-backgrounds",
+        "https://leekduck.com/events/pokemon-go-fest-2024-madrid-spain/"
       ],
       "evolved_pokemon": [
         {
@@ -1513,13 +1526,16 @@
       "end_date": "2024-06-16",
       "verification_note_zh": "背景及活動日期已比對兩份名錄；取得條件與個別形態以條目來源及官方活動規定為準。",
       "verification_note_en": "Background and event dates agree across two catalogs. See the linked sources and official event rules for acquisition and form details.",
-      "checked_on": "2026-10-24",
+      "checked_on": "2026-11-24",
       "region_en": "Spain",
       "region_zh": "西班牙",
       "reference_ids": [
         "gf24_madrid"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "notes_en": [
+        "Checked November 24: Serebii's Madrid background list includes Stakataka but omits the event raid boss Pheromosa. Dittobase and PokeRadar each list eight direct encounters including Pheromosa and excluding Stakataka. Stakataka is explicitly marked unconfirmed; the other eight encounters and June 14–16, 2024 dates are unchanged."
+      ]
     },
     {
       "name_en": "GO Fest New York City 2024",
