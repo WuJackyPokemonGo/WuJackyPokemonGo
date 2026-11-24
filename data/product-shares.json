@@ -12,6 +12,12 @@
     "image": ""
   },
   {
+    "id": "00afe0fb-7a38-4bb1-aa24-994245a1571a",
+    "name": "妙喵（極巨化）*公-紫黑",
+    "name_en": "Dynamax Espurr (Male) - Dark Skies",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/00afe0fb-7a38-4bb1-aa24-994245a1571a/1ee2d891-dc22-4bbb-9d3f-bd05e5a94078-thumb.png"
+  },
+  {
     "id": "014fc933-5c12-418b-b463-d5e8d28ffac5",
     "name": "皮卡丘-維羅博士助手",
     "name_en": "Professor Willow's Assistant Pikachu",
@@ -22,6 +28,12 @@
     "name": "顫弦蠑螈（低調）-寶可夢之夜倫敦",
     "name_en": "Toxtricity (Low Key Form) - Pokémon Night Out London 2026",
     "image": "assets/products/night-out-london-background.webp"
+  },
+  {
+    "id": "047c270c-c4d4-4020-990e-1548b851363a",
+    "name": "妙喵（極巨化）*母",
+    "name_en": "Dynamax Espurr (Female)",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/047c270c-c4d4-4020-990e-1548b851363a/3ab9f99f-db81-418f-bcdf-29bca8257615-thumb.png"
   },
   {
     "id": "096e3806-06fa-466e-b502-676cc5eadab7",
@@ -43,8 +55,8 @@
   },
   {
     "id": "0a4245dc-df1a-4225-a416-2156ffe2e3b0",
-    "name": "小火龍（極巨化）-紫黑",
-    "name_en": "Dynamax Charmander - Dark Skies",
+    "name": "小火龍（極巨化）*公-紫黑",
+    "name_en": "Dynamax Charmander (Male) - Dark Skies",
     "image": ""
   },
   {
@@ -136,6 +148,12 @@
     "name": "小火龍-ANA飛機色背",
     "name_en": "Charmander - ANA Pokémon Jet Background",
     "image": "assets/products/opt/2276855e-1e6d-4704-94d6-cd38e55faafc-960c67a2-e449-4b81-9083-9644e20da788.webp"
+  },
+  {
+    "id": "2395ac26-cdd8-47e0-8d67-4cf9a6e58d99",
+    "name": "妙喵（極巨化）*公",
+    "name_en": "Dynamax Espurr (Male)",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/2395ac26-cdd8-47e0-8d67-4cf9a6e58d99/c05b8106-5f4f-4796-8764-f7ef57226408-thumb.png"
   },
   {
     "id": "246f271c-78cf-4e67-90f7-df721e836bd9",
@@ -282,6 +300,12 @@
     "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/3d44fa8f-5de2-4728-a0af-cd04431ff8d4/b7354e19-23e0-4d2c-8ee2-4a038bd963be-thumb.png"
   },
   {
+    "id": "3d720cf9-f2a5-47e3-85f4-a233d528d572",
+    "name": "妙喵（極巨化）*母-紫黑",
+    "name_en": "Dynamax Espurr (Female) - Dark Skies",
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/3d720cf9-f2a5-47e3-85f4-a233d528d572/bbdf2019-4fe4-4cf9-87ec-8b16c9d58df0-thumb.png"
+  },
+  {
     "id": "3db0ef94-c088-4a2c-b2ff-80c1f0d81390",
     "name": "狃拉（極巨化）*公-紫黑",
     "name_en": "Dynamax Sneasel (Male) - Dark Skies",
@@ -303,7 +327,7 @@
     "id": "42e5428a-2743-439a-922f-9c743a2b2ae5",
     "name": "大顎蟻（極巨化）-紫黑",
     "name_en": "Dynamax Trapinch - Dark Skies",
-    "image": ""
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/42e5428a-2743-439a-922f-9c743a2b2ae5/589a965c-78ac-4bf2-ba89-bbaaa6534483-thumb.png"
   },
   {
     "id": "47578a86-4418-4b11-9053-7998bf899bf0",
@@ -453,7 +477,7 @@
     "id": "5976ec0f-a1fc-40c8-a8f2-dc7a94f6c5ed",
     "name": "可達鴨-禮賓部色背",
     "name_en": "Psyduck - Pokémon Concierge",
-    "image": "assets/products/opt/5976ec0f-a1fc-40c8-a8f2-dc7a94f6c5ed-3f152957-b188-4cf4-a21e-01bfe1f31894.webp"
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5976ec0f-a1fc-40c8-a8f2-dc7a94f6c5ed/1d5b97d0-e2df-4dfb-9825-9f757e531fce-thumb.png"
   },
   {
     "id": "59b97884-6ce4-4af0-a020-21901acaecc8",
@@ -832,6 +856,12 @@
     "name": "皮皮-2025寶可夢天文台限定背景",
     "name_en": "Clefairy - Pokémon Astronomical Observatory 2025 Background",
     "image": "assets/products/opt/9b1dd25a-cb08-484e-86da-6727905cd7fa-866fa44f-9213-4312-afcb-7e6b424c71f9.webp"
+  },
+  {
+    "id": "9cc0cb4b-7fb3-44b8-9f6f-9550d700d95e",
+    "name": "小火龍（極巨化）*母-紫黑",
+    "name_en": "Dynamax Charmander (Female) - Dark Skies",
+    "image": ""
   },
   {
     "id": "a13bb166-e653-41f7-a074-0eaa4d8cfa1f",
