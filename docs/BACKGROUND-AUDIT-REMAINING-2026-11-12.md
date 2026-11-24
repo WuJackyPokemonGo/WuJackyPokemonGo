@@ -157,3 +157,19 @@ Pokéxperto 的 [鋼屬性任務](https://www.pokexperto.net/index2.php?seccion=
 - 十二隻調查獎勵的交叉名錄依11/22判定保留；尚未取得新原始畫面，未擴充BG-0213的七款遭遇名單。本輪未重做第07～09項專項，亦未重新開啟站長已結案的檀香山與好啦魷事項。
 
 第05項仍未達到全部核對及發布驗收的結案條件。本輪僅更新此審核紀錄，未修改圖鑑、活動資料、商品或庫存。
+
+## 2026-11-24 2024年馬德里：壘磊石來源衝突
+
+開工已讀最新圖鑑、收尾紀錄、歷年覆核、逐筆表及正式站。起始圖鑑與正式站均為blob `c60d6a4ae522ed16afdb2a7cbdffc85bbd49fe6f`，284筆；正式背景頁HTTP 200。接續2023年八筆，本輪從2024年26筆名單篩查出BG-0014的新增物種衝突；未宣稱本輪已覆核全部26筆。
+
+| 項目 | 可追溯證據 | 判定 |
+| --- | --- | --- |
+| 壘磊石 #805 | [Serebii馬德里活動背景表](https://www.serebii.net/pokemongo/reallifeevents/pokemongofest2024madrid.shtml)列出壘磊石，但同頁團戰表並未列它；背景段反而漏掉費洛美螂。 | 屬名錄內部衝突，不能把有列名當作已證實。 |
+| 八款直接遭遇 | [Dittobase](https://www.dittobase.com/pokemon-go/backgrounds/lc-go-fest-2024-madrid)及[PokeRadar](https://pokeradar.app/dex/location-backgrounds)均列索爾迦雷歐、露奈雅拉、虛吾伊德、費洛美螂、紙御劍、惡食大王、奈克洛茲瑪、砰頭小丑；無壘磊石。 | 保留此八款，不把兩隻合體形態誤算為額外捕獲。 |
+| 當屆團戰與日期 | [Leek Duck同期活動頁](https://leekduck.com/events/pokemon-go-fest-2024-madrid-spain/)及[同期荷蘭文指南](https://www.pogonieuws.nl/go-fest/pokemon-go-fest-madrid/)列6/14–16及虛吾伊德、費洛美螂、紙御劍、惡食大王、砰頭小丑、奈克洛茲瑪團戰。 | 支持已列八款的團戰／調查分工；不能僅依未列名就證明壘磊石絕不曾發放。本輪未找到壘磊石附馬德里背景的可驗原始捕獲畫面。 |
+
+修正僅在BG-0014壘磊石補上 `method_status: unconfirmed`、雙語逐款說明及來源；條目備註記載九款名錄中一款有衝突，其他八款、兩種合體繼承及日期不變。保留候選與證據限制，不刪除來歷、不提升為官方保證。
+
+並行更新保護：開工後每日更新將BG-0286 Duolingo推出狀態更新，圖鑑blob變為 `498dcaad4dcf5bbed4dd1ff950b9b20f3d3f4552`。已重新讀取並保留此更新，只套用BG-0014差異。npm ci、355項測試及npm run build通過；建置未產生其他追蹤檔案差異。發布資料blob `88152daf90e01f9ed6c92aeb681162142d8ba1c6` 與測試的本機檔案一致，提交 `31627fd1d361f91168c084b842679151a511f8ba`。
+
+第05項仍未結案；第06～09項及其既有專項未重新開啟。正式站本輪發布驗收另記下方。
