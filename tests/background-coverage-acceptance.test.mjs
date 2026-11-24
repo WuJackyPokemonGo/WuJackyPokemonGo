@@ -17,10 +17,11 @@ test('every source row resolves to a real entry and every released entry is visi
   }
  }
  ids.add("BG-0284"); // Shared artwork released November 9 during Into the Wild.
+ ids.add("BG-0286"); // Duolingo current availability verified from the original player report.
  const released=data.records.filter(r=>r.release_state==='released');
  const visible=new Set(filterBackgrounds(data.records).map(r=>r.background_id));
  // October 24 snapshot predates the Los Angeles event and the November 6 Festival of Lights (BG-0283); the two ongoing stamp records were merged into BG-0212/BG-0213 (-2) and BG-0213 became released via the Hawlucha rally (+1); retain its historical receipt.
- assert.equal(released.length,latest.released_records+owner.new_released_background_ids.length+stamps.new_released_background_ids.length+3);
+ assert.equal(released.length,latest.released_records+owner.new_released_background_ids.length+stamps.new_released_background_ids.length+4);
  assert.equal(by('BG-0214').release_state,'released');
  assert.equal(by('BG-0211').release_state,'released');
  for(const r of released){assert.ok(ids.has(r.background_id),r.background_id);assert.ok(visible.has(r.background_id),r.background_id);if(r.artwork_status==='pending'){assert.equal(referenceArtwork(r,refs),'');assert.equal(r.verification,'official-event-confirmed');assert.ok(r.official_sources.length)}else assert.ok(safeBackgroundImage(referenceArtwork(r,refs)),r.background_id)}

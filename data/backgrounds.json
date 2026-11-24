@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-23",
+  "as_of": "2026-11-24",
   "complete": false,
   "sources": [
     "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -29503,13 +29503,18 @@
       "related_product_ids": [],
       "year": "2026",
       "year_verified": true,
-      "checked_on": "2026-11-23",
-      "evidence_reviewed_on": "2026-11-18",
+      "checked_on": "2026-11-24",
+      "evidence_reviewed_on": "2026-11-24",
       "background_id": "BG-0286",
       "name_zh": "Pokémon GO × Duolingo",
       "name_en": "Pokémon GO × Duolingo",
       "type": "special",
-      "release_state": "upcoming",
+      "release_state": "released",
+      "availability_confirmed_on": "2026-11-24",
+      "availability_evidence": "original-player-report",
+      "player_sources": [
+        "https://www.reddit.com/r/TheSilphRoad/comments/1y2h4ne/duolingo_timed_research_is_live/"
+      ],
       "verification": "official-event-confirmed",
       "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/duolingo.webp?v=20260816",
       "reference_ids": [
@@ -29528,8 +29533,8 @@
       "region_zh": "全球",
       "start_date": "2026-11-17",
       "end_date": "2026-12-31",
-      "date_note_zh": "Duolingo任務於日本時間11/17 10:00（台灣11/17 09:00）開始。須在當地12/21 23:59前加入、12/29 23:59前於不同日期完成至少7堂課；取得限時調查後，須於當地12/31 23:59前完成並領取獎勵。最早需完成七個不同日期，11/18查核時尚未能實際領取背景遭遇。",
-      "date_note_en": "The Duolingo quest began November 17 at 10:00 JST (09:00 in Taiwan). Join by December 21 at 23:59 local time, complete at least seven lessons on different days by December 29 at 23:59 local time, then finish and claim the Timed Research by December 31 at 23:59 local time. Seven different days are required, so no background encounter could yet be claimed at the November 18 review.",
+      "date_note_zh": "11/17為Duolingo任務開始日（日本10:00／台灣09:00），不是背景首次實際發放日。11/24已核對原作者取得背景路卡利歐的回報，確認目前可取得；首次發放日仍未確定，不以貼文日期代替。須在當地12/21 23:59前加入、12/29 23:59前於七個不同日期完成課程，並於12/31 23:59前完成限時調查及領獎。",
+      "date_note_en": "November 17 is the Duolingo quest opening (10:00 JST / 09:00 Taiwan), not a verified first background release date. An original player's report of receiving background Lucario was checked on November 24, confirming current availability. The first release date remains unresolved and is not replaced by the post date. Join by December 21 at 23:59 local time, complete lessons on seven different days by December 29 at 23:59, then finish and claim the Timed Research by December 31 at 23:59.",
       "method_zh": "在最新版Duolingo加入「Duo’s Pokémon Party」，於七個不同日期每天至少完成一堂課以取得兌換碼；在Pokémon GO Web Store兌換後完成限時調查。官方明列皮卡丘、喵喵、聒噪鳥、路卡利歐的調查遭遇帶特殊背景。雷丘與貓老大僅由帶背景的皮卡丘、喵喵進化繼承，不是直接調查遭遇。",
       "method_en": "Join Duo’s Pokémon Party in the latest Duolingo app and complete at least one lesson on seven different days to receive an offer code. Redeem it in the Pokémon GO Web Store and complete the Timed Research. The official announcement explicitly lists Special Background encounters with Pikachu, Meowth, Chatot and Lucario. Raichu and Persian are evolution-only and are not direct research encounters.",
       "method_status": "reviewed",
@@ -29585,12 +29590,14 @@
       ],
       "notes": [
         "2026-11-18：官方確認背景、直接遭遇名單與取得流程；PokéXperience已收錄可辨識圖樣並以進化款合計6隻，Serebii直接遭遇名單與官方一致。",
+        "2026-11-24：已完整核對原帖及原作者djgeneral回覆，明確表示調查第一頁取得附專屬背景的路卡利歐，同頁卡洛斯御三家是一般遭遇；依官方名單及原始玩家取得回報改為已推出。只確認目前可取得，不把貼文發布日或查核日當成首次發放日。以下保留先前查核歷程。",
         "活動已開始，但兌換碼須完成七個不同日期的Duolingo課程後才能取得。查核日尚未到最早可完成日，故背景先列即將推出；取得首筆可核實實拍後再改為已推出。",
         "2026-11-21：活動 11/17 開始，需七個不同日期完成 Duolingo 課程，最早 11/23 才可能拿到兌換碼；目前查無玩家領取紀錄，維持即將推出。各站報名期限寫法不一（12/21、12/29），研究與獎勵於 12/31 到期。",
         "2026-11-23：官方公告確認三個期限：12/21 前加入 Duolingo 任務、12/29 前在不同日期完成 7 堂課取得兌換碼、12/31 前完成限時調查並領取獎勵（先前「各站寫法不一」是不同期限，不是互相衝突）。今天為最早可取得兌換碼的日子，仍查無玩家領取紀錄，維持即將推出。"
       ],
       "notes_en": [
         "The official announcement confirms the background, four direct encounters and the acquisition route. PokéXperience catalogs recognizable artwork and counts six Pokémon including evolutions; Serebii matches the four official direct encounters.",
+        "2026-11-24: The original post and author djgeneral's replies explicitly report receiving Lucario with the exclusive background; the Kalos starters on that page were regular encounters. Marked released from the official roster and firsthand player report. Current availability is confirmed, but neither the post date nor review date is treated as the first release date. Earlier review history follows.",
         "The quest is live, but the code requires lessons on seven different days. At the review date, the earliest possible completion date had not arrived, so the background remains upcoming until a verifiable obtained encounter is available.",
         "2026-11-21: The event began on November 17 and needs Duolingo lessons on seven different days, so the earliest code is November 23. No player redemption has been found yet; it stays upcoming. Sites differ on the sign-up deadline (December 21 or 29); the research and rewards expire on December 31.",
         "2026-11-23: The official announcement gives three deadlines: join the Duolingo quest by December 21, finish seven lessons on different days by December 29 to get the code, and complete the Timed Research and claim rewards by December 31 (the earlier 'sites differ' note was these separate deadlines, not a conflict). Today is the earliest possible code date; no player redemption has been found yet, so it stays upcoming."
@@ -29629,11 +29636,12 @@
           "text_zh": "不適用遠距對戰資格；官方明列限時調查中的四種遭遇帶特殊背景。",
           "text_en": "Remote battle eligibility does not apply. The official announcement explicitly says the four Timed Research encounters have the Special Background."
         },
-        "checked_on": "2026-11-18",
+        "checked_on": "2026-11-24",
         "sources": [
           "https://pokemongo.com/news/duolingo-2026",
           "https://pokexperience.com/backgrounds/",
-          "https://www.serebii.net/pokemongo/backgrounds.shtml"
+          "https://www.serebii.net/pokemongo/backgrounds.shtml",
+          "https://www.reddit.com/r/TheSilphRoad/comments/1y2h4ne/duolingo_timed_research_is_live/"
         ],
         "background_type": "special",
         "artwork_status": "catalogued",
@@ -31079,9 +31087,9 @@
   },
   "counts": {
     "catalog-crosschecked": 55,
-    "official-event-confirmed": 222,
+    "official-event-confirmed": 223,
     "catalogued-needs-event-check": 3,
-    "upcoming": 4
+    "upcoming": 3
   },
   "review_counts": {
     "date_details_pending": 4,
