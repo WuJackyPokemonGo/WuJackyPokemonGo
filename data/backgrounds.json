@@ -22643,7 +22643,6 @@
         "587a97aa-b0f7-44fa-9b5a-1f138bd2b36a",
         "3142e815-3aa3-4315-96c0-373b3393631a",
         "a40115ad-1426-4982-835a-f22289f8030a",
-        "c4457bb0-4ae9-4a5d-a6ab-9606de968ad7",
         "e1d1248a-ffa7-4ef4-aa99-e517eb5ffb2d",
         "5f172209-0b6f-4f66-ad9a-2dece76d2d59",
         "821a1e15-8b04-4cc0-abb1-4c7115155e78",
@@ -23932,14 +23931,6 @@
           "source": "https://leekduck.com/events/dynamax-trails-2026/"
         },
         {
-          "dex": 530,
-          "name_en": "Excadrill",
-          "name_zh": "龍頭地鼠",
-          "variant_id": "excadrill",
-          "acquisition": "go-pass",
-          "source": "https://leekduck.com/events/dynamax-trails-2026/"
-        },
-        {
           "dex": 546,
           "name_en": "Cottonee",
           "name_zh": "木棉球",
@@ -23980,6 +23971,16 @@
           "variant_id": "deino",
           "acquisition": "go-pass",
           "source": "https://leekduck.com/events/dynamax-trails-2026/"
+        },
+        {
+          "dex": 677,
+          "name_en": "Espurr",
+          "name_zh": "妙喵",
+          "variant_id": "espurr",
+          "acquisition": "go-pass",
+          "source": "https://leekduck.com/events/dynamax-trails-2026/",
+          "method_zh": "豪華 GO Pass 隨機遭遇池；2026-11-23（週一）起實際捕獲附紫黑背景，店內已有實拍。",
+          "method_en": "Deluxe GO Pass encounter pool; Dark Skies catches confirmed from 2026-11-23 (Monday) with in-store photos."
         },
         {
           "dex": 686,
@@ -24110,19 +24111,7 @@
           "source": "https://leekduck.com/events/dynamax-trails-2026/"
         }
       ],
-      "unconfirmed_pokemon": [
-        {
-          "dex": 677,
-          "name_en": "Espurr",
-          "name_zh": "妙喵",
-          "variant_id": "espurr",
-          "acquisition": "go-pass",
-          "method_status": "unconfirmed",
-          "source": "https://leekduck.com/events/dynamax-trails-2026/",
-          "method_zh": "Leek Duck 的豪華 GO Pass 隨機遭遇池有列，目前尚未收到附紫黑背的捕獲回報。",
-          "method_en": "Listed in the Leek Duck Deluxe GO Pass encounter pool. No Dark Skies catch report has been received."
-        }
-      ]
+      "unconfirmed_pokemon": []
     },
     {
       "name_en": "Tales of Transformation",
