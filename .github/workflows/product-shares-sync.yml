@@ -1,10 +1,10 @@
 name: Daily product share sync
-# 每天台灣時間 18:00 同步商品清單，替新上架的商品產生分享頁與橫式預覽圖（貼到 Messenger／LINE／Threads 會顯示商品圖、不切到寶可夢）。
+# 每天台灣時間 10:00、14:00、18:00、22:00 同步商品清單（含商品縮圖與商品資料備份），替新上架的商品產生分享頁與橫式預覽圖（貼到 Messenger／LINE／Threads 會顯示商品圖、不切到寶可夢）。
 # 背景圖鑑的預覽圖也一併更新（只重做圖片有變的）。
 # 沒有變化就不提交。推送後請 GitHub Pages 重新部署（GITHUB_TOKEN 推送不會自動觸發部署）。
 on:
   schedule:
-    - cron: '0 10 * * *'
+    - cron: '7 2,6,10,14 * * *'
   workflow_dispatch:
 permissions:
   contents: write
