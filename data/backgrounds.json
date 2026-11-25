@@ -17553,12 +17553,13 @@
       "name_zh": "活動背景－GO Fest 2024 Wormhole",
       "release_state": "released",
       "official_sources": [
-        "https://pokemongo.com/news/special-backgrounds"
+        "https://pokemongo.com/news/special-backgrounds",
+        "https://pokemongo.com/news/inbound-from-ultra-space-2024"
       ],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "當地時間 2024/7/8 10:00～7/13 10:00，究極異獸五星團體戰捕捉後有背景機會；7/13 10:00～18:00 含奈克洛茲瑪；7/14 10:00～18:00 為奈克洛茲瑪。持票特殊調查發放的索爾迦雷歐／露奈雅拉日曜及月影背景另見對應條目。",
-      "method_en": "The Ultra Wormhole Special Background could be obtained by catching Ultra Beasts after five-star raids from July 8, 2024 at 10:00 a.m. to July 13 at 10:00 a.m. local time. On July 13 from 10:00 a.m. to 6:00 p.m., eligible five-star raids included Necrozma. On July 14 from 10:00 a.m. to 6:00 p.m., Necrozma was eligible. Ticketed Special Research awarded Solgaleo or Lunala with the separately catalogued Radiance or Umbra backgrounds.",
+      "method_zh": "當地時間 2024/7/8 10:00～7/13 10:00，究極異獸五星團體戰捕捉後有背景機會；7/13 10:00～18:00 含奈克洛茲瑪；7/14 10:00～18:00 為奈克洛茲瑪。持票特殊調查發放的索爾迦雷歐／露奈雅拉日曜及月影背景另見對應條目。 官方明確排除「究極空間」限時調查：該調查獎勵的究極異獸不會附特殊背景。",
+      "method_en": "The Ultra Wormhole Special Background could be obtained by catching Ultra Beasts after five-star raids from July 8, 2024 at 10:00 a.m. to July 13 at 10:00 a.m. local time. On July 13 from 10:00 a.m. to 6:00 p.m., eligible five-star raids included Necrozma. On July 14 from 10:00 a.m. to 6:00 p.m., Necrozma was eligible. Ticketed Special Research awarded Solgaleo or Lunala with the separately catalogued Radiance or Umbra backgrounds. The official Inbound from Ultra Space announcement explicitly excludes its Timed Research Ultra Beast encounters from Special Background eligibility.",
       "start_date": "2024-07-08",
       "end_date": "2024-07-14",
       "series": "GO Fest",
@@ -17585,7 +17586,7 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-10-23",
+      "checked_on": "2026-11-25",
       "region_en": "Multiple regions",
       "region_zh": "多地／全球活動",
       "reference_ids": [
