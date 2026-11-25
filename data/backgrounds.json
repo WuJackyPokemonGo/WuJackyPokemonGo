@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-24",
+  "as_of": "2026-11-25",
   "complete": false,
   "sources": [
     "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -29757,6 +29757,214 @@
     }
   ],
   "additional_announced_events": [
+    {
+      "event_id": "tropical-paradise-2026",
+      "name_zh": "熱帶樂園（暫譯）",
+      "name_en": "Tropical Paradise",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "地區待詳細公告",
+      "region_en": "Regions await detailed announcement",
+      "start_date": "2026-12-01",
+      "end_date": "2026-12-07",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-25",
+      "official_sources": [
+        "https://pokemongo.com/news/monthly-content-update-dec2026"
+      ],
+      "activity": {
+        "id": "tropical-paradise-2026",
+        "kind": "event",
+        "schedule": {
+          "date_only": true,
+          "rolling_local": true,
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "start_date": "2026-12-01",
+          "end_date": "2026-12-07"
+        },
+        "conditions_zh": "官方12月活動行事曆已確認日期，起訖時刻、時區、適用地區與取得條件待詳細公告；不以日期推定午夜開放。",
+        "conditions_en": "The official December calendar confirms the dates only. Start/end hours, time zones, regions and acquisition conditions await the detailed announcement; midnight is not assumed.",
+        "eligible_zh": "寶可夢、服裝與形態待公布；尚未確認有背景獎勵或圖樣。",
+        "eligible_en": "Pokémon, costumes and forms are unannounced; background rewards and artwork are not confirmed.",
+        "background_type": "unannounced",
+        "artwork_status": "unannounced",
+        "remote_participation": {
+          "basis": "pending",
+          "text_zh": "遠距參與資格待公告。",
+          "text_en": "Remote participation eligibility is unannounced."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "是否有背景及遠距取得資格均待公告。",
+          "text_en": "Background rewards and remote background eligibility are unannounced."
+        },
+        "checked_on": "2026-11-25",
+        "sources": [
+          "https://pokemongo.com/news/monthly-content-update-dec2026"
+        ]
+      }
+    },
+    {
+      "event_id": "december-unannounced-event-2026",
+      "name_zh": "12月未公布名稱活動",
+      "name_en": "December event (name unannounced)",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "地區待詳細公告",
+      "region_en": "Regions await detailed announcement",
+      "start_date": "2026-12-08",
+      "end_date": "2026-12-14",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-25",
+      "official_sources": [
+        "https://pokemongo.com/news/monthly-content-update-dec2026"
+      ],
+      "activity": {
+        "id": "december-unannounced-event-2026",
+        "kind": "event",
+        "schedule": {
+          "date_only": true,
+          "rolling_local": true,
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "start_date": "2026-12-08",
+          "end_date": "2026-12-14"
+        },
+        "conditions_zh": "官方12月活動行事曆已確認日期，起訖時刻、時區、適用地區與取得條件待詳細公告；不以日期推定午夜開放。",
+        "conditions_en": "The official December calendar confirms the dates only. Start/end hours, time zones, regions and acquisition conditions await the detailed announcement; midnight is not assumed.",
+        "eligible_zh": "寶可夢、服裝與形態待公布；尚未確認有背景獎勵或圖樣。",
+        "eligible_en": "Pokémon, costumes and forms are unannounced; background rewards and artwork are not confirmed.",
+        "background_type": "unannounced",
+        "artwork_status": "unannounced",
+        "remote_participation": {
+          "basis": "pending",
+          "text_zh": "遠距參與資格待公告。",
+          "text_en": "Remote participation eligibility is unannounced."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "是否有背景及遠距取得資格均待公告。",
+          "text_en": "Background rewards and remote background eligibility are unannounced."
+        },
+        "checked_on": "2026-11-25",
+        "sources": [
+          "https://pokemongo.com/news/monthly-content-update-dec2026"
+        ]
+      }
+    },
+    {
+      "event_id": "winter-holiday-2026",
+      "name_zh": "冬日假期（暫譯）",
+      "name_en": "Winter Holiday",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "地區待詳細公告",
+      "region_en": "Regions await detailed announcement",
+      "start_date": "2026-12-22",
+      "end_date": "2026-12-28",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-25",
+      "official_sources": [
+        "https://pokemongo.com/news/monthly-content-update-dec2026"
+      ],
+      "activity": {
+        "id": "winter-holiday-2026",
+        "kind": "event",
+        "schedule": {
+          "date_only": true,
+          "rolling_local": true,
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "start_date": "2026-12-22",
+          "end_date": "2026-12-28"
+        },
+        "conditions_zh": "官方12月活動行事曆已確認日期，起訖時刻、時區、適用地區與取得條件待詳細公告；不以日期推定午夜開放。",
+        "conditions_en": "The official December calendar confirms the dates only. Start/end hours, time zones, regions and acquisition conditions await the detailed announcement; midnight is not assumed.",
+        "eligible_zh": "寶可夢、服裝與形態待公布；尚未確認有背景獎勵或圖樣。",
+        "eligible_en": "Pokémon, costumes and forms are unannounced; background rewards and artwork are not confirmed.",
+        "background_type": "unannounced",
+        "artwork_status": "unannounced",
+        "remote_participation": {
+          "basis": "pending",
+          "text_zh": "遠距參與資格待公告。",
+          "text_en": "Remote participation eligibility is unannounced."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "是否有背景及遠距取得資格均待公告。",
+          "text_en": "Background rewards and remote background eligibility are unannounced."
+        },
+        "checked_on": "2026-11-25",
+        "sources": [
+          "https://pokemongo.com/news/monthly-content-update-dec2026"
+        ]
+      }
+    },
+    {
+      "event_id": "new-years-2027",
+      "name_zh": "2027新年活動（暫譯）",
+      "name_en": "New Year’s 2027",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "地區待詳細公告",
+      "region_en": "Regions await detailed announcement",
+      "start_date": "2026-12-29",
+      "end_date": "2027-01-04",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-25",
+      "official_sources": [
+        "https://pokemongo.com/news/monthly-content-update-dec2026"
+      ],
+      "activity": {
+        "id": "new-years-2027",
+        "kind": "event",
+        "schedule": {
+          "date_only": true,
+          "rolling_local": true,
+          "zone": "Asia/Taipei",
+          "basis": "confirmed",
+          "start_date": "2026-12-29",
+          "end_date": "2027-01-04"
+        },
+        "conditions_zh": "官方12月活動行事曆已確認日期，起訖時刻、時區、適用地區與取得條件待詳細公告；不以日期推定午夜開放。",
+        "conditions_en": "The official December calendar confirms the dates only. Start/end hours, time zones, regions and acquisition conditions await the detailed announcement; midnight is not assumed.",
+        "eligible_zh": "寶可夢、服裝與形態待公布；尚未確認有背景獎勵或圖樣。",
+        "eligible_en": "Pokémon, costumes and forms are unannounced; background rewards and artwork are not confirmed.",
+        "background_type": "unannounced",
+        "artwork_status": "unannounced",
+        "remote_participation": {
+          "basis": "pending",
+          "text_zh": "遠距參與資格待公告。",
+          "text_en": "Remote participation eligibility is unannounced."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "是否有背景及遠距取得資格均待公告。",
+          "text_en": "Background rewards and remote background eligibility are unannounced."
+        },
+        "checked_on": "2026-11-25",
+        "sources": [
+          "https://pokemongo.com/news/monthly-content-update-dec2026"
+        ]
+      }
+    },
     {
       "name_zh": "曠野週 2026 新特殊背景",
       "name_en": "Into the Wild 2026 new Special Background",
