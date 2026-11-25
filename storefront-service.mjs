@@ -56,4 +56,16 @@ export function inquiryText(products,cart,note='',locale='zh'){
  for(const item of cart){const p=products.find(p=>p.id===item.id);if(!p)continue;lines.push(`${productName(p,locale)}${locale!=='zh'&&productName(p,locale)!==p.name?'（'+p.name+'）':''} × ${item.qty}｜${p.price==null?t('私訊詢價',locale):'NT$ '+(p.price*item.qty).toLocaleString('zh-TW')}${p.status==='sold_out'?'｜'+t('已售罄，請確認能否補貨',locale):''}`);if(p.price==null)unknown=true;else total+=p.price*item.qty}
  lines.push(t('公開價格小計：',locale)+'NT$ '+total.toLocaleString('zh-TW')+(unknown?t('（不含詢價商品）',locale):''));if(note.trim())lines.push(tr('備註：','Notes: ',locale)+note.trim());lines.push(tr('請協助確認供貨、最終價格及交付方式。','Please confirm availability, final prices and delivery.',locale));return lines.join('\n');
 }
+// Public copy of the catalog published with the site each day. Used only when Supabase cannot answer
+// (for example a quota restriction returning HTTP 402), so customers still see products and prices.
+export const CATALOG_SNAPSHOT_URL='data/catalog-snapshot.json';
+const validCatalogRows=rows=>Array.isArray(rows)&&rows.every(p=>p&&typeof p.id==='string'&&typeof p.name==='string'&&Array.isArray(p.aliases)&&Array.isArray(p.tags)&&Array.isArray(p.images));
+export async function loadCatalogWithFallback(fetcher=fetch){
+ try{return {products:await loadPublicCatalog(fetcher),snapshotAt:null}}
+ catch(error){
+  let data=null;try{const r=await fetcher(CATALOG_SNAPSHOT_URL,{cache:'no-cache',signal:AbortSignal.timeout(15000)});if(r.ok)data=await r.json()}catch{}
+  if(!data||!validCatalogRows(data.products)||!data.products.length||typeof data.generated_at!=='string')throw error;
+  return {products:data.products,snapshotAt:data.generated_at};
+ }
+}
 export async function loadPublicCatalog(fetcher=fetch){const rows=[];for(let offset=0;offset<=20000;offset+=100){const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);try{const response=await fetcher(STAGING_URL+'/rest/v1/rpc/storefront_catalog',{method:'POST',headers:{apikey:STAGING_PUBLISHABLE_KEY,'Content-Type':'application/json'},body:JSON.stringify({p_offset:offset,p_limit:100}),signal:controller.signal});if(!response.ok)throw Error('商品資料暫時無法讀取。');const batch=await response.json();if(!Array.isArray(batch)||batch.some(p=>!p||typeof p.id!=='string'||typeof p.name!=='string'||!Array.isArray(p.aliases)||!Array.isArray(p.tags)||!Array.isArray(p.images)))throw Error('商品資料格式無效。');rows.push(...batch);if(batch.length<100)return rows;if(rows.length>=20000)throw Error('商品資料超過可載入上限。')}finally{clearTimeout(timer)}}return rows}
