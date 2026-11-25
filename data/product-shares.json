@@ -15,7 +15,7 @@
     "id": "00afe0fb-7a38-4bb1-aa24-994245a1571a",
     "name": "妙喵（極巨化）*公-紫黑",
     "name_en": "Dynamax Espurr (Male) - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/00afe0fb-7a38-4bb1-aa24-994245a1571a/1ee2d891-dc22-4bbb-9d3f-bd05e5a94078-thumb.png"
+    "image": "assets/products/opt/00afe0fb-7a38-4bb1-aa24-994245a1571a-1ee2d891-dc22-4bbb-9d3f-bd05e5a94078.webp"
   },
   {
     "id": "014fc933-5c12-418b-b463-d5e8d28ffac5",
@@ -33,37 +33,37 @@
     "id": "047c270c-c4d4-4020-990e-1548b851363a",
     "name": "妙喵（極巨化）*母",
     "name_en": "Dynamax Espurr (Female)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/047c270c-c4d4-4020-990e-1548b851363a/3ab9f99f-db81-418f-bcdf-29bca8257615-thumb.png"
+    "image": "assets/products/opt/047c270c-c4d4-4020-990e-1548b851363a-3ab9f99f-db81-418f-bcdf-29bca8257615.webp"
   },
   {
     "id": "096e3806-06fa-466e-b502-676cc5eadab7",
     "name": "皮卡丘-公路之旅瓦倫西亞",
     "name_en": "Pikachu (Summer Style) - Road Trip 2025 Valencia",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/096e3806-06fa-466e-b502-676cc5eadab7/7725e089-fa92-4cf1-8bda-de32fff77116-thumb.png"
+    "image": "assets/products/opt/096e3806-06fa-466e-b502-676cc5eadab7-7725e089-fa92-4cf1-8bda-de32fff77116.webp"
   },
   {
     "id": "09e5c935-0652-4b33-9f85-74a5913b406e",
     "name": "雷吉斯奇魯（極巨化）-曠野週2026",
     "name_en": "Shiny Dynamax Registeel - Into the Wild 2026",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/09e5c935-0652-4b33-9f85-74a5913b406e/9244019b-c086-4beb-8eb1-fb42d8e020a2-thumb.png"
+    "image": "assets/products/opt/09e5c935-0652-4b33-9f85-74a5913b406e-9244019b-c086-4beb-8eb1-fb42d8e020a2.webp"
   },
   {
     "id": "0a019a81-2e9a-452a-8adf-e56c66da704c",
     "name": "帝牙盧卡（極巨化）-2026曠野色背XXS",
     "name_en": "Shiny Dynamax Dialga XXS - GO Wild Area 2026 Background",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/0a019a81-2e9a-452a-8adf-e56c66da704c/d105b55b-098c-44b5-8600-3874bc86aa46-thumb.png"
+    "image": "assets/products/opt/0a019a81-2e9a-452a-8adf-e56c66da704c-d105b55b-098c-44b5-8600-3874bc86aa46.webp"
   },
   {
     "id": "0a4245dc-df1a-4225-a416-2156ffe2e3b0",
     "name": "小火龍（極巨化）*公-紫黑",
     "name_en": "Dynamax Charmander (Male) - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/0a4245dc-df1a-4225-a416-2156ffe2e3b0/6e406d2c-3e2a-423f-a492-314470a7d806-thumb.webp"
+    "image": "assets/products/opt/0a4245dc-df1a-4225-a416-2156ffe2e3b0-6e406d2c-3e2a-423f-a492-314470a7d806.webp"
   },
   {
     "id": "0d97e986-7dc8-416f-9137-27d0a16615f0",
     "name": "怪力（夾克）-曠野地帶2026全球（白球）",
     "name_en": "Machamp (Modern Jacket) - GO Wild Area 2026 Global (Premier Ball)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/0d97e986-7dc8-416f-9137-27d0a16615f0/8358b213-9815-49d9-997a-14b7c9339012-thumb.png"
+    "image": "assets/products/opt/0d97e986-7dc8-416f-9137-27d0a16615f0-8358b213-9815-49d9-997a-14b7c9339012.webp"
   },
   {
     "id": "0f115387-5f73-4e7b-8667-1d9b8a2114d5",
@@ -93,25 +93,25 @@
     "id": "16400d8f-bc1a-4783-97d0-77db224c8b28",
     "name": "獨角犀牛（極巨化）*母-紫黑",
     "name_en": "Dynamax Rhyhorn (Female) - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/16400d8f-bc1a-4783-97d0-77db224c8b28/e78d4fb2-ac36-4005-b737-6dfa4c79f592-thumb.png"
+    "image": "assets/products/opt/16400d8f-bc1a-4783-97d0-77db224c8b28-e78d4fb2-ac36-4005-b737-6dfa4c79f592.webp"
   },
   {
     "id": "178bb660-32d7-4703-8bde-4bd588b773d2",
     "name": "豆豆鴿（極巨化）-紫黑",
     "name_en": "Dynamax Pidove - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/178bb660-32d7-4703-8bde-4bd588b773d2/3386576c-0093-4bc7-a32e-be1fcbb24ff8-thumb.webp"
+    "image": "assets/products/opt/178bb660-32d7-4703-8bde-4bd588b773d2-3386576c-0093-4bc7-a32e-be1fcbb24ff8.webp"
   },
   {
     "id": "18d94cb8-8583-4d17-a74a-4ceab7613522",
     "name": "狃拉（極巨化）*母-紫黑",
     "name_en": "Dynamax Sneasel (Female) - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/18d94cb8-8583-4d17-a74a-4ceab7613522/1b584faf-6799-44e1-ac27-caac9799e590-thumb.webp"
+    "image": "assets/products/opt/18d94cb8-8583-4d17-a74a-4ceab7613522-1b584faf-6799-44e1-ac27-caac9799e590.webp"
   },
   {
     "id": "19035295-8757-481d-ad7f-4ca9f75a516c",
     "name": "皮卡丘-公路之旅曼徹斯特",
     "name_en": "Pikachu (Summer Style) - Road Trip 2025 Manchester",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/19035295-8757-481d-ad7f-4ca9f75a516c/4ca39460-1531-4cf8-bef1-bfad9782d739-thumb.png"
+    "image": "assets/products/opt/19035295-8757-481d-ad7f-4ca9f75a516c-4ca39460-1531-4cf8-bef1-bfad9782d739.webp"
   },
   {
     "id": "19b2e1ff-934f-4260-b4c9-4d977513fca9",
@@ -153,19 +153,19 @@
     "id": "2395ac26-cdd8-47e0-8d67-4cf9a6e58d99",
     "name": "妙喵（極巨化）*公",
     "name_en": "Dynamax Espurr (Male)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/2395ac26-cdd8-47e0-8d67-4cf9a6e58d99/c05b8106-5f4f-4796-8764-f7ef57226408-thumb.png"
+    "image": "assets/products/opt/2395ac26-cdd8-47e0-8d67-4cf9a6e58d99-c05b8106-5f4f-4796-8764-f7ef57226408.webp"
   },
   {
     "id": "246f271c-78cf-4e67-90f7-df721e836bd9",
     "name": "單首龍（極巨化）-紫黑",
     "name_en": "Dynamax Deino - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/246f271c-78cf-4e67-90f7-df721e836bd9/44433e85-2861-48d0-b51d-501932273611-thumb.webp"
+    "image": "assets/products/opt/246f271c-78cf-4e67-90f7-df721e836bd9-44433e85-2861-48d0-b51d-501932273611.webp"
   },
   {
     "id": "24d44ee0-2a44-4f05-b5b6-ef5f7d800714",
     "name": "嗡蝠-萬聖節髮箍",
     "name_en": "Shiny Noibat - Halloween Headband",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/24d44ee0-2a44-4f05-b5b6-ef5f7d800714/b3fdf356-003c-44da-bc4b-4c15dfb87924-thumb.png"
+    "image": "assets/products/opt/24d44ee0-2a44-4f05-b5b6-ef5f7d800714-b3fdf356-003c-44da-bc4b-4c15dfb87924.webp"
   },
   {
     "id": "274f38b5-68ac-4a84-90c2-c4769375215f",
@@ -189,7 +189,7 @@
     "id": "2a3b4823-8d9c-47e0-a36a-dc273534375d",
     "name": "毛辮羊（極巨化）*公-紫黑（XXS）",
     "name_en": "Dynamax Wooloo (Male, XXS) - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/2a3b4823-8d9c-47e0-a36a-dc273534375d/2217427e-c5d7-4842-8579-1e02be1c8147-thumb.png"
+    "image": "assets/products/opt/2a3b4823-8d9c-47e0-a36a-dc273534375d-2217427e-c5d7-4842-8579-1e02be1c8147.webp"
   },
   {
     "id": "2a8a262f-c19d-4631-ba21-e6a5b5ecafde",
@@ -201,7 +201,7 @@
     "id": "2b90b82f-de6b-45e5-baab-4737e86d94cb",
     "name": "呱呱泡蛙-萬聖節",
     "name_en": "Froakie - Pokémon Halloween Costume",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/2b90b82f-de6b-45e5-baab-4737e86d94cb/1aca49cc-3002-4449-8512-1c3e29466c86-thumb.png"
+    "image": "assets/products/opt/2b90b82f-de6b-45e5-baab-4737e86d94cb-1aca49cc-3002-4449-8512-1c3e29466c86.webp"
   },
   {
     "id": "2c3f2865-51d4-4595-95a8-e8d8491460c3",
@@ -219,7 +219,7 @@
     "id": "2d515785-961a-45cb-b5d6-d939e938920f",
     "name": "皮卡丘-動畫地平線（XS・母・大師球）",
     "name_en": "Pikachu - Pokémon Horizons (XS, Female, Master Ball)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/2d515785-961a-45cb-b5d6-d939e938920f/bf42a7ce-08a3-4784-b9cc-4d07085f8f0c-thumb.png"
+    "image": "assets/products/opt/2d515785-961a-45cb-b5d6-d939e938920f-bf42a7ce-08a3-4784-b9cc-4d07085f8f0c.webp"
   },
   {
     "id": "2dd6df07-8d10-4f9c-9ce2-00efac132168",
@@ -255,7 +255,7 @@
     "id": "31f833ef-0838-49f5-9c98-050096e4839b",
     "name": "組合包3",
     "name_en": "組合包3",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/31f833ef-0838-49f5-9c98-050096e4839b/a2e7dd48-10c3-4030-85cd-1c8a61500e69-thumb.webp"
+    "image": "assets/products/opt/31f833ef-0838-49f5-9c98-050096e4839b-a2e7dd48-10c3-4030-85cd-1c8a61500e69.webp"
   },
   {
     "id": "3438a3e4-0250-435c-9679-d4575fa98ab2",
@@ -279,7 +279,7 @@
     "id": "371df289-9bc3-4b5d-8855-6308b60e3c6a",
     "name": "吼吼鯨（極巨化）-紫黑",
     "name_en": "Dynamax Wailmer - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/371df289-9bc3-4b5d-8855-6308b60e3c6a/76aa162b-d2ff-4288-ba0e-ee44b4b6db24-thumb.webp"
+    "image": "assets/products/opt/371df289-9bc3-4b5d-8855-6308b60e3c6a-76aa162b-d2ff-4288-ba0e-ee44b4b6db24.webp"
   },
   {
     "id": "3aaf23ee-7f75-4baa-a8c8-128b117b01df",
@@ -297,13 +297,13 @@
     "id": "3d44fa8f-5de2-4728-a0af-cd04431ff8d4",
     "name": "皮卡丘（極巨化）*母-紫黑",
     "name_en": "Dynamax Pikachu (Female) - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/3d44fa8f-5de2-4728-a0af-cd04431ff8d4/b7354e19-23e0-4d2c-8ee2-4a038bd963be-thumb.png"
+    "image": "assets/products/opt/3d44fa8f-5de2-4728-a0af-cd04431ff8d4-b7354e19-23e0-4d2c-8ee2-4a038bd963be.webp"
   },
   {
     "id": "3d720cf9-f2a5-47e3-85f4-a233d528d572",
     "name": "妙喵（極巨化）*母-紫黑",
     "name_en": "Dynamax Espurr (Female) - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/3d720cf9-f2a5-47e3-85f4-a233d528d572/bbdf2019-4fe4-4cf9-87ec-8b16c9d58df0-thumb.png"
+    "image": "assets/products/opt/3d720cf9-f2a5-47e3-85f4-a233d528d572-bbdf2019-4fe4-4cf9-87ec-8b16c9d58df0.webp"
   },
   {
     "id": "3db0ef94-c088-4a2c-b2ff-80c1f0d81390",
@@ -315,19 +315,19 @@
     "id": "3e5b5bb9-a68a-457c-a8e6-ae030a59193b",
     "name": "毛辮羊（極巨化）-紫黑",
     "name_en": "Dynamax Wooloo  - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/3e5b5bb9-a68a-457c-a8e6-ae030a59193b/8437db8c-8e0a-4af8-a8a1-e90a0c5166ac-thumb.png"
+    "image": "assets/products/opt/3e5b5bb9-a68a-457c-a8e6-ae030a59193b-8437db8c-8e0a-4af8-a8a1-e90a0c5166ac.webp"
   },
   {
     "id": "3e8b8855-536c-44d1-b105-af0ec83b7cfb",
     "name": "藏瑪然特-曠野週2026（大師球）",
     "name_en": "Zamazenta - Into the Wild 2026 (Master Ball)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/3e8b8855-536c-44d1-b105-af0ec83b7cfb/818fa92a-a916-4d03-907b-6066e8bc7534-thumb.png"
+    "image": "assets/products/opt/3e8b8855-536c-44d1-b105-af0ec83b7cfb-818fa92a-a916-4d03-907b-6066e8bc7534.webp"
   },
   {
     "id": "42e5428a-2743-439a-922f-9c743a2b2ae5",
     "name": "大顎蟻（極巨化）-紫黑",
     "name_en": "Dynamax Trapinch - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/42e5428a-2743-439a-922f-9c743a2b2ae5/589a965c-78ac-4bf2-ba89-bbaaa6534483-thumb.png"
+    "image": "assets/products/opt/42e5428a-2743-439a-922f-9c743a2b2ae5-589a965c-78ac-4bf2-ba89-bbaaa6534483.webp"
   },
   {
     "id": "47578a86-4418-4b11-9053-7998bf899bf0",
@@ -345,7 +345,7 @@
     "id": "4a1e0064-53f5-4dbe-a632-39d7eb245afa",
     "name": "耿鬼（超極巨化）*XXL-墨西哥亡靈節",
     "name_en": "Gigantamax Gengar (XXL) - Mexico City Día de Muertos 2026",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/4a1e0064-53f5-4dbe-a632-39d7eb245afa/1e926adb-e3b4-4f42-8fe7-a3a855f1c199-thumb.png"
+    "image": "assets/products/opt/4a1e0064-53f5-4dbe-a632-39d7eb245afa-1e926adb-e3b4-4f42-8fe7-a3a855f1c199.webp"
   },
   {
     "id": "4b099bcd-cfbc-4892-995e-2431aa9228e9",
@@ -357,7 +357,7 @@
     "id": "4b928ea2-3d91-40ae-9f39-e85833da82ca",
     "name": "皮卡丘-公路之旅海牙",
     "name_en": "Pikachu (Summer Style) - Road Trip 2025 The Hague",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/4b928ea2-3d91-40ae-9f39-e85833da82ca/1b4c8fca-620b-4fc5-807d-029f8e2d86ad-thumb.png"
+    "image": "assets/products/opt/4b928ea2-3d91-40ae-9f39-e85833da82ca-1b4c8fca-620b-4fc5-807d-029f8e2d86ad.webp"
   },
   {
     "id": "4bc4658d-3532-482a-a11b-20eebe4c2e55",
@@ -399,7 +399,7 @@
     "id": "500e3e31-5d82-4a96-8b1b-343729e98661",
     "name": "皮卡丘（國王）-2026世界錦標賽舊金山背景",
     "name_en": "Pikachu-2026 World Championships San Francisco Background",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/500e3e31-5d82-4a96-8b1b-343729e98661/365aa506-2257-41cf-ba9b-38fdbf1f89f9-thumb.png"
+    "image": "assets/products/opt/500e3e31-5d82-4a96-8b1b-343729e98661-365aa506-2257-41cf-ba9b-38fdbf1f89f9.webp"
   },
   {
     "id": "50c46624-f8ef-4f28-9b79-897121f27e2c",
@@ -423,7 +423,7 @@
     "id": "53526afb-2266-44c2-9b48-75c6c51ce710",
     "name": "波加曼-萬聖節",
     "name_en": "Piplup - Halloween Mischief Costume",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/53526afb-2266-44c2-9b48-75c6c51ce710/29d33a45-83c4-4362-aee1-35bae0a12153-thumb.png"
+    "image": "assets/products/opt/53526afb-2266-44c2-9b48-75c6c51ce710-29d33a45-83c4-4362-aee1-35bae0a12153.webp"
   },
   {
     "id": "535ad1ce-37a1-4db7-af62-91fc503390af",
@@ -435,7 +435,7 @@
     "id": "55c7569a-5551-491e-bdf2-08ee5fd07a0f",
     "name": "勾魂眼（極巨化）-紫黑",
     "name_en": "Dynamax Sableye - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/55c7569a-5551-491e-bdf2-08ee5fd07a0f/1ca22546-5fdc-42a1-a1c9-cceeeb36a7df-thumb.png"
+    "image": "assets/products/opt/55c7569a-5551-491e-bdf2-08ee5fd07a0f-1ca22546-5fdc-42a1-a1c9-cceeeb36a7df.webp"
   },
   {
     "id": "57252709-7f20-4728-8601-27e9ab3f474c",
@@ -465,43 +465,43 @@
     "id": "58ecb86e-9fc8-4f1a-a484-3135aa2bd810",
     "name": "電擊獸（極巨化）-紫黑",
     "name_en": "Dynamax Electabuzz - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/58ecb86e-9fc8-4f1a-a484-3135aa2bd810/68f54727-2325-4bd9-b582-0cb39b947b60-thumb.webp"
+    "image": "assets/products/opt/58ecb86e-9fc8-4f1a-a484-3135aa2bd810-68f54727-2325-4bd9-b582-0cb39b947b60.webp"
   },
   {
     "id": "5940fdac-ac9c-4eb5-bdef-15652fc86e5d",
     "name": "蒼響-曠野週2026（紀念球）",
     "name_en": "Zacian - Into the Wild 2026 (Premier Ball)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5940fdac-ac9c-4eb5-bdef-15652fc86e5d/b5a24ab0-e87d-475f-87c5-8cb7c7376750-thumb.png"
+    "image": "assets/products/opt/5940fdac-ac9c-4eb5-bdef-15652fc86e5d-b5a24ab0-e87d-475f-87c5-8cb7c7376750.webp"
   },
   {
     "id": "5976ec0f-a1fc-40c8-a8f2-dc7a94f6c5ed",
     "name": "可達鴨-禮賓部色背",
     "name_en": "Psyduck - Pokémon Concierge",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5976ec0f-a1fc-40c8-a8f2-dc7a94f6c5ed/1d5b97d0-e2df-4dfb-9825-9f757e531fce-thumb.png"
+    "image": "assets/products/opt/5976ec0f-a1fc-40c8-a8f2-dc7a94f6c5ed-1d5b97d0-e2df-4dfb-9825-9f757e531fce.webp"
   },
   {
     "id": "59b97884-6ce4-4af0-a020-21901acaecc8",
     "name": "蒼響-曠野週2026（大師球）",
     "name_en": "Zacian - Into the Wild 2026 (Master Ball)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/59b97884-6ce4-4af0-a020-21901acaecc8/67eed319-63df-4be7-9a4c-c9a18faa2f28-thumb.png"
+    "image": "assets/products/opt/59b97884-6ce4-4af0-a020-21901acaecc8-67eed319-63df-4be7-9a4c-c9a18faa2f28.webp"
   },
   {
     "id": "5aff3ff7-62d9-4cd2-b813-b03348d79fef",
     "name": "皮卡丘-公路之旅（7款一套）",
     "name_en": "Pikachu (Summer Style) - Road Trip 2025 (7-City Set)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5aff3ff7-62d9-4cd2-b813-b03348d79fef/b20b93ce-1260-46f8-b317-63976820ba34-thumb.png"
+    "image": "assets/products/opt/5aff3ff7-62d9-4cd2-b813-b03348d79fef-b20b93ce-1260-46f8-b317-63976820ba34.webp"
   },
   {
     "id": "5b7f2c23-c860-48fe-8962-6bb044fbf634",
     "name": "鴨嘴火獸（極巨化）-紫黑",
     "name_en": "Dynamax Magmar - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5b7f2c23-c860-48fe-8962-6bb044fbf634/d14e94f5-d59a-4583-b199-15391599ef02-thumb.webp"
+    "image": "assets/products/opt/5b7f2c23-c860-48fe-8962-6bb044fbf634-d14e94f5-d59a-4583-b199-15391599ef02.webp"
   },
   {
     "id": "5c5ee2c3-282f-4849-995f-548f8f763be3",
     "name": "卡拉卡拉-亡靈節花冠",
     "name_en": "Shiny Cubone - Cempasúchil Crown",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5c5ee2c3-282f-4849-995f-548f8f763be3/f9993c7b-842f-47f4-a514-90e791b2a59c-thumb.png"
+    "image": "assets/products/opt/5c5ee2c3-282f-4849-995f-548f8f763be3-f9993c7b-842f-47f4-a514-90e791b2a59c.webp"
   },
   {
     "id": "5d8fe434-34de-4c2b-b459-1a8fd0c8cc1c",
@@ -513,49 +513,49 @@
     "id": "5ef6cef3-831b-4d39-858a-e4fd40493599",
     "name": "咕咕（極巨化）-紫黑",
     "name_en": "Dynamax Hoothoot - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5ef6cef3-831b-4d39-858a-e4fd40493599/18421ed3-0f90-432f-a9fa-6d7a0ed193cf-thumb.webp"
+    "image": "assets/products/opt/5ef6cef3-831b-4d39-858a-e4fd40493599-18421ed3-0f90-432f-a9fa-6d7a0ed193cf.webp"
   },
   {
     "id": "5f172209-0b6f-4f66-ad9a-2dece76d2d59",
     "name": "火紅不倒翁（極巨化）-紫黑",
     "name_en": "Dynamax Darumaka - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5f172209-0b6f-4f66-ad9a-2dece76d2d59/a5372d84-f2fd-471a-b322-149649669c88-thumb.webp"
+    "image": "assets/products/opt/5f172209-0b6f-4f66-ad9a-2dece76d2d59-a5372d84-f2fd-471a-b322-149649669c88.webp"
   },
   {
     "id": "5f23466f-dfa4-44c4-afca-31b4bb4f2b2a",
     "name": "索財靈-2025九週年紀念限定背景",
     "name_en": "Gimmighoul - Pokémon GO 9th Anniversary Background",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5f23466f-dfa4-44c4-afca-31b4bb4f2b2a/adf10043-94c1-49ef-bc18-2f8d3502bb81-thumb.png"
+    "image": "assets/products/opt/5f23466f-dfa4-44c4-afca-31b4bb4f2b2a-adf10043-94c1-49ef-bc18-2f8d3502bb81.webp"
   },
   {
     "id": "5fb9c4f8-eec8-416c-ba77-20c425f6849f",
     "name": "大針蜂-2026世界錦標賽舊金山背景",
     "name_en": "Beedrill-2026 World Championships San Francisco Background",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5fb9c4f8-eec8-416c-ba77-20c425f6849f/694c0a7c-e66f-446e-96ef-80ecc399a58e-thumb.png"
+    "image": "assets/products/opt/5fb9c4f8-eec8-416c-ba77-20c425f6849f-694c0a7c-e66f-446e-96ef-80ecc399a58e.webp"
   },
   {
     "id": "602b45a7-97ed-4214-9109-c5c5f0595464",
     "name": "怪力（夾克）-曠野地帶2026全球（大師球）",
     "name_en": "Machamp (Modern Jacket) - GO Wild Area 2026 Global (Master Ball)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/602b45a7-97ed-4214-9109-c5c5f0595464/ea6de3ac-60ff-47af-9dab-ce46f09da72d-thumb.png"
+    "image": "assets/products/opt/602b45a7-97ed-4214-9109-c5c5f0595464-ea6de3ac-60ff-47af-9dab-ce46f09da72d.webp"
   },
   {
     "id": "6151e136-9d7d-4fd5-ac17-0526d635a2a1",
     "name": "帕路奇亞（極巨化）-曠野地帶2026全球（大師球）",
     "name_en": "Dynamax Palkia - GO Wild Area 2026 Global (Master Ball)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/6151e136-9d7d-4fd5-ac17-0526d635a2a1/8257f7ae-77bc-42a0-9805-3ccab3de0d81-thumb.webp"
+    "image": "assets/products/opt/6151e136-9d7d-4fd5-ac17-0526d635a2a1-8257f7ae-77bc-42a0-9805-3ccab3de0d81.webp"
   },
   {
     "id": "61592b60-61c4-4634-929d-23228e8dcdb9",
     "name": "耿鬼（超極巨化）*XXS-墨西哥亡靈節",
     "name_en": "Gigantamax Gengar (XXS) - Mexico City Día de Muertos 2026",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/61592b60-61c4-4634-929d-23228e8dcdb9/da7d658a-5580-4348-80f3-7781965e4265-thumb.png"
+    "image": "assets/products/opt/61592b60-61c4-4634-929d-23228e8dcdb9-da7d658a-5580-4348-80f3-7781965e4265.webp"
   },
   {
     "id": "629cb69f-8558-49d6-8fe2-2cc7a84eb088",
     "name": "藏瑪然特-曠野週2026（紀念球）",
     "name_en": "Zamazenta - Into the Wild 2026 (Premier Ball)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/629cb69f-8558-49d6-8fe2-2cc7a84eb088/a3cbcfba-efb7-4818-b230-45e55606c118-thumb.png"
+    "image": "assets/products/opt/629cb69f-8558-49d6-8fe2-2cc7a84eb088-a3cbcfba-efb7-4818-b230-45e55606c118.webp"
   },
   {
     "id": "63217c3b-7430-4101-85d1-d9a7aebbac9b",
@@ -567,7 +567,7 @@
     "id": "63c004b2-337c-4c64-b975-d5384cfd3ce2",
     "name": "蒼響、藏瑪然特-曠野週2026（紀念球2隻套組）",
     "name_en": "Zacian & Zamazenta - Into the Wild 2026 (Premier Ball Set)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/63c004b2-337c-4c64-b975-d5384cfd3ce2/9988ae65-317b-4b67-80e2-41934c144181-thumb.png"
+    "image": "assets/products/opt/63c004b2-337c-4c64-b975-d5384cfd3ce2-9988ae65-317b-4b67-80e2-41934c144181.webp"
   },
   {
     "id": "64dee5b5-7609-489d-a9bf-71c7aa6c4fb6",
@@ -579,7 +579,7 @@
     "id": "651a5056-6f60-40c4-8296-5c6e21ce8d05",
     "name": "鋁鋼龍（超極巨化）-曠野地帶2026全球（大師球）",
     "name_en": "Gigantamax Duraludon - GO Wild Area 2026 Global (Master Ball)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/651a5056-6f60-40c4-8296-5c6e21ce8d05/6c9a24c9-a3d9-4131-8089-2fee1056737a-thumb.webp"
+    "image": "assets/products/opt/651a5056-6f60-40c4-8296-5c6e21ce8d05-6c9a24c9-a3d9-4131-8089-2fee1056737a.webp"
   },
   {
     "id": "653d4945-66d0-4be8-a645-baacf1032366",
@@ -609,7 +609,7 @@
     "id": "67a71ebf-98fc-47ef-9d29-7137fb0ff495",
     "name": "甜竹竹（極巨化）-紫黑",
     "name_en": "Dynamax Bounsweet - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/67a71ebf-98fc-47ef-9d29-7137fb0ff495/35208847-fa21-43a7-a12a-af2277b64385-thumb.webp"
+    "image": "assets/products/opt/67a71ebf-98fc-47ef-9d29-7137fb0ff495-35208847-fa21-43a7-a12a-af2277b64385.webp"
   },
   {
     "id": "67cd825f-cec7-4763-910b-1c9e682a14ef",
@@ -645,7 +645,7 @@
     "id": "6dcddb12-292c-4bbc-a471-c19c1b698d6c",
     "name": "帝牙盧卡（極巨化）-曠野地帶2026全球（大師球）",
     "name_en": "Dynamax Dialga - GO Wild Area 2026 Global (Master Ball)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/6dcddb12-292c-4bbc-a471-c19c1b698d6c/8f1ce171-9557-4278-a4e3-023345dd1fae-thumb.webp"
+    "image": "assets/products/opt/6dcddb12-292c-4bbc-a471-c19c1b698d6c-8f1ce171-9557-4278-a4e3-023345dd1fae.webp"
   },
   {
     "id": "6e21261b-cc8b-4950-9849-d33632f80e68",
@@ -675,7 +675,7 @@
     "id": "70c64ddc-ff2d-41ab-8be9-dabca68b38c6",
     "name": "組合包-1",
     "name_en": "組合包-1",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/70c64ddc-ff2d-41ab-8be9-dabca68b38c6/e3300d6e-ec14-4ddb-9ebc-2d7ee704ac6b-thumb.png"
+    "image": "assets/products/opt/70c64ddc-ff2d-41ab-8be9-dabca68b38c6-e3300d6e-ec14-4ddb-9ebc-2d7ee704ac6b.webp"
   },
   {
     "id": "72d40e23-fa06-44c7-8d6a-caa662364e1a",
@@ -693,7 +693,7 @@
     "id": "7403eb97-0650-4e92-a7e3-d5ecd663783d",
     "name": "大鉗蟹（極巨化）-紫黑",
     "name_en": "Dynamax Krabby - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/7403eb97-0650-4e92-a7e3-d5ecd663783d/1a2eff8c-ba75-4460-92ec-f824d434dfbb-thumb.webp"
+    "image": "assets/products/opt/7403eb97-0650-4e92-a7e3-d5ecd663783d-1a2eff8c-ba75-4460-92ec-f824d434dfbb.webp"
   },
   {
     "id": "768b982d-272e-4b88-ad5f-aa2d0b4c4a21",
@@ -711,7 +711,7 @@
     "id": "792f0696-ab02-40fb-8e00-9856dc3d1ebc",
     "name": "好啦魷（極巨化）-紫黑",
     "name_en": "Dynamax Inkay - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/792f0696-ab02-40fb-8e00-9856dc3d1ebc/79d36e22-ec88-4f63-b939-2451eedc7996-thumb.png"
+    "image": "assets/products/opt/792f0696-ab02-40fb-8e00-9856dc3d1ebc-79d36e22-ec88-4f63-b939-2451eedc7996.webp"
   },
   {
     "id": "7a2408b1-90c3-49d2-8187-8639cc6ff10e",
@@ -729,7 +729,7 @@
     "id": "7ded568d-2ee5-4168-96da-f273c8e7f0c5",
     "name": "吉利蛋（極巨化）*母-紫黑",
     "name_en": "Dynamax Chansey (Female) - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/7ded568d-2ee5-4168-96da-f273c8e7f0c5/d8f8bc0e-d362-40b1-9774-c48ff3cb6077-thumb.png"
+    "image": "assets/products/opt/7ded568d-2ee5-4168-96da-f273c8e7f0c5-d8f8bc0e-d362-40b1-9774-c48ff3cb6077.webp"
   },
   {
     "id": "7e2b426d-c468-4ec4-b233-d558cfdaca9d",
@@ -747,13 +747,13 @@
     "id": "80f07cc1-301b-466c-aad4-1ca85d248a5a",
     "name": "組合包4",
     "name_en": "組合包4",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/80f07cc1-301b-466c-aad4-1ca85d248a5a/3eba8270-e429-4ce9-bde2-5c43d362f41b-thumb.webp"
+    "image": "assets/products/opt/80f07cc1-301b-466c-aad4-1ca85d248a5a-3eba8270-e429-4ce9-bde2-5c43d362f41b.webp"
   },
   {
     "id": "821a1e15-8b04-4cc0-abb1-4c7115155e78",
     "name": "破破袋（極巨化）-紫黑",
     "name_en": "Dynamax Trubbish - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/821a1e15-8b04-4cc0-abb1-4c7115155e78/46143a07-bb7f-41a9-8892-ea61f3f7f041-thumb.webp"
+    "image": "assets/products/opt/821a1e15-8b04-4cc0-abb1-4c7115155e78-46143a07-bb7f-41a9-8892-ea61f3f7f041.webp"
   },
   {
     "id": "86cafd21-4a99-495e-9658-03c7619ebe20",
@@ -789,13 +789,13 @@
     "id": "8f902aa2-6e38-415b-9ca7-17dc26f15faa",
     "name": "熊寶寶-女巫帽",
     "name_en": "Shiny Witch Hat Teddiursa",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/8f902aa2-6e38-415b-9ca7-17dc26f15faa/e8c542e0-820d-4495-b493-c32478dfd6a0-thumb.png"
+    "image": "assets/products/opt/8f902aa2-6e38-415b-9ca7-17dc26f15faa-e8c542e0-820d-4495-b493-c32478dfd6a0.webp"
   },
   {
     "id": "90d68c23-ead1-4708-a43e-96b504e2cfa5",
     "name": "鋁鋼龍（極巨化）-紫黑",
     "name_en": "Dynamax Duraludon - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/90d68c23-ead1-4708-a43e-96b504e2cfa5/a17d5510-760b-40de-83d7-126fcf291cee-thumb.png"
+    "image": "assets/products/opt/90d68c23-ead1-4708-a43e-96b504e2cfa5-a17d5510-760b-40de-83d7-126fcf291cee.webp"
   },
   {
     "id": "941e95f0-ee0a-4b2a-b41a-6895c0faaa74",
@@ -819,13 +819,13 @@
     "id": "963bcd58-ea19-45b7-88b1-aff6e065174c",
     "name": "鋁鋼龍（超極巨化）-曠野地帶2026全球（白球）",
     "name_en": "Gigantamax Duraludon - GO Wild Area 2026 Global (Premier Ball)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/963bcd58-ea19-45b7-88b1-aff6e065174c/817556c0-824c-4a7f-aac3-cf9cddd9eb75-thumb.webp"
+    "image": "assets/products/opt/963bcd58-ea19-45b7-88b1-aff6e065174c-817556c0-824c-4a7f-aac3-cf9cddd9eb75.webp"
   },
   {
     "id": "967ba0dd-1dbc-495f-ab89-1fd71857ae93",
     "name": "皮卡丘-公路之旅倫敦",
     "name_en": "Pikachu (Summer Style) - Road Trip 2025 London",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/967ba0dd-1dbc-495f-ab89-1fd71857ae93/8cdc175e-d525-4c13-85f1-d9fbae08d2ba-thumb.png"
+    "image": "assets/products/opt/967ba0dd-1dbc-495f-ab89-1fd71857ae93-8cdc175e-d525-4c13-85f1-d9fbae08d2ba.webp"
   },
   {
     "id": "9968c818-d367-4767-9353-64ab79043ae1",
@@ -837,7 +837,7 @@
     "id": "99f671c2-9989-4b50-b92d-b27fc8033d0a",
     "name": "超音蝠-萬聖節禮帽",
     "name_en": "Zubat -  Halloween Top Hat",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/99f671c2-9989-4b50-b92d-b27fc8033d0a/91ff1d19-57b1-4aa7-94ef-599dfdb9db74-thumb.png"
+    "image": "assets/products/opt/99f671c2-9989-4b50-b92d-b27fc8033d0a-91ff1d19-57b1-4aa7-94ef-599dfdb9db74.webp"
   },
   {
     "id": "9a560e45-70ea-4cf5-ad43-8b4ce35d3e64",
@@ -849,7 +849,7 @@
     "id": "9b1b13ca-e518-44d0-aeb0-32d6bc157648",
     "name": "鯉魚王（極巨化）*母-紫黑",
     "name_en": "Dynamax Magikarp (Female) - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/9b1b13ca-e518-44d0-aeb0-32d6bc157648/ce36db9c-8d8f-4aa5-8cd8-b2c583323319-thumb.png"
+    "image": "assets/products/opt/9b1b13ca-e518-44d0-aeb0-32d6bc157648-ce36db9c-8d8f-4aa5-8cd8-b2c583323319.webp"
   },
   {
     "id": "9b1dd25a-cb08-484e-86da-6727905cd7fa",
@@ -903,7 +903,7 @@
     "id": "a66f6d3f-6703-4797-9992-5804bfd3070a",
     "name": "皮卡丘-公路之旅柏林",
     "name_en": "Pikachu (Summer Style) - Road Trip 2025 Berlin",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/a66f6d3f-6703-4797-9992-5804bfd3070a/f06c5c00-b18e-4764-ab28-4cb56aae1b6b-thumb.png"
+    "image": "assets/products/opt/a66f6d3f-6703-4797-9992-5804bfd3070a-f06c5c00-b18e-4764-ab28-4cb56aae1b6b.webp"
   },
   {
     "id": "a77bbc31-d7e0-49cb-91a9-7065f80cab58",
@@ -933,7 +933,7 @@
     "id": "aec9139e-7d87-4fe3-97e4-2c4ddcc5490f",
     "name": "皮卡丘（紗麗）-印度光之祭典2026🔥動態煙火",
     "name_en": "Pikachu (Saree) - India Festival of Lights 2026",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/aec9139e-7d87-4fe3-97e4-2c4ddcc5490f/9422aff9-43d9-42a8-9dbd-028e8764cdb3-thumb.png"
+    "image": "assets/products/opt/aec9139e-7d87-4fe3-97e4-2c4ddcc5490f-9422aff9-43d9-42a8-9dbd-028e8764cdb3.webp"
   },
   {
     "id": "af183da2-c258-4644-bceb-5d2cd6b48ac4",
@@ -945,7 +945,7 @@
     "id": "af5700dc-457c-4aeb-bf1c-7f9a26448b9a",
     "name": "鐵啞鈴（極巨化）-紫黑*大師球",
     "name_en": "Dynamax Beldum (Master Ball) - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/af5700dc-457c-4aeb-bf1c-7f9a26448b9a/eb3ca47a-27cd-40e6-8fce-e9b71edc4a23-thumb.png"
+    "image": "assets/products/opt/af5700dc-457c-4aeb-bf1c-7f9a26448b9a-eb3ca47a-27cd-40e6-8fce-e9b71edc4a23.webp"
   },
   {
     "id": "af6b226d-a462-4ddb-ab66-0b46f0d72a24",
@@ -957,25 +957,25 @@
     "id": "b01649e6-16e7-488a-bc7e-631f048a40c7",
     "name": "鐵啞鈴（極巨化）-紫黑",
     "name_en": "Dynamax Beldum - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/b01649e6-16e7-488a-bc7e-631f048a40c7/391881e7-e99e-47b2-beae-2422e9f8ab75-thumb.png"
+    "image": "assets/products/opt/b01649e6-16e7-488a-bc7e-631f048a40c7-391881e7-e99e-47b2-beae-2422e9f8ab75.webp"
   },
   {
     "id": "b1361e07-528d-4f5e-b302-d0e63190c7cc",
     "name": "拉魯拉絲（極巨化）*母-紫黑",
     "name_en": "Dynamax Ralts (Female) - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/b1361e07-528d-4f5e-b302-d0e63190c7cc/f4fc35b7-2c79-4fa9-a2cf-83acdb13a414-thumb.png"
+    "image": "assets/products/opt/b1361e07-528d-4f5e-b302-d0e63190c7cc-f4fc35b7-2c79-4fa9-a2cf-83acdb13a414.webp"
   },
   {
     "id": "b5c4a38f-eb3f-4bf9-bd89-17be690d6f93",
     "name": "隨風球-萬聖節",
     "name_en": "Drifblim - Halloween Mischief Costume",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/b5c4a38f-eb3f-4bf9-bd89-17be690d6f93/73df9291-21d3-47df-ae68-50ab276a2513-thumb.png"
+    "image": "assets/products/opt/b5c4a38f-eb3f-4bf9-bd89-17be690d6f93-73df9291-21d3-47df-ae68-50ab276a2513.webp"
   },
   {
     "id": "b7a46db8-da85-4b1b-8b40-94e36a0f7707",
     "name": "腕力（極巨化）*XXS-紫黑",
     "name_en": "Dynamax Machop (XXS) - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/b7a46db8-da85-4b1b-8b40-94e36a0f7707/dba2818e-3be0-44d7-9bdc-05fb38b91122-thumb.png"
+    "image": "assets/products/opt/b7a46db8-da85-4b1b-8b40-94e36a0f7707-dba2818e-3be0-44d7-9bdc-05fb38b91122.webp"
   },
   {
     "id": "b89de60c-c1b3-475f-beba-124fffb4586a",
@@ -987,7 +987,7 @@
     "id": "b8af5356-fe1b-46d5-958f-b211f86f51f2",
     "name": "迷布莉姆（極巨化）-紫黑",
     "name_en": "Dynamax Hatenna - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/b8af5356-fe1b-46d5-958f-b211f86f51f2/0ac28e96-268d-4f27-9cb8-7094a66d34ad-thumb.png"
+    "image": "assets/products/opt/b8af5356-fe1b-46d5-958f-b211f86f51f2-0ac28e96-268d-4f27-9cb8-7094a66d34ad.webp"
   },
   {
     "id": "b9cb15de-4a53-42ff-b88c-37fc68c0d157",
@@ -999,7 +999,7 @@
     "id": "bd0137df-5398-4465-96dc-b50704ba6a19",
     "name": "雷吉鐸拉戈（極巨化）-曠野週2026",
     "name_en": "Shiny Dynamax Regidrago - Into the Wild 2026",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/bd0137df-5398-4465-96dc-b50704ba6a19/f15aebcd-590f-4d3c-bedd-6ca0d68e1cfc-thumb.png"
+    "image": "assets/products/opt/bd0137df-5398-4465-96dc-b50704ba6a19-f15aebcd-590f-4d3c-bedd-6ca0d68e1cfc.webp"
   },
   {
     "id": "bea70071-bd24-453a-bb5d-7eb464ef96b4",
@@ -1011,19 +1011,19 @@
     "id": "bf278d4a-2ff4-464c-b5e3-9d069a567d75",
     "name": "木木梟-萬聖節",
     "name_en": "Rowlet - Pokémon Halloween Costume",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/bf278d4a-2ff4-464c-b5e3-9d069a567d75/39337834-6b57-4ff2-9b88-7870c9301320-thumb.png"
+    "image": "assets/products/opt/bf278d4a-2ff4-464c-b5e3-9d069a567d75-39337834-6b57-4ff2-9b88-7870c9301320.webp"
   },
   {
     "id": "c096821f-2b23-4d4c-a456-d1fbf51d6721",
     "name": "腕力（極巨化）-紫黑",
     "name_en": "Dynamax Machop - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/c096821f-2b23-4d4c-a456-d1fbf51d6721/72d4cdf8-efda-44c1-a9b7-50b2974af81b-thumb.webp"
+    "image": "assets/products/opt/c096821f-2b23-4d4c-a456-d1fbf51d6721-72d4cdf8-efda-44c1-a9b7-50b2974af81b.webp"
   },
   {
     "id": "c0f2ee45-7303-4dd5-95c0-6979b5d9700f",
     "name": "蒼響-2026曠野色背XXL",
     "name_en": "Shiny Zacian XXL - GO Wild Area 2026 Background",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/c0f2ee45-7303-4dd5-95c0-6979b5d9700f/07cfc048-8cd9-4020-a08b-9f1d66c5ff82-thumb.png"
+    "image": "assets/products/opt/c0f2ee45-7303-4dd5-95c0-6979b5d9700f-07cfc048-8cd9-4020-a08b-9f1d66c5ff82.webp"
   },
   {
     "id": "c2f8374e-4319-47f9-8b09-7079c93f1c64",
@@ -1035,19 +1035,19 @@
     "id": "c4a4ff38-5ced-4aea-aee4-a12193ca1b89",
     "name": "伊布（極巨化）*母-紫黑",
     "name_en": "Dynamax Eevee (Female) - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/c4a4ff38-5ced-4aea-aee4-a12193ca1b89/8dbd1d5c-c6b0-42d9-8f3f-3487b8d9e9f9-thumb.png"
+    "image": "assets/products/opt/c4a4ff38-5ced-4aea-aee4-a12193ca1b89-8dbd1d5c-c6b0-42d9-8f3f-3487b8d9e9f9.webp"
   },
   {
     "id": "c4b9a43a-0515-4373-ab4a-e2c612e996b1",
     "name": "藏瑪然特-2026曠野色背XXL",
     "name_en": "Shiny Zamazenta XXL - GO Wild Area 2026 Background",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/c4b9a43a-0515-4373-ab4a-e2c612e996b1/33f98fcb-57a4-4670-9a82-86cf698cc3cc-thumb.png"
+    "image": "assets/products/opt/c4b9a43a-0515-4373-ab4a-e2c612e996b1-33f98fcb-57a4-4670-9a82-86cf698cc3cc.webp"
   },
   {
     "id": "c51e266d-4f9a-4930-b8a1-d7cd76e0ba84",
     "name": "皮卡丘（庫爾塔）-印度光之祭典2026🔥動態煙火",
     "name_en": "Pikachu (Kurta) - India Festival of Lights 2026",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/c51e266d-4f9a-4930-b8a1-d7cd76e0ba84/5d05c4b2-05bc-4ba1-96eb-401163d76681-thumb.png"
+    "image": "assets/products/opt/c51e266d-4f9a-4930-b8a1-d7cd76e0ba84-5d05c4b2-05bc-4ba1-96eb-401163d76681.webp"
   },
   {
     "id": "c8209417-2f52-49bd-8ff4-351972076a84",
@@ -1071,7 +1071,7 @@
     "id": "cc479ca2-19e3-4e2d-8cbb-8050b16c2c3f",
     "name": "帝牙盧卡（極巨化）-曠野地帶2026全球（白球）",
     "name_en": "Dynamax Dialga - GO Wild Area 2026 Global (Premier Ball)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/cc479ca2-19e3-4e2d-8cbb-8050b16c2c3f/3d9f9a1f-d0e6-457b-80c0-82b7d90a8344-thumb.webp"
+    "image": "assets/products/opt/cc479ca2-19e3-4e2d-8cbb-8050b16c2c3f-3d9f9a1f-d0e6-457b-80c0-82b7d90a8344.webp"
   },
   {
     "id": "ce75fffc-7371-42b4-b0e4-7c47268a06ed",
@@ -1083,7 +1083,7 @@
     "id": "ce9a53e7-c740-44ce-aeb2-9c4ef93ac224",
     "name": "伊布（極巨化）*公-紫黑-狩獵球",
     "name_en": "Dynamax Eevee (Male) - Dark Skies - Safari Ball",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/ce9a53e7-c740-44ce-aeb2-9c4ef93ac224/564cb3d6-1f69-4250-88ba-00d4241169b9-thumb.webp"
+    "image": "assets/products/opt/ce9a53e7-c740-44ce-aeb2-9c4ef93ac224-564cb3d6-1f69-4250-88ba-00d4241169b9.webp"
   },
   {
     "id": "cea9723c-4a05-48ec-a065-cd2bbf4d8221",
@@ -1101,7 +1101,7 @@
     "id": "d061fdfa-61c6-46fa-be7c-2df46d6eda03",
     "name": "獨角犀牛（極巨化）*公-紫黑",
     "name_en": "Dynamax Rhyhorn (Male) - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/d061fdfa-61c6-46fa-be7c-2df46d6eda03/17727cbb-01b5-4d70-be15-4c06a3bfc4ac-thumb.png"
+    "image": "assets/products/opt/d061fdfa-61c6-46fa-be7c-2df46d6eda03-17727cbb-01b5-4d70-be15-4c06a3bfc4ac.webp"
   },
   {
     "id": "d131d983-5a56-4590-89b0-167335cde607",
@@ -1125,13 +1125,13 @@
     "id": "d55db673-0abb-4833-ab0c-7468729d73bc",
     "name": "炎兔兒（極巨化）-紫黑",
     "name_en": "Dynamax Scorbunny - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/d55db673-0abb-4833-ab0c-7468729d73bc/e8a526cc-5158-4b15-90d9-7fa0ee606a89-thumb.webp"
+    "image": "assets/products/opt/d55db673-0abb-4833-ab0c-7468729d73bc-e8a526cc-5158-4b15-90d9-7fa0ee606a89.webp"
   },
   {
     "id": "d747c2f1-1cc4-4663-b068-2fe00f35bf3c",
     "name": "鯉魚王（極巨化）*公-紫黑",
     "name_en": "Dynamax Magikarp (Male) - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/d747c2f1-1cc4-4663-b068-2fe00f35bf3c/7cd5c3e3-a26f-460d-a1b3-c53daea8c47b-thumb.png"
+    "image": "assets/products/opt/d747c2f1-1cc4-4663-b068-2fe00f35bf3c-7cd5c3e3-a26f-460d-a1b3-c53daea8c47b.webp"
   },
   {
     "id": "d7a081ef-d6fd-41f2-81f0-40e2511cdce6",
@@ -1143,7 +1143,7 @@
     "id": "d7ad769f-939a-429f-92b3-7eb19b5e8a42",
     "name": "捷克羅姆-曠野地帶2026全球（白球）",
     "name_en": "Zekrom - GO Wild Area 2026 Global (Premier Ball)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/d7ad769f-939a-429f-92b3-7eb19b5e8a42/a5ace620-e7fc-440c-9913-a4355de6be79-thumb.webp"
+    "image": "assets/products/opt/d7ad769f-939a-429f-92b3-7eb19b5e8a42-a5ace620-e7fc-440c-9913-a4355de6be79.webp"
   },
   {
     "id": "d82ed455-f06a-40bc-98b2-a220c54004fa",
@@ -1173,7 +1173,7 @@
     "id": "dd338b3f-540d-4943-ab64-5761186fb333",
     "name": "皮卡丘（庫爾塔）*公-印度色彩節2026（LV.1）",
     "name_en": "Pikachu (Kurta, Male) - India Festival of Colors 2026 (LV.1)",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/dd338b3f-540d-4943-ab64-5761186fb333/3ac8b88d-9460-4ed1-9dc5-9efa381caded-thumb.png"
+    "image": "assets/products/opt/dd338b3f-540d-4943-ab64-5761186fb333-3ac8b88d-9460-4ed1-9dc5-9efa381caded.webp"
   },
   {
     "id": "dd9f267b-dcbc-430c-b7d7-0f345d926fdb",
@@ -1185,7 +1185,7 @@
     "id": "df4d41b2-07e9-4584-ad91-e21be8617df6",
     "name": "淚眼蜥（極巨化）-紫黑",
     "name_en": "Dynamax Sobble - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/df4d41b2-07e9-4584-ad91-e21be8617df6/0dab4e66-776d-430b-ab3d-2ad221ef8c17-thumb.webp"
+    "image": "assets/products/opt/df4d41b2-07e9-4584-ad91-e21be8617df6-0dab4e66-776d-430b-ab3d-2ad221ef8c17.webp"
   },
   {
     "id": "dfc5c08b-a665-45e4-bcb4-932ff59807e7",
@@ -1197,7 +1197,7 @@
     "id": "dfd84f94-d272-4b1e-a545-cc0592fff8de",
     "name": "拉帝亞斯（極巨化）-曠野週2026",
     "name_en": "Shiny Dynamax Latias - Into the Wild 2026",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/dfd84f94-d272-4b1e-a545-cc0592fff8de/baac170a-7917-4bf9-935e-efdc85a56834-thumb.png"
+    "image": "assets/products/opt/dfd84f94-d272-4b1e-a545-cc0592fff8de-baac170a-7917-4bf9-935e-efdc85a56834.webp"
   },
   {
     "id": "e0c5463a-9bc3-4573-9af2-3a5e2e29c675",
@@ -1215,7 +1215,7 @@
     "id": "e24c26e5-5faf-4313-8e61-abd509682244",
     "name": "啃果蟲",
     "name_en": "Shiny Applin",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/e24c26e5-5faf-4313-8e61-abd509682244/eb584554-147e-4f7c-9659-7785067acbfe-thumb.png"
+    "image": "assets/products/opt/e24c26e5-5faf-4313-8e61-abd509682244-eb584554-147e-4f7c-9659-7785067acbfe.webp"
   },
   {
     "id": "e30da33e-cae3-4dfc-ae60-d460d370aad0",
@@ -1239,25 +1239,25 @@
     "id": "e90cb64b-ddee-4ace-8870-5767ad5901b2",
     "name": "幾何雪花（極巨化）-紫黑",
     "name_en": "Dynamax Cryogonal - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/e90cb64b-ddee-4ace-8870-5767ad5901b2/68018c98-282f-47be-8041-4c9b253d52d3-thumb.webp"
+    "image": "assets/products/opt/e90cb64b-ddee-4ace-8870-5767ad5901b2-68018c98-282f-47be-8041-4c9b253d52d3.webp"
   },
   {
     "id": "ea8a37e5-ec7a-4e5a-a9de-757571e0fb87",
     "name": "拉帝歐斯（極巨化）-曠野週2026",
     "name_en": "Shiny Dynamax Latios - Into the Wild 2026",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/ea8a37e5-ec7a-4e5a-a9de-757571e0fb87/f4e99086-0ec1-44cc-8843-90764dbcefa1-thumb.png"
+    "image": "assets/products/opt/ea8a37e5-ec7a-4e5a-a9de-757571e0fb87-f4e99086-0ec1-44cc-8843-90764dbcefa1.webp"
   },
   {
     "id": "ebf1276e-54d1-4af2-90a9-96189b683a86",
     "name": "老翁龍（極巨化）-紫黑",
     "name_en": "Dynamax Drampa - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/ebf1276e-54d1-4af2-90a9-96189b683a86/092f2f4a-7124-4d2b-ab6a-25560f614e12-thumb.webp"
+    "image": "assets/products/opt/ebf1276e-54d1-4af2-90a9-96189b683a86-092f2f4a-7124-4d2b-ab6a-25560f614e12.webp"
   },
   {
     "id": "ed3c4bf2-fcb4-4701-8033-f26b98fb74b6",
     "name": "組合包2",
     "name_en": "組合包2",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/ed3c4bf2-fcb4-4701-8033-f26b98fb74b6/02005b97-022a-4476-9a20-37840fd5b307-thumb.webp"
+    "image": "assets/products/opt/ed3c4bf2-fcb4-4701-8033-f26b98fb74b6-02005b97-022a-4476-9a20-37840fd5b307.webp"
   },
   {
     "id": "ed6dcd5b-f3db-46df-bb82-1f1b5a4e6acd",
@@ -1287,37 +1287,37 @@
     "id": "f185c6ae-34a2-48cd-b45b-74dc66954e34",
     "name": "菊石獸（極巨化）-紫黑",
     "name_en": "Dynamax Omanyte - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/f185c6ae-34a2-48cd-b45b-74dc66954e34/94ae949e-9fa3-44bf-90a7-0599143bffdd-thumb.webp"
+    "image": "assets/products/opt/f185c6ae-34a2-48cd-b45b-74dc66954e34-94ae949e-9fa3-44bf-90a7-0599143bffdd.webp"
   },
   {
     "id": "f7d872b4-177c-48f8-9703-4c0c0b520dae",
     "name": "凱西（極巨化）-紫黑",
     "name_en": "Dynamax Abra - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/f7d872b4-177c-48f8-9703-4c0c0b520dae/c5942343-731c-44fc-8b56-7c7bc51ac6bb-thumb.webp"
+    "image": "assets/products/opt/f7d872b4-177c-48f8-9703-4c0c0b520dae-c5942343-731c-44fc-8b56-7c7bc51ac6bb.webp"
   },
   {
     "id": "f848e5b8-15fc-486d-8da0-a44855517291",
     "name": "敲音猴（極巨化）-紫黑",
     "name_en": "Dynamax Grookey - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/f848e5b8-15fc-486d-8da0-a44855517291/cc42f785-8212-48b7-8b1c-e9be3f42bb94-thumb.webp"
+    "image": "assets/products/opt/f848e5b8-15fc-486d-8da0-a44855517291-cc42f785-8212-48b7-8b1c-e9be3f42bb94.webp"
   },
   {
     "id": "f852fdcb-250c-40bc-957a-d8a9f66e9839",
     "name": "投擲猴（極巨化）-紫黑",
     "name_en": "Dynamax Passimian - Dark Skies",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/f852fdcb-250c-40bc-957a-d8a9f66e9839/626c8074-c03d-4e8c-97bf-2fc1b7e7ac3b-thumb.webp"
+    "image": "assets/products/opt/f852fdcb-250c-40bc-957a-d8a9f66e9839-626c8074-c03d-4e8c-97bf-2fc1b7e7ac3b.webp"
   },
   {
     "id": "f94f7b8e-f9d5-4266-ba41-e54807787d8c",
     "name": "皮卡丘-公路之旅巴黎",
     "name_en": "Pikachu (Summer Style) - Road Trip 2025 Paris",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/f94f7b8e-f9d5-4266-ba41-e54807787d8c/9eb1031b-38d1-4fc3-9a23-23966c1ad762-thumb.png"
+    "image": "assets/products/opt/f94f7b8e-f9d5-4266-ba41-e54807787d8c-9eb1031b-38d1-4fc3-9a23-23966c1ad762.webp"
   },
   {
     "id": "fbe0e896-ec22-43ee-a58c-23d5aa64f90b",
     "name": "帕路奇亞（極巨化）-2026曠野色背XXS",
     "name_en": "Shiny Dynamax Palkia XXS - GO Wild Area 2026 Background",
-    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/fbe0e896-ec22-43ee-a58c-23d5aa64f90b/889a5ce4-77b6-4571-95e4-f26e4972d106-thumb.png"
+    "image": "assets/products/opt/fbe0e896-ec22-43ee-a58c-23d5aa64f90b-889a5ce4-77b6-4571-95e4-f26e4972d106.webp"
   },
   {
     "id": "ff1444e1-147c-436e-83ae-d7b1dc4ac5b5",
