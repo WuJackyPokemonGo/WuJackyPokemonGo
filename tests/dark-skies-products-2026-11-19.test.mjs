@@ -8,7 +8,8 @@ const r=data.records.find(x=>x.background_id==='BG-0235');
 test('紫黑背景圖鑑連到全部紫黑商品，且不重複',()=>{
   const ids=r.related_product_ids;
   assert.equal(new Set(ids).size,ids.length);
-  assert.equal(ids.length,70,'2 款泛用背景 + 65 個基本款 + 3 個特殊款');
+  assert.equal(ids.length,75,'2 款泛用背景 + 65 個基本款 + 3 個特殊款 + 11/22～11/25 新上架 5 款');
+  for(const id of ['cbe5e7d7-98b8-4ba9-aa47-814ef548f538','9cc0cb4b-7fb3-44b8-9f6f-9550d700d95e','00afe0fb-7a38-4bb1-aa24-994245a1571a','3d720cf9-f2a5-47e3-85f4-a233d528d572','ce9a53e7-c740-44ce-aeb2-9c4ef93ac224'])assert.ok(ids.includes(id),'新上架紫黑款要連到背景圖鑑 '+id);
   assert.ok(ids.includes('72d40e23-fa06-44c7-8d6a-caa662364e1a')&&ids.includes('20df8d2e-5ca5-44c1-a476-c120e1d72c46'),'原有泛用商品保留');
   assert.ok(ids.includes('004692c5-deea-4371-854f-f6dba6f66ad8'),'拉魯拉絲公款');
   assert.ok(ids.includes('b1361e07-528d-4f5e-b302-d0e63190c7cc'),'拉魯拉絲母款');

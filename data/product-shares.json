@@ -21,7 +21,7 @@
     "id": "014fc933-5c12-418b-b463-d5e8d28ffac5",
     "name": "皮卡丘-維羅博士助手",
     "name_en": "Professor Willow's Assistant Pikachu",
-    "image": ""
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/014fc933-5c12-418b-b463-d5e8d28ffac5/9efa88c8-1acf-4a17-93d9-17733784439b-thumb.png"
   },
   {
     "id": "03047c66-cd89-4610-a901-9502c8bc52bb",
@@ -134,7 +134,7 @@
   {
     "id": "20df8d2e-5ca5-44c1-a476-c120e1d72c46",
     "name": "紫黑背景-超極巨化",
-    "name_en": "Dark Skies Background -  (Gigantamax)",
+    "name_en": "Dark Skies Background - Gigantamax",
     "image": "assets/products/opt/dark-skies-reference.webp"
   },
   {
@@ -314,7 +314,7 @@
   {
     "id": "3e5b5bb9-a68a-457c-a8e6-ae030a59193b",
     "name": "毛辮羊（極巨化）-紫黑",
-    "name_en": "Dynamax Wooloo  - Dark Skies",
+    "name_en": "Dynamax Wooloo - Dark Skies",
     "image": "assets/products/opt/3e5b5bb9-a68a-457c-a8e6-ae030a59193b-8437db8c-8e0a-4af8-a8a1-e90a0c5166ac.webp"
   },
   {
@@ -897,7 +897,7 @@
     "id": "a40115ad-1426-4982-835a-f22289f8030a",
     "name": "螺釘地鼠（極巨化）-紫黑",
     "name_en": "Dynamax Drilbur - Dark Skies",
-    "image": ""
+    "image": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/a40115ad-1426-4982-835a-f22289f8030a/b279bb7b-8b6c-4775-9e2e-8af117bcb1d3-thumb.png"
   },
   {
     "id": "a66f6d3f-6703-4797-9992-5804bfd3070a",
