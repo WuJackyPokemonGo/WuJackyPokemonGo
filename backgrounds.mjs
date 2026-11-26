@@ -1,15 +1,16 @@
-import {BACKGROUNDS_DATA_URL} from './background-data.mjs';
+import {BACKGROUNDS_DATA_URL,BACKGROUND_LOCATIONS_URL,WORLD_LAND_URL} from './background-data.mjs';
+import {createAtlasMap} from './backgrounds-map.mjs';
 import {initAnalytics} from './analytics.mjs';
 import {localPokemonName} from './pokemon-names.mjs';
 import {localRegionName} from './region-names.mjs';
-import {renderActivityFeed} from './activity-feed-ui.mjs';
+import {renderActivityFeed,openActivityEvent,activityFeedVariantState} from './activity-feed-ui.mjs';
 import {detailPokemonRows,detailPokemonSections,pokemonFormLabel} from './backgrounds-detail-service.mjs';
 import {loadBackgroundOverrides,mergeBackgroundOverrides} from './backgrounds-admin-service.mjs';
 import {getLocale,localeTag,setLocale,tr,t,productName,initLanguageHint,bindStaticTranslations} from './storefront-locale.mjs';
 import {loadPublicCatalog,stockLabel} from './storefront-service.mjs';
 import {backgroundState,filterBackgrounds,relatedProducts,safeBackgroundImage,safeSource,sortBackgrounds,referenceArtwork,backgroundArtworkGallery,groupBackgroundCards,filterBackgroundAnnouncements,backgroundProductSummary} from './backgrounds-service.mjs';
 const $=id=>document.getElementById(id),PAGE_SIZE=48;
-let data=null,products=[],stockState='loading',page=1,active=null,referenceData=null,catalogRequest=null,lastStockUpdate=null,referenceRequest=null;
+let data=null,products=[],stockState='loading',page=1,active=null,referenceData=null,catalogRequest=null,lastStockUpdate=null,referenceRequest=null,currentList=[],view='list',mapApi=null,mapLoading=null,pendingCity=null;
 const track=initAnalytics({background:true});
 const title=r=>getLocale()!=='zh'?r.name_en:r.name_zh||r.name_en;
 const regionLabel=r=>getLocale()==='zh'?r.region_zh:(localRegionName(r.region_en,getLocale())||r.region_en);
@@ -65,9 +66,10 @@ function appendProductSummary(host,row,{detail=false}={}){
 function reset(){activityExpansion.clear();$('bgSearch').value='';$('state').value='verified';$('type').value='';$('series').value='';$('year').value='';$('region').value='';$('stockOnly').checked=false;$('sortOrder').value='newest';page=1;render()}
 const activityExpansion=new Map();
 function backgroundCard(r,{variant=false,matched=false}={}){
-  const card=node('article',null,'card'),state=backgroundState(r),open=btn('',()=>openDetail(r));open.className='cardbutton';open.setAttribute('aria-label',tr(`查看 ${title(r)} 背景與寶可夢`,`View ${title(r)} background and Pokémon`));
+  const card=node('article',null,'card'),state=backgroundState(r),open=btn('',()=>openDetail(r));open.className='cardbutton';open.setAttribute('aria-label',tr(`查看 ${title(r)} 背景與寶可夢`,`View ${title(r)} background and Pokémon`));card.dataset.bg=r.background_id;
+  const zoom=btn('',()=>openViewer(currentList,r,zoom));zoom.className='cardzoom';zoom.setAttribute('aria-label',tr(`放大 ${title(r)} 背景圖`,`Enlarge ${title(r)} background`));
   const visual=node('span',null,'cardvisual'),type=node('span',r.type==='location'?tr('地標背景','LOCATION'):tr('特殊背景','SPECIAL'),'typeflag '+r.type);
-  visual.append(picture(r),type);
+  visual.append(picture(r),type,node('span','⤢','zoomhint'));
   if(state!=='verified')visual.append(node('span',state==='upcoming'?tr('即將推出','UPCOMING'):tr('待核對','PENDING'),'releaseflag '+state));
   const body=node('span',null,'cardbody'),species=variant?r.pokemon?.[0]:null;
   const speciesName=species&&(getLocale()==='zh'?species.name_zh:localPokemonName(species.dex,getLocale())||species.name_en);
@@ -83,7 +85,7 @@ function backgroundCard(r,{variant=false,matched=false}={}){
   appendProductSummary(bottom,r);
   if(bottom.childNodes.length)body.append(bottom);
   body.append(node('span',tr('詳情 ↗','Details ↗'),'carddetail'));
-  open.append(visual,body);card.append(open);return card;
+  zoom.append(visual);open.append(body);card.append(zoom,open);return card;
 }
 function activityCard(group){
  const card=node('article',null,'card activity-group'),details=node('details'),summary=node('summary',null,'cardbutton activity-summary');
@@ -100,7 +102,10 @@ function activityCard(group){
 
 function renderAnnouncementPreviews(){
  const feed=$('announcedBackgrounds');
- renderActivityFeed(feed,data,{onBackground:id=>{const row=data.records.find(r=>r.background_id===id);if(row)openDetail(row)}});
+ renderActivityFeed(feed,data,{variant:'atlas',onBackground:id=>{const row=data.records.find(r=>r.background_id===id);if(row)openDetail(row)},
+  products:()=>({state:stockState==='ready'?'ready':stockState==='error'?'error':'loading',list:products}),productName,
+  productStatus:p=>(p.price==null?tr('私訊詢價','Ask for price'):'NT$ '+p.price.toLocaleString('zh-TW'))+' · '+stockLabel(p,getLocale()).text,
+  productHref:id=>'index.html?product='+encodeURIComponent(id)+'&lang='+getLocale()+'&from=bg'});
  $('activityShortcut').hidden=feed.hidden;
 }
 
@@ -108,13 +113,17 @@ function render(){
  if(!data)return;renderStats();renderStockStatus();renderAnnouncementPreviews();
  document.querySelectorAll('.type-tabs button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.type===$('type').value)));
  const list=sortBackgrounds(filterBackgrounds(data.records,filters()),{order:$('sortOrder').value,locale:getLocale()==='zh'?'zh':'en'});
+ currentList=list;
  const cards=groupBackgroundCards(list,{eligibleRows:filterBackgrounds(data.records,{...filters(),query:''})});
  const pages=Math.max(1,Math.ceil(cards.length/PAGE_SIZE));page=Math.max(1,Math.min(page,pages));
  $('resultCount').textContent=(getLocale()==='zh'?'{cards} 張主卡 · 符合 {matches} / {total} 筆紀錄':tr('主卡與符合紀錄數','{cards} cards · {matches} / {total} matching entries')).replace('{cards}',cards.length).replace('{matches}',list.length).replace('{total}',data.records.length);
- const grid=$('backgrounds');grid.replaceChildren();
+ const grid=$('backgrounds'),had=document.activeElement?.closest?.('#backgrounds [data-bg]'),focusKey=had&&[had.dataset.bg,document.activeElement.classList.contains('cardzoom')?'.cardzoom':'.cardbutton'];grid.replaceChildren();
  for(const r of cards.slice((page-1)*PAGE_SIZE,page*PAGE_SIZE))grid.append(r.activity_id?activityCard(r):backgroundCard(r));
  if(!list.length){const empty=node('div',null,'empty');empty.append(node('p',filterBackgroundAnnouncements(data.additional_announced_events??[],filters()).length?tr('尚無符合的已核對圖樣紀錄；可在活動快訊查看公告。','No matching catalog artwork yet; see Event updates for announcements.'):tr('沒有符合的背景，試試其他搜尋或分類。','No matching backgrounds. Try another search or filter.')));if($('state').value!=='all')empty.append(btn(tr('改看全部收錄','Search all entries'),()=>{$('state').value='all';page=1;render()}));empty.append(btn(tr('重設篩選','Reset filters'),reset));grid.append(empty)}
- const prev=btn(tr('上一頁','Previous'),()=>{page--;render();$('resultCount').scrollIntoView({block:'start'})}),next=btn(tr('下一頁','Next'),()=>{page++;render();$('resultCount').scrollIntoView({block:'start'})});prev.disabled=page<=1;next.disabled=page>=pages;$('pagination').replaceChildren(prev,node('span',`${page} / ${pages}`,'subtle'),next);$('pagination').hidden=cards.length<=PAGE_SIZE;
+ const prev=btn(tr('上一頁','Previous'),()=>{page--;render();$('resultCount').scrollIntoView({block:'start'})}),next=btn(tr('下一頁','Next'),()=>{page++;render();$('resultCount').scrollIntoView({block:'start'})});prev.disabled=page<=1;next.disabled=page>=pages;$('pagination').replaceChildren(prev,node('span',`${page} / ${pages}`,'subtle'),next);$('pagination').hidden=cards.length<=PAGE_SIZE||view==='map';
+ // Periodic product refreshes rebuild the grid; keep keyboard focus on the same card.
+ if(focusKey)[...grid.querySelectorAll('[data-bg]')].find(n=>n.dataset.bg===focusKey[0])?.querySelector(focusKey[1])?.focus({preventScroll:true});
+ renderViewState();if(view==='map'&&mapApi?.ready)mapApi.update(list);syncUrl();
 }
 function addInfo(text,cls){if(text)$('detailInfo').append(node('p',text,cls))}
 function pokemonItem(p){
@@ -197,16 +206,104 @@ $('copyBackgroundLink').onclick=async()=>{
  }
 };
 const updateLanguageHint=initLanguageHint();$('closeDetail').onclick=()=>$('backgroundDialog').close();$('reset').onclick=reset;$('language').value=getLocale();$('language').onchange=()=>{setLocale($('language').value);syncCrossLinks();updateLanguageHint();translate();window.dispatchEvent(new Event('wj-language-change'));if(data){buildOptions();render();if(active){$('backgroundLinkStatus').textContent='';$('backgroundLinkText').hidden=true;renderDetail(active)}}};for(const id of ['state','type','series','region','year','stockOnly','sortOrder'])$(id).onchange=()=>{page=1;render()};document.querySelectorAll('.type-tabs button').forEach(b=>b.onclick=()=>{$('type').value=b.dataset.type;page=1;render()});let bgSearchTimer=null,lastBgSearch='';$('bgSearch').oninput=()=>{page=1;render();clearTimeout(bgSearchTimer);bgSearchTimer=setTimeout(()=>{const term=$('bgSearch').value.trim();if(!term||term===lastBgSearch||!data)return;lastBgSearch=term;if(!filterBackgrounds(data.records,{query:term,state:'all',includeExactUpcoming:true}).length)track.emptyTerm('atlas',term)},900)};translate();
+// ---- Large image viewer: browses the current filtered results (or one place on the map). ----
+const viewerState={list:[],index:0,opener:null,scrollY:0,skipRestore:false};
+function openViewer(list,row,opener){
+ const rows=Array.isArray(list)&&list.length?list:[row];let i=rows.findIndex(x=>x.background_id===row.background_id);
+ viewerState.list=i<0?[row]:rows;viewerState.index=Math.max(0,i);viewerState.opener=opener||document.activeElement;viewerState.scrollY=window.scrollY;viewerState.skipRestore=false;
+ renderViewer();if(!$('bgViewer').open)$('bgViewer').showModal();loadReferenceDetails();
+}
+function viewerStep(delta){const next=viewerState.index+delta;if(next<0||next>=viewerState.list.length)return;viewerState.index=next;renderViewer()}
+function renderViewer(){
+ const r=viewerState.list[viewerState.index];if(!r)return;const total=viewerState.list.length;
+ $('viewerCounter').textContent=`${viewerState.index+1} / ${total}`;$('viewerTitle').textContent=title(r);
+ const fig=$('viewerFigure'),url=referenceArtwork(r,referenceData);fig.replaceChildren();
+ if(url){const img=node('img');img.src=url;img.alt=title(r);img.referrerPolicy='no-referrer';img.decoding='async';img.onerror=()=>fig.replaceChildren(picture(r,''));fig.append(img)}else fig.append(picture(r,''));
+ const dates=r.start_date?r.start_date+(r.end_date&&r.end_date!==r.start_date?' – '+r.end_date:''):tr('日期待核對','Date to verify');
+ $('viewerInfo').textContent=[getLocale()!=='zh'?r.series:(r.series_zh||r.series),regionLabel(r),dates,r.background_id,tr(`${r.pokemon?.length||0} 款寶可夢`,`${r.pokemon?.length||0} Pokémon`)].filter(Boolean).join(' · ');
+ const actions=$('viewerActions');actions.replaceChildren();
+ const detail=btn(tr('背景詳情','Background details'),()=>{viewerState.skipRestore=$('backgroundDialog').open;$('bgViewer').close();if($('backgroundDialog').open){active=r;renderDetail(r);const url=new URL(location.href);url.searchParams.set('background',r.background_id);history.replaceState(history.state,'',url)}else openDetail(r)});detail.className='primary';actions.append(detail);
+ if(stockState!=='ready'){if((r.related_product_ids??[]).length)actions.append(node('span',stockState==='error'?tr('商品狀態暫時無法確認','Product status unavailable'):tr('正在確認商品狀態…','Checking products…'),'subtle'))}
+ else{const related=relatedProducts(r,products);for(const p of related.slice(0,3)){const a=node('a',null,'related');a.href='index.html?product='+encodeURIComponent(p.id)+'&lang='+getLocale()+'&from=bg';a.addEventListener('click',()=>track('background_product_click',r.background_id));a.append(node('strong',tr('相關商品：','Product: ')+productName(p)),node('span',(p.price==null?tr('私訊詢價','Ask for price'):'NT$ '+p.price.toLocaleString('zh-TW'))+' · '+stockLabel(p,getLocale()).text));actions.append(a)}
+  if(related.length>3)actions.append(node('span',tr(`另有 ${related.length-3} 件，請看背景詳情`,`${related.length-3} more in the details`),'subtle'));
+  if(!related.length){const a=node('a',tr('目前沒有相關商品，前往商品目錄 ↗','No linked products — browse the collection ↗'),'quiet');a.href='index.html?lang='+getLocale();actions.append(a)}}
+ $('viewerPrev').disabled=viewerState.index<=0;$('viewerNext').disabled=viewerState.index>=total-1;
+ for(const d of [-1,1]){const n=viewerState.list[viewerState.index+d],u=n&&referenceArtwork(n,referenceData);if(u){const img=new Image();img.referrerPolicy='no-referrer';img.src=u}}
+}
+$('viewerPrev').onclick=()=>viewerStep(-1);$('viewerNext').onclick=()=>viewerStep(1);$('viewerClose').onclick=()=>$('bgViewer').close();
+$('bgViewer').addEventListener('keydown',e=>{if(e.key==='ArrowLeft'){e.preventDefault();viewerStep(-1)}else if(e.key==='ArrowRight'){e.preventDefault();viewerStep(1)}});
+$('bgViewer').addEventListener('click',e=>{if(e.target===$('bgViewer'))$('bgViewer').close()});
+{let sx=null;$('viewerFigure').addEventListener('pointerdown',e=>{sx={x:e.clientX,y:e.clientY}});$('viewerFigure').addEventListener('pointerup',e=>{if(!sx)return;const dx=e.clientX-sx.x,dy=e.clientY-sx.y;sx=null;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.4)viewerStep(dx<0?1:-1)})}
+// Closing returns focus to the card of the image last viewed (same scroll position when it is not on this page).
+$('bgViewer').addEventListener('close',()=>{
+ if(viewerState.skipRestore){viewerState.skipRestore=false;return}
+ const r=viewerState.list[viewerState.index],card=r&&!$('backgroundDialog').open&&view==='list'?[...document.querySelectorAll('#backgrounds [data-bg]')].find(n=>n.dataset.bg===r.background_id)?.querySelector('.cardzoom'):null;
+ if(card){card.focus({preventScroll:true});const rect=card.getBoundingClientRect();if(rect.bottom<0||rect.top>window.innerHeight)card.scrollIntoView({block:'center'});return}
+ if(viewerState.opener?.isConnected)viewerState.opener.focus({preventScroll:true});if(!$('backgroundDialog').open)window.scrollTo(0,viewerState.scrollY);
+});
+$('zoomDetail').onclick=()=>{if(!active)return;const inList=currentList.some(r=>r.background_id===active.background_id);openViewer(inList?currentList:[active],active,$('zoomDetail'))};
+$('detailImage').addEventListener('click',e=>{if(e.target.closest('img')&&active)$('zoomDetail').click()});
+
+// ---- List / map views share the same filters. ----
+function specialCount(){return data?filterBackgrounds(data.records,{...filters(),type:'special'}).length:0}
+function renderViewState(){
+ document.querySelectorAll('.view-switch button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===view)));
+ document.querySelectorAll('[data-view-link]').forEach(a=>{if(a.dataset.viewLink===view)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+ $('mapView').hidden=view!=='map';$('backgrounds').hidden=view==='map';
+ const n=specialCount(),label=tr(`全球特殊背景（${n}）`,`Global special backgrounds (${n})`);$('globalEntry').textContent=label;$('globalEntryMap').textContent=label;
+}
+function setView(next){view=next==='map'?'map':'list';if(view==='map')ensureMap().then(()=>{if(view==='map')render()});render()}
+function ensureMap(){
+ if(mapApi?.ready)return Promise.resolve();
+ if(!mapLoading){
+  $('mapStatus').textContent=tr('正在載入地圖…','Loading map…');
+  const get=url=>fetch(url,{signal:AbortSignal.timeout(15000)}).then(r=>{if(!r.ok)throw Error('map data unavailable');return r.json()});
+  mapLoading=Promise.all([get(BACKGROUND_LOCATIONS_URL),get(WORLD_LAND_URL)]).then(([locations,land])=>{
+   mapApi??=createAtlasMap({svg:$('worldMap'),markers:$('mapMarkers'),land:$('mapLand'),shell:document.querySelector('.map-shell'),zoomIn:$('mapZoomIn'),zoomOut:$('mapZoomOut'),reset:$('mapReset'),count:$('mapCount'),spotlight:$('mapSpotlight'),placeList:$('placeList'),placeFilter:$('placeFilter'),unmappedNote:$('unmappedNote'),tr,getLocale,
+    titleOf:title,imageOf:r=>referenceArtwork(r,referenceData),onOpenDetail:openDetail,onZoom:(rows,i,opener)=>openViewer(rows,rows[i],opener),onSelect:()=>syncUrl(),
+    productSummary:r=>{if(stockState!=='ready')return '';const c=backgroundProductSummary(r,products);return c.onSale?tr(`${c.onSale} 樣商品在售中`,`${c.onSale} on sale`):''}});
+   mapApi.setData(locations,land.land);$('mapStatus').textContent='';
+   if(pendingCity){mapApi.update(currentList);mapApi.select(pendingCity,{center:true});pendingCity=null}
+  }).catch(()=>{mapLoading=null;$('mapStatus').replaceChildren(node('span',tr('地圖資料暫時無法載入。','The map could not be loaded.')),btn(tr('重試','Retry'),()=>ensureMap().then(render)))});
+ }
+ return mapLoading;
+}
+document.querySelectorAll('.view-switch button').forEach(b=>b.onclick=()=>setView(b.dataset.view));
+for(const id of ['globalEntry','globalEntryMap'])$(id).onclick=()=>{$('type').value='special';page=1;setView('list');$('resultCount').scrollIntoView({block:'start'})};
+document.querySelectorAll('[data-view-link]').forEach(a=>a.addEventListener('click',e=>{if(!data)return;e.preventDefault();setView(a.dataset.viewLink);document.querySelector('.atlas-results')?.scrollIntoView({block:'start'})}));
+// Filters, view and page live in the URL so Back, reload and shared links restore them.
+function syncUrl(){
+ if(!data)return;const u=new URL(location.href),set=(k,v)=>v?u.searchParams.set(k,v):u.searchParams.delete(k);
+ set('q',$('bgSearch').value.trim());set('type',$('type').value);set('series',$('series').value);set('region',$('region').value);set('year',$('year').value);
+ set('state',$('state').value==='verified'?'':$('state').value);set('sort',$('sortOrder').value==='newest'?'':$('sortOrder').value);
+ set('view',view==='map'?'map':'');set('page',page>1&&view==='list'?String(page):'');set('city',view==='map'?mapApi?.selected||pendingCity||'':'');
+ if(u.href!==location.href)history.replaceState(history.state,'',u);
+}
+function applyUrlState(){
+ const p=new URL(location.href).searchParams,choose=(id,v)=>{if(v!=null&&[...$(id).options].some(o=>o.value===v))$(id).value=v};
+ $('bgSearch').value=p.get('q')||'';if(['location','special'].includes(p.get('type')))$('type').value=p.get('type');
+ choose('series',p.get('series'));choose('region',p.get('region'));choose('year',p.get('year'));choose('state',p.get('state'));choose('sortOrder',p.get('sort'));
+ page=Math.max(1,parseInt(p.get('page'),10)||1);view=p.get('view')==='map'?'map':'list';pendingCity=p.get('city');
+ const feed=activityFeedVariantState('atlas');if(p.get('events')==='history'){feed.historyOpen=true;feed.feedOpen=true}if(location.hash==='#announcedBackgrounds'||p.get('event'))feed.feedOpen=true;
+}
+let pendingScroll=null;
+try{const nav=performance.getEntriesByType?.('navigation')?.[0];if(nav?.type==='back_forward'){const saved=JSON.parse(sessionStorage.getItem('wj_scroll_atlas')||'null');if(saved&&saved.path===location.pathname)pendingScroll=saved.y}}catch{}
+window.addEventListener('pagehide',()=>{try{sessionStorage.setItem('wj_scroll_atlas',JSON.stringify({y:window.scrollY,path:location.pathname}))}catch{}});
+$('activityShortcut').addEventListener('click',()=>activityFeedVariantState('atlas').setFeedOpen?.(true));
 async function load(){
  try{
   const catalog=fetch(BACKGROUNDS_DATA_URL,{signal:AbortSignal.timeout(15000)}).then(response=>{if(!response.ok)throw Error('catalog unavailable');return response.json()});
   const [nextData,overrides]=await Promise.all([catalog,loadBackgroundOverrides()]);
   if(!Array.isArray(nextData.records))throw Error('invalid catalog');
   nextData.records=mergeBackgroundOverrides(nextData.records,overrides);data=nextData;
-  buildOptions();render();$('loadStatus').hidden=true;
+  buildOptions();applyUrlState();if(view==='map')ensureMap().then(()=>{if(view==='map')render()});render();$('loadStatus').hidden=true;
   const id=new URL(location.href).searchParams.get('background');
   const target=data.records.find(r=>r.background_id===(data.redirects?.[id]||id));
   track('background_page_view');track.source('atlas');if(target)openDetail(target);
+  const params=new URL(location.href).searchParams,eventId=params.get('event')||decodeURIComponent(location.hash.match(/^#event-(.+)$/)?.[1]??'');
+  if(eventId&&!target)openActivityEvent($('announcedBackgrounds'),'atlas',eventId);
+  else if((location.hash==='#announcedBackgrounds'||params.get('events')==='history')&&!target)requestAnimationFrame(()=>$('announcedBackgrounds').scrollIntoView({block:'start'}));
+  else if(pendingScroll!=null&&!target){const y=pendingScroll;pendingScroll=null;requestAnimationFrame(()=>window.scrollTo(0,y))}
  }catch{
   $('loadStatus').replaceChildren(node('p',tr('圖鑑暫時無法載入，請稍後重試。','The background collection could not be loaded. Please try again.')),btn(tr('重新載入','Retry'),load));
  }
@@ -228,5 +325,5 @@ load();refreshProducts();
 setInterval(()=>{if(data&&document.visibilityState!=='hidden')renderAnnouncementPreviews()},60000);
 document.addEventListener('visibilitychange',()=>{if(data&&document.visibilityState==='visible')renderAnnouncementPreviews()});
 // Keep the visitor's language when returning to the collection.
-function syncCrossLinks(){document.querySelectorAll('a[href^="index.html"]').forEach(a=>{const u=new URL(a.getAttribute('href'),location.href);u.searchParams.set('lang',getLocale());a.setAttribute('href','index.html'+u.search)})}
+function syncCrossLinks(){document.querySelectorAll('a[href^="index.html"],a[href^="backgrounds.html"]').forEach(a=>{const page=a.getAttribute('href').startsWith('index.html')?'index.html':'backgrounds.html',u=new URL(a.getAttribute('href'),location.href);u.searchParams.set('lang',getLocale());a.setAttribute('href',page+u.search+u.hash)})}
 syncCrossLinks();

@@ -21,10 +21,11 @@ test('Google Search Console verification file stays published',async()=>{
  const {readFileSync}=await import('node:fs');
  assert.equal(readFileSync(new URL('../google207adf49eab3425e.html',import.meta.url),'utf8').trim(),'google-site-verification: google207adf49eab3425e.html');
 });
-test('first load: only the first region slide downloads eagerly and the preloaded bundle matches the script',async()=>{
+test('first load: full region originals wait for the viewer, small thumbnails form the entry, and the preloaded bundle matches the script',async()=>{
  const {readFileSync}=await import('node:fs');const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
  const srcs=[...html.matchAll(/<img (src|data-src)="assets\/regions\/([a-z]+)\.webp"/g)].map(m=>m[1]+':'+m[2]);
- assert.equal(srcs.length,9);assert.equal(srcs[0],'src:kanto');assert.ok(srcs.slice(1).every(s=>s.startsWith('data-src:')));
+ assert.equal(srcs.length,9);assert.ok(srcs.every(s=>s.startsWith('data-src:')),'2026-11-23: originals load only after the visitor opens the viewer');
+ const thumbs=[...html.matchAll(/<img src="assets\/regions\/thumbs\/([a-z]+)\.webp"/g)].map(m=>m[1]);assert.equal(thumbs.length,9);
  const pre=html.match(/rel="modulepreload" href="([^"]+)"/)[1],script=html.match(/<script type="module" src="(assets\/storefront\.bundle\.js[^"]+)"/)[1];assert.equal(pre,script);
  assert.match(html,/rel="preconnect" href="https:\/\/wlrwlqchlxehlvkyesnj\.supabase\.co"/);
 });
