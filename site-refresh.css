@@ -482,3 +482,13 @@ body.landing-page main,body.landing-page .entry-cards{background:transparent}
 @media(max-width:700px){.entry-cards{grid-template-columns:1fr;margin-top:-28px}.entry-card{grid-template-columns:120px 1fr;grid-template-rows:none}.entry-pic{aspect-ratio:auto;height:100%}.entry-pic img{object-position:68% center}.entry-map{font-size:40px}}
 body.landing-page{background:#0b0f2e linear-gradient(180deg,#0b0f2e 0,#0b0f2e 100svh,#efe2c5 100svh) no-repeat}
 body.landing-page #homeEvents{margin-top:34px}
+/* Owner's intro video (logo and globe are part of the footage): show it whole, text underneath. */
+.hero-video.hero-banner{display:block;min-height:0;padding-top:0;background:#0b1424}
+.hero-banner .hero-frame{position:relative;width:100%;aspect-ratio:16/9;max-height:calc(100svh - 120px);margin:0 auto;background:#0b1424}
+.hero-banner .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:0}
+.hero-banner .hero-inner{padding:26px 16px 70px;gap:12px}
+.hero-banner h1{text-shadow:none}
+body.landing-page .hero-banner~*{position:relative}
+body.landing-page:has(.hero-banner) .landing-header{position:relative;background:#0b1424}
+body.landing-page:has(.hero-banner){background:#0b1424 linear-gradient(180deg,#0b1424 0,#0b1424 calc(100svh + 200px),#efe2c5 calc(100svh + 200px)) no-repeat}
+@media(max-width:700px){.hero-banner .hero-inner{padding:18px 14px 60px}.hero-banner h1{font-size:30px}}

@@ -13,8 +13,8 @@ test('four separate pages share one navigation: 首頁、商品目錄、背景�
 test('home is the hero-video landing; catalog, atlas and map live on their own pages',()=>{
  const home=read('index.html'),shop=read('shop.html'),map=read('map.html');
  assert.match(home,/<video id="heroVideo"[^>]*autoplay[^>]*muted[^>]*loop[^>]*playsinline/);
- assert.match(home,/warp-portrait\.mp4" type="video\/mp4" media="\(max-width:700px\)"/);
- for(const f of ['assets/hero/warp.mp4','assets/hero/warp-portrait.mp4','assets/hero/warp.jpg','assets/hero/warp-portrait.jpg']){assert.ok(existsSync(new URL('../'+f,import.meta.url)),f);assert.ok(statSync(new URL('../'+f,import.meta.url)).size<2.5*1024*1024,f+' stays light')}
+ assert.match(home,/intro-960\.mp4" type="video\/mp4" media="\(max-width:700px\)"/);
+ for(const f of ['assets/hero/intro.mp4','assets/hero/intro-960.mp4','assets/hero/intro.jpg']){assert.ok(existsSync(new URL('../'+f,import.meta.url)),f);assert.ok(statSync(new URL('../'+f,import.meta.url)).size<2.5*1024*1024,f+' stays light')}
  assert.ok(!home.includes('id="products"'),'no catalog grid on the landing');assert.match(home,/id="homeEvents"/);assert.match(home,/class="region-showcase"/);
  assert.match(shop,/id="products"/);assert.ok(!shop.includes('id="homeEvents"'));assert.ok(!shop.includes('heroVideo'));
  assert.match(map,/<body class="atlas-page map-page">/);
