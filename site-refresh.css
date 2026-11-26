@@ -249,7 +249,9 @@ body.atlas-page .ev-feed:not(.is-open) .ev-feed-body{display:none}
 /* ---------- Atlas: world map ---------- */
 .map-view{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(280px,1fr);gap:16px;align-items:start}
 .map-view[hidden]{display:none}
-.map-shell{position:relative;border-radius:18px;overflow:hidden;background:#143a33;min-height:300px}
+.map-shell{position:relative;border-radius:18px;overflow:hidden;background:#143a33}
+/* Keep room for the loading message only until the map has drawn. */
+.map-shell:has(#mapStatus:not(:empty)){min-height:180px}
 #worldMap{display:block;width:100%;height:auto;aspect-ratio:820/390;cursor:grab;user-select:none;-webkit-user-select:none}
 #worldMap:active{cursor:grabbing}
 .map-ocean{fill:#173f37}
@@ -338,7 +340,7 @@ body.atlas-page .ev-feed:not(.is-open) .ev-feed-body{display:none}
 .pokemon-card[aria-pressed=true]{border-color:#5b8a70;background:#eef5ef}
 .pokemon-pic{display:grid;place-items:center;aspect-ratio:1;border-radius:8px;overflow:hidden;background:#1d3b32}
 .pokemon-pic img{width:100%;height:100%;object-fit:cover}
-.pokemon-card strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pokemon-card strong{line-height:1.25;overflow-wrap:anywhere;word-break:keep-all}
 @media(max-width:780px){
  .map-spotlight.is-open{position:fixed;inset:auto 0 0;z-index:30;max-height:46dvh;overflow:auto;overscroll-behavior:contain;margin:0;
   background:var(--wj-card,#fffdf6);border:1px solid var(--wj-line,#e2d6b8);border-radius:16px 16px 0 0;

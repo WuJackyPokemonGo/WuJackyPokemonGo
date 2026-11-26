@@ -263,7 +263,9 @@ function ensureMap(){
     titleOf:title,imageOf:r=>referenceArtwork(r,referenceData),onOpenDetail:openDetail,onZoom:(rows,i,opener)=>openViewer(rows,rows[i],opener),onSelect:()=>syncUrl(),
     productSummary:r=>{if(stockState!=='ready')return '';const c=backgroundProductSummary(r,products);return c.onSale?tr(`${c.onSale} 樣商品在售中`,`${c.onSale} on sale`):''}});
    mapApi.setData(locations,land.land);$('mapStatus').textContent='';
-   if(pendingCity){mapApi.update(currentList);mapApi.select(pendingCity,{center:true});pendingCity=null}
+   if(pendingCity){mapApi.update(currentList);mapApi.select(pendingCity,{center:true});pendingCity=null;
+    // Phones: a deep-linked city opens the bottom sheet; bring the map to the top so it stays visible above it.
+    if(mapApi.selected&&matchMedia('(max-width:780px)').matches)requestAnimationFrame(()=>document.querySelector('.map-shell')?.scrollIntoView({block:'start'}))}
   }).catch(()=>{mapLoading=null;$('mapStatus').replaceChildren(node('span',tr('地圖資料暫時無法載入。','The map could not be loaded.')),btn(tr('重試','Retry'),()=>ensureMap().then(render)))});
  }
  return mapLoading;
