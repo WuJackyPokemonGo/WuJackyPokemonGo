@@ -5,7 +5,7 @@
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "build:admin": "esbuild cloud-admin.mjs --bundle --minify --format=esm --target=es2022 --outfile=assets/cloud-admin.bundle.js",
-    "build": "node scripts/build-share-pages.mjs && node scripts/build-product-shares.mjs && npm run build:admin && esbuild storefront.mjs --bundle --minify --format=esm --target=es2022 --outfile=assets/storefront.bundle.js && node scripts/stamp-storefront-version.mjs && esbuild backgrounds.mjs --bundle --minify --format=esm --target=es2022 --outfile=assets/backgrounds.bundle.js",
+    "build": "node scripts/build-activity-feed.mjs && node scripts/build-share-pages.mjs && node scripts/build-product-shares.mjs && npm run build:admin && esbuild storefront.mjs --bundle --minify --format=esm --target=es2022 --outfile=assets/storefront.bundle.js && node scripts/stamp-storefront-version.mjs && esbuild backgrounds.mjs --bundle --minify --format=esm --target=es2022 --outfile=assets/backgrounds.bundle.js && node scripts/stamp-asset-versions.mjs",
     "sync:product-shares": "node scripts/sync-product-shares.mjs"
   },
   "dependencies": {
