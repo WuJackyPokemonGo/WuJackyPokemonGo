@@ -197,3 +197,19 @@ Pokéxperto 的 [鋼屬性任務](https://www.pokexperto.net/index2.php?seccion=
 第05項仍未完成全部歷年欄位核對；本輪完成上述公告條件的逐項比對，不宣稱2024年26筆全部結案。正式站發布驗收另記下方。
 
 正式站驗收通過：公開JSON blob為 `3c45d7813469c89a740f08b1f760ff6a79af1821`，與測試／發布檔案一致；284筆ID唯一。`bg/BG-0215.html`公開內容逐位元組與建置產物一致（分享頁提交 `f3428dc25d3f1358a2b48d29a7524e4b9a8d67dd`），圖鑑資料與分享摘要均已更新。
+
+## 2026-11-26 2024年MLB與城市狩獵：五筆核對
+
+本輪先讀最新圖鑑、歷年審核紀錄及PROGRESS，再讀正式站。開工GitHub與正式站資料均為blob `b3017217ae0b4777a3f136344c53fbbd8a178b65`，285筆，正式背景頁HTTP 200。保留每日更新已加入的BG-0288及其他活動快訊，不重複新增活動。
+
+| ID | 日期／物種／取得方式核對 | 證據與限制 |
+| --- | --- | --- |
+| BG-0018 MLB Marlins | 2024/9/7，背景對象皮卡丘；團戰途徑與站內相符。 | [Serebii當屆活動](https://www.serebii.net/pokemongo/reallifeevents/mlb-marlins.shtml)列一星皮卡丘及背景；[Wiki同期活動紀錄](https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_Night_-_Miami_Marlins)的搜尋保存文字同列日期與背景物種，完整頁本輪402。Pitch Perfect調查獎勵列卡拉卡拉與嘎啦嘎啦，不能因活動有調查便把它寫成背景皮卡丘取得途徑。 |
+| BG-0019 MLB Mariners | 2024/9/13，背景對象皮卡丘；維持站內日期，不採Serebii總表的9/12。 | [Pokéxperto當屆紀錄](https://www.pokexperto.net/index2.php?id=r259&seccion=pokemongo/evento)與[Wiki](https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_Night_-_Seattle_Mariners)支持9/13及皮卡丘團戰。[同期球隊公告轉引](https://www.reddit.com/r/PokemongoSeattle/comments/1fffjqu)的搜尋保存文字提及保證背景；原帖本輪無法開啟，未據此新增必得承諾。[球隊現頁](https://www.mlb.com/mariners/tickets/specials/pokemon-go)已換成2027預告，不能充作2024原始公告。 |
+| BG-0011 台南 | 2024/3/9–10；探險帽伊布為直接遭遇，八種進化另列。 | [市府3/5公告](https://twtainan.net/en/event/newsdetail/6610)直接支持日期；[市府原始記者會公告](https://www.twtainan.net/zh-tw/event/newsdetail/6082/)支持狩獵帽伊布特殊調查；[逐項限時調查](https://www.serebii.net/pokemongo/todaysviewresearch/eeveeexplorers-tainan.shtml)列七個補給站任務及完成獎勵合計八次伊布遭遇。市府公告不是逐隻背景領取畫面，兩者證據不混為一談。 |
+| BG-0023 香港 | 2024/12/7–8；探險帽伊布及八種進化。補清限時調查可依第二天加購重做，特殊調查僅一次。 | [Leek Duck同期資料](https://leekduck.com/events/pokemon-go-city-safari-hong-kong-2024/)正文明列此差別及帶香港背景的限時調查遭遇；[Dittobase](https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2024-hongkong)相符一種直接遭遇、八種進化。Leek Duck標題誤稱Safari Zone、頁首末時刻顯示6 AM，不採用這些欄位；[GO Hub香港稿](https://pokemongohub.net/post/event/pokemon-go-city-safari-2024-hong-kong/)將背景誤寫台南，未採該句。 |
+| BG-0024 聖保羅 | 2024/12/7–8；既有伊布、八進化及第二日限時調查敘述與同期資料相符，維持原值。 | [GO Hub當屆資料](https://pokemongohub.net/post/event/pokemon-go-city-safari-sao-paulo-brazil/)明列聖保羅背景伊布及第二天可再做限時調查；未擴大成開場特殊調查重發。 |
+
+本輪只在BG-0023補上清楚的中英文取得說明及逐款來源，仍維持catalog-crosschecked層級，不新增物種或官方保證。2024年規則不能直接套用到2025年改採集章的雪梨／布宜諾斯艾利斯。其餘四筆僅保存核對記錄；球隊原始活動頁失效及個別背景領取畫面不足的限制保留。
+
+資料提交 `4875feaa7074a29a7593385278cd96fae66f08f2`，blob `4842346f7abd43dad18854b6c920e0823db67e75`。npm ci、363項測試與npm run build通過；逐筆比較只改BG-0023，285筆ID唯一。分享頁 `bg/BG-0023.html` 已同步建置發布。第05項尚未全部結案，正式站驗收另記下方。
