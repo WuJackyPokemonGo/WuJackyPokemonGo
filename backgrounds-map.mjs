@@ -24,7 +24,7 @@ export function clusterPlaces(places,radius){
 
 export function createAtlasMap(ui){
  const {svg,markers,land,shell,tr,getLocale}=ui;
- let locations=null,groups={places:[],unmapped:[],special:[]},view={x:0,y:0,w:W,h:H},selected=null,selectedRow=null,drag=null,moved=false,ready=false;
+ let locations=null,groups={places:[],unmapped:[],special:[]},view={x:0,y:0,w:W,h:H},selected=null,selectedRow=null,openSeries=null,drag=null,moved=false,ready=false;
  const svgEl=(name,attrs={})=>{const n=document.createElementNS(NS,name);for(const [k,v] of Object.entries(attrs))n.setAttribute(k,v);return n};
  const node=(tag,text,cls)=>{const n=document.createElement(tag);if(text!=null)n.textContent=text;if(cls)n.className=cls;return n};
  const placeName=p=>getLocale()==='zh'?p.place.zh:p.place.en;
@@ -58,16 +58,39 @@ export function createAtlasMap(ui){
  function renderList(){
   const host=ui.placeList,term=(ui.placeFilter.value||'').trim().toLowerCase();host.replaceChildren();
   const list=[...groups.places].sort((a,b)=>b.rows.length-a.rows.length||placeName(a).localeCompare(placeName(b))).filter(p=>!term||[p.place.zh,p.place.en,p.rows[0]?.region_zh,p.rows[0]?.region_en].some(v=>String(v||'').toLowerCase().includes(term)));
-  for(const p of list){const li=node('li'),b=node('button',null,'place-item');b.type='button';b.setAttribute('aria-pressed',String(selected===p.key));b.append(node('strong',placeName(p)),node('span',(getLocale()==='zh'?p.rows[0]?.region_zh:p.rows[0]?.region_en)||'','subtle'),node('span',String(p.rows.length),'place-count'));b.onclick=()=>select(p.key,{center:true});li.append(b);host.append(li)}
+  for(const p of list){const li=node('li'),b=node('button',null,'place-item');b.type='button';b.setAttribute('aria-pressed',String(selected===p.key));b.dataset.key=p.key;b.append(node('strong',placeName(p)),node('span',(getLocale()==='zh'?p.rows[0]?.region_zh:p.rows[0]?.region_en)||'','subtle'),node('span',String(p.rows.length),'place-count'));b.onclick=()=>{select(p.key,{center:true});if(matchMedia('(max-width:780px)').matches)shell.scrollIntoView?.({block:'start'})};li.append(b);host.append(li)}
   if(!list.length)host.append(node('li',groups.places.length?tr('沒有符合的地點。','No matching places.'):tr('目前篩選沒有可放上地圖的地點。','No mappable places for the current filters.'),'subtle'));
  }
  function renderSpotlight(){
   const host=ui.spotlight;host.replaceChildren();const p=groups.places.find(x=>x.key===selected);
+  host.classList.toggle('is-open',!!p);document.querySelector('.map-view')?.classList.toggle('has-city',!!p);
   if(!p){host.append(node('p',groups.places.length?tr('點地圖上的標記或下方地點，查看當地背景。','Select a marker or a place below to see its backgrounds.'):tr('沒有可顯示的地點。','No places to show.'),'subtle'));return}
   const rows=[...p.rows].sort((a,b)=>String(b.start_date||b.year||'').localeCompare(String(a.start_date||a.year||'')));
   if(!rows.includes(selectedRow))selectedRow=rows[0];
+  const close=node('button',tr('關閉','Close'),'map-close');close.type='button';close.setAttribute('aria-label',tr(`關閉 ${placeName(p)}`,`Close ${placeName(p)}`));
+  close.onclick=()=>{const key=selected;selected=null;selectedRow=null;openSeries=null;drawMarkers();renderList();renderSpotlight();ui.onSelect?.(null);(markers.querySelector('[aria-pressed="true"]')||ui.placeList.querySelector(`[data-key="${key}"]`))?.focus?.({preventScroll:true})};
+  host.append(close);
   host.append(node('p',tr('地點','Place'),'map-eyebrow'),node('h3',placeName(p)+((getLocale()==='zh'?rows[0].region_zh:rows[0].region_en)?' · '+(getLocale()==='zh'?rows[0].region_zh:rows[0].region_en):'')),node('p',tr(`${rows.length} 筆背景紀錄・${precisionText(p)}`,`${rows.length} background entries · ${precisionText(p)}`),'subtle'));
-  if(rows.length>1){const pick=node('div',null,'map-picks');pick.setAttribute('role','group');pick.setAttribute('aria-label',tr('選擇年份或活動','Choose a year or event'));for(const r of rows){const b=node('button',(r.year||'—')+' · '+ui.titleOf(r),'map-pick');b.type='button';b.setAttribute('aria-pressed',String(r===selectedRow));b.onclick=()=>{selectedRow=r;renderSpotlight();host.querySelector('.map-pick[aria-pressed="true"]')?.focus()};pick.append(b)}host.append(pick)}
+  // Activities at this place: each opens to Pokémon cards; a card shows that background below.
+  // One activity = one year of a named series; generic series ("其他活動") fall back to the record name without its place suffix.
+  const GENERIC=/^(其他活動|other( events?)?|)$/i;
+  const seriesOf=r=>{const series=String((getLocale()==='zh'?r.series_zh||r.series:r.series)||'').trim();const name=GENERIC.test(series)?String(ui.titleOf(r)).replace(/\s*[-－–]\s*[^-－–]*$/,'').trim()||ui.titleOf(r):series;return (r.year&&!name.startsWith(String(r.year))?r.year+' · ':'')+name};
+  const groupsBySeries=new Map();
+  for(const r of rows){const k=seriesOf(r);if(!groupsBySeries.has(k))groupsBySeries.set(k,[]);groupsBySeries.get(k).push(r)}
+  const acts=node('div',null,'map-activities');
+  for(const [name,list] of groupsBySeries){
+   const d=node('details',null,'map-activity');d.open=openSeries===name||(openSeries==null&&list.includes(selectedRow)&&groupsBySeries.size===1);
+   d.append(node('summary',name));
+   d.addEventListener('toggle',()=>{if(d.open){openSeries=name;d.scrollIntoView?.({block:'nearest'});for(const o of acts.querySelectorAll('details'))if(o!==d)o.open=false}else if(openSeries===name)openSeries=''});
+   const grid=node('ul',null,'pokemon-grid');grid.setAttribute('aria-label',tr(`${name} 適用寶可夢`,`${name} Pokémon`));
+   for(const r of list){const mons=(r.pokemon??[]).length?r.pokemon:[{name_zh:ui.titleOf(r),name_en:ui.titleOf(r)}];
+    for(const m of mons){const li=node('li'),b=node('button',null,'pokemon-card');b.type='button';b.setAttribute('aria-pressed',String(r===selectedRow));
+     const pic=node('span',null,'pokemon-pic'),url=ui.imageOf(r);if(url){const img=node('img');img.src=url;img.alt='';img.loading='lazy';img.referrerPolicy='no-referrer';pic.append(img)}else pic.append(node('span',tr('圖片暫缺','No image'),'subtle'));
+     b.append(pic,node('strong',getLocale()==='zh'?m.name_zh||m.name_en:m.name_en||m.name_zh));
+     b.onclick=()=>{selectedRow=r;openSeries=name;renderSpotlight();host.querySelector('.map-entry')?.scrollIntoView?.({block:'nearest'})};li.append(b);grid.append(li)}}
+   d.append(grid);acts.append(d);
+  }
+  host.append(acts);
   const r=selectedRow,card=node('div',null,'map-entry'),zoom=node('button',null,'map-entry-pic');zoom.type='button';zoom.setAttribute('aria-label',tr(`放大 ${ui.titleOf(r)} 背景圖`,`Enlarge ${ui.titleOf(r)}`));
   const url=ui.imageOf(r);if(url){const img=node('img');img.src=url;img.alt='';img.loading='lazy';img.referrerPolicy='no-referrer';img.onerror=()=>img.replaceWith(node('span',tr('圖片暫缺','Image unavailable'),'subtle'));zoom.append(img)}else zoom.append(node('span',tr('圖片暫缺','Image unavailable'),'subtle'));
   zoom.onclick=()=>ui.onZoom(rows,rows.indexOf(r),zoom);
@@ -79,7 +102,7 @@ export function createAtlasMap(ui){
   actions.append(big,detail);info.append(actions);card.append(zoom,info);host.append(card);
  }
  function select(key,{center=false}={}){
-  selected=key;selectedRow=null;const p=groups.places.find(x=>x.key===key);
+  selected=key;selectedRow=null;openSeries=null;const p=groups.places.find(x=>x.key===key);
   if(p&&center&&scale()<6)zoomTo(6/scale(),p.x,p.y);else if(p&&center){view.x=p.x-view.w/2;view.y=p.y-view.h/2;applyView()}else drawMarkers();
   renderList();renderSpotlight();ui.onSelect?.(key);
  }

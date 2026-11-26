@@ -325,3 +325,27 @@ body.atlas-page .ev-feed:not(.is-open) .ev-feed-body{display:none}
 }
 @media(hover:none){.viewer-hint{display:none}}
 #detailImage img{cursor:zoom-in}
+
+/* City panel: activities open to Pokémon cards; phones show the city as a closable bottom sheet. */
+.map-spotlight{position:relative}
+.map-close{float:right;min-height:36px;padding:4px 12px;border-radius:999px;border:1px solid #cbbf9f;background:var(--wj-paper);color:var(--wj-green);font-weight:800;cursor:pointer}
+.map-close:focus-visible,.map-activity summary:focus-visible,.pokemon-card:focus-visible{outline:3px solid #b36e17;outline-offset:2px}
+.map-activities{display:grid;gap:7px;margin:8px 0}
+.map-activity summary{cursor:pointer;padding:10px 10px;border:1px solid #d8ccae;border-radius:10px;background:#f5f0e2;font-weight:800;color:var(--wj-green-ink)}
+.map-activity[open] summary{background:#e3efe6;border-color:#5b8a70}
+.pokemon-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:8px 0 4px;padding:0;list-style:none}
+.pokemon-card{display:grid;gap:4px;width:100%;padding:4px;border:1px solid transparent;border-radius:10px;background:transparent;font:inherit;font-size:12px;font-weight:750;color:var(--wj-ink);text-align:center;cursor:pointer;min-width:0}
+.pokemon-card[aria-pressed=true]{border-color:#5b8a70;background:#eef5ef}
+.pokemon-pic{display:grid;place-items:center;aspect-ratio:1;border-radius:8px;overflow:hidden;background:#1d3b32}
+.pokemon-pic img{width:100%;height:100%;object-fit:cover}
+.pokemon-card strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:780px){
+ .map-spotlight.is-open{position:fixed;inset:auto 0 0;z-index:30;max-height:46dvh;overflow:auto;overscroll-behavior:contain;margin:0;
+  background:var(--wj-card,#fffdf6);border:1px solid var(--wj-line,#e2d6b8);border-radius:16px 16px 0 0;
+  padding:12px 16px calc(14px + env(safe-area-inset-bottom));box-shadow:0 -6px 24px rgba(21,62,50,.22)}
+ .map-view.has-city{padding-bottom:46dvh}
+}
+.home-map-entry{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:18px auto;padding:16px 18px;border:1px solid var(--wj-line,#e2d6b8);border-radius:16px;background:var(--wj-card,#fffdf6)}
+.home-map-entry h2{margin:0;font-size:20px;color:var(--wj-green-ink,#163b30)}
+.home-map-entry p{margin:4px 0 0;color:#5c625c;font-size:14px}
+.home-map-link{flex:none;display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border-radius:12px;background:var(--wj-green,#1d4c3d);color:#fff;font-weight:800;text-decoration:none}
