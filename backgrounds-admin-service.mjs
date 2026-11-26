@@ -26,6 +26,16 @@ export async function loadBackgroundOverrides(fetcher=fetch){
  const entries={};for(const row of rows){if(!object(row)||typeof row.background_id!=='string')throw Error('雲端圖鑑資料格式不正確。');entries[row.background_id]=row}
  return entries;
 }
+// Public pages: if Supabase cannot answer (e.g. a quota restriction), use the copy of the cloud edits
+// published with the site by scripts/snapshot-catalog.mjs; with no copy, show the base catalog.
+export const OVERRIDES_SNAPSHOT_URL='data/background-overrides-snapshot.json';
+export async function loadPublicBackgroundOverrides(fetcher=fetch){
+ try{return await loadBackgroundOverrides(fetcher)}
+ catch{
+  try{const r=await fetcher(OVERRIDES_SNAPSHOT_URL,{cache:'no-cache',signal:AbortSignal.timeout(15000)});if(r.ok){const data=await r.json();if(data&&typeof data.overrides==='object'&&!Array.isArray(data.overrides))return data.overrides}}catch{}
+  return {};
+ }
+}
 function text(value,label,max=5000,required=false){const v=String(value??'').trim();if((required&&!v)||v.length>max)throw Error(label+'未填寫或超過長度限制。');return v}
 function date(value,label){const v=String(value??'').trim();if(!v)return null;if(!/^\d{4}-\d{2}-\d{2}$/.test(v)||!Number.isFinite(Date.parse(v))||new Date(v).toISOString().slice(0,10)!==v)throw Error(label+'請填有效日期。');return v}
 // 後台存檔時找出「跟 repo 原始資料不同」的欄位；只有這些欄位會蓋過 repo，之後 repo 的更新照常顯示。
