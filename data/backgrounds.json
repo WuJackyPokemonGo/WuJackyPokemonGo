@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-25",
+  "as_of": "2026-11-26",
   "complete": false,
   "sources": [
     "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -29749,9 +29749,427 @@
           "BG-0287"
         ]
       }
+    },
+    {
+      "source": "https://pokemongo.com/news/pokemon-champions-celebration-event-2026",
+      "related_product_ids": [],
+      "year": "2026",
+      "year_verified": true,
+      "checked_on": "2026-11-26",
+      "evidence_reviewed_on": "2026-11-26",
+      "background_id": "BG-0288",
+      "name_zh": "Pokémon Champions 慶祝活動",
+      "name_en": "Pokémon Champions Celebration Event",
+      "type": "special",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "verification_scope": "acquisition-confirmed-artwork-unconfirmed",
+      "image_source": null,
+      "artwork_status": "pending",
+      "official_sources": [
+        "https://pokemongo.com/news/pokemon-champions-celebration-event-2026"
+      ],
+      "catalog_sources": [],
+      "series": "Other",
+      "series_zh": "其他活動",
+      "region_en": "Global",
+      "region_zh": "全球",
+      "start_date": "2026-12-08",
+      "end_date": "2026-12-14",
+      "date_note_zh": "各地當地時間12/8 10:00至12/14 20:00；台灣場同時段（UTC+08:00）。五星頭目12/9–15輪替，但背景僅12/9至12/14活動結束前有機會取得。GO通行證已解鎖獎勵可領至12/16 20:00，不代表背景團體戰延長。",
+      "date_note_en": "December 8 at 10:00 to December 14 at 20:00 in each region’s local time; Taiwan follows UTC+08:00. Five-star rotation runs December 9–15, but its background window stops with the event on December 14. Unlocked GO Pass rewards expire December 16 at 20:00; this does not extend background raids.",
+      "method_zh": "活動團體戰捕獲有機會附特殊背景；五星頭目輪替12/9起，背景僅限活動期間至12/14 20:00，不延至12/15輪替結束。調查及GO通行證未確認附背景。",
+      "method_en": "Event raid catches may carry a Special Background. Five-star rotation begins December 9; background availability ends December 14 at 20:00 with the event, not December 15 with the rotation. Research and GO Pass backgrounds are unconfirmed.",
+      "method_status": "reviewed",
+      "pokemon": [
+        {
+          "dex": 371,
+          "name_zh": "寶貝龍",
+          "name_en": "Bagon",
+          "acquisition": "raid"
+        },
+        {
+          "dex": 725,
+          "name_zh": "火斑喵",
+          "name_en": "Litten",
+          "acquisition": "raid"
+        },
+        {
+          "dex": 996,
+          "name_zh": "涼脊龍",
+          "name_en": "Frigibax",
+          "acquisition": "raid"
+        },
+        {
+          "dex": 26,
+          "name_zh": "雷丘",
+          "name_en": "Raichu",
+          "acquisition": "raid"
+        },
+        {
+          "dex": 445,
+          "name_zh": "烈咬陸鯊",
+          "name_en": "Garchomp",
+          "acquisition": "raid"
+        },
+        {
+          "dex": 812,
+          "name_zh": "轟擂金剛猩",
+          "name_en": "Rillaboom",
+          "acquisition": "raid"
+        },
+        {
+          "dex": 380,
+          "name_zh": "拉帝亞斯",
+          "name_en": "Latias",
+          "acquisition": "raid"
+        },
+        {
+          "dex": 381,
+          "name_zh": "拉帝歐斯",
+          "name_en": "Latios",
+          "acquisition": "raid"
+        },
+        {
+          "dex": 485,
+          "name_zh": "席多藍恩",
+          "name_en": "Heatran",
+          "acquisition": "raid"
+        },
+        {
+          "dex": 638,
+          "name_zh": "勾帕路翁",
+          "name_en": "Cobalion",
+          "acquisition": "raid"
+        },
+        {
+          "dex": 639,
+          "name_zh": "代拉基翁",
+          "name_en": "Terrakion",
+          "acquisition": "raid"
+        },
+        {
+          "dex": 640,
+          "name_zh": "畢力吉翁",
+          "name_en": "Virizion",
+          "acquisition": "raid"
+        },
+        {
+          "dex": 894,
+          "name_zh": "雷吉艾勒奇",
+          "name_en": "Regieleki",
+          "acquisition": "raid"
+        },
+        {
+          "dex": 895,
+          "name_zh": "雷吉鐸拉戈",
+          "name_en": "Regidrago",
+          "acquisition": "raid"
+        }
+      ],
+      "notes": [
+        "官方確認14款團體戰遭遇有機會附特殊背景；尚未公布可辨識的遊戲內背景圖樣，不用宣傳橫幅代替。",
+        "背景掉落為機率，並非保證；野外、田野調查與GO通行證未確認為背景取得來源。"
+      ],
+      "notes_en": [
+        "The official announcement confirms a chance of a Special Background on 14 raid encounters. Identifiable in-game artwork is unannounced; promotional banners are not substituted.",
+        "Backgrounds are not guaranteed. Wild encounters, Field Research and GO Pass rewards are not confirmed as background routes."
+      ],
+      "search_aliases": [
+        "Pokemon Champions",
+        "寶可夢冠軍",
+        "Champions Celebration"
+      ],
+      "activity": {
+        "id": "december-unannounced-event-2026",
+        "schedule": {
+          "start": "2026-12-08T10:00",
+          "end": "2026-12-14T20:00",
+          "zone": "Asia/Taipei",
+          "rolling_local": true,
+          "basis": "confirmed"
+        },
+        "conditions_zh": "活動團體戰捕獲有機會附特殊背景；五星頭目輪替12/9起，背景僅限活動期間至12/14 20:00，不延至12/15輪替結束。調查及GO通行證未確認附背景。",
+        "conditions_en": "Event raid catches may carry a Special Background. Five-star rotation begins December 9; background availability ends December 14 at 20:00 with the event, not December 15 with the rotation. Research and GO Pass backgrounds are unconfirmed.",
+        "eligible_zh": "一星：寶貝龍、火斑喵、涼脊龍；三星：雷丘、烈咬陸鯊、轟擂金剛猩；五星：拉帝亞斯、拉帝歐斯、席多藍恩、勾帕路翁、代拉基翁、畢力吉翁、雷吉艾勒奇、雷吉鐸拉戈。未公告服裝或其他形態。",
+        "eligible_en": "One-star: Bagon, Litten, Frigibax. Three-star: Raichu, Garchomp, Rillaboom. Five-star: Latias, Latios, Heatran, Cobalion, Terrakion, Virizion, Regieleki, Regidrago. No costumes or alternate forms announced.",
+        "remote_participation": {
+          "basis": "inferred",
+          "text_zh": "依現行一般團體戰規則推定可遠距參與；本活動公告未另行明示資格。",
+          "text_en": "Remote participation is inferred from current standard raid rules; the event announcement does not explicitly confirm eligibility."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "官方未明說遠距捕獲是否同樣可得背景，待確認。",
+          "text_en": "Remote catch background eligibility is not explicitly stated and remains unconfirmed."
+        },
+        "checked_on": "2026-11-26",
+        "sources": [
+          "https://pokemongo.com/news/pokemon-champions-celebration-event-2026"
+        ],
+        "background_type": "special",
+        "artwork_status": "pending",
+        "background_ids": [
+          "BG-0288"
+        ]
+      },
+      "evolved_pokemon": [
+        {
+          "dex": 372,
+          "name_zh": "甲殼龍",
+          "name_en": "Shelgon",
+          "acquisition": "evolution",
+          "method_zh": "由本活動附背景的對應寶可夢進化繼承；不是直接遭遇。",
+          "method_en": "Inherited by evolving the corresponding background encounter; not a direct catch."
+        },
+        {
+          "dex": 373,
+          "name_zh": "暴飛龍",
+          "name_en": "Salamence",
+          "acquisition": "evolution",
+          "method_zh": "由本活動附背景的對應寶可夢進化繼承；不是直接遭遇。",
+          "method_en": "Inherited by evolving the corresponding background encounter; not a direct catch."
+        },
+        {
+          "dex": 726,
+          "name_zh": "炎熱喵",
+          "name_en": "Torracat",
+          "acquisition": "evolution",
+          "method_zh": "由本活動附背景的對應寶可夢進化繼承；不是直接遭遇。",
+          "method_en": "Inherited by evolving the corresponding background encounter; not a direct catch."
+        },
+        {
+          "dex": 727,
+          "name_zh": "熾焰咆哮虎",
+          "name_en": "Incineroar",
+          "acquisition": "evolution",
+          "method_zh": "由本活動附背景的對應寶可夢進化繼承；不是直接遭遇。",
+          "method_en": "Inherited by evolving the corresponding background encounter; not a direct catch."
+        },
+        {
+          "dex": 997,
+          "name_zh": "凍脊龍",
+          "name_en": "Arctibax",
+          "acquisition": "evolution",
+          "method_zh": "由本活動附背景的對應寶可夢進化繼承；不是直接遭遇。",
+          "method_en": "Inherited by evolving the corresponding background encounter; not a direct catch."
+        },
+        {
+          "dex": 998,
+          "name_zh": "戟脊龍",
+          "name_en": "Baxcalibur",
+          "acquisition": "evolution",
+          "method_zh": "由本活動附背景的對應寶可夢進化繼承；不是直接遭遇。",
+          "method_en": "Inherited by evolving the corresponding background encounter; not a direct catch."
+        }
+      ]
     }
   ],
   "additional_announced_events": [
+    {
+      "event_id": "choose-your-path-2026-12-15",
+      "name_zh": "選擇你的路線限時調查（2026-12-15）",
+      "name_en": "Choose Your Path Timed Research (2026-12-15)",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2026",
+      "region_zh": "全球",
+      "region_en": "Global",
+      "start_date": "2026-12-15",
+      "end_date": "2026-12-21",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-26",
+      "official_sources": [
+        "https://pokemongo.com/news/choose-your-path-daydream-destinations-2026"
+      ],
+      "activity": {
+        "id": "choose-your-path-2026-12-15",
+        "kind": "event",
+        "schedule": {
+          "start": "2026-12-15T10:00",
+          "end": "2026-12-21T20:00",
+          "zone": "Asia/Taipei",
+          "rolling_local": true,
+          "basis": "confirmed"
+        },
+        "conditions_zh": "可選探索、捕捉或對戰路線，調查與獎勵因人而異。截止依最初領取調查的時區，須於截止前完成並領獎；官方未公告背景。",
+        "conditions_en": "Choose Explore, Catch or Battle; research opportunities may vary. The deadline follows the time zone where the research was originally claimed. Complete tasks and claim rewards before it expires. No background announced.",
+        "eligible_zh": "官方未列寶可夢、服裝、形態或背景獎勵。",
+        "eligible_en": "Pokémon, costumes, forms and background rewards are not specified.",
+        "background_type": "unannounced",
+        "artwork_status": "unannounced",
+        "remote_participation": {
+          "basis": "confirmed",
+          "text_zh": "限時調查，不是遠距團體戰活動。",
+          "text_en": "Timed Research, not a remote raid event."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "尚未公告任何背景獎勵。",
+          "text_en": "No background reward announced."
+        },
+        "checked_on": "2026-11-26",
+        "sources": [
+          "https://pokemongo.com/news/choose-your-path-daydream-destinations-2026"
+        ]
+      }
+    },
+    {
+      "event_id": "choose-your-path-2027-01-12",
+      "name_zh": "選擇你的路線限時調查（2027-01-12）",
+      "name_en": "Choose Your Path Timed Research (2027-01-12)",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2027",
+      "region_zh": "全球",
+      "region_en": "Global",
+      "start_date": "2027-01-12",
+      "end_date": "2027-01-18",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-26",
+      "official_sources": [
+        "https://pokemongo.com/news/choose-your-path-daydream-destinations-2026"
+      ],
+      "activity": {
+        "id": "choose-your-path-2027-01-12",
+        "kind": "event",
+        "schedule": {
+          "start": "2027-01-12T10:00",
+          "end": "2027-01-18T20:00",
+          "zone": "Asia/Taipei",
+          "rolling_local": true,
+          "basis": "confirmed"
+        },
+        "conditions_zh": "可選探索、捕捉或對戰路線，調查與獎勵因人而異。截止依最初領取調查的時區，須於截止前完成並領獎；官方未公告背景。",
+        "conditions_en": "Choose Explore, Catch or Battle; research opportunities may vary. The deadline follows the time zone where the research was originally claimed. Complete tasks and claim rewards before it expires. No background announced.",
+        "eligible_zh": "官方未列寶可夢、服裝、形態或背景獎勵。",
+        "eligible_en": "Pokémon, costumes, forms and background rewards are not specified.",
+        "background_type": "unannounced",
+        "artwork_status": "unannounced",
+        "remote_participation": {
+          "basis": "confirmed",
+          "text_zh": "限時調查，不是遠距團體戰活動。",
+          "text_en": "Timed Research, not a remote raid event."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "尚未公告任何背景獎勵。",
+          "text_en": "No background reward announced."
+        },
+        "checked_on": "2026-11-26",
+        "sources": [
+          "https://pokemongo.com/news/choose-your-path-daydream-destinations-2026"
+        ]
+      }
+    },
+    {
+      "event_id": "choose-your-path-2027-01-26",
+      "name_zh": "選擇你的路線限時調查（2027-01-26）",
+      "name_en": "Choose Your Path Timed Research (2027-01-26)",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2027",
+      "region_zh": "全球",
+      "region_en": "Global",
+      "start_date": "2027-01-26",
+      "end_date": "2027-02-01",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-26",
+      "official_sources": [
+        "https://pokemongo.com/news/choose-your-path-daydream-destinations-2026"
+      ],
+      "activity": {
+        "id": "choose-your-path-2027-01-26",
+        "kind": "event",
+        "schedule": {
+          "start": "2027-01-26T10:00",
+          "end": "2027-02-01T20:00",
+          "zone": "Asia/Taipei",
+          "rolling_local": true,
+          "basis": "confirmed"
+        },
+        "conditions_zh": "可選探索、捕捉或對戰路線，調查與獎勵因人而異。截止依最初領取調查的時區，須於截止前完成並領獎；官方未公告背景。",
+        "conditions_en": "Choose Explore, Catch or Battle; research opportunities may vary. The deadline follows the time zone where the research was originally claimed. Complete tasks and claim rewards before it expires. No background announced.",
+        "eligible_zh": "官方未列寶可夢、服裝、形態或背景獎勵。",
+        "eligible_en": "Pokémon, costumes, forms and background rewards are not specified.",
+        "background_type": "unannounced",
+        "artwork_status": "unannounced",
+        "remote_participation": {
+          "basis": "confirmed",
+          "text_zh": "限時調查，不是遠距團體戰活動。",
+          "text_en": "Timed Research, not a remote raid event."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "尚未公告任何背景獎勵。",
+          "text_en": "No background reward announced."
+        },
+        "checked_on": "2026-11-26",
+        "sources": [
+          "https://pokemongo.com/news/choose-your-path-daydream-destinations-2026"
+        ]
+      }
+    },
+    {
+      "event_id": "choose-your-path-2027-02-16",
+      "name_zh": "選擇你的路線限時調查（2027-02-16）",
+      "name_en": "Choose Your Path Timed Research (2027-02-16)",
+      "type": "event",
+      "series": "Other",
+      "series_zh": "其他活動",
+      "year": "2027",
+      "region_zh": "全球",
+      "region_en": "Global",
+      "start_date": "2027-02-16",
+      "end_date": "2027-02-21",
+      "release_state": "upcoming",
+      "verification": "official-event-confirmed",
+      "image_source": null,
+      "checked_on": "2026-11-26",
+      "official_sources": [
+        "https://pokemongo.com/news/choose-your-path-daydream-destinations-2026"
+      ],
+      "activity": {
+        "id": "choose-your-path-2027-02-16",
+        "kind": "event",
+        "schedule": {
+          "start": "2027-02-16T10:00",
+          "end": "2027-02-21T20:00",
+          "zone": "Asia/Taipei",
+          "rolling_local": true,
+          "basis": "confirmed"
+        },
+        "conditions_zh": "可選探索、捕捉或對戰路線，調查與獎勵因人而異。截止依最初領取調查的時區，須於截止前完成並領獎；官方未公告背景。",
+        "conditions_en": "Choose Explore, Catch or Battle; research opportunities may vary. The deadline follows the time zone where the research was originally claimed. Complete tasks and claim rewards before it expires. No background announced.",
+        "eligible_zh": "官方未列寶可夢、服裝、形態或背景獎勵。",
+        "eligible_en": "Pokémon, costumes, forms and background rewards are not specified.",
+        "background_type": "unannounced",
+        "artwork_status": "unannounced",
+        "remote_participation": {
+          "basis": "confirmed",
+          "text_zh": "限時調查，不是遠距團體戰活動。",
+          "text_en": "Timed Research, not a remote raid event."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "尚未公告任何背景獎勵。",
+          "text_en": "No background reward announced."
+        },
+        "checked_on": "2026-11-26",
+        "sources": [
+          "https://pokemongo.com/news/choose-your-path-daydream-destinations-2026"
+        ]
+      }
+    },
     {
       "event_id": "tropical-paradise-2026",
       "name_zh": "熱帶樂園（暫譯）",
@@ -29760,99 +30178,46 @@
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2026",
-      "region_zh": "地區待詳細公告",
-      "region_en": "Regions await detailed announcement",
+      "region_zh": "全球",
+      "region_en": "Global",
       "start_date": "2026-12-01",
       "end_date": "2026-12-07",
       "release_state": "upcoming",
       "verification": "official-event-confirmed",
       "image_source": null,
-      "checked_on": "2026-11-25",
+      "checked_on": "2026-11-26",
       "official_sources": [
-        "https://pokemongo.com/news/monthly-content-update-dec2026"
+        "https://pokemongo.com/news/tropical-paradise-2026"
       ],
       "activity": {
         "id": "tropical-paradise-2026",
         "kind": "event",
         "schedule": {
-          "date_only": true,
-          "rolling_local": true,
+          "start": "2026-12-01T10:00",
+          "end": "2026-12-07T20:00",
           "zone": "Asia/Taipei",
-          "basis": "confirmed",
-          "start_date": "2026-12-01",
-          "end_date": "2026-12-07"
+          "rolling_local": true,
+          "basis": "confirmed"
         },
-        "conditions_zh": "官方12月活動行事曆已確認日期，起訖時刻、時區、適用地區與取得條件待詳細公告；不以日期推定午夜開放。",
-        "conditions_en": "The official December calendar confirms the dates only. Start/end hours, time zones, regions and acquisition conditions await the detailed announcement; midnight is not assumed.",
-        "eligible_zh": "寶可夢、服裝與形態待公布；尚未確認有背景獎勵或圖樣。",
-        "eligible_en": "Pokémon, costumes and forms are unannounced; background rewards and artwork are not confirmed.",
+        "conditions_zh": "12/1 10:00至12/7 20:00當地時間；拳海參在團體戰及GO通行證首次登場。12/4 10:00起增加指定野外寶可夢；GO通行證已解鎖獎勵領至12/9 20:00。公告沒有確認背景獎勵。",
+        "conditions_en": "December 1 at 10:00 to December 7 at 20:00 local time. Pyukumuku debuts in raids and the GO Pass; additional wild encounters begin December 4 at 10:00. Unlocked Pass rewards expire December 9 at 20:00. No background reward is confirmed.",
+        "eligible_zh": "一星：阿羅拉地鼠、輕飄飄（公／母）、沙丘娃；三星：拳海參。野外及田野調查另有活動寶可夢，均未確認背景。",
+        "eligible_en": "One-star: Alolan Diglett, male/female Frillish and Sandygast. Three-star: Pyukumuku. Wild and Field Research also feature event Pokémon; backgrounds are unconfirmed.",
         "background_type": "unannounced",
         "artwork_status": "unannounced",
         "remote_participation": {
-          "basis": "pending",
-          "text_zh": "遠距參與資格待公告。",
-          "text_en": "Remote participation eligibility is unannounced."
+          "basis": "inferred",
+          "text_zh": "一般團體戰依現行規則推定可遠距；公告未另行明示資格。",
+          "text_en": "Remote raids are inferred from standard rules; the announcement does not explicitly confirm eligibility."
         },
         "remote_background": {
           "basis": "pending",
-          "text_zh": "是否有背景及遠距取得資格均待公告。",
-          "text_en": "Background rewards and remote background eligibility are unannounced."
+          "text_zh": "公告未確認背景獎勵，亦未確認遠距背景資格。",
+          "text_en": "Neither background rewards nor remote background eligibility is confirmed."
         },
-        "checked_on": "2026-11-25",
+        "checked_on": "2026-11-26",
         "sources": [
-          "https://pokemongo.com/news/monthly-content-update-dec2026"
-        ]
-      }
-    },
-    {
-      "event_id": "december-unannounced-event-2026",
-      "name_zh": "12月未公布名稱活動",
-      "name_en": "December event (name unannounced)",
-      "type": "event",
-      "series": "Other",
-      "series_zh": "其他活動",
-      "year": "2026",
-      "region_zh": "地區待詳細公告",
-      "region_en": "Regions await detailed announcement",
-      "start_date": "2026-12-08",
-      "end_date": "2026-12-14",
-      "release_state": "upcoming",
-      "verification": "official-event-confirmed",
-      "image_source": null,
-      "checked_on": "2026-11-25",
-      "official_sources": [
-        "https://pokemongo.com/news/monthly-content-update-dec2026"
-      ],
-      "activity": {
-        "id": "december-unannounced-event-2026",
-        "kind": "event",
-        "schedule": {
-          "date_only": true,
-          "rolling_local": true,
-          "zone": "Asia/Taipei",
-          "basis": "confirmed",
-          "start_date": "2026-12-08",
-          "end_date": "2026-12-14"
-        },
-        "conditions_zh": "官方12月活動行事曆已確認日期，起訖時刻、時區、適用地區與取得條件待詳細公告；不以日期推定午夜開放。",
-        "conditions_en": "The official December calendar confirms the dates only. Start/end hours, time zones, regions and acquisition conditions await the detailed announcement; midnight is not assumed.",
-        "eligible_zh": "寶可夢、服裝與形態待公布；尚未確認有背景獎勵或圖樣。",
-        "eligible_en": "Pokémon, costumes and forms are unannounced; background rewards and artwork are not confirmed.",
-        "background_type": "unannounced",
-        "artwork_status": "unannounced",
-        "remote_participation": {
-          "basis": "pending",
-          "text_zh": "遠距參與資格待公告。",
-          "text_en": "Remote participation eligibility is unannounced."
-        },
-        "remote_background": {
-          "basis": "pending",
-          "text_zh": "是否有背景及遠距取得資格均待公告。",
-          "text_en": "Background rewards and remote background eligibility are unannounced."
-        },
-        "checked_on": "2026-11-25",
-        "sources": [
-          "https://pokemongo.com/news/monthly-content-update-dec2026"
+          "https://pokemongo.com/news/tropical-paradise-2026"
         ]
       }
     },
@@ -31308,7 +31673,7 @@
     "catalog-crosschecked": 55,
     "official-event-confirmed": 223,
     "catalogued-needs-event-check": 3,
-    "upcoming": 3
+    "upcoming": 4
   },
   "review_counts": {
     "date_details_pending": 4,

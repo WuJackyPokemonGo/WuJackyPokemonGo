@@ -7,7 +7,7 @@ test('December calendar preserves unknown hours and keeps the New Year event acr
  assert.equal(r.activity.schedule.end_date,'2027-01-04');
  assert.equal(activityState(r,Date.parse('2027-01-04T12:00Z')).status,'time_unknown');
  assert.equal(activityState(r,Date.parse('2027-01-04T16:00Z')).status,'ended');
- for(const id of ['tropical-paradise-2026','december-unannounced-event-2026','winter-holiday-2026','new-years-2027']){
+ for(const id of ['winter-holiday-2026','new-years-2027']){
   const e=get(id);assert.equal(e.activity.schedule.date_only,true);assert.equal(e.image_source,null);
   assert.equal(e.activity.remote_background.basis,'pending');assert.deepEqual(e.background_ids,[]);
   assert.match(activityTimeLines(e).taiwan,/待當地時刻確認/);
@@ -36,12 +36,12 @@ test('date-only events never invent midnight and worldwide local-time events ide
  const r=get('night-out-los-angeles-2026');assert.equal(activityState(r,Date.parse('2026-10-25T08:00Z')).status,'ended');assert.equal(activityState(r,Date.parse('2026-10-24T20:00Z')).status,'time_unknown');assert.equal(activityState(r,Date.parse('2026-10-25T08:00Z')).basis,'inferred');assert.match(activityTimeLines(r).taiwan,/待當地時刻確認/);assert.doesNotMatch(activityTimeLines(r).local,/00:00/);
  const global=get('wild-area-global-2026');assert.match(activityTimeLines(global,'en').taiwan,/not at one shared Taiwan instant/);assert.equal(activityState(global,Date.parse('2026-11-14T02:00Z')).status,'in_progress');assert.equal(activityWindows(global).length,0);
 });
-test('feed contains 42 unique events with complete evidence fields without mutating catalog release states',()=>{
- const before=JSON.stringify(data);assert.equal(events.length,42);assert.equal(new Set(events.map(r=>r.event_id )).size,42);
- const statuses=events.map(r=>activityState(r,Date.parse('2026-10-31T00:00Z')).status);assert.equal(statuses.filter(s=>s==='in_progress').length,1);assert.equal(statuses.filter(s=>s==='upcoming').length,40);assert.equal(statuses.filter(s=>s==='ended').length,1);
+test('feed contains 46 unique events with complete evidence fields without mutating catalog release states',()=>{
+ const before=JSON.stringify(data);assert.equal(events.length,46);assert.equal(new Set(events.map(r=>r.event_id )).size,46);
+ const statuses=events.map(r=>activityState(r,Date.parse('2026-10-31T00:00Z')).status);assert.equal(statuses.filter(s=>s==='in_progress').length,1);assert.equal(statuses.filter(s=>s==='upcoming').length,44);assert.equal(statuses.filter(s=>s==='ended').length,1);
  for(const r of events.filter(r=>r.activity.kind!=='event')){for(const f of ['conditions_zh','conditions_en','eligible_zh','eligible_en','checked_on','background_type','artwork_status'])assert.ok(r.activity[f],r.event_id+' '+f);assert.ok(r.activity.sources.length);for(const f of ['remote_participation','remote_background'])assert.ok(['confirmed','inferred','pending'].includes(r.activity[f].basis));}
  const sorted=sortActivityEvents(events,Date.parse('2026-10-31T00:00Z'));assert.equal(sorted[0].event_id,'dia-de-muertos-cubone-2026');assert.equal(sorted.at(-1).event_id,'night-out-los-angeles-2026');assert.equal(JSON.stringify(data),before);
- assert.equal(data.records.length,284);assert.equal(data.records.filter(r=>r.release_state==='needs-verification').length,3);
+ assert.equal(data.records.length,285);assert.equal(data.records.filter(r=>r.release_state==='needs-verification').length,3);
  for(const id of ['wild-area-sendai-2026','wild-area-mexico-city-2026'])assert.equal(get(id).activity.remote_background.basis,'confirmed');assert.equal(get('dia-de-muertos-mexico-city-2026').activity.remote_background.basis,'pending');
  const html=readFileSync(new URL('../backgrounds.html',import.meta.url),'utf8');assert.equal(html.match(/id="announcedBackgrounds"/g).length,1);
 });
