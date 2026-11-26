@@ -1420,9 +1420,14 @@
   "file": "assets/og/p/00287ad9-85f5-4647-832b-2ddaecfff3c5.jpg"
  },
  "p/00afe0fb-7a38-4bb1-aa24-994245a1571a": {
-  "sig": "19f07e7038ebff9f",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/00afe0fb-7a38-4bb1-aa24-994245a1571a/1ee2d891-dc22-4bbb-9d3f-bd05e5a94078-thumb.png",
+  "sig": "f606243eea4b2d38",
+  "source": "assets/products/opt/00afe0fb-7a38-4bb1-aa24-994245a1571a-1ee2d891-dc22-4bbb-9d3f-bd05e5a94078.webp",
   "file": "assets/og/p/00afe0fb-7a38-4bb1-aa24-994245a1571a.jpg"
+ },
+ "p/014fc933-5c12-418b-b463-d5e8d28ffac5": {
+  "sig": "39dc997c2e174540",
+  "source": "assets/products/opt/014fc933-5c12-418b-b463-d5e8d28ffac5-9efa88c8-1acf-4a17-93d9-17733784439b.webp",
+  "file": "assets/og/p/014fc933-5c12-418b-b463-d5e8d28ffac5.jpg"
  },
  "p/03047c66-cd89-4610-a901-9502c8bc52bb": {
   "sig": "679f67b6f6851484",
@@ -1430,33 +1435,33 @@
   "file": "assets/og/p/03047c66-cd89-4610-a901-9502c8bc52bb.jpg"
  },
  "p/047c270c-c4d4-4020-990e-1548b851363a": {
-  "sig": "b3d7b53edc704ede",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/047c270c-c4d4-4020-990e-1548b851363a/3ab9f99f-db81-418f-bcdf-29bca8257615-thumb.png",
+  "sig": "2fc6703a7e3e46e5",
+  "source": "assets/products/opt/047c270c-c4d4-4020-990e-1548b851363a-3ab9f99f-db81-418f-bcdf-29bca8257615.webp",
   "file": "assets/og/p/047c270c-c4d4-4020-990e-1548b851363a.jpg"
  },
  "p/096e3806-06fa-466e-b502-676cc5eadab7": {
-  "sig": "dc04f2c3e7516dab",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/096e3806-06fa-466e-b502-676cc5eadab7/7725e089-fa92-4cf1-8bda-de32fff77116-thumb.png",
+  "sig": "051c6fbf559227ce",
+  "source": "assets/products/opt/096e3806-06fa-466e-b502-676cc5eadab7-7725e089-fa92-4cf1-8bda-de32fff77116.webp",
   "file": "assets/og/p/096e3806-06fa-466e-b502-676cc5eadab7.jpg"
  },
  "p/09e5c935-0652-4b33-9f85-74a5913b406e": {
-  "sig": "3322c08f6c879a82",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/09e5c935-0652-4b33-9f85-74a5913b406e/9244019b-c086-4beb-8eb1-fb42d8e020a2-thumb.png",
+  "sig": "e57feb32ceb46d75",
+  "source": "assets/products/opt/09e5c935-0652-4b33-9f85-74a5913b406e-9244019b-c086-4beb-8eb1-fb42d8e020a2.webp",
   "file": "assets/og/p/09e5c935-0652-4b33-9f85-74a5913b406e.jpg"
  },
  "p/0a019a81-2e9a-452a-8adf-e56c66da704c": {
-  "sig": "4688a50c6c436bfe",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/0a019a81-2e9a-452a-8adf-e56c66da704c/d105b55b-098c-44b5-8600-3874bc86aa46-thumb.png",
+  "sig": "4440b374b7e7839e",
+  "source": "assets/products/opt/0a019a81-2e9a-452a-8adf-e56c66da704c-d105b55b-098c-44b5-8600-3874bc86aa46.webp",
   "file": "assets/og/p/0a019a81-2e9a-452a-8adf-e56c66da704c.jpg"
  },
  "p/0a4245dc-df1a-4225-a416-2156ffe2e3b0": {
-  "sig": "1443cbe1818da5b8",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/0a4245dc-df1a-4225-a416-2156ffe2e3b0/6e406d2c-3e2a-423f-a492-314470a7d806-thumb.webp",
+  "sig": "fd789fad3c0b083b",
+  "source": "assets/products/opt/0a4245dc-df1a-4225-a416-2156ffe2e3b0-6e406d2c-3e2a-423f-a492-314470a7d806.webp",
   "file": "assets/og/p/0a4245dc-df1a-4225-a416-2156ffe2e3b0.jpg"
  },
  "p/0d97e986-7dc8-416f-9137-27d0a16615f0": {
-  "sig": "754b4b92b2a889f9",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/0d97e986-7dc8-416f-9137-27d0a16615f0/8358b213-9815-49d9-997a-14b7c9339012-thumb.png",
+  "sig": "306ac3cbaa4d4286",
+  "source": "assets/products/opt/0d97e986-7dc8-416f-9137-27d0a16615f0-8358b213-9815-49d9-997a-14b7c9339012.webp",
   "file": "assets/og/p/0d97e986-7dc8-416f-9137-27d0a16615f0.jpg"
  },
  "p/10f638a9-3211-4e17-806a-152e1a8afb45": {
@@ -1470,23 +1475,23 @@
   "file": "assets/og/p/14a5b430-b37b-4a09-9cfc-880ae29de42a.jpg"
  },
  "p/16400d8f-bc1a-4783-97d0-77db224c8b28": {
-  "sig": "731296408e6c3bee",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/16400d8f-bc1a-4783-97d0-77db224c8b28/e78d4fb2-ac36-4005-b737-6dfa4c79f592-thumb.png",
+  "sig": "a0a88dc4ddded1a1",
+  "source": "assets/products/opt/16400d8f-bc1a-4783-97d0-77db224c8b28-e78d4fb2-ac36-4005-b737-6dfa4c79f592.webp",
   "file": "assets/og/p/16400d8f-bc1a-4783-97d0-77db224c8b28.jpg"
  },
  "p/178bb660-32d7-4703-8bde-4bd588b773d2": {
-  "sig": "57d070df6cf8e75b",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/178bb660-32d7-4703-8bde-4bd588b773d2/3386576c-0093-4bc7-a32e-be1fcbb24ff8-thumb.webp",
+  "sig": "f2db6cac9710ba94",
+  "source": "assets/products/opt/178bb660-32d7-4703-8bde-4bd588b773d2-3386576c-0093-4bc7-a32e-be1fcbb24ff8.webp",
   "file": "assets/og/p/178bb660-32d7-4703-8bde-4bd588b773d2.jpg"
  },
  "p/18d94cb8-8583-4d17-a74a-4ceab7613522": {
-  "sig": "fbb989d032272fd3",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/18d94cb8-8583-4d17-a74a-4ceab7613522/1b584faf-6799-44e1-ac27-caac9799e590-thumb.webp",
+  "sig": "9236040f298a9679",
+  "source": "assets/products/opt/18d94cb8-8583-4d17-a74a-4ceab7613522-1b584faf-6799-44e1-ac27-caac9799e590.webp",
   "file": "assets/og/p/18d94cb8-8583-4d17-a74a-4ceab7613522.jpg"
  },
  "p/19035295-8757-481d-ad7f-4ca9f75a516c": {
-  "sig": "99d48948c4bcf668",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/19035295-8757-481d-ad7f-4ca9f75a516c/4ca39460-1531-4cf8-bef1-bfad9782d739-thumb.png",
+  "sig": "55ead0e286f8db40",
+  "source": "assets/products/opt/19035295-8757-481d-ad7f-4ca9f75a516c-4ca39460-1531-4cf8-bef1-bfad9782d739.webp",
   "file": "assets/og/p/19035295-8757-481d-ad7f-4ca9f75a516c.jpg"
  },
  "p/19b2e1ff-934f-4260-b4c9-4d977513fca9": {
@@ -1510,18 +1515,18 @@
   "file": "assets/og/p/2276855e-1e6d-4704-94d6-cd38e55faafc.jpg"
  },
  "p/2395ac26-cdd8-47e0-8d67-4cf9a6e58d99": {
-  "sig": "d4b7ce77a5cddd18",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/2395ac26-cdd8-47e0-8d67-4cf9a6e58d99/c05b8106-5f4f-4796-8764-f7ef57226408-thumb.png",
+  "sig": "22a8248aaf0ee3f5",
+  "source": "assets/products/opt/2395ac26-cdd8-47e0-8d67-4cf9a6e58d99-c05b8106-5f4f-4796-8764-f7ef57226408.webp",
   "file": "assets/og/p/2395ac26-cdd8-47e0-8d67-4cf9a6e58d99.jpg"
  },
  "p/246f271c-78cf-4e67-90f7-df721e836bd9": {
-  "sig": "417e7bc0cf9318c6",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/246f271c-78cf-4e67-90f7-df721e836bd9/44433e85-2861-48d0-b51d-501932273611-thumb.webp",
+  "sig": "86cbe86a990d55b7",
+  "source": "assets/products/opt/246f271c-78cf-4e67-90f7-df721e836bd9-44433e85-2861-48d0-b51d-501932273611.webp",
   "file": "assets/og/p/246f271c-78cf-4e67-90f7-df721e836bd9.jpg"
  },
  "p/24d44ee0-2a44-4f05-b5b6-ef5f7d800714": {
-  "sig": "96afc7afa4ca5b08",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/24d44ee0-2a44-4f05-b5b6-ef5f7d800714/b3fdf356-003c-44da-bc4b-4c15dfb87924-thumb.png",
+  "sig": "1ac848e7ea6e66df",
+  "source": "assets/products/opt/24d44ee0-2a44-4f05-b5b6-ef5f7d800714-b3fdf356-003c-44da-bc4b-4c15dfb87924.webp",
   "file": "assets/og/p/24d44ee0-2a44-4f05-b5b6-ef5f7d800714.jpg"
  },
  "p/29157011-fdeb-4717-90d4-af001c970835": {
@@ -1535,8 +1540,8 @@
   "file": "assets/og/p/295ebfb5-bf6c-4be3-b126-a2e256b3a777.jpg"
  },
  "p/2a3b4823-8d9c-47e0-a36a-dc273534375d": {
-  "sig": "1f52609331cfd659",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/2a3b4823-8d9c-47e0-a36a-dc273534375d/2217427e-c5d7-4842-8579-1e02be1c8147-thumb.png",
+  "sig": "1587e785e8416d36",
+  "source": "assets/products/opt/2a3b4823-8d9c-47e0-a36a-dc273534375d-2217427e-c5d7-4842-8579-1e02be1c8147.webp",
   "file": "assets/og/p/2a3b4823-8d9c-47e0-a36a-dc273534375d.jpg"
  },
  "p/2a8a262f-c19d-4631-ba21-e6a5b5ecafde": {
@@ -1545,8 +1550,8 @@
   "file": "assets/og/p/2a8a262f-c19d-4631-ba21-e6a5b5ecafde.jpg"
  },
  "p/2b90b82f-de6b-45e5-baab-4737e86d94cb": {
-  "sig": "107ba8f0dfe5624a",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/2b90b82f-de6b-45e5-baab-4737e86d94cb/1aca49cc-3002-4449-8512-1c3e29466c86-thumb.png",
+  "sig": "d36a1ac5c4691964",
+  "source": "assets/products/opt/2b90b82f-de6b-45e5-baab-4737e86d94cb-1aca49cc-3002-4449-8512-1c3e29466c86.webp",
   "file": "assets/og/p/2b90b82f-de6b-45e5-baab-4737e86d94cb.jpg"
  },
  "p/2c3f2865-51d4-4595-95a8-e8d8491460c3": {
@@ -1555,8 +1560,8 @@
   "file": "assets/og/p/2c3f2865-51d4-4595-95a8-e8d8491460c3.jpg"
  },
  "p/2d515785-961a-45cb-b5d6-d939e938920f": {
-  "sig": "da7d15d732bdf13f",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/2d515785-961a-45cb-b5d6-d939e938920f/bf42a7ce-08a3-4784-b9cc-4d07085f8f0c-thumb.png",
+  "sig": "cb0617921bb45b51",
+  "source": "assets/products/opt/2d515785-961a-45cb-b5d6-d939e938920f-bf42a7ce-08a3-4784-b9cc-4d07085f8f0c.webp",
   "file": "assets/og/p/2d515785-961a-45cb-b5d6-d939e938920f.jpg"
  },
  "p/2dd6df07-8d10-4f9c-9ce2-00efac132168": {
@@ -1570,8 +1575,8 @@
   "file": "assets/og/p/30582688-475e-4ae4-baec-d2e3a34475c7.jpg"
  },
  "p/31f833ef-0838-49f5-9c98-050096e4839b": {
-  "sig": "a588a7e89c773481",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/31f833ef-0838-49f5-9c98-050096e4839b/a2e7dd48-10c3-4030-85cd-1c8a61500e69-thumb.webp",
+  "sig": "3561fa0cf9aaed37",
+  "source": "assets/products/opt/31f833ef-0838-49f5-9c98-050096e4839b-a2e7dd48-10c3-4030-85cd-1c8a61500e69.webp",
   "file": "assets/og/p/31f833ef-0838-49f5-9c98-050096e4839b.jpg"
  },
  "p/3438a3e4-0250-435c-9679-d4575fa98ab2": {
@@ -1585,8 +1590,8 @@
   "file": "assets/og/p/363df33c-f836-4bf9-8cfe-f7ddb527ad31.jpg"
  },
  "p/371df289-9bc3-4b5d-8855-6308b60e3c6a": {
-  "sig": "7a31794daabeb2a1",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/371df289-9bc3-4b5d-8855-6308b60e3c6a/76aa162b-d2ff-4288-ba0e-ee44b4b6db24-thumb.webp",
+  "sig": "0777f1b4c9e089e8",
+  "source": "assets/products/opt/371df289-9bc3-4b5d-8855-6308b60e3c6a-76aa162b-d2ff-4288-ba0e-ee44b4b6db24.webp",
   "file": "assets/og/p/371df289-9bc3-4b5d-8855-6308b60e3c6a.jpg"
  },
  "p/3aaf23ee-7f75-4baa-a8c8-128b117b01df": {
@@ -1595,28 +1600,28 @@
   "file": "assets/og/p/3aaf23ee-7f75-4baa-a8c8-128b117b01df.jpg"
  },
  "p/3d44fa8f-5de2-4728-a0af-cd04431ff8d4": {
-  "sig": "e11083beffa0848e",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/3d44fa8f-5de2-4728-a0af-cd04431ff8d4/b7354e19-23e0-4d2c-8ee2-4a038bd963be-thumb.png",
+  "sig": "04d080d0c510fa4a",
+  "source": "assets/products/opt/3d44fa8f-5de2-4728-a0af-cd04431ff8d4-b7354e19-23e0-4d2c-8ee2-4a038bd963be.webp",
   "file": "assets/og/p/3d44fa8f-5de2-4728-a0af-cd04431ff8d4.jpg"
  },
  "p/3d720cf9-f2a5-47e3-85f4-a233d528d572": {
-  "sig": "78760c5f47174aef",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/3d720cf9-f2a5-47e3-85f4-a233d528d572/bbdf2019-4fe4-4cf9-87ec-8b16c9d58df0-thumb.png",
+  "sig": "161036513ea499c5",
+  "source": "assets/products/opt/3d720cf9-f2a5-47e3-85f4-a233d528d572-bbdf2019-4fe4-4cf9-87ec-8b16c9d58df0.webp",
   "file": "assets/og/p/3d720cf9-f2a5-47e3-85f4-a233d528d572.jpg"
  },
  "p/3e5b5bb9-a68a-457c-a8e6-ae030a59193b": {
-  "sig": "6cba7f472a9d516f",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/3e5b5bb9-a68a-457c-a8e6-ae030a59193b/8437db8c-8e0a-4af8-a8a1-e90a0c5166ac-thumb.png",
+  "sig": "719cb151437506ce",
+  "source": "assets/products/opt/3e5b5bb9-a68a-457c-a8e6-ae030a59193b-8437db8c-8e0a-4af8-a8a1-e90a0c5166ac.webp",
   "file": "assets/og/p/3e5b5bb9-a68a-457c-a8e6-ae030a59193b.jpg"
  },
  "p/3e8b8855-536c-44d1-b105-af0ec83b7cfb": {
-  "sig": "8e90aa381924b3e3",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/3e8b8855-536c-44d1-b105-af0ec83b7cfb/818fa92a-a916-4d03-907b-6066e8bc7534-thumb.png",
+  "sig": "3541f5e1aeb520e8",
+  "source": "assets/products/opt/3e8b8855-536c-44d1-b105-af0ec83b7cfb-818fa92a-a916-4d03-907b-6066e8bc7534.webp",
   "file": "assets/og/p/3e8b8855-536c-44d1-b105-af0ec83b7cfb.jpg"
  },
  "p/42e5428a-2743-439a-922f-9c743a2b2ae5": {
-  "sig": "9620a9317ecc986f",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/42e5428a-2743-439a-922f-9c743a2b2ae5/589a965c-78ac-4bf2-ba89-bbaaa6534483-thumb.png",
+  "sig": "c7555d5562872847",
+  "source": "assets/products/opt/42e5428a-2743-439a-922f-9c743a2b2ae5-589a965c-78ac-4bf2-ba89-bbaaa6534483.webp",
   "file": "assets/og/p/42e5428a-2743-439a-922f-9c743a2b2ae5.jpg"
  },
  "p/47578a86-4418-4b11-9053-7998bf899bf0": {
@@ -1630,8 +1635,8 @@
   "file": "assets/og/p/47b4b11b-9e7b-42f6-aacb-0c4d1ac29a89.jpg"
  },
  "p/4a1e0064-53f5-4dbe-a632-39d7eb245afa": {
-  "sig": "794b020a6aedc8ca",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/4a1e0064-53f5-4dbe-a632-39d7eb245afa/1e926adb-e3b4-4f42-8fe7-a3a855f1c199-thumb.png",
+  "sig": "4ea094a7b22df79d",
+  "source": "assets/products/opt/4a1e0064-53f5-4dbe-a632-39d7eb245afa-1e926adb-e3b4-4f42-8fe7-a3a855f1c199.webp",
   "file": "assets/og/p/4a1e0064-53f5-4dbe-a632-39d7eb245afa.jpg"
  },
  "p/4b099bcd-cfbc-4892-995e-2431aa9228e9": {
@@ -1640,8 +1645,8 @@
   "file": "assets/og/p/4b099bcd-cfbc-4892-995e-2431aa9228e9.jpg"
  },
  "p/4b928ea2-3d91-40ae-9f39-e85833da82ca": {
-  "sig": "e503b2874381407e",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/4b928ea2-3d91-40ae-9f39-e85833da82ca/1b4c8fca-620b-4fc5-807d-029f8e2d86ad-thumb.png",
+  "sig": "6aea8ed6ed2f0598",
+  "source": "assets/products/opt/4b928ea2-3d91-40ae-9f39-e85833da82ca-1b4c8fca-620b-4fc5-807d-029f8e2d86ad.webp",
   "file": "assets/og/p/4b928ea2-3d91-40ae-9f39-e85833da82ca.jpg"
  },
  "p/4bc4658d-3532-482a-a11b-20eebe4c2e55": {
@@ -1655,8 +1660,8 @@
   "file": "assets/og/p/4d95d470-6669-4c77-a85d-1190cae442e5.jpg"
  },
  "p/500e3e31-5d82-4a96-8b1b-343729e98661": {
-  "sig": "bdfa6d79ce69f4e5",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/500e3e31-5d82-4a96-8b1b-343729e98661/365aa506-2257-41cf-ba9b-38fdbf1f89f9-thumb.png",
+  "sig": "5e3d85422bdc8aca",
+  "source": "assets/products/opt/500e3e31-5d82-4a96-8b1b-343729e98661-365aa506-2257-41cf-ba9b-38fdbf1f89f9.webp",
   "file": "assets/og/p/500e3e31-5d82-4a96-8b1b-343729e98661.jpg"
  },
  "p/50c46624-f8ef-4f28-9b79-897121f27e2c": {
@@ -1670,8 +1675,8 @@
   "file": "assets/og/p/5130ca87-874a-47c9-bfda-86bb448fbac5.jpg"
  },
  "p/53526afb-2266-44c2-9b48-75c6c51ce710": {
-  "sig": "124bb455d18d501a",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/53526afb-2266-44c2-9b48-75c6c51ce710/29d33a45-83c4-4362-aee1-35bae0a12153-thumb.png",
+  "sig": "4ce5652f062b8720",
+  "source": "assets/products/opt/53526afb-2266-44c2-9b48-75c6c51ce710-29d33a45-83c4-4362-aee1-35bae0a12153.webp",
   "file": "assets/og/p/53526afb-2266-44c2-9b48-75c6c51ce710.jpg"
  },
  "p/535ad1ce-37a1-4db7-af62-91fc503390af": {
@@ -1680,8 +1685,8 @@
   "file": "assets/og/p/535ad1ce-37a1-4db7-af62-91fc503390af.jpg"
  },
  "p/55c7569a-5551-491e-bdf2-08ee5fd07a0f": {
-  "sig": "0f4a6f6f5d335f49",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/55c7569a-5551-491e-bdf2-08ee5fd07a0f/1ca22546-5fdc-42a1-a1c9-cceeeb36a7df-thumb.png",
+  "sig": "9394be75feb6995c",
+  "source": "assets/products/opt/55c7569a-5551-491e-bdf2-08ee5fd07a0f-1ca22546-5fdc-42a1-a1c9-cceeeb36a7df.webp",
   "file": "assets/og/p/55c7569a-5551-491e-bdf2-08ee5fd07a0f.jpg"
  },
  "p/57252709-7f20-4728-8601-27e9ab3f474c": {
@@ -1700,78 +1705,78 @@
   "file": "assets/og/p/58d2177b-dd90-45d8-b94b-350db3c435b4.jpg"
  },
  "p/58ecb86e-9fc8-4f1a-a484-3135aa2bd810": {
-  "sig": "46bcfc42e55fb8bd",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/58ecb86e-9fc8-4f1a-a484-3135aa2bd810/68f54727-2325-4bd9-b582-0cb39b947b60-thumb.webp",
+  "sig": "4f895d93fea67f59",
+  "source": "assets/products/opt/58ecb86e-9fc8-4f1a-a484-3135aa2bd810-68f54727-2325-4bd9-b582-0cb39b947b60.webp",
   "file": "assets/og/p/58ecb86e-9fc8-4f1a-a484-3135aa2bd810.jpg"
  },
  "p/5940fdac-ac9c-4eb5-bdef-15652fc86e5d": {
-  "sig": "b6af3873065b502f",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5940fdac-ac9c-4eb5-bdef-15652fc86e5d/b5a24ab0-e87d-475f-87c5-8cb7c7376750-thumb.png",
+  "sig": "42979198b3d86179",
+  "source": "assets/products/opt/5940fdac-ac9c-4eb5-bdef-15652fc86e5d-b5a24ab0-e87d-475f-87c5-8cb7c7376750.webp",
   "file": "assets/og/p/5940fdac-ac9c-4eb5-bdef-15652fc86e5d.jpg"
  },
  "p/5976ec0f-a1fc-40c8-a8f2-dc7a94f6c5ed": {
-  "sig": "7aebd9718da4ae36",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5976ec0f-a1fc-40c8-a8f2-dc7a94f6c5ed/1d5b97d0-e2df-4dfb-9825-9f757e531fce-thumb.png",
+  "sig": "847765819c501db4",
+  "source": "assets/products/opt/5976ec0f-a1fc-40c8-a8f2-dc7a94f6c5ed-1d5b97d0-e2df-4dfb-9825-9f757e531fce.webp",
   "file": "assets/og/p/5976ec0f-a1fc-40c8-a8f2-dc7a94f6c5ed.jpg"
  },
  "p/59b97884-6ce4-4af0-a020-21901acaecc8": {
-  "sig": "4280081ee0ad863a",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/59b97884-6ce4-4af0-a020-21901acaecc8/67eed319-63df-4be7-9a4c-c9a18faa2f28-thumb.png",
+  "sig": "e72ed76cb5075050",
+  "source": "assets/products/opt/59b97884-6ce4-4af0-a020-21901acaecc8-67eed319-63df-4be7-9a4c-c9a18faa2f28.webp",
   "file": "assets/og/p/59b97884-6ce4-4af0-a020-21901acaecc8.jpg"
  },
  "p/5aff3ff7-62d9-4cd2-b813-b03348d79fef": {
-  "sig": "3f877945deac5ba8",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5aff3ff7-62d9-4cd2-b813-b03348d79fef/b20b93ce-1260-46f8-b317-63976820ba34-thumb.png",
+  "sig": "c264de146f03eb59",
+  "source": "assets/products/opt/5aff3ff7-62d9-4cd2-b813-b03348d79fef-b20b93ce-1260-46f8-b317-63976820ba34.webp",
   "file": "assets/og/p/5aff3ff7-62d9-4cd2-b813-b03348d79fef.jpg"
  },
  "p/5b7f2c23-c860-48fe-8962-6bb044fbf634": {
-  "sig": "f98604d0604eda65",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5b7f2c23-c860-48fe-8962-6bb044fbf634/d14e94f5-d59a-4583-b199-15391599ef02-thumb.webp",
+  "sig": "b8cd42f1f851d901",
+  "source": "assets/products/opt/5b7f2c23-c860-48fe-8962-6bb044fbf634-d14e94f5-d59a-4583-b199-15391599ef02.webp",
   "file": "assets/og/p/5b7f2c23-c860-48fe-8962-6bb044fbf634.jpg"
  },
  "p/5c5ee2c3-282f-4849-995f-548f8f763be3": {
-  "sig": "0587d863f6ac3297",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5c5ee2c3-282f-4849-995f-548f8f763be3/f9993c7b-842f-47f4-a514-90e791b2a59c-thumb.png",
+  "sig": "aa9d34103f45a2b1",
+  "source": "assets/products/opt/5c5ee2c3-282f-4849-995f-548f8f763be3-f9993c7b-842f-47f4-a514-90e791b2a59c.webp",
   "file": "assets/og/p/5c5ee2c3-282f-4849-995f-548f8f763be3.jpg"
  },
  "p/5ef6cef3-831b-4d39-858a-e4fd40493599": {
-  "sig": "2b71922685553a1d",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5ef6cef3-831b-4d39-858a-e4fd40493599/18421ed3-0f90-432f-a9fa-6d7a0ed193cf-thumb.webp",
+  "sig": "28b28b91d923cc54",
+  "source": "assets/products/opt/5ef6cef3-831b-4d39-858a-e4fd40493599-18421ed3-0f90-432f-a9fa-6d7a0ed193cf.webp",
   "file": "assets/og/p/5ef6cef3-831b-4d39-858a-e4fd40493599.jpg"
  },
  "p/5f172209-0b6f-4f66-ad9a-2dece76d2d59": {
-  "sig": "2cbbf1c8f5ba4eb9",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5f172209-0b6f-4f66-ad9a-2dece76d2d59/a5372d84-f2fd-471a-b322-149649669c88-thumb.webp",
+  "sig": "ce027b97c8c8f697",
+  "source": "assets/products/opt/5f172209-0b6f-4f66-ad9a-2dece76d2d59-a5372d84-f2fd-471a-b322-149649669c88.webp",
   "file": "assets/og/p/5f172209-0b6f-4f66-ad9a-2dece76d2d59.jpg"
  },
  "p/5f23466f-dfa4-44c4-afca-31b4bb4f2b2a": {
-  "sig": "f377ddbe1348a855",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5f23466f-dfa4-44c4-afca-31b4bb4f2b2a/adf10043-94c1-49ef-bc18-2f8d3502bb81-thumb.png",
+  "sig": "8684de8a7c2aa0e9",
+  "source": "assets/products/opt/5f23466f-dfa4-44c4-afca-31b4bb4f2b2a-adf10043-94c1-49ef-bc18-2f8d3502bb81.webp",
   "file": "assets/og/p/5f23466f-dfa4-44c4-afca-31b4bb4f2b2a.jpg"
  },
  "p/5fb9c4f8-eec8-416c-ba77-20c425f6849f": {
-  "sig": "b1cc80720d2310b6",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/5fb9c4f8-eec8-416c-ba77-20c425f6849f/694c0a7c-e66f-446e-96ef-80ecc399a58e-thumb.png",
+  "sig": "8aaa20d7c49721d0",
+  "source": "assets/products/opt/5fb9c4f8-eec8-416c-ba77-20c425f6849f-694c0a7c-e66f-446e-96ef-80ecc399a58e.webp",
   "file": "assets/og/p/5fb9c4f8-eec8-416c-ba77-20c425f6849f.jpg"
  },
  "p/602b45a7-97ed-4214-9109-c5c5f0595464": {
-  "sig": "1254e3e2cf3fc06f",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/602b45a7-97ed-4214-9109-c5c5f0595464/ea6de3ac-60ff-47af-9dab-ce46f09da72d-thumb.png",
+  "sig": "f81b7edd7a264a18",
+  "source": "assets/products/opt/602b45a7-97ed-4214-9109-c5c5f0595464-ea6de3ac-60ff-47af-9dab-ce46f09da72d.webp",
   "file": "assets/og/p/602b45a7-97ed-4214-9109-c5c5f0595464.jpg"
  },
  "p/6151e136-9d7d-4fd5-ac17-0526d635a2a1": {
-  "sig": "b8ccff7f06a8bb97",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/6151e136-9d7d-4fd5-ac17-0526d635a2a1/8257f7ae-77bc-42a0-9805-3ccab3de0d81-thumb.webp",
+  "sig": "39d48fde0ee43d1f",
+  "source": "assets/products/opt/6151e136-9d7d-4fd5-ac17-0526d635a2a1-8257f7ae-77bc-42a0-9805-3ccab3de0d81.webp",
   "file": "assets/og/p/6151e136-9d7d-4fd5-ac17-0526d635a2a1.jpg"
  },
  "p/61592b60-61c4-4634-929d-23228e8dcdb9": {
-  "sig": "c413232a06bf9516",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/61592b60-61c4-4634-929d-23228e8dcdb9/da7d658a-5580-4348-80f3-7781965e4265-thumb.png",
+  "sig": "cc0fc1c61fc9812c",
+  "source": "assets/products/opt/61592b60-61c4-4634-929d-23228e8dcdb9-da7d658a-5580-4348-80f3-7781965e4265.webp",
   "file": "assets/og/p/61592b60-61c4-4634-929d-23228e8dcdb9.jpg"
  },
  "p/629cb69f-8558-49d6-8fe2-2cc7a84eb088": {
-  "sig": "6b558e0704e3b2fb",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/629cb69f-8558-49d6-8fe2-2cc7a84eb088/a3cbcfba-efb7-4818-b230-45e55606c118-thumb.png",
+  "sig": "c7da1c5c680d1339",
+  "source": "assets/products/opt/629cb69f-8558-49d6-8fe2-2cc7a84eb088-a3cbcfba-efb7-4818-b230-45e55606c118.webp",
   "file": "assets/og/p/629cb69f-8558-49d6-8fe2-2cc7a84eb088.jpg"
  },
  "p/63217c3b-7430-4101-85d1-d9a7aebbac9b": {
@@ -1780,13 +1785,13 @@
   "file": "assets/og/p/63217c3b-7430-4101-85d1-d9a7aebbac9b.jpg"
  },
  "p/63c004b2-337c-4c64-b975-d5384cfd3ce2": {
-  "sig": "16c21c15ba60de29",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/63c004b2-337c-4c64-b975-d5384cfd3ce2/9988ae65-317b-4b67-80e2-41934c144181-thumb.png",
+  "sig": "f177c9e6db26d3c3",
+  "source": "assets/products/opt/63c004b2-337c-4c64-b975-d5384cfd3ce2-9988ae65-317b-4b67-80e2-41934c144181.webp",
   "file": "assets/og/p/63c004b2-337c-4c64-b975-d5384cfd3ce2.jpg"
  },
  "p/651a5056-6f60-40c4-8296-5c6e21ce8d05": {
-  "sig": "5838c1893f21407f",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/651a5056-6f60-40c4-8296-5c6e21ce8d05/6c9a24c9-a3d9-4131-8089-2fee1056737a-thumb.webp",
+  "sig": "2260e70fbf45c6f4",
+  "source": "assets/products/opt/651a5056-6f60-40c4-8296-5c6e21ce8d05-6c9a24c9-a3d9-4131-8089-2fee1056737a.webp",
   "file": "assets/og/p/651a5056-6f60-40c4-8296-5c6e21ce8d05.jpg"
  },
  "p/65585ac0-3ff4-4b40-9e4b-57e062352b51": {
@@ -1800,8 +1805,8 @@
   "file": "assets/og/p/674a0800-5224-4f4e-865d-95a85be6665c.jpg"
  },
  "p/67a71ebf-98fc-47ef-9d29-7137fb0ff495": {
-  "sig": "ba24f82bb0dcee2c",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/67a71ebf-98fc-47ef-9d29-7137fb0ff495/35208847-fa21-43a7-a12a-af2277b64385-thumb.webp",
+  "sig": "2d7c34b9a5929182",
+  "source": "assets/products/opt/67a71ebf-98fc-47ef-9d29-7137fb0ff495-35208847-fa21-43a7-a12a-af2277b64385.webp",
   "file": "assets/og/p/67a71ebf-98fc-47ef-9d29-7137fb0ff495.jpg"
  },
  "p/6bf39212-399a-4475-8032-c26c70281e7a": {
@@ -1815,8 +1820,8 @@
   "file": "assets/og/p/6d1b3ae7-3e05-4491-866d-686a63c4438b.jpg"
  },
  "p/6dcddb12-292c-4bbc-a471-c19c1b698d6c": {
-  "sig": "10955b1ea6d8e0ba",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/6dcddb12-292c-4bbc-a471-c19c1b698d6c/8f1ce171-9557-4278-a4e3-023345dd1fae-thumb.webp",
+  "sig": "038788906229dcdb",
+  "source": "assets/products/opt/6dcddb12-292c-4bbc-a471-c19c1b698d6c-8f1ce171-9557-4278-a4e3-023345dd1fae.webp",
   "file": "assets/og/p/6dcddb12-292c-4bbc-a471-c19c1b698d6c.jpg"
  },
  "p/6e21261b-cc8b-4950-9849-d33632f80e68": {
@@ -1840,8 +1845,8 @@
   "file": "assets/og/p/7048c795-a065-4c20-9817-31e09446d47b.jpg"
  },
  "p/70c64ddc-ff2d-41ab-8be9-dabca68b38c6": {
-  "sig": "ce99c09e0d4e096a",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/70c64ddc-ff2d-41ab-8be9-dabca68b38c6/e3300d6e-ec14-4ddb-9ebc-2d7ee704ac6b-thumb.png",
+  "sig": "3b15cf6ee5d586cd",
+  "source": "assets/products/opt/70c64ddc-ff2d-41ab-8be9-dabca68b38c6-e3300d6e-ec14-4ddb-9ebc-2d7ee704ac6b.webp",
   "file": "assets/og/p/70c64ddc-ff2d-41ab-8be9-dabca68b38c6.jpg"
  },
  "p/72d40e23-fa06-44c7-8d6a-caa662364e1a": {
@@ -1855,8 +1860,8 @@
   "file": "assets/og/p/73b2ec0a-1ab6-4d26-b0b2-850a1f754ed9.jpg"
  },
  "p/7403eb97-0650-4e92-a7e3-d5ecd663783d": {
-  "sig": "b3bc05bc24d15fd7",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/7403eb97-0650-4e92-a7e3-d5ecd663783d/1a2eff8c-ba75-4460-92ec-f824d434dfbb-thumb.webp",
+  "sig": "8dc556d184b2f5f7",
+  "source": "assets/products/opt/7403eb97-0650-4e92-a7e3-d5ecd663783d-1a2eff8c-ba75-4460-92ec-f824d434dfbb.webp",
   "file": "assets/og/p/7403eb97-0650-4e92-a7e3-d5ecd663783d.jpg"
  },
  "p/768b982d-272e-4b88-ad5f-aa2d0b4c4a21": {
@@ -1870,8 +1875,8 @@
   "file": "assets/og/p/77652651-9a2e-497e-8aa4-313ca0e2d559.jpg"
  },
  "p/792f0696-ab02-40fb-8e00-9856dc3d1ebc": {
-  "sig": "9d0f4b163a560c1f",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/792f0696-ab02-40fb-8e00-9856dc3d1ebc/79d36e22-ec88-4f63-b939-2451eedc7996-thumb.png",
+  "sig": "ad950be1894c62e1",
+  "source": "assets/products/opt/792f0696-ab02-40fb-8e00-9856dc3d1ebc-79d36e22-ec88-4f63-b939-2451eedc7996.webp",
   "file": "assets/og/p/792f0696-ab02-40fb-8e00-9856dc3d1ebc.jpg"
  },
  "p/7a2408b1-90c3-49d2-8187-8639cc6ff10e": {
@@ -1885,18 +1890,18 @@
   "file": "assets/og/p/7ab1f0f5-2518-48c9-b397-f1445f0b2de8.jpg"
  },
  "p/7ded568d-2ee5-4168-96da-f273c8e7f0c5": {
-  "sig": "26d50ffd1bd0cb8c",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/7ded568d-2ee5-4168-96da-f273c8e7f0c5/d8f8bc0e-d362-40b1-9774-c48ff3cb6077-thumb.png",
+  "sig": "9daf2713cea40e23",
+  "source": "assets/products/opt/7ded568d-2ee5-4168-96da-f273c8e7f0c5-d8f8bc0e-d362-40b1-9774-c48ff3cb6077.webp",
   "file": "assets/og/p/7ded568d-2ee5-4168-96da-f273c8e7f0c5.jpg"
  },
  "p/80f07cc1-301b-466c-aad4-1ca85d248a5a": {
-  "sig": "cc7e5fc7a490ef9f",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/80f07cc1-301b-466c-aad4-1ca85d248a5a/3eba8270-e429-4ce9-bde2-5c43d362f41b-thumb.webp",
+  "sig": "4dde802caeef292f",
+  "source": "assets/products/opt/80f07cc1-301b-466c-aad4-1ca85d248a5a-3eba8270-e429-4ce9-bde2-5c43d362f41b.webp",
   "file": "assets/og/p/80f07cc1-301b-466c-aad4-1ca85d248a5a.jpg"
  },
  "p/821a1e15-8b04-4cc0-abb1-4c7115155e78": {
-  "sig": "551bd505373babdb",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/821a1e15-8b04-4cc0-abb1-4c7115155e78/46143a07-bb7f-41a9-8892-ea61f3f7f041-thumb.webp",
+  "sig": "6908103405138cd6",
+  "source": "assets/products/opt/821a1e15-8b04-4cc0-abb1-4c7115155e78-46143a07-bb7f-41a9-8892-ea61f3f7f041.webp",
   "file": "assets/og/p/821a1e15-8b04-4cc0-abb1-4c7115155e78.jpg"
  },
  "p/8d40fdd1-1627-4b3a-a87f-85cc0a4b9c00": {
@@ -1910,13 +1915,13 @@
   "file": "assets/og/p/8ddfc3e4-9621-4a42-bf3e-a4370262400a.jpg"
  },
  "p/8f902aa2-6e38-415b-9ca7-17dc26f15faa": {
-  "sig": "0583d6a38f2f39e5",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/8f902aa2-6e38-415b-9ca7-17dc26f15faa/e8c542e0-820d-4495-b493-c32478dfd6a0-thumb.png",
+  "sig": "d10d30e9e3523228",
+  "source": "assets/products/opt/8f902aa2-6e38-415b-9ca7-17dc26f15faa-e8c542e0-820d-4495-b493-c32478dfd6a0.webp",
   "file": "assets/og/p/8f902aa2-6e38-415b-9ca7-17dc26f15faa.jpg"
  },
  "p/90d68c23-ead1-4708-a43e-96b504e2cfa5": {
-  "sig": "5edcfcfbe5320759",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/90d68c23-ead1-4708-a43e-96b504e2cfa5/a17d5510-760b-40de-83d7-126fcf291cee-thumb.png",
+  "sig": "aecd4b4d5902cee8",
+  "source": "assets/products/opt/90d68c23-ead1-4708-a43e-96b504e2cfa5-a17d5510-760b-40de-83d7-126fcf291cee.webp",
   "file": "assets/og/p/90d68c23-ead1-4708-a43e-96b504e2cfa5.jpg"
  },
  "p/95cd141f-3c7e-4aad-b07c-416d8e70ca6a": {
@@ -1925,13 +1930,13 @@
   "file": "assets/og/p/95cd141f-3c7e-4aad-b07c-416d8e70ca6a.jpg"
  },
  "p/963bcd58-ea19-45b7-88b1-aff6e065174c": {
-  "sig": "40967e269ef584dc",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/963bcd58-ea19-45b7-88b1-aff6e065174c/817556c0-824c-4a7f-aac3-cf9cddd9eb75-thumb.webp",
+  "sig": "f3aabba480bbcfc5",
+  "source": "assets/products/opt/963bcd58-ea19-45b7-88b1-aff6e065174c-817556c0-824c-4a7f-aac3-cf9cddd9eb75.webp",
   "file": "assets/og/p/963bcd58-ea19-45b7-88b1-aff6e065174c.jpg"
  },
  "p/967ba0dd-1dbc-495f-ab89-1fd71857ae93": {
-  "sig": "a43bce5c662b2af0",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/967ba0dd-1dbc-495f-ab89-1fd71857ae93/8cdc175e-d525-4c13-85f1-d9fbae08d2ba-thumb.png",
+  "sig": "4849712402716521",
+  "source": "assets/products/opt/967ba0dd-1dbc-495f-ab89-1fd71857ae93-8cdc175e-d525-4c13-85f1-d9fbae08d2ba.webp",
   "file": "assets/og/p/967ba0dd-1dbc-495f-ab89-1fd71857ae93.jpg"
  },
  "p/9968c818-d367-4767-9353-64ab79043ae1": {
@@ -1940,13 +1945,13 @@
   "file": "assets/og/p/9968c818-d367-4767-9353-64ab79043ae1.jpg"
  },
  "p/99f671c2-9989-4b50-b92d-b27fc8033d0a": {
-  "sig": "af3d4df42ef7f1a1",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/99f671c2-9989-4b50-b92d-b27fc8033d0a/91ff1d19-57b1-4aa7-94ef-599dfdb9db74-thumb.png",
+  "sig": "64ef549676da0016",
+  "source": "assets/products/opt/99f671c2-9989-4b50-b92d-b27fc8033d0a-91ff1d19-57b1-4aa7-94ef-599dfdb9db74.webp",
   "file": "assets/og/p/99f671c2-9989-4b50-b92d-b27fc8033d0a.jpg"
  },
  "p/9b1b13ca-e518-44d0-aeb0-32d6bc157648": {
-  "sig": "46ec930f282909b0",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/9b1b13ca-e518-44d0-aeb0-32d6bc157648/ce36db9c-8d8f-4aa5-8cd8-b2c583323319-thumb.png",
+  "sig": "d6eb43889b2d4ee1",
+  "source": "assets/products/opt/9b1b13ca-e518-44d0-aeb0-32d6bc157648-890f7997-bdc9-4e86-9ee9-38fc0d5e0500.webp",
   "file": "assets/og/p/9b1b13ca-e518-44d0-aeb0-32d6bc157648.jpg"
  },
  "p/9b1dd25a-cb08-484e-86da-6727905cd7fa": {
@@ -1974,9 +1979,14 @@
   "source": "assets/products/opt/a354bfe9-d512-4a8f-ad04-3182567a1659-76806a0c-f81b-4481-8dc0-c2c845e20148.webp",
   "file": "assets/og/p/a354bfe9-d512-4a8f-ad04-3182567a1659.jpg"
  },
+ "p/a40115ad-1426-4982-835a-f22289f8030a": {
+  "sig": "0a9d6aa430a747b0",
+  "source": "assets/products/opt/a40115ad-1426-4982-835a-f22289f8030a-b279bb7b-8b6c-4775-9e2e-8af117bcb1d3.webp",
+  "file": "assets/og/p/a40115ad-1426-4982-835a-f22289f8030a.jpg"
+ },
  "p/a66f6d3f-6703-4797-9992-5804bfd3070a": {
-  "sig": "3e8180d2df56fe06",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/a66f6d3f-6703-4797-9992-5804bfd3070a/f06c5c00-b18e-4764-ab28-4cb56aae1b6b-thumb.png",
+  "sig": "468768a343720d44",
+  "source": "assets/products/opt/a66f6d3f-6703-4797-9992-5804bfd3070a-f06c5c00-b18e-4764-ab28-4cb56aae1b6b.webp",
   "file": "assets/og/p/a66f6d3f-6703-4797-9992-5804bfd3070a.jpg"
  },
  "p/a77bbc31-d7e0-49cb-91a9-7065f80cab58": {
@@ -1990,8 +2000,8 @@
   "file": "assets/og/p/aa9b4b17-51c6-42f4-b1c3-4bd1098f88b9.jpg"
  },
  "p/aec9139e-7d87-4fe3-97e4-2c4ddcc5490f": {
-  "sig": "64847dce93a547d2",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/aec9139e-7d87-4fe3-97e4-2c4ddcc5490f/9422aff9-43d9-42a8-9dbd-028e8764cdb3-thumb.png",
+  "sig": "bb5c56827921af42",
+  "source": "assets/products/opt/aec9139e-7d87-4fe3-97e4-2c4ddcc5490f-9422aff9-43d9-42a8-9dbd-028e8764cdb3.webp",
   "file": "assets/og/p/aec9139e-7d87-4fe3-97e4-2c4ddcc5490f.jpg"
  },
  "p/af183da2-c258-4644-bceb-5d2cd6b48ac4": {
@@ -2000,8 +2010,8 @@
   "file": "assets/og/p/af183da2-c258-4644-bceb-5d2cd6b48ac4.jpg"
  },
  "p/af5700dc-457c-4aeb-bf1c-7f9a26448b9a": {
-  "sig": "b80e637bcfebd2fa",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/af5700dc-457c-4aeb-bf1c-7f9a26448b9a/eb3ca47a-27cd-40e6-8fce-e9b71edc4a23-thumb.png",
+  "sig": "d3f52916b2472116",
+  "source": "assets/products/opt/af5700dc-457c-4aeb-bf1c-7f9a26448b9a-eb3ca47a-27cd-40e6-8fce-e9b71edc4a23.webp",
   "file": "assets/og/p/af5700dc-457c-4aeb-bf1c-7f9a26448b9a.jpg"
  },
  "p/af6b226d-a462-4ddb-ab66-0b46f0d72a24": {
@@ -2010,23 +2020,23 @@
   "file": "assets/og/p/af6b226d-a462-4ddb-ab66-0b46f0d72a24.jpg"
  },
  "p/b01649e6-16e7-488a-bc7e-631f048a40c7": {
-  "sig": "6ccc2aebffadd1dc",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/b01649e6-16e7-488a-bc7e-631f048a40c7/391881e7-e99e-47b2-beae-2422e9f8ab75-thumb.png",
+  "sig": "c66c230bb3255f35",
+  "source": "assets/products/opt/b01649e6-16e7-488a-bc7e-631f048a40c7-391881e7-e99e-47b2-beae-2422e9f8ab75.webp",
   "file": "assets/og/p/b01649e6-16e7-488a-bc7e-631f048a40c7.jpg"
  },
  "p/b1361e07-528d-4f5e-b302-d0e63190c7cc": {
-  "sig": "9ea0584eefe0152b",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/b1361e07-528d-4f5e-b302-d0e63190c7cc/f4fc35b7-2c79-4fa9-a2cf-83acdb13a414-thumb.png",
+  "sig": "853b25cbc6f0eb91",
+  "source": "assets/products/opt/b1361e07-528d-4f5e-b302-d0e63190c7cc-f4fc35b7-2c79-4fa9-a2cf-83acdb13a414.webp",
   "file": "assets/og/p/b1361e07-528d-4f5e-b302-d0e63190c7cc.jpg"
  },
  "p/b5c4a38f-eb3f-4bf9-bd89-17be690d6f93": {
-  "sig": "329113c13b8b79ee",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/b5c4a38f-eb3f-4bf9-bd89-17be690d6f93/73df9291-21d3-47df-ae68-50ab276a2513-thumb.png",
+  "sig": "d51e7084608dae49",
+  "source": "assets/products/opt/b5c4a38f-eb3f-4bf9-bd89-17be690d6f93-73df9291-21d3-47df-ae68-50ab276a2513.webp",
   "file": "assets/og/p/b5c4a38f-eb3f-4bf9-bd89-17be690d6f93.jpg"
  },
  "p/b7a46db8-da85-4b1b-8b40-94e36a0f7707": {
-  "sig": "e380d7f6cc5940a1",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/b7a46db8-da85-4b1b-8b40-94e36a0f7707/dba2818e-3be0-44d7-9bdc-05fb38b91122-thumb.png",
+  "sig": "592f892b21b11972",
+  "source": "assets/products/opt/b7a46db8-da85-4b1b-8b40-94e36a0f7707-dba2818e-3be0-44d7-9bdc-05fb38b91122.webp",
   "file": "assets/og/p/b7a46db8-da85-4b1b-8b40-94e36a0f7707.jpg"
  },
  "p/b89de60c-c1b3-475f-beba-124fffb4586a": {
@@ -2035,8 +2045,8 @@
   "file": "assets/og/p/b89de60c-c1b3-475f-beba-124fffb4586a.jpg"
  },
  "p/b8af5356-fe1b-46d5-958f-b211f86f51f2": {
-  "sig": "74d9edf9a197ddc7",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/b8af5356-fe1b-46d5-958f-b211f86f51f2/0ac28e96-268d-4f27-9cb8-7094a66d34ad-thumb.png",
+  "sig": "552e3bd89b3e1082",
+  "source": "assets/products/opt/b8af5356-fe1b-46d5-958f-b211f86f51f2-0ac28e96-268d-4f27-9cb8-7094a66d34ad.webp",
   "file": "assets/og/p/b8af5356-fe1b-46d5-958f-b211f86f51f2.jpg"
  },
  "p/b9cb15de-4a53-42ff-b88c-37fc68c0d157": {
@@ -2045,23 +2055,23 @@
   "file": "assets/og/p/b9cb15de-4a53-42ff-b88c-37fc68c0d157.jpg"
  },
  "p/bd0137df-5398-4465-96dc-b50704ba6a19": {
-  "sig": "baed9754577e0db8",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/bd0137df-5398-4465-96dc-b50704ba6a19/f15aebcd-590f-4d3c-bedd-6ca0d68e1cfc-thumb.png",
+  "sig": "1f7a00bcd3aa9a9b",
+  "source": "assets/products/opt/bd0137df-5398-4465-96dc-b50704ba6a19-f15aebcd-590f-4d3c-bedd-6ca0d68e1cfc.webp",
   "file": "assets/og/p/bd0137df-5398-4465-96dc-b50704ba6a19.jpg"
  },
  "p/bf278d4a-2ff4-464c-b5e3-9d069a567d75": {
-  "sig": "d843688d6ea10279",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/bf278d4a-2ff4-464c-b5e3-9d069a567d75/39337834-6b57-4ff2-9b88-7870c9301320-thumb.png",
+  "sig": "60bfa42d0bb82c47",
+  "source": "assets/products/opt/bf278d4a-2ff4-464c-b5e3-9d069a567d75-39337834-6b57-4ff2-9b88-7870c9301320.webp",
   "file": "assets/og/p/bf278d4a-2ff4-464c-b5e3-9d069a567d75.jpg"
  },
  "p/c096821f-2b23-4d4c-a456-d1fbf51d6721": {
-  "sig": "205961c4233017c2",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/c096821f-2b23-4d4c-a456-d1fbf51d6721/72d4cdf8-efda-44c1-a9b7-50b2974af81b-thumb.webp",
+  "sig": "b066a2add7258e51",
+  "source": "assets/products/opt/c096821f-2b23-4d4c-a456-d1fbf51d6721-72d4cdf8-efda-44c1-a9b7-50b2974af81b.webp",
   "file": "assets/og/p/c096821f-2b23-4d4c-a456-d1fbf51d6721.jpg"
  },
  "p/c0f2ee45-7303-4dd5-95c0-6979b5d9700f": {
-  "sig": "10b0d4e51cac60fc",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/c0f2ee45-7303-4dd5-95c0-6979b5d9700f/07cfc048-8cd9-4020-a08b-9f1d66c5ff82-thumb.png",
+  "sig": "c24769c9dc9254ac",
+  "source": "assets/products/opt/c0f2ee45-7303-4dd5-95c0-6979b5d9700f-07cfc048-8cd9-4020-a08b-9f1d66c5ff82.webp",
   "file": "assets/og/p/c0f2ee45-7303-4dd5-95c0-6979b5d9700f.jpg"
  },
  "p/c2f8374e-4319-47f9-8b09-7079c93f1c64": {
@@ -2070,18 +2080,18 @@
   "file": "assets/og/p/c2f8374e-4319-47f9-8b09-7079c93f1c64.jpg"
  },
  "p/c4a4ff38-5ced-4aea-aee4-a12193ca1b89": {
-  "sig": "86e5beb40530225b",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/c4a4ff38-5ced-4aea-aee4-a12193ca1b89/8dbd1d5c-c6b0-42d9-8f3f-3487b8d9e9f9-thumb.png",
+  "sig": "aef87e40a248157f",
+  "source": "assets/products/opt/c4a4ff38-5ced-4aea-aee4-a12193ca1b89-8dbd1d5c-c6b0-42d9-8f3f-3487b8d9e9f9.webp",
   "file": "assets/og/p/c4a4ff38-5ced-4aea-aee4-a12193ca1b89.jpg"
  },
  "p/c4b9a43a-0515-4373-ab4a-e2c612e996b1": {
-  "sig": "ad66d8ee7b8e7c7f",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/c4b9a43a-0515-4373-ab4a-e2c612e996b1/33f98fcb-57a4-4670-9a82-86cf698cc3cc-thumb.png",
+  "sig": "6fa39e148a8a76b7",
+  "source": "assets/products/opt/c4b9a43a-0515-4373-ab4a-e2c612e996b1-33f98fcb-57a4-4670-9a82-86cf698cc3cc.webp",
   "file": "assets/og/p/c4b9a43a-0515-4373-ab4a-e2c612e996b1.jpg"
  },
  "p/c51e266d-4f9a-4930-b8a1-d7cd76e0ba84": {
-  "sig": "559efb0924c3b8a5",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/c51e266d-4f9a-4930-b8a1-d7cd76e0ba84/5d05c4b2-05bc-4ba1-96eb-401163d76681-thumb.png",
+  "sig": "d8aeae05006f0e69",
+  "source": "assets/products/opt/c51e266d-4f9a-4930-b8a1-d7cd76e0ba84-5d05c4b2-05bc-4ba1-96eb-401163d76681.webp",
   "file": "assets/og/p/c51e266d-4f9a-4930-b8a1-d7cd76e0ba84.jpg"
  },
  "p/cac40f65-8bba-441b-b0d6-b039207c83ad": {
@@ -2090,9 +2100,14 @@
   "file": "assets/og/p/cac40f65-8bba-441b-b0d6-b039207c83ad.jpg"
  },
  "p/cc479ca2-19e3-4e2d-8cbb-8050b16c2c3f": {
-  "sig": "cc0eb11436c95dd8",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/cc479ca2-19e3-4e2d-8cbb-8050b16c2c3f/3d9f9a1f-d0e6-457b-80c0-82b7d90a8344-thumb.webp",
+  "sig": "ae855f4a19f0f215",
+  "source": "assets/products/opt/cc479ca2-19e3-4e2d-8cbb-8050b16c2c3f-3d9f9a1f-d0e6-457b-80c0-82b7d90a8344.webp",
   "file": "assets/og/p/cc479ca2-19e3-4e2d-8cbb-8050b16c2c3f.jpg"
+ },
+ "p/ce9a53e7-c740-44ce-aeb2-9c4ef93ac224": {
+  "sig": "80c8c5c5fb606090",
+  "source": "assets/products/opt/ce9a53e7-c740-44ce-aeb2-9c4ef93ac224-564cb3d6-1f69-4250-88ba-00d4241169b9.webp",
+  "file": "assets/og/p/ce9a53e7-c740-44ce-aeb2-9c4ef93ac224.jpg"
  },
  "p/d0427fc1-7e13-4082-abcb-bb9e9263e23f": {
   "sig": "d9cf98a94e6a518d",
@@ -2100,8 +2115,8 @@
   "file": "assets/og/p/d0427fc1-7e13-4082-abcb-bb9e9263e23f.jpg"
  },
  "p/d061fdfa-61c6-46fa-be7c-2df46d6eda03": {
-  "sig": "c4440a6c822080a7",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/d061fdfa-61c6-46fa-be7c-2df46d6eda03/17727cbb-01b5-4d70-be15-4c06a3bfc4ac-thumb.png",
+  "sig": "1b45e8caf02b8fa7",
+  "source": "assets/products/opt/d061fdfa-61c6-46fa-be7c-2df46d6eda03-17727cbb-01b5-4d70-be15-4c06a3bfc4ac.webp",
   "file": "assets/og/p/d061fdfa-61c6-46fa-be7c-2df46d6eda03.jpg"
  },
  "p/d131d983-5a56-4590-89b0-167335cde607": {
@@ -2120,13 +2135,13 @@
   "file": "assets/og/p/d3e0a495-377f-4150-b379-5254a4f74f70.jpg"
  },
  "p/d55db673-0abb-4833-ab0c-7468729d73bc": {
-  "sig": "4f5ff3fc0e25dfdb",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/d55db673-0abb-4833-ab0c-7468729d73bc/e8a526cc-5158-4b15-90d9-7fa0ee606a89-thumb.webp",
+  "sig": "c8f06b8d8e5751d5",
+  "source": "assets/products/opt/d55db673-0abb-4833-ab0c-7468729d73bc-e8a526cc-5158-4b15-90d9-7fa0ee606a89.webp",
   "file": "assets/og/p/d55db673-0abb-4833-ab0c-7468729d73bc.jpg"
  },
  "p/d747c2f1-1cc4-4663-b068-2fe00f35bf3c": {
-  "sig": "321a26aa9f01a0d7",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/d747c2f1-1cc4-4663-b068-2fe00f35bf3c/7cd5c3e3-a26f-460d-a1b3-c53daea8c47b-thumb.png",
+  "sig": "c2e2eeb7c0ad5d0e",
+  "source": "assets/products/opt/d747c2f1-1cc4-4663-b068-2fe00f35bf3c-7cd5c3e3-a26f-460d-a1b3-c53daea8c47b.webp",
   "file": "assets/og/p/d747c2f1-1cc4-4663-b068-2fe00f35bf3c.jpg"
  },
  "p/d7a081ef-d6fd-41f2-81f0-40e2511cdce6": {
@@ -2135,8 +2150,8 @@
   "file": "assets/og/p/d7a081ef-d6fd-41f2-81f0-40e2511cdce6.jpg"
  },
  "p/d7ad769f-939a-429f-92b3-7eb19b5e8a42": {
-  "sig": "ab36d4054626432b",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/d7ad769f-939a-429f-92b3-7eb19b5e8a42/a5ace620-e7fc-440c-9913-a4355de6be79-thumb.webp",
+  "sig": "e0b9938f9be253e2",
+  "source": "assets/products/opt/d7ad769f-939a-429f-92b3-7eb19b5e8a42-a5ace620-e7fc-440c-9913-a4355de6be79.webp",
   "file": "assets/og/p/d7ad769f-939a-429f-92b3-7eb19b5e8a42.jpg"
  },
  "p/d923a658-fc9c-44c3-8091-dce6fe918954": {
@@ -2150,8 +2165,8 @@
   "file": "assets/og/p/dbaa5a1c-19fb-4d40-86b8-5fbee8a9e937.jpg"
  },
  "p/dd338b3f-540d-4943-ab64-5761186fb333": {
-  "sig": "4be3ed76f71c91c2",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/dd338b3f-540d-4943-ab64-5761186fb333/3ac8b88d-9460-4ed1-9dc5-9efa381caded-thumb.png",
+  "sig": "9dbbf08371bbf644",
+  "source": "assets/products/opt/dd338b3f-540d-4943-ab64-5761186fb333-3ac8b88d-9460-4ed1-9dc5-9efa381caded.webp",
   "file": "assets/og/p/dd338b3f-540d-4943-ab64-5761186fb333.jpg"
  },
  "p/dd9f267b-dcbc-430c-b7d7-0f345d926fdb": {
@@ -2160,8 +2175,8 @@
   "file": "assets/og/p/dd9f267b-dcbc-430c-b7d7-0f345d926fdb.jpg"
  },
  "p/df4d41b2-07e9-4584-ad91-e21be8617df6": {
-  "sig": "8dd4e54942dbb890",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/df4d41b2-07e9-4584-ad91-e21be8617df6/0dab4e66-776d-430b-ab3d-2ad221ef8c17-thumb.webp",
+  "sig": "7c56d2bac01a006c",
+  "source": "assets/products/opt/df4d41b2-07e9-4584-ad91-e21be8617df6-0dab4e66-776d-430b-ab3d-2ad221ef8c17.webp",
   "file": "assets/og/p/df4d41b2-07e9-4584-ad91-e21be8617df6.jpg"
  },
  "p/dfc5c08b-a665-45e4-bcb4-932ff59807e7": {
@@ -2170,13 +2185,13 @@
   "file": "assets/og/p/dfc5c08b-a665-45e4-bcb4-932ff59807e7.jpg"
  },
  "p/dfd84f94-d272-4b1e-a545-cc0592fff8de": {
-  "sig": "66e05ba7f486678f",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/dfd84f94-d272-4b1e-a545-cc0592fff8de/baac170a-7917-4bf9-935e-efdc85a56834-thumb.png",
+  "sig": "58d2deb541cf6887",
+  "source": "assets/products/opt/dfd84f94-d272-4b1e-a545-cc0592fff8de-baac170a-7917-4bf9-935e-efdc85a56834.webp",
   "file": "assets/og/p/dfd84f94-d272-4b1e-a545-cc0592fff8de.jpg"
  },
  "p/e24c26e5-5faf-4313-8e61-abd509682244": {
-  "sig": "a48a2867046e8084",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/e24c26e5-5faf-4313-8e61-abd509682244/eb584554-147e-4f7c-9659-7785067acbfe-thumb.png",
+  "sig": "78439fb9944bc4ec",
+  "source": "assets/products/opt/e24c26e5-5faf-4313-8e61-abd509682244-eb584554-147e-4f7c-9659-7785067acbfe.webp",
   "file": "assets/og/p/e24c26e5-5faf-4313-8e61-abd509682244.jpg"
  },
  "p/e30da33e-cae3-4dfc-ae60-d460d370aad0": {
@@ -2190,53 +2205,53 @@
   "file": "assets/og/p/e5a86d6d-5477-44d7-bc37-47e1a2188f21.jpg"
  },
  "p/e90cb64b-ddee-4ace-8870-5767ad5901b2": {
-  "sig": "5fb04f866c9960f7",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/e90cb64b-ddee-4ace-8870-5767ad5901b2/68018c98-282f-47be-8041-4c9b253d52d3-thumb.webp",
+  "sig": "7035f26601ce3704",
+  "source": "assets/products/opt/e90cb64b-ddee-4ace-8870-5767ad5901b2-68018c98-282f-47be-8041-4c9b253d52d3.webp",
   "file": "assets/og/p/e90cb64b-ddee-4ace-8870-5767ad5901b2.jpg"
  },
  "p/ea8a37e5-ec7a-4e5a-a9de-757571e0fb87": {
-  "sig": "91db10ec25487c6e",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/ea8a37e5-ec7a-4e5a-a9de-757571e0fb87/f4e99086-0ec1-44cc-8843-90764dbcefa1-thumb.png",
+  "sig": "4d33dba4412f87d5",
+  "source": "assets/products/opt/ea8a37e5-ec7a-4e5a-a9de-757571e0fb87-f4e99086-0ec1-44cc-8843-90764dbcefa1.webp",
   "file": "assets/og/p/ea8a37e5-ec7a-4e5a-a9de-757571e0fb87.jpg"
  },
  "p/ebf1276e-54d1-4af2-90a9-96189b683a86": {
-  "sig": "b2f9a51da3fd24b9",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/ebf1276e-54d1-4af2-90a9-96189b683a86/092f2f4a-7124-4d2b-ab6a-25560f614e12-thumb.webp",
+  "sig": "529acb4d3d9e1bc1",
+  "source": "assets/products/opt/ebf1276e-54d1-4af2-90a9-96189b683a86-092f2f4a-7124-4d2b-ab6a-25560f614e12.webp",
   "file": "assets/og/p/ebf1276e-54d1-4af2-90a9-96189b683a86.jpg"
  },
  "p/ed3c4bf2-fcb4-4701-8033-f26b98fb74b6": {
-  "sig": "a37162ea1699804d",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/ed3c4bf2-fcb4-4701-8033-f26b98fb74b6/02005b97-022a-4476-9a20-37840fd5b307-thumb.webp",
+  "sig": "adc6d1be4a0bf6c2",
+  "source": "assets/products/opt/ed3c4bf2-fcb4-4701-8033-f26b98fb74b6-02005b97-022a-4476-9a20-37840fd5b307.webp",
   "file": "assets/og/p/ed3c4bf2-fcb4-4701-8033-f26b98fb74b6.jpg"
  },
  "p/f185c6ae-34a2-48cd-b45b-74dc66954e34": {
-  "sig": "9bda4fe84856e82f",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/f185c6ae-34a2-48cd-b45b-74dc66954e34/94ae949e-9fa3-44bf-90a7-0599143bffdd-thumb.webp",
+  "sig": "e02801ae35a2ebb0",
+  "source": "assets/products/opt/f185c6ae-34a2-48cd-b45b-74dc66954e34-94ae949e-9fa3-44bf-90a7-0599143bffdd.webp",
   "file": "assets/og/p/f185c6ae-34a2-48cd-b45b-74dc66954e34.jpg"
  },
  "p/f7d872b4-177c-48f8-9703-4c0c0b520dae": {
-  "sig": "6870a2d11aee1ab9",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/f7d872b4-177c-48f8-9703-4c0c0b520dae/c5942343-731c-44fc-8b56-7c7bc51ac6bb-thumb.webp",
+  "sig": "7e9f50ff2fcf3191",
+  "source": "assets/products/opt/f7d872b4-177c-48f8-9703-4c0c0b520dae-c5942343-731c-44fc-8b56-7c7bc51ac6bb.webp",
   "file": "assets/og/p/f7d872b4-177c-48f8-9703-4c0c0b520dae.jpg"
  },
  "p/f848e5b8-15fc-486d-8da0-a44855517291": {
-  "sig": "2540c18c0acc1111",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/f848e5b8-15fc-486d-8da0-a44855517291/cc42f785-8212-48b7-8b1c-e9be3f42bb94-thumb.webp",
+  "sig": "a654e080c3956417",
+  "source": "assets/products/opt/f848e5b8-15fc-486d-8da0-a44855517291-cc42f785-8212-48b7-8b1c-e9be3f42bb94.webp",
   "file": "assets/og/p/f848e5b8-15fc-486d-8da0-a44855517291.jpg"
  },
  "p/f852fdcb-250c-40bc-957a-d8a9f66e9839": {
-  "sig": "1a1c64a07c656f29",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/f852fdcb-250c-40bc-957a-d8a9f66e9839/626c8074-c03d-4e8c-97bf-2fc1b7e7ac3b-thumb.webp",
+  "sig": "00d6f51e2c1c35c9",
+  "source": "assets/products/opt/f852fdcb-250c-40bc-957a-d8a9f66e9839-626c8074-c03d-4e8c-97bf-2fc1b7e7ac3b.webp",
   "file": "assets/og/p/f852fdcb-250c-40bc-957a-d8a9f66e9839.jpg"
  },
  "p/f94f7b8e-f9d5-4266-ba41-e54807787d8c": {
-  "sig": "82411986ae7a42e4",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/f94f7b8e-f9d5-4266-ba41-e54807787d8c/9eb1031b-38d1-4fc3-9a23-23966c1ad762-thumb.png",
+  "sig": "f68222ba81c07a9f",
+  "source": "assets/products/opt/f94f7b8e-f9d5-4266-ba41-e54807787d8c-9eb1031b-38d1-4fc3-9a23-23966c1ad762.webp",
   "file": "assets/og/p/f94f7b8e-f9d5-4266-ba41-e54807787d8c.jpg"
  },
  "p/fbe0e896-ec22-43ee-a58c-23d5aa64f90b": {
-  "sig": "41c54432c93d9dbc",
-  "source": "https://wlrwlqchlxehlvkyesnj.supabase.co/storage/v1/object/public/storefront-thumbnails/fbe0e896-ec22-43ee-a58c-23d5aa64f90b/889a5ce4-77b6-4571-95e4-f26e4972d106-thumb.png",
+  "sig": "eac10854e7597251",
+  "source": "assets/products/opt/fbe0e896-ec22-43ee-a58c-23d5aa64f90b-889a5ce4-77b6-4571-95e4-f26e4972d106.webp",
   "file": "assets/og/p/fbe0e896-ec22-43ee-a58c-23d5aa64f90b.jpg"
  }
 }
