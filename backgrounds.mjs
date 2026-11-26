@@ -4,9 +4,9 @@ import {localPokemonName} from './pokemon-names.mjs';
 import {localRegionName} from './region-names.mjs';
 import {renderActivityFeed} from './activity-feed-ui.mjs';
 import {detailPokemonRows,detailPokemonSections,pokemonFormLabel} from './backgrounds-detail-service.mjs';
-import {loadBackgroundOverrides,mergeBackgroundOverrides} from './backgrounds-admin-service.mjs';
+import {loadPublicBackgroundOverrides,mergeBackgroundOverrides} from './backgrounds-admin-service.mjs';
 import {getLocale,localeTag,setLocale,tr,t,productName,initLanguageHint,bindStaticTranslations} from './storefront-locale.mjs';
-import {loadPublicCatalog,stockLabel} from './storefront-service.mjs';
+import {loadCatalogWithFallback,stockLabel} from './storefront-service.mjs';
 import {backgroundState,filterBackgrounds,relatedProducts,safeBackgroundImage,safeSource,sortBackgrounds,referenceArtwork,backgroundArtworkGallery,groupBackgroundCards,filterBackgroundAnnouncements,backgroundProductSummary} from './backgrounds-service.mjs';
 const $=id=>document.getElementById(id),PAGE_SIZE=48;
 let data=null,products=[],stockState='loading',page=1,active=null,referenceData=null,catalogRequest=null,lastStockUpdate=null,referenceRequest=null;
@@ -200,7 +200,7 @@ const updateLanguageHint=initLanguageHint();$('closeDetail').onclick=()=>$('back
 async function load(){
  try{
   const catalog=fetch(BACKGROUNDS_DATA_URL,{signal:AbortSignal.timeout(15000)}).then(response=>{if(!response.ok)throw Error('catalog unavailable');return response.json()});
-  const [nextData,overrides]=await Promise.all([catalog,loadBackgroundOverrides()]);
+  const [nextData,overrides]=await Promise.all([catalog,loadPublicBackgroundOverrides()]);
   if(!Array.isArray(nextData.records))throw Error('invalid catalog');
   nextData.records=mergeBackgroundOverrides(nextData.records,overrides);data=nextData;
   buildOptions();render();$('loadStatus').hidden=true;
@@ -214,7 +214,7 @@ async function load(){
 async function refreshProducts(){
  if(catalogRequest)return catalogRequest;
  catalogRequest=(async()=>{
-  try{products=await loadPublicCatalog();stockState='ready';lastStockUpdate=new Date()}
+  try{const loaded=await loadCatalogWithFallback();products=loaded.products;stockState='ready';lastStockUpdate=loaded.snapshotAt?new Date(loaded.snapshotAt):new Date()}
   catch{products=[];stockState='error'}
   finally{catalogRequest=null;render();renderStockStatus();if(active)renderDetail(active)}
  })();renderStockStatus();return catalogRequest;

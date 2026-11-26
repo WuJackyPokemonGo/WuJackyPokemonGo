@@ -27,3 +27,15 @@ test('storefront uses the fallback loader and tells customers when showing the b
  const src=readFileSync(new URL('../storefront.mjs',import.meta.url),'utf8');
  assert.match(src,/loadCatalogWithFallback\(\)/);assert.match(src,/備份的商品資料/);
 });
+
+test('background atlas keeps working when Supabase refuses: overrides and product links fall back',async()=>{
+ const {loadPublicBackgroundOverrides,OVERRIDES_SNAPSHOT_URL}=await import('../backgrounds-admin-service.mjs');
+ const snap={generated_at:'2026-11-26T00:00:00Z',overrides:{'BG-0001':{background_id:'BG-0001'}}};
+ assert.deepEqual(await loadPublicBackgroundOverrides(async url=>url===OVERRIDES_SNAPSHOT_URL?json(snap):json({},402)),snap.overrides);
+ assert.deepEqual(await loadPublicBackgroundOverrides(async()=>json({},402)),{},'no snapshot: base catalog still shows');
+ const atlas=readFileSync(new URL('../backgrounds.mjs',import.meta.url),'utf8'),links=readFileSync(new URL('../product-backgrounds.mjs',import.meta.url),'utf8');
+ assert.match(atlas,/loadPublicBackgroundOverrides\(\)/);assert.match(atlas,/loadCatalogWithFallback\(\)/);assert.doesNotMatch(atlas,/loadPublicCatalog\(/);
+ assert.match(links,/loadPublicBackgroundOverrides\(/);
+ const published=JSON.parse(readFileSync(new URL('../data/background-overrides-snapshot.json',import.meta.url),'utf8'));
+ assert.equal(typeof published.overrides,'object');
+});
