@@ -371,3 +371,5 @@ body.atlas-page .ev-feed:not(.is-open) .ev-feed-body{display:none}
 .ev-home .ev-home-list .ev-cue,.ev-home .ev-featured .ev-cue{grid-column:2!important;grid-area:auto!important;justify-self:end;align-self:center}
 .ev-home .ev-home-list .ev-item.is-feature .ev-thumb{display:none}
 .ev-home .ev-badges{gap:4px}
+/* Auto-scroll to the map leaves a small gap so its top edge is never cut off. */
+.map-shell{scroll-margin-top:12px}
