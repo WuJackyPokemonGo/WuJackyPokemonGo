@@ -21,7 +21,7 @@ export function initHomeRefresh({getProducts,productName,stockText}={}){
   form?.addEventListener('submit',event=>{event.preventDefault();main.value=quick.value;main.dispatchEvent(new Event('input'));syncStatus();quick.blur();(document.querySelector('.sectionhead')||$('products'))?.scrollIntoView({block:'start'})});
  }
 
- const options=()=>({variant:'home',limit:3,
+ const options=()=>({variant:'home',limit:8,
   products:()=>({state:productState,list:getProducts?.()??[]}),
   onProduct:id=>window.dispatchEvent(new CustomEvent('wj-open-product',{detail:id})),
   productName,productStatus:stockText,

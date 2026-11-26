@@ -136,7 +136,7 @@ function row(event,ctx){
  badges.append(badge(statusName(s.status),'status '+s.status));if(event.activity.schedule.date_only)badges.append(badge(tr('時間待公布','Hours TBA'),'pending'));if(event.activity.schedule.basis==='pending')badges.append(badge(tr('時間有歧異','Time conflict'),'pending'));badges.append(badge(bgStateName(bg),'bg '+bg));
  text.append(badges,el('span',eventTitle(event),'ev-title'),el('span',eventDateLabel(event,lang())+' · '+((getLocale()!=='zh'?event.region_en:event.region_zh)||tr('地區待確認','Region to confirm')),'ev-meta'));
  const cue=el('span',null,'ev-cue');cue.setAttribute('aria-hidden','true');
- button.append(thumb(event),text,cue);heading.append(button);
+ if(ctx.variant==='home')button.append(text,cue);else button.append(thumb(event),text,cue);heading.append(button);
  const panel=el('div',null,'ev-panel');panel.id=id+'-panel';panel.setAttribute('role','region');panel.setAttribute('aria-labelledby',button.id);
  li.append(heading,panel);
  const item={li,button,panel,cue,event,built:false};state.items.set(event.event_id,item);
@@ -153,7 +153,7 @@ function applyExpanded(item,open,ctx){
 export function toggle(variant,eventId,open,{focus=false,scroll=true}={}){
  const state=stateFor(variant),item=state.items.get(eventId);if(!item)return;
  const ctx=state.ctx;
- if(open&&compact())for(const other of state.expanded)if(other!==eventId){const o=state.items.get(other);if(o)applyExpanded(o,false,ctx);state.expanded.delete(other)}
+ if(open&&(compact()||variant==='home'))for(const other of state.expanded)if(other!==eventId){const o=state.items.get(other);if(o)applyExpanded(o,false,ctx);state.expanded.delete(other)}
  open?state.expanded.add(eventId):state.expanded.delete(eventId);applyExpanded(item,open,ctx);persist(variant);
  if(focus)item.button.focus?.({preventScroll:true});
  if(scroll){const r=item.li.getBoundingClientRect?.();if(r&&(r.top<0||(open&&r.top>(globalThis.innerHeight??800)*0.75)))item.li.scrollIntoView?.({block:'start',behavior:reduceMotion()?'auto':'smooth'})}
@@ -208,17 +208,30 @@ export function renderActivityFeed(host,data,opts={}){
  const tabs=el('div',null,'ev-tabs');tabs.setAttribute('role','group');tabs.setAttribute('aria-label',tr('活動分類','Event filter'));
  const tabButtons=[];for(const [value,label,count] of [['all',tr('全部','All'),live.length+soon.length],['live',tr('進行中','In progress'),live.length],['upcoming',tr('即將開始','Starting soon'),soon.length]]){const b=el('button',label+' '+count,'ev-tab');b.type='button';b.dataset.tab=value;b.onclick=()=>{state.tab=value;state.showAll=false;persist(variant);applyTab()};tabButtons.push(b);tabs.append(b)}
  body.append(tabs);
- const list=el('ul',null,'ev-list');for(const e of [...live,...soon])list.append(row(e,ctx));body.append(list);
+ // Home: one featured event shows its official artwork in full; every other event is a compact row
+ // (name, date, place, status) so several can be scanned at once. Phones stack the list under it.
+ const featured=variant==='home'?[...live,...soon].find(e=>e.image)||null:null;
+ const list=el('ul',null,'ev-list');let side=null;
+ if(featured){
+  const layout=el('div',null,'ev-home-layout'),fig=el('figure',null,'ev-featured');
+  const pic=el('div',null,'ev-featured-pic'),img=el('img');img.src=featured.image;img.alt=eventTitle(featured);img.decoding='async';img.referrerPolicy='no-referrer';img.onerror=()=>pic.replaceChildren(placeholder());pic.append(img);
+  const fl=el('ul',null,'ev-list ev-featured-list');fl.append(row(featured,ctx));
+  fig.append(el('p',tr('主打活動','Featured event'),'ev-featured-label'),pic,fl);
+  for(const e of [...live,...soon])if(e!==featured)list.append(row(e,ctx));
+  side=el('div',null,'ev-home-list');side.append(tabs,list);layout.append(fig,side);body.append(layout);
+ }else{for(const e of [...live,...soon])list.append(row(e,ctx));body.append(list)}
+ const others=[...live,...soon].filter(e=>e!==featured);
  const empty=el('p',tr('這個分類目前沒有活動。','No events in this category right now.'),'ev-empty');body.append(empty);
  const limit=opts.limit??Infinity,moreWrap=el('div',null,'ev-more');body.append(moreWrap);
+ if(side)side.append(empty,moreWrap);
  function applyTab(){
   for(const b of tabButtons)b.setAttribute('aria-pressed',String(b.dataset.tab===state.tab));
-  let shown=0;for(const e of [...live,...soon]){const item=state.items.get(e.event_id),match=state.tab==='all'||item.li.dataset.group===state.tab;const visible=match&&(state.showAll||shown<limit||state.expanded.has(e.event_id));item.li.hidden=!visible;if(visible)shown++}
-  const matching=[...live,...soon].filter(e=>state.tab==='all'||eventGroup(e,now)===state.tab).length;
+  let shown=0;for(const e of others){const item=state.items.get(e.event_id),match=state.tab==='all'||item.li.dataset.group===state.tab;const visible=match&&(state.showAll||shown<limit||state.expanded.has(e.event_id));item.li.hidden=!visible;if(visible)shown++}
+  const matching=others.filter(e=>state.tab==='all'||eventGroup(e,now)===state.tab).length;
   empty.hidden=matching>0;moreWrap.replaceChildren();
   if(Number.isFinite(limit)&&matching>shown){if(opts.moreHref){const a=el('a',tr(`查看全部活動（${matching}）→`,`See all events (${matching}) →`),'ev-more-link');a.href=opts.moreHref();moreWrap.append(a)}else{const b=el('button',tr(`顯示其餘 ${matching-shown} 個活動`,`Show ${matching-shown} more`),'ev-more-link');b.type='button';b.onclick=()=>{state.showAll=true;applyTab()};moreWrap.append(b)}}
   // The first visible event doubles as the visual spotlight on wide screens.
-  let first=true;for(const e of [...live,...soon]){const item=state.items.get(e.event_id);item.li.classList?.toggle('is-feature',first&&!item.li.hidden);if(!item.li.hidden)first=false}
+  let first=!featured;for(const e of others){const item=state.items.get(e.event_id);item.li.classList?.toggle('is-feature',first&&!item.li.hidden);if(!item.li.hidden)first=false}
  }
  state.applyTab=applyTab;applyTab();
 

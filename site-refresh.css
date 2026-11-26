@@ -349,3 +349,23 @@ body.atlas-page .ev-feed:not(.is-open) .ev-feed-body{display:none}
 .home-map-entry h2{margin:0;font-size:20px;color:var(--wj-green-ink,#163b30)}
 .home-map-entry p{margin:4px 0 0;color:#5c625c;font-size:14px}
 .home-map-link{flex:none;display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border-radius:12px;background:var(--wj-green,#1d4c3d);color:#fff;font-weight:800;text-decoration:none}
+
+/* Home events: one featured event with its full artwork, other events as scannable rows. */
+.ev-home .ev-home-layout{display:grid;gap:14px;align-items:start}
+@media(min-width:900px){.ev-home .ev-home-layout{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)}}
+.ev-featured{margin:0;display:grid;gap:8px;padding:12px;border:1px solid var(--wj-line,#e2d6b8);border-radius:16px;background:var(--wj-card,#fffdf6)}
+.ev-featured-label{margin:0;font-size:12px;font-weight:800;letter-spacing:.06em;color:#9a6a12}
+.ev-featured-pic{border-radius:12px;overflow:hidden;background:#1d3b32;aspect-ratio:16/10;display:grid;place-items:center}
+.ev-featured-pic img{width:100%;height:100%;object-fit:contain;display:block}
+.ev-featured-list{margin:0;padding:0;list-style:none}
+.ev-home .ev-home-list .ev-list{display:grid;gap:6px}
+.ev-home .ev-home-list .ev-item{padding:0}
+.ev-home .ev-home-list .ev-toggle,.ev-home .ev-featured .ev-toggle{min-height:56px;padding:9px 12px}
+.ev-home .ev-home-list .ev-title{font-size:15px}
+/* Home rows: one event per line — status chips, name, date · place on the left, expand cue on the right. */
+.ev-home .ev-home-list .ev-list,.ev-home .ev-featured-list{grid-template-columns:1fr!important}
+.ev-home .ev-home-list .ev-toggle,.ev-home .ev-featured .ev-toggle{grid-template-columns:minmax(0,1fr) auto!important;grid-template-areas:none!important;gap:10px}
+.ev-home .ev-home-list .ev-text,.ev-home .ev-featured .ev-text{grid-column:1;grid-area:auto}
+.ev-home .ev-home-list .ev-cue,.ev-home .ev-featured .ev-cue{grid-column:2!important;grid-area:auto!important;justify-self:end;align-self:center}
+.ev-home .ev-home-list .ev-item.is-feature .ev-thumb{display:none}
+.ev-home .ev-badges{gap:4px}
