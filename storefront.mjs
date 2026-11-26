@@ -78,7 +78,7 @@ document.addEventListener('click',e=>{if(e.target.closest?.('a[data-contact-line
 
 initCheckoutEntry();
 // Keep the visitor's language when hopping to the background atlas.
-function syncCrossLinks(){document.querySelectorAll('a[href^="backgrounds.html"]').forEach(a=>{const u=new URL(a.getAttribute('href'),location.href);u.searchParams.set('lang',getLocale());a.setAttribute('href','backgrounds.html'+u.search+u.hash)})}
+function syncCrossLinks(){document.querySelectorAll('a[href^="index.html"],a[href^="backgrounds.html"],a[href^="map.html"]').forEach(a=>{const page=a.getAttribute('href').split(/[?#]/)[0],u=new URL(a.getAttribute('href'),location.href);u.searchParams.set('lang',getLocale());a.setAttribute('href',page+u.search+u.hash)})}
 syncCrossLinks();
 // Products still waiting for photos borrow their linked atlas background as a labelled preview.
 async function loadPreviewCovers(){const waiting=products.filter(p=>!(p.images??[]).length);if(!waiting.length)return;try{const records=await loadBackgroundRecords();for(const p of waiting){const b=backgroundsForProduct(records,p.id).find(x=>x.image);if(b)previewCovers.set(p.id,b)}if(previewCovers.size){renderProducts();if(active&&$('detailDialog').open)renderDetail(active)}}catch{}}

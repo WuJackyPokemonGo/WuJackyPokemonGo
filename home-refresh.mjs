@@ -25,7 +25,7 @@ export function initHomeRefresh({getProducts,productName,stockText}={}){
   products:()=>({state:productState,list:getProducts?.()??[]}),
   onProduct:id=>window.dispatchEvent(new CustomEvent('wj-open-product',{detail:id})),
   productName,productStatus:stockText,
-  productHref:id=>'index.html?product='+encodeURIComponent(id)+'&lang='+getLocale(),
+  productHref:id=>'shop.html?product='+encodeURIComponent(id)+'&lang='+getLocale(),
   backgroundHref:id=>'backgrounds.html?background='+encodeURIComponent(id)+'&lang='+getLocale(),
   moreHref:()=>'backgrounds.html?lang='+getLocale()+'#announcedBackgrounds',
   historyHref:()=>'backgrounds.html?lang='+getLocale()+'&events=history#announcedBackgrounds'});

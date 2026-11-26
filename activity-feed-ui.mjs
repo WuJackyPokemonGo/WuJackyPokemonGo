@@ -176,7 +176,7 @@ export function openActivityEvent(host,variant,eventId){
 export function renderActivityFeed(host,data,opts={}){
  if(!host)return;
  const variant=opts.variant||'atlas',now=opts.now??Date.now(),feed=model(data),state=stateFor(variant);
- const defaults={backgroundHref:id=>'backgrounds.html?background='+encodeURIComponent(id)+'&lang='+getLocale(),productHref:id=>'index.html?product='+encodeURIComponent(id)+'&lang='+getLocale()+'&from=bg',shareUrl:id=>{try{const u=new URL(globalThis.location.href);for(const k of [...u.searchParams.keys()])if(k!=='lang')u.searchParams.delete(k);u.searchParams.set('event',id);u.searchParams.set('lang',getLocale());u.hash='event-'+id;return u.href}catch{return '?event='+encodeURIComponent(id)}}};
+ const defaults={backgroundHref:id=>'backgrounds.html?background='+encodeURIComponent(id)+'&lang='+getLocale(),productHref:id=>'shop.html?product='+encodeURIComponent(id)+'&lang='+getLocale()+'&from=bg',shareUrl:id=>{try{const u=new URL(globalThis.location.href);for(const k of [...u.searchParams.keys()])if(k!=='lang')u.searchParams.delete(k);u.searchParams.set('event',id);u.searchParams.set('lang',getLocale());u.hash='event-'+id;return u.href}catch{return '?event='+encodeURIComponent(id)}}};
  opts={...defaults,...opts};
  const events=sortActivityEvents(feed.events,now),productState=opts.products?.()?.state??'none';
  const next=JSON.stringify([getLocale(),variant,productState,formatZoned(now,'Asia/Taipei').slice(0,10),events.map(r=>[r.event_id,r.activity.checked_on,activityState(r,now).status,activityEarlyAccess(r,now)?.open])]);
