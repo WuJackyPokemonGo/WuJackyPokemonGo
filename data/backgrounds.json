@@ -2153,7 +2153,13 @@
           "name_en": "Explorer Hat Eevee",
           "name_zh": "伊布（探險帽）",
           "variant_id": "eevee-may-2023",
-          "acquisition": "encounter"
+          "acquisition": "encounter",
+          "method_zh": "同期活動資料記載：2024/12/7–8持票參加香港城市狩獵，特殊調查只提供一次探險帽伊布遭遇；「伊布探險隊」限時調查在指定地點另提供最多8次附香港地點背景的探險帽伊布遭遇。第二天加購可再完成一次該限時調查，額外獲得最多8次遭遇，並非再發一份特殊調查。八種進化款由帶背景的伊布進化繼承。",
+          "method_en": "Contemporary event records: ticketed City Safari Hong Kong ran December 7–8, 2024. Event Special Research was granted once and awarded an explorer-hat Eevee encounter. Eevee Explorers Timed Research provided up to eight additional encounters with explorer-hat Eevee bearing the Hong Kong Location Background at designated locations. A second-day add-on allowed that Timed Research to be completed again for up to eight more encounters, not a second Special Research story. Its eight Evolutions inherit the background.",
+          "method_sources": [
+            "https://leekduck.com/events/pokemon-go-city-safari-hong-kong-2024/",
+            "https://www.dittobase.com/pokemon-go/backgrounds/lc-city-safari-2024-hongkong"
+          ]
         }
       ],
       "source": "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -2164,8 +2170,8 @@
       "official_sources": [],
       "notes": [],
       "related_product_ids": [],
-      "method_zh": "持票參與城市狩獵，透過活動特殊調查與「伊布探險隊」限時調查遇見探險帽伊布；八種進化款可由帶背景的探險帽伊布進化繼承。",
-      "method_en": "Ticketed City Safari Special Research and Eevee Explorers Timed Research award explorer-hat Eevee. Its eight Evolutions can inherit the background.",
+      "method_zh": "同期活動資料記載：2024/12/7–8持票參加香港城市狩獵，特殊調查只提供一次探險帽伊布遭遇；「伊布探險隊」限時調查在指定地點另提供最多8次附香港地點背景的探險帽伊布遭遇。第二天加購可再完成一次該限時調查，額外獲得最多8次遭遇，並非再發一份特殊調查。八種進化款由帶背景的伊布進化繼承。",
+      "method_en": "Contemporary event records: ticketed City Safari Hong Kong ran December 7–8, 2024. Event Special Research was granted once and awarded an explorer-hat Eevee encounter. Eevee Explorers Timed Research provided up to eight additional encounters with explorer-hat Eevee bearing the Hong Kong Location Background at designated locations. A second-day add-on allowed that Timed Research to be completed again for up to eight more encounters, not a second Special Research story. Its eight Evolutions inherit the background.",
       "series": "City Safari",
       "series_zh": "城市狩獵",
       "year": "2024",
@@ -2238,7 +2244,7 @@
       "end_date": "2024-12-08",
       "verification_note_zh": "背景及活動日期已比對兩份名錄；取得條件與個別形態以條目來源及官方活動規定為準。",
       "verification_note_en": "Background and event dates agree across two catalogs. See the linked sources and official event rules for acquisition and form details.",
-      "checked_on": "2026-10-24",
+      "checked_on": "2026-11-26",
       "region_en": "Hong Kong",
       "region_zh": "香港",
       "reference_ids": [
