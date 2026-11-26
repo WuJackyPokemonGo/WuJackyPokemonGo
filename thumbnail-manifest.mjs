@@ -52,6 +52,7 @@ export const OPTIMIZED_THUMBNAILS={
  "500e3e31-5d82-4a96-8b1b-343729e98661/365aa506-2257-41cf-ba9b-38fdbf1f89f9-thumb.png":"assets/products/opt/500e3e31-5d82-4a96-8b1b-343729e98661-365aa506-2257-41cf-ba9b-38fdbf1f89f9.webp",
  "50c46624-f8ef-4f28-9b79-897121f27e2c/3db4d57f-ddd5-45b7-a392-a08891f02b9f-thumb.png":"assets/products/opt/50c46624-f8ef-4f28-9b79-897121f27e2c-3db4d57f-ddd5-45b7-a392-a08891f02b9f.webp",
  "5130ca87-874a-47c9-bfda-86bb448fbac5/4864f9e2-0d00-43d4-bc02-b36cbacec43a-thumb.png":"assets/products/opt/5130ca87-874a-47c9-bfda-86bb448fbac5-4864f9e2-0d00-43d4-bc02-b36cbacec43a.webp",
+ "52da3dd6-ceba-4850-ab16-73a86a1db690/b6cfa713-174a-4ad9-8a03-94465c58ab4b-thumb.webp":"assets/products/opt/52da3dd6-ceba-4850-ab16-73a86a1db690-b6cfa713-174a-4ad9-8a03-94465c58ab4b.webp",
  "53526afb-2266-44c2-9b48-75c6c51ce710/29d33a45-83c4-4362-aee1-35bae0a12153-thumb.png":"assets/products/opt/53526afb-2266-44c2-9b48-75c6c51ce710-29d33a45-83c4-4362-aee1-35bae0a12153.webp",
  "535ad1ce-37a1-4db7-af62-91fc503390af/cd852acd-8397-4be8-afb4-d4e6622ba65b-thumb.png":"assets/products/opt/535ad1ce-37a1-4db7-af62-91fc503390af-cd852acd-8397-4be8-afb4-d4e6622ba65b.webp",
  "55c7569a-5551-491e-bdf2-08ee5fd07a0f/1ca22546-5fdc-42a1-a1c9-cceeeb36a7df-thumb.png":"assets/products/opt/55c7569a-5551-491e-bdf2-08ee5fd07a0f-1ca22546-5fdc-42a1-a1c9-cceeeb36a7df.webp",
