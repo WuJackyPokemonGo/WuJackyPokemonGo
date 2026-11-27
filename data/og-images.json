@@ -1414,6 +1414,16 @@
   "source": "https://pokexperience.com/pokemon-variants/backgrounds/duolingo.webp?v=20260816",
   "file": "assets/og/bg/BG-0286.jpg"
  },
+ "bg/BG-0287": {
+  "sig": "72fbf6df780b1019",
+  "source": "https://pokexperience.com/pokemon-variants/backgrounds/pokemonjetblue.webp?v=20260816",
+  "file": "assets/og/bg/BG-0287.jpg"
+ },
+ "bg/BG-0288": {
+  "sig": "9b83d59dc8c08b2c",
+  "source": "https://pokexperience.com/pokemon-variants/backgrounds/pokemon_champions.webp?v=20260816",
+  "file": "assets/og/bg/BG-0288.jpg"
+ },
  "p/00287ad9-85f5-4647-832b-2ddaecfff3c5": {
   "sig": "d7dcb703d0cad5d2",
   "source": "assets/products/opt/00287ad9-85f5-4647-832b-2ddaecfff3c5-837a4b15-8242-4776-9583-c7a356888650.webp",
