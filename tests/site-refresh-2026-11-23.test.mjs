@@ -28,9 +28,9 @@ test('event schedule state and background availability stay separate',()=>{
  assert.ok(eventPokemon(ev('wild-area-global-2026'),feed).length>=10,'falls back to linked background Pokémon');
 });
 test('time rules: local-time vs fixed vs date-only, countdown target, visitor clock',()=>{
- const rolling=ev('twilight-wishes-2026'),fixed=ev('apple-store-japan-2026'),dateOnly=ev('season-25-2026-12-05');
+ const rolling=ev('twilight-wishes-2026'),fixed=ev('apple-store-japan-2026'),dateOnly=ev('season-25-2026-12-19');
  assert.equal(eventTimeKind(rolling),'rolling');assert.equal(eventTimeKind(fixed),'fixed');assert.equal(eventTimeKind(dateOnly),'date');
- assert.match(eventDateLabel(dateOnly),/2026\/12\/05（時間待公布）/);assert.doesNotMatch(eventDateLabel(dateOnly),/00:00/);
+ assert.match(eventDateLabel(dateOnly),/2026\/12\/19（時間待公布）/);assert.doesNotMatch(eventDateLabel(dateOnly),/00:00/);
  assert.equal(eventCountdown(dateOnly,Date.parse('2026-12-01T00:00Z')),null,'no countdown without announced hours');
  // A local-time event counts down in the visitor's own zone; a fixed event in the event zone.
  const london=eventCountdown(rolling,Date.parse('2026-11-24T09:00Z'),'Europe/London');assert.equal(london.target,'start');assert.equal(london.clock,'Europe/London');assert.equal(london.ms,3600000);

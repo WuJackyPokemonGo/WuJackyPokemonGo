@@ -3,9 +3,9 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {collectActivityEvents,activityState} from '../activity-feed-service.mjs';
 const data=JSON.parse(fs.readFileSync(new URL('../data/backgrounds.json',import.meta.url)));
-test('Champions replaces its placeholder once, without releasing unannounced artwork or extending backgrounds to the raid rotation end',()=>{
+test('Champions replaces its placeholder once, without releasing preview artwork or extending backgrounds to the raid rotation end',()=>{
  const r=data.records.find(r=>r.background_id==='BG-0288');
- assert.equal(r.release_state,'upcoming');assert.equal(r.image_source,null);
+ assert.equal(r.release_state,'upcoming');assert.match(r.image_source,/pokemon_champions\.webp/);
  assert.deepEqual(r.pokemon.map(p=>p.dex),[371,725,996,26,445,812,380,381,485,638,639,640,894,895]);
  assert.equal(r.evolved_pokemon.length,6);assert.deepEqual(r.related_product_ids,[]);
  assert.equal(r.activity.remote_participation.basis,'inferred');assert.equal(r.activity.remote_background.basis,'pending');

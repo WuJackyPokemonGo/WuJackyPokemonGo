@@ -5,14 +5,14 @@ import fs from 'node:fs';
 const data=JSON.parse(fs.readFileSync(new URL('../data/backgrounds.json',import.meta.url)));
 const by=id=>data.records.find(r=>r.background_id===id);
 
-test('Blue Pokemon Jet is an official upcoming Squirtle raid background without invented art or remote eligibility',()=>{
+test('Blue Pokemon Jet retains official upcoming Squirtle eligibility with a separately sourced preview',()=>{
  const r=by('BG-0287');
  assert.ok(r);
  assert.equal(r.release_state,'upcoming');
  assert.equal(r.start_date,'2026-12-11');
  assert.equal(r.end_date,'2027-08-31');
- assert.equal(r.image_source,null);
- assert.equal(r.artwork_status,'pending');
+ assert.match(r.image_source,/pokemonjetblue\.webp/);
+ assert.equal(r.artwork_status,'catalogued-preview');
  assert.deepEqual(r.pokemon.map(p=>p.dex),[7]);
  assert.match(r.method_en,/one raid per Gym per day/i);
  assert.equal(r.activity.schedule.zone,'Asia/Tokyo');
