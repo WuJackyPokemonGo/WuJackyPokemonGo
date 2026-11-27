@@ -502,3 +502,6 @@ body.landing-page:has(.hero-banner){background:#0b1424 linear-gradient(180deg,#0
 body.landing-page #homeEvents .ev-asof,body.landing-page #homeEvents .ev-intro,body.landing-page #homeEvents .ev-tabs{display:none}
 body.landing-page #homeEvents .ev-more{display:flex;justify-content:center;margin-top:12px}
 body.landing-page #homeEvents .ev-more-link{background:#4b370f;border-color:#4b370f;color:#fff;font-weight:800;min-height:46px;padding:10px 22px}
+/* Nav and entry cards already link to 背景圖鑑／世界地圖: give the copy a little more room instead. */
+.hero-banner .hero-inner{gap:14px;padding-bottom:56px}
+.hero-banner .hero-sub{max-width:560px}
