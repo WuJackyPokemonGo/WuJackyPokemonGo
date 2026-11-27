@@ -124,9 +124,11 @@ begin
   perform pg_advisory_xact_lock(hashtextextended(lower(btrim(p_payload->>'contact')),42));
   select count(*) into pending_count from public.orders o where o.customer_contact_private=(p_payload->>'contact_channel')||': '||btrim(p_payload->>'contact') and o.created_at>now()-interval '15 minutes';
   if pending_count>=3 then raise sqlstate 'PT429' using message='Too many orders';end if;
-  if (select count(*) from jsonb_array_elements(p_payload->'items'))<>(select count(distinct x->>'id') from jsonb_array_elements(p_payload->'items') x) then raise check_violation using message='Duplicate product';end if;
-  -- Lock balances in stable order. All deductions use these same row locks.
-  for item in select x from jsonb_array_elements(p_payload->'items') x order by x->>'id' loop
+  -- Compare product IDs as UUIDs, not raw text: upper/lower case spellings of one UUID are the same product.
+  if exists(select 1 from jsonb_array_elements(p_payload->'items') x where jsonb_typeof(x) is distinct from 'object' or coalesce(x->>'id','')!~*'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$') then raise check_violation using message='Invalid items';end if;
+  if (select count(*) from jsonb_array_elements(p_payload->'items'))<>(select count(distinct (x->>'id')::uuid) from jsonb_array_elements(p_payload->'items') x) then raise check_violation using message='Duplicate product';end if;
+  -- Lock balances in stable UUID order. All deductions and report renewals use these same row locks.
+  for item in select x from jsonb_array_elements(p_payload->'items') x order by (x->>'id')::uuid loop
    pid:=(item->>'id')::uuid;qty:=(item->>'qty')::integer;
    if qty is null or qty not between 1 and 99 or item->>'qty' !~ '^[0-9]+$' then raise check_violation using message='Invalid quantity';end if;
    select * into p from public.products where id=pid for share;
@@ -160,7 +162,18 @@ begin
    if meta->'payment_report' is distinct from p_payload->'report' then raise unique_violation using message='Report already submitted; contact seller for corrections';end if;
    return private.checkout_snapshot(oid);
   end if;
-  if ord.status not in('pending_review','awaiting_payment') or (meta->>'hold_until')::timestamptz<=now() then raise check_violation using message='Order expired or closed; contact seller before payment';end if;
+  if ord.status not in('pending_review','awaiting_payment') or (meta->>'hold_until')::timestamptz<=clock_timestamp() then raise check_violation using message='Order expired or closed; contact seller before payment';end if;
+  -- Renewal must not race a new order that started after this hold expired: take the same
+  -- inventory row locks as create (UUID order), then re-check expiry with the wall clock
+  -- (now() is fixed at transaction start) and re-check that the stock is still free.
+  for pid in select distinct i.product_id from public.order_items i where i.order_id=oid order by 1 loop
+   perform 1 from public.inventory_balances where product_id=pid for update;
+  end loop;
+  if (meta->>'hold_until')::timestamptz<=clock_timestamp() then raise check_violation using message='Order expired or closed; contact seller before payment';end if;
+  for pid,qty in select i.product_id,sum(i.quantity)::integer from public.order_items i where i.order_id=oid group by i.product_id order by 1 loop
+   select quantity_on_hand into stock from public.inventory_balances where product_id=pid;
+   if stock is null or stock-private.checkout_held(pid,oid)<qty then raise check_violation using message='Order expired or closed; contact seller before payment';end if;
+  end loop;
   if jsonb_typeof(p_payload->'report') is distinct from 'object' or coalesce(p_payload->'report'->>'last_five','')!~'^[0-9]{5}$'
    or coalesce(p_payload->'report'->>'amount','')!~'^[1-9][0-9]{0,9}$'
    or (p_payload->'report'->>'amount')::bigint>2147483647
@@ -252,15 +265,22 @@ revoke all on function private.complete_order_before_checkout(uuid,uuid) from pu
 create or replace function private.storefront_catalog(p_offset integer,p_limit integer)
 returns setof jsonb language sql stable security definer set search_path='' as $$
  select jsonb_build_object(
- 'id',p.id,'sku',p.sku,'name',p.name_zh,'name_en',p.name_en,'aliases',p.aliases,'dex',p.pokedex_number,
+ 'id',p.id,'sku',p.sku,'name',p.name_zh,'name_en',p.name_en,'aliases',p.aliases,'dex',p.pokedex_number,'dex_numbers',p.pokedex_numbers,
  'description',p.description_public,'price',case when p.price_is_inquiry then null else p.public_price_twd end,
  'status',case when p.supply_status in('available','low_stock')and b.quantity_on_hand=0 then 'sold_out' when p.supply_status in('available','low_stock')and b.quantity_on_hand>0 and(p.supply_status='low_stock'or b.quantity_on_hand<=p.low_stock_threshold)then 'low_stock'else p.supply_status::text end,
  'stock_quantity',case when p.supply_status in('available','low_stock','sold_out')then b.quantity_on_hand end,
  'is_low_stock',coalesce(p.supply_status in('available','low_stock')and b.quantity_on_hand>0 and(p.supply_status='low_stock'or b.quantity_on_hand<=p.low_stock_threshold),false),
  'first_stocked_at',p.first_stocked_at,
+ 'first_published_at',p.first_published_at,
+ 'hot_rank',p.hot_rank,
  'tags',coalesce((select jsonb_agg(c.name order by c.sort_order,c.id)from public.category_assignments a join public.product_categories c on c.id=a.category_id where a.product_id=p.id),'[]'::jsonb),
  'images',coalesce((select jsonb_agg(jsonb_build_object('path',i.public_path,'alt',i.alt_text)order by i.sort_order,i.id)from public.product_images i where i.product_id=p.id and i.is_approved and i.public_path is not null),'[]'::jsonb))
- from public.products p left join public.inventory_balances raw_balance on raw_balance.product_id=p.id left join lateral(select greatest(raw_balance.quantity_on_hand-private.checkout_held(p.id),0)::int quantity_on_hand)b on true
+ from public.products p
+ left join public.inventory_balances raw_balance on raw_balance.product_id=p.id
+ left join lateral(
+  select greatest(raw_balance.quantity_on_hand-private.checkout_held(p.id),0)::int quantity_on_hand
+  where raw_balance.quantity_on_hand is not null
+ ) b on true
  where p.is_live and p.publication_status='published'
  order by p.manual_sort_order,p.id limit least(greatest(coalesce(p_limit,100),1),100)offset least(greatest(coalesce(p_offset,0),0),20000);
 $$;
