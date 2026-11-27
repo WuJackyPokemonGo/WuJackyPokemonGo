@@ -1,6 +1,6 @@
 // Home (landing) page: full-screen hero video, live counters, entry cards, activity feed and regions.
 // The catalog itself lives on shop.html; old product links (index.html?product=… / ?q=) are forwarded there.
-import {getLocale,setLocale,productName,bindStaticTranslations,initLanguageHint,tr} from './storefront-locale.mjs';
+import {getLocale,setLocale,productName,bindStaticTranslations,tr} from './storefront-locale.mjs';
 import {initContactLinks} from './contact.mjs';
 import {initAnalytics} from './analytics.mjs';
 import {loadCatalogWithFallback,stockLabel} from './storefront-service.mjs';
@@ -10,7 +10,7 @@ import {eventGroup} from './activity-feed-service.mjs';
 
 const $=id=>document.getElementById(id);
 const translateStatic=bindStaticTranslations();translateStatic();initContactLinks();const track=initAnalytics();
-const updateLanguageHint=initLanguageHint();
+const updateLanguageHint=()=>{}; // The landing page keeps the header clean; other pages show the one-time language tip.
 let products=[];
 
 // Product links should open in the shop. Hero video: muted autoplay loop; still poster when the visitor asks for less motion.
@@ -37,8 +37,8 @@ function renderCounters(){
  // Rounded down to the nearest 50 (222 → 200+), so the headline stays true while stock moves.
  if(counts.products!=null){const n=counts.products>=50?Math.floor(counts.products/50)*50+'+':String(counts.products);parts.push(tr(`${n} 件商品`,`${n} items`))}
  if(counts.backgrounds!=null)parts.push(tr(`${counts.backgrounds} 筆背景紀錄`,`${counts.backgrounds} backgrounds`));
+ if(counts.live)parts.push(tr(`${counts.live} 個活動進行中`,`${counts.live} events live`));
  host.textContent='⭐ '+parts.join(' · ');
- const live=$('heroLive');if(live&&counts.live!=null){live.hidden=!counts.live;live.querySelector('span').textContent=tr(`目前 ${counts.live} 個活動進行中`,`${counts.live} events live right now`)}
 }
 renderCounters();
 

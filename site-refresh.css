@@ -505,3 +505,13 @@ body.landing-page #homeEvents .ev-more-link{background:#4b370f;border-color:#4b3
 /* Nav and entry cards already link to 背景圖鑑／世界地圖: give the copy a little more room instead. */
 .hero-banner .hero-inner{gap:14px;padding-bottom:56px}
 .hero-banner .hero-sub{max-width:560px}
+/* Landing simplification (11/27) */
+.entry-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:-26px auto 0;padding:0 16px;position:relative;z-index:2}
+.entry-tile{display:grid;justify-items:center;gap:4px;padding:14px 8px;border-radius:16px;background:#fff;color:#3d2c08;text-decoration:none;box-shadow:0 10px 26px #0003;font-size:15px}
+.entry-tile span{font-size:26px;line-height:1}
+.entry-tile strong{white-space:nowrap}
+.entry-tile:hover{transform:translateY(-2px)}
+body.landing-page #homeEvents .ev-history-link{display:none}
+.privacy-note{margin-top:6px;font-size:12px}
+.privacy-note summary{cursor:pointer;display:inline}
+@media(max-width:360px){.entry-tile{font-size:13px;padding:12px 4px}}
