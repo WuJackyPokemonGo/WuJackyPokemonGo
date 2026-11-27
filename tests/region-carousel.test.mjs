@@ -143,11 +143,7 @@ test('touching a carousel dot does not leave autoplay paused after focus', () =>
   ui.tick();
   assert.equal(ui.active(), 3);
 });
-test('home markup keeps full originals lazy and offers a thumbnail entry for each region', () => {
+test('the region carousel was removed from the home page on 2026-11-27 (owner request)', () => {
   const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
-  assert.equal((html.match(/class="region-thumb"/g) || []).length, 9);
-  assert.equal((html.match(/class="region-slide/g) || []).length, 9);
-  assert.ok(!/region-slide[^>]*>\s*<div class="region-art"><img src=/.test(html), 'no full original is fetched before opening');
-  assert.match(html, /id="regionViewer" class="region-viewer" hidden/);
-  assert.match(html, /aria-controls="regionViewer"/);
+  assert.ok(!html.includes('region-slide') && !html.includes('region-carousel.mjs'));
 });

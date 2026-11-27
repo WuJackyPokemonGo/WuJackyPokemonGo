@@ -4,7 +4,6 @@ import {getLocale,setLocale,productName,bindStaticTranslations,tr} from './store
 import {initContactLinks} from './contact.mjs';
 import {initAnalytics} from './analytics.mjs';
 import {loadCatalogWithFallback,stockLabel} from './storefront-service.mjs';
-import {initHomeRefresh} from './home-refresh.mjs';
 import {ACTIVITY_FEED_URL,BACKGROUNDS_DATA_URL} from './background-data.mjs';
 import {eventGroup} from './activity-feed-service.mjs';
 
@@ -43,7 +42,6 @@ function renderCounters(){
 renderCounters();
 
 window.addEventListener('wj-open-product',e=>{location.href='shop.html?product='+encodeURIComponent(e.detail)+'&lang='+getLocale()});
-initHomeRefresh({getProducts:()=>products,productName,stockText:p=>stockLabel(p,getLocale()).text});
 loadCatalogWithFallback().then(r=>{products=r.products;counts.products=products.length;renderCounters();window.dispatchEvent(new CustomEvent('wj-products-ready',{detail:products}))}).catch(()=>window.dispatchEvent(new Event('wj-products-error')));
 fetch(BACKGROUNDS_DATA_URL).then(r=>r.ok?r.json():null).then(d=>{if(Array.isArray(d?.records)){counts.backgrounds=d.records.length;renderCounters()}}).catch(()=>{});
 fetch(ACTIVITY_FEED_URL).then(r=>r.ok?r.json():null).then(feed=>{

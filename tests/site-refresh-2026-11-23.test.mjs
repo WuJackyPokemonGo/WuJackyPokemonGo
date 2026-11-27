@@ -58,9 +58,8 @@ test('clusters merge nearby places only within the radius',()=>{
  const places=[{key:'tokyo',x:x1,y:y1,rows:[1,2]},{key:'yokohama',x:x2,y:y2,rows:[1]},{key:'london',x:x3,y:y3,rows:[1]}];
  assert.equal(clusterPlaces(places,5).length,2);assert.equal(clusterPlaces(places,0.1).length,3);
 });
-test('pages keep unique ids, the map/viewer controls, and the home search before events and regions',()=>{
+test('pages keep unique ids and the map/viewer controls',()=>{
  for(const page of ['index.html','backgrounds.html']){const html=read(page),ids=[...html.matchAll(/\sid="([^"]+)"/g)].map(m=>m[1]);assert.equal(new Set(ids).size,ids.length,page+' has duplicate ids')}
- const home=read('index.html');assert.ok(home.indexOf('id="quickSearch"')<home.indexOf('id="homeEvents"'));assert.ok(home.indexOf('id="homeEvents"')<home.indexOf('class="region-showcase"'));
  const atlas=read('backgrounds.html');for(const id of ['mapView','worldMap','placeList','bgViewer','viewerPrev','viewerNext','globalEntry','zoomDetail'])assert.ok(atlas.includes(`id="${id}"`),id);
  assert.match(atlas,/data-view="map" aria-pressed="false"/);
 });
