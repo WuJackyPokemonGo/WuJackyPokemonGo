@@ -26,6 +26,8 @@ test('first load: full region originals wait for the viewer, small thumbnails fo
  const srcs=[...html.matchAll(/<img (src|data-src)="assets\/regions\/([a-z]+)\.webp"/g)].map(m=>m[1]+':'+m[2]);
  assert.equal(srcs.length,9);assert.ok(srcs.every(s=>s.startsWith('data-src:')),'2026-11-23: originals load only after the visitor opens the viewer');
  const thumbs=[...html.matchAll(/<img src="assets\/regions\/thumbs\/([a-z]+)\.webp"/g)].map(m=>m[1]);assert.equal(thumbs.length,9);
- const pre=html.match(/rel="modulepreload" href="([^"]+)"/)[1],script=html.match(/<script type="module" src="(assets\/storefront\.bundle\.js[^"]+)"/)[1];assert.equal(pre,script);
+ const shop=readFileSync(new URL('../shop.html',import.meta.url),'utf8');
+ const pre=shop.match(/rel="modulepreload" href="([^"]+)"/)[1],script=shop.match(/<script type="module" src="(assets\/storefront\.bundle\.js[^"]+)"/)[1];assert.equal(pre,script);
+ assert.match(html,/<script type="module" src="assets\/landing\.bundle\.js\?v=h[0-9a-f]{10}"/,'landing script is content-hash versioned');
  assert.match(html,/rel="preconnect" href="https:\/\/wlrwlqchlxehlvkyesnj\.supabase\.co"/);
 });

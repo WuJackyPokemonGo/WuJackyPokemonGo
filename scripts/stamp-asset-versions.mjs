@@ -3,10 +3,11 @@
 // ?v=, so phones and in-app browsers never keep stale JS/CSS after a deploy. CI checks they stay in sync.
 import {readFileSync,writeFileSync} from 'node:fs';import {createHash} from 'node:crypto';
 export const VERSIONED_ASSETS={
- 'assets/backgrounds.bundle.js':['backgrounds.html'],
- 'site-refresh.css':['index.html','backgrounds.html'],
- 'storefront.css':['index.html'],
- 'backgrounds.css':['backgrounds.html'],
+ 'assets/backgrounds.bundle.js':['backgrounds.html','map.html'],
+ 'assets/landing.bundle.js':['index.html'],
+ 'site-refresh.css':['index.html','shop.html','backgrounds.html','map.html'],
+ 'storefront.css':['index.html','shop.html'],
+ 'backgrounds.css':['backgrounds.html','map.html'],
 };
 const root=new URL('../',import.meta.url);
 export const assetVersion=asset=>'h'+createHash('sha256').update(readFileSync(new URL(asset,root))).digest('hex').slice(0,10);
