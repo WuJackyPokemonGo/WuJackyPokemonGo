@@ -24,7 +24,7 @@ export function clusterPlaces(places,radius){
 
 export function createAtlasMap(ui){
  const {svg,markers,land,shell,tr,getLocale}=ui;
- let locations=null,groups={places:[],unmapped:[],special:[]},view={x:0,y:0,w:W,h:H},selected=null,selectedRow=null,openSeries=null,drag=null,moved=false,ready=false;
+ let locations=null,groups={places:[],unmapped:[],special:[]},view={x:0,y:0,w:W,h:H},selected=null,selectedRow=null,selectedPokemonIndex=0,openSeries=null,drag=null,moved=false,ready=false;
  const svgEl=(name,attrs={})=>{const n=document.createElementNS(NS,name);for(const [k,v] of Object.entries(attrs))n.setAttribute(k,v);return n};
  const node=(tag,text,cls)=>{const n=document.createElement(tag);if(text!=null)n.textContent=text;if(cls)n.className=cls;return n};
  const placeName=p=>getLocale()==='zh'?p.place.zh:p.place.en;
@@ -66,7 +66,7 @@ export function createAtlasMap(ui){
   host.classList.toggle('is-open',!!p);document.querySelector('.map-view')?.classList.toggle('has-city',!!p);
   if(!p){host.append(node('p',groups.places.length?tr('點地圖上的標記或下方地點，查看當地背景。','Select a marker or a place below to see its backgrounds.'):tr('沒有可顯示的地點。','No places to show.'),'subtle'));return}
   const rows=[...p.rows].sort((a,b)=>String(b.start_date||b.year||'').localeCompare(String(a.start_date||a.year||'')));
-  if(!rows.includes(selectedRow))selectedRow=rows[0];
+  if(!rows.includes(selectedRow)){selectedRow=rows[0];selectedPokemonIndex=0}
   const close=node('button',tr('關閉','Close'),'map-close');close.type='button';close.setAttribute('aria-label',tr(`關閉 ${placeName(p)}`,`Close ${placeName(p)}`));
   close.onclick=()=>{const key=selected;selected=null;selectedRow=null;openSeries=null;drawMarkers();renderList();renderSpotlight();ui.onSelect?.(null);(markers.querySelector('[aria-pressed="true"]')||ui.placeList.querySelector(`[data-key="${key}"]`))?.focus?.({preventScroll:true})};
   host.append(close);
@@ -77,29 +77,44 @@ export function createAtlasMap(ui){
   const seriesOf=r=>{const series=String((getLocale()==='zh'?r.series_zh||r.series:r.series)||'').trim();const name=GENERIC.test(series)?String(ui.titleOf(r)).replace(/\s*[-－–]\s*[^-－–]*$/,'').trim()||ui.titleOf(r):series;return (r.year&&!name.startsWith(String(r.year))?r.year+' · ':'')+name};
   const groupsBySeries=new Map();
   for(const r of rows){const k=seriesOf(r);if(!groupsBySeries.has(k))groupsBySeries.set(k,[]);groupsBySeries.get(k).push(r)}
-  const acts=node('div',null,'map-activities');
+  const acts=node('div',null,'map-activities'),entry=node('div',null,'map-entry'),cards=[];
+  function selectCard(row,index){
+   selectedRow=row;selectedPokemonIndex=index;
+   for(const {button,r,pokemonIndex} of cards)button.setAttribute('aria-pressed',String(r===row&&pokemonIndex===index));
+   renderEntry(row);
+  }
   for(const [name,list] of groupsBySeries){
    const d=node('details',null,'map-activity');d.open=openSeries===name||(openSeries==null&&list.includes(selectedRow)&&groupsBySeries.size===1);
    d.append(node('summary',name));
-   d.addEventListener('toggle',()=>{if(d.open){openSeries=name;d.scrollIntoView?.({block:'nearest'});for(const o of acts.querySelectorAll('details'))if(o!==d)o.open=false}else if(openSeries===name)openSeries=''});
+   d.addEventListener('toggle',()=>{
+    if(!d.isConnected)return;
+    if(!d.open){if(openSeries===name)openSeries='';return}
+    openSeries=name;
+    for(const other of acts.querySelectorAll('details[open]'))if(other!==d)other.open=false;
+    if(!list.includes(selectedRow))selectCard(list[0],0);
+    d.scrollIntoView?.({block:'nearest'});
+   });
    const grid=node('ul',null,'pokemon-grid');grid.setAttribute('aria-label',tr(`${name} 適用寶可夢`,`${name} Pokémon`));
    for(const r of list){const mons=(r.pokemon??[]).length?r.pokemon:[{name_zh:ui.titleOf(r),name_en:ui.titleOf(r)}];
-    for(const m of mons){const li=node('li'),b=node('button',null,'pokemon-card');b.type='button';b.setAttribute('aria-pressed',String(r===selectedRow));
+    for(const [pokemonIndex,m] of mons.entries()){const li=node('li'),b=node('button',null,'pokemon-card');b.type='button';cards.push({button:b,r,pokemonIndex});
      const pic=node('span',null,'pokemon-pic'),url=ui.imageOf(r);if(url){const img=node('img');img.src=url;img.alt='';img.loading='lazy';img.referrerPolicy='no-referrer';pic.append(img)}else pic.append(node('span',tr('圖片暫缺','No image'),'subtle'));
      b.append(pic,node('strong',getLocale()==='zh'?m.name_zh||m.name_en:m.name_en||m.name_zh));
-     b.onclick=()=>{selectedRow=r;openSeries=name;renderSpotlight();host.querySelector('.map-entry')?.scrollIntoView?.({block:'nearest'})};li.append(b);grid.append(li)}}
+     b.onclick=()=>{selectCard(r,pokemonIndex);entry.scrollIntoView?.({block:'nearest'})};li.append(b);grid.append(li)}}
    d.append(grid);acts.append(d);
   }
-  host.append(acts);
-  const r=selectedRow,card=node('div',null,'map-entry'),zoom=node('button',null,'map-entry-pic');zoom.type='button';zoom.setAttribute('aria-label',tr(`放大 ${ui.titleOf(r)} 背景圖`,`Enlarge ${ui.titleOf(r)}`));
+  host.append(acts,entry);
+  selectCard(selectedRow,selectedPokemonIndex);
+  function renderEntry(r){
+  const zoom=node('button',null,'map-entry-pic');zoom.type='button';zoom.setAttribute('aria-label',tr(`放大 ${ui.titleOf(r)} 背景圖`,`Enlarge ${ui.titleOf(r)}`));
   const url=ui.imageOf(r);if(url){const img=node('img');img.src=url;img.alt='';img.loading='lazy';img.referrerPolicy='no-referrer';img.onerror=()=>img.replaceWith(node('span',tr('圖片暫缺','Image unavailable'),'subtle'));zoom.append(img)}else zoom.append(node('span',tr('圖片暫缺','Image unavailable'),'subtle'));
   zoom.onclick=()=>ui.onZoom(rows,rows.indexOf(r),zoom);
-  const info=node('div',null,'map-entry-info');info.append(node('strong',ui.titleOf(r)),node('span',r.background_id+' · '+(r.start_date||r.year||tr('日期待核對','Date to verify')),'subtle'),node('span',tr('活動：','Event: ')+(getLocale()==='zh'?r.series_zh||r.series:r.series),'subtle'));
+  const info=node('div',null,'map-entry-info');info.append(node('strong',ui.titleOf(r)),node('span',r.background_id+' · '+(r.start_date||r.year||tr('日期待核對','Date to verify')),'subtle'),node('span',tr('活動：','Event: ')+seriesOf(r).replace(/^\d{4} · /,''),'subtle'));
   const mons=[...(r.pokemon??[])];if(mons.length)info.append(node('span',tr('適用寶可夢：','Pokémon: ')+mons.slice(0,6).map(m=>getLocale()==='zh'?m.name_zh||m.name_en:m.name_en).join('、')+(mons.length>6?tr(` 等 ${mons.length} 款`,` +${mons.length-6} more`):''),'subtle'));
   const products=ui.productSummary(r);if(products)info.append(node('span',products,'stockhint'));
   const actions=node('div',null,'map-entry-actions'),big=node('button',tr('放大檢視','View larger'),'quiet');big.type='button';big.onclick=()=>ui.onZoom(rows,rows.indexOf(r),big);
   const detail=node('a',tr('背景詳情','Background details'),'quiet');detail.href='backgrounds.html?background='+encodeURIComponent(r.background_id)+'&lang='+getLocale();detail.onclick=e=>{e.preventDefault();ui.onOpenDetail(r)};
-  actions.append(big,detail);info.append(actions);card.append(zoom,info);host.append(card);
+  actions.append(big,detail);info.append(actions);entry.replaceChildren(zoom,info);
+  }
  }
  function select(key,{center=false}={}){
   selected=key;selectedRow=null;openSeries=null;const p=groups.places.find(x=>x.key===key);
