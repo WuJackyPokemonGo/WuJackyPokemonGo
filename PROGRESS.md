@@ -1,3 +1,15 @@
+## 背景圖鑑每日查核（2026-11-27）
+
+先核對main 77d902c、PROGRESS與實際資料來源，正式站backgrounds.json和首頁activity-feed.json均與main一致。保留既有暗黑蒼穹豆豆鴿、妙喵及新版活動區／地圖修正，未重做其他專項。
+
+PokéXperience本日282/282，較昨日新增pokemonjetblue、pokemon_champions兩張可辨識的先行圖樣；藍色飛機為ANA彩繪機與藍天雲海，Champions為室內對戰場。與官方資格及Serebii同名條目交叉核對後，補入既有BG-0287／BG-0288，不新增編號、不改為已推出；標catalogued-preview，公開取得說明及活動待確認區均註明名錄先行素材不等於實際發放。BG-0287直接遭遇仍僅傑尼龜，卡咪龜／水箭龜另列依現行規則推定進化繼承，與PokéXperience三款名單相符。BG-0288仍14直接＋6進化，與來源20款相符；背景遠距資格均待確認。來源：https://pokexperience.com/backgrounds/ 、https://www.serebii.net/pokemongo/backgrounds.shtml 及既有官方活動頁。
+
+官方新公告超極巨千面避役極巨對戰日，更新原season-25-2026-12-05卡片（不重建）：12/5當地14:00–17:00，超極巨千面避役及異色首次登場，六星對戰；粒子探索加成00:00–17:00另註，不把主活動提早到午夜。遠距團體戰額度10→20為PST12/4 16:00至12/5 20:00，換算台灣12/5 08:00至12/6 12:00；此額度不直接視為本次極巨對戰遠距資格確認。公告未列背景，僅更新活動，不新增背景條目。來源：https://pokemongo.com/news/gigantamax-inteleon-max-battle-day-2026 。首頁精簡活動資料依既有build重新產生，同步圖鑑。
+
+群馬BG-0285未見新的可核實實際入手與正確推出日兩者俱全證據，仍即將推出、日期空白；旅行原文仍無推出日期，賣場文字亦不當作實證。未見新的人孔蓋先行圖樣；其他官方背景公告未發現需另改的資格或時間。285筆圖鑑與46筆活動總數不變；商品、庫存與售價未更動。發布後正式站驗證見當日回報。
+
+驗證：npm ci、382/382測試、npm run build、git diff --check通過；admin.html與cloud-admin.html相同。兩張PokéXperience先行圖樣已實際檢視，亦與Serebii的locationcard/th/pokemonjetblue.jpg及pokemonchampions.jpg逐圖比對一致。未將名錄預定日期改成已發放證據。
+
 ## 首頁、活動快訊、九大地區、背景地圖與大圖瀏覽：試作版待驗收（2026-11-23）
 
 **狀態（11/26 更新）：已接到最新 main，放在分支 feature/map-and-region-art 的草稿 PR 待驗收；未合併、未部署。** 依使用者 11/23 需求做可操作試作；附件草稿只作視覺參考，活動圖兩張未採用。

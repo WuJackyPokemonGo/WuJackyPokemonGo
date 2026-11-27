@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-26",
+  "as_of": "2026-11-27",
   "complete": false,
   "sources": [
     "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -17560,12 +17560,17 @@
       "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/news/special-backgrounds",
-        "https://pokemongo.com/news/inbound-from-ultra-space-2024"
+        "https://pokemongo.com/news/inbound-from-ultra-space-2024",
+        "https://x.com/NianticHelp/status/1819274800218476564",
+        "https://x.com/NianticHelp/status/1819274801904599222",
+        "https://x.com/NianticHelp/status/1819274803502538871"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-27：補償資格、保證背景與期限據 NianticHelp 2024/8/2 公告的同期完整轉引；X 原帖本輪無法直讀。8/26 發放另以 Serebii 當日紀錄與 GO Hub 交叉核對，非逐隻原始捕獲畫面驗證。"
+      ],
       "related_product_ids": [],
-      "method_zh": "當地時間 2024/7/8 10:00～7/13 10:00，究極異獸五星團體戰捕捉後有背景機會；7/13 10:00～18:00 含奈克洛茲瑪；7/14 10:00～18:00 為奈克洛茲瑪。持票特殊調查發放的索爾迦雷歐／露奈雅拉日曜及月影背景另見對應條目。 官方明確排除「究極空間」限時調查：該調查獎勵的究極異獸不會附特殊背景。",
-      "method_en": "The Ultra Wormhole Special Background could be obtained by catching Ultra Beasts after five-star raids from July 8, 2024 at 10:00 a.m. to July 13 at 10:00 a.m. local time. On July 13 from 10:00 a.m. to 6:00 p.m., eligible five-star raids included Necrozma. On July 14 from 10:00 a.m. to 6:00 p.m., Necrozma was eligible. Ticketed Special Research awarded Solgaleo or Lunala with the separately catalogued Radiance or Umbra backgrounds. The official Inbound from Ultra Space announcement explicitly excludes its Timed Research Ultra Beast encounters from Special Background eligibility.",
+      "method_zh": "當地時間 2024/7/8 10:00～7/13 10:00，究極異獸五星團體戰捕捉後有背景機會；7/13 10:00～18:00 含奈克洛茲瑪；7/14 10:00～18:00 為奈克洛茲瑪。持票特殊調查發放的索爾迦雷歐／露奈雅拉日曜及月影背景另見對應條目。 官方明確排除「究極空間」限時調查：該調查獎勵的究極異獸不會附特殊背景。 另有獨立補償：因 2024/7/13 GO Fest 全球第一天遠距團戰無法取得背景，受影響玩家自 2024/8/26 起收到補償限時調查，其究極異獸／奈克洛茲瑪遭遇保證附究極之洞背景；遭遇數依當日遠距團戰紀錄計算，並非每人固定十隻，須於 2025/12/31 前領取。此補償不等於前述「究極空間」限時調查。",
+      "method_en": "The Ultra Wormhole Special Background could be obtained by catching Ultra Beasts after five-star raids from July 8, 2024 at 10:00 a.m. to July 13 at 10:00 a.m. local time. On July 13 from 10:00 a.m. to 6:00 p.m., eligible five-star raids included Necrozma. On July 14 from 10:00 a.m. to 6:00 p.m., Necrozma was eligible. Ticketed Special Research awarded Solgaleo or Lunala with the separately catalogued Radiance or Umbra backgrounds. The official Inbound from Ultra Space announcement explicitly excludes its Timed Research Ultra Beast encounters from Special Background eligibility. A separate make-up Timed Research was distributed from August 26, 2024 to Trainers affected by the July 13 GO Fest Global day-one Remote Raid background failure. Its Ultra Beast and Necrozma encounters were guaranteed to have the Ultra Wormhole background; encounter counts depended on the affected day-one Remote Raid history, rather than a fixed set of ten for every Trainer. Rewards had to be claimed by December 31, 2025. This was distinct from the excluded Inbound from Ultra Space Timed Research.",
       "start_date": "2024-07-08",
       "end_date": "2024-07-14",
       "series": "GO Fest",
@@ -17574,7 +17579,10 @@
       "year_verified": true,
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
-        "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-fest-2024-wormhole"
+        "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-fest-2024-wormhole",
+        "https://pokemonblog.com/2024/08/26/due-to-the-issue-where-special-backgrounds-were-not-obtained-from-remote-raids-on-day-1-of-pokemon-go-fest-2024-global-impacted-players-are-now-receiving-timed-research-that-awards-encounters-with-u/",
+        "https://pokemongohub.net/post/news/ultra-beast-special-background-compensation-research-now-live/",
+        "https://www.serebii.net/news/2024/August.shtml"
       ],
       "evolved_pokemon": [
         {
@@ -17592,13 +17600,15 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-11-25",
+      "checked_on": "2026-11-27",
       "region_en": "Multiple regions",
       "region_zh": "多地／全球活動",
       "reference_ids": [
         "wormhole"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "date_note_zh": "上列日期為原團戰活動；受影響玩家的獨立補償限時調查於 2024/8/26 發放，領獎期限為 2025/12/31，並非延長團戰背景活動。",
+      "date_note_en": "The dates above describe the original raid event. Separate make-up Timed Research was distributed to affected Trainers on August 26, 2024, with a December 31, 2025 claim deadline; this did not extend the raid event."
     },
     {
       "name_en": "GO Fest 2024 Radiance",
@@ -29674,21 +29684,24 @@
       "related_product_ids": [],
       "year": "2026",
       "year_verified": true,
-      "checked_on": "2026-11-21",
-      "evidence_reviewed_on": "2026-11-21",
+      "checked_on": "2026-11-27",
+      "evidence_reviewed_on": "2026-11-27",
       "background_id": "BG-0287",
       "name_zh": "ANA藍色寶可夢飛機",
       "name_en": "Pokemon Jet Blue",
       "type": "location",
       "release_state": "upcoming",
       "verification": "official-event-confirmed",
-      "verification_scope": "acquisition-confirmed-artwork-unconfirmed",
-      "image_source": null,
-      "artwork_status": "pending",
+      "verification_scope": "acquisition-confirmed-catalog-preview-unreleased",
+      "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/pokemonjetblue.webp?v=20260816",
+      "artwork_status": "catalogued-preview",
       "official_sources": [
         "https://pokemongo.com/news/2026_ana_blue"
       ],
-      "catalog_sources": [],
+      "catalog_sources": [
+        "https://pokexperience.com/backgrounds/",
+        "https://www.serebii.net/pokemongo/backgrounds.shtml"
+      ],
       "series": "ANA",
       "series_zh": "ANA飛機",
       "region_en": "Japan",
@@ -29697,8 +29710,8 @@
       "end_date": "2027-08-31",
       "date_note_zh": "日本時間2026/12/11 13:00至2027/8/31 20:00；台灣時間為2026/12/11 12:00至2027/8/31 19:00。開始日後依一般團體戰時段出現。",
       "date_note_en": "December 11, 2026, 13:00 to August 31, 2027, 20:00 JST (December 11, 12:00 to August 31, 19:00 in Taiwan). Regular raid hours apply after launch.",
-      "method_zh": "在中部國際、能登、廣島、岡山、大阪國際、關西及神戶機場的指定道館參加傑尼龜團體戰；官方明列捕獲的傑尼龜帶藍色寶可夢飛機地點背景，每座道館每日可參加一次。限時調查只稱活動主題寶可夢，未確認附背景，故不列為背景來源。",
-      "method_en": "Battle Squirtle at designated Gyms in Chubu Centrair, Noto, Hiroshima, Okayama, Osaka International, Kansai and Kobe airports. The official announcement explicitly gives raid-caught Squirtle the Blue Pokémon Jet Location Background, with one raid per Gym per day. Timed Research only says event-themed encounters and is not listed as a background route.",
+      "method_zh": "在中部國際、能登、廣島、岡山、大阪國際、關西及神戶機場的指定道館參加傑尼龜團體戰；官方明列捕獲的傑尼龜帶藍色寶可夢飛機地點背景，每座道館每日可參加一次。限時調查只稱活動主題寶可夢，未確認附背景，故不列為背景來源。 圖片為PokéXperience先行圖樣，尚未證實遊戲內發放。",
+      "method_en": "Battle Squirtle at designated Gyms in Chubu Centrair, Noto, Hiroshima, Okayama, Osaka International, Kansai and Kobe airports. The official announcement explicitly gives raid-caught Squirtle the Blue Pokémon Jet Location Background, with one raid per Gym per day. Timed Research only says event-themed encounters and is not listed as a background route. The image is a PokéXperience preview; in-game distribution is not yet verified.",
       "method_status": "reviewed",
       "pokemon": [
         {
@@ -29710,11 +29723,11 @@
         }
       ],
       "notes": [
-        "2026-11-21：官方已確認活動、傑尼龜團體戰與藍色飛機地點背景；尚未公布可辨識的遊戲內背景圖樣，因此不使用飛機宣傳圖代替。",
+        "PokéXperience先行圖樣，已與官方活動資格及Serebii名錄交叉核對；活動尚未開始，並非玩家實際入手證據，保留即將推出。",
         "遠距參加及遠距捕獲是否能取得地點背景，官方公告未說明，維持待確認。"
       ],
       "notes_en": [
-        "2026-11-21: The official announcement confirms the event, Squirtle raids and the Blue Jet Location Background. No identifiable in-game background pattern has been published, so promotional aircraft art is not substituted.",
+        "Preview artwork from PokéXperience, cross-checked against official event eligibility and Serebii’s catalog. The event has not started; this is not evidence of an actual player acquisition and remains upcoming.",
         "Remote participation and remote background eligibility are not stated and remain unconfirmed."
       ],
       "search_aliases": [
@@ -29747,37 +29760,66 @@
           "text_zh": "官方未說明遠距捕獲是否能取得藍色飛機地點背景。",
           "text_en": "The official announcement does not state whether a remote catch can receive the Blue Jet Location Background."
         },
-        "checked_on": "2026-11-21",
+        "checked_on": "2026-11-27",
         "sources": [
-          "https://pokemongo.com/news/2026_ana_blue"
+          "https://pokemongo.com/news/2026_ana_blue",
+          "https://pokexperience.com/backgrounds/",
+          "https://www.serebii.net/pokemongo/backgrounds.shtml"
         ],
         "background_type": "location",
-        "artwork_status": "pending",
+        "artwork_status": "catalogued-preview",
         "background_ids": [
           "BG-0287"
-        ]
-      }
+        ],
+        "uncertainty_zh": "PokéXperience先行圖樣，已與官方活動資格及Serebii名錄交叉核對；活動尚未開始，並非玩家實際入手證據，保留即將推出。",
+        "uncertainty_en": "Preview artwork from PokéXperience, cross-checked against official event eligibility and Serebii’s catalog. The event has not started; this is not evidence of an actual player acquisition and remains upcoming."
+      },
+      "artwork_note_zh": "PokéXperience先行圖樣，已與官方活動資格及Serebii名錄交叉核對；活動尚未開始，並非玩家實際入手證據，保留即將推出。",
+      "artwork_note_en": "Preview artwork from PokéXperience, cross-checked against official event eligibility and Serebii’s catalog. The event has not started; this is not evidence of an actual player acquisition and remains upcoming.",
+      "evolved_pokemon": [
+        {
+          "dex": 8,
+          "name_zh": "卡咪龜",
+          "name_en": "Wartortle",
+          "variant_id": "wartortle",
+          "acquisition": "evolution",
+          "method_zh": "由本活動帶背景的傑尼龜進化繼承，依現行進化規則推定，非官方列出的直接遭遇。",
+          "method_en": "Inherited by evolving the background Squirtle, inferred from current evolution rules; not an officially listed direct encounter."
+        },
+        {
+          "dex": 9,
+          "name_zh": "水箭龜",
+          "name_en": "Blastoise",
+          "variant_id": "blastoise",
+          "acquisition": "evolution",
+          "method_zh": "由本活動帶背景的傑尼龜進化繼承，依現行進化規則推定，非官方列出的直接遭遇。",
+          "method_en": "Inherited by evolving the background Squirtle, inferred from current evolution rules; not an officially listed direct encounter."
+        }
+      ]
     },
     {
       "source": "https://pokemongo.com/news/pokemon-champions-celebration-event-2026",
       "related_product_ids": [],
       "year": "2026",
       "year_verified": true,
-      "checked_on": "2026-11-26",
-      "evidence_reviewed_on": "2026-11-26",
+      "checked_on": "2026-11-27",
+      "evidence_reviewed_on": "2026-11-27",
       "background_id": "BG-0288",
       "name_zh": "Pokémon Champions 慶祝活動",
       "name_en": "Pokémon Champions Celebration Event",
       "type": "special",
       "release_state": "upcoming",
       "verification": "official-event-confirmed",
-      "verification_scope": "acquisition-confirmed-artwork-unconfirmed",
-      "image_source": null,
-      "artwork_status": "pending",
+      "verification_scope": "acquisition-confirmed-catalog-preview-unreleased",
+      "image_source": "https://pokexperience.com/pokemon-variants/backgrounds/pokemon_champions.webp?v=20260816",
+      "artwork_status": "catalogued-preview",
       "official_sources": [
         "https://pokemongo.com/news/pokemon-champions-celebration-event-2026"
       ],
-      "catalog_sources": [],
+      "catalog_sources": [
+        "https://pokexperience.com/backgrounds/",
+        "https://www.serebii.net/pokemongo/backgrounds.shtml"
+      ],
       "series": "Other",
       "series_zh": "其他活動",
       "region_en": "Global",
@@ -29786,8 +29828,8 @@
       "end_date": "2026-12-14",
       "date_note_zh": "各地當地時間12/8 10:00至12/14 20:00；台灣場同時段（UTC+08:00）。五星頭目12/9–15輪替，但背景僅12/9至12/14活動結束前有機會取得。GO通行證已解鎖獎勵可領至12/16 20:00，不代表背景團體戰延長。",
       "date_note_en": "December 8 at 10:00 to December 14 at 20:00 in each region’s local time; Taiwan follows UTC+08:00. Five-star rotation runs December 9–15, but its background window stops with the event on December 14. Unlocked GO Pass rewards expire December 16 at 20:00; this does not extend background raids.",
-      "method_zh": "活動團體戰捕獲有機會附特殊背景；五星頭目輪替12/9起，背景僅限活動期間至12/14 20:00，不延至12/15輪替結束。調查及GO通行證未確認附背景。",
-      "method_en": "Event raid catches may carry a Special Background. Five-star rotation begins December 9; background availability ends December 14 at 20:00 with the event, not December 15 with the rotation. Research and GO Pass backgrounds are unconfirmed.",
+      "method_zh": "活動團體戰捕獲有機會附特殊背景；五星頭目輪替12/9起，背景僅限活動期間至12/14 20:00，不延至12/15輪替結束。調查及GO通行證未確認附背景。 圖片為PokéXperience先行圖樣，尚未證實遊戲內發放。",
+      "method_en": "Event raid catches may carry a Special Background. Five-star rotation begins December 9; background availability ends December 14 at 20:00 with the event, not December 15 with the rotation. Research and GO Pass backgrounds are unconfirmed. The image is a PokéXperience preview; in-game distribution is not yet verified.",
       "method_status": "reviewed",
       "pokemon": [
         {
@@ -29876,11 +29918,11 @@
         }
       ],
       "notes": [
-        "官方確認14款團體戰遭遇有機會附特殊背景；尚未公布可辨識的遊戲內背景圖樣，不用宣傳橫幅代替。",
+        "PokéXperience先行圖樣，已與官方活動資格及Serebii名錄交叉核對；活動尚未開始，並非玩家實際入手證據，保留即將推出。",
         "背景掉落為機率，並非保證；野外、田野調查與GO通行證未確認為背景取得來源。"
       ],
       "notes_en": [
-        "The official announcement confirms a chance of a Special Background on 14 raid encounters. Identifiable in-game artwork is unannounced; promotional banners are not substituted.",
+        "Preview artwork from PokéXperience, cross-checked against official event eligibility and Serebii’s catalog. The event has not started; this is not evidence of an actual player acquisition and remains upcoming.",
         "Backgrounds are not guaranteed. Wild encounters, Field Research and GO Pass rewards are not confirmed as background routes."
       ],
       "search_aliases": [
@@ -29911,15 +29953,19 @@
           "text_zh": "官方未明說遠距捕獲是否同樣可得背景，待確認。",
           "text_en": "Remote catch background eligibility is not explicitly stated and remains unconfirmed."
         },
-        "checked_on": "2026-11-26",
+        "checked_on": "2026-11-27",
         "sources": [
-          "https://pokemongo.com/news/pokemon-champions-celebration-event-2026"
+          "https://pokemongo.com/news/pokemon-champions-celebration-event-2026",
+          "https://pokexperience.com/backgrounds/",
+          "https://www.serebii.net/pokemongo/backgrounds.shtml"
         ],
         "background_type": "special",
-        "artwork_status": "pending",
+        "artwork_status": "catalogued-preview",
         "background_ids": [
           "BG-0288"
-        ]
+        ],
+        "uncertainty_zh": "PokéXperience先行圖樣，已與官方活動資格及Serebii名錄交叉核對；活動尚未開始，並非玩家實際入手證據，保留即將推出。",
+        "uncertainty_en": "Preview artwork from PokéXperience, cross-checked against official event eligibility and Serebii’s catalog. The event has not started; this is not evidence of an actual player acquisition and remains upcoming."
       },
       "evolved_pokemon": [
         {
@@ -29970,7 +30016,9 @@
           "method_zh": "由本活動附背景的對應寶可夢進化繼承；不是直接遭遇。",
           "method_en": "Inherited by evolving the corresponding background encounter; not a direct catch."
         }
-      ]
+      ],
+      "artwork_note_zh": "PokéXperience先行圖樣，已與官方活動資格及Serebii名錄交叉核對；活動尚未開始，並非玩家實際入手證據，保留即將推出。",
+      "artwork_note_en": "Preview artwork from PokéXperience, cross-checked against official event eligibility and Serebii’s catalog. The event has not started; this is not evidence of an actual player acquisition and remains upcoming."
     }
   ],
   "additional_announced_events": [
@@ -31188,43 +31236,64 @@
     },
     {
       "event_id": "season-25-2026-12-05",
-      "name_zh": "極巨對戰日（2026/12/05）",
-      "name_en": "Max Battle Day (2026-12-05)",
+      "name_zh": "超極巨千面避役極巨對戰日",
+      "name_en": "Gigantamax Inteleon Max Battle Day",
       "type": "event",
       "series": "Other",
       "series_zh": "其他活動",
       "year": "2026",
-      "region_zh": "地區待公布",
-      "region_en": "Regions unannounced",
+      "region_zh": "全球",
+      "region_en": "Global",
       "start_date": "2026-12-05",
       "end_date": "2026-12-05",
       "release_state": "upcoming",
       "verification": "official-event-confirmed",
       "image_source": null,
-      "checked_on": "2026-11-13",
+      "checked_on": "2026-11-27",
       "official_sources": [
-        "https://pokemongo.com/news/save-the-date-s25"
+        "https://pokemongo.com/news/gigantamax-inteleon-max-battle-day-2026"
       ],
       "activity": {
         "id": "season-25-2026-12-05",
         "kind": "event",
         "schedule": {
-          "date_only": true,
-          "rolling_local": true,
+          "start": "2026-12-05T14:00",
+          "end": "2026-12-05T17:00",
           "zone": "Asia/Taipei",
-          "basis": "confirmed",
-          "start_date": "2026-12-05",
-          "end_date": "2026-12-05"
+          "rolling_local": true,
+          "basis": "confirmed"
         },
-        "conditions_zh": "官方先行公布活動日期。起訖時刻與玩法待正式公告。",
-        "conditions_en": "The official preview lists the date. Event hours and gameplay details await announcement.",
-        "eligible_zh": "寶可夢、服裝、形態及背景獎勵待公布。",
-        "eligible_en": "Pokémon, costumes, forms and background rewards await announcement.",
-        "checked_on": "2026-11-13",
+        "conditions_zh": "12/5當地14:00–17:00，超極巨千面避役登場六星極巨對戰，異色首次開放。當日極巨粒子蒐集上限1,600；全部能量點提供超極巨對戰，能量點粒子8倍。付費限時調查同為14:00–17:00，獎勵為極巨菇菇、經驗值與粒子，未公告背景。",
+        "conditions_en": "December 5, 14:00–17:00 local time: Gigantamax Inteleon appears in six-star Max Battles, with its Shiny debut. The Max Particle collection cap is 1,600; all Power Spots host Gigantamax Battles and award 8× particles. Paid Timed Research runs during the same hours and awards a Max Mushroom, XP and particles; no background is announced.",
+        "eligible_zh": "超極巨千面避役（含首次登場的異色）；未公告特殊服裝或背景。",
+        "eligible_en": "Gigantamax Inteleon, including its Shiny debut; no costume or background announced.",
+        "checked_on": "2026-11-27",
         "sources": [
-          "https://pokemongo.com/news/save-the-date-s25"
-        ]
-      }
+          "https://pokemongo.com/news/gigantamax-inteleon-max-battle-day-2026"
+        ],
+        "background_type": "unannounced",
+        "artwork_status": "unannounced",
+        "remote_participation": {
+          "basis": "pending",
+          "text_zh": "公告將每日遠距團體戰上限由10提高至20，但未明說本次極巨對戰的遠距參與資格；不以額度加碼代替資格確認。",
+          "text_en": "The announcement raises the daily Remote Raid limit from 10 to 20 but does not explicitly state remote eligibility for these Max Battles; the cap increase alone is not treated as eligibility confirmation."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "未公告任何背景獎勵，也未確認遠距取得背景資格。",
+          "text_en": "No background reward or remote background eligibility has been announced."
+        },
+        "uncertainty_zh": "粒子探索加成另於12/5當地00:00–17:00開放，不代表主對戰從午夜開始。遠距團體戰額度加碼為PST 12/4 16:00至12/5 20:00（台灣12/5 08:00至12/6 12:00），與主活動時段不同。",
+        "uncertainty_en": "Exploration particle bonuses separately run December 5, 00:00–17:00 local time; this does not move the main battles to midnight. The remote cap increase runs December 4 at 16:00 to December 5 at 20:00 PST (Taiwan December 5 at 08:00 to December 6 at 12:00), separately from the main event."
+      },
+      "pokemon": [
+        {
+          "dex": 818,
+          "name_zh": "千面避役（超極巨化）",
+          "name_en": "Gigantamax Inteleon",
+          "variant_id": "inteleon-gigantamax"
+        }
+      ]
     },
     {
       "event_id": "season-25-2026-12-12",
