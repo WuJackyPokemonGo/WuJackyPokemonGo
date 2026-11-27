@@ -482,7 +482,7 @@ body.landing-page main,body.landing-page .entry-cards{background:transparent}
 @media(max-width:700px){.entry-cards{grid-template-columns:1fr;margin-top:-28px}.entry-card{grid-template-columns:120px 1fr;grid-template-rows:none}.entry-pic{aspect-ratio:auto;height:100%}.entry-pic img{object-position:68% center}.entry-map{font-size:40px}}
 body.landing-page{background:#0b0f2e linear-gradient(180deg,#0b0f2e 0,#0b0f2e 100svh,#efe2c5 100svh) no-repeat}
 body.landing-page #homeEvents{margin-top:34px}
-/* Owner's intro video (logo and globe are part of the footage): show it whole, text underneath. */
+/* Keep the intro footage intact and the shop button within the first screen. */
 .hero-video.hero-banner{display:block;min-height:0;padding-top:0;background:#0b1424}
 .hero-banner .hero-frame{position:relative;width:100%;aspect-ratio:16/9;max-height:calc(100svh - 120px);margin:0 auto;background:#0b1424}
 .hero-banner .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:0}
@@ -524,3 +524,69 @@ body.landing-page .entry-cards{margin-top:0;padding:4px 16px 34px;max-width:none
 /* Entry card art: the Pokémon poster part only, so nothing important is cut off. */
 .entry-pic img{object-position:center top}
 @media(max-width:700px){.entry-pic img{object-position:center top}}
+
+@media(min-width:761px){
+  body.landing-page .hero-video.hero-banner{
+    display:grid;
+    grid-template-columns:minmax(0,5fr) minmax(0,7fr);
+    column-gap:clamp(20px,3vw,48px);
+    padding:12px max(24px,calc((100% - 1200px)/2)) 22px;
+  }
+  .hero-banner .hero-frame{
+    grid-column:2;
+    grid-row:1;
+    max-height:none;
+    overflow:hidden;
+    border-radius:18px;
+  }
+  body.landing-page .hero-banner .hero-inner{
+    grid-column:1;
+    grid-row:1;
+    justify-items:start;
+    width:100%;
+    padding:12px 0;
+    text-align:left;
+  }
+  .hero-banner .hero-ctas{
+    justify-content:flex-start;
+  }
+  .hero-banner .hero-btn{
+    min-width:0;
+    padding-inline:22px;
+  }
+  .hero-banner .hero-scroll{
+    position:static;
+    grid-column:1/-1;
+    justify-self:center;
+    margin-top:6px;
+    transform:none;
+  }
+}
+
+@media(max-width:760px){
+  .hero-banner .hero-frame{
+    max-height:min(48vw,240px);
+  }
+  body.landing-page .hero-banner .hero-inner{
+    gap:10px;
+    padding:12px 14px 24px;
+  }
+  .hero-banner h1{
+    font-size:clamp(22px,6.4vw,32px);
+  }
+  .hero-banner .hero-ctas{
+    width:100%;
+    max-width:420px;
+    gap:8px;
+  }
+  .hero-banner .hero-btn{
+    flex:1 1 130px;
+    min-width:0;
+    min-height:46px;
+    padding:9px 12px;
+    font-size:16px;
+  }
+  .hero-banner .hero-scroll{
+    display:none;
+  }
+}
