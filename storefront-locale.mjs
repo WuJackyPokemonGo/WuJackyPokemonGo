@@ -31,6 +31,20 @@ export function setLocale(value){
  return locale;
 }
 export const labels={
+'色違與限定背景收藏':'Shiny Pokémon & Limited Backgrounds',
+'逛商品 →':'Browse products →',
+'看地圖 →':'Open the map →',
+'查背景 →':'Explore backgrounds →',
+'色違、極巨化、限定背景，挑好加入清單':'Browse Shiny and Dynamax Pokémon and limited backgrounds, then add your picks to a list.',
+'歷年地點與特殊背景，9 種語言可查':'Explore past Location and Special Backgrounds in nine languages.',
+'按城市找活動與限定背景':'Find events and limited backgrounds by city.',
+'Wu Jacky Pokémon GO 開場動畫':'Wu Jacky Pokémon GO intro animation',
+'往下看更多':'Scroll to explore',
+'網站內容':'Explore the site',
+'隱私說明':'Privacy information',
+'{n} 件商品':'{n} items',
+'{n} 筆背景紀錄':'{n} background entries',
+'目前 {n} 個活動進行中':'{n} events in progress',
 '複製商品連結':'Copy product link','商品連結':'Product link',
 "商品內容：ESA 太空裝皮卡丘，六國背景。\n單隻價格：NT$ 80\n六國各一套組價格：NT$ 450":"Contents: Astronaut Pikachu with six ESA Location Backgrounds.\nSingle Pokémon: NT$ 80\nSet of six, one from each country: NT$ 450",
 "商品內容：2025 大阪萬博背景，皮卡丘、小火龍、傑尼龜、妙蛙種子。\n小火龍單隻價格：NT$ 200\n皮卡丘、傑尼龜、妙蛙種子單隻價格：NT$ 150\n四隻各一套組價格：NT$ 500":"Contents: EXPO 2025 Osaka backgrounds for Pikachu, Charmander, Squirtle and Bulbasaur.\nCharmander: NT$ 200 each\nPikachu, Squirtle or Bulbasaur: NT$ 150 each\nSet of four, one of each Pokémon: NT$ 500",
@@ -64,7 +78,7 @@ export const t=(text,lang=getLocale())=>tr(text,labels[text]??text,lang);
 export const productName=(p,lang=getLocale())=>lang==='zh'?p.name:(p.name_en?.trim()||p.name);
 export const productDescription=(p,lang=getLocale())=>lang==='zh'?p.description:(p.description_en||labels[p.description]||labels[String(p.description??'').replaceAll('\n','\\n')]||p.description);
 
-export function bindStaticTranslations(root=document){
+export function bindStaticTranslations(root=document,{pageTitle='商品目錄'}={}){
  const texts=[],attrs=[];
  const walker=document.createTreeWalker(root.body,NodeFilter.SHOW_TEXT);
  const translatable=key=>Object.hasOwn(labels,key)||translatedLabel(key,'ja')!==undefined;
@@ -80,7 +94,7 @@ export function bindStaticTranslations(root=document){
  });
  return ()=>{
   root.documentElement.lang=localeTag();
-  root.title=getLocale()==='zh'?'Wu Jacky Pokémon GO｜商品目錄':'Wu Jacky Pokémon GO | '+tr('商品目錄','Collection');
+  root.title='Wu Jacky Pokémon GO'+(getLocale()==='zh'?'｜':' | ')+t(pageTitle);
   for(const [node,original,key] of texts)node.textContent=original.replace(key,()=>t(key));
   for(const [node,attr,value] of attrs)node.setAttribute(attr,t(value));
  };

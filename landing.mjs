@@ -1,6 +1,6 @@
-// Home (landing) page: full-screen hero video, live counters, entry cards, activity feed and regions.
+// Home page: intro video, collection counters and entry cards.
 // The catalog itself lives on shop.html; old product links (index.html?product=… / ?q=) are forwarded there.
-import {getLocale,setLocale,productName,bindStaticTranslations,tr} from './storefront-locale.mjs';
+import {getLocale,setLocale,bindStaticTranslations,t} from './storefront-locale.mjs';
 import {initContactLinks} from './contact.mjs';
 import {initAnalytics} from './analytics.mjs';
 import {loadCatalogWithFallback,stockLabel} from './storefront-service.mjs';
@@ -8,7 +8,7 @@ import {ACTIVITY_FEED_URL,BACKGROUNDS_DATA_URL} from './background-data.mjs';
 import {eventGroup} from './activity-feed-service.mjs';
 
 const $=id=>document.getElementById(id);
-const translateStatic=bindStaticTranslations();translateStatic();initContactLinks();const track=initAnalytics();
+const translateStatic=bindStaticTranslations(document,{pageTitle:'色違與限定背景收藏'});translateStatic();initContactLinks();const track=initAnalytics();
 const updateLanguageHint=()=>{}; // The landing page keeps the header clean; other pages show the one-time language tip.
 let products=[];
 
@@ -34,10 +34,10 @@ function renderCounters(){
  const host=$('heroCounts');if(!host)return;
  const parts=[];
  // Rounded down to the nearest 50 (222 → 200+), so the headline stays true while stock moves.
- if(counts.products!=null){const n=counts.products>=50?Math.floor(counts.products/50)*50+'+':String(counts.products);parts.push(tr(`${n} 件商品`,`${n} items`))}
- if(counts.backgrounds!=null)parts.push(tr(`${counts.backgrounds} 筆背景紀錄`,`${counts.backgrounds} backgrounds`));
+ if(counts.products!=null){const n=counts.products>=50?Math.floor(counts.products/50)*50+'+':String(counts.products);parts.push(t('{n} 件商品').replace('{n}',n))}
+ if(counts.backgrounds!=null)parts.push(t('{n} 筆背景紀錄').replace('{n}',counts.backgrounds));
  host.textContent='⭐ '+parts.join(' · ');
- const live=$('heroLive');if(live&&counts.live!=null){live.hidden=!counts.live;live.querySelector('span').textContent=tr(`目前 ${counts.live} 個活動進行中`,`${counts.live} events live right now`)}
+ const live=$('heroLive');if(live&&counts.live!=null){live.hidden=!counts.live;live.querySelector('span').textContent=t('目前 {n} 個活動進行中').replace('{n}',counts.live)}
 }
 renderCounters();
 
