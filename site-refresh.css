@@ -590,3 +590,13 @@ body.landing-page .entry-cards{margin-top:0;padding:4px 16px 34px;max-width:none
     display:none;
   }
 }
+/* Background detail window: long lists fold to a preview. */
+#backgroundDialog .is-folded{max-height:var(--fold,260px);overflow:hidden;-webkit-mask-image:linear-gradient(#000 70%,transparent);mask-image:linear-gradient(#000 70%,transparent)}
+#backgroundDialog .detail-more{display:block;width:100%;min-height:42px;margin:6px 0 14px;padding:8px 14px;border-radius:999px;border:1px solid #e3bb49;background:#fff6d9;color:#4b370f;font-weight:800;font-size:14px;cursor:pointer}
+/* Detail window header on phones: title on its own line, three small actions underneath. */
+@media(max-width:700px){
+ #backgroundDialog .dialoghead{display:grid!important;grid-template-columns:1fr;gap:6px}
+ #backgroundDialog .dialoghead h2{margin:0;font-size:18px;line-height:1.3;writing-mode:horizontal-tb;word-break:normal}
+ #backgroundDialog .dialog-actions{display:grid!important;grid-template-columns:1fr 1.3fr .8fr;gap:6px;width:100%}
+ #backgroundDialog .dialog-actions button{min-height:36px;padding:4px 6px;font-size:13px;white-space:nowrap}
+}
