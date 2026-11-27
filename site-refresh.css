@@ -447,6 +447,8 @@ body.landing-page .landing-header .site-nav a[aria-current=page]{background:#ffd
 .hero-accent{color:#ffdf70}
 .hero-sub{max-width:640px;margin:0;color:#e6e4f4;font-size:clamp(15px,2.2vw,19px);line-height:1.6;text-shadow:0 2px 10px #000a}
 .hero-live{display:inline-flex;align-items:center;gap:8px;margin:0;color:#ffdf70;font-weight:800;font-size:15px}
+.hero-live[hidden]{display:none}
+.hero-live:hover{text-decoration-thickness:2px}
 .hero-live i{width:10px;height:10px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px #22c55e40;animation:heroPulse 1.6s ease-in-out infinite}
 @keyframes heroPulse{50%{box-shadow:0 0 0 8px #22c55e10}}
 .hero-ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:6px}

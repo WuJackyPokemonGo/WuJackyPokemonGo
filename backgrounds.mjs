@@ -289,7 +289,10 @@ function applyUrlState(){
  $('bgSearch').value=p.get('q')||'';if(['location','special'].includes(p.get('type')))$('type').value=p.get('type');
  choose('series',p.get('series'));choose('region',p.get('region'));choose('year',p.get('year'));choose('state',p.get('state'));choose('sortOrder',p.get('sort'));
  page=Math.max(1,parseInt(p.get('page'),10)||1);view=MAP_PAGE?'map':'list';pendingCity=p.get('city');
- const feed=activityFeedVariantState('atlas');if(p.get('events')==='history'){feed.historyOpen=true;feed.feedOpen=true}if(location.hash==='#announcedBackgrounds'||p.get('event'))feed.feedOpen=true;
+ const feed=activityFeedVariantState('atlas');
+ if(p.get('events')==='history'){feed.historyOpen=true;feed.feedOpen=true}
+ if(p.get('events')==='live'){feed.tab='live';feed.feedOpen=true}
+ if(location.hash==='#announcedBackgrounds'||p.get('event'))feed.feedOpen=true;
 }
 let pendingScroll=null;
 try{const nav=performance.getEntriesByType?.('navigation')?.[0];if(nav?.type==='back_forward'){const saved=JSON.parse(sessionStorage.getItem('wj_scroll_atlas')||'null');if(saved&&saved.path===location.pathname)pendingScroll=saved.y}}catch{}
@@ -307,7 +310,7 @@ async function load(){
   track('background_page_view');track.source('atlas');if(target)openDetail(target);
   const params=new URL(location.href).searchParams,eventId=params.get('event')||decodeURIComponent(location.hash.match(/^#event-(.+)$/)?.[1]??'');
   if(eventId&&!target)openActivityEvent($('announcedBackgrounds'),'atlas',eventId);
-  else if((location.hash==='#announcedBackgrounds'||params.get('events')==='history')&&!target)requestAnimationFrame(()=>$('announcedBackgrounds').scrollIntoView({block:'start'}));
+  else if((location.hash==='#announcedBackgrounds'||['history','live'].includes(params.get('events')))&&!target)requestAnimationFrame(()=>$('announcedBackgrounds').scrollIntoView({block:'start'}));
   else if(pendingScroll!=null&&!target){const y=pendingScroll;pendingScroll=null;requestAnimationFrame(()=>window.scrollTo(0,y))}
  }catch{
   $('loadStatus').replaceChildren(node('p',tr('圖鑑暫時無法載入，請稍後重試。','The background collection could not be loaded. Please try again.')),btn(tr('重新載入','Retry'),load));
