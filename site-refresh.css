@@ -498,3 +498,7 @@ body.landing-page:has(.hero-banner){background:#0b1424 linear-gradient(180deg,#0
 .hero-banner .hero-inner{padding-top:20px;gap:10px}
 .hero-banner .hero-frame{box-shadow:0 18px 30px -18px #0b1424 inset}
 .hero-banner .hero-accent{white-space:nowrap}
+/* Landing: compact event block — featured event, three upcoming rows and a link to the full feed. */
+body.landing-page #homeEvents .ev-asof,body.landing-page #homeEvents .ev-intro,body.landing-page #homeEvents .ev-tabs{display:none}
+body.landing-page #homeEvents .ev-more{display:flex;justify-content:center;margin-top:12px}
+body.landing-page #homeEvents .ev-more-link{background:#4b370f;border-color:#4b370f;color:#fff;font-weight:800;min-height:46px;padding:10px 22px}

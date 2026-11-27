@@ -206,6 +206,8 @@ export function renderActivityFeed(host,data,opts={}){
  body.append(el('p',tr('點活動圖片或名稱即可在此展開。活動狀態不等於背景已發放或商品有庫存；未確認資訊保留標示。','Select an event image or title to expand it here. Event status is not proof of background release or stock; unconfirmed details stay marked.'),'ev-intro'));
 
  const tabs=el('div',null,'ev-tabs');tabs.setAttribute('role','group');tabs.setAttribute('aria-label',tr('活動分類','Event filter'));
+ // The landing page hides the tabs, so it always lists every live and upcoming event.
+ if(variant==='home'&&globalThis.document?.body?.classList?.contains('landing-page'))state.tab='all';
  const tabButtons=[];for(const [value,label,count] of [['all',tr('全部','All'),live.length+soon.length],['live',tr('進行中','In progress'),live.length],['upcoming',tr('即將開始','Starting soon'),soon.length]]){const b=el('button',label+' '+count,'ev-tab');b.type='button';b.dataset.tab=value;b.onclick=()=>{state.tab=value;state.showAll=false;persist(variant);applyTab()};tabButtons.push(b);tabs.append(b)}
  body.append(tabs);
  // Home: one featured event shows its official artwork in full; every other event is a compact row
