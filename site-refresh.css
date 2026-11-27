@@ -515,3 +515,9 @@ body.landing-page #homeEvents .ev-history-link{display:none}
 .privacy-note{margin-top:6px;font-size:12px}
 .privacy-note summary{cursor:pointer;display:inline}
 @media(max-width:360px){.entry-tile{font-size:13px;padding:12px 4px}}
+/* Keep the dark band behind the hero and the three entry cards, then the light theme below. */
+body.landing-page:has(.hero-banner){background:#efe2c5 var(--wj-pattern);background-size:320px 300px}
+body.landing-page .hero-video.hero-banner{padding-bottom:0}
+body.landing-page .hero-banner .hero-inner{padding-bottom:28px}
+body.landing-page .entry-cards{margin-top:0;padding:4px 16px 34px;max-width:none;background:#0b1424;box-shadow:0 0 0 100vmax #0b1424;clip-path:inset(0 -100vmax)}
+@media(max-width:700px){body.landing-page .entry-cards{margin-top:0}}
