@@ -521,3 +521,6 @@ body.landing-page .hero-video.hero-banner{padding-bottom:0}
 body.landing-page .hero-banner .hero-inner{padding-bottom:28px}
 body.landing-page .entry-cards{margin-top:0;padding:4px 16px 34px;max-width:none;background:#0b1424;box-shadow:0 0 0 100vmax #0b1424;clip-path:inset(0 -100vmax)}
 @media(max-width:700px){body.landing-page .entry-cards{margin-top:0}}
+/* Entry card art: the Pokémon poster part only, so nothing important is cut off. */
+.entry-pic img{object-position:center top}
+@media(max-width:700px){.entry-pic img{object-position:center top}}
