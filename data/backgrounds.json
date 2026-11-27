@@ -17560,12 +17560,17 @@
       "release_state": "released",
       "official_sources": [
         "https://pokemongo.com/news/special-backgrounds",
-        "https://pokemongo.com/news/inbound-from-ultra-space-2024"
+        "https://pokemongo.com/news/inbound-from-ultra-space-2024",
+        "https://x.com/NianticHelp/status/1819274800218476564",
+        "https://x.com/NianticHelp/status/1819274801904599222",
+        "https://x.com/NianticHelp/status/1819274803502538871"
       ],
-      "notes": [],
+      "notes": [
+        "2026-11-27：補償資格、保證背景與期限據 NianticHelp 2024/8/2 公告的同期完整轉引；X 原帖本輪無法直讀。8/26 發放另以 Serebii 當日紀錄與 GO Hub 交叉核對，非逐隻原始捕獲畫面驗證。"
+      ],
       "related_product_ids": [],
-      "method_zh": "當地時間 2024/7/8 10:00～7/13 10:00，究極異獸五星團體戰捕捉後有背景機會；7/13 10:00～18:00 含奈克洛茲瑪；7/14 10:00～18:00 為奈克洛茲瑪。持票特殊調查發放的索爾迦雷歐／露奈雅拉日曜及月影背景另見對應條目。 官方明確排除「究極空間」限時調查：該調查獎勵的究極異獸不會附特殊背景。",
-      "method_en": "The Ultra Wormhole Special Background could be obtained by catching Ultra Beasts after five-star raids from July 8, 2024 at 10:00 a.m. to July 13 at 10:00 a.m. local time. On July 13 from 10:00 a.m. to 6:00 p.m., eligible five-star raids included Necrozma. On July 14 from 10:00 a.m. to 6:00 p.m., Necrozma was eligible. Ticketed Special Research awarded Solgaleo or Lunala with the separately catalogued Radiance or Umbra backgrounds. The official Inbound from Ultra Space announcement explicitly excludes its Timed Research Ultra Beast encounters from Special Background eligibility.",
+      "method_zh": "當地時間 2024/7/8 10:00～7/13 10:00，究極異獸五星團體戰捕捉後有背景機會；7/13 10:00～18:00 含奈克洛茲瑪；7/14 10:00～18:00 為奈克洛茲瑪。持票特殊調查發放的索爾迦雷歐／露奈雅拉日曜及月影背景另見對應條目。 官方明確排除「究極空間」限時調查：該調查獎勵的究極異獸不會附特殊背景。 另有獨立補償：因 2024/7/13 GO Fest 全球第一天遠距團戰無法取得背景，受影響玩家自 2024/8/26 起收到補償限時調查，其究極異獸／奈克洛茲瑪遭遇保證附究極之洞背景；遭遇數依當日遠距團戰紀錄計算，並非每人固定十隻，須於 2025/12/31 前領取。此補償不等於前述「究極空間」限時調查。",
+      "method_en": "The Ultra Wormhole Special Background could be obtained by catching Ultra Beasts after five-star raids from July 8, 2024 at 10:00 a.m. to July 13 at 10:00 a.m. local time. On July 13 from 10:00 a.m. to 6:00 p.m., eligible five-star raids included Necrozma. On July 14 from 10:00 a.m. to 6:00 p.m., Necrozma was eligible. Ticketed Special Research awarded Solgaleo or Lunala with the separately catalogued Radiance or Umbra backgrounds. The official Inbound from Ultra Space announcement explicitly excludes its Timed Research Ultra Beast encounters from Special Background eligibility. A separate make-up Timed Research was distributed from August 26, 2024 to Trainers affected by the July 13 GO Fest Global day-one Remote Raid background failure. Its Ultra Beast and Necrozma encounters were guaranteed to have the Ultra Wormhole background; encounter counts depended on the affected day-one Remote Raid history, rather than a fixed set of ten for every Trainer. Rewards had to be claimed by December 31, 2025. This was distinct from the excluded Inbound from Ultra Space Timed Research.",
       "start_date": "2024-07-08",
       "end_date": "2024-07-14",
       "series": "GO Fest",
@@ -17574,7 +17579,10 @@
       "year_verified": true,
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
-        "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-fest-2024-wormhole"
+        "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-fest-2024-wormhole",
+        "https://pokemonblog.com/2024/08/26/due-to-the-issue-where-special-backgrounds-were-not-obtained-from-remote-raids-on-day-1-of-pokemon-go-fest-2024-global-impacted-players-are-now-receiving-timed-research-that-awards-encounters-with-u/",
+        "https://pokemongohub.net/post/news/ultra-beast-special-background-compensation-research-now-live/",
+        "https://www.serebii.net/news/2024/August.shtml"
       ],
       "evolved_pokemon": [
         {
@@ -17592,13 +17600,15 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-11-25",
+      "checked_on": "2026-11-27",
       "region_en": "Multiple regions",
       "region_zh": "多地／全球活動",
       "reference_ids": [
         "wormhole"
       ],
-      "reference_review": "images-compared-2026-10-24"
+      "reference_review": "images-compared-2026-10-24",
+      "date_note_zh": "上列日期為原團戰活動；受影響玩家的獨立補償限時調查於 2024/8/26 發放，領獎期限為 2025/12/31，並非延長團戰背景活動。",
+      "date_note_en": "The dates above describe the original raid event. Separate make-up Timed Research was distributed to affected Trainers on August 26, 2024, with a December 31, 2025 claim deadline; this did not extend the raid event."
     },
     {
       "name_en": "GO Fest 2024 Radiance",
