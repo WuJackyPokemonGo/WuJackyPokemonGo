@@ -215,3 +215,20 @@ Pokéxperto 的 [鋼屬性任務](https://www.pokexperto.net/index2.php?seccion=
 資料提交 `4875feaa7074a29a7593385278cd96fae66f08f2`，blob `4842346f7abd43dad18854b6c920e0823db67e75`。npm ci、363項測試與npm run build通過；逐筆比較只改BG-0023，285筆ID唯一。分享頁 `bg/BG-0023.html` 已同步建置發布。第05項尚未全部結案，正式站驗收另記下方。
 
 正式站驗收通過：公開JSON blob `4842346f7abd43dad18854b6c920e0823db67e75` 與測試及發布檔案一致，285筆ID唯一。香港分享頁公開內容逐位元組與建置產物一致，分享頁提交 `e9dfb5fababe9046b429b8c2635f27f3012c6f95`。新增BG-0288與既有活動資料均已保留。
+
+## 2026-11-27 2024究極之洞：補償限時調查漏列修正
+
+開工已讀最新圖鑑、既有歷年覆核／收尾紀錄、PROGRESS及正式站。GitHub與正式站起始圖鑑均為blob `de29dba3379ff960ed63337b818aed288dd6122d`，285筆；背景頁HTTP 200。保留本日例行更新的ANA／Champions先行圖樣及活動資料，不重做第07～09項。
+
+| 核對欄位 | 證據及判定 |
+| --- | --- |
+| 7/13遠距問題與補償資格 | NianticHelp 2024/8/2公告確認全球GO Fest第一天遠距團戰無法取得背景，受影響玩家另獲補償。原始帖：[保證背景](https://x.com/NianticHelp/status/1819274800218476564)、[依遠距團戰數計算](https://x.com/NianticHelp/status/1819274801904599222)、[期限](https://x.com/NianticHelp/status/1819274803502538871)。X本輪403／不可直讀；條件採[同期完整轉引及原帖連結](https://pokemonblog.com/2024/08/26/due-to-the-issue-where-special-backgrounds-were-not-obtained-from-remote-raids-on-day-1-of-pokemon-go-fest-2024-global-impacted-players-are-now-receiving-timed-research-that-awards-encounters-with-u/)核對，不稱直接讀取原帖。 |
+| 發放日與必得界線 | [Serebii 2024/8/26當日新聞](https://www.serebii.net/news/2024/August.shtml)記錄補償調查已上線；[GO Hub 8/26報導](https://pokemongohub.net/post/news/ultra-beast-special-background-compensation-research-now-live/)同日確認自動完成、究極異獸／奈克洛茲瑪遭遇保證附背景，領獎至2025/12/31。保證僅指受影響帳號的補償遭遇；不代表原團戰必得，亦非每人固定十款。未把社群文章當逐隻原始捕獲畫面。 |
+| 原活動日期與排除條件 | 維持BG-0215原團戰日期2024/7/8–14；補償發放與期限另以中英文date_note說明，不把活動延到2025年底。保留[官方究極空間公告](https://pokemongo.com/news/inbound-from-ultra-space-2024)的普通限時調查不帶背景排除條件，並明確區分後來獨立補償。 |
+| 物種與重複 | 沿用九種究極異獸及奈克洛茲瑪十款原始遭遇、兩款合體繼承，不新增同圖樣紀錄。補償依玩家當日遠距紀錄發放，不將整張名單視為每位玩家必收全套。 |
+
+本輪僅修改BG-0215的雙語取得說明、補償日期註記、來源／證據限制與查核日期。逐筆比較確認285筆ID唯一，其他284筆及所有活動預告不變。npm ci、382/382測試、npm run build及git diff --check通過；建置僅同步更新該筆分享頁。資料提交 `39c25fa10157c78413f4f044d04a39b17d94570e`，blob `449b22748c5277d5af24a384a58f1a1baf7bb393`；分享頁提交 `31b8bcfcf8534109f6fb02c87665df7b04756a2e`，blob `8e7b70a0ae4509c95cf017de8e4816c4268c8ea4`。
+
+第05項尚未全部結案：仍須延續其餘年份／條目的日期、物種及取得方式核對，不能將本輪修正或既有名稱對上視為全欄位完成。第06～09項及站長已接受結案的歷史例外不重啟。
+
+正式站驗收通過：公開JSON與分享頁均HTTP 200，逐位元組等於上述測試／發布檔案（資料blob `449b22748c5277d5af24a384a58f1a1baf7bb393`；分享頁blob `8e7b70a0ae4509c95cf017de8e4816c4268c8ea4`）。現有詳情頁原生顯示date_note及method雙語欄位，本輪未更動前端程式。
