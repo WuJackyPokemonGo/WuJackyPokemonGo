@@ -1,3 +1,12 @@
+## 商品備份加入 checked_at（最後確認時間），修正 6 小時新鮮度誤判（2026-11-28）
+
+- 問題：catalog-snapshot.json 的 generated_at 只在商品變動時更新；商品沒動時即使每 30 分鐘都確認過仍顯示舊時間，LINE 客服小幫手「備份超過 6 小時不自動回」規則會一律轉人工。
+- 修改：新增 checked_at＝最後一次與 Supabase 確認一致的時間（scripts/catalog-snapshot-core.mjs）。商品變動時兩者同步更新；未變動時 checked_at 至少每 3 小時才更新一次，避免每 30 分鐘提交。Supabase 讀不到時兩者都不變，因此會自然變舊。網站備份提示改顯示 checked_at（無則用 generated_at）。
+- 初值：11/28 19:25（台北）以 SQL 直接核對 products、inventory_balances、inventory_movements、product_images、product_categories 最後異動皆早於 generated_at（11/27 15:04），故 checked_at 設為 2026-11-28T11:25:20Z。
+- Grok 已回報完成改讀備份流程（Supabase 失敗→備份；超過 6 小時或無時間→草稿待處理；兩邊都失敗→轉人工），需改用 checked_at 判斷新鮮度。
+- 健康警報驗收：手動觸發後已自動開 issue #36；商品備份排程手動執行成功（Supabase 被擋，保留未提交）。
+- 驗證：npm test 396/396（新增 2 項）、npm run build、admin.html 與 cloud-admin.html 一致。
+
 ## Supabase 健康警報與流量查證（2026-11-28，分支待合併）
 
 - 流量查證（edge_logs content_length，11/27 台北 00:00–24:00）：Storage 快取命中約 307 MB／日來自 store-maintenance（Deno）備份，客人看圖約 4.4 MB／日；證實每日備份是快取流量超標主因（已由增量備份修正並部署）。

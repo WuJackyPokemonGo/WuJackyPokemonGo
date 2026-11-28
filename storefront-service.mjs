@@ -65,7 +65,7 @@ export async function loadCatalogWithFallback(fetcher=fetch){
  catch(error){
   let data=null;try{const r=await fetcher(CATALOG_SNAPSHOT_URL,{cache:'no-cache',signal:AbortSignal.timeout(15000)});if(r.ok)data=await r.json()}catch{}
   if(!data||!validCatalogRows(data.products)||!data.products.length||typeof data.generated_at!=='string')throw error;
-  return {products:data.products,snapshotAt:data.generated_at};
+  return {products:data.products,snapshotAt:typeof data.checked_at==='string'&&!Number.isNaN(Date.parse(data.checked_at))?data.checked_at:data.generated_at};
  }
 }
 export async function loadPublicCatalog(fetcher=fetch){const rows=[];for(let offset=0;offset<=20000;offset+=100){const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);try{const response=await fetcher(STAGING_URL+'/rest/v1/rpc/storefront_catalog',{method:'POST',headers:{apikey:STAGING_PUBLISHABLE_KEY,'Content-Type':'application/json'},body:JSON.stringify({p_offset:offset,p_limit:100}),signal:controller.signal});if(!response.ok)throw Error('商品資料暫時無法讀取。');const batch=await response.json();if(!Array.isArray(batch)||batch.some(p=>!p||typeof p.id!=='string'||typeof p.name!=='string'||!Array.isArray(p.aliases)||!Array.isArray(p.tags)||!Array.isArray(p.images)))throw Error('商品資料格式無效。');rows.push(...batch);if(batch.length<100)return rows;if(rows.length>=20000)throw Error('商品資料超過可載入上限。')}finally{clearTimeout(timer)}}return rows}

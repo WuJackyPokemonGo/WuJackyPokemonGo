@@ -39,3 +39,19 @@ test('background atlas keeps working when Supabase refuses: overrides and produc
  const published=JSON.parse(readFileSync(new URL('../data/background-overrides-snapshot.json',import.meta.url),'utf8'));
  assert.equal(typeof published.overrides,'object');
 });
+
+test('snapshot keeps generated_at for data changes and refreshes checked_at at most every 3 hours',async()=>{
+ const {nextSnapshot,HEARTBEAT_MS}=await import('../scripts/catalog-snapshot-core.mjs');
+ const p=[{id:'p1',name:'A',aliases:[],tags:[],images:[]}],t0=new Date('2026-11-28T00:00:00Z');
+ const first=nextSnapshot(null,p,t0);assert.equal(first.generated_at,t0.toISOString());assert.equal(first.checked_at,t0.toISOString());
+ assert.equal(nextSnapshot(first,p,new Date(t0.getTime()+HEARTBEAT_MS-1)),null,'unchanged and recently checked: no write');
+ const beat=nextSnapshot(first,p,new Date(t0.getTime()+HEARTBEAT_MS));assert.equal(beat.generated_at,first.generated_at);assert.notEqual(beat.checked_at,first.checked_at);
+ const legacy=nextSnapshot({generated_at:'2026-11-27T07:04:59.233Z',products:p},p,t0);assert.equal(legacy.generated_at,'2026-11-27T07:04:59.233Z');assert.equal(legacy.checked_at,t0.toISOString());
+ const changed=nextSnapshot(beat,[{...p[0],name:'B'}],new Date(t0.getTime()+HEARTBEAT_MS+1));assert.equal(changed.generated_at,changed.checked_at);
+});
+test('shop fallback shows the last confirmation time when the snapshot has one',async()=>{
+ const {loadCatalogWithFallback}=await import('../storefront-service.mjs');
+ const products=[{id:'p1',name:'A',aliases:[],tags:[],images:[]}];
+ const fetcher=async url=>String(url).includes('supabase')?new Response('',{status:402}):new Response(JSON.stringify({generated_at:'2026-11-27T07:00:00Z',checked_at:'2026-11-28T09:00:00Z',products}),{status:200});
+ assert.equal((await loadCatalogWithFallback(fetcher)).snapshotAt,'2026-11-28T09:00:00Z');
+});
