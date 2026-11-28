@@ -1,7 +1,7 @@
 name: Daily product share sync
 # 每天台灣時間 10:00、14:00、18:00、22:00 同步商品清單（含商品縮圖與商品資料備份），替新上架的商品產生分享頁與橫式預覽圖（貼到 Messenger／LINE／Threads 會顯示商品圖、不切到寶可夢）。
 # 背景圖鑑的預覽圖也一併更新（只重做圖片有變的）。
-# 沒有變化就不提交。推送後請 GitHub Pages 重新部署（GITHUB_TOKEN 推送不會自動觸發部署）。
+# 沒有變化就不提交。推送後啟動「先檢查再部署」（GITHUB_TOKEN 推送不會自動觸發部署）。
 on:
   schedule:
     - cron: '7 2,6,10,14 * * *'
@@ -9,6 +9,7 @@ on:
 permissions:
   contents: write
   pages: write
+  actions: write
 concurrency:
   group: main-data-writer
   cancel-in-progress: false
@@ -45,8 +46,12 @@ jobs:
           git pull --rebase origin main
           git push origin HEAD:main
           echo "changed=true" >> "$GITHUB_OUTPUT"
-      - name: Request a GitHub Pages build
+      # 機器人推送不會自動觸發其他 workflow，所以直接啟動「先檢查再部署」。
+      # 如果 Pages 還是「從分支發布」，改用舊方式請 Pages 重新建置。
+      - name: Deploy after checks
         if: steps.commit.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" || echo "::warning::Pages build request failed; the site updates on the next push to main."
+        run: |
+          gh workflow run deploy-pages.yml --ref main || echo "::warning::Could not start the deploy workflow."
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" >/dev/null 2>&1 || true
