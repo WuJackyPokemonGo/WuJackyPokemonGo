@@ -1,0 +1,43 @@
+name: Catalog snapshot refresh
+# 每 30 分鐘只更新商品資料備份（data/catalog-snapshot.json 與背景覆寫備份），不做縮圖和分享頁。
+# Supabase 被限流或無法連線時，網站和 LINE 客服小幫手改讀這份備份；讀不到 Supabase 時保留上一份，不會清空。
+# 每次約讀取 200 KB（屬 Supabase 非快取流量），一個月約 0.3 GB。沒有變化就不提交。
+on:
+  schedule:
+    - cron: '13,43 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  # 與每日分享頁同步共用同一組，避免兩個工作同時推送 main。
+  group: main-data-writer
+  cancel-in-progress: false
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: node scripts/snapshot-catalog.mjs
+      - name: Commit and push when the snapshot changed
+        id: commit
+        run: |
+          if git diff --quiet -- data/catalog-snapshot.json data/background-overrides-snapshot.json; then echo "changed=false" >> "$GITHUB_OUTPUT"; echo "Snapshot unchanged."; exit 0; fi
+          node --test tests/catalog-snapshot-fallback.test.mjs
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/catalog-snapshot.json data/background-overrides-snapshot.json
+          git commit -m "Refresh catalog snapshot"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Request a GitHub Pages build
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" || echo "::warning::Pages build request failed; the site updates on the next push to main."

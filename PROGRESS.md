@@ -1,3 +1,10 @@
+## 商品資料備份：改為每 30 分鐘更新，供網站與 LINE 客服小幫手備援（2026-11-28，分支待合併）
+
+- 現況核對：data/catalog-snapshot.json 已存在且已上線（222 件，generated_at 2026-11-27T07:04:59Z），storefront-service 在 Supabase 失敗（含 402）時已會改讀它。查正式 DB：products／inventory_balances 在該時間後 0 筆變動，目前備份內容即為最新。
+- 新增 .github/workflows/catalog-snapshot.yml：每小時 13、43 分只跑 scripts/snapshot-catalog.mjs；有變動才提交 main 並請求 Pages 重建；Supabase 讀不到時保留上一份。與 product-shares-sync 共用 concurrency group main-data-writer，避免同時推送 main。預估 Supabase 非快取流量約 0.3 GB／月。
+- LINE 客服小幫手（Grok）：建議 Supabase 失敗時改讀 https://wujackypokemongo.github.io/WuJackyPokemonGo/data/catalog-snapshot.json（欄位與 storefront_catalog 相同，外層為 {generated_at, products}），指令由使用者轉交 Grok 修改。
+- 驗證：npm test 390/390；本機執行 snapshot 腳本，Supabase 回 402 時兩份備份皆保留不變；workflow YAML 解析通過。排程需合併 main 後才會生效，GitHub 上實際執行仍待驗收。
+
 ## Supabase 快取流量超標：每日備份改為增量（2026-11-28，Edge Function 已部署，分支未合併）
 
 **狀態：使用者授權「照你的想法嘗試」後，store-maintenance 已部署為 version 2（verify_jwt 維持 false），部署後取回原始碼與分支內容一致；分支 claude/sharp-planck-l67f0i 未合併 main。未改資料庫、排程與 app_settings。**

@@ -10,7 +10,7 @@ permissions:
   contents: write
   pages: write
 concurrency:
-  group: product-shares-sync
+  group: main-data-writer
   cancel-in-progress: false
 jobs:
   sync:
