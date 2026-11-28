@@ -21078,18 +21078,23 @@
         "https://pokemongo.com/news/road-to-unova-event"
       ],
       "notes": [
-        "2026-11-06：依官方合眾之路公告，黑版：靈獸形態龍捲雲與萊希拉姆可帶此背景；移除誤列的捷克羅姆。"
+        "2026-11-06：依官方合眾之路公告，黑版：靈獸形態龍捲雲與萊希拉姆可帶此背景；移除誤列的捷克羅姆。",
+        "2026-11-28：已檢視玩家保存的官方遊戲內補償公告與酋雷姆調查領獎頁。前者支持補償資格、保證背景、計算原則及期限；後者僅確認任務發放，不是個體背景配色或合體捕獲實證。GO Hub配色表自註推測，未採為逐款保證。"
       ],
       "related_product_ids": [],
-      "method_zh": "2025 合眾之路五星團體戰機率取得黑版／白版背景；兩色頭目分配依官方清單。後續全球 GO Tour 與再發放為分開時段。",
-      "method_en": "Chance from Road to Unova five-star raids, with species-specific Black/White eligibility; later GO Tour and reruns are separate windows.",
+      "method_zh": "2025 合眾之路五星團體戰機率取得黑版／白版背景；兩色頭目分配依官方清單。後續全球 GO Tour 與再發放為分開時段。 官方明確排除「合眾之路」一般限時調查：其寶可夢獎勵不會附特殊背景。另有獨立補償調查：2025/3/2 當地 23:59 後萊希拉姆、捷克羅姆及酋雷姆團體戰的背景問題，受影響玩家於同年4月起收到補償遭遇；公告保證附特殊背景，依受影響時段原應取得背景的遭遇數計算並向上取整，不是每場團戰各補一隻，領取期限為 2025/12/31。公告未逐款保證配色，亦不代表可直接捕獲黑／白合體酋雷姆。",
+      "method_en": "Chance from Road to Unova five-star raids, with species-specific Black/White eligibility; later GO Tour and reruns are separate windows. The official Road to Unova announcement excludes its regular Timed Research Pokémon rewards from Special Backgrounds. Separate make-up research was distributed from April 2025 for affected Reshiram, Zekrom and Kyurem raids after 11:59 p.m. local time on March 2. The compensation notice guarantees Special Background encounters, with counts based on the backgrounds that would have been awarded during the affected period, rounded up; it is not one encounter per raid. The claim deadline was December 31, 2025. The notice does not guarantee each individual background color or direct encounters with fused Black or White Kyurem.",
       "series": "GO Tour",
       "series_zh": "GO Tour",
       "year": "2025",
       "year_verified": false,
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
-        "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-tour-2025-black"
+        "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-tour-2025-black",
+        "https://www.reddit.com/r/TheSilphRoad/comments/1k0xipt/pokemon_go_tour_special_background_compensation/",
+        "https://i.redd.it/1ko6cltqx9ve1.jpeg",
+        "https://www.reddit.com/r/TheSilphRoad/comments/1k0x49r/random_kyurem_encounter_research/",
+        "https://pokemongohub.net/post/news/pokemon-go-tour-special-background-compensation/"
       ],
       "evolved_pokemon": [
         {
@@ -21149,13 +21154,13 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-10-24",
+      "checked_on": "2026-11-28",
       "region_en": "Multiple regions",
       "region_zh": "多地／全球活動",
       "verification_scope": "background-and-eligibility",
       "start_date": "2025-02-24",
-      "date_note_zh": "首次於合眾之路推出；後續 GO Tour 與 2026 重登場非連續期間。",
-      "date_note_en": "Debuted during Road to Unova; later GO Tour and 2026 reruns are separate periods.",
+      "date_note_zh": "首次於合眾之路推出；後續 GO Tour 與 2026 重登場非連續期間。 2025年4月另有受影響帳號專用補償調查，領獎至2025/12/31；不是團戰背景連續開放至年底。",
+      "date_note_en": "Debuted during Road to Unova; later GO Tour and 2026 reruns are separate periods. Separate account-specific make-up research was distributed from April 2025, claimable through December 31, 2025; this did not keep raid backgrounds continuously available until year-end.",
       "reference_ids": [
         "gt25_black"
       ],
@@ -21310,18 +21315,23 @@
         "https://pokemongo.com/news/road-to-unova-event"
       ],
       "notes": [
-        "2026-11-06：依官方合眾之路公告，白版：靈獸形態雷電雲與捷克羅姆可帶此背景；移除誤列的萊希拉姆。"
+        "2026-11-06：依官方合眾之路公告，白版：靈獸形態雷電雲與捷克羅姆可帶此背景；移除誤列的萊希拉姆。",
+        "2026-11-28：已檢視玩家保存的官方遊戲內補償公告與酋雷姆調查領獎頁。前者支持補償資格、保證背景、計算原則及期限；後者僅確認任務發放，不是個體背景配色或合體捕獲實證。GO Hub配色表自註推測，未採為逐款保證。"
       ],
       "related_product_ids": [],
-      "method_zh": "2025 合眾之路五星團體戰機率取得黑版／白版背景；兩色頭目分配依官方清單。後續全球 GO Tour 與再發放為分開時段。",
-      "method_en": "Chance from Road to Unova five-star raids, with species-specific Black/White eligibility; later GO Tour and reruns are separate windows.",
+      "method_zh": "2025 合眾之路五星團體戰機率取得黑版／白版背景；兩色頭目分配依官方清單。後續全球 GO Tour 與再發放為分開時段。 官方明確排除「合眾之路」一般限時調查：其寶可夢獎勵不會附特殊背景。另有獨立補償調查：2025/3/2 當地 23:59 後萊希拉姆、捷克羅姆及酋雷姆團體戰的背景問題，受影響玩家於同年4月起收到補償遭遇；公告保證附特殊背景，依受影響時段原應取得背景的遭遇數計算並向上取整，不是每場團戰各補一隻，領取期限為 2025/12/31。公告未逐款保證配色，亦不代表可直接捕獲黑／白合體酋雷姆。",
+      "method_en": "Chance from Road to Unova five-star raids, with species-specific Black/White eligibility; later GO Tour and reruns are separate windows. The official Road to Unova announcement excludes its regular Timed Research Pokémon rewards from Special Backgrounds. Separate make-up research was distributed from April 2025 for affected Reshiram, Zekrom and Kyurem raids after 11:59 p.m. local time on March 2. The compensation notice guarantees Special Background encounters, with counts based on the backgrounds that would have been awarded during the affected period, rounded up; it is not one encounter per raid. The claim deadline was December 31, 2025. The notice does not guarantee each individual background color or direct encounters with fused Black or White Kyurem.",
       "series": "GO Tour",
       "series_zh": "GO Tour",
       "year": "2025",
       "year_verified": false,
       "catalog_sources": [
         "https://www.serebii.net/pokemongo/backgrounds.shtml",
-        "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-tour-2025-white"
+        "https://www.dittobase.com/pokemon-go/backgrounds/sb-go-tour-2025-white",
+        "https://www.reddit.com/r/TheSilphRoad/comments/1k0xipt/pokemon_go_tour_special_background_compensation/",
+        "https://i.redd.it/1ko6cltqx9ve1.jpeg",
+        "https://www.reddit.com/r/TheSilphRoad/comments/1k0x49r/random_kyurem_encounter_research/",
+        "https://pokemongohub.net/post/news/pokemon-go-tour-special-background-compensation/"
       ],
       "evolved_pokemon": [
         {
@@ -21381,13 +21391,13 @@
           "acquisition": "evolution"
         }
       ],
-      "checked_on": "2026-10-24",
+      "checked_on": "2026-11-28",
       "region_en": "Multiple regions",
       "region_zh": "多地／全球活動",
       "verification_scope": "background-and-eligibility",
       "start_date": "2025-02-24",
-      "date_note_zh": "首次於合眾之路推出；後續 GO Tour 與 2026 重登場非連續期間。",
-      "date_note_en": "Debuted during Road to Unova; later GO Tour and 2026 reruns are separate periods.",
+      "date_note_zh": "首次於合眾之路推出；後續 GO Tour 與 2026 重登場非連續期間。 2025年4月另有受影響帳號專用補償調查，領獎至2025/12/31；不是團戰背景連續開放至年底。",
+      "date_note_en": "Debuted during Road to Unova; later GO Tour and 2026 reruns are separate periods. Separate account-specific make-up research was distributed from April 2025, claimable through December 31, 2025; this did not keep raid backgrounds continuously available until year-end.",
       "reference_ids": [
         "gt25_white"
       ],
