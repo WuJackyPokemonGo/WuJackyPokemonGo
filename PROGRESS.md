@@ -1,3 +1,23 @@
+## 商品資料備份：改為每 30 分鐘更新，供網站與 LINE 客服小幫手備援（2026-11-28，分支待合併）
+
+- 現況核對：data/catalog-snapshot.json 已存在且已上線（222 件，generated_at 2026-11-27T07:04:59Z），storefront-service 在 Supabase 失敗（含 402）時已會改讀它。查正式 DB：products／inventory_balances 在該時間後 0 筆變動，目前備份內容即為最新。
+- 新增 .github/workflows/catalog-snapshot.yml：每小時 13、43 分只跑 scripts/snapshot-catalog.mjs；有變動才提交 main 並請求 Pages 重建；Supabase 讀不到時保留上一份。與 product-shares-sync 共用 concurrency group main-data-writer，避免同時推送 main。預估 Supabase 非快取流量約 0.3 GB／月。
+- LINE 客服小幫手（Grok）：建議 Supabase 失敗時改讀 https://wujackypokemongo.github.io/WuJackyPokemonGo/data/catalog-snapshot.json（欄位與 storefront_catalog 相同，外層為 {generated_at, products}），指令由使用者轉交 Grok 修改。
+- 驗證：npm test 390/390；本機執行 snapshot 腳本，Supabase 回 402 時兩份備份皆保留不變；workflow YAML 解析通過。排程需合併 main 後才會生效，GitHub 上實際執行仍待驗收。
+
+## Supabase 快取流量超標：每日備份改為增量（2026-11-28，Edge Function 已部署，分支未合併）
+
+**狀態：使用者授權「照你的想法嘗試」後，store-maintenance 已部署為 version 2（verify_jwt 維持 false），部署後取回原始碼與分支內容一致；分支 claude/sharp-planck-l67f0i 未合併 main。未改資料庫、排程與 app_settings。**
+
+- 事故：台灣 11/28 約 07:00 起正式專案 wlrwlqchlxehlvkyesnj 回 402 `exceed_cached_egress_quota`（免費版快取流量 5 GB／月），storefront_catalog 大量被擋，客人與 LINE 客服小幫手讀不到目錄。資料庫 45 MB、Storage 564 MB 未超標。
+- 主因（推定，帳單未直接確認）：store-maintenance 每日備份每次都整批下載 product-images＋storefront-thumbnails 約 313 MB，雜湊檔已存在時又再下載一次比對，估每月 9～18 GB。客人看縮圖約 1.2 GB／月；客服小幫手查目錄屬非快取流量，量很小。
+- 另發現：11/21 起每日備份全部失敗（REFERENCED_IMAGE_MISSING），因 4 筆 product_images 指向網站內建 assets/products/*，不在 Storage。
+- 修改：worker 讀寫 app-backups/index/objects.json（大小＋updated_at＋sha256），未變更且備份副本仍在的檔案直接沿用、不下載；先列出 media/ 判斷副本是否存在，不再為比對而下載；每次最多下載 25 個新／變更檔。assets/ 路徑視為網站內建圖片，不列入 Storage 備份檢查（data-io 還原同步略過）。
+- 預估：部署後第一次仍會完整下載一次以建立索引，之後每日只下載新增／變更圖片。
+- 補：同一工作在中途存檔前已複製的檔案也寫入索引，避免隔天再下載。
+- 驗證：npm ci、npm test 390/390（新增 5 項：沿用不下載、只下載新增／變更並偵測副本遺失、不為比對重新下載、assets/ 不致失敗而真正缺圖仍失敗）、npm run build、git diff --check 通過。
+- 待辦：合併 main（repo 與正式 Edge Function 目前只在分支一致）；額度恢復後實際觀察一次排程（索引建立、manifest 完成）；第 2～4 步（縮圖改由 GitHub Pages、catalog.json 快照供網站與客服小幫手備援、流量警報）尚未開始。
+
 ## 背景圖鑑每日查核（2026-11-28）
 
 讀取最新main ce5e95c、PROGRESS及實際共用資料來源；正式站backgrounds.json與activity-feed.json均與main一致。官方最新新聞仍為超極巨千面避役，ANA、Champions、Duolingo、熱帶樂園等背景相關規則未見需變更的差異。PokéXperience仍282/282，最新兩張先行圖樣均已於11/27寫入既有BG-0287／0288，未見新增背景或人孔蓋圖樣，不重建。
