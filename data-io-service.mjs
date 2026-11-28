@@ -17,7 +17,9 @@ export function validateDocument(d){
 }
 function validPath(path){return typeof path==='string'&&path.length>0&&path.length<=1000&&!path.startsWith('/')&&!path.split('/').some(v=>!v||v==='.'||v==='..')&&!/[\u0000-\u001f\\]/.test(path)}
 function objectKey(o){return o.bucket+'/'+o.path}
-function references(d){const refs=[];for(const i of d.data.product_images){if(i.storage_path)refs.push({bucket:'product-images',path:i.storage_path});if(i.thumbnail_path)refs.push({bucket:'product-images',path:i.thumbnail_path});if(i.public_path)refs.push({bucket:'storefront-thumbnails',path:i.public_path})}return refs}
+// Paths under assets/ are images shipped with the website itself (versioned in git), not Supabase Storage objects.
+export const isStaticSitePath=path=>typeof path==='string'&&path.startsWith('assets/');
+function references(d){const refs=[];for(const i of d.data.product_images){if(i.storage_path)refs.push({bucket:'product-images',path:i.storage_path});if(i.thumbnail_path)refs.push({bucket:'product-images',path:i.thumbnail_path});if(i.public_path)refs.push({bucket:'storefront-thumbnails',path:i.public_path})}return refs.filter(r=>!isStaticSitePath(r.path))}
 async function derive(password,salt,usages){const material=await crypto.subtle.importKey('raw',encoder.encode(password),'PBKDF2',false,['deriveKey']);return crypto.subtle.deriveKey({name:'PBKDF2',salt,iterations:310000,hash:'SHA-256'},material,{name:'AES-GCM',length:256},false,usages)}
 export async function encryptBackup(bundle,password){
  requireCrypto();
