@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-27",
+  "as_of": "2026-11-28",
   "complete": false,
   "sources": [
     "https://www.serebii.net/pokemongo/backgrounds.shtml",
@@ -30879,10 +30879,9 @@
       "release_state": "upcoming",
       "verification": "official-event-confirmed",
       "image_source": null,
-      "checked_on": "2026-11-06",
+      "checked_on": "2026-11-28",
       "official_sources": [
-        "https://pokemongo.com/zh-Hant/news/save-the-date-s24",
-        "https://pokemongolive.com/en/news/clefable-super-mega-raid-day-2026"
+        "https://pokemongo.com/news/clefable-super-mega-raid-day-2026"
       ],
       "notes": [
         "超級皮可西首度在極致超級團體戰登場，捕捉的皮可西已解鎖超級等級 1。官方公告未列背卡獎勵。"
@@ -30900,16 +30899,41 @@
           "start": "2026-11-28T14:00",
           "end": "2026-11-28T17:00"
         },
-        "conditions_zh": "超級皮可西首度在極致超級團體戰登場，捕捉的皮可西已解鎖超級等級 1。官方公告未列背卡獎勵。",
-        "conditions_en": "Mega Clefable debuts in Super Mega Raids. Clefable caught there have Mega Level 1 unlocked. The official announcement lists no background reward.",
-        "eligible_zh": "超級皮可西（對戰形態），捕捉時為皮可西。",
-        "eligible_en": "Mega Clefable (battle form), encountered as Clefable after the raid.",
-        "checked_on": "2026-11-06",
+        "conditions_zh": "11/28當地14:00–17:00超級皮可西在極致超級團體戰登場，捕獲為皮可西並解鎖超級等級1，異色機率提高；旋轉道館轉盤最多可領6張免費團體戰入場券。活動限時調查可得特級對戰入場券與巨金怪遭遇，調查須於遊戲顯示的期限前完成並領獎；公告未列任何背景獎勵。 全球挑戰與遠距額度加碼採固定PST時段：11/27 17:00至11/28 20:00，換算台灣11/28 09:00至11/29 12:00；不改變主團體戰日當地14:00–17:00。挑戰解鎖的月亮之力＋威力／超級頂尖級戰力加成另於PST11/30 12:00至12/13 12:00生效（台灣12/1 04:00至12/14 04:00），依完成層級決定，並非背景獎勵。",
+        "conditions_en": "November 28, 14:00–17:00 local time: Mega Clefable appears in Super Mega Raids; catches are Clefable with Mega Level 1 unlocked, with increased Shiny odds. Gym Photo Discs award up to six free Raid Passes. Event Timed Research awards a Premium Battle Pass and a Metagross encounter; complete and claim rewards before its in-game deadline. No background reward is announced. The Global Challenge and increased remote cap use a fixed PST window: November 27 at 17:00 to November 28 at 20:00 (Taiwan November 28 at 09:00 to November 29 at 12:00). Main raids still run 14:00–17:00 local time. Unlocked Moonblast+ power and Super Max CP bonuses separately apply November 30 at 12:00 to December 13 at 12:00 PST (Taiwan December 1 at 04:00 to December 14 at 04:00), depend on challenge tiers, and are not background rewards.",
+        "eligible_zh": "超級皮可西為對戰形態，捕捉時為皮可西；限時調查另有巨金怪。兩者均未公告背景獎勵，未公告服裝。",
+        "eligible_en": "Mega Clefable is the battle form; the catch is Clefable. Timed Research also encounters Metagross. Neither is announced with a background reward or costume.",
+        "checked_on": "2026-11-28",
         "sources": [
-          "https://pokemongo.com/zh-Hant/news/save-the-date-s24",
-          "https://pokemongolive.com/en/news/clefable-super-mega-raid-day-2026"
-        ]
-      }
+          "https://pokemongo.com/news/clefable-super-mega-raid-day-2026"
+        ],
+        "background_type": "unannounced",
+        "artwork_status": "unannounced",
+        "remote_participation": {
+          "basis": "pending",
+          "text_zh": "公告確認遠距團體戰每日上限提高至20，但未直接說明極致超級團體戰的遠距參與資格；保留待確認。",
+          "text_en": "The announcement confirms a daily Remote Raid cap of 20 but does not explicitly establish remote eligibility for Super Mega Raids; this remains unconfirmed."
+        },
+        "remote_background": {
+          "basis": "pending",
+          "text_zh": "官方未公告背景獎勵，亦未確認遠距取得背景資格。",
+          "text_en": "No background reward or remote background eligibility has been announced."
+        }
+      },
+      "pokemon": [
+        {
+          "dex": 35,
+          "name_zh": "皮可西",
+          "name_en": "Clefable",
+          "acquisition": "super-mega-raid"
+        },
+        {
+          "dex": 376,
+          "name_zh": "巨金怪",
+          "name_en": "Metagross",
+          "acquisition": "timed-research"
+        }
+      ]
     },
     {
       "name_zh": "仙台・東北｜拉普拉斯長期集章地點背景",
