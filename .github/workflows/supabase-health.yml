@@ -1,0 +1,52 @@
+name: Supabase health alert
+# 每小時檢查一次 Supabase（只讀 1 筆商品，流量可忽略）。
+# 異常時開一則 GitHub issue（標籤 supabase-health）並 @ 擁有者，GitHub App／Email 會通知；已有未關閉的就只補留言，不重複開。
+# 恢復正常時自動留言並關閉。Discord 通知目前未設定，所以改用 GitHub 通知。
+on:
+  schedule:
+    - cron: '27 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: supabase-health
+  cancel-in-progress: false
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - id: health
+        run: node scripts/supabase-health.mjs
+      - name: Open, update or close the alert issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          STATE: ${{ steps.health.outputs.state }}
+          SUMMARY: ${{ steps.health.outputs.summary }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          gh label create supabase-health --color B60205 --description "Supabase 健康警報（自動）" 2>/dev/null || true
+          open=$(gh issue list --label supabase-health --state open --json number --jq '.[0].number // empty')
+          now=$(TZ=Asia/Taipei date '+%Y-%m-%d %H:%M')
+          if [ "$STATE" = "ok" ]; then
+            if [ -n "$open" ]; then
+              gh issue comment "$open" --body "✅ ${now}（台北時間）Supabase 已恢復正常，自動關閉。"
+              gh issue close "$open"
+            fi
+            exit 0
+          fi
+          if [ -z "$open" ]; then
+            body=$(printf '@%s\n\n⚠️ %s（台北時間）偵測到異常：\n\n%s\n\n建議：\n1. 到 Supabase 後台 Organization → Usage 查看哪一項額度超過、何時重置。\n2. 客人問貨先手動回覆；網站目前改用備份清單（每 30 分鐘更新一次）。\n3. 恢復後這則 issue 會自動關閉。\n\n（由 Supabase health alert 每小時自動檢查）' "$OWNER" "$now" "$SUMMARY")
+            gh issue create --title "⚠️ Supabase 異常：網站即時資料讀不到" --label supabase-health --body "$body"
+          else
+            # Comment at most every 6 hours while still failing, to avoid notification spam.
+            last=$(gh issue view "$open" --json comments,createdAt --jq '(.comments[-1].createdAt // .createdAt)')
+            if [ $(( $(date +%s) - $(date -d "$last" +%s) )) -ge 21600 ]; then
+              gh issue comment "$open" --body "⏳ ${now}（台北時間）仍異常：${SUMMARY}"
+            fi
+          fi

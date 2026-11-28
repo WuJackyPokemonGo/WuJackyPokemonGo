@@ -1,3 +1,12 @@
+## Supabase 健康警報與流量查證（2026-11-28，分支待合併）
+
+- 流量查證（edge_logs content_length，11/27 台北 00:00–24:00）：Storage 快取命中約 307 MB／日來自 store-maintenance（Deno）備份，客人看圖約 4.4 MB／日；證實每日備份是快取流量超標主因（已由增量備份修正並部署）。
+- Discord 從未設定：vault 無 wj_discord_webhook、jobs 設定未啟用，近 7 天 6 則系統通知（含 11/21 起備份失敗）均未送達。
+- 每日分享頁同步 11/28 18:03 失敗：list-public-thumbnails 讀 storefront_catalog 被 402 擋下即停止，未寫入任何資料；額度恢復後應自行恢復，不需修改。
+- 新增 scripts/supabase-health.mjs（讀 1 筆商品；402 或 exceed_*_quota → quota，其他失敗 → down，失敗重試一次）與 .github/workflows/supabase-health.yml（每小時 27 分）：異常時開 GitHub issue（標籤 supabase-health，@ 擁有者），未恢復時每 6 小時最多補一則留言，恢復後自動留言並關閉。
+- 驗證：npm test 394/394（新增 4 項 health 測試）；本機實測目前回 quota（402 exceed_cached_egress_quota）；workflow YAML 解析與 issue 步驟 bash -n 通過。GitHub 上實際開／關 issue 尚待合併後驗收。
+- 限制：未接 Supabase 帳單用量 API（需 Supabase 存取權杖），因此只能在「被擋或失敗」時警報，不能在用到一半時預警。
+
 ## 商品資料備份：改為每 30 分鐘更新，供網站與 LINE 客服小幫手備援（2026-11-28，分支待合併）
 
 - 現況核對：data/catalog-snapshot.json 已存在且已上線（222 件，generated_at 2026-11-27T07:04:59Z），storefront-service 在 Supabase 失敗（含 402）時已會改讀它。查正式 DB：products／inventory_balances 在該時間後 0 筆變動，目前備份內容即為最新。
