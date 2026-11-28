@@ -25,6 +25,8 @@ export async function runMaintenance({client,token,fetchImpl=fetch,clock=()=>Dat
   let index={};const idx=await store.download(INDEX_PATH);if(!idx.error){try{const parsed=JSON.parse(await idx.data.text());if(parsed?.format===INDEX_FORMAT&&parsed.objects&&typeof parsed.objects==='object')index=parsed.objects}catch{index={}}}
   const stored=new Map((await listFiles(client,'app-backups','media')).map(f=>[f.path,f.size]));
   let downloads=0,indexChanged=false,batch={};
+  // Objects already copied earlier in this same job (before a checkpoint) seed the index, so tomorrow does not download them again.
+  for(const o of plan){const key=o.bucket+'/'+o.path,m=media[key];if(m&&!index[key]&&m.size===o.size){index[key]={...m,updated_at:o.updated_at};indexChanged=true}}
   const flush=async(extra={})=>{if(!Object.keys(batch).length&&!extra.release)return;await rpc('progress',{id:job.id,lease:job.lease,cursor,media:batch,...extra});batch={}};
   while(cursor<plan.length&&clock()-start<45000){const o=plan[cursor],key=o.bucket+'/'+o.path,prev=index[key];let entry;
    if(prev&&prev.size===o.size&&prev.updated_at===o.updated_at&&/^[a-f0-9]{64}$/.test(prev.sha256??'')&&prev.backup_path==='media/'+prev.sha256&&stored.get(prev.backup_path)===prev.size)entry={bucket:o.bucket,path:o.path,size:prev.size,content_type:prev.content_type,sha256:prev.sha256,backup_path:prev.backup_path};
